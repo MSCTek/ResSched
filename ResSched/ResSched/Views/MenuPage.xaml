@@ -4,14 +4,8 @@
              xmlns:conv="clr-namespace:ResSched.Converters"
              x:Class="ResSched.Views.MenuPage"
              Title="Menu">
-
-    
-    
     
     <ContentPage.Content>
-        
-        
-        
         <StackLayout VerticalOptions="FillAndExpand">
             <ListView x:Name="ListViewMenu"
                     HasUnevenRows="True">
@@ -20,20 +14,6 @@
                         <ViewCell>
                             <Grid Padding="10">
                                 <Label Text="{Binding Title}" FontSize="20" />
-                            
-                                <Label>
-                                    Welcome to Xamarin Forms!
-                                </Label>
-
-                                <Label>
-                                    <Label.Text>
-                                        Welcome to Xamarin Forms!
-                                    </Label.Text>
-                                </Label>
-
-                                <Label Text="Welcome to Xamarin Forms!" />
-
-
                             </Grid>
                         </ViewCell>
                     </DataTemplate>

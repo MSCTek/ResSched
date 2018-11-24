@@ -42,10 +42,6 @@
                     </DataTemplate>
                 </ListView.ItemTemplate>
             </ListView>
-            <StackLayout Orientation="Horizontal">
-                <Label Text="Hi Guys"/>
-                <Label BackgroundColor="Red" Text="I swear she is going to stop talking soon...promise."/>
-            </StackLayout>
         </StackLayout>
     </ContentPage.Content>
     

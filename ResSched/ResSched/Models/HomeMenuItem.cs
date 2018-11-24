@@ -7,7 +7,9 @@ namespace ResSched.Models
     public enum MenuItemType
     {
         Browse,
-        About
+        About,
+        Login,
+        MyReservations
     }
     public class HomeMenuItem
     {

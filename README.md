@@ -1,2 +1,2 @@
 # ResSched
-Mobile app for scheduling resources at our maker space, Fox.Build
+Mobile app for scheduling resources at the co-coworking maker space we belong to: Fox.Build in St. Charles, IL

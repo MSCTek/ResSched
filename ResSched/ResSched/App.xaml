@@ -4,12 +4,32 @@
              x:Class="ResSched.App">
     <Application.Resources>
         <ResourceDictionary>
+
+            <OnPlatform x:Key="IconFontFamily" x:TypeArguments="x:String" Android="fa-regular-400.ttf#Font Awesome 5 Free Regular" iOS="Font Awesome 5 Free" WinPhone="Assets/fa-regular-400.ttf#Font Awesome 5 Free" />
+            <Style x:Key="IconFontFamilyLabelStyle"  TargetType="Label">
+                <Setter Property="FontFamily" Value="{StaticResource IconFontFamily}" />
+            </Style>
+            <!--<OnPlatform x:Key="IconFontFamily" x:TypeArguments="x:String">
+                <On Platform="Android">fontawesome-webfont.ttf#fontawesome-webfont</On>-->
+                <!--<On Platform="iOS">FontAwesome</On> version 4.7-->
+                <!--<On Platform="iOS">Font Awesome 5 Free Regular</On>-->
+                <!--<On Platform="WinPhone">Assets/fontawesome-webfont.ttf#fontawesome</On>-->
+                <!--<On Platform="UWP, WinRT, WinPhone">Assets/fontawesome-webfont.ttf#fontawesome</On>-->
+                <!--<On Platform="UWP, WinRT, WinPhone" Value="Assets/Font Awesome 5 Free-Regular-400.otf#Font Awesome 5 Free Regular" />
+            </OnPlatform>-->
+
+            <x:String x:Key="FontAwesomeFacebook">&#xf230;</x:String>
+
             <!--Global Styles-->
             <Color x:Key="NavigationPrimary">#2196F3</Color>
             <Style TargetType="NavigationPage">
                 <Setter Property="BarBackgroundColor" Value="{StaticResource NavigationPrimary}" />
                 <Setter Property="BarTextColor" Value="White" />
             </Style>
+
+            
+
+
         </ResourceDictionary>
     </Application.Resources>
 </Application>

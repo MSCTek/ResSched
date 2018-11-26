@@ -32,54 +32,34 @@
             </StackLayout>
         </StackLayout>
         <ScrollView Grid.Row="1">
-            <StackLayout Orientation="Vertical" Padding="16,40,16,40" Spacing="10">
-                <Label FontSize="22">
-                    <Label.FormattedText>
-                        <FormattedString>
-                            <FormattedString.Spans>
-                                <Span Text="AppName" FontAttributes="Bold" FontSize="22" />
-                                <Span Text=" " />
-                                <Span Text="1.0" ForegroundColor="{StaticResource LightTextColor}" />
-                            </FormattedString.Spans>
-                        </FormattedString>
-                    </Label.FormattedText>
-                </Label>
-                <Label>
-                    <Label.FormattedText>
-                        <FormattedString>
-                            <FormattedString.Spans>
-                                <Span Text="This app is written in C# and native APIs using the" />
-                                <Span Text=" " />
-                                <Span Text="Xamarin Platform" FontAttributes="Bold" />
-                                <Span Text="." />
-                            </FormattedString.Spans>
-                        </FormattedString>
-                    </Label.FormattedText>
-                </Label>
-                <Label>
-                    <Label.FormattedText>
-                        <FormattedString>
-                            <FormattedString.Spans>
-                                <Span Text="It shares code with its" />
-                                <Span Text=" " />
-                                <Span Text="iOS, Android, and Windows" FontAttributes="Bold" />
-                                <Span Text=" " />
-                                <Span Text="versions." />
-                            </FormattedString.Spans>
-                        </FormattedString>
-                    </Label.FormattedText>
-                </Label>
+            <StackLayout Padding="16,40,16,40" Spacing="10">
+                <Label Text="A Collaborative Workspace" FontAttributes="Bold" FontSize="22"/>
+                <Label>Fox.Build can be called many things: it’s a collaborative workspace, occasionally called a co-working space, 
+                    makerspace, hackspace or social club, located in the heart of downtown St. Charles, Illinois. Fox.build is a 
+                    great place to work, especially if you typically work from home and feel like you’re missing the sense of community 
+                    you might find at a traditional office. We’re a friendly bunch and are always looking for new members. Feed your 
+                    creativity; make a new thing or improve an old one; just have a space to work on your business, your hobby, 
+                    or your passion.</Label>
+                <Label Text="Where to Find Us" FontAttributes="Bold" FontSize="22"/>
+                <StackLayout Spacing="2">
+                    <Label Text="Fox.Build"/>
+                    <Label Text="11 E. Main Street"/>
+                    <Label Text="St. Charles, IL  60174"/>
+                    <StackLayout Orientation="Horizontal">
+                        <Label Style="{StaticResource FA.Solid.LabelStyle}" Text="&#xf095;" HeightRequest="100" TextColor="Black" FontSize="30"/>
+                        <Label Text="P: (630) 344-9385"/>
+                    </StackLayout>
+                    
+                </StackLayout>
 
-                <ctrl:IconLabel Text="&#xf082;" WidthRequest="100" HeightRequest="100" TextColor="Black" FontSize="Large"/>
+                
 
-                <Label Style="{DynamicResource IconFontFamilyLabelStyle}" Text="&#xf082;" WidthRequest="100" HeightRequest="100" TextColor="Green" FontSize="36"/>
-
-                <!-- http://www.fifthstreetpartners.com/using-fontawesome-5-in-xamarin-forms/-->
-                <Button Text="&#xf11a;" HeightRequest="100" BackgroundColor="DarkRed" TextColor="White" FontSize="36">
-                    <Button.FontFamily>
-                        <OnPlatform x:TypeArguments="x:String" Android="fa-regular-400.ttf#Font Awesome 5 Free Regular" iOS="Font Awesome 5 Free" WinPhone="Assets/fa-regular-400.ttf#Font Awesome 5 Free" />
-                    </Button.FontFamily>
-                </Button>
+                <StackLayout Orientation="Horizontal">
+                    <Label x:Name="FacebookIcon" Style="{StaticResource FA.Brands.LabelStyle}" Text="&#xf082;" HeightRequest="100" TextColor="Blue" FontSize="42"/>
+                    <Label x:Name="TwitterIcon" Style="{StaticResource FA.Brands.LabelStyle}" Text="&#xf081;" HeightRequest="100" TextColor="Blue" FontSize="42"/>
+                    <Label x:Name="SlackIcon" Style="{StaticResource FA.Brands.LabelStyle}" Text="&#xf198;" HeightRequest="100" TextColor="Purple" FontSize="42"/>
+                </StackLayout>
+                
                 <Button Margin="0,10,0,0" Text="Learn more"
                         Command="{Binding OpenWebCommand}"
                         BackgroundColor="{StaticResource Primary}"

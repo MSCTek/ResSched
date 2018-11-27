@@ -9,9 +9,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ResSched.iOS", "ResSched\Re
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ResSched.UWP", "ResSched\ResSched.UWP\ResSched.UWP.csproj", "{58FF54B6-3B3D-40E2-9EDF-1A1BAAD4750C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ResSched.MobileAppService", "ResSched\ResSched.MobileAppService\ResSched.MobileAppService.csproj", "{7579C51C-4843-4D4E-86DC-2C9BDECE4383}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ResSched.MobileAppService", "ResSched\ResSched.MobileAppService\ResSched.MobileAppService.csproj", "{7579C51C-4843-4D4E-86DC-2C9BDECE4383}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ResSched", "ResSched\ResSched\ResSched.csproj", "{3ED81455-715A-45FF-BAE9-C75E19C065CA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ResSched", "ResSched\ResSched\ResSched.csproj", "{3ED81455-715A-45FF-BAE9-C75E19C065CA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ResSched.Models;
+using System;
 using Xamarin.Essentials;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
@@ -8,6 +9,7 @@ namespace ResSched.Views
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class AboutPage : ContentPage
     {
+        private MainPage RootPage { get => Application.Current.MainPage as MainPage; }
         public AboutPage()
         {
             InitializeComponent();
@@ -15,8 +17,8 @@ namespace ResSched.Views
 
         private void FacebookGestureRecognizer_Tapped(object sender, EventArgs e)
         {
-            Device.OpenUri(new Uri("https://www.facebook.com/foxbuildshop/"));
-            //Device.OpenUri(new Uri("https://www.facebook.com/sharer/sharer.php?u=https://fox.build/"));
+            //Device.OpenUri(new Uri("https://www.facebook.com/foxbuildshop/"));
+            Device.OpenUri(new Uri("https://www.facebook.com/sharer/sharer.php?u=https://fox.build/"));
         }
 
         private void PhoneGestureRecognizer_Tapped(object sender, EventArgs e)
@@ -37,7 +39,10 @@ namespace ResSched.Views
 
         private void SlackGestureRecognizer_Tapped(object sender, EventArgs e)
         {
-            Application.Current.MainPage.DisplayAlert("Wait!", "You must be a member to join our Slack Channel!", "OK");
+            Application.Current.MainPage.DisplayAlert(
+                "Wait!", 
+                "You must be a member to join our Slack Channel!", 
+                "OK");
         }
 
         private void TwitterGestureRecognizer_Tapped(object sender, EventArgs e)
@@ -48,7 +53,7 @@ namespace ResSched.Views
 
         private void BackButton_Tapped(object sender, EventArgs e)
         {
-            //TODO: back to the home detail page
+            (RootPage.Master as MenuPage).TakeMeHere(MenuItemType.Browse);
         }
     }
 }

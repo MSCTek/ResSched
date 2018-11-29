@@ -33,12 +33,10 @@ namespace ResSched.Views
                         MenuPages.Add(id, new NavigationPage(new AboutPage()));
                         break;
                     case (int)MenuItemType.Login:
-                        //TODO: Add login page
-                        MenuPages.Add(id, new NavigationPage(new AboutPage()));
+                        MenuPages.Add(id, new NavigationPage(new Login()));
                         break;
                     case (int)MenuItemType.MyReservations:
-                        //TODO: Add My reservations page
-                        MenuPages.Add(id, new NavigationPage(new AboutPage()));
+                        MenuPages.Add(id, new NavigationPage(new MyReservations()));
                         break;
                 }
             }

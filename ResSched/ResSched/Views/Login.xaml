@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ResSched.Views.Login">
+    <ContentPage.Content>
+        <StackLayout HorizontalOptions="Center" Spacing="0">
+            <Image Margin="0,20,0,0" HeightRequest="150" >
+                <Image.Source>
+                    <UriImageSource Uri="{StaticResource FoxImage}"
+                                    CacheValidity="100" CachingEnabled="True"/>
+                </Image.Source>
+            </Image>
+
+            <Button Text="Login with Microsoft" Style="{StaticResource ButtonStyle}"/>
+            <Button Text="Login with Facebook" Style="{StaticResource ButtonStyle}"/>
+            <Button Text="Login with Google" Style="{StaticResource ButtonStyle}"/>
+
+            <Button Text="Login as Guest" Margin="0,15,0,0" Style="{StaticResource ButtonStyle}"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

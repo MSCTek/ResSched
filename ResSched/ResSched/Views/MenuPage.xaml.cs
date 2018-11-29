@@ -10,12 +10,15 @@ namespace ResSched.Views
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class MenuPage : ContentPage
     {
-        MainPage RootPage { get => Application.Current.MainPage as MainPage; }
-        List<HomeMenuItem> menuItems;
+        private MainPage RootPage { get => Application.Current.MainPage as MainPage; }
+        private List<HomeMenuItem> menuItems;
+
         public MenuPage()
         {
             InitializeComponent();
 
+
+            //TODO: Remove MyReservation page if the user is not logged in
             menuItems = new List<HomeMenuItem>
             {
                 new HomeMenuItem {Id = MenuItemType.Browse, Title="Browse" },
@@ -27,14 +30,27 @@ namespace ResSched.Views
             ListViewMenu.ItemsSource = menuItems;
 
             ListViewMenu.SelectedItem = menuItems[0];
-            ListViewMenu.ItemSelected += async (sender, e) =>
-            {
-                if (e.SelectedItem == null)
-                    return;
+            ListViewMenu.ItemSelected += OnMenuItemSelected;
+        }
 
-                var id = (int)((HomeMenuItem)e.SelectedItem).Id;
-                await RootPage.NavigateFromMenu(id);
-            };
+        private async void OnMenuItemSelected(object sender, SelectedItemChangedEventArgs  e)
+        {
+            if (e.SelectedItem == null)
+                return;
+
+            var id = (int)((HomeMenuItem)e.SelectedItem).Id;
+            await RootPage.NavigateFromMenu(id);
+        }
+
+        public void TakeMeHere(int pageNumber)
+        {
+            ListViewMenu.SelectedItem = menuItems[pageNumber];
+        }
+
+        public void TakeMeHere(MenuItemType page)
+        {
+            int id = (int)page;
+            ListViewMenu.SelectedItem = menuItems[id];
         }
     }
 }

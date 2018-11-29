@@ -6,10 +6,10 @@ namespace ResSched.Models
 {
     public enum MenuItemType
     {
-        Browse,
-        About,
-        Login,
-        MyReservations
+        Browse = 0,
+        About = 1,
+        Login = 2,
+        MyReservations = 3
     }
     public class HomeMenuItem
     {

@@ -45,5 +45,10 @@ namespace ResSched.Views
             Device.OpenUri(new Uri("https://twitter.com/fox_build"));
             //Device.OpenUri(new Uri( "https://twitter.com/intent/tweet?text=Home&url=https%3A%2F%2Ffox.build%2F&via=@fox_build"));
         }
+
+        private void BackButton_Tapped(object sender, EventArgs e)
+        {
+            //TODO: back to the home detail page
+        }
     }
 }

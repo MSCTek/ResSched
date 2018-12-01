@@ -11,6 +11,9 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Microsoft.AppCenter" Version="1.11.0" />
+    <PackageReference Include="Microsoft.AppCenter.Analytics" Version="1.11.0" />
+    <PackageReference Include="Microsoft.AppCenter.Crashes" Version="1.11.0" />
     <PackageReference Include="Microsoft.Identity.Client" Version="2.4.0-preview" />
     <PackageReference Include="sqlite-net-standard" Version="1.5.1" />
     <PackageReference Include="Xamarin.Essentials" Version="0.11.0-preview" />

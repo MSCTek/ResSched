@@ -3,6 +3,9 @@ using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 using ResSched.Services;
 using ResSched.Views;
+using Microsoft.AppCenter;
+using Microsoft.AppCenter.Analytics;
+using Microsoft.AppCenter.Crashes;
 
 [assembly: XamlCompilation(XamlCompilationOptions.Compile)]
 namespace ResSched
@@ -28,6 +31,11 @@ namespace ResSched
         protected override void OnStart()
         {
             // Handle when your app starts
+            AppCenter.Start("android=30c191aa-6efe-4434-8b3d-42f0a9e817b9;" +
+                  "uwp=e682f484-a14d-46ea-8e08-714ff2b43dcc;" +
+                  "ios=b3df61a0-5842-4342-a345-70f7d27f1575",
+                  typeof(Analytics), typeof(Crashes));
+
         }
 
         protected override void OnSleep()

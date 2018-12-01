@@ -2,10 +2,10 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:ctrl="clr-namespace:ResSched.Controls"
-             xmlns:con="clr-namespace:ResSched.Converters"
              x:Class="ResSched.Views.AboutPage"
              xmlns:vm="clr-namespace:ResSched.ViewModels"
-             Title="{Binding Title}">
+             NavigationPage.HasNavigationBar="False" 
+             NavigationPage.HasBackButton="False">
     
     <ContentPage.BindingContext>
         <vm:AboutViewModel />
@@ -16,21 +16,19 @@
             <Color x:Key="Primary">#2196F3</Color>
             <Color x:Key="Accent">#96d1ff</Color>
             <Color x:Key="LightTextColor">#999999</Color>
-            <con:MyReallyGreatConverter x:Key="MyReallyGreatConverter"/>
         </ResourceDictionary>
     </ContentPage.Resources>
 
     <ContentPage.Content>
         <Grid RowSpacing="0">
-        <Grid.RowDefinitions>
-            <RowDefinition Height="auto" />
-            <RowDefinition Height="2" />
-            <RowDefinition Height="*" />
-        </Grid.RowDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto" />
+                <RowDefinition Height="2" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
 
             <ctrl:IconLabel Text="&#xf060;" />
             
-
             <Grid Grid.Row="0" BackgroundColor="White">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="auto"/>
@@ -47,14 +45,12 @@
 
             <StackLayout Grid.Column="1" Orientation="Vertical" Margin="0,10" Spacing="3">
                 <Label Text="Fox.Build" FontSize="Medium"/>
-                <Label Text="About Us" FontSize="Default"/>
-                    <Label Text="{Binding , Converter={StaticResource MyReallyGreatConverter}}" />
+                    <Label Text="About Us" FontSize="Default"/>
                 </StackLayout>
 
             <Image Grid.Column="2" Margin="0,10,15,0" HeightRequest="75" >
                 <Image.Source>
-                    <UriImageSource Uri="https://github.com/robintschroeder/ResSched/blob/master/Assets/FoxBuild_400x400.jpg?raw=true"
-                                    CacheValidity="100" CachingEnabled="True"/>
+                        <UriImageSource Uri="{StaticResource FoxImage}" CacheValidity="100" CachingEnabled="True"/>
                 </Image.Source>
             </Image>
         </Grid>
@@ -100,12 +96,10 @@
                     </Label>
                 </StackLayout>
 
-                <Label x:Name="Meh" Style="{StaticResource FA.Regular.LabelStyle}" Text="&#xf11a;" 
+                <!-- This is just a test of the third font awesome library-->
+               <Label x:Name="Meh" Style="{StaticResource FA.Regular.LabelStyle}" Text="&#xf11a;" 
                            HeightRequest="100" TextColor="Green" FontSize="42"/>
-                
-            
-            
-            </StackLayout>
+                </StackLayout>
         </ScrollView>
     </Grid>
     </ContentPage.Content>

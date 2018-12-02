@@ -1,5 +1,8 @@
-﻿using ResSched.Models;
+﻿using Microsoft.AppCenter.Analytics;
+using Microsoft.AppCenter.Crashes;
+using ResSched.Models;
 using System;
+using System.Collections.Generic;
 using Xamarin.Essentials;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
@@ -26,14 +29,25 @@ namespace ResSched.Views
             try
             {
                 PhoneDialer.Open("16303449385");
+                Analytics.TrackEvent("Phone Call Attempted", new Dictionary<string, string> {
+                        { "Where", "AboutUsPage-PhoneNumber-Tap" }
+                    });
             }
             catch (FeatureNotSupportedException ex)
             {
                 Application.Current.MainPage.DisplayAlert("Error", "Sorry, the phone dialer is not supported on this device.", "OK");
+                Analytics.TrackEvent("Phone Call Attempted", new Dictionary<string, string> {
+                        { "Where", "AboutUsPage-PhoneNumber-Tap" },
+                        { "Error", "Phone dialer was not supported on device."}
+                    });
             }
             catch (Exception ex)
             {
                 Application.Current.MainPage.DisplayAlert("Error", ex.Message, "OK");
+                Crashes.TrackError(ex, new Dictionary<string, string>{
+                            { "Where", "AboutUsPage-PhoneNumber-Tap" },
+                            { "Error", ex.Message }
+                        });
             }
         }
 
@@ -54,6 +68,11 @@ namespace ResSched.Views
         private void BackButton_Tapped(object sender, EventArgs e)
         {
             (RootPage.Master as MenuPage).TakeMeHere(MenuItemType.Browse);
+        }
+
+        private void TestCrashButton_Clicked(object sender, EventArgs e)
+        {
+            Crashes.GenerateTestCrash();
         }
     }
 }

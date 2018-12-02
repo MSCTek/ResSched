@@ -18,11 +18,36 @@
                 </Image.Source>
             </Image>
 
-            <Button Text="Login with Microsoft" Style="{StaticResource ButtonStyle}"/>
-            <Button Text="Login with Facebook" Style="{StaticResource ButtonStyle}"/>
-            <Button Text="Login with Google" Style="{StaticResource ButtonStyle}"/>
+            <Button Text="Sign in with Microsoft"  x:Name="btnSignInSignOutMicrosoft" Clicked="OnSignInSignOutMicrosoft" Style="{StaticResource ButtonStyle}" />
+            <Button Text="Sign in with Facebook" Style="{StaticResource ButtonStyle}"/>
+            <Button Text="Sign in with Google" Style="{StaticResource ButtonStyle}"/>
 
-            <Button Text="Login as Guest" Margin="0,15,0,0" Style="{StaticResource ButtonStyle}"/>
+            <Button Text="Sign in as Guest" x:Name="btnSignInSignOutGuest" Clicked="OnSignInSignOutGuest" Margin="0,20,0,10" Style="{StaticResource ButtonStyle}"/>
+
+            <StackLayout x:Name="slUser" IsVisible="False" Padding="5,10">
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="DisplayName " FontAttributes="Bold" />
+                    <Label x:Name="lblDisplayName" />
+                </StackLayout>
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="GivenName " FontAttributes="Bold" />
+                    <Label x:Name="lblGivenName" />
+                </StackLayout>
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="Surname " FontAttributes="Bold" />
+                    <Label x:Name="lblSurname" />
+                </StackLayout>
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="Id " FontAttributes="Bold" />
+                    <Label x:Name="lblId" />
+                </StackLayout>
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="UserPrincipalName " FontAttributes="Bold" />
+                    <Label x:Name="lblUserPrincipalName" />
+                </StackLayout>
+            </StackLayout>
+            <BoxView Color="Transparent" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" />
+            
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

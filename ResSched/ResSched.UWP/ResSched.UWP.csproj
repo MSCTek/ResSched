@@ -161,6 +161,9 @@
     <PackageReference Include="Microsoft.Identity.Client">
       <Version>2.4.0-preview</Version>
     </PackageReference>
+    <PackageReference Include="MvvmLightLibs">
+      <Version>5.4.1.1</Version>
+    </PackageReference>
     <PackageReference Include="sqlite-net-standard">
       <Version>1.5.1</Version>
     </PackageReference>

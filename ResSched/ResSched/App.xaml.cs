@@ -19,8 +19,11 @@ namespace ResSched
 
         public static PublicClientApplication PCA = null;
         public static string AuthClientID = "7fda6409-a86f-4e4f-8d59-288588dffa46";
+
         public static string[] AuthScopes = { "User.Read" };
+
         public static string AuthUserName = string.Empty;
+
         public static string AuthUserEmail = string.Empty;
 
         public static UIParent UiParent { get; set; }

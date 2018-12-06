@@ -3,9 +3,9 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace ResSched.Models.Obj
+namespace ResSched.ObjModel
 {
-    public class ResourceSchedule : ObservableObject
+    public partial class ResourceSchedule : ObservableObject
     {
         private DateTime _reservationDateTime;
         private string _reservationNotes;

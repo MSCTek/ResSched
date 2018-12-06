@@ -7,10 +7,11 @@ using Xamarin.Forms;
 
 using ResSched.Models;
 using ResSched.Services;
+using GalaSoft.MvvmLight;
 
 namespace ResSched.ViewModels
 {
-    public class BaseViewModel : INotifyPropertyChanged
+    public class BaseViewModel : ObservableObject
     {
         public IDataStore<Item> DataStore => DependencyService.Get<IDataStore<Item>>() ?? new MockDataStore();
 

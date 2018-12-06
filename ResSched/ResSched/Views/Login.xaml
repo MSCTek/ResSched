@@ -13,41 +13,39 @@
 
             <Image Margin="0,40,0,0" HeightRequest="150" >
                 <Image.Source>
-                    <UriImageSource Uri="{StaticResource FoxImage}"
-                                    CacheValidity="100" CachingEnabled="True"/>
+                    <UriImageSource Uri="{StaticResource FoxImage}" CacheValidity="100" CachingEnabled="True"/>
                 </Image.Source>
             </Image>
 
-            <Button Text="Sign in with Microsoft"  x:Name="btnSignInSignOutMicrosoft" Clicked="OnSignInSignOutMicrosoft" Style="{StaticResource ButtonStyle}" />
-            <Button Text="Sign in with Facebook" Style="{StaticResource ButtonStyle}"/>
+            <Button Text="Sign in with Microsoft" Command="{Binding MicrosoftSignInCommand}" Style="{StaticResource ButtonStyle}" />
+            <Button Text="Sign in with Slack" Style="{StaticResource ButtonStyle}" Command="{Binding SlackSignInCommand}" IsVisible="{Binding ShowSlackSignIn}"/>
             <Button Text="Sign in with Google" Style="{StaticResource ButtonStyle}"/>
 
-            <Button Text="Sign in as Guest" x:Name="btnSignInSignOutGuest" Clicked="OnSignInSignOutGuest" Margin="0,20,0,10" Style="{StaticResource ButtonStyle}"/>
+            <Button Text="{Binding GuestButtonText}" Command="{Binding GuestSignInCommand}" Margin="0,20,0,10" Style="{StaticResource ButtonStyle}"/>
 
-            <StackLayout x:Name="slUser" IsVisible="False" Padding="5,10">
+            <StackLayout IsVisible="{Binding IsUserVisible}" Padding="5,10">
                 <StackLayout Orientation="Horizontal">
                     <Label Text="DisplayName " FontAttributes="Bold" />
-                    <Label x:Name="lblDisplayName" />
+                    <Label Text ="{Binding DisplayName}"  />
                 </StackLayout>
                 <StackLayout Orientation="Horizontal">
                     <Label Text="GivenName " FontAttributes="Bold" />
-                    <Label x:Name="lblGivenName" />
+                    <Label Text="{Binding GivenName}"  />
                 </StackLayout>
                 <StackLayout Orientation="Horizontal">
                     <Label Text="Surname " FontAttributes="Bold" />
-                    <Label x:Name="lblSurname" />
+                    <Label Text="{Binding SurName}"  />
                 </StackLayout>
                 <StackLayout Orientation="Horizontal">
                     <Label Text="Id " FontAttributes="Bold" />
-                    <Label x:Name="lblId" />
+                    <Label Text="{Binding Id}"  />
                 </StackLayout>
                 <StackLayout Orientation="Horizontal">
                     <Label Text="UserPrincipalName " FontAttributes="Bold" />
-                    <Label x:Name="lblUserPrincipalName" />
+                    <Label Text="{Binding UserPrincipalName}"/>
                 </StackLayout>
             </StackLayout>
-            <BoxView Color="Transparent" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" />
-            
+
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

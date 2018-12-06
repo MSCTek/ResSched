@@ -19,7 +19,8 @@
     <PackageReference Include="sqlite-net-standard" Version="1.5.1" />
     <PackageReference Include="Xamarin.Essentials" Version="0.11.0-preview" />
     <PackageReference Include="Xamarin.Forms" Version="3.1.0.697729" />  
-    <PackageReference Include="Newtonsoft.Json" Version="11.0.2" />
+    <PackageReference Include="Newtonsoft.Json" Version="11.0.2" />  
+    <PackageReference Include="Xamarin.Forms.OAuth" Version="1.2.1" />
   </ItemGroup>
 
   <ItemGroup>

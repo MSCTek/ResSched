@@ -3,8 +3,11 @@ using Microsoft.AppCenter.Analytics;
 using Microsoft.AppCenter.Crashes;
 using Microsoft.Identity.Client;
 using Newtonsoft.Json.Linq;
+using ResSched.Helpers;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Net.Http;
 using System.Threading.Tasks;
@@ -15,15 +18,11 @@ namespace ResSched.ViewModels
 {
     public class LoginViewModel : BaseViewModel
     {
-        private string _guestButtonText;
-        private bool _isUserVisible;
-        private string _microsoftButtonText;
-        private bool _showSlackSignIn;
 
         public LoginViewModel()
         {
-            GuestButtonText = "Sign in as Guest";
-            MicrosoftButtonText = "Sign in with Microsoft";
+            GuestButtonText = GuestText.SignIn.ToDescription();
+            MicrosoftButtonText = MicrosoftText.SignIn.ToDescription();
 
             switch (Device.RuntimePlatform)
             {
@@ -36,12 +35,6 @@ namespace ResSched.ViewModels
             }
         }
 
-        public string GuestButtonText
-        {
-            get { return _guestButtonText; }
-            set { Set(nameof(GuestButtonText), ref _guestButtonText, value); }
-        }
-
         public RelayCommand GuestSignInCommand
         {
             get
@@ -50,19 +43,19 @@ namespace ResSched.ViewModels
                 {
                     try
                     {
-                        if (GuestButtonText == "Sign in as Guest")
+                        if (GuestButtonText == GuestText.SignIn.ToDescription())
                         {
-                            App.AuthUserEmail = "guest@guest.com";
-                            App.AuthUserName = "Guest";
                             IsUserVisible = true;
                             DisplayName = "Guest";
                             GivenName = "Guest";
                             Id = "Guest";
                             SurName = "Guest";
-                            UserPrincipalName = "Guest";
+                            UserPrincipalName = "guest@guest.com";
 
-                            GuestButtonText = "Sign out as Guest";
-                            MicrosoftButtonText = "Sign in with Microsoft";
+                            RecordSuccessfulLogin(DisplayName, UserPrincipalName, "Guest Login");
+
+                            GuestButtonText = GuestText.SignOut.ToDescription();
+                            MicrosoftButtonText = MicrosoftText.SignIn.ToDescription();
                         }
                         else
                         {
@@ -70,8 +63,8 @@ namespace ResSched.ViewModels
                             App.AuthUserName = string.Empty;
                             IsUserVisible = false;
 
-                            GuestButtonText = "Sign in as Guest";
-                            MicrosoftButtonText = "Sign in with Microsoft";
+                            GuestButtonText = GuestText.SignIn.ToDescription();
+                            MicrosoftButtonText = MicrosoftText.SignIn.ToDescription();
                         }
                     }
                     catch (Exception ex)
@@ -80,18 +73,6 @@ namespace ResSched.ViewModels
                     }
                 });
             }
-        }
-
-        public bool IsUserVisible
-        {
-            get { return _isUserVisible; }
-            set { Set(nameof(IsUserVisible), ref _isUserVisible, value); }
-        }
-
-        public string MicrosoftButtonText
-        {
-            get { return _microsoftButtonText; }
-            set { Set(nameof(MicrosoftButtonText), ref _microsoftButtonText, value); }
         }
 
         public RelayCommand MicrosoftSignInCommand
@@ -104,7 +85,7 @@ namespace ResSched.ViewModels
                     IEnumerable<IAccount> accounts = await App.PCA.GetAccountsAsync();
                     try
                     {
-                        if (MicrosoftButtonText == "Sign in with Microsoft")
+                        if (MicrosoftButtonText == MicrosoftText.SignIn.ToDescription())
                         {
                             // let's see if we have a user in our belly already
                             try
@@ -113,16 +94,16 @@ namespace ResSched.ViewModels
                                 authResult = await App.PCA.AcquireTokenSilentAsync(App.AuthScopes, firstAccount);
                                 await RefreshUserDataAsync(authResult.AccessToken).ConfigureAwait(false);
 
-                                MicrosoftButtonText = "Sign out with Microsoft";
-                                GuestButtonText = "Sign in as Guest";
+                                MicrosoftButtonText = MicrosoftText.SignOut.ToDescription();
+                                GuestButtonText = GuestText.SignIn.ToDescription();
                             }
                             catch (MsalUiRequiredException ex)
                             {
                                 authResult = await App.PCA.AcquireTokenAsync(App.AuthScopes, App.UiParent);
                                 await RefreshUserDataAsync(authResult.AccessToken);
 
-                                MicrosoftButtonText = "Sign out with Microsoft";
-                                GuestButtonText = "Sign in as Guest";
+                                MicrosoftButtonText = MicrosoftText.SignOut.ToDescription();
+                                GuestButtonText = GuestText.SignIn.ToDescription();
                             }
                         }
                         else
@@ -137,8 +118,8 @@ namespace ResSched.ViewModels
 
                             IsUserVisible = false;
 
-                            MicrosoftButtonText = "Sign in with Microsoft";
-                            GuestButtonText = "Sign in as Guest";
+                            MicrosoftButtonText = MicrosoftText.SignIn.ToDescription();
+                            GuestButtonText = GuestText.SignIn.ToDescription();
                         }
                     }
                     catch (Exception ex)
@@ -149,18 +130,15 @@ namespace ResSched.ViewModels
             }
         }
 
-        public bool ShowSlackSignIn
-        {
-            get { return _showSlackSignIn; }
-            set { Set(nameof(ShowSlackSignIn), ref _showSlackSignIn, value); }
-        }
-
         public RelayCommand SlackSignInCommand
         {
             get
             {
                 return new RelayCommand(async () =>
                 {
+                    MicrosoftButtonText = MicrosoftText.SignIn.ToDescription();
+                    GuestButtonText = GuestText.SignIn.ToDescription();
+
                     var authenticationResult = await OAuthAuthenticator.Authenticate();
 
                     if (authenticationResult)
@@ -169,6 +147,8 @@ namespace ResSched.ViewModels
                         Id = authenticationResult.Account.Id;
                         DisplayName = authenticationResult.Account.DisplayName;
                         Token = authenticationResult.Account.AccessToken.RefreshToken;
+
+                        RecordSuccessfulLogin(DisplayName, string.Empty, ProviderName);
                     }
                     else
                     {
@@ -178,7 +158,19 @@ namespace ResSched.ViewModels
             }
         }
 
-        public async Task RefreshUserDataAsync(string token)
+        private void RecordSuccessfulLogin(string userName, string userEmail, string loginSource)
+        {
+            App.AuthUserEmail = userName;
+            App.AuthUserName = userEmail;
+
+            Analytics.TrackEvent("Successful Login", new Dictionary<string, string>{
+                            { "Source", loginSource },
+                            { "UserName", userName },
+                            {"UserEmail", userEmail }
+                        });
+        }
+
+        private async Task RefreshUserDataAsync(string token)
         {
             //get data from API
             HttpClient client = new HttpClient();
@@ -195,12 +187,48 @@ namespace ResSched.ViewModels
                 Id = user["id"].ToString();
                 SurName = user["surname"].ToString();
                 UserPrincipalName = user["userPrincipalName"].ToString();
+
+                RecordSuccessfulLogin(DisplayName, UserPrincipalName, "Microsoft");
+
             }
             else
             {
                 Analytics.TrackEvent($"API call error: {responseString}");
             }
         }
+
+        #region UI properties
+
+        private string _guestButtonText;
+        private bool _isUserVisible;
+        private string _microsoftButtonText;
+        private bool _showSlackSignIn;
+
+        public bool IsUserVisible
+        {
+            get { return _isUserVisible; }
+            set { Set(nameof(IsUserVisible), ref _isUserVisible, value); }
+        }
+
+        public string MicrosoftButtonText
+        {
+            get { return _microsoftButtonText; }
+            set { Set(nameof(MicrosoftButtonText), ref _microsoftButtonText, value); }
+        }
+        public bool ShowSlackSignIn
+        {
+            get { return _showSlackSignIn; }
+            set { Set(nameof(ShowSlackSignIn), ref _showSlackSignIn, value); }
+        }
+
+        public string GuestButtonText
+        {
+            get { return _guestButtonText; }
+            set { Set(nameof(GuestButtonText), ref _guestButtonText, value); }
+        }
+
+        #endregion
+
         #region display properties
 
         private string _displayName;
@@ -262,5 +290,21 @@ namespace ResSched.ViewModels
         }
 
         #endregion display properties
+    }
+
+    public enum MicrosoftText
+    {
+        [DescriptionAttribute("Sign in with Microsoft") ]
+        SignIn,
+        [DescriptionAttribute("Sign out with Microsoft")]
+        SignOut,
+    }
+
+    public enum GuestText
+    {
+        [DescriptionAttribute("Sign in as Guest")]
+        SignIn,
+        [DescriptionAttribute("Sign out as Guest")]
+        SignOut,
     }
 }

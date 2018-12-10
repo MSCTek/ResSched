@@ -9,6 +9,9 @@ namespace ResSched
     {
         //These are shared by all environments
         public const string MSALClientId = "";
+        public const string MSALRedirectUri = "msal_______://auth";
+        public static string[] MSALAuthScopes = { "User.Read" };
+
         public const string SlackClientId = "";
         public const string SlackClientSecret = "";
         public const string SlackRedirectUri = "";

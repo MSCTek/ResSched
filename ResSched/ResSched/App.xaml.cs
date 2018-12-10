@@ -21,7 +21,7 @@ namespace ResSched
         #region MSAL
         public static PublicClientApplication PCA = null;
         public static string AuthClientID = Config.MSALClientId;
-        public static string[] AuthScopes = { "User.Read" };
+        public static string[] AuthScopes = Config.MSALAuthScopes;
         public static UIParent UiParent { get; set; }
         #endregion
 
@@ -39,7 +39,7 @@ namespace ResSched
             //MSAL
             PCA = new PublicClientApplication(AuthClientID)
             {
-                RedirectUri = $"msal{Config.MSALClientId}://auth",
+                RedirectUri = Config.MSALRedirectUri,
             };
 
             //OAuth for Slack

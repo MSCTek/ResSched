@@ -6,8 +6,6 @@ using Newtonsoft.Json.Linq;
 using ResSched.Helpers;
 using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Net.Http;
 using System.Threading.Tasks;

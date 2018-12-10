@@ -21,8 +21,8 @@ namespace ResSched.ViewModels
 
         public LoginViewModel()
         {
-            GuestButtonText = GuestText.SignIn.ToDescription();
-            MicrosoftButtonText = MicrosoftText.SignIn.ToDescription();
+            GuestButtonText = GuestText.Sign_in_as_Guest.ToDescription();
+            MicrosoftButtonText = MicrosoftText.Sign_in_with_Microsoft.ToDescription();
 
             switch (Device.RuntimePlatform)
             {
@@ -43,7 +43,7 @@ namespace ResSched.ViewModels
                 {
                     try
                     {
-                        if (GuestButtonText == GuestText.SignIn.ToDescription())
+                        if (GuestButtonText == GuestText.Sign_in_as_Guest.ToDescription())
                         {
                             IsUserVisible = true;
                             DisplayName = "Guest";
@@ -54,8 +54,8 @@ namespace ResSched.ViewModels
 
                             RecordSuccessfulLogin(DisplayName, UserPrincipalName, "Guest Login");
 
-                            GuestButtonText = GuestText.SignOut.ToDescription();
-                            MicrosoftButtonText = MicrosoftText.SignIn.ToDescription();
+                            GuestButtonText = GuestText.Sign_out_as_Guest.ToDescription();
+                            MicrosoftButtonText = MicrosoftText.Sign_in_with_Microsoft.ToDescription();
                         }
                         else
                         {
@@ -63,8 +63,8 @@ namespace ResSched.ViewModels
                             App.AuthUserName = string.Empty;
                             IsUserVisible = false;
 
-                            GuestButtonText = GuestText.SignIn.ToDescription();
-                            MicrosoftButtonText = MicrosoftText.SignIn.ToDescription();
+                            GuestButtonText = GuestText.Sign_in_as_Guest.ToDescription();
+                            MicrosoftButtonText = MicrosoftText.Sign_in_with_Microsoft.ToDescription();
                         }
                     }
                     catch (Exception ex)
@@ -85,7 +85,7 @@ namespace ResSched.ViewModels
                     IEnumerable<IAccount> accounts = await App.PCA.GetAccountsAsync();
                     try
                     {
-                        if (MicrosoftButtonText == MicrosoftText.SignIn.ToDescription())
+                        if (MicrosoftButtonText == MicrosoftText.Sign_in_with_Microsoft.ToDescription())
                         {
                             // let's see if we have a user in our belly already
                             try
@@ -94,16 +94,16 @@ namespace ResSched.ViewModels
                                 authResult = await App.PCA.AcquireTokenSilentAsync(App.AuthScopes, firstAccount);
                                 await RefreshUserDataAsync(authResult.AccessToken).ConfigureAwait(false);
 
-                                MicrosoftButtonText = MicrosoftText.SignOut.ToDescription();
-                                GuestButtonText = GuestText.SignIn.ToDescription();
+                                MicrosoftButtonText = MicrosoftText.Sign_out_with_Microsoft.ToDescription();
+                                GuestButtonText = GuestText.Sign_in_as_Guest.ToDescription();
                             }
                             catch (MsalUiRequiredException ex)
                             {
                                 authResult = await App.PCA.AcquireTokenAsync(App.AuthScopes, App.UiParent);
                                 await RefreshUserDataAsync(authResult.AccessToken);
 
-                                MicrosoftButtonText = MicrosoftText.SignOut.ToDescription();
-                                GuestButtonText = GuestText.SignIn.ToDescription();
+                                MicrosoftButtonText = MicrosoftText.Sign_out_with_Microsoft.ToDescription();
+                                GuestButtonText = GuestText.Sign_in_as_Guest.ToDescription();
                             }
                         }
                         else
@@ -118,8 +118,8 @@ namespace ResSched.ViewModels
 
                             IsUserVisible = false;
 
-                            MicrosoftButtonText = MicrosoftText.SignIn.ToDescription();
-                            GuestButtonText = GuestText.SignIn.ToDescription();
+                            MicrosoftButtonText = MicrosoftText.Sign_in_with_Microsoft.ToDescription();
+                            GuestButtonText = GuestText.Sign_in_as_Guest.ToDescription();
                         }
                     }
                     catch (Exception ex)
@@ -136,8 +136,8 @@ namespace ResSched.ViewModels
             {
                 return new RelayCommand(async () =>
                 {
-                    MicrosoftButtonText = MicrosoftText.SignIn.ToDescription();
-                    GuestButtonText = GuestText.SignIn.ToDescription();
+                    MicrosoftButtonText = MicrosoftText.Sign_in_with_Microsoft.ToDescription();
+                    GuestButtonText = GuestText.Sign_in_as_Guest.ToDescription();
 
                     var authenticationResult = await OAuthAuthenticator.Authenticate();
 
@@ -294,17 +294,13 @@ namespace ResSched.ViewModels
 
     public enum MicrosoftText
     {
-        [DescriptionAttribute("Sign in with Microsoft") ]
-        SignIn,
-        [DescriptionAttribute("Sign out with Microsoft")]
-        SignOut,
+        Sign_in_with_Microsoft,
+        Sign_out_with_Microsoft,
     }
 
     public enum GuestText
     {
-        [DescriptionAttribute("Sign in as Guest")]
-        SignIn,
-        [DescriptionAttribute("Sign out as Guest")]
-        SignOut,
+        Sign_in_as_Guest,
+        Sign_out_as_Guest,
     }
 }

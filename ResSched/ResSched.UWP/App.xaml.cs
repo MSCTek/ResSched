@@ -52,6 +52,9 @@ namespace ResSched.UWP
 
                 rootFrame.NavigationFailed += OnNavigationFailed;
 
+                //Xamarin.Auth
+                //Xamarin.Auth.Presenters.UWP.AuthenticationConfiguration.Init();
+
                 Xamarin.Forms.Forms.Init(e);
 
                 if (e.PreviousExecutionState == ApplicationExecutionState.Terminated)

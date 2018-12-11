@@ -21,6 +21,7 @@ namespace ResSched.ViewModels
         {
             GuestButtonText = GuestText.Sign_in_as_Guest.ToDescription();
             MicrosoftButtonText = MicrosoftText.Sign_in_with_Microsoft.ToDescription();
+            ErrorDescription = string.Empty;
 
             switch (Device.RuntimePlatform)
             {
@@ -67,6 +68,7 @@ namespace ResSched.ViewModels
                     }
                     catch (Exception ex)
                     {
+                        ErrorDescription = ex.Message;
                         Crashes.TrackError(ex);
                     }
                 });
@@ -122,6 +124,7 @@ namespace ResSched.ViewModels
                     }
                     catch (Exception ex)
                     {
+                        ErrorDescription = ex.Message;
                         Crashes.TrackError(ex);
                     }
                 });
@@ -166,6 +169,7 @@ namespace ResSched.ViewModels
                             { "UserName", userName },
                             {"UserEmail", userEmail }
                         });
+            ErrorDescription = string.Empty;
         }
 
         private async Task RefreshUserDataAsync(string token)
@@ -191,6 +195,7 @@ namespace ResSched.ViewModels
             }
             else
             {
+                ErrorDescription = responseString;
                 Analytics.TrackEvent($"API call error: {responseString}");
             }
         }

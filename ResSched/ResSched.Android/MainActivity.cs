@@ -21,13 +21,18 @@ namespace ResSched.Droid
             TabLayoutResource = Resource.Layout.Tabbar;
             ToolbarResource = Resource.Layout.Toolbar;
 
-            
-
             base.OnCreate(savedInstanceState);
+
+            //for Xamarin.Auth
+            //global::Xamarin.Auth.Presenters.XamarinAndroid.AuthenticationConfiguration.Init(this, savedInstanceState);
+
+            //for CrossCurrentActivity Plugin
             CrossCurrentActivity.Current.Init(this, savedInstanceState);
+
             global::Xamarin.Forms.Forms.Init(this, savedInstanceState);
             LoadApplication(new App());
 
+            //for MSAL
             App.UiParent = new UIParent(Xamarin.Forms.Forms.Context as Activity);
 
         }

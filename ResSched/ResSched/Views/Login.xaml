@@ -44,6 +44,7 @@
                     <Label Text="UserPrincipalName " FontAttributes="Bold" />
                     <Label Text="{Binding UserPrincipalName}"/>
                 </StackLayout>
+                <Label Text="{Binding ErrorDescription} " FontAttributes="Bold" />
             </StackLayout>
 
         </StackLayout>

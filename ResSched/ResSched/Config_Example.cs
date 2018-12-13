@@ -4,8 +4,8 @@ using System.Text;
 
 namespace ResSched
 {
-    public class Config_Example
-    //public class Config
+    //public class Config_Example
+    public partial class Config
     {
         //These are shared by all environments
         public const string MSALClientId = "";

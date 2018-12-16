@@ -329,3 +329,4 @@ ASALocalRun/
 # MFractors (Xamarin productivity tool) working folder 
 .mfractor/
 /ResSched/ResSched/Config.cs
+ResSched/ResSched/Config_Example.cs

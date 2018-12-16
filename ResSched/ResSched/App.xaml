@@ -51,6 +51,8 @@
             <x:String x:Key="FontAwesomeFacebook">&#xf09a;</x:String>
 
             <x:String x:Key="FoxImage">https://github.com/robintschroeder/ResSched/blob/master/Assets/FoxBuild_400x400.jpg?raw=true</x:String>
+            <x:String x:Key="RedFoxImage">https://github.com/robintschroeder/ResSched/blob/master/Assets/Red_Fox_500x500.png?raw=true</x:String>
+            
             
             <!--Global Styles-->
             <Color x:Key="NavigationPrimary">#2196F3</Color>

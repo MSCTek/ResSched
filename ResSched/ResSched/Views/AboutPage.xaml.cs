@@ -1,4 +1,5 @@
-﻿using Microsoft.AppCenter.Analytics;
+﻿
+using Microsoft.AppCenter.Analytics;
 using Microsoft.AppCenter.Crashes;
 using ResSched.Models;
 using System;
@@ -28,7 +29,9 @@ namespace ResSched.Views
         {
             try
             {
+                throw new Exception("My really great ex");
                 PhoneDialer.Open("16303449385");
+
                 Analytics.TrackEvent("Phone Call Attempted", new Dictionary<string, string> {
                         { "Where", "AboutUsPage-PhoneNumber-Tap" }
                     });
@@ -72,7 +75,10 @@ namespace ResSched.Views
 
         private void TestCrashButton_Clicked(object sender, EventArgs e)
         {
-            Crashes.GenerateTestCrash();
+            //Crashes.GenerateTestCrash();
+
+            int zero = 0;
+            var badNUmber = zero / zero;
         }
     }
 }

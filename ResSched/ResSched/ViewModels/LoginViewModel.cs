@@ -10,7 +10,6 @@ using System.Linq;
 using System.Net.Http;
 using System.Threading.Tasks;
 using Xamarin.Forms;
-using Xamarin.Forms.OAuth;
 
 namespace ResSched.ViewModels
 {
@@ -22,16 +21,6 @@ namespace ResSched.ViewModels
             GuestButtonText = GuestText.Sign_in_as_Guest.ToDescription();
             MicrosoftButtonText = MicrosoftText.Sign_in_with_Microsoft.ToDescription();
             ErrorDescription = string.Empty;
-
-            switch (Device.RuntimePlatform)
-            {
-                case Device.UWP:
-                    ShowSlackSignIn = false;
-                    break;
-                default:
-                    ShowSlackSignIn = true;
-                    break;
-            }
         }
 
         public RelayCommand GuestSignInCommand
@@ -131,34 +120,6 @@ namespace ResSched.ViewModels
             }
         }
 
-        public RelayCommand SlackSignInCommand
-        {
-            get
-            {
-                return new RelayCommand(async () =>
-                {
-                    MicrosoftButtonText = MicrosoftText.Sign_in_with_Microsoft.ToDescription();
-                    GuestButtonText = GuestText.Sign_in_as_Guest.ToDescription();
-
-                    var authenticationResult = await OAuthAuthenticator.Authenticate();
-
-                    if (authenticationResult)
-                    {
-                        ProviderName = authenticationResult.Account.ProviderName;
-                        Id = authenticationResult.Account.Id;
-                        DisplayName = authenticationResult.Account.DisplayName;
-                        Token = authenticationResult.Account.AccessToken.RefreshToken;
-
-                        RecordSuccessfulLogin(DisplayName, string.Empty, ProviderName);
-                    }
-                    else
-                    {
-                        ErrorDescription = authenticationResult.ErrorDescription;
-                    }
-                });
-            }
-        }
-
         private void RecordSuccessfulLogin(string userName, string userEmail, string loginSource)
         {
             App.AuthUserEmail = userName;
@@ -205,7 +166,6 @@ namespace ResSched.ViewModels
         private string _guestButtonText;
         private bool _isUserVisible;
         private string _microsoftButtonText;
-        private bool _showSlackSignIn;
 
         public bool IsUserVisible
         {
@@ -217,11 +177,6 @@ namespace ResSched.ViewModels
         {
             get { return _microsoftButtonText; }
             set { Set(nameof(MicrosoftButtonText), ref _microsoftButtonText, value); }
-        }
-        public bool ShowSlackSignIn
-        {
-            get { return _showSlackSignIn; }
-            set { Set(nameof(ShowSlackSignIn), ref _showSlackSignIn, value); }
         }
 
         public string GuestButtonText

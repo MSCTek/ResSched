@@ -7,7 +7,6 @@ using Microsoft.AppCenter;
 using Microsoft.AppCenter.Analytics;
 using Microsoft.AppCenter.Crashes;
 using Microsoft.Identity.Client;
-using Xamarin.Forms.OAuth;
 
 [assembly: XamlCompilation(XamlCompilationOptions.Compile)]
 namespace ResSched
@@ -42,11 +41,6 @@ namespace ResSched
                 RedirectUri = Config.MSALRedirectUri,
             };
 
-            //OAuth for Slack
-            OAuthAuthenticator.AddPRovider(OAuthProviders.Slack(
-               Config.SlackClientId, Config.SlackClientSecret, Config.SlackRedirectUri, Config.SlackScopes));
-
-
             if (UseMockDataStore)
                 DependencyService.Register<MockDataStore>();
             else
@@ -60,7 +54,6 @@ namespace ResSched
             // Handle when your app starts
             AppCenter.Start($"android={Config.AppCenterAndroid};uwp={Config.AppCenterUWP};ios={Config.AppCenteriOS}",
                   typeof(Analytics), typeof(Crashes));
-
         }
 
         protected override void OnSleep()

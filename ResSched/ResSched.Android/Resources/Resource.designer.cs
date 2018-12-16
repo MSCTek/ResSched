@@ -26,2404 +26,6 @@ namespace ResSched.Droid
 		
 		public static void UpdateIdValues()
 		{
-			global::Xamarin.Auth.Resource.Animation.slide_in_right = global::ResSched.Droid.Resource.Animation.slide_in_right;
-			global::Xamarin.Auth.Resource.Animation.slide_out_left = global::ResSched.Droid.Resource.Animation.slide_out_left;
-			global::Xamarin.Auth.Resource.Attribute.font = global::ResSched.Droid.Resource.Attribute.font;
-			global::Xamarin.Auth.Resource.Attribute.fontProviderAuthority = global::ResSched.Droid.Resource.Attribute.fontProviderAuthority;
-			global::Xamarin.Auth.Resource.Attribute.fontProviderCerts = global::ResSched.Droid.Resource.Attribute.fontProviderCerts;
-			global::Xamarin.Auth.Resource.Attribute.fontProviderFetchStrategy = global::ResSched.Droid.Resource.Attribute.fontProviderFetchStrategy;
-			global::Xamarin.Auth.Resource.Attribute.fontProviderFetchTimeout = global::ResSched.Droid.Resource.Attribute.fontProviderFetchTimeout;
-			global::Xamarin.Auth.Resource.Attribute.fontProviderPackage = global::ResSched.Droid.Resource.Attribute.fontProviderPackage;
-			global::Xamarin.Auth.Resource.Attribute.fontProviderQuery = global::ResSched.Droid.Resource.Attribute.fontProviderQuery;
-			global::Xamarin.Auth.Resource.Attribute.fontStyle = global::ResSched.Droid.Resource.Attribute.fontStyle;
-			global::Xamarin.Auth.Resource.Attribute.fontWeight = global::ResSched.Droid.Resource.Attribute.fontWeight;
-			global::Xamarin.Auth.Resource.Boolean.abc_action_bar_embed_tabs = global::ResSched.Droid.Resource.Boolean.abc_action_bar_embed_tabs;
-			global::Xamarin.Auth.Resource.Color.notification_action_color_filter = global::ResSched.Droid.Resource.Color.notification_action_color_filter;
-			global::Xamarin.Auth.Resource.Color.notification_icon_bg_color = global::ResSched.Droid.Resource.Color.notification_icon_bg_color;
-			global::Xamarin.Auth.Resource.Color.notification_material_background_media_default_color = global::ResSched.Droid.Resource.Color.notification_material_background_media_default_color;
-			global::Xamarin.Auth.Resource.Color.primary_text_default_material_dark = global::ResSched.Droid.Resource.Color.primary_text_default_material_dark;
-			global::Xamarin.Auth.Resource.Color.ripple_material_light = global::ResSched.Droid.Resource.Color.ripple_material_light;
-			global::Xamarin.Auth.Resource.Color.secondary_text_default_material_dark = global::ResSched.Droid.Resource.Color.secondary_text_default_material_dark;
-			global::Xamarin.Auth.Resource.Color.secondary_text_default_material_light = global::ResSched.Droid.Resource.Color.secondary_text_default_material_light;
-			global::Xamarin.Auth.Resource.Dimension.compat_button_inset_horizontal_material = global::ResSched.Droid.Resource.Dimension.compat_button_inset_horizontal_material;
-			global::Xamarin.Auth.Resource.Dimension.compat_button_inset_vertical_material = global::ResSched.Droid.Resource.Dimension.compat_button_inset_vertical_material;
-			global::Xamarin.Auth.Resource.Dimension.compat_button_padding_horizontal_material = global::ResSched.Droid.Resource.Dimension.compat_button_padding_horizontal_material;
-			global::Xamarin.Auth.Resource.Dimension.compat_button_padding_vertical_material = global::ResSched.Droid.Resource.Dimension.compat_button_padding_vertical_material;
-			global::Xamarin.Auth.Resource.Dimension.compat_control_corner_material = global::ResSched.Droid.Resource.Dimension.compat_control_corner_material;
-			global::Xamarin.Auth.Resource.Dimension.notification_action_icon_size = global::ResSched.Droid.Resource.Dimension.notification_action_icon_size;
-			global::Xamarin.Auth.Resource.Dimension.notification_action_text_size = global::ResSched.Droid.Resource.Dimension.notification_action_text_size;
-			global::Xamarin.Auth.Resource.Dimension.notification_big_circle_margin = global::ResSched.Droid.Resource.Dimension.notification_big_circle_margin;
-			global::Xamarin.Auth.Resource.Dimension.notification_content_margin_start = global::ResSched.Droid.Resource.Dimension.notification_content_margin_start;
-			global::Xamarin.Auth.Resource.Dimension.notification_large_icon_height = global::ResSched.Droid.Resource.Dimension.notification_large_icon_height;
-			global::Xamarin.Auth.Resource.Dimension.notification_large_icon_width = global::ResSched.Droid.Resource.Dimension.notification_large_icon_width;
-			global::Xamarin.Auth.Resource.Dimension.notification_main_column_padding_top = global::ResSched.Droid.Resource.Dimension.notification_main_column_padding_top;
-			global::Xamarin.Auth.Resource.Dimension.notification_media_narrow_margin = global::ResSched.Droid.Resource.Dimension.notification_media_narrow_margin;
-			global::Xamarin.Auth.Resource.Dimension.notification_right_icon_size = global::ResSched.Droid.Resource.Dimension.notification_right_icon_size;
-			global::Xamarin.Auth.Resource.Dimension.notification_right_side_padding_top = global::ResSched.Droid.Resource.Dimension.notification_right_side_padding_top;
-			global::Xamarin.Auth.Resource.Dimension.notification_small_icon_background_padding = global::ResSched.Droid.Resource.Dimension.notification_small_icon_background_padding;
-			global::Xamarin.Auth.Resource.Dimension.notification_small_icon_size_as_large = global::ResSched.Droid.Resource.Dimension.notification_small_icon_size_as_large;
-			global::Xamarin.Auth.Resource.Dimension.notification_subtext_size = global::ResSched.Droid.Resource.Dimension.notification_subtext_size;
-			global::Xamarin.Auth.Resource.Dimension.notification_top_pad = global::ResSched.Droid.Resource.Dimension.notification_top_pad;
-			global::Xamarin.Auth.Resource.Dimension.notification_top_pad_large_text = global::ResSched.Droid.Resource.Dimension.notification_top_pad_large_text;
-			global::Xamarin.Auth.Resource.Drawable.ic_arrow_back = global::ResSched.Droid.Resource.Drawable.ic_arrow_back;
-			global::Xamarin.Auth.Resource.Drawable.notification_action_background = global::ResSched.Droid.Resource.Drawable.notification_action_background;
-			global::Xamarin.Auth.Resource.Drawable.notification_bg = global::ResSched.Droid.Resource.Drawable.notification_bg;
-			global::Xamarin.Auth.Resource.Drawable.notification_bg_low = global::ResSched.Droid.Resource.Drawable.notification_bg_low;
-			global::Xamarin.Auth.Resource.Drawable.notification_bg_low_normal = global::ResSched.Droid.Resource.Drawable.notification_bg_low_normal;
-			global::Xamarin.Auth.Resource.Drawable.notification_bg_low_pressed = global::ResSched.Droid.Resource.Drawable.notification_bg_low_pressed;
-			global::Xamarin.Auth.Resource.Drawable.notification_bg_normal = global::ResSched.Droid.Resource.Drawable.notification_bg_normal;
-			global::Xamarin.Auth.Resource.Drawable.notification_bg_normal_pressed = global::ResSched.Droid.Resource.Drawable.notification_bg_normal_pressed;
-			global::Xamarin.Auth.Resource.Drawable.notification_icon_background = global::ResSched.Droid.Resource.Drawable.notification_icon_background;
-			global::Xamarin.Auth.Resource.Drawable.notification_template_icon_bg = global::ResSched.Droid.Resource.Drawable.notification_template_icon_bg;
-			global::Xamarin.Auth.Resource.Drawable.notification_template_icon_low_bg = global::ResSched.Droid.Resource.Drawable.notification_template_icon_low_bg;
-			global::Xamarin.Auth.Resource.Drawable.notification_tile_bg = global::ResSched.Droid.Resource.Drawable.notification_tile_bg;
-			global::Xamarin.Auth.Resource.Drawable.notify_panel_notification_icon_bg = global::ResSched.Droid.Resource.Drawable.notify_panel_notification_icon_bg;
-			global::Xamarin.Auth.Resource.Id.action0 = global::ResSched.Droid.Resource.Id.action0;
-			global::Xamarin.Auth.Resource.Id.action_container = global::ResSched.Droid.Resource.Id.action_container;
-			global::Xamarin.Auth.Resource.Id.action_divider = global::ResSched.Droid.Resource.Id.action_divider;
-			global::Xamarin.Auth.Resource.Id.action_image = global::ResSched.Droid.Resource.Id.action_image;
-			global::Xamarin.Auth.Resource.Id.action_text = global::ResSched.Droid.Resource.Id.action_text;
-			global::Xamarin.Auth.Resource.Id.actions = global::ResSched.Droid.Resource.Id.actions;
-			global::Xamarin.Auth.Resource.Id.async = global::ResSched.Droid.Resource.Id.async;
-			global::Xamarin.Auth.Resource.Id.blocking = global::ResSched.Droid.Resource.Id.blocking;
-			global::Xamarin.Auth.Resource.Id.cancel_action = global::ResSched.Droid.Resource.Id.cancel_action;
-			global::Xamarin.Auth.Resource.Id.chronometer = global::ResSched.Droid.Resource.Id.chronometer;
-			global::Xamarin.Auth.Resource.Id.end_padder = global::ResSched.Droid.Resource.Id.end_padder;
-			global::Xamarin.Auth.Resource.Id.forever = global::ResSched.Droid.Resource.Id.forever;
-			global::Xamarin.Auth.Resource.Id.icon = global::ResSched.Droid.Resource.Id.icon;
-			global::Xamarin.Auth.Resource.Id.icon_group = global::ResSched.Droid.Resource.Id.icon_group;
-			global::Xamarin.Auth.Resource.Id.info = global::ResSched.Droid.Resource.Id.info;
-			global::Xamarin.Auth.Resource.Id.italic = global::ResSched.Droid.Resource.Id.italic;
-			global::Xamarin.Auth.Resource.Id.line1 = global::ResSched.Droid.Resource.Id.line1;
-			global::Xamarin.Auth.Resource.Id.line3 = global::ResSched.Droid.Resource.Id.line3;
-			global::Xamarin.Auth.Resource.Id.media_actions = global::ResSched.Droid.Resource.Id.media_actions;
-			global::Xamarin.Auth.Resource.Id.normal = global::ResSched.Droid.Resource.Id.normal;
-			global::Xamarin.Auth.Resource.Id.notification_background = global::ResSched.Droid.Resource.Id.notification_background;
-			global::Xamarin.Auth.Resource.Id.notification_main_column = global::ResSched.Droid.Resource.Id.notification_main_column;
-			global::Xamarin.Auth.Resource.Id.notification_main_column_container = global::ResSched.Droid.Resource.Id.notification_main_column_container;
-			global::Xamarin.Auth.Resource.Id.right_icon = global::ResSched.Droid.Resource.Id.right_icon;
-			global::Xamarin.Auth.Resource.Id.right_side = global::ResSched.Droid.Resource.Id.right_side;
-			global::Xamarin.Auth.Resource.Id.status_bar_latest_event_content = global::ResSched.Droid.Resource.Id.status_bar_latest_event_content;
-			global::Xamarin.Auth.Resource.Id.text = global::ResSched.Droid.Resource.Id.text;
-			global::Xamarin.Auth.Resource.Id.text2 = global::ResSched.Droid.Resource.Id.text2;
-			global::Xamarin.Auth.Resource.Id.time = global::ResSched.Droid.Resource.Id.time;
-			global::Xamarin.Auth.Resource.Id.title = global::ResSched.Droid.Resource.Id.title;
-			global::Xamarin.Auth.Resource.Id.webview = global::ResSched.Droid.Resource.Id.webview;
-			global::Xamarin.Auth.Resource.Integer.cancel_button_image_alpha = global::ResSched.Droid.Resource.Integer.cancel_button_image_alpha;
-			global::Xamarin.Auth.Resource.Integer.status_bar_notification_info_maxnum = global::ResSched.Droid.Resource.Integer.status_bar_notification_info_maxnum;
-			global::Xamarin.Auth.Resource.Layout.activity_webview = global::ResSched.Droid.Resource.Layout.activity_webview;
-			global::Xamarin.Auth.Resource.Layout.notification_action = global::ResSched.Droid.Resource.Layout.notification_action;
-			global::Xamarin.Auth.Resource.Layout.notification_action_tombstone = global::ResSched.Droid.Resource.Layout.notification_action_tombstone;
-			global::Xamarin.Auth.Resource.Layout.notification_media_action = global::ResSched.Droid.Resource.Layout.notification_media_action;
-			global::Xamarin.Auth.Resource.Layout.notification_media_cancel_action = global::ResSched.Droid.Resource.Layout.notification_media_cancel_action;
-			global::Xamarin.Auth.Resource.Layout.notification_template_big_media = global::ResSched.Droid.Resource.Layout.notification_template_big_media;
-			global::Xamarin.Auth.Resource.Layout.notification_template_big_media_custom = global::ResSched.Droid.Resource.Layout.notification_template_big_media_custom;
-			global::Xamarin.Auth.Resource.Layout.notification_template_big_media_narrow = global::ResSched.Droid.Resource.Layout.notification_template_big_media_narrow;
-			global::Xamarin.Auth.Resource.Layout.notification_template_big_media_narrow_custom = global::ResSched.Droid.Resource.Layout.notification_template_big_media_narrow_custom;
-			global::Xamarin.Auth.Resource.Layout.notification_template_custom_big = global::ResSched.Droid.Resource.Layout.notification_template_custom_big;
-			global::Xamarin.Auth.Resource.Layout.notification_template_icon_group = global::ResSched.Droid.Resource.Layout.notification_template_icon_group;
-			global::Xamarin.Auth.Resource.Layout.notification_template_lines_media = global::ResSched.Droid.Resource.Layout.notification_template_lines_media;
-			global::Xamarin.Auth.Resource.Layout.notification_template_media = global::ResSched.Droid.Resource.Layout.notification_template_media;
-			global::Xamarin.Auth.Resource.Layout.notification_template_media_custom = global::ResSched.Droid.Resource.Layout.notification_template_media_custom;
-			global::Xamarin.Auth.Resource.Layout.notification_template_part_chronometer = global::ResSched.Droid.Resource.Layout.notification_template_part_chronometer;
-			global::Xamarin.Auth.Resource.Layout.notification_template_part_time = global::ResSched.Droid.Resource.Layout.notification_template_part_time;
-			global::Xamarin.Auth.Resource.String.status_bar_notification_info_overflow = global::ResSched.Droid.Resource.String.status_bar_notification_info_overflow;
-			global::Xamarin.Auth.Resource.String.title_activity_webview = global::ResSched.Droid.Resource.String.title_activity_webview;
-			global::Xamarin.Auth.Resource.Style.TextAppearance_Compat_Notification = global::ResSched.Droid.Resource.Style.TextAppearance_Compat_Notification;
-			global::Xamarin.Auth.Resource.Style.TextAppearance_Compat_Notification_Info = global::ResSched.Droid.Resource.Style.TextAppearance_Compat_Notification_Info;
-			global::Xamarin.Auth.Resource.Style.TextAppearance_Compat_Notification_Info_Media = global::ResSched.Droid.Resource.Style.TextAppearance_Compat_Notification_Info_Media;
-			global::Xamarin.Auth.Resource.Style.TextAppearance_Compat_Notification_Line2 = global::ResSched.Droid.Resource.Style.TextAppearance_Compat_Notification_Line2;
-			global::Xamarin.Auth.Resource.Style.TextAppearance_Compat_Notification_Line2_Media = global::ResSched.Droid.Resource.Style.TextAppearance_Compat_Notification_Line2_Media;
-			global::Xamarin.Auth.Resource.Style.TextAppearance_Compat_Notification_Media = global::ResSched.Droid.Resource.Style.TextAppearance_Compat_Notification_Media;
-			global::Xamarin.Auth.Resource.Style.TextAppearance_Compat_Notification_Time = global::ResSched.Droid.Resource.Style.TextAppearance_Compat_Notification_Time;
-			global::Xamarin.Auth.Resource.Style.TextAppearance_Compat_Notification_Time_Media = global::ResSched.Droid.Resource.Style.TextAppearance_Compat_Notification_Time_Media;
-			global::Xamarin.Auth.Resource.Style.TextAppearance_Compat_Notification_Title = global::ResSched.Droid.Resource.Style.TextAppearance_Compat_Notification_Title;
-			global::Xamarin.Auth.Resource.Style.TextAppearance_Compat_Notification_Title_Media = global::ResSched.Droid.Resource.Style.TextAppearance_Compat_Notification_Title_Media;
-			global::Xamarin.Auth.Resource.Style.Widget_Compat_NotificationActionContainer = global::ResSched.Droid.Resource.Style.Widget_Compat_NotificationActionContainer;
-			global::Xamarin.Auth.Resource.Style.Widget_Compat_NotificationActionText = global::ResSched.Droid.Resource.Style.Widget_Compat_NotificationActionText;
-			global::Xamarin.Auth.Resource.Styleable.FontFamily = global::ResSched.Droid.Resource.Styleable.FontFamily;
-			global::Xamarin.Auth.Resource.Styleable.FontFamily_fontProviderAuthority = global::ResSched.Droid.Resource.Styleable.FontFamily_fontProviderAuthority;
-			global::Xamarin.Auth.Resource.Styleable.FontFamily_fontProviderCerts = global::ResSched.Droid.Resource.Styleable.FontFamily_fontProviderCerts;
-			global::Xamarin.Auth.Resource.Styleable.FontFamily_fontProviderFetchStrategy = global::ResSched.Droid.Resource.Styleable.FontFamily_fontProviderFetchStrategy;
-			global::Xamarin.Auth.Resource.Styleable.FontFamily_fontProviderFetchTimeout = global::ResSched.Droid.Resource.Styleable.FontFamily_fontProviderFetchTimeout;
-			global::Xamarin.Auth.Resource.Styleable.FontFamily_fontProviderPackage = global::ResSched.Droid.Resource.Styleable.FontFamily_fontProviderPackage;
-			global::Xamarin.Auth.Resource.Styleable.FontFamily_fontProviderQuery = global::ResSched.Droid.Resource.Styleable.FontFamily_fontProviderQuery;
-			global::Xamarin.Auth.Resource.Styleable.FontFamilyFont = global::ResSched.Droid.Resource.Styleable.FontFamilyFont;
-			global::Xamarin.Auth.Resource.Styleable.FontFamilyFont_font = global::ResSched.Droid.Resource.Styleable.FontFamilyFont_font;
-			global::Xamarin.Auth.Resource.Styleable.FontFamilyFont_fontStyle = global::ResSched.Droid.Resource.Styleable.FontFamilyFont_fontStyle;
-			global::Xamarin.Auth.Resource.Styleable.FontFamilyFont_fontWeight = global::ResSched.Droid.Resource.Styleable.FontFamilyFont_fontWeight;
-			global::Xamarin.Auth.XamarinForms.Resource.Animation.abc_fade_in = global::ResSched.Droid.Resource.Animation.abc_fade_in;
-			global::Xamarin.Auth.XamarinForms.Resource.Animation.abc_fade_out = global::ResSched.Droid.Resource.Animation.abc_fade_out;
-			global::Xamarin.Auth.XamarinForms.Resource.Animation.abc_grow_fade_in_from_bottom = global::ResSched.Droid.Resource.Animation.abc_grow_fade_in_from_bottom;
-			global::Xamarin.Auth.XamarinForms.Resource.Animation.abc_popup_enter = global::ResSched.Droid.Resource.Animation.abc_popup_enter;
-			global::Xamarin.Auth.XamarinForms.Resource.Animation.abc_popup_exit = global::ResSched.Droid.Resource.Animation.abc_popup_exit;
-			global::Xamarin.Auth.XamarinForms.Resource.Animation.abc_shrink_fade_out_from_bottom = global::ResSched.Droid.Resource.Animation.abc_shrink_fade_out_from_bottom;
-			global::Xamarin.Auth.XamarinForms.Resource.Animation.abc_slide_in_bottom = global::ResSched.Droid.Resource.Animation.abc_slide_in_bottom;
-			global::Xamarin.Auth.XamarinForms.Resource.Animation.abc_slide_in_top = global::ResSched.Droid.Resource.Animation.abc_slide_in_top;
-			global::Xamarin.Auth.XamarinForms.Resource.Animation.abc_slide_out_bottom = global::ResSched.Droid.Resource.Animation.abc_slide_out_bottom;
-			global::Xamarin.Auth.XamarinForms.Resource.Animation.abc_slide_out_top = global::ResSched.Droid.Resource.Animation.abc_slide_out_top;
-			global::Xamarin.Auth.XamarinForms.Resource.Animation.design_bottom_sheet_slide_in = global::ResSched.Droid.Resource.Animation.design_bottom_sheet_slide_in;
-			global::Xamarin.Auth.XamarinForms.Resource.Animation.design_bottom_sheet_slide_out = global::ResSched.Droid.Resource.Animation.design_bottom_sheet_slide_out;
-			global::Xamarin.Auth.XamarinForms.Resource.Animation.design_snackbar_in = global::ResSched.Droid.Resource.Animation.design_snackbar_in;
-			global::Xamarin.Auth.XamarinForms.Resource.Animation.design_snackbar_out = global::ResSched.Droid.Resource.Animation.design_snackbar_out;
-			global::Xamarin.Auth.XamarinForms.Resource.Animation.slide_in_right = global::ResSched.Droid.Resource.Animation.slide_in_right;
-			global::Xamarin.Auth.XamarinForms.Resource.Animation.slide_out_left = global::ResSched.Droid.Resource.Animation.slide_out_left;
-			global::Xamarin.Auth.XamarinForms.Resource.Animation.tooltip_enter = global::ResSched.Droid.Resource.Animation.tooltip_enter;
-			global::Xamarin.Auth.XamarinForms.Resource.Animation.tooltip_exit = global::ResSched.Droid.Resource.Animation.tooltip_exit;
-			global::Xamarin.Auth.XamarinForms.Resource.Animator.design_appbar_state_list_animator = global::ResSched.Droid.Resource.Animator.design_appbar_state_list_animator;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.actionBarDivider = global::ResSched.Droid.Resource.Attribute.actionBarDivider;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.actionBarItemBackground = global::ResSched.Droid.Resource.Attribute.actionBarItemBackground;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.actionBarPopupTheme = global::ResSched.Droid.Resource.Attribute.actionBarPopupTheme;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.actionBarSize = global::ResSched.Droid.Resource.Attribute.actionBarSize;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.actionBarSplitStyle = global::ResSched.Droid.Resource.Attribute.actionBarSplitStyle;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.actionBarStyle = global::ResSched.Droid.Resource.Attribute.actionBarStyle;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.actionBarTabBarStyle = global::ResSched.Droid.Resource.Attribute.actionBarTabBarStyle;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.actionBarTabStyle = global::ResSched.Droid.Resource.Attribute.actionBarTabStyle;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.actionBarTabTextStyle = global::ResSched.Droid.Resource.Attribute.actionBarTabTextStyle;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.actionBarTheme = global::ResSched.Droid.Resource.Attribute.actionBarTheme;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.actionBarWidgetTheme = global::ResSched.Droid.Resource.Attribute.actionBarWidgetTheme;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.actionButtonStyle = global::ResSched.Droid.Resource.Attribute.actionButtonStyle;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.actionDropDownStyle = global::ResSched.Droid.Resource.Attribute.actionDropDownStyle;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.actionLayout = global::ResSched.Droid.Resource.Attribute.actionLayout;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.actionMenuTextAppearance = global::ResSched.Droid.Resource.Attribute.actionMenuTextAppearance;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.actionMenuTextColor = global::ResSched.Droid.Resource.Attribute.actionMenuTextColor;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.actionModeBackground = global::ResSched.Droid.Resource.Attribute.actionModeBackground;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.actionModeCloseButtonStyle = global::ResSched.Droid.Resource.Attribute.actionModeCloseButtonStyle;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.actionModeCloseDrawable = global::ResSched.Droid.Resource.Attribute.actionModeCloseDrawable;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.actionModeCopyDrawable = global::ResSched.Droid.Resource.Attribute.actionModeCopyDrawable;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.actionModeCutDrawable = global::ResSched.Droid.Resource.Attribute.actionModeCutDrawable;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.actionModeFindDrawable = global::ResSched.Droid.Resource.Attribute.actionModeFindDrawable;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.actionModePasteDrawable = global::ResSched.Droid.Resource.Attribute.actionModePasteDrawable;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.actionModePopupWindowStyle = global::ResSched.Droid.Resource.Attribute.actionModePopupWindowStyle;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.actionModeSelectAllDrawable = global::ResSched.Droid.Resource.Attribute.actionModeSelectAllDrawable;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.actionModeShareDrawable = global::ResSched.Droid.Resource.Attribute.actionModeShareDrawable;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.actionModeSplitBackground = global::ResSched.Droid.Resource.Attribute.actionModeSplitBackground;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.actionModeStyle = global::ResSched.Droid.Resource.Attribute.actionModeStyle;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.actionModeWebSearchDrawable = global::ResSched.Droid.Resource.Attribute.actionModeWebSearchDrawable;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.actionOverflowButtonStyle = global::ResSched.Droid.Resource.Attribute.actionOverflowButtonStyle;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.actionOverflowMenuStyle = global::ResSched.Droid.Resource.Attribute.actionOverflowMenuStyle;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.actionProviderClass = global::ResSched.Droid.Resource.Attribute.actionProviderClass;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.actionViewClass = global::ResSched.Droid.Resource.Attribute.actionViewClass;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.activityChooserViewStyle = global::ResSched.Droid.Resource.Attribute.activityChooserViewStyle;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.alertDialogButtonGroupStyle = global::ResSched.Droid.Resource.Attribute.alertDialogButtonGroupStyle;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.alertDialogCenterButtons = global::ResSched.Droid.Resource.Attribute.alertDialogCenterButtons;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.alertDialogStyle = global::ResSched.Droid.Resource.Attribute.alertDialogStyle;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.alertDialogTheme = global::ResSched.Droid.Resource.Attribute.alertDialogTheme;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.allowStacking = global::ResSched.Droid.Resource.Attribute.allowStacking;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.alpha = global::ResSched.Droid.Resource.Attribute.alpha;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.alphabeticModifiers = global::ResSched.Droid.Resource.Attribute.alphabeticModifiers;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.arrowHeadLength = global::ResSched.Droid.Resource.Attribute.arrowHeadLength;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.arrowShaftLength = global::ResSched.Droid.Resource.Attribute.arrowShaftLength;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.autoCompleteTextViewStyle = global::ResSched.Droid.Resource.Attribute.autoCompleteTextViewStyle;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.autoSizeMaxTextSize = global::ResSched.Droid.Resource.Attribute.autoSizeMaxTextSize;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.autoSizeMinTextSize = global::ResSched.Droid.Resource.Attribute.autoSizeMinTextSize;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.autoSizePresetSizes = global::ResSched.Droid.Resource.Attribute.autoSizePresetSizes;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.autoSizeStepGranularity = global::ResSched.Droid.Resource.Attribute.autoSizeStepGranularity;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.autoSizeTextType = global::ResSched.Droid.Resource.Attribute.autoSizeTextType;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.background = global::ResSched.Droid.Resource.Attribute.background;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.backgroundSplit = global::ResSched.Droid.Resource.Attribute.backgroundSplit;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.backgroundStacked = global::ResSched.Droid.Resource.Attribute.backgroundStacked;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.backgroundTint = global::ResSched.Droid.Resource.Attribute.backgroundTint;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.backgroundTintMode = global::ResSched.Droid.Resource.Attribute.backgroundTintMode;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.barLength = global::ResSched.Droid.Resource.Attribute.barLength;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.behavior_autoHide = global::ResSched.Droid.Resource.Attribute.behavior_autoHide;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.behavior_hideable = global::ResSched.Droid.Resource.Attribute.behavior_hideable;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.behavior_overlapTop = global::ResSched.Droid.Resource.Attribute.behavior_overlapTop;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.behavior_peekHeight = global::ResSched.Droid.Resource.Attribute.behavior_peekHeight;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.behavior_skipCollapsed = global::ResSched.Droid.Resource.Attribute.behavior_skipCollapsed;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.borderWidth = global::ResSched.Droid.Resource.Attribute.borderWidth;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.borderlessButtonStyle = global::ResSched.Droid.Resource.Attribute.borderlessButtonStyle;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.bottomSheetDialogTheme = global::ResSched.Droid.Resource.Attribute.bottomSheetDialogTheme;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.bottomSheetStyle = global::ResSched.Droid.Resource.Attribute.bottomSheetStyle;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.buttonBarButtonStyle = global::ResSched.Droid.Resource.Attribute.buttonBarButtonStyle;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.buttonBarNegativeButtonStyle = global::ResSched.Droid.Resource.Attribute.buttonBarNegativeButtonStyle;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.buttonBarNeutralButtonStyle = global::ResSched.Droid.Resource.Attribute.buttonBarNeutralButtonStyle;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.buttonBarPositiveButtonStyle = global::ResSched.Droid.Resource.Attribute.buttonBarPositiveButtonStyle;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.buttonBarStyle = global::ResSched.Droid.Resource.Attribute.buttonBarStyle;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.buttonGravity = global::ResSched.Droid.Resource.Attribute.buttonGravity;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.buttonPanelSideLayout = global::ResSched.Droid.Resource.Attribute.buttonPanelSideLayout;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.buttonStyle = global::ResSched.Droid.Resource.Attribute.buttonStyle;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.buttonStyleSmall = global::ResSched.Droid.Resource.Attribute.buttonStyleSmall;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.buttonTint = global::ResSched.Droid.Resource.Attribute.buttonTint;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.buttonTintMode = global::ResSched.Droid.Resource.Attribute.buttonTintMode;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.cardBackgroundColor = global::ResSched.Droid.Resource.Attribute.cardBackgroundColor;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.cardCornerRadius = global::ResSched.Droid.Resource.Attribute.cardCornerRadius;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.cardElevation = global::ResSched.Droid.Resource.Attribute.cardElevation;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.cardMaxElevation = global::ResSched.Droid.Resource.Attribute.cardMaxElevation;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.cardPreventCornerOverlap = global::ResSched.Droid.Resource.Attribute.cardPreventCornerOverlap;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.cardUseCompatPadding = global::ResSched.Droid.Resource.Attribute.cardUseCompatPadding;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.checkboxStyle = global::ResSched.Droid.Resource.Attribute.checkboxStyle;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.checkedTextViewStyle = global::ResSched.Droid.Resource.Attribute.checkedTextViewStyle;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.closeIcon = global::ResSched.Droid.Resource.Attribute.closeIcon;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.closeItemLayout = global::ResSched.Droid.Resource.Attribute.closeItemLayout;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.collapseContentDescription = global::ResSched.Droid.Resource.Attribute.collapseContentDescription;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.collapseIcon = global::ResSched.Droid.Resource.Attribute.collapseIcon;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.collapsedTitleGravity = global::ResSched.Droid.Resource.Attribute.collapsedTitleGravity;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.collapsedTitleTextAppearance = global::ResSched.Droid.Resource.Attribute.collapsedTitleTextAppearance;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.color = global::ResSched.Droid.Resource.Attribute.color;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.colorAccent = global::ResSched.Droid.Resource.Attribute.colorAccent;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.colorBackgroundFloating = global::ResSched.Droid.Resource.Attribute.colorBackgroundFloating;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.colorButtonNormal = global::ResSched.Droid.Resource.Attribute.colorButtonNormal;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.colorControlActivated = global::ResSched.Droid.Resource.Attribute.colorControlActivated;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.colorControlHighlight = global::ResSched.Droid.Resource.Attribute.colorControlHighlight;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.colorControlNormal = global::ResSched.Droid.Resource.Attribute.colorControlNormal;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.colorError = global::ResSched.Droid.Resource.Attribute.colorError;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.colorPrimary = global::ResSched.Droid.Resource.Attribute.colorPrimary;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.colorPrimaryDark = global::ResSched.Droid.Resource.Attribute.colorPrimaryDark;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.colorSwitchThumbNormal = global::ResSched.Droid.Resource.Attribute.colorSwitchThumbNormal;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.commitIcon = global::ResSched.Droid.Resource.Attribute.commitIcon;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.contentDescription = global::ResSched.Droid.Resource.Attribute.contentDescription;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.contentInsetEnd = global::ResSched.Droid.Resource.Attribute.contentInsetEnd;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.contentInsetEndWithActions = global::ResSched.Droid.Resource.Attribute.contentInsetEndWithActions;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.contentInsetLeft = global::ResSched.Droid.Resource.Attribute.contentInsetLeft;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.contentInsetRight = global::ResSched.Droid.Resource.Attribute.contentInsetRight;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.contentInsetStart = global::ResSched.Droid.Resource.Attribute.contentInsetStart;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.contentInsetStartWithNavigation = global::ResSched.Droid.Resource.Attribute.contentInsetStartWithNavigation;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.contentPadding = global::ResSched.Droid.Resource.Attribute.contentPadding;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.contentPaddingBottom = global::ResSched.Droid.Resource.Attribute.contentPaddingBottom;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.contentPaddingLeft = global::ResSched.Droid.Resource.Attribute.contentPaddingLeft;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.contentPaddingRight = global::ResSched.Droid.Resource.Attribute.contentPaddingRight;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.contentPaddingTop = global::ResSched.Droid.Resource.Attribute.contentPaddingTop;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.contentScrim = global::ResSched.Droid.Resource.Attribute.contentScrim;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.controlBackground = global::ResSched.Droid.Resource.Attribute.controlBackground;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.counterEnabled = global::ResSched.Droid.Resource.Attribute.counterEnabled;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.counterMaxLength = global::ResSched.Droid.Resource.Attribute.counterMaxLength;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.counterOverflowTextAppearance = global::ResSched.Droid.Resource.Attribute.counterOverflowTextAppearance;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.counterTextAppearance = global::ResSched.Droid.Resource.Attribute.counterTextAppearance;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.customNavigationLayout = global::ResSched.Droid.Resource.Attribute.customNavigationLayout;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.defaultQueryHint = global::ResSched.Droid.Resource.Attribute.defaultQueryHint;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.dialogPreferredPadding = global::ResSched.Droid.Resource.Attribute.dialogPreferredPadding;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.dialogTheme = global::ResSched.Droid.Resource.Attribute.dialogTheme;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.displayOptions = global::ResSched.Droid.Resource.Attribute.displayOptions;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.divider = global::ResSched.Droid.Resource.Attribute.divider;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.dividerHorizontal = global::ResSched.Droid.Resource.Attribute.dividerHorizontal;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.dividerPadding = global::ResSched.Droid.Resource.Attribute.dividerPadding;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.dividerVertical = global::ResSched.Droid.Resource.Attribute.dividerVertical;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.drawableSize = global::ResSched.Droid.Resource.Attribute.drawableSize;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.drawerArrowStyle = global::ResSched.Droid.Resource.Attribute.drawerArrowStyle;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.dropDownListViewStyle = global::ResSched.Droid.Resource.Attribute.dropDownListViewStyle;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.dropdownListPreferredItemHeight = global::ResSched.Droid.Resource.Attribute.dropdownListPreferredItemHeight;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.editTextBackground = global::ResSched.Droid.Resource.Attribute.editTextBackground;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.editTextColor = global::ResSched.Droid.Resource.Attribute.editTextColor;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.editTextStyle = global::ResSched.Droid.Resource.Attribute.editTextStyle;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.elevation = global::ResSched.Droid.Resource.Attribute.elevation;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.errorEnabled = global::ResSched.Droid.Resource.Attribute.errorEnabled;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.errorTextAppearance = global::ResSched.Droid.Resource.Attribute.errorTextAppearance;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.expandActivityOverflowButtonDrawable = global::ResSched.Droid.Resource.Attribute.expandActivityOverflowButtonDrawable;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.expanded = global::ResSched.Droid.Resource.Attribute.expanded;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.expandedTitleGravity = global::ResSched.Droid.Resource.Attribute.expandedTitleGravity;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.expandedTitleMargin = global::ResSched.Droid.Resource.Attribute.expandedTitleMargin;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.expandedTitleMarginBottom = global::ResSched.Droid.Resource.Attribute.expandedTitleMarginBottom;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.expandedTitleMarginEnd = global::ResSched.Droid.Resource.Attribute.expandedTitleMarginEnd;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.expandedTitleMarginStart = global::ResSched.Droid.Resource.Attribute.expandedTitleMarginStart;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.expandedTitleMarginTop = global::ResSched.Droid.Resource.Attribute.expandedTitleMarginTop;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.expandedTitleTextAppearance = global::ResSched.Droid.Resource.Attribute.expandedTitleTextAppearance;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.externalRouteEnabledDrawable = global::ResSched.Droid.Resource.Attribute.externalRouteEnabledDrawable;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.fabSize = global::ResSched.Droid.Resource.Attribute.fabSize;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.fastScrollEnabled = global::ResSched.Droid.Resource.Attribute.fastScrollEnabled;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.fastScrollHorizontalThumbDrawable = global::ResSched.Droid.Resource.Attribute.fastScrollHorizontalThumbDrawable;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.fastScrollHorizontalTrackDrawable = global::ResSched.Droid.Resource.Attribute.fastScrollHorizontalTrackDrawable;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.fastScrollVerticalThumbDrawable = global::ResSched.Droid.Resource.Attribute.fastScrollVerticalThumbDrawable;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.fastScrollVerticalTrackDrawable = global::ResSched.Droid.Resource.Attribute.fastScrollVerticalTrackDrawable;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.font = global::ResSched.Droid.Resource.Attribute.font;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.fontFamily = global::ResSched.Droid.Resource.Attribute.fontFamily;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.fontProviderAuthority = global::ResSched.Droid.Resource.Attribute.fontProviderAuthority;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.fontProviderCerts = global::ResSched.Droid.Resource.Attribute.fontProviderCerts;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.fontProviderFetchStrategy = global::ResSched.Droid.Resource.Attribute.fontProviderFetchStrategy;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.fontProviderFetchTimeout = global::ResSched.Droid.Resource.Attribute.fontProviderFetchTimeout;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.fontProviderPackage = global::ResSched.Droid.Resource.Attribute.fontProviderPackage;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.fontProviderQuery = global::ResSched.Droid.Resource.Attribute.fontProviderQuery;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.fontStyle = global::ResSched.Droid.Resource.Attribute.fontStyle;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.fontWeight = global::ResSched.Droid.Resource.Attribute.fontWeight;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.foregroundInsidePadding = global::ResSched.Droid.Resource.Attribute.foregroundInsidePadding;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.gapBetweenBars = global::ResSched.Droid.Resource.Attribute.gapBetweenBars;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.goIcon = global::ResSched.Droid.Resource.Attribute.goIcon;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.headerLayout = global::ResSched.Droid.Resource.Attribute.headerLayout;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.height = global::ResSched.Droid.Resource.Attribute.height;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.hideOnContentScroll = global::ResSched.Droid.Resource.Attribute.hideOnContentScroll;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.hintAnimationEnabled = global::ResSched.Droid.Resource.Attribute.hintAnimationEnabled;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.hintEnabled = global::ResSched.Droid.Resource.Attribute.hintEnabled;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.hintTextAppearance = global::ResSched.Droid.Resource.Attribute.hintTextAppearance;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.homeAsUpIndicator = global::ResSched.Droid.Resource.Attribute.homeAsUpIndicator;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.homeLayout = global::ResSched.Droid.Resource.Attribute.homeLayout;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.icon = global::ResSched.Droid.Resource.Attribute.icon;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.iconTint = global::ResSched.Droid.Resource.Attribute.iconTint;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.iconTintMode = global::ResSched.Droid.Resource.Attribute.iconTintMode;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.iconifiedByDefault = global::ResSched.Droid.Resource.Attribute.iconifiedByDefault;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.imageButtonStyle = global::ResSched.Droid.Resource.Attribute.imageButtonStyle;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.indeterminateProgressStyle = global::ResSched.Droid.Resource.Attribute.indeterminateProgressStyle;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.initialActivityCount = global::ResSched.Droid.Resource.Attribute.initialActivityCount;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.insetForeground = global::ResSched.Droid.Resource.Attribute.insetForeground;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.isLightTheme = global::ResSched.Droid.Resource.Attribute.isLightTheme;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.itemBackground = global::ResSched.Droid.Resource.Attribute.itemBackground;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.itemIconTint = global::ResSched.Droid.Resource.Attribute.itemIconTint;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.itemPadding = global::ResSched.Droid.Resource.Attribute.itemPadding;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.itemTextAppearance = global::ResSched.Droid.Resource.Attribute.itemTextAppearance;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.itemTextColor = global::ResSched.Droid.Resource.Attribute.itemTextColor;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.keylines = global::ResSched.Droid.Resource.Attribute.keylines;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.layout = global::ResSched.Droid.Resource.Attribute.layout;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.layoutManager = global::ResSched.Droid.Resource.Attribute.layoutManager;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.layout_anchor = global::ResSched.Droid.Resource.Attribute.layout_anchor;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.layout_anchorGravity = global::ResSched.Droid.Resource.Attribute.layout_anchorGravity;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.layout_behavior = global::ResSched.Droid.Resource.Attribute.layout_behavior;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.layout_collapseMode = global::ResSched.Droid.Resource.Attribute.layout_collapseMode;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.layout_collapseParallaxMultiplier = global::ResSched.Droid.Resource.Attribute.layout_collapseParallaxMultiplier;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.layout_dodgeInsetEdges = global::ResSched.Droid.Resource.Attribute.layout_dodgeInsetEdges;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.layout_insetEdge = global::ResSched.Droid.Resource.Attribute.layout_insetEdge;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.layout_keyline = global::ResSched.Droid.Resource.Attribute.layout_keyline;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.layout_scrollFlags = global::ResSched.Droid.Resource.Attribute.layout_scrollFlags;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.layout_scrollInterpolator = global::ResSched.Droid.Resource.Attribute.layout_scrollInterpolator;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.listChoiceBackgroundIndicator = global::ResSched.Droid.Resource.Attribute.listChoiceBackgroundIndicator;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.listDividerAlertDialog = global::ResSched.Droid.Resource.Attribute.listDividerAlertDialog;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.listItemLayout = global::ResSched.Droid.Resource.Attribute.listItemLayout;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.listLayout = global::ResSched.Droid.Resource.Attribute.listLayout;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.listMenuViewStyle = global::ResSched.Droid.Resource.Attribute.listMenuViewStyle;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.listPopupWindowStyle = global::ResSched.Droid.Resource.Attribute.listPopupWindowStyle;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.listPreferredItemHeight = global::ResSched.Droid.Resource.Attribute.listPreferredItemHeight;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.listPreferredItemHeightLarge = global::ResSched.Droid.Resource.Attribute.listPreferredItemHeightLarge;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.listPreferredItemHeightSmall = global::ResSched.Droid.Resource.Attribute.listPreferredItemHeightSmall;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.listPreferredItemPaddingLeft = global::ResSched.Droid.Resource.Attribute.listPreferredItemPaddingLeft;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.listPreferredItemPaddingRight = global::ResSched.Droid.Resource.Attribute.listPreferredItemPaddingRight;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.logo = global::ResSched.Droid.Resource.Attribute.logo;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.logoDescription = global::ResSched.Droid.Resource.Attribute.logoDescription;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.maxActionInlineWidth = global::ResSched.Droid.Resource.Attribute.maxActionInlineWidth;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.maxButtonHeight = global::ResSched.Droid.Resource.Attribute.maxButtonHeight;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.measureWithLargestChild = global::ResSched.Droid.Resource.Attribute.measureWithLargestChild;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.mediaRouteAudioTrackDrawable = global::ResSched.Droid.Resource.Attribute.mediaRouteAudioTrackDrawable;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.mediaRouteButtonStyle = global::ResSched.Droid.Resource.Attribute.mediaRouteButtonStyle;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.mediaRouteButtonTint = global::ResSched.Droid.Resource.Attribute.mediaRouteButtonTint;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.mediaRouteCloseDrawable = global::ResSched.Droid.Resource.Attribute.mediaRouteCloseDrawable;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.mediaRouteControlPanelThemeOverlay = global::ResSched.Droid.Resource.Attribute.mediaRouteControlPanelThemeOverlay;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.mediaRouteDefaultIconDrawable = global::ResSched.Droid.Resource.Attribute.mediaRouteDefaultIconDrawable;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.mediaRoutePauseDrawable = global::ResSched.Droid.Resource.Attribute.mediaRoutePauseDrawable;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.mediaRoutePlayDrawable = global::ResSched.Droid.Resource.Attribute.mediaRoutePlayDrawable;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.mediaRouteSpeakerGroupIconDrawable = global::ResSched.Droid.Resource.Attribute.mediaRouteSpeakerGroupIconDrawable;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.mediaRouteSpeakerIconDrawable = global::ResSched.Droid.Resource.Attribute.mediaRouteSpeakerIconDrawable;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.mediaRouteStopDrawable = global::ResSched.Droid.Resource.Attribute.mediaRouteStopDrawable;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.mediaRouteTheme = global::ResSched.Droid.Resource.Attribute.mediaRouteTheme;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.mediaRouteTvIconDrawable = global::ResSched.Droid.Resource.Attribute.mediaRouteTvIconDrawable;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.menu = global::ResSched.Droid.Resource.Attribute.menu;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.multiChoiceItemLayout = global::ResSched.Droid.Resource.Attribute.multiChoiceItemLayout;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.navigationContentDescription = global::ResSched.Droid.Resource.Attribute.navigationContentDescription;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.navigationIcon = global::ResSched.Droid.Resource.Attribute.navigationIcon;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.navigationMode = global::ResSched.Droid.Resource.Attribute.navigationMode;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.numericModifiers = global::ResSched.Droid.Resource.Attribute.numericModifiers;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.overlapAnchor = global::ResSched.Droid.Resource.Attribute.overlapAnchor;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.paddingBottomNoButtons = global::ResSched.Droid.Resource.Attribute.paddingBottomNoButtons;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.paddingEnd = global::ResSched.Droid.Resource.Attribute.paddingEnd;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.paddingStart = global::ResSched.Droid.Resource.Attribute.paddingStart;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.paddingTopNoTitle = global::ResSched.Droid.Resource.Attribute.paddingTopNoTitle;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.panelBackground = global::ResSched.Droid.Resource.Attribute.panelBackground;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.panelMenuListTheme = global::ResSched.Droid.Resource.Attribute.panelMenuListTheme;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.panelMenuListWidth = global::ResSched.Droid.Resource.Attribute.panelMenuListWidth;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.passwordToggleContentDescription = global::ResSched.Droid.Resource.Attribute.passwordToggleContentDescription;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.passwordToggleDrawable = global::ResSched.Droid.Resource.Attribute.passwordToggleDrawable;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.passwordToggleEnabled = global::ResSched.Droid.Resource.Attribute.passwordToggleEnabled;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.passwordToggleTint = global::ResSched.Droid.Resource.Attribute.passwordToggleTint;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.passwordToggleTintMode = global::ResSched.Droid.Resource.Attribute.passwordToggleTintMode;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.popupMenuStyle = global::ResSched.Droid.Resource.Attribute.popupMenuStyle;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.popupTheme = global::ResSched.Droid.Resource.Attribute.popupTheme;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.popupWindowStyle = global::ResSched.Droid.Resource.Attribute.popupWindowStyle;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.preserveIconSpacing = global::ResSched.Droid.Resource.Attribute.preserveIconSpacing;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.pressedTranslationZ = global::ResSched.Droid.Resource.Attribute.pressedTranslationZ;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.progressBarPadding = global::ResSched.Droid.Resource.Attribute.progressBarPadding;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.progressBarStyle = global::ResSched.Droid.Resource.Attribute.progressBarStyle;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.queryBackground = global::ResSched.Droid.Resource.Attribute.queryBackground;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.queryHint = global::ResSched.Droid.Resource.Attribute.queryHint;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.radioButtonStyle = global::ResSched.Droid.Resource.Attribute.radioButtonStyle;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.ratingBarStyle = global::ResSched.Droid.Resource.Attribute.ratingBarStyle;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.ratingBarStyleIndicator = global::ResSched.Droid.Resource.Attribute.ratingBarStyleIndicator;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.ratingBarStyleSmall = global::ResSched.Droid.Resource.Attribute.ratingBarStyleSmall;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.reverseLayout = global::ResSched.Droid.Resource.Attribute.reverseLayout;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.rippleColor = global::ResSched.Droid.Resource.Attribute.rippleColor;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.scrimAnimationDuration = global::ResSched.Droid.Resource.Attribute.scrimAnimationDuration;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.scrimVisibleHeightTrigger = global::ResSched.Droid.Resource.Attribute.scrimVisibleHeightTrigger;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.searchHintIcon = global::ResSched.Droid.Resource.Attribute.searchHintIcon;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.searchIcon = global::ResSched.Droid.Resource.Attribute.searchIcon;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.searchViewStyle = global::ResSched.Droid.Resource.Attribute.searchViewStyle;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.seekBarStyle = global::ResSched.Droid.Resource.Attribute.seekBarStyle;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.selectableItemBackground = global::ResSched.Droid.Resource.Attribute.selectableItemBackground;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.selectableItemBackgroundBorderless = global::ResSched.Droid.Resource.Attribute.selectableItemBackgroundBorderless;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.showAsAction = global::ResSched.Droid.Resource.Attribute.showAsAction;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.showDividers = global::ResSched.Droid.Resource.Attribute.showDividers;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.showText = global::ResSched.Droid.Resource.Attribute.showText;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.showTitle = global::ResSched.Droid.Resource.Attribute.showTitle;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.singleChoiceItemLayout = global::ResSched.Droid.Resource.Attribute.singleChoiceItemLayout;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.spanCount = global::ResSched.Droid.Resource.Attribute.spanCount;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.spinBars = global::ResSched.Droid.Resource.Attribute.spinBars;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.spinnerDropDownItemStyle = global::ResSched.Droid.Resource.Attribute.spinnerDropDownItemStyle;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.spinnerStyle = global::ResSched.Droid.Resource.Attribute.spinnerStyle;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.splitTrack = global::ResSched.Droid.Resource.Attribute.splitTrack;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.srcCompat = global::ResSched.Droid.Resource.Attribute.srcCompat;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.stackFromEnd = global::ResSched.Droid.Resource.Attribute.stackFromEnd;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.state_above_anchor = global::ResSched.Droid.Resource.Attribute.state_above_anchor;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.state_collapsed = global::ResSched.Droid.Resource.Attribute.state_collapsed;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.state_collapsible = global::ResSched.Droid.Resource.Attribute.state_collapsible;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.statusBarBackground = global::ResSched.Droid.Resource.Attribute.statusBarBackground;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.statusBarScrim = global::ResSched.Droid.Resource.Attribute.statusBarScrim;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.subMenuArrow = global::ResSched.Droid.Resource.Attribute.subMenuArrow;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.submitBackground = global::ResSched.Droid.Resource.Attribute.submitBackground;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.subtitle = global::ResSched.Droid.Resource.Attribute.subtitle;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.subtitleTextAppearance = global::ResSched.Droid.Resource.Attribute.subtitleTextAppearance;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.subtitleTextColor = global::ResSched.Droid.Resource.Attribute.subtitleTextColor;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.subtitleTextStyle = global::ResSched.Droid.Resource.Attribute.subtitleTextStyle;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.suggestionRowLayout = global::ResSched.Droid.Resource.Attribute.suggestionRowLayout;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.switchMinWidth = global::ResSched.Droid.Resource.Attribute.switchMinWidth;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.switchPadding = global::ResSched.Droid.Resource.Attribute.switchPadding;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.switchStyle = global::ResSched.Droid.Resource.Attribute.switchStyle;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.switchTextAppearance = global::ResSched.Droid.Resource.Attribute.switchTextAppearance;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.tabBackground = global::ResSched.Droid.Resource.Attribute.tabBackground;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.tabContentStart = global::ResSched.Droid.Resource.Attribute.tabContentStart;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.tabGravity = global::ResSched.Droid.Resource.Attribute.tabGravity;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.tabIndicatorColor = global::ResSched.Droid.Resource.Attribute.tabIndicatorColor;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.tabIndicatorHeight = global::ResSched.Droid.Resource.Attribute.tabIndicatorHeight;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.tabMaxWidth = global::ResSched.Droid.Resource.Attribute.tabMaxWidth;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.tabMinWidth = global::ResSched.Droid.Resource.Attribute.tabMinWidth;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.tabMode = global::ResSched.Droid.Resource.Attribute.tabMode;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.tabPadding = global::ResSched.Droid.Resource.Attribute.tabPadding;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.tabPaddingBottom = global::ResSched.Droid.Resource.Attribute.tabPaddingBottom;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.tabPaddingEnd = global::ResSched.Droid.Resource.Attribute.tabPaddingEnd;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.tabPaddingStart = global::ResSched.Droid.Resource.Attribute.tabPaddingStart;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.tabPaddingTop = global::ResSched.Droid.Resource.Attribute.tabPaddingTop;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.tabSelectedTextColor = global::ResSched.Droid.Resource.Attribute.tabSelectedTextColor;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.tabTextAppearance = global::ResSched.Droid.Resource.Attribute.tabTextAppearance;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.tabTextColor = global::ResSched.Droid.Resource.Attribute.tabTextColor;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.textAllCaps = global::ResSched.Droid.Resource.Attribute.textAllCaps;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.textAppearanceLargePopupMenu = global::ResSched.Droid.Resource.Attribute.textAppearanceLargePopupMenu;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.textAppearanceListItem = global::ResSched.Droid.Resource.Attribute.textAppearanceListItem;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.textAppearanceListItemSecondary = global::ResSched.Droid.Resource.Attribute.textAppearanceListItemSecondary;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.textAppearanceListItemSmall = global::ResSched.Droid.Resource.Attribute.textAppearanceListItemSmall;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.textAppearancePopupMenuHeader = global::ResSched.Droid.Resource.Attribute.textAppearancePopupMenuHeader;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.textAppearanceSearchResultSubtitle = global::ResSched.Droid.Resource.Attribute.textAppearanceSearchResultSubtitle;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.textAppearanceSearchResultTitle = global::ResSched.Droid.Resource.Attribute.textAppearanceSearchResultTitle;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.textAppearanceSmallPopupMenu = global::ResSched.Droid.Resource.Attribute.textAppearanceSmallPopupMenu;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.textColorAlertDialogListItem = global::ResSched.Droid.Resource.Attribute.textColorAlertDialogListItem;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.textColorError = global::ResSched.Droid.Resource.Attribute.textColorError;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.textColorSearchUrl = global::ResSched.Droid.Resource.Attribute.textColorSearchUrl;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.theme = global::ResSched.Droid.Resource.Attribute.theme;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.thickness = global::ResSched.Droid.Resource.Attribute.thickness;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.thumbTextPadding = global::ResSched.Droid.Resource.Attribute.thumbTextPadding;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.thumbTint = global::ResSched.Droid.Resource.Attribute.thumbTint;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.thumbTintMode = global::ResSched.Droid.Resource.Attribute.thumbTintMode;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.tickMark = global::ResSched.Droid.Resource.Attribute.tickMark;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.tickMarkTint = global::ResSched.Droid.Resource.Attribute.tickMarkTint;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.tickMarkTintMode = global::ResSched.Droid.Resource.Attribute.tickMarkTintMode;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.tint = global::ResSched.Droid.Resource.Attribute.tint;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.tintMode = global::ResSched.Droid.Resource.Attribute.tintMode;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.title = global::ResSched.Droid.Resource.Attribute.title;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.titleEnabled = global::ResSched.Droid.Resource.Attribute.titleEnabled;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.titleMargin = global::ResSched.Droid.Resource.Attribute.titleMargin;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.titleMarginBottom = global::ResSched.Droid.Resource.Attribute.titleMarginBottom;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.titleMarginEnd = global::ResSched.Droid.Resource.Attribute.titleMarginEnd;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.titleMarginStart = global::ResSched.Droid.Resource.Attribute.titleMarginStart;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.titleMarginTop = global::ResSched.Droid.Resource.Attribute.titleMarginTop;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.titleMargins = global::ResSched.Droid.Resource.Attribute.titleMargins;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.titleTextAppearance = global::ResSched.Droid.Resource.Attribute.titleTextAppearance;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.titleTextColor = global::ResSched.Droid.Resource.Attribute.titleTextColor;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.titleTextStyle = global::ResSched.Droid.Resource.Attribute.titleTextStyle;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.toolbarId = global::ResSched.Droid.Resource.Attribute.toolbarId;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.toolbarNavigationButtonStyle = global::ResSched.Droid.Resource.Attribute.toolbarNavigationButtonStyle;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.toolbarStyle = global::ResSched.Droid.Resource.Attribute.toolbarStyle;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.tooltipForegroundColor = global::ResSched.Droid.Resource.Attribute.tooltipForegroundColor;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.tooltipFrameBackground = global::ResSched.Droid.Resource.Attribute.tooltipFrameBackground;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.tooltipText = global::ResSched.Droid.Resource.Attribute.tooltipText;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.track = global::ResSched.Droid.Resource.Attribute.track;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.trackTint = global::ResSched.Droid.Resource.Attribute.trackTint;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.trackTintMode = global::ResSched.Droid.Resource.Attribute.trackTintMode;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.useCompatPadding = global::ResSched.Droid.Resource.Attribute.useCompatPadding;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.voiceIcon = global::ResSched.Droid.Resource.Attribute.voiceIcon;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.windowActionBar = global::ResSched.Droid.Resource.Attribute.windowActionBar;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.windowActionBarOverlay = global::ResSched.Droid.Resource.Attribute.windowActionBarOverlay;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.windowActionModeOverlay = global::ResSched.Droid.Resource.Attribute.windowActionModeOverlay;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.windowFixedHeightMajor = global::ResSched.Droid.Resource.Attribute.windowFixedHeightMajor;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.windowFixedHeightMinor = global::ResSched.Droid.Resource.Attribute.windowFixedHeightMinor;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.windowFixedWidthMajor = global::ResSched.Droid.Resource.Attribute.windowFixedWidthMajor;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.windowFixedWidthMinor = global::ResSched.Droid.Resource.Attribute.windowFixedWidthMinor;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.windowMinWidthMajor = global::ResSched.Droid.Resource.Attribute.windowMinWidthMajor;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.windowMinWidthMinor = global::ResSched.Droid.Resource.Attribute.windowMinWidthMinor;
-			global::Xamarin.Auth.XamarinForms.Resource.Attribute.windowNoTitle = global::ResSched.Droid.Resource.Attribute.windowNoTitle;
-			global::Xamarin.Auth.XamarinForms.Resource.Boolean.abc_action_bar_embed_tabs = global::ResSched.Droid.Resource.Boolean.abc_action_bar_embed_tabs;
-			global::Xamarin.Auth.XamarinForms.Resource.Boolean.abc_allow_stacked_button_bar = global::ResSched.Droid.Resource.Boolean.abc_allow_stacked_button_bar;
-			global::Xamarin.Auth.XamarinForms.Resource.Boolean.abc_config_actionMenuItemAllCaps = global::ResSched.Droid.Resource.Boolean.abc_config_actionMenuItemAllCaps;
-			global::Xamarin.Auth.XamarinForms.Resource.Boolean.abc_config_closeDialogWhenTouchOutside = global::ResSched.Droid.Resource.Boolean.abc_config_closeDialogWhenTouchOutside;
-			global::Xamarin.Auth.XamarinForms.Resource.Boolean.abc_config_showMenuShortcutsWhenKeyboardPresent = global::ResSched.Droid.Resource.Boolean.abc_config_showMenuShortcutsWhenKeyboardPresent;
-			global::Xamarin.Auth.XamarinForms.Resource.Color.abc_background_cache_hint_selector_material_dark = global::ResSched.Droid.Resource.Color.abc_background_cache_hint_selector_material_dark;
-			global::Xamarin.Auth.XamarinForms.Resource.Color.abc_background_cache_hint_selector_material_light = global::ResSched.Droid.Resource.Color.abc_background_cache_hint_selector_material_light;
-			global::Xamarin.Auth.XamarinForms.Resource.Color.abc_btn_colored_borderless_text_material = global::ResSched.Droid.Resource.Color.abc_btn_colored_borderless_text_material;
-			global::Xamarin.Auth.XamarinForms.Resource.Color.abc_btn_colored_text_material = global::ResSched.Droid.Resource.Color.abc_btn_colored_text_material;
-			global::Xamarin.Auth.XamarinForms.Resource.Color.abc_color_highlight_material = global::ResSched.Droid.Resource.Color.abc_color_highlight_material;
-			global::Xamarin.Auth.XamarinForms.Resource.Color.abc_hint_foreground_material_dark = global::ResSched.Droid.Resource.Color.abc_hint_foreground_material_dark;
-			global::Xamarin.Auth.XamarinForms.Resource.Color.abc_hint_foreground_material_light = global::ResSched.Droid.Resource.Color.abc_hint_foreground_material_light;
-			global::Xamarin.Auth.XamarinForms.Resource.Color.abc_input_method_navigation_guard = global::ResSched.Droid.Resource.Color.abc_input_method_navigation_guard;
-			global::Xamarin.Auth.XamarinForms.Resource.Color.abc_primary_text_disable_only_material_dark = global::ResSched.Droid.Resource.Color.abc_primary_text_disable_only_material_dark;
-			global::Xamarin.Auth.XamarinForms.Resource.Color.abc_primary_text_disable_only_material_light = global::ResSched.Droid.Resource.Color.abc_primary_text_disable_only_material_light;
-			global::Xamarin.Auth.XamarinForms.Resource.Color.abc_primary_text_material_dark = global::ResSched.Droid.Resource.Color.abc_primary_text_material_dark;
-			global::Xamarin.Auth.XamarinForms.Resource.Color.abc_primary_text_material_light = global::ResSched.Droid.Resource.Color.abc_primary_text_material_light;
-			global::Xamarin.Auth.XamarinForms.Resource.Color.abc_search_url_text = global::ResSched.Droid.Resource.Color.abc_search_url_text;
-			global::Xamarin.Auth.XamarinForms.Resource.Color.abc_search_url_text_normal = global::ResSched.Droid.Resource.Color.abc_search_url_text_normal;
-			global::Xamarin.Auth.XamarinForms.Resource.Color.abc_search_url_text_pressed = global::ResSched.Droid.Resource.Color.abc_search_url_text_pressed;
-			global::Xamarin.Auth.XamarinForms.Resource.Color.abc_search_url_text_selected = global::ResSched.Droid.Resource.Color.abc_search_url_text_selected;
-			global::Xamarin.Auth.XamarinForms.Resource.Color.abc_secondary_text_material_dark = global::ResSched.Droid.Resource.Color.abc_secondary_text_material_dark;
-			global::Xamarin.Auth.XamarinForms.Resource.Color.abc_secondary_text_material_light = global::ResSched.Droid.Resource.Color.abc_secondary_text_material_light;
-			global::Xamarin.Auth.XamarinForms.Resource.Color.abc_tint_btn_checkable = global::ResSched.Droid.Resource.Color.abc_tint_btn_checkable;
-			global::Xamarin.Auth.XamarinForms.Resource.Color.abc_tint_default = global::ResSched.Droid.Resource.Color.abc_tint_default;
-			global::Xamarin.Auth.XamarinForms.Resource.Color.abc_tint_edittext = global::ResSched.Droid.Resource.Color.abc_tint_edittext;
-			global::Xamarin.Auth.XamarinForms.Resource.Color.abc_tint_seek_thumb = global::ResSched.Droid.Resource.Color.abc_tint_seek_thumb;
-			global::Xamarin.Auth.XamarinForms.Resource.Color.abc_tint_spinner = global::ResSched.Droid.Resource.Color.abc_tint_spinner;
-			global::Xamarin.Auth.XamarinForms.Resource.Color.abc_tint_switch_track = global::ResSched.Droid.Resource.Color.abc_tint_switch_track;
-			global::Xamarin.Auth.XamarinForms.Resource.Color.accent_material_dark = global::ResSched.Droid.Resource.Color.accent_material_dark;
-			global::Xamarin.Auth.XamarinForms.Resource.Color.accent_material_light = global::ResSched.Droid.Resource.Color.accent_material_light;
-			global::Xamarin.Auth.XamarinForms.Resource.Color.background_floating_material_dark = global::ResSched.Droid.Resource.Color.background_floating_material_dark;
-			global::Xamarin.Auth.XamarinForms.Resource.Color.background_floating_material_light = global::ResSched.Droid.Resource.Color.background_floating_material_light;
-			global::Xamarin.Auth.XamarinForms.Resource.Color.background_material_dark = global::ResSched.Droid.Resource.Color.background_material_dark;
-			global::Xamarin.Auth.XamarinForms.Resource.Color.background_material_light = global::ResSched.Droid.Resource.Color.background_material_light;
-			global::Xamarin.Auth.XamarinForms.Resource.Color.bright_foreground_disabled_material_dark = global::ResSched.Droid.Resource.Color.bright_foreground_disabled_material_dark;
-			global::Xamarin.Auth.XamarinForms.Resource.Color.bright_foreground_disabled_material_light = global::ResSched.Droid.Resource.Color.bright_foreground_disabled_material_light;
-			global::Xamarin.Auth.XamarinForms.Resource.Color.bright_foreground_inverse_material_dark = global::ResSched.Droid.Resource.Color.bright_foreground_inverse_material_dark;
-			global::Xamarin.Auth.XamarinForms.Resource.Color.bright_foreground_inverse_material_light = global::ResSched.Droid.Resource.Color.bright_foreground_inverse_material_light;
-			global::Xamarin.Auth.XamarinForms.Resource.Color.bright_foreground_material_dark = global::ResSched.Droid.Resource.Color.bright_foreground_material_dark;
-			global::Xamarin.Auth.XamarinForms.Resource.Color.bright_foreground_material_light = global::ResSched.Droid.Resource.Color.bright_foreground_material_light;
-			global::Xamarin.Auth.XamarinForms.Resource.Color.button_material_dark = global::ResSched.Droid.Resource.Color.button_material_dark;
-			global::Xamarin.Auth.XamarinForms.Resource.Color.button_material_light = global::ResSched.Droid.Resource.Color.button_material_light;
-			global::Xamarin.Auth.XamarinForms.Resource.Color.cardview_dark_background = global::ResSched.Droid.Resource.Color.cardview_dark_background;
-			global::Xamarin.Auth.XamarinForms.Resource.Color.cardview_light_background = global::ResSched.Droid.Resource.Color.cardview_light_background;
-			global::Xamarin.Auth.XamarinForms.Resource.Color.cardview_shadow_end_color = global::ResSched.Droid.Resource.Color.cardview_shadow_end_color;
-			global::Xamarin.Auth.XamarinForms.Resource.Color.cardview_shadow_start_color = global::ResSched.Droid.Resource.Color.cardview_shadow_start_color;
-			global::Xamarin.Auth.XamarinForms.Resource.Color.design_bottom_navigation_shadow_color = global::ResSched.Droid.Resource.Color.design_bottom_navigation_shadow_color;
-			global::Xamarin.Auth.XamarinForms.Resource.Color.design_error = global::ResSched.Droid.Resource.Color.design_error;
-			global::Xamarin.Auth.XamarinForms.Resource.Color.design_fab_shadow_end_color = global::ResSched.Droid.Resource.Color.design_fab_shadow_end_color;
-			global::Xamarin.Auth.XamarinForms.Resource.Color.design_fab_shadow_mid_color = global::ResSched.Droid.Resource.Color.design_fab_shadow_mid_color;
-			global::Xamarin.Auth.XamarinForms.Resource.Color.design_fab_shadow_start_color = global::ResSched.Droid.Resource.Color.design_fab_shadow_start_color;
-			global::Xamarin.Auth.XamarinForms.Resource.Color.design_fab_stroke_end_inner_color = global::ResSched.Droid.Resource.Color.design_fab_stroke_end_inner_color;
-			global::Xamarin.Auth.XamarinForms.Resource.Color.design_fab_stroke_end_outer_color = global::ResSched.Droid.Resource.Color.design_fab_stroke_end_outer_color;
-			global::Xamarin.Auth.XamarinForms.Resource.Color.design_fab_stroke_top_inner_color = global::ResSched.Droid.Resource.Color.design_fab_stroke_top_inner_color;
-			global::Xamarin.Auth.XamarinForms.Resource.Color.design_fab_stroke_top_outer_color = global::ResSched.Droid.Resource.Color.design_fab_stroke_top_outer_color;
-			global::Xamarin.Auth.XamarinForms.Resource.Color.design_snackbar_background_color = global::ResSched.Droid.Resource.Color.design_snackbar_background_color;
-			global::Xamarin.Auth.XamarinForms.Resource.Color.design_tint_password_toggle = global::ResSched.Droid.Resource.Color.design_tint_password_toggle;
-			global::Xamarin.Auth.XamarinForms.Resource.Color.dim_foreground_disabled_material_dark = global::ResSched.Droid.Resource.Color.dim_foreground_disabled_material_dark;
-			global::Xamarin.Auth.XamarinForms.Resource.Color.dim_foreground_disabled_material_light = global::ResSched.Droid.Resource.Color.dim_foreground_disabled_material_light;
-			global::Xamarin.Auth.XamarinForms.Resource.Color.dim_foreground_material_dark = global::ResSched.Droid.Resource.Color.dim_foreground_material_dark;
-			global::Xamarin.Auth.XamarinForms.Resource.Color.dim_foreground_material_light = global::ResSched.Droid.Resource.Color.dim_foreground_material_light;
-			global::Xamarin.Auth.XamarinForms.Resource.Color.error_color_material = global::ResSched.Droid.Resource.Color.error_color_material;
-			global::Xamarin.Auth.XamarinForms.Resource.Color.foreground_material_dark = global::ResSched.Droid.Resource.Color.foreground_material_dark;
-			global::Xamarin.Auth.XamarinForms.Resource.Color.foreground_material_light = global::ResSched.Droid.Resource.Color.foreground_material_light;
-			global::Xamarin.Auth.XamarinForms.Resource.Color.highlighted_text_material_dark = global::ResSched.Droid.Resource.Color.highlighted_text_material_dark;
-			global::Xamarin.Auth.XamarinForms.Resource.Color.highlighted_text_material_light = global::ResSched.Droid.Resource.Color.highlighted_text_material_light;
-			global::Xamarin.Auth.XamarinForms.Resource.Color.material_blue_grey_800 = global::ResSched.Droid.Resource.Color.material_blue_grey_800;
-			global::Xamarin.Auth.XamarinForms.Resource.Color.material_blue_grey_900 = global::ResSched.Droid.Resource.Color.material_blue_grey_900;
-			global::Xamarin.Auth.XamarinForms.Resource.Color.material_blue_grey_950 = global::ResSched.Droid.Resource.Color.material_blue_grey_950;
-			global::Xamarin.Auth.XamarinForms.Resource.Color.material_deep_teal_200 = global::ResSched.Droid.Resource.Color.material_deep_teal_200;
-			global::Xamarin.Auth.XamarinForms.Resource.Color.material_deep_teal_500 = global::ResSched.Droid.Resource.Color.material_deep_teal_500;
-			global::Xamarin.Auth.XamarinForms.Resource.Color.material_grey_100 = global::ResSched.Droid.Resource.Color.material_grey_100;
-			global::Xamarin.Auth.XamarinForms.Resource.Color.material_grey_300 = global::ResSched.Droid.Resource.Color.material_grey_300;
-			global::Xamarin.Auth.XamarinForms.Resource.Color.material_grey_50 = global::ResSched.Droid.Resource.Color.material_grey_50;
-			global::Xamarin.Auth.XamarinForms.Resource.Color.material_grey_600 = global::ResSched.Droid.Resource.Color.material_grey_600;
-			global::Xamarin.Auth.XamarinForms.Resource.Color.material_grey_800 = global::ResSched.Droid.Resource.Color.material_grey_800;
-			global::Xamarin.Auth.XamarinForms.Resource.Color.material_grey_850 = global::ResSched.Droid.Resource.Color.material_grey_850;
-			global::Xamarin.Auth.XamarinForms.Resource.Color.material_grey_900 = global::ResSched.Droid.Resource.Color.material_grey_900;
-			global::Xamarin.Auth.XamarinForms.Resource.Color.notification_action_color_filter = global::ResSched.Droid.Resource.Color.notification_action_color_filter;
-			global::Xamarin.Auth.XamarinForms.Resource.Color.notification_icon_bg_color = global::ResSched.Droid.Resource.Color.notification_icon_bg_color;
-			global::Xamarin.Auth.XamarinForms.Resource.Color.notification_material_background_media_default_color = global::ResSched.Droid.Resource.Color.notification_material_background_media_default_color;
-			global::Xamarin.Auth.XamarinForms.Resource.Color.primary_dark_material_dark = global::ResSched.Droid.Resource.Color.primary_dark_material_dark;
-			global::Xamarin.Auth.XamarinForms.Resource.Color.primary_dark_material_light = global::ResSched.Droid.Resource.Color.primary_dark_material_light;
-			global::Xamarin.Auth.XamarinForms.Resource.Color.primary_material_dark = global::ResSched.Droid.Resource.Color.primary_material_dark;
-			global::Xamarin.Auth.XamarinForms.Resource.Color.primary_material_light = global::ResSched.Droid.Resource.Color.primary_material_light;
-			global::Xamarin.Auth.XamarinForms.Resource.Color.primary_text_default_material_dark = global::ResSched.Droid.Resource.Color.primary_text_default_material_dark;
-			global::Xamarin.Auth.XamarinForms.Resource.Color.primary_text_default_material_light = global::ResSched.Droid.Resource.Color.primary_text_default_material_light;
-			global::Xamarin.Auth.XamarinForms.Resource.Color.primary_text_disabled_material_dark = global::ResSched.Droid.Resource.Color.primary_text_disabled_material_dark;
-			global::Xamarin.Auth.XamarinForms.Resource.Color.primary_text_disabled_material_light = global::ResSched.Droid.Resource.Color.primary_text_disabled_material_light;
-			global::Xamarin.Auth.XamarinForms.Resource.Color.ripple_material_dark = global::ResSched.Droid.Resource.Color.ripple_material_dark;
-			global::Xamarin.Auth.XamarinForms.Resource.Color.ripple_material_light = global::ResSched.Droid.Resource.Color.ripple_material_light;
-			global::Xamarin.Auth.XamarinForms.Resource.Color.secondary_text_default_material_dark = global::ResSched.Droid.Resource.Color.secondary_text_default_material_dark;
-			global::Xamarin.Auth.XamarinForms.Resource.Color.secondary_text_default_material_light = global::ResSched.Droid.Resource.Color.secondary_text_default_material_light;
-			global::Xamarin.Auth.XamarinForms.Resource.Color.secondary_text_disabled_material_dark = global::ResSched.Droid.Resource.Color.secondary_text_disabled_material_dark;
-			global::Xamarin.Auth.XamarinForms.Resource.Color.secondary_text_disabled_material_light = global::ResSched.Droid.Resource.Color.secondary_text_disabled_material_light;
-			global::Xamarin.Auth.XamarinForms.Resource.Color.switch_thumb_disabled_material_dark = global::ResSched.Droid.Resource.Color.switch_thumb_disabled_material_dark;
-			global::Xamarin.Auth.XamarinForms.Resource.Color.switch_thumb_disabled_material_light = global::ResSched.Droid.Resource.Color.switch_thumb_disabled_material_light;
-			global::Xamarin.Auth.XamarinForms.Resource.Color.switch_thumb_material_dark = global::ResSched.Droid.Resource.Color.switch_thumb_material_dark;
-			global::Xamarin.Auth.XamarinForms.Resource.Color.switch_thumb_material_light = global::ResSched.Droid.Resource.Color.switch_thumb_material_light;
-			global::Xamarin.Auth.XamarinForms.Resource.Color.switch_thumb_normal_material_dark = global::ResSched.Droid.Resource.Color.switch_thumb_normal_material_dark;
-			global::Xamarin.Auth.XamarinForms.Resource.Color.switch_thumb_normal_material_light = global::ResSched.Droid.Resource.Color.switch_thumb_normal_material_light;
-			global::Xamarin.Auth.XamarinForms.Resource.Color.tooltip_background_dark = global::ResSched.Droid.Resource.Color.tooltip_background_dark;
-			global::Xamarin.Auth.XamarinForms.Resource.Color.tooltip_background_light = global::ResSched.Droid.Resource.Color.tooltip_background_light;
-			global::Xamarin.Auth.XamarinForms.Resource.Dimension.abc_action_bar_content_inset_material = global::ResSched.Droid.Resource.Dimension.abc_action_bar_content_inset_material;
-			global::Xamarin.Auth.XamarinForms.Resource.Dimension.abc_action_bar_content_inset_with_nav = global::ResSched.Droid.Resource.Dimension.abc_action_bar_content_inset_with_nav;
-			global::Xamarin.Auth.XamarinForms.Resource.Dimension.abc_action_bar_default_height_material = global::ResSched.Droid.Resource.Dimension.abc_action_bar_default_height_material;
-			global::Xamarin.Auth.XamarinForms.Resource.Dimension.abc_action_bar_default_padding_end_material = global::ResSched.Droid.Resource.Dimension.abc_action_bar_default_padding_end_material;
-			global::Xamarin.Auth.XamarinForms.Resource.Dimension.abc_action_bar_default_padding_start_material = global::ResSched.Droid.Resource.Dimension.abc_action_bar_default_padding_start_material;
-			global::Xamarin.Auth.XamarinForms.Resource.Dimension.abc_action_bar_elevation_material = global::ResSched.Droid.Resource.Dimension.abc_action_bar_elevation_material;
-			global::Xamarin.Auth.XamarinForms.Resource.Dimension.abc_action_bar_icon_vertical_padding_material = global::ResSched.Droid.Resource.Dimension.abc_action_bar_icon_vertical_padding_material;
-			global::Xamarin.Auth.XamarinForms.Resource.Dimension.abc_action_bar_overflow_padding_end_material = global::ResSched.Droid.Resource.Dimension.abc_action_bar_overflow_padding_end_material;
-			global::Xamarin.Auth.XamarinForms.Resource.Dimension.abc_action_bar_overflow_padding_start_material = global::ResSched.Droid.Resource.Dimension.abc_action_bar_overflow_padding_start_material;
-			global::Xamarin.Auth.XamarinForms.Resource.Dimension.abc_action_bar_progress_bar_size = global::ResSched.Droid.Resource.Dimension.abc_action_bar_progress_bar_size;
-			global::Xamarin.Auth.XamarinForms.Resource.Dimension.abc_action_bar_stacked_max_height = global::ResSched.Droid.Resource.Dimension.abc_action_bar_stacked_max_height;
-			global::Xamarin.Auth.XamarinForms.Resource.Dimension.abc_action_bar_stacked_tab_max_width = global::ResSched.Droid.Resource.Dimension.abc_action_bar_stacked_tab_max_width;
-			global::Xamarin.Auth.XamarinForms.Resource.Dimension.abc_action_bar_subtitle_bottom_margin_material = global::ResSched.Droid.Resource.Dimension.abc_action_bar_subtitle_bottom_margin_material;
-			global::Xamarin.Auth.XamarinForms.Resource.Dimension.abc_action_bar_subtitle_top_margin_material = global::ResSched.Droid.Resource.Dimension.abc_action_bar_subtitle_top_margin_material;
-			global::Xamarin.Auth.XamarinForms.Resource.Dimension.abc_action_button_min_height_material = global::ResSched.Droid.Resource.Dimension.abc_action_button_min_height_material;
-			global::Xamarin.Auth.XamarinForms.Resource.Dimension.abc_action_button_min_width_material = global::ResSched.Droid.Resource.Dimension.abc_action_button_min_width_material;
-			global::Xamarin.Auth.XamarinForms.Resource.Dimension.abc_action_button_min_width_overflow_material = global::ResSched.Droid.Resource.Dimension.abc_action_button_min_width_overflow_material;
-			global::Xamarin.Auth.XamarinForms.Resource.Dimension.abc_alert_dialog_button_bar_height = global::ResSched.Droid.Resource.Dimension.abc_alert_dialog_button_bar_height;
-			global::Xamarin.Auth.XamarinForms.Resource.Dimension.abc_button_inset_horizontal_material = global::ResSched.Droid.Resource.Dimension.abc_button_inset_horizontal_material;
-			global::Xamarin.Auth.XamarinForms.Resource.Dimension.abc_button_inset_vertical_material = global::ResSched.Droid.Resource.Dimension.abc_button_inset_vertical_material;
-			global::Xamarin.Auth.XamarinForms.Resource.Dimension.abc_button_padding_horizontal_material = global::ResSched.Droid.Resource.Dimension.abc_button_padding_horizontal_material;
-			global::Xamarin.Auth.XamarinForms.Resource.Dimension.abc_button_padding_vertical_material = global::ResSched.Droid.Resource.Dimension.abc_button_padding_vertical_material;
-			global::Xamarin.Auth.XamarinForms.Resource.Dimension.abc_cascading_menus_min_smallest_width = global::ResSched.Droid.Resource.Dimension.abc_cascading_menus_min_smallest_width;
-			global::Xamarin.Auth.XamarinForms.Resource.Dimension.abc_config_prefDialogWidth = global::ResSched.Droid.Resource.Dimension.abc_config_prefDialogWidth;
-			global::Xamarin.Auth.XamarinForms.Resource.Dimension.abc_control_corner_material = global::ResSched.Droid.Resource.Dimension.abc_control_corner_material;
-			global::Xamarin.Auth.XamarinForms.Resource.Dimension.abc_control_inset_material = global::ResSched.Droid.Resource.Dimension.abc_control_inset_material;
-			global::Xamarin.Auth.XamarinForms.Resource.Dimension.abc_control_padding_material = global::ResSched.Droid.Resource.Dimension.abc_control_padding_material;
-			global::Xamarin.Auth.XamarinForms.Resource.Dimension.abc_dialog_fixed_height_major = global::ResSched.Droid.Resource.Dimension.abc_dialog_fixed_height_major;
-			global::Xamarin.Auth.XamarinForms.Resource.Dimension.abc_dialog_fixed_height_minor = global::ResSched.Droid.Resource.Dimension.abc_dialog_fixed_height_minor;
-			global::Xamarin.Auth.XamarinForms.Resource.Dimension.abc_dialog_fixed_width_major = global::ResSched.Droid.Resource.Dimension.abc_dialog_fixed_width_major;
-			global::Xamarin.Auth.XamarinForms.Resource.Dimension.abc_dialog_fixed_width_minor = global::ResSched.Droid.Resource.Dimension.abc_dialog_fixed_width_minor;
-			global::Xamarin.Auth.XamarinForms.Resource.Dimension.abc_dialog_list_padding_bottom_no_buttons = global::ResSched.Droid.Resource.Dimension.abc_dialog_list_padding_bottom_no_buttons;
-			global::Xamarin.Auth.XamarinForms.Resource.Dimension.abc_dialog_list_padding_top_no_title = global::ResSched.Droid.Resource.Dimension.abc_dialog_list_padding_top_no_title;
-			global::Xamarin.Auth.XamarinForms.Resource.Dimension.abc_dialog_min_width_major = global::ResSched.Droid.Resource.Dimension.abc_dialog_min_width_major;
-			global::Xamarin.Auth.XamarinForms.Resource.Dimension.abc_dialog_min_width_minor = global::ResSched.Droid.Resource.Dimension.abc_dialog_min_width_minor;
-			global::Xamarin.Auth.XamarinForms.Resource.Dimension.abc_dialog_padding_material = global::ResSched.Droid.Resource.Dimension.abc_dialog_padding_material;
-			global::Xamarin.Auth.XamarinForms.Resource.Dimension.abc_dialog_padding_top_material = global::ResSched.Droid.Resource.Dimension.abc_dialog_padding_top_material;
-			global::Xamarin.Auth.XamarinForms.Resource.Dimension.abc_dialog_title_divider_material = global::ResSched.Droid.Resource.Dimension.abc_dialog_title_divider_material;
-			global::Xamarin.Auth.XamarinForms.Resource.Dimension.abc_disabled_alpha_material_dark = global::ResSched.Droid.Resource.Dimension.abc_disabled_alpha_material_dark;
-			global::Xamarin.Auth.XamarinForms.Resource.Dimension.abc_disabled_alpha_material_light = global::ResSched.Droid.Resource.Dimension.abc_disabled_alpha_material_light;
-			global::Xamarin.Auth.XamarinForms.Resource.Dimension.abc_dropdownitem_icon_width = global::ResSched.Droid.Resource.Dimension.abc_dropdownitem_icon_width;
-			global::Xamarin.Auth.XamarinForms.Resource.Dimension.abc_dropdownitem_text_padding_left = global::ResSched.Droid.Resource.Dimension.abc_dropdownitem_text_padding_left;
-			global::Xamarin.Auth.XamarinForms.Resource.Dimension.abc_dropdownitem_text_padding_right = global::ResSched.Droid.Resource.Dimension.abc_dropdownitem_text_padding_right;
-			global::Xamarin.Auth.XamarinForms.Resource.Dimension.abc_edit_text_inset_bottom_material = global::ResSched.Droid.Resource.Dimension.abc_edit_text_inset_bottom_material;
-			global::Xamarin.Auth.XamarinForms.Resource.Dimension.abc_edit_text_inset_horizontal_material = global::ResSched.Droid.Resource.Dimension.abc_edit_text_inset_horizontal_material;
-			global::Xamarin.Auth.XamarinForms.Resource.Dimension.abc_edit_text_inset_top_material = global::ResSched.Droid.Resource.Dimension.abc_edit_text_inset_top_material;
-			global::Xamarin.Auth.XamarinForms.Resource.Dimension.abc_floating_window_z = global::ResSched.Droid.Resource.Dimension.abc_floating_window_z;
-			global::Xamarin.Auth.XamarinForms.Resource.Dimension.abc_list_item_padding_horizontal_material = global::ResSched.Droid.Resource.Dimension.abc_list_item_padding_horizontal_material;
-			global::Xamarin.Auth.XamarinForms.Resource.Dimension.abc_panel_menu_list_width = global::ResSched.Droid.Resource.Dimension.abc_panel_menu_list_width;
-			global::Xamarin.Auth.XamarinForms.Resource.Dimension.abc_progress_bar_height_material = global::ResSched.Droid.Resource.Dimension.abc_progress_bar_height_material;
-			global::Xamarin.Auth.XamarinForms.Resource.Dimension.abc_search_view_preferred_height = global::ResSched.Droid.Resource.Dimension.abc_search_view_preferred_height;
-			global::Xamarin.Auth.XamarinForms.Resource.Dimension.abc_search_view_preferred_width = global::ResSched.Droid.Resource.Dimension.abc_search_view_preferred_width;
-			global::Xamarin.Auth.XamarinForms.Resource.Dimension.abc_seekbar_track_background_height_material = global::ResSched.Droid.Resource.Dimension.abc_seekbar_track_background_height_material;
-			global::Xamarin.Auth.XamarinForms.Resource.Dimension.abc_seekbar_track_progress_height_material = global::ResSched.Droid.Resource.Dimension.abc_seekbar_track_progress_height_material;
-			global::Xamarin.Auth.XamarinForms.Resource.Dimension.abc_select_dialog_padding_start_material = global::ResSched.Droid.Resource.Dimension.abc_select_dialog_padding_start_material;
-			global::Xamarin.Auth.XamarinForms.Resource.Dimension.abc_switch_padding = global::ResSched.Droid.Resource.Dimension.abc_switch_padding;
-			global::Xamarin.Auth.XamarinForms.Resource.Dimension.abc_text_size_body_1_material = global::ResSched.Droid.Resource.Dimension.abc_text_size_body_1_material;
-			global::Xamarin.Auth.XamarinForms.Resource.Dimension.abc_text_size_body_2_material = global::ResSched.Droid.Resource.Dimension.abc_text_size_body_2_material;
-			global::Xamarin.Auth.XamarinForms.Resource.Dimension.abc_text_size_button_material = global::ResSched.Droid.Resource.Dimension.abc_text_size_button_material;
-			global::Xamarin.Auth.XamarinForms.Resource.Dimension.abc_text_size_caption_material = global::ResSched.Droid.Resource.Dimension.abc_text_size_caption_material;
-			global::Xamarin.Auth.XamarinForms.Resource.Dimension.abc_text_size_display_1_material = global::ResSched.Droid.Resource.Dimension.abc_text_size_display_1_material;
-			global::Xamarin.Auth.XamarinForms.Resource.Dimension.abc_text_size_display_2_material = global::ResSched.Droid.Resource.Dimension.abc_text_size_display_2_material;
-			global::Xamarin.Auth.XamarinForms.Resource.Dimension.abc_text_size_display_3_material = global::ResSched.Droid.Resource.Dimension.abc_text_size_display_3_material;
-			global::Xamarin.Auth.XamarinForms.Resource.Dimension.abc_text_size_display_4_material = global::ResSched.Droid.Resource.Dimension.abc_text_size_display_4_material;
-			global::Xamarin.Auth.XamarinForms.Resource.Dimension.abc_text_size_headline_material = global::ResSched.Droid.Resource.Dimension.abc_text_size_headline_material;
-			global::Xamarin.Auth.XamarinForms.Resource.Dimension.abc_text_size_large_material = global::ResSched.Droid.Resource.Dimension.abc_text_size_large_material;
-			global::Xamarin.Auth.XamarinForms.Resource.Dimension.abc_text_size_medium_material = global::ResSched.Droid.Resource.Dimension.abc_text_size_medium_material;
-			global::Xamarin.Auth.XamarinForms.Resource.Dimension.abc_text_size_menu_header_material = global::ResSched.Droid.Resource.Dimension.abc_text_size_menu_header_material;
-			global::Xamarin.Auth.XamarinForms.Resource.Dimension.abc_text_size_menu_material = global::ResSched.Droid.Resource.Dimension.abc_text_size_menu_material;
-			global::Xamarin.Auth.XamarinForms.Resource.Dimension.abc_text_size_small_material = global::ResSched.Droid.Resource.Dimension.abc_text_size_small_material;
-			global::Xamarin.Auth.XamarinForms.Resource.Dimension.abc_text_size_subhead_material = global::ResSched.Droid.Resource.Dimension.abc_text_size_subhead_material;
-			global::Xamarin.Auth.XamarinForms.Resource.Dimension.abc_text_size_subtitle_material_toolbar = global::ResSched.Droid.Resource.Dimension.abc_text_size_subtitle_material_toolbar;
-			global::Xamarin.Auth.XamarinForms.Resource.Dimension.abc_text_size_title_material = global::ResSched.Droid.Resource.Dimension.abc_text_size_title_material;
-			global::Xamarin.Auth.XamarinForms.Resource.Dimension.abc_text_size_title_material_toolbar = global::ResSched.Droid.Resource.Dimension.abc_text_size_title_material_toolbar;
-			global::Xamarin.Auth.XamarinForms.Resource.Dimension.cardview_compat_inset_shadow = global::ResSched.Droid.Resource.Dimension.cardview_compat_inset_shadow;
-			global::Xamarin.Auth.XamarinForms.Resource.Dimension.cardview_default_elevation = global::ResSched.Droid.Resource.Dimension.cardview_default_elevation;
-			global::Xamarin.Auth.XamarinForms.Resource.Dimension.cardview_default_radius = global::ResSched.Droid.Resource.Dimension.cardview_default_radius;
-			global::Xamarin.Auth.XamarinForms.Resource.Dimension.compat_button_inset_horizontal_material = global::ResSched.Droid.Resource.Dimension.compat_button_inset_horizontal_material;
-			global::Xamarin.Auth.XamarinForms.Resource.Dimension.compat_button_inset_vertical_material = global::ResSched.Droid.Resource.Dimension.compat_button_inset_vertical_material;
-			global::Xamarin.Auth.XamarinForms.Resource.Dimension.compat_button_padding_horizontal_material = global::ResSched.Droid.Resource.Dimension.compat_button_padding_horizontal_material;
-			global::Xamarin.Auth.XamarinForms.Resource.Dimension.compat_button_padding_vertical_material = global::ResSched.Droid.Resource.Dimension.compat_button_padding_vertical_material;
-			global::Xamarin.Auth.XamarinForms.Resource.Dimension.compat_control_corner_material = global::ResSched.Droid.Resource.Dimension.compat_control_corner_material;
-			global::Xamarin.Auth.XamarinForms.Resource.Dimension.design_appbar_elevation = global::ResSched.Droid.Resource.Dimension.design_appbar_elevation;
-			global::Xamarin.Auth.XamarinForms.Resource.Dimension.design_bottom_navigation_active_item_max_width = global::ResSched.Droid.Resource.Dimension.design_bottom_navigation_active_item_max_width;
-			global::Xamarin.Auth.XamarinForms.Resource.Dimension.design_bottom_navigation_active_text_size = global::ResSched.Droid.Resource.Dimension.design_bottom_navigation_active_text_size;
-			global::Xamarin.Auth.XamarinForms.Resource.Dimension.design_bottom_navigation_elevation = global::ResSched.Droid.Resource.Dimension.design_bottom_navigation_elevation;
-			global::Xamarin.Auth.XamarinForms.Resource.Dimension.design_bottom_navigation_height = global::ResSched.Droid.Resource.Dimension.design_bottom_navigation_height;
-			global::Xamarin.Auth.XamarinForms.Resource.Dimension.design_bottom_navigation_item_max_width = global::ResSched.Droid.Resource.Dimension.design_bottom_navigation_item_max_width;
-			global::Xamarin.Auth.XamarinForms.Resource.Dimension.design_bottom_navigation_item_min_width = global::ResSched.Droid.Resource.Dimension.design_bottom_navigation_item_min_width;
-			global::Xamarin.Auth.XamarinForms.Resource.Dimension.design_bottom_navigation_margin = global::ResSched.Droid.Resource.Dimension.design_bottom_navigation_margin;
-			global::Xamarin.Auth.XamarinForms.Resource.Dimension.design_bottom_navigation_shadow_height = global::ResSched.Droid.Resource.Dimension.design_bottom_navigation_shadow_height;
-			global::Xamarin.Auth.XamarinForms.Resource.Dimension.design_bottom_navigation_text_size = global::ResSched.Droid.Resource.Dimension.design_bottom_navigation_text_size;
-			global::Xamarin.Auth.XamarinForms.Resource.Dimension.design_bottom_sheet_modal_elevation = global::ResSched.Droid.Resource.Dimension.design_bottom_sheet_modal_elevation;
-			global::Xamarin.Auth.XamarinForms.Resource.Dimension.design_bottom_sheet_peek_height_min = global::ResSched.Droid.Resource.Dimension.design_bottom_sheet_peek_height_min;
-			global::Xamarin.Auth.XamarinForms.Resource.Dimension.design_fab_border_width = global::ResSched.Droid.Resource.Dimension.design_fab_border_width;
-			global::Xamarin.Auth.XamarinForms.Resource.Dimension.design_fab_elevation = global::ResSched.Droid.Resource.Dimension.design_fab_elevation;
-			global::Xamarin.Auth.XamarinForms.Resource.Dimension.design_fab_image_size = global::ResSched.Droid.Resource.Dimension.design_fab_image_size;
-			global::Xamarin.Auth.XamarinForms.Resource.Dimension.design_fab_size_mini = global::ResSched.Droid.Resource.Dimension.design_fab_size_mini;
-			global::Xamarin.Auth.XamarinForms.Resource.Dimension.design_fab_size_normal = global::ResSched.Droid.Resource.Dimension.design_fab_size_normal;
-			global::Xamarin.Auth.XamarinForms.Resource.Dimension.design_fab_translation_z_pressed = global::ResSched.Droid.Resource.Dimension.design_fab_translation_z_pressed;
-			global::Xamarin.Auth.XamarinForms.Resource.Dimension.design_navigation_elevation = global::ResSched.Droid.Resource.Dimension.design_navigation_elevation;
-			global::Xamarin.Auth.XamarinForms.Resource.Dimension.design_navigation_icon_padding = global::ResSched.Droid.Resource.Dimension.design_navigation_icon_padding;
-			global::Xamarin.Auth.XamarinForms.Resource.Dimension.design_navigation_icon_size = global::ResSched.Droid.Resource.Dimension.design_navigation_icon_size;
-			global::Xamarin.Auth.XamarinForms.Resource.Dimension.design_navigation_max_width = global::ResSched.Droid.Resource.Dimension.design_navigation_max_width;
-			global::Xamarin.Auth.XamarinForms.Resource.Dimension.design_navigation_padding_bottom = global::ResSched.Droid.Resource.Dimension.design_navigation_padding_bottom;
-			global::Xamarin.Auth.XamarinForms.Resource.Dimension.design_navigation_separator_vertical_padding = global::ResSched.Droid.Resource.Dimension.design_navigation_separator_vertical_padding;
-			global::Xamarin.Auth.XamarinForms.Resource.Dimension.design_snackbar_action_inline_max_width = global::ResSched.Droid.Resource.Dimension.design_snackbar_action_inline_max_width;
-			global::Xamarin.Auth.XamarinForms.Resource.Dimension.design_snackbar_background_corner_radius = global::ResSched.Droid.Resource.Dimension.design_snackbar_background_corner_radius;
-			global::Xamarin.Auth.XamarinForms.Resource.Dimension.design_snackbar_elevation = global::ResSched.Droid.Resource.Dimension.design_snackbar_elevation;
-			global::Xamarin.Auth.XamarinForms.Resource.Dimension.design_snackbar_extra_spacing_horizontal = global::ResSched.Droid.Resource.Dimension.design_snackbar_extra_spacing_horizontal;
-			global::Xamarin.Auth.XamarinForms.Resource.Dimension.design_snackbar_max_width = global::ResSched.Droid.Resource.Dimension.design_snackbar_max_width;
-			global::Xamarin.Auth.XamarinForms.Resource.Dimension.design_snackbar_min_width = global::ResSched.Droid.Resource.Dimension.design_snackbar_min_width;
-			global::Xamarin.Auth.XamarinForms.Resource.Dimension.design_snackbar_padding_horizontal = global::ResSched.Droid.Resource.Dimension.design_snackbar_padding_horizontal;
-			global::Xamarin.Auth.XamarinForms.Resource.Dimension.design_snackbar_padding_vertical = global::ResSched.Droid.Resource.Dimension.design_snackbar_padding_vertical;
-			global::Xamarin.Auth.XamarinForms.Resource.Dimension.design_snackbar_padding_vertical_2lines = global::ResSched.Droid.Resource.Dimension.design_snackbar_padding_vertical_2lines;
-			global::Xamarin.Auth.XamarinForms.Resource.Dimension.design_snackbar_text_size = global::ResSched.Droid.Resource.Dimension.design_snackbar_text_size;
-			global::Xamarin.Auth.XamarinForms.Resource.Dimension.design_tab_max_width = global::ResSched.Droid.Resource.Dimension.design_tab_max_width;
-			global::Xamarin.Auth.XamarinForms.Resource.Dimension.design_tab_scrollable_min_width = global::ResSched.Droid.Resource.Dimension.design_tab_scrollable_min_width;
-			global::Xamarin.Auth.XamarinForms.Resource.Dimension.design_tab_text_size = global::ResSched.Droid.Resource.Dimension.design_tab_text_size;
-			global::Xamarin.Auth.XamarinForms.Resource.Dimension.design_tab_text_size_2line = global::ResSched.Droid.Resource.Dimension.design_tab_text_size_2line;
-			global::Xamarin.Auth.XamarinForms.Resource.Dimension.disabled_alpha_material_dark = global::ResSched.Droid.Resource.Dimension.disabled_alpha_material_dark;
-			global::Xamarin.Auth.XamarinForms.Resource.Dimension.disabled_alpha_material_light = global::ResSched.Droid.Resource.Dimension.disabled_alpha_material_light;
-			global::Xamarin.Auth.XamarinForms.Resource.Dimension.fastscroll_default_thickness = global::ResSched.Droid.Resource.Dimension.fastscroll_default_thickness;
-			global::Xamarin.Auth.XamarinForms.Resource.Dimension.fastscroll_margin = global::ResSched.Droid.Resource.Dimension.fastscroll_margin;
-			global::Xamarin.Auth.XamarinForms.Resource.Dimension.fastscroll_minimum_range = global::ResSched.Droid.Resource.Dimension.fastscroll_minimum_range;
-			global::Xamarin.Auth.XamarinForms.Resource.Dimension.highlight_alpha_material_colored = global::ResSched.Droid.Resource.Dimension.highlight_alpha_material_colored;
-			global::Xamarin.Auth.XamarinForms.Resource.Dimension.highlight_alpha_material_dark = global::ResSched.Droid.Resource.Dimension.highlight_alpha_material_dark;
-			global::Xamarin.Auth.XamarinForms.Resource.Dimension.highlight_alpha_material_light = global::ResSched.Droid.Resource.Dimension.highlight_alpha_material_light;
-			global::Xamarin.Auth.XamarinForms.Resource.Dimension.hint_alpha_material_dark = global::ResSched.Droid.Resource.Dimension.hint_alpha_material_dark;
-			global::Xamarin.Auth.XamarinForms.Resource.Dimension.hint_alpha_material_light = global::ResSched.Droid.Resource.Dimension.hint_alpha_material_light;
-			global::Xamarin.Auth.XamarinForms.Resource.Dimension.hint_pressed_alpha_material_dark = global::ResSched.Droid.Resource.Dimension.hint_pressed_alpha_material_dark;
-			global::Xamarin.Auth.XamarinForms.Resource.Dimension.hint_pressed_alpha_material_light = global::ResSched.Droid.Resource.Dimension.hint_pressed_alpha_material_light;
-			global::Xamarin.Auth.XamarinForms.Resource.Dimension.item_touch_helper_max_drag_scroll_per_frame = global::ResSched.Droid.Resource.Dimension.item_touch_helper_max_drag_scroll_per_frame;
-			global::Xamarin.Auth.XamarinForms.Resource.Dimension.item_touch_helper_swipe_escape_max_velocity = global::ResSched.Droid.Resource.Dimension.item_touch_helper_swipe_escape_max_velocity;
-			global::Xamarin.Auth.XamarinForms.Resource.Dimension.item_touch_helper_swipe_escape_velocity = global::ResSched.Droid.Resource.Dimension.item_touch_helper_swipe_escape_velocity;
-			global::Xamarin.Auth.XamarinForms.Resource.Dimension.mr_controller_volume_group_list_item_height = global::ResSched.Droid.Resource.Dimension.mr_controller_volume_group_list_item_height;
-			global::Xamarin.Auth.XamarinForms.Resource.Dimension.mr_controller_volume_group_list_item_icon_size = global::ResSched.Droid.Resource.Dimension.mr_controller_volume_group_list_item_icon_size;
-			global::Xamarin.Auth.XamarinForms.Resource.Dimension.mr_controller_volume_group_list_max_height = global::ResSched.Droid.Resource.Dimension.mr_controller_volume_group_list_max_height;
-			global::Xamarin.Auth.XamarinForms.Resource.Dimension.mr_controller_volume_group_list_padding_top = global::ResSched.Droid.Resource.Dimension.mr_controller_volume_group_list_padding_top;
-			global::Xamarin.Auth.XamarinForms.Resource.Dimension.mr_dialog_fixed_width_major = global::ResSched.Droid.Resource.Dimension.mr_dialog_fixed_width_major;
-			global::Xamarin.Auth.XamarinForms.Resource.Dimension.mr_dialog_fixed_width_minor = global::ResSched.Droid.Resource.Dimension.mr_dialog_fixed_width_minor;
-			global::Xamarin.Auth.XamarinForms.Resource.Dimension.notification_action_icon_size = global::ResSched.Droid.Resource.Dimension.notification_action_icon_size;
-			global::Xamarin.Auth.XamarinForms.Resource.Dimension.notification_action_text_size = global::ResSched.Droid.Resource.Dimension.notification_action_text_size;
-			global::Xamarin.Auth.XamarinForms.Resource.Dimension.notification_big_circle_margin = global::ResSched.Droid.Resource.Dimension.notification_big_circle_margin;
-			global::Xamarin.Auth.XamarinForms.Resource.Dimension.notification_content_margin_start = global::ResSched.Droid.Resource.Dimension.notification_content_margin_start;
-			global::Xamarin.Auth.XamarinForms.Resource.Dimension.notification_large_icon_height = global::ResSched.Droid.Resource.Dimension.notification_large_icon_height;
-			global::Xamarin.Auth.XamarinForms.Resource.Dimension.notification_large_icon_width = global::ResSched.Droid.Resource.Dimension.notification_large_icon_width;
-			global::Xamarin.Auth.XamarinForms.Resource.Dimension.notification_main_column_padding_top = global::ResSched.Droid.Resource.Dimension.notification_main_column_padding_top;
-			global::Xamarin.Auth.XamarinForms.Resource.Dimension.notification_media_narrow_margin = global::ResSched.Droid.Resource.Dimension.notification_media_narrow_margin;
-			global::Xamarin.Auth.XamarinForms.Resource.Dimension.notification_right_icon_size = global::ResSched.Droid.Resource.Dimension.notification_right_icon_size;
-			global::Xamarin.Auth.XamarinForms.Resource.Dimension.notification_right_side_padding_top = global::ResSched.Droid.Resource.Dimension.notification_right_side_padding_top;
-			global::Xamarin.Auth.XamarinForms.Resource.Dimension.notification_small_icon_background_padding = global::ResSched.Droid.Resource.Dimension.notification_small_icon_background_padding;
-			global::Xamarin.Auth.XamarinForms.Resource.Dimension.notification_small_icon_size_as_large = global::ResSched.Droid.Resource.Dimension.notification_small_icon_size_as_large;
-			global::Xamarin.Auth.XamarinForms.Resource.Dimension.notification_subtext_size = global::ResSched.Droid.Resource.Dimension.notification_subtext_size;
-			global::Xamarin.Auth.XamarinForms.Resource.Dimension.notification_top_pad = global::ResSched.Droid.Resource.Dimension.notification_top_pad;
-			global::Xamarin.Auth.XamarinForms.Resource.Dimension.notification_top_pad_large_text = global::ResSched.Droid.Resource.Dimension.notification_top_pad_large_text;
-			global::Xamarin.Auth.XamarinForms.Resource.Dimension.tooltip_corner_radius = global::ResSched.Droid.Resource.Dimension.tooltip_corner_radius;
-			global::Xamarin.Auth.XamarinForms.Resource.Dimension.tooltip_horizontal_padding = global::ResSched.Droid.Resource.Dimension.tooltip_horizontal_padding;
-			global::Xamarin.Auth.XamarinForms.Resource.Dimension.tooltip_margin = global::ResSched.Droid.Resource.Dimension.tooltip_margin;
-			global::Xamarin.Auth.XamarinForms.Resource.Dimension.tooltip_precise_anchor_extra_offset = global::ResSched.Droid.Resource.Dimension.tooltip_precise_anchor_extra_offset;
-			global::Xamarin.Auth.XamarinForms.Resource.Dimension.tooltip_precise_anchor_threshold = global::ResSched.Droid.Resource.Dimension.tooltip_precise_anchor_threshold;
-			global::Xamarin.Auth.XamarinForms.Resource.Dimension.tooltip_vertical_padding = global::ResSched.Droid.Resource.Dimension.tooltip_vertical_padding;
-			global::Xamarin.Auth.XamarinForms.Resource.Dimension.tooltip_y_offset_non_touch = global::ResSched.Droid.Resource.Dimension.tooltip_y_offset_non_touch;
-			global::Xamarin.Auth.XamarinForms.Resource.Dimension.tooltip_y_offset_touch = global::ResSched.Droid.Resource.Dimension.tooltip_y_offset_touch;
-			global::Xamarin.Auth.XamarinForms.Resource.Drawable.abc_ab_share_pack_mtrl_alpha = global::ResSched.Droid.Resource.Drawable.abc_ab_share_pack_mtrl_alpha;
-			global::Xamarin.Auth.XamarinForms.Resource.Drawable.abc_action_bar_item_background_material = global::ResSched.Droid.Resource.Drawable.abc_action_bar_item_background_material;
-			global::Xamarin.Auth.XamarinForms.Resource.Drawable.abc_btn_borderless_material = global::ResSched.Droid.Resource.Drawable.abc_btn_borderless_material;
-			global::Xamarin.Auth.XamarinForms.Resource.Drawable.abc_btn_check_material = global::ResSched.Droid.Resource.Drawable.abc_btn_check_material;
-			global::Xamarin.Auth.XamarinForms.Resource.Drawable.abc_btn_check_to_on_mtrl_000 = global::ResSched.Droid.Resource.Drawable.abc_btn_check_to_on_mtrl_000;
-			global::Xamarin.Auth.XamarinForms.Resource.Drawable.abc_btn_check_to_on_mtrl_015 = global::ResSched.Droid.Resource.Drawable.abc_btn_check_to_on_mtrl_015;
-			global::Xamarin.Auth.XamarinForms.Resource.Drawable.abc_btn_colored_material = global::ResSched.Droid.Resource.Drawable.abc_btn_colored_material;
-			global::Xamarin.Auth.XamarinForms.Resource.Drawable.abc_btn_default_mtrl_shape = global::ResSched.Droid.Resource.Drawable.abc_btn_default_mtrl_shape;
-			global::Xamarin.Auth.XamarinForms.Resource.Drawable.abc_btn_radio_material = global::ResSched.Droid.Resource.Drawable.abc_btn_radio_material;
-			global::Xamarin.Auth.XamarinForms.Resource.Drawable.abc_btn_radio_to_on_mtrl_000 = global::ResSched.Droid.Resource.Drawable.abc_btn_radio_to_on_mtrl_000;
-			global::Xamarin.Auth.XamarinForms.Resource.Drawable.abc_btn_radio_to_on_mtrl_015 = global::ResSched.Droid.Resource.Drawable.abc_btn_radio_to_on_mtrl_015;
-			global::Xamarin.Auth.XamarinForms.Resource.Drawable.abc_btn_switch_to_on_mtrl_00001 = global::ResSched.Droid.Resource.Drawable.abc_btn_switch_to_on_mtrl_00001;
-			global::Xamarin.Auth.XamarinForms.Resource.Drawable.abc_btn_switch_to_on_mtrl_00012 = global::ResSched.Droid.Resource.Drawable.abc_btn_switch_to_on_mtrl_00012;
-			global::Xamarin.Auth.XamarinForms.Resource.Drawable.abc_cab_background_internal_bg = global::ResSched.Droid.Resource.Drawable.abc_cab_background_internal_bg;
-			global::Xamarin.Auth.XamarinForms.Resource.Drawable.abc_cab_background_top_material = global::ResSched.Droid.Resource.Drawable.abc_cab_background_top_material;
-			global::Xamarin.Auth.XamarinForms.Resource.Drawable.abc_cab_background_top_mtrl_alpha = global::ResSched.Droid.Resource.Drawable.abc_cab_background_top_mtrl_alpha;
-			global::Xamarin.Auth.XamarinForms.Resource.Drawable.abc_control_background_material = global::ResSched.Droid.Resource.Drawable.abc_control_background_material;
-			global::Xamarin.Auth.XamarinForms.Resource.Drawable.abc_dialog_material_background = global::ResSched.Droid.Resource.Drawable.abc_dialog_material_background;
-			global::Xamarin.Auth.XamarinForms.Resource.Drawable.abc_edit_text_material = global::ResSched.Droid.Resource.Drawable.abc_edit_text_material;
-			global::Xamarin.Auth.XamarinForms.Resource.Drawable.abc_ic_ab_back_material = global::ResSched.Droid.Resource.Drawable.abc_ic_ab_back_material;
-			global::Xamarin.Auth.XamarinForms.Resource.Drawable.abc_ic_arrow_drop_right_black_24dp = global::ResSched.Droid.Resource.Drawable.abc_ic_arrow_drop_right_black_24dp;
-			global::Xamarin.Auth.XamarinForms.Resource.Drawable.abc_ic_clear_material = global::ResSched.Droid.Resource.Drawable.abc_ic_clear_material;
-			global::Xamarin.Auth.XamarinForms.Resource.Drawable.abc_ic_commit_search_api_mtrl_alpha = global::ResSched.Droid.Resource.Drawable.abc_ic_commit_search_api_mtrl_alpha;
-			global::Xamarin.Auth.XamarinForms.Resource.Drawable.abc_ic_go_search_api_material = global::ResSched.Droid.Resource.Drawable.abc_ic_go_search_api_material;
-			global::Xamarin.Auth.XamarinForms.Resource.Drawable.abc_ic_menu_copy_mtrl_am_alpha = global::ResSched.Droid.Resource.Drawable.abc_ic_menu_copy_mtrl_am_alpha;
-			global::Xamarin.Auth.XamarinForms.Resource.Drawable.abc_ic_menu_cut_mtrl_alpha = global::ResSched.Droid.Resource.Drawable.abc_ic_menu_cut_mtrl_alpha;
-			global::Xamarin.Auth.XamarinForms.Resource.Drawable.abc_ic_menu_overflow_material = global::ResSched.Droid.Resource.Drawable.abc_ic_menu_overflow_material;
-			global::Xamarin.Auth.XamarinForms.Resource.Drawable.abc_ic_menu_paste_mtrl_am_alpha = global::ResSched.Droid.Resource.Drawable.abc_ic_menu_paste_mtrl_am_alpha;
-			global::Xamarin.Auth.XamarinForms.Resource.Drawable.abc_ic_menu_selectall_mtrl_alpha = global::ResSched.Droid.Resource.Drawable.abc_ic_menu_selectall_mtrl_alpha;
-			global::Xamarin.Auth.XamarinForms.Resource.Drawable.abc_ic_menu_share_mtrl_alpha = global::ResSched.Droid.Resource.Drawable.abc_ic_menu_share_mtrl_alpha;
-			global::Xamarin.Auth.XamarinForms.Resource.Drawable.abc_ic_search_api_material = global::ResSched.Droid.Resource.Drawable.abc_ic_search_api_material;
-			global::Xamarin.Auth.XamarinForms.Resource.Drawable.abc_ic_star_black_16dp = global::ResSched.Droid.Resource.Drawable.abc_ic_star_black_16dp;
-			global::Xamarin.Auth.XamarinForms.Resource.Drawable.abc_ic_star_black_36dp = global::ResSched.Droid.Resource.Drawable.abc_ic_star_black_36dp;
-			global::Xamarin.Auth.XamarinForms.Resource.Drawable.abc_ic_star_black_48dp = global::ResSched.Droid.Resource.Drawable.abc_ic_star_black_48dp;
-			global::Xamarin.Auth.XamarinForms.Resource.Drawable.abc_ic_star_half_black_16dp = global::ResSched.Droid.Resource.Drawable.abc_ic_star_half_black_16dp;
-			global::Xamarin.Auth.XamarinForms.Resource.Drawable.abc_ic_star_half_black_36dp = global::ResSched.Droid.Resource.Drawable.abc_ic_star_half_black_36dp;
-			global::Xamarin.Auth.XamarinForms.Resource.Drawable.abc_ic_star_half_black_48dp = global::ResSched.Droid.Resource.Drawable.abc_ic_star_half_black_48dp;
-			global::Xamarin.Auth.XamarinForms.Resource.Drawable.abc_ic_voice_search_api_material = global::ResSched.Droid.Resource.Drawable.abc_ic_voice_search_api_material;
-			global::Xamarin.Auth.XamarinForms.Resource.Drawable.abc_item_background_holo_dark = global::ResSched.Droid.Resource.Drawable.abc_item_background_holo_dark;
-			global::Xamarin.Auth.XamarinForms.Resource.Drawable.abc_item_background_holo_light = global::ResSched.Droid.Resource.Drawable.abc_item_background_holo_light;
-			global::Xamarin.Auth.XamarinForms.Resource.Drawable.abc_list_divider_mtrl_alpha = global::ResSched.Droid.Resource.Drawable.abc_list_divider_mtrl_alpha;
-			global::Xamarin.Auth.XamarinForms.Resource.Drawable.abc_list_focused_holo = global::ResSched.Droid.Resource.Drawable.abc_list_focused_holo;
-			global::Xamarin.Auth.XamarinForms.Resource.Drawable.abc_list_longpressed_holo = global::ResSched.Droid.Resource.Drawable.abc_list_longpressed_holo;
-			global::Xamarin.Auth.XamarinForms.Resource.Drawable.abc_list_pressed_holo_dark = global::ResSched.Droid.Resource.Drawable.abc_list_pressed_holo_dark;
-			global::Xamarin.Auth.XamarinForms.Resource.Drawable.abc_list_pressed_holo_light = global::ResSched.Droid.Resource.Drawable.abc_list_pressed_holo_light;
-			global::Xamarin.Auth.XamarinForms.Resource.Drawable.abc_list_selector_background_transition_holo_dark = global::ResSched.Droid.Resource.Drawable.abc_list_selector_background_transition_holo_dark;
-			global::Xamarin.Auth.XamarinForms.Resource.Drawable.abc_list_selector_background_transition_holo_light = global::ResSched.Droid.Resource.Drawable.abc_list_selector_background_transition_holo_light;
-			global::Xamarin.Auth.XamarinForms.Resource.Drawable.abc_list_selector_disabled_holo_dark = global::ResSched.Droid.Resource.Drawable.abc_list_selector_disabled_holo_dark;
-			global::Xamarin.Auth.XamarinForms.Resource.Drawable.abc_list_selector_disabled_holo_light = global::ResSched.Droid.Resource.Drawable.abc_list_selector_disabled_holo_light;
-			global::Xamarin.Auth.XamarinForms.Resource.Drawable.abc_list_selector_holo_dark = global::ResSched.Droid.Resource.Drawable.abc_list_selector_holo_dark;
-			global::Xamarin.Auth.XamarinForms.Resource.Drawable.abc_list_selector_holo_light = global::ResSched.Droid.Resource.Drawable.abc_list_selector_holo_light;
-			global::Xamarin.Auth.XamarinForms.Resource.Drawable.abc_menu_hardkey_panel_mtrl_mult = global::ResSched.Droid.Resource.Drawable.abc_menu_hardkey_panel_mtrl_mult;
-			global::Xamarin.Auth.XamarinForms.Resource.Drawable.abc_popup_background_mtrl_mult = global::ResSched.Droid.Resource.Drawable.abc_popup_background_mtrl_mult;
-			global::Xamarin.Auth.XamarinForms.Resource.Drawable.abc_ratingbar_indicator_material = global::ResSched.Droid.Resource.Drawable.abc_ratingbar_indicator_material;
-			global::Xamarin.Auth.XamarinForms.Resource.Drawable.abc_ratingbar_material = global::ResSched.Droid.Resource.Drawable.abc_ratingbar_material;
-			global::Xamarin.Auth.XamarinForms.Resource.Drawable.abc_ratingbar_small_material = global::ResSched.Droid.Resource.Drawable.abc_ratingbar_small_material;
-			global::Xamarin.Auth.XamarinForms.Resource.Drawable.abc_scrubber_control_off_mtrl_alpha = global::ResSched.Droid.Resource.Drawable.abc_scrubber_control_off_mtrl_alpha;
-			global::Xamarin.Auth.XamarinForms.Resource.Drawable.abc_scrubber_control_to_pressed_mtrl_000 = global::ResSched.Droid.Resource.Drawable.abc_scrubber_control_to_pressed_mtrl_000;
-			global::Xamarin.Auth.XamarinForms.Resource.Drawable.abc_scrubber_control_to_pressed_mtrl_005 = global::ResSched.Droid.Resource.Drawable.abc_scrubber_control_to_pressed_mtrl_005;
-			global::Xamarin.Auth.XamarinForms.Resource.Drawable.abc_scrubber_primary_mtrl_alpha = global::ResSched.Droid.Resource.Drawable.abc_scrubber_primary_mtrl_alpha;
-			global::Xamarin.Auth.XamarinForms.Resource.Drawable.abc_scrubber_track_mtrl_alpha = global::ResSched.Droid.Resource.Drawable.abc_scrubber_track_mtrl_alpha;
-			global::Xamarin.Auth.XamarinForms.Resource.Drawable.abc_seekbar_thumb_material = global::ResSched.Droid.Resource.Drawable.abc_seekbar_thumb_material;
-			global::Xamarin.Auth.XamarinForms.Resource.Drawable.abc_seekbar_tick_mark_material = global::ResSched.Droid.Resource.Drawable.abc_seekbar_tick_mark_material;
-			global::Xamarin.Auth.XamarinForms.Resource.Drawable.abc_seekbar_track_material = global::ResSched.Droid.Resource.Drawable.abc_seekbar_track_material;
-			global::Xamarin.Auth.XamarinForms.Resource.Drawable.abc_spinner_mtrl_am_alpha = global::ResSched.Droid.Resource.Drawable.abc_spinner_mtrl_am_alpha;
-			global::Xamarin.Auth.XamarinForms.Resource.Drawable.abc_spinner_textfield_background_material = global::ResSched.Droid.Resource.Drawable.abc_spinner_textfield_background_material;
-			global::Xamarin.Auth.XamarinForms.Resource.Drawable.abc_switch_thumb_material = global::ResSched.Droid.Resource.Drawable.abc_switch_thumb_material;
-			global::Xamarin.Auth.XamarinForms.Resource.Drawable.abc_switch_track_mtrl_alpha = global::ResSched.Droid.Resource.Drawable.abc_switch_track_mtrl_alpha;
-			global::Xamarin.Auth.XamarinForms.Resource.Drawable.abc_tab_indicator_material = global::ResSched.Droid.Resource.Drawable.abc_tab_indicator_material;
-			global::Xamarin.Auth.XamarinForms.Resource.Drawable.abc_tab_indicator_mtrl_alpha = global::ResSched.Droid.Resource.Drawable.abc_tab_indicator_mtrl_alpha;
-			global::Xamarin.Auth.XamarinForms.Resource.Drawable.abc_text_cursor_material = global::ResSched.Droid.Resource.Drawable.abc_text_cursor_material;
-			global::Xamarin.Auth.XamarinForms.Resource.Drawable.abc_text_select_handle_left_mtrl_dark = global::ResSched.Droid.Resource.Drawable.abc_text_select_handle_left_mtrl_dark;
-			global::Xamarin.Auth.XamarinForms.Resource.Drawable.abc_text_select_handle_left_mtrl_light = global::ResSched.Droid.Resource.Drawable.abc_text_select_handle_left_mtrl_light;
-			global::Xamarin.Auth.XamarinForms.Resource.Drawable.abc_text_select_handle_middle_mtrl_dark = global::ResSched.Droid.Resource.Drawable.abc_text_select_handle_middle_mtrl_dark;
-			global::Xamarin.Auth.XamarinForms.Resource.Drawable.abc_text_select_handle_middle_mtrl_light = global::ResSched.Droid.Resource.Drawable.abc_text_select_handle_middle_mtrl_light;
-			global::Xamarin.Auth.XamarinForms.Resource.Drawable.abc_text_select_handle_right_mtrl_dark = global::ResSched.Droid.Resource.Drawable.abc_text_select_handle_right_mtrl_dark;
-			global::Xamarin.Auth.XamarinForms.Resource.Drawable.abc_text_select_handle_right_mtrl_light = global::ResSched.Droid.Resource.Drawable.abc_text_select_handle_right_mtrl_light;
-			global::Xamarin.Auth.XamarinForms.Resource.Drawable.abc_textfield_activated_mtrl_alpha = global::ResSched.Droid.Resource.Drawable.abc_textfield_activated_mtrl_alpha;
-			global::Xamarin.Auth.XamarinForms.Resource.Drawable.abc_textfield_default_mtrl_alpha = global::ResSched.Droid.Resource.Drawable.abc_textfield_default_mtrl_alpha;
-			global::Xamarin.Auth.XamarinForms.Resource.Drawable.abc_textfield_search_activated_mtrl_alpha = global::ResSched.Droid.Resource.Drawable.abc_textfield_search_activated_mtrl_alpha;
-			global::Xamarin.Auth.XamarinForms.Resource.Drawable.abc_textfield_search_default_mtrl_alpha = global::ResSched.Droid.Resource.Drawable.abc_textfield_search_default_mtrl_alpha;
-			global::Xamarin.Auth.XamarinForms.Resource.Drawable.abc_textfield_search_material = global::ResSched.Droid.Resource.Drawable.abc_textfield_search_material;
-			global::Xamarin.Auth.XamarinForms.Resource.Drawable.abc_vector_test = global::ResSched.Droid.Resource.Drawable.abc_vector_test;
-			global::Xamarin.Auth.XamarinForms.Resource.Drawable.avd_hide_password = global::ResSched.Droid.Resource.Drawable.avd_hide_password;
-			global::Xamarin.Auth.XamarinForms.Resource.Drawable.avd_hide_password_1 = global::ResSched.Droid.Resource.Drawable.avd_hide_password_1;
-			global::Xamarin.Auth.XamarinForms.Resource.Drawable.avd_hide_password_2 = global::ResSched.Droid.Resource.Drawable.avd_hide_password_2;
-			global::Xamarin.Auth.XamarinForms.Resource.Drawable.avd_hide_password_3 = global::ResSched.Droid.Resource.Drawable.avd_hide_password_3;
-			global::Xamarin.Auth.XamarinForms.Resource.Drawable.avd_show_password = global::ResSched.Droid.Resource.Drawable.avd_show_password;
-			global::Xamarin.Auth.XamarinForms.Resource.Drawable.avd_show_password_1 = global::ResSched.Droid.Resource.Drawable.avd_show_password_1;
-			global::Xamarin.Auth.XamarinForms.Resource.Drawable.avd_show_password_2 = global::ResSched.Droid.Resource.Drawable.avd_show_password_2;
-			global::Xamarin.Auth.XamarinForms.Resource.Drawable.avd_show_password_3 = global::ResSched.Droid.Resource.Drawable.avd_show_password_3;
-			global::Xamarin.Auth.XamarinForms.Resource.Drawable.design_bottom_navigation_item_background = global::ResSched.Droid.Resource.Drawable.design_bottom_navigation_item_background;
-			global::Xamarin.Auth.XamarinForms.Resource.Drawable.design_fab_background = global::ResSched.Droid.Resource.Drawable.design_fab_background;
-			global::Xamarin.Auth.XamarinForms.Resource.Drawable.design_ic_visibility = global::ResSched.Droid.Resource.Drawable.design_ic_visibility;
-			global::Xamarin.Auth.XamarinForms.Resource.Drawable.design_ic_visibility_off = global::ResSched.Droid.Resource.Drawable.design_ic_visibility_off;
-			global::Xamarin.Auth.XamarinForms.Resource.Drawable.design_password_eye = global::ResSched.Droid.Resource.Drawable.design_password_eye;
-			global::Xamarin.Auth.XamarinForms.Resource.Drawable.design_snackbar_background = global::ResSched.Droid.Resource.Drawable.design_snackbar_background;
-			global::Xamarin.Auth.XamarinForms.Resource.Drawable.ic_arrow_back = global::ResSched.Droid.Resource.Drawable.ic_arrow_back;
-			global::Xamarin.Auth.XamarinForms.Resource.Drawable.ic_audiotrack_dark = global::ResSched.Droid.Resource.Drawable.ic_audiotrack_dark;
-			global::Xamarin.Auth.XamarinForms.Resource.Drawable.ic_audiotrack_light = global::ResSched.Droid.Resource.Drawable.ic_audiotrack_light;
-			global::Xamarin.Auth.XamarinForms.Resource.Drawable.ic_dialog_close_dark = global::ResSched.Droid.Resource.Drawable.ic_dialog_close_dark;
-			global::Xamarin.Auth.XamarinForms.Resource.Drawable.ic_dialog_close_light = global::ResSched.Droid.Resource.Drawable.ic_dialog_close_light;
-			global::Xamarin.Auth.XamarinForms.Resource.Drawable.ic_group_collapse_00 = global::ResSched.Droid.Resource.Drawable.ic_group_collapse_00;
-			global::Xamarin.Auth.XamarinForms.Resource.Drawable.ic_group_collapse_01 = global::ResSched.Droid.Resource.Drawable.ic_group_collapse_01;
-			global::Xamarin.Auth.XamarinForms.Resource.Drawable.ic_group_collapse_02 = global::ResSched.Droid.Resource.Drawable.ic_group_collapse_02;
-			global::Xamarin.Auth.XamarinForms.Resource.Drawable.ic_group_collapse_03 = global::ResSched.Droid.Resource.Drawable.ic_group_collapse_03;
-			global::Xamarin.Auth.XamarinForms.Resource.Drawable.ic_group_collapse_04 = global::ResSched.Droid.Resource.Drawable.ic_group_collapse_04;
-			global::Xamarin.Auth.XamarinForms.Resource.Drawable.ic_group_collapse_05 = global::ResSched.Droid.Resource.Drawable.ic_group_collapse_05;
-			global::Xamarin.Auth.XamarinForms.Resource.Drawable.ic_group_collapse_06 = global::ResSched.Droid.Resource.Drawable.ic_group_collapse_06;
-			global::Xamarin.Auth.XamarinForms.Resource.Drawable.ic_group_collapse_07 = global::ResSched.Droid.Resource.Drawable.ic_group_collapse_07;
-			global::Xamarin.Auth.XamarinForms.Resource.Drawable.ic_group_collapse_08 = global::ResSched.Droid.Resource.Drawable.ic_group_collapse_08;
-			global::Xamarin.Auth.XamarinForms.Resource.Drawable.ic_group_collapse_09 = global::ResSched.Droid.Resource.Drawable.ic_group_collapse_09;
-			global::Xamarin.Auth.XamarinForms.Resource.Drawable.ic_group_collapse_10 = global::ResSched.Droid.Resource.Drawable.ic_group_collapse_10;
-			global::Xamarin.Auth.XamarinForms.Resource.Drawable.ic_group_collapse_11 = global::ResSched.Droid.Resource.Drawable.ic_group_collapse_11;
-			global::Xamarin.Auth.XamarinForms.Resource.Drawable.ic_group_collapse_12 = global::ResSched.Droid.Resource.Drawable.ic_group_collapse_12;
-			global::Xamarin.Auth.XamarinForms.Resource.Drawable.ic_group_collapse_13 = global::ResSched.Droid.Resource.Drawable.ic_group_collapse_13;
-			global::Xamarin.Auth.XamarinForms.Resource.Drawable.ic_group_collapse_14 = global::ResSched.Droid.Resource.Drawable.ic_group_collapse_14;
-			global::Xamarin.Auth.XamarinForms.Resource.Drawable.ic_group_collapse_15 = global::ResSched.Droid.Resource.Drawable.ic_group_collapse_15;
-			global::Xamarin.Auth.XamarinForms.Resource.Drawable.ic_group_expand_00 = global::ResSched.Droid.Resource.Drawable.ic_group_expand_00;
-			global::Xamarin.Auth.XamarinForms.Resource.Drawable.ic_group_expand_01 = global::ResSched.Droid.Resource.Drawable.ic_group_expand_01;
-			global::Xamarin.Auth.XamarinForms.Resource.Drawable.ic_group_expand_02 = global::ResSched.Droid.Resource.Drawable.ic_group_expand_02;
-			global::Xamarin.Auth.XamarinForms.Resource.Drawable.ic_group_expand_03 = global::ResSched.Droid.Resource.Drawable.ic_group_expand_03;
-			global::Xamarin.Auth.XamarinForms.Resource.Drawable.ic_group_expand_04 = global::ResSched.Droid.Resource.Drawable.ic_group_expand_04;
-			global::Xamarin.Auth.XamarinForms.Resource.Drawable.ic_group_expand_05 = global::ResSched.Droid.Resource.Drawable.ic_group_expand_05;
-			global::Xamarin.Auth.XamarinForms.Resource.Drawable.ic_group_expand_06 = global::ResSched.Droid.Resource.Drawable.ic_group_expand_06;
-			global::Xamarin.Auth.XamarinForms.Resource.Drawable.ic_group_expand_07 = global::ResSched.Droid.Resource.Drawable.ic_group_expand_07;
-			global::Xamarin.Auth.XamarinForms.Resource.Drawable.ic_group_expand_08 = global::ResSched.Droid.Resource.Drawable.ic_group_expand_08;
-			global::Xamarin.Auth.XamarinForms.Resource.Drawable.ic_group_expand_09 = global::ResSched.Droid.Resource.Drawable.ic_group_expand_09;
-			global::Xamarin.Auth.XamarinForms.Resource.Drawable.ic_group_expand_10 = global::ResSched.Droid.Resource.Drawable.ic_group_expand_10;
-			global::Xamarin.Auth.XamarinForms.Resource.Drawable.ic_group_expand_11 = global::ResSched.Droid.Resource.Drawable.ic_group_expand_11;
-			global::Xamarin.Auth.XamarinForms.Resource.Drawable.ic_group_expand_12 = global::ResSched.Droid.Resource.Drawable.ic_group_expand_12;
-			global::Xamarin.Auth.XamarinForms.Resource.Drawable.ic_group_expand_13 = global::ResSched.Droid.Resource.Drawable.ic_group_expand_13;
-			global::Xamarin.Auth.XamarinForms.Resource.Drawable.ic_group_expand_14 = global::ResSched.Droid.Resource.Drawable.ic_group_expand_14;
-			global::Xamarin.Auth.XamarinForms.Resource.Drawable.ic_group_expand_15 = global::ResSched.Droid.Resource.Drawable.ic_group_expand_15;
-			global::Xamarin.Auth.XamarinForms.Resource.Drawable.ic_media_pause_dark = global::ResSched.Droid.Resource.Drawable.ic_media_pause_dark;
-			global::Xamarin.Auth.XamarinForms.Resource.Drawable.ic_media_pause_light = global::ResSched.Droid.Resource.Drawable.ic_media_pause_light;
-			global::Xamarin.Auth.XamarinForms.Resource.Drawable.ic_media_play_dark = global::ResSched.Droid.Resource.Drawable.ic_media_play_dark;
-			global::Xamarin.Auth.XamarinForms.Resource.Drawable.ic_media_play_light = global::ResSched.Droid.Resource.Drawable.ic_media_play_light;
-			global::Xamarin.Auth.XamarinForms.Resource.Drawable.ic_media_stop_dark = global::ResSched.Droid.Resource.Drawable.ic_media_stop_dark;
-			global::Xamarin.Auth.XamarinForms.Resource.Drawable.ic_media_stop_light = global::ResSched.Droid.Resource.Drawable.ic_media_stop_light;
-			global::Xamarin.Auth.XamarinForms.Resource.Drawable.ic_mr_button_connected_00_dark = global::ResSched.Droid.Resource.Drawable.ic_mr_button_connected_00_dark;
-			global::Xamarin.Auth.XamarinForms.Resource.Drawable.ic_mr_button_connected_00_light = global::ResSched.Droid.Resource.Drawable.ic_mr_button_connected_00_light;
-			global::Xamarin.Auth.XamarinForms.Resource.Drawable.ic_mr_button_connected_01_dark = global::ResSched.Droid.Resource.Drawable.ic_mr_button_connected_01_dark;
-			global::Xamarin.Auth.XamarinForms.Resource.Drawable.ic_mr_button_connected_01_light = global::ResSched.Droid.Resource.Drawable.ic_mr_button_connected_01_light;
-			global::Xamarin.Auth.XamarinForms.Resource.Drawable.ic_mr_button_connected_02_dark = global::ResSched.Droid.Resource.Drawable.ic_mr_button_connected_02_dark;
-			global::Xamarin.Auth.XamarinForms.Resource.Drawable.ic_mr_button_connected_02_light = global::ResSched.Droid.Resource.Drawable.ic_mr_button_connected_02_light;
-			global::Xamarin.Auth.XamarinForms.Resource.Drawable.ic_mr_button_connected_03_dark = global::ResSched.Droid.Resource.Drawable.ic_mr_button_connected_03_dark;
-			global::Xamarin.Auth.XamarinForms.Resource.Drawable.ic_mr_button_connected_03_light = global::ResSched.Droid.Resource.Drawable.ic_mr_button_connected_03_light;
-			global::Xamarin.Auth.XamarinForms.Resource.Drawable.ic_mr_button_connected_04_dark = global::ResSched.Droid.Resource.Drawable.ic_mr_button_connected_04_dark;
-			global::Xamarin.Auth.XamarinForms.Resource.Drawable.ic_mr_button_connected_04_light = global::ResSched.Droid.Resource.Drawable.ic_mr_button_connected_04_light;
-			global::Xamarin.Auth.XamarinForms.Resource.Drawable.ic_mr_button_connected_05_dark = global::ResSched.Droid.Resource.Drawable.ic_mr_button_connected_05_dark;
-			global::Xamarin.Auth.XamarinForms.Resource.Drawable.ic_mr_button_connected_05_light = global::ResSched.Droid.Resource.Drawable.ic_mr_button_connected_05_light;
-			global::Xamarin.Auth.XamarinForms.Resource.Drawable.ic_mr_button_connected_06_dark = global::ResSched.Droid.Resource.Drawable.ic_mr_button_connected_06_dark;
-			global::Xamarin.Auth.XamarinForms.Resource.Drawable.ic_mr_button_connected_06_light = global::ResSched.Droid.Resource.Drawable.ic_mr_button_connected_06_light;
-			global::Xamarin.Auth.XamarinForms.Resource.Drawable.ic_mr_button_connected_07_dark = global::ResSched.Droid.Resource.Drawable.ic_mr_button_connected_07_dark;
-			global::Xamarin.Auth.XamarinForms.Resource.Drawable.ic_mr_button_connected_07_light = global::ResSched.Droid.Resource.Drawable.ic_mr_button_connected_07_light;
-			global::Xamarin.Auth.XamarinForms.Resource.Drawable.ic_mr_button_connected_08_dark = global::ResSched.Droid.Resource.Drawable.ic_mr_button_connected_08_dark;
-			global::Xamarin.Auth.XamarinForms.Resource.Drawable.ic_mr_button_connected_08_light = global::ResSched.Droid.Resource.Drawable.ic_mr_button_connected_08_light;
-			global::Xamarin.Auth.XamarinForms.Resource.Drawable.ic_mr_button_connected_09_dark = global::ResSched.Droid.Resource.Drawable.ic_mr_button_connected_09_dark;
-			global::Xamarin.Auth.XamarinForms.Resource.Drawable.ic_mr_button_connected_09_light = global::ResSched.Droid.Resource.Drawable.ic_mr_button_connected_09_light;
-			global::Xamarin.Auth.XamarinForms.Resource.Drawable.ic_mr_button_connected_10_dark = global::ResSched.Droid.Resource.Drawable.ic_mr_button_connected_10_dark;
-			global::Xamarin.Auth.XamarinForms.Resource.Drawable.ic_mr_button_connected_10_light = global::ResSched.Droid.Resource.Drawable.ic_mr_button_connected_10_light;
-			global::Xamarin.Auth.XamarinForms.Resource.Drawable.ic_mr_button_connected_11_dark = global::ResSched.Droid.Resource.Drawable.ic_mr_button_connected_11_dark;
-			global::Xamarin.Auth.XamarinForms.Resource.Drawable.ic_mr_button_connected_11_light = global::ResSched.Droid.Resource.Drawable.ic_mr_button_connected_11_light;
-			global::Xamarin.Auth.XamarinForms.Resource.Drawable.ic_mr_button_connected_12_dark = global::ResSched.Droid.Resource.Drawable.ic_mr_button_connected_12_dark;
-			global::Xamarin.Auth.XamarinForms.Resource.Drawable.ic_mr_button_connected_12_light = global::ResSched.Droid.Resource.Drawable.ic_mr_button_connected_12_light;
-			global::Xamarin.Auth.XamarinForms.Resource.Drawable.ic_mr_button_connected_13_dark = global::ResSched.Droid.Resource.Drawable.ic_mr_button_connected_13_dark;
-			global::Xamarin.Auth.XamarinForms.Resource.Drawable.ic_mr_button_connected_13_light = global::ResSched.Droid.Resource.Drawable.ic_mr_button_connected_13_light;
-			global::Xamarin.Auth.XamarinForms.Resource.Drawable.ic_mr_button_connected_14_dark = global::ResSched.Droid.Resource.Drawable.ic_mr_button_connected_14_dark;
-			global::Xamarin.Auth.XamarinForms.Resource.Drawable.ic_mr_button_connected_14_light = global::ResSched.Droid.Resource.Drawable.ic_mr_button_connected_14_light;
-			global::Xamarin.Auth.XamarinForms.Resource.Drawable.ic_mr_button_connected_15_dark = global::ResSched.Droid.Resource.Drawable.ic_mr_button_connected_15_dark;
-			global::Xamarin.Auth.XamarinForms.Resource.Drawable.ic_mr_button_connected_15_light = global::ResSched.Droid.Resource.Drawable.ic_mr_button_connected_15_light;
-			global::Xamarin.Auth.XamarinForms.Resource.Drawable.ic_mr_button_connected_16_dark = global::ResSched.Droid.Resource.Drawable.ic_mr_button_connected_16_dark;
-			global::Xamarin.Auth.XamarinForms.Resource.Drawable.ic_mr_button_connected_16_light = global::ResSched.Droid.Resource.Drawable.ic_mr_button_connected_16_light;
-			global::Xamarin.Auth.XamarinForms.Resource.Drawable.ic_mr_button_connected_17_dark = global::ResSched.Droid.Resource.Drawable.ic_mr_button_connected_17_dark;
-			global::Xamarin.Auth.XamarinForms.Resource.Drawable.ic_mr_button_connected_17_light = global::ResSched.Droid.Resource.Drawable.ic_mr_button_connected_17_light;
-			global::Xamarin.Auth.XamarinForms.Resource.Drawable.ic_mr_button_connected_18_dark = global::ResSched.Droid.Resource.Drawable.ic_mr_button_connected_18_dark;
-			global::Xamarin.Auth.XamarinForms.Resource.Drawable.ic_mr_button_connected_18_light = global::ResSched.Droid.Resource.Drawable.ic_mr_button_connected_18_light;
-			global::Xamarin.Auth.XamarinForms.Resource.Drawable.ic_mr_button_connected_19_dark = global::ResSched.Droid.Resource.Drawable.ic_mr_button_connected_19_dark;
-			global::Xamarin.Auth.XamarinForms.Resource.Drawable.ic_mr_button_connected_19_light = global::ResSched.Droid.Resource.Drawable.ic_mr_button_connected_19_light;
-			global::Xamarin.Auth.XamarinForms.Resource.Drawable.ic_mr_button_connected_20_dark = global::ResSched.Droid.Resource.Drawable.ic_mr_button_connected_20_dark;
-			global::Xamarin.Auth.XamarinForms.Resource.Drawable.ic_mr_button_connected_20_light = global::ResSched.Droid.Resource.Drawable.ic_mr_button_connected_20_light;
-			global::Xamarin.Auth.XamarinForms.Resource.Drawable.ic_mr_button_connected_21_dark = global::ResSched.Droid.Resource.Drawable.ic_mr_button_connected_21_dark;
-			global::Xamarin.Auth.XamarinForms.Resource.Drawable.ic_mr_button_connected_21_light = global::ResSched.Droid.Resource.Drawable.ic_mr_button_connected_21_light;
-			global::Xamarin.Auth.XamarinForms.Resource.Drawable.ic_mr_button_connected_22_dark = global::ResSched.Droid.Resource.Drawable.ic_mr_button_connected_22_dark;
-			global::Xamarin.Auth.XamarinForms.Resource.Drawable.ic_mr_button_connected_22_light = global::ResSched.Droid.Resource.Drawable.ic_mr_button_connected_22_light;
-			global::Xamarin.Auth.XamarinForms.Resource.Drawable.ic_mr_button_connected_23_dark = global::ResSched.Droid.Resource.Drawable.ic_mr_button_connected_23_dark;
-			global::Xamarin.Auth.XamarinForms.Resource.Drawable.ic_mr_button_connected_23_light = global::ResSched.Droid.Resource.Drawable.ic_mr_button_connected_23_light;
-			global::Xamarin.Auth.XamarinForms.Resource.Drawable.ic_mr_button_connected_24_dark = global::ResSched.Droid.Resource.Drawable.ic_mr_button_connected_24_dark;
-			global::Xamarin.Auth.XamarinForms.Resource.Drawable.ic_mr_button_connected_24_light = global::ResSched.Droid.Resource.Drawable.ic_mr_button_connected_24_light;
-			global::Xamarin.Auth.XamarinForms.Resource.Drawable.ic_mr_button_connected_25_dark = global::ResSched.Droid.Resource.Drawable.ic_mr_button_connected_25_dark;
-			global::Xamarin.Auth.XamarinForms.Resource.Drawable.ic_mr_button_connected_25_light = global::ResSched.Droid.Resource.Drawable.ic_mr_button_connected_25_light;
-			global::Xamarin.Auth.XamarinForms.Resource.Drawable.ic_mr_button_connected_26_dark = global::ResSched.Droid.Resource.Drawable.ic_mr_button_connected_26_dark;
-			global::Xamarin.Auth.XamarinForms.Resource.Drawable.ic_mr_button_connected_26_light = global::ResSched.Droid.Resource.Drawable.ic_mr_button_connected_26_light;
-			global::Xamarin.Auth.XamarinForms.Resource.Drawable.ic_mr_button_connected_27_dark = global::ResSched.Droid.Resource.Drawable.ic_mr_button_connected_27_dark;
-			global::Xamarin.Auth.XamarinForms.Resource.Drawable.ic_mr_button_connected_27_light = global::ResSched.Droid.Resource.Drawable.ic_mr_button_connected_27_light;
-			global::Xamarin.Auth.XamarinForms.Resource.Drawable.ic_mr_button_connected_28_dark = global::ResSched.Droid.Resource.Drawable.ic_mr_button_connected_28_dark;
-			global::Xamarin.Auth.XamarinForms.Resource.Drawable.ic_mr_button_connected_28_light = global::ResSched.Droid.Resource.Drawable.ic_mr_button_connected_28_light;
-			global::Xamarin.Auth.XamarinForms.Resource.Drawable.ic_mr_button_connected_29_dark = global::ResSched.Droid.Resource.Drawable.ic_mr_button_connected_29_dark;
-			global::Xamarin.Auth.XamarinForms.Resource.Drawable.ic_mr_button_connected_29_light = global::ResSched.Droid.Resource.Drawable.ic_mr_button_connected_29_light;
-			global::Xamarin.Auth.XamarinForms.Resource.Drawable.ic_mr_button_connected_30_dark = global::ResSched.Droid.Resource.Drawable.ic_mr_button_connected_30_dark;
-			global::Xamarin.Auth.XamarinForms.Resource.Drawable.ic_mr_button_connected_30_light = global::ResSched.Droid.Resource.Drawable.ic_mr_button_connected_30_light;
-			global::Xamarin.Auth.XamarinForms.Resource.Drawable.ic_mr_button_connecting_00_dark = global::ResSched.Droid.Resource.Drawable.ic_mr_button_connecting_00_dark;
-			global::Xamarin.Auth.XamarinForms.Resource.Drawable.ic_mr_button_connecting_00_light = global::ResSched.Droid.Resource.Drawable.ic_mr_button_connecting_00_light;
-			global::Xamarin.Auth.XamarinForms.Resource.Drawable.ic_mr_button_connecting_01_dark = global::ResSched.Droid.Resource.Drawable.ic_mr_button_connecting_01_dark;
-			global::Xamarin.Auth.XamarinForms.Resource.Drawable.ic_mr_button_connecting_01_light = global::ResSched.Droid.Resource.Drawable.ic_mr_button_connecting_01_light;
-			global::Xamarin.Auth.XamarinForms.Resource.Drawable.ic_mr_button_connecting_02_dark = global::ResSched.Droid.Resource.Drawable.ic_mr_button_connecting_02_dark;
-			global::Xamarin.Auth.XamarinForms.Resource.Drawable.ic_mr_button_connecting_02_light = global::ResSched.Droid.Resource.Drawable.ic_mr_button_connecting_02_light;
-			global::Xamarin.Auth.XamarinForms.Resource.Drawable.ic_mr_button_connecting_03_dark = global::ResSched.Droid.Resource.Drawable.ic_mr_button_connecting_03_dark;
-			global::Xamarin.Auth.XamarinForms.Resource.Drawable.ic_mr_button_connecting_03_light = global::ResSched.Droid.Resource.Drawable.ic_mr_button_connecting_03_light;
-			global::Xamarin.Auth.XamarinForms.Resource.Drawable.ic_mr_button_connecting_04_dark = global::ResSched.Droid.Resource.Drawable.ic_mr_button_connecting_04_dark;
-			global::Xamarin.Auth.XamarinForms.Resource.Drawable.ic_mr_button_connecting_04_light = global::ResSched.Droid.Resource.Drawable.ic_mr_button_connecting_04_light;
-			global::Xamarin.Auth.XamarinForms.Resource.Drawable.ic_mr_button_connecting_05_dark = global::ResSched.Droid.Resource.Drawable.ic_mr_button_connecting_05_dark;
-			global::Xamarin.Auth.XamarinForms.Resource.Drawable.ic_mr_button_connecting_05_light = global::ResSched.Droid.Resource.Drawable.ic_mr_button_connecting_05_light;
-			global::Xamarin.Auth.XamarinForms.Resource.Drawable.ic_mr_button_connecting_06_dark = global::ResSched.Droid.Resource.Drawable.ic_mr_button_connecting_06_dark;
-			global::Xamarin.Auth.XamarinForms.Resource.Drawable.ic_mr_button_connecting_06_light = global::ResSched.Droid.Resource.Drawable.ic_mr_button_connecting_06_light;
-			global::Xamarin.Auth.XamarinForms.Resource.Drawable.ic_mr_button_connecting_07_dark = global::ResSched.Droid.Resource.Drawable.ic_mr_button_connecting_07_dark;
-			global::Xamarin.Auth.XamarinForms.Resource.Drawable.ic_mr_button_connecting_07_light = global::ResSched.Droid.Resource.Drawable.ic_mr_button_connecting_07_light;
-			global::Xamarin.Auth.XamarinForms.Resource.Drawable.ic_mr_button_connecting_08_dark = global::ResSched.Droid.Resource.Drawable.ic_mr_button_connecting_08_dark;
-			global::Xamarin.Auth.XamarinForms.Resource.Drawable.ic_mr_button_connecting_08_light = global::ResSched.Droid.Resource.Drawable.ic_mr_button_connecting_08_light;
-			global::Xamarin.Auth.XamarinForms.Resource.Drawable.ic_mr_button_connecting_09_dark = global::ResSched.Droid.Resource.Drawable.ic_mr_button_connecting_09_dark;
-			global::Xamarin.Auth.XamarinForms.Resource.Drawable.ic_mr_button_connecting_09_light = global::ResSched.Droid.Resource.Drawable.ic_mr_button_connecting_09_light;
-			global::Xamarin.Auth.XamarinForms.Resource.Drawable.ic_mr_button_connecting_10_dark = global::ResSched.Droid.Resource.Drawable.ic_mr_button_connecting_10_dark;
-			global::Xamarin.Auth.XamarinForms.Resource.Drawable.ic_mr_button_connecting_10_light = global::ResSched.Droid.Resource.Drawable.ic_mr_button_connecting_10_light;
-			global::Xamarin.Auth.XamarinForms.Resource.Drawable.ic_mr_button_connecting_11_dark = global::ResSched.Droid.Resource.Drawable.ic_mr_button_connecting_11_dark;
-			global::Xamarin.Auth.XamarinForms.Resource.Drawable.ic_mr_button_connecting_11_light = global::ResSched.Droid.Resource.Drawable.ic_mr_button_connecting_11_light;
-			global::Xamarin.Auth.XamarinForms.Resource.Drawable.ic_mr_button_connecting_12_dark = global::ResSched.Droid.Resource.Drawable.ic_mr_button_connecting_12_dark;
-			global::Xamarin.Auth.XamarinForms.Resource.Drawable.ic_mr_button_connecting_12_light = global::ResSched.Droid.Resource.Drawable.ic_mr_button_connecting_12_light;
-			global::Xamarin.Auth.XamarinForms.Resource.Drawable.ic_mr_button_connecting_13_dark = global::ResSched.Droid.Resource.Drawable.ic_mr_button_connecting_13_dark;
-			global::Xamarin.Auth.XamarinForms.Resource.Drawable.ic_mr_button_connecting_13_light = global::ResSched.Droid.Resource.Drawable.ic_mr_button_connecting_13_light;
-			global::Xamarin.Auth.XamarinForms.Resource.Drawable.ic_mr_button_connecting_14_dark = global::ResSched.Droid.Resource.Drawable.ic_mr_button_connecting_14_dark;
-			global::Xamarin.Auth.XamarinForms.Resource.Drawable.ic_mr_button_connecting_14_light = global::ResSched.Droid.Resource.Drawable.ic_mr_button_connecting_14_light;
-			global::Xamarin.Auth.XamarinForms.Resource.Drawable.ic_mr_button_connecting_15_dark = global::ResSched.Droid.Resource.Drawable.ic_mr_button_connecting_15_dark;
-			global::Xamarin.Auth.XamarinForms.Resource.Drawable.ic_mr_button_connecting_15_light = global::ResSched.Droid.Resource.Drawable.ic_mr_button_connecting_15_light;
-			global::Xamarin.Auth.XamarinForms.Resource.Drawable.ic_mr_button_connecting_16_dark = global::ResSched.Droid.Resource.Drawable.ic_mr_button_connecting_16_dark;
-			global::Xamarin.Auth.XamarinForms.Resource.Drawable.ic_mr_button_connecting_16_light = global::ResSched.Droid.Resource.Drawable.ic_mr_button_connecting_16_light;
-			global::Xamarin.Auth.XamarinForms.Resource.Drawable.ic_mr_button_connecting_17_dark = global::ResSched.Droid.Resource.Drawable.ic_mr_button_connecting_17_dark;
-			global::Xamarin.Auth.XamarinForms.Resource.Drawable.ic_mr_button_connecting_17_light = global::ResSched.Droid.Resource.Drawable.ic_mr_button_connecting_17_light;
-			global::Xamarin.Auth.XamarinForms.Resource.Drawable.ic_mr_button_connecting_18_dark = global::ResSched.Droid.Resource.Drawable.ic_mr_button_connecting_18_dark;
-			global::Xamarin.Auth.XamarinForms.Resource.Drawable.ic_mr_button_connecting_18_light = global::ResSched.Droid.Resource.Drawable.ic_mr_button_connecting_18_light;
-			global::Xamarin.Auth.XamarinForms.Resource.Drawable.ic_mr_button_connecting_19_dark = global::ResSched.Droid.Resource.Drawable.ic_mr_button_connecting_19_dark;
-			global::Xamarin.Auth.XamarinForms.Resource.Drawable.ic_mr_button_connecting_19_light = global::ResSched.Droid.Resource.Drawable.ic_mr_button_connecting_19_light;
-			global::Xamarin.Auth.XamarinForms.Resource.Drawable.ic_mr_button_connecting_20_dark = global::ResSched.Droid.Resource.Drawable.ic_mr_button_connecting_20_dark;
-			global::Xamarin.Auth.XamarinForms.Resource.Drawable.ic_mr_button_connecting_20_light = global::ResSched.Droid.Resource.Drawable.ic_mr_button_connecting_20_light;
-			global::Xamarin.Auth.XamarinForms.Resource.Drawable.ic_mr_button_connecting_21_dark = global::ResSched.Droid.Resource.Drawable.ic_mr_button_connecting_21_dark;
-			global::Xamarin.Auth.XamarinForms.Resource.Drawable.ic_mr_button_connecting_21_light = global::ResSched.Droid.Resource.Drawable.ic_mr_button_connecting_21_light;
-			global::Xamarin.Auth.XamarinForms.Resource.Drawable.ic_mr_button_connecting_22_dark = global::ResSched.Droid.Resource.Drawable.ic_mr_button_connecting_22_dark;
-			global::Xamarin.Auth.XamarinForms.Resource.Drawable.ic_mr_button_connecting_22_light = global::ResSched.Droid.Resource.Drawable.ic_mr_button_connecting_22_light;
-			global::Xamarin.Auth.XamarinForms.Resource.Drawable.ic_mr_button_connecting_23_dark = global::ResSched.Droid.Resource.Drawable.ic_mr_button_connecting_23_dark;
-			global::Xamarin.Auth.XamarinForms.Resource.Drawable.ic_mr_button_connecting_23_light = global::ResSched.Droid.Resource.Drawable.ic_mr_button_connecting_23_light;
-			global::Xamarin.Auth.XamarinForms.Resource.Drawable.ic_mr_button_connecting_24_dark = global::ResSched.Droid.Resource.Drawable.ic_mr_button_connecting_24_dark;
-			global::Xamarin.Auth.XamarinForms.Resource.Drawable.ic_mr_button_connecting_24_light = global::ResSched.Droid.Resource.Drawable.ic_mr_button_connecting_24_light;
-			global::Xamarin.Auth.XamarinForms.Resource.Drawable.ic_mr_button_connecting_25_dark = global::ResSched.Droid.Resource.Drawable.ic_mr_button_connecting_25_dark;
-			global::Xamarin.Auth.XamarinForms.Resource.Drawable.ic_mr_button_connecting_25_light = global::ResSched.Droid.Resource.Drawable.ic_mr_button_connecting_25_light;
-			global::Xamarin.Auth.XamarinForms.Resource.Drawable.ic_mr_button_connecting_26_dark = global::ResSched.Droid.Resource.Drawable.ic_mr_button_connecting_26_dark;
-			global::Xamarin.Auth.XamarinForms.Resource.Drawable.ic_mr_button_connecting_26_light = global::ResSched.Droid.Resource.Drawable.ic_mr_button_connecting_26_light;
-			global::Xamarin.Auth.XamarinForms.Resource.Drawable.ic_mr_button_connecting_27_dark = global::ResSched.Droid.Resource.Drawable.ic_mr_button_connecting_27_dark;
-			global::Xamarin.Auth.XamarinForms.Resource.Drawable.ic_mr_button_connecting_27_light = global::ResSched.Droid.Resource.Drawable.ic_mr_button_connecting_27_light;
-			global::Xamarin.Auth.XamarinForms.Resource.Drawable.ic_mr_button_connecting_28_dark = global::ResSched.Droid.Resource.Drawable.ic_mr_button_connecting_28_dark;
-			global::Xamarin.Auth.XamarinForms.Resource.Drawable.ic_mr_button_connecting_28_light = global::ResSched.Droid.Resource.Drawable.ic_mr_button_connecting_28_light;
-			global::Xamarin.Auth.XamarinForms.Resource.Drawable.ic_mr_button_connecting_29_dark = global::ResSched.Droid.Resource.Drawable.ic_mr_button_connecting_29_dark;
-			global::Xamarin.Auth.XamarinForms.Resource.Drawable.ic_mr_button_connecting_29_light = global::ResSched.Droid.Resource.Drawable.ic_mr_button_connecting_29_light;
-			global::Xamarin.Auth.XamarinForms.Resource.Drawable.ic_mr_button_connecting_30_dark = global::ResSched.Droid.Resource.Drawable.ic_mr_button_connecting_30_dark;
-			global::Xamarin.Auth.XamarinForms.Resource.Drawable.ic_mr_button_connecting_30_light = global::ResSched.Droid.Resource.Drawable.ic_mr_button_connecting_30_light;
-			global::Xamarin.Auth.XamarinForms.Resource.Drawable.ic_mr_button_disabled_dark = global::ResSched.Droid.Resource.Drawable.ic_mr_button_disabled_dark;
-			global::Xamarin.Auth.XamarinForms.Resource.Drawable.ic_mr_button_disabled_light = global::ResSched.Droid.Resource.Drawable.ic_mr_button_disabled_light;
-			global::Xamarin.Auth.XamarinForms.Resource.Drawable.ic_mr_button_disconnected_dark = global::ResSched.Droid.Resource.Drawable.ic_mr_button_disconnected_dark;
-			global::Xamarin.Auth.XamarinForms.Resource.Drawable.ic_mr_button_disconnected_light = global::ResSched.Droid.Resource.Drawable.ic_mr_button_disconnected_light;
-			global::Xamarin.Auth.XamarinForms.Resource.Drawable.ic_mr_button_grey = global::ResSched.Droid.Resource.Drawable.ic_mr_button_grey;
-			global::Xamarin.Auth.XamarinForms.Resource.Drawable.ic_vol_type_speaker_dark = global::ResSched.Droid.Resource.Drawable.ic_vol_type_speaker_dark;
-			global::Xamarin.Auth.XamarinForms.Resource.Drawable.ic_vol_type_speaker_group_dark = global::ResSched.Droid.Resource.Drawable.ic_vol_type_speaker_group_dark;
-			global::Xamarin.Auth.XamarinForms.Resource.Drawable.ic_vol_type_speaker_group_light = global::ResSched.Droid.Resource.Drawable.ic_vol_type_speaker_group_light;
-			global::Xamarin.Auth.XamarinForms.Resource.Drawable.ic_vol_type_speaker_light = global::ResSched.Droid.Resource.Drawable.ic_vol_type_speaker_light;
-			global::Xamarin.Auth.XamarinForms.Resource.Drawable.ic_vol_type_tv_dark = global::ResSched.Droid.Resource.Drawable.ic_vol_type_tv_dark;
-			global::Xamarin.Auth.XamarinForms.Resource.Drawable.ic_vol_type_tv_light = global::ResSched.Droid.Resource.Drawable.ic_vol_type_tv_light;
-			global::Xamarin.Auth.XamarinForms.Resource.Drawable.mr_button_connected_dark = global::ResSched.Droid.Resource.Drawable.mr_button_connected_dark;
-			global::Xamarin.Auth.XamarinForms.Resource.Drawable.mr_button_connected_light = global::ResSched.Droid.Resource.Drawable.mr_button_connected_light;
-			global::Xamarin.Auth.XamarinForms.Resource.Drawable.mr_button_connecting_dark = global::ResSched.Droid.Resource.Drawable.mr_button_connecting_dark;
-			global::Xamarin.Auth.XamarinForms.Resource.Drawable.mr_button_connecting_light = global::ResSched.Droid.Resource.Drawable.mr_button_connecting_light;
-			global::Xamarin.Auth.XamarinForms.Resource.Drawable.mr_button_dark = global::ResSched.Droid.Resource.Drawable.mr_button_dark;
-			global::Xamarin.Auth.XamarinForms.Resource.Drawable.mr_button_light = global::ResSched.Droid.Resource.Drawable.mr_button_light;
-			global::Xamarin.Auth.XamarinForms.Resource.Drawable.mr_dialog_close_dark = global::ResSched.Droid.Resource.Drawable.mr_dialog_close_dark;
-			global::Xamarin.Auth.XamarinForms.Resource.Drawable.mr_dialog_close_light = global::ResSched.Droid.Resource.Drawable.mr_dialog_close_light;
-			global::Xamarin.Auth.XamarinForms.Resource.Drawable.mr_dialog_material_background_dark = global::ResSched.Droid.Resource.Drawable.mr_dialog_material_background_dark;
-			global::Xamarin.Auth.XamarinForms.Resource.Drawable.mr_dialog_material_background_light = global::ResSched.Droid.Resource.Drawable.mr_dialog_material_background_light;
-			global::Xamarin.Auth.XamarinForms.Resource.Drawable.mr_group_collapse = global::ResSched.Droid.Resource.Drawable.mr_group_collapse;
-			global::Xamarin.Auth.XamarinForms.Resource.Drawable.mr_group_expand = global::ResSched.Droid.Resource.Drawable.mr_group_expand;
-			global::Xamarin.Auth.XamarinForms.Resource.Drawable.mr_media_pause_dark = global::ResSched.Droid.Resource.Drawable.mr_media_pause_dark;
-			global::Xamarin.Auth.XamarinForms.Resource.Drawable.mr_media_pause_light = global::ResSched.Droid.Resource.Drawable.mr_media_pause_light;
-			global::Xamarin.Auth.XamarinForms.Resource.Drawable.mr_media_play_dark = global::ResSched.Droid.Resource.Drawable.mr_media_play_dark;
-			global::Xamarin.Auth.XamarinForms.Resource.Drawable.mr_media_play_light = global::ResSched.Droid.Resource.Drawable.mr_media_play_light;
-			global::Xamarin.Auth.XamarinForms.Resource.Drawable.mr_media_stop_dark = global::ResSched.Droid.Resource.Drawable.mr_media_stop_dark;
-			global::Xamarin.Auth.XamarinForms.Resource.Drawable.mr_media_stop_light = global::ResSched.Droid.Resource.Drawable.mr_media_stop_light;
-			global::Xamarin.Auth.XamarinForms.Resource.Drawable.mr_vol_type_audiotrack_dark = global::ResSched.Droid.Resource.Drawable.mr_vol_type_audiotrack_dark;
-			global::Xamarin.Auth.XamarinForms.Resource.Drawable.mr_vol_type_audiotrack_light = global::ResSched.Droid.Resource.Drawable.mr_vol_type_audiotrack_light;
-			global::Xamarin.Auth.XamarinForms.Resource.Drawable.navigation_empty_icon = global::ResSched.Droid.Resource.Drawable.navigation_empty_icon;
-			global::Xamarin.Auth.XamarinForms.Resource.Drawable.notification_action_background = global::ResSched.Droid.Resource.Drawable.notification_action_background;
-			global::Xamarin.Auth.XamarinForms.Resource.Drawable.notification_bg = global::ResSched.Droid.Resource.Drawable.notification_bg;
-			global::Xamarin.Auth.XamarinForms.Resource.Drawable.notification_bg_low = global::ResSched.Droid.Resource.Drawable.notification_bg_low;
-			global::Xamarin.Auth.XamarinForms.Resource.Drawable.notification_bg_low_normal = global::ResSched.Droid.Resource.Drawable.notification_bg_low_normal;
-			global::Xamarin.Auth.XamarinForms.Resource.Drawable.notification_bg_low_pressed = global::ResSched.Droid.Resource.Drawable.notification_bg_low_pressed;
-			global::Xamarin.Auth.XamarinForms.Resource.Drawable.notification_bg_normal = global::ResSched.Droid.Resource.Drawable.notification_bg_normal;
-			global::Xamarin.Auth.XamarinForms.Resource.Drawable.notification_bg_normal_pressed = global::ResSched.Droid.Resource.Drawable.notification_bg_normal_pressed;
-			global::Xamarin.Auth.XamarinForms.Resource.Drawable.notification_icon_background = global::ResSched.Droid.Resource.Drawable.notification_icon_background;
-			global::Xamarin.Auth.XamarinForms.Resource.Drawable.notification_template_icon_bg = global::ResSched.Droid.Resource.Drawable.notification_template_icon_bg;
-			global::Xamarin.Auth.XamarinForms.Resource.Drawable.notification_template_icon_low_bg = global::ResSched.Droid.Resource.Drawable.notification_template_icon_low_bg;
-			global::Xamarin.Auth.XamarinForms.Resource.Drawable.notification_tile_bg = global::ResSched.Droid.Resource.Drawable.notification_tile_bg;
-			global::Xamarin.Auth.XamarinForms.Resource.Drawable.notify_panel_notification_icon_bg = global::ResSched.Droid.Resource.Drawable.notify_panel_notification_icon_bg;
-			global::Xamarin.Auth.XamarinForms.Resource.Drawable.tooltip_frame_dark = global::ResSched.Droid.Resource.Drawable.tooltip_frame_dark;
-			global::Xamarin.Auth.XamarinForms.Resource.Drawable.tooltip_frame_light = global::ResSched.Droid.Resource.Drawable.tooltip_frame_light;
-			global::Xamarin.Auth.XamarinForms.Resource.Id.ALT = global::ResSched.Droid.Resource.Id.ALT;
-			global::Xamarin.Auth.XamarinForms.Resource.Id.CTRL = global::ResSched.Droid.Resource.Id.CTRL;
-			global::Xamarin.Auth.XamarinForms.Resource.Id.FUNCTION = global::ResSched.Droid.Resource.Id.FUNCTION;
-			global::Xamarin.Auth.XamarinForms.Resource.Id.META = global::ResSched.Droid.Resource.Id.META;
-			global::Xamarin.Auth.XamarinForms.Resource.Id.SHIFT = global::ResSched.Droid.Resource.Id.SHIFT;
-			global::Xamarin.Auth.XamarinForms.Resource.Id.SYM = global::ResSched.Droid.Resource.Id.SYM;
-			global::Xamarin.Auth.XamarinForms.Resource.Id.action0 = global::ResSched.Droid.Resource.Id.action0;
-			global::Xamarin.Auth.XamarinForms.Resource.Id.action_bar = global::ResSched.Droid.Resource.Id.action_bar;
-			global::Xamarin.Auth.XamarinForms.Resource.Id.action_bar_activity_content = global::ResSched.Droid.Resource.Id.action_bar_activity_content;
-			global::Xamarin.Auth.XamarinForms.Resource.Id.action_bar_container = global::ResSched.Droid.Resource.Id.action_bar_container;
-			global::Xamarin.Auth.XamarinForms.Resource.Id.action_bar_root = global::ResSched.Droid.Resource.Id.action_bar_root;
-			global::Xamarin.Auth.XamarinForms.Resource.Id.action_bar_spinner = global::ResSched.Droid.Resource.Id.action_bar_spinner;
-			global::Xamarin.Auth.XamarinForms.Resource.Id.action_bar_subtitle = global::ResSched.Droid.Resource.Id.action_bar_subtitle;
-			global::Xamarin.Auth.XamarinForms.Resource.Id.action_bar_title = global::ResSched.Droid.Resource.Id.action_bar_title;
-			global::Xamarin.Auth.XamarinForms.Resource.Id.action_container = global::ResSched.Droid.Resource.Id.action_container;
-			global::Xamarin.Auth.XamarinForms.Resource.Id.action_context_bar = global::ResSched.Droid.Resource.Id.action_context_bar;
-			global::Xamarin.Auth.XamarinForms.Resource.Id.action_divider = global::ResSched.Droid.Resource.Id.action_divider;
-			global::Xamarin.Auth.XamarinForms.Resource.Id.action_image = global::ResSched.Droid.Resource.Id.action_image;
-			global::Xamarin.Auth.XamarinForms.Resource.Id.action_menu_divider = global::ResSched.Droid.Resource.Id.action_menu_divider;
-			global::Xamarin.Auth.XamarinForms.Resource.Id.action_menu_presenter = global::ResSched.Droid.Resource.Id.action_menu_presenter;
-			global::Xamarin.Auth.XamarinForms.Resource.Id.action_mode_bar = global::ResSched.Droid.Resource.Id.action_mode_bar;
-			global::Xamarin.Auth.XamarinForms.Resource.Id.action_mode_bar_stub = global::ResSched.Droid.Resource.Id.action_mode_bar_stub;
-			global::Xamarin.Auth.XamarinForms.Resource.Id.action_mode_close_button = global::ResSched.Droid.Resource.Id.action_mode_close_button;
-			global::Xamarin.Auth.XamarinForms.Resource.Id.action_text = global::ResSched.Droid.Resource.Id.action_text;
-			global::Xamarin.Auth.XamarinForms.Resource.Id.actions = global::ResSched.Droid.Resource.Id.actions;
-			global::Xamarin.Auth.XamarinForms.Resource.Id.activity_chooser_view_content = global::ResSched.Droid.Resource.Id.activity_chooser_view_content;
-			global::Xamarin.Auth.XamarinForms.Resource.Id.add = global::ResSched.Droid.Resource.Id.add;
-			global::Xamarin.Auth.XamarinForms.Resource.Id.alertTitle = global::ResSched.Droid.Resource.Id.alertTitle;
-			global::Xamarin.Auth.XamarinForms.Resource.Id.all = global::ResSched.Droid.Resource.Id.all;
-			global::Xamarin.Auth.XamarinForms.Resource.Id.always = global::ResSched.Droid.Resource.Id.always;
-			global::Xamarin.Auth.XamarinForms.Resource.Id.async = global::ResSched.Droid.Resource.Id.async;
-			global::Xamarin.Auth.XamarinForms.Resource.Id.auto = global::ResSched.Droid.Resource.Id.auto;
-			global::Xamarin.Auth.XamarinForms.Resource.Id.beginning = global::ResSched.Droid.Resource.Id.beginning;
-			global::Xamarin.Auth.XamarinForms.Resource.Id.blocking = global::ResSched.Droid.Resource.Id.blocking;
-			global::Xamarin.Auth.XamarinForms.Resource.Id.bottom = global::ResSched.Droid.Resource.Id.bottom;
-			global::Xamarin.Auth.XamarinForms.Resource.Id.buttonPanel = global::ResSched.Droid.Resource.Id.buttonPanel;
-			global::Xamarin.Auth.XamarinForms.Resource.Id.cancel_action = global::ResSched.Droid.Resource.Id.cancel_action;
-			global::Xamarin.Auth.XamarinForms.Resource.Id.center = global::ResSched.Droid.Resource.Id.center;
-			global::Xamarin.Auth.XamarinForms.Resource.Id.center_horizontal = global::ResSched.Droid.Resource.Id.center_horizontal;
-			global::Xamarin.Auth.XamarinForms.Resource.Id.center_vertical = global::ResSched.Droid.Resource.Id.center_vertical;
-			global::Xamarin.Auth.XamarinForms.Resource.Id.checkbox = global::ResSched.Droid.Resource.Id.checkbox;
-			global::Xamarin.Auth.XamarinForms.Resource.Id.chronometer = global::ResSched.Droid.Resource.Id.chronometer;
-			global::Xamarin.Auth.XamarinForms.Resource.Id.clip_horizontal = global::ResSched.Droid.Resource.Id.clip_horizontal;
-			global::Xamarin.Auth.XamarinForms.Resource.Id.clip_vertical = global::ResSched.Droid.Resource.Id.clip_vertical;
-			global::Xamarin.Auth.XamarinForms.Resource.Id.collapseActionView = global::ResSched.Droid.Resource.Id.collapseActionView;
-			global::Xamarin.Auth.XamarinForms.Resource.Id.container = global::ResSched.Droid.Resource.Id.container;
-			global::Xamarin.Auth.XamarinForms.Resource.Id.contentPanel = global::ResSched.Droid.Resource.Id.contentPanel;
-			global::Xamarin.Auth.XamarinForms.Resource.Id.coordinator = global::ResSched.Droid.Resource.Id.coordinator;
-			global::Xamarin.Auth.XamarinForms.Resource.Id.custom = global::ResSched.Droid.Resource.Id.custom;
-			global::Xamarin.Auth.XamarinForms.Resource.Id.customPanel = global::ResSched.Droid.Resource.Id.customPanel;
-			global::Xamarin.Auth.XamarinForms.Resource.Id.decor_content_parent = global::ResSched.Droid.Resource.Id.decor_content_parent;
-			global::Xamarin.Auth.XamarinForms.Resource.Id.default_activity_button = global::ResSched.Droid.Resource.Id.default_activity_button;
-			global::Xamarin.Auth.XamarinForms.Resource.Id.design_bottom_sheet = global::ResSched.Droid.Resource.Id.design_bottom_sheet;
-			global::Xamarin.Auth.XamarinForms.Resource.Id.design_menu_item_action_area = global::ResSched.Droid.Resource.Id.design_menu_item_action_area;
-			global::Xamarin.Auth.XamarinForms.Resource.Id.design_menu_item_action_area_stub = global::ResSched.Droid.Resource.Id.design_menu_item_action_area_stub;
-			global::Xamarin.Auth.XamarinForms.Resource.Id.design_menu_item_text = global::ResSched.Droid.Resource.Id.design_menu_item_text;
-			global::Xamarin.Auth.XamarinForms.Resource.Id.design_navigation_view = global::ResSched.Droid.Resource.Id.design_navigation_view;
-			global::Xamarin.Auth.XamarinForms.Resource.Id.disableHome = global::ResSched.Droid.Resource.Id.disableHome;
-			global::Xamarin.Auth.XamarinForms.Resource.Id.edit_query = global::ResSched.Droid.Resource.Id.edit_query;
-			global::Xamarin.Auth.XamarinForms.Resource.Id.end = global::ResSched.Droid.Resource.Id.end;
-			global::Xamarin.Auth.XamarinForms.Resource.Id.end_padder = global::ResSched.Droid.Resource.Id.end_padder;
-			global::Xamarin.Auth.XamarinForms.Resource.Id.enterAlways = global::ResSched.Droid.Resource.Id.enterAlways;
-			global::Xamarin.Auth.XamarinForms.Resource.Id.enterAlwaysCollapsed = global::ResSched.Droid.Resource.Id.enterAlwaysCollapsed;
-			global::Xamarin.Auth.XamarinForms.Resource.Id.exitUntilCollapsed = global::ResSched.Droid.Resource.Id.exitUntilCollapsed;
-			global::Xamarin.Auth.XamarinForms.Resource.Id.expand_activities_button = global::ResSched.Droid.Resource.Id.expand_activities_button;
-			global::Xamarin.Auth.XamarinForms.Resource.Id.expanded_menu = global::ResSched.Droid.Resource.Id.expanded_menu;
-			global::Xamarin.Auth.XamarinForms.Resource.Id.fill = global::ResSched.Droid.Resource.Id.fill;
-			global::Xamarin.Auth.XamarinForms.Resource.Id.fill_horizontal = global::ResSched.Droid.Resource.Id.fill_horizontal;
-			global::Xamarin.Auth.XamarinForms.Resource.Id.fill_vertical = global::ResSched.Droid.Resource.Id.fill_vertical;
-			global::Xamarin.Auth.XamarinForms.Resource.Id.@fixed = global::ResSched.Droid.Resource.Id.@fixed;
-			global::Xamarin.Auth.XamarinForms.Resource.Id.forever = global::ResSched.Droid.Resource.Id.forever;
-			global::Xamarin.Auth.XamarinForms.Resource.Id.ghost_view = global::ResSched.Droid.Resource.Id.ghost_view;
-			global::Xamarin.Auth.XamarinForms.Resource.Id.home = global::ResSched.Droid.Resource.Id.home;
-			global::Xamarin.Auth.XamarinForms.Resource.Id.homeAsUp = global::ResSched.Droid.Resource.Id.homeAsUp;
-			global::Xamarin.Auth.XamarinForms.Resource.Id.icon = global::ResSched.Droid.Resource.Id.icon;
-			global::Xamarin.Auth.XamarinForms.Resource.Id.icon_group = global::ResSched.Droid.Resource.Id.icon_group;
-			global::Xamarin.Auth.XamarinForms.Resource.Id.ifRoom = global::ResSched.Droid.Resource.Id.ifRoom;
-			global::Xamarin.Auth.XamarinForms.Resource.Id.image = global::ResSched.Droid.Resource.Id.image;
-			global::Xamarin.Auth.XamarinForms.Resource.Id.info = global::ResSched.Droid.Resource.Id.info;
-			global::Xamarin.Auth.XamarinForms.Resource.Id.italic = global::ResSched.Droid.Resource.Id.italic;
-			global::Xamarin.Auth.XamarinForms.Resource.Id.item_touch_helper_previous_elevation = global::ResSched.Droid.Resource.Id.item_touch_helper_previous_elevation;
-			global::Xamarin.Auth.XamarinForms.Resource.Id.largeLabel = global::ResSched.Droid.Resource.Id.largeLabel;
-			global::Xamarin.Auth.XamarinForms.Resource.Id.left = global::ResSched.Droid.Resource.Id.left;
-			global::Xamarin.Auth.XamarinForms.Resource.Id.line1 = global::ResSched.Droid.Resource.Id.line1;
-			global::Xamarin.Auth.XamarinForms.Resource.Id.line3 = global::ResSched.Droid.Resource.Id.line3;
-			global::Xamarin.Auth.XamarinForms.Resource.Id.listMode = global::ResSched.Droid.Resource.Id.listMode;
-			global::Xamarin.Auth.XamarinForms.Resource.Id.list_item = global::ResSched.Droid.Resource.Id.list_item;
-			global::Xamarin.Auth.XamarinForms.Resource.Id.masked = global::ResSched.Droid.Resource.Id.masked;
-			global::Xamarin.Auth.XamarinForms.Resource.Id.media_actions = global::ResSched.Droid.Resource.Id.media_actions;
-			global::Xamarin.Auth.XamarinForms.Resource.Id.message = global::ResSched.Droid.Resource.Id.message;
-			global::Xamarin.Auth.XamarinForms.Resource.Id.middle = global::ResSched.Droid.Resource.Id.middle;
-			global::Xamarin.Auth.XamarinForms.Resource.Id.mini = global::ResSched.Droid.Resource.Id.mini;
-			global::Xamarin.Auth.XamarinForms.Resource.Id.mr_art = global::ResSched.Droid.Resource.Id.mr_art;
-			global::Xamarin.Auth.XamarinForms.Resource.Id.mr_chooser_list = global::ResSched.Droid.Resource.Id.mr_chooser_list;
-			global::Xamarin.Auth.XamarinForms.Resource.Id.mr_chooser_route_desc = global::ResSched.Droid.Resource.Id.mr_chooser_route_desc;
-			global::Xamarin.Auth.XamarinForms.Resource.Id.mr_chooser_route_icon = global::ResSched.Droid.Resource.Id.mr_chooser_route_icon;
-			global::Xamarin.Auth.XamarinForms.Resource.Id.mr_chooser_route_name = global::ResSched.Droid.Resource.Id.mr_chooser_route_name;
-			global::Xamarin.Auth.XamarinForms.Resource.Id.mr_chooser_title = global::ResSched.Droid.Resource.Id.mr_chooser_title;
-			global::Xamarin.Auth.XamarinForms.Resource.Id.mr_close = global::ResSched.Droid.Resource.Id.mr_close;
-			global::Xamarin.Auth.XamarinForms.Resource.Id.mr_control_divider = global::ResSched.Droid.Resource.Id.mr_control_divider;
-			global::Xamarin.Auth.XamarinForms.Resource.Id.mr_control_playback_ctrl = global::ResSched.Droid.Resource.Id.mr_control_playback_ctrl;
-			global::Xamarin.Auth.XamarinForms.Resource.Id.mr_control_subtitle = global::ResSched.Droid.Resource.Id.mr_control_subtitle;
-			global::Xamarin.Auth.XamarinForms.Resource.Id.mr_control_title = global::ResSched.Droid.Resource.Id.mr_control_title;
-			global::Xamarin.Auth.XamarinForms.Resource.Id.mr_control_title_container = global::ResSched.Droid.Resource.Id.mr_control_title_container;
-			global::Xamarin.Auth.XamarinForms.Resource.Id.mr_custom_control = global::ResSched.Droid.Resource.Id.mr_custom_control;
-			global::Xamarin.Auth.XamarinForms.Resource.Id.mr_default_control = global::ResSched.Droid.Resource.Id.mr_default_control;
-			global::Xamarin.Auth.XamarinForms.Resource.Id.mr_dialog_area = global::ResSched.Droid.Resource.Id.mr_dialog_area;
-			global::Xamarin.Auth.XamarinForms.Resource.Id.mr_expandable_area = global::ResSched.Droid.Resource.Id.mr_expandable_area;
-			global::Xamarin.Auth.XamarinForms.Resource.Id.mr_group_expand_collapse = global::ResSched.Droid.Resource.Id.mr_group_expand_collapse;
-			global::Xamarin.Auth.XamarinForms.Resource.Id.mr_media_main_control = global::ResSched.Droid.Resource.Id.mr_media_main_control;
-			global::Xamarin.Auth.XamarinForms.Resource.Id.mr_name = global::ResSched.Droid.Resource.Id.mr_name;
-			global::Xamarin.Auth.XamarinForms.Resource.Id.mr_playback_control = global::ResSched.Droid.Resource.Id.mr_playback_control;
-			global::Xamarin.Auth.XamarinForms.Resource.Id.mr_title_bar = global::ResSched.Droid.Resource.Id.mr_title_bar;
-			global::Xamarin.Auth.XamarinForms.Resource.Id.mr_volume_control = global::ResSched.Droid.Resource.Id.mr_volume_control;
-			global::Xamarin.Auth.XamarinForms.Resource.Id.mr_volume_group_list = global::ResSched.Droid.Resource.Id.mr_volume_group_list;
-			global::Xamarin.Auth.XamarinForms.Resource.Id.mr_volume_item_icon = global::ResSched.Droid.Resource.Id.mr_volume_item_icon;
-			global::Xamarin.Auth.XamarinForms.Resource.Id.mr_volume_slider = global::ResSched.Droid.Resource.Id.mr_volume_slider;
-			global::Xamarin.Auth.XamarinForms.Resource.Id.multiply = global::ResSched.Droid.Resource.Id.multiply;
-			global::Xamarin.Auth.XamarinForms.Resource.Id.navigation_header_container = global::ResSched.Droid.Resource.Id.navigation_header_container;
-			global::Xamarin.Auth.XamarinForms.Resource.Id.never = global::ResSched.Droid.Resource.Id.never;
-			global::Xamarin.Auth.XamarinForms.Resource.Id.none = global::ResSched.Droid.Resource.Id.none;
-			global::Xamarin.Auth.XamarinForms.Resource.Id.normal = global::ResSched.Droid.Resource.Id.normal;
-			global::Xamarin.Auth.XamarinForms.Resource.Id.notification_background = global::ResSched.Droid.Resource.Id.notification_background;
-			global::Xamarin.Auth.XamarinForms.Resource.Id.notification_main_column = global::ResSched.Droid.Resource.Id.notification_main_column;
-			global::Xamarin.Auth.XamarinForms.Resource.Id.notification_main_column_container = global::ResSched.Droid.Resource.Id.notification_main_column_container;
-			global::Xamarin.Auth.XamarinForms.Resource.Id.parallax = global::ResSched.Droid.Resource.Id.parallax;
-			global::Xamarin.Auth.XamarinForms.Resource.Id.parentPanel = global::ResSched.Droid.Resource.Id.parentPanel;
-			global::Xamarin.Auth.XamarinForms.Resource.Id.parent_matrix = global::ResSched.Droid.Resource.Id.parent_matrix;
-			global::Xamarin.Auth.XamarinForms.Resource.Id.pin = global::ResSched.Droid.Resource.Id.pin;
-			global::Xamarin.Auth.XamarinForms.Resource.Id.progress_circular = global::ResSched.Droid.Resource.Id.progress_circular;
-			global::Xamarin.Auth.XamarinForms.Resource.Id.progress_horizontal = global::ResSched.Droid.Resource.Id.progress_horizontal;
-			global::Xamarin.Auth.XamarinForms.Resource.Id.radio = global::ResSched.Droid.Resource.Id.radio;
-			global::Xamarin.Auth.XamarinForms.Resource.Id.right = global::ResSched.Droid.Resource.Id.right;
-			global::Xamarin.Auth.XamarinForms.Resource.Id.right_icon = global::ResSched.Droid.Resource.Id.right_icon;
-			global::Xamarin.Auth.XamarinForms.Resource.Id.right_side = global::ResSched.Droid.Resource.Id.right_side;
-			global::Xamarin.Auth.XamarinForms.Resource.Id.save_image_matrix = global::ResSched.Droid.Resource.Id.save_image_matrix;
-			global::Xamarin.Auth.XamarinForms.Resource.Id.save_non_transition_alpha = global::ResSched.Droid.Resource.Id.save_non_transition_alpha;
-			global::Xamarin.Auth.XamarinForms.Resource.Id.save_scale_type = global::ResSched.Droid.Resource.Id.save_scale_type;
-			global::Xamarin.Auth.XamarinForms.Resource.Id.screen = global::ResSched.Droid.Resource.Id.screen;
-			global::Xamarin.Auth.XamarinForms.Resource.Id.scroll = global::ResSched.Droid.Resource.Id.scroll;
-			global::Xamarin.Auth.XamarinForms.Resource.Id.scrollIndicatorDown = global::ResSched.Droid.Resource.Id.scrollIndicatorDown;
-			global::Xamarin.Auth.XamarinForms.Resource.Id.scrollIndicatorUp = global::ResSched.Droid.Resource.Id.scrollIndicatorUp;
-			global::Xamarin.Auth.XamarinForms.Resource.Id.scrollView = global::ResSched.Droid.Resource.Id.scrollView;
-			global::Xamarin.Auth.XamarinForms.Resource.Id.scrollable = global::ResSched.Droid.Resource.Id.scrollable;
-			global::Xamarin.Auth.XamarinForms.Resource.Id.search_badge = global::ResSched.Droid.Resource.Id.search_badge;
-			global::Xamarin.Auth.XamarinForms.Resource.Id.search_bar = global::ResSched.Droid.Resource.Id.search_bar;
-			global::Xamarin.Auth.XamarinForms.Resource.Id.search_button = global::ResSched.Droid.Resource.Id.search_button;
-			global::Xamarin.Auth.XamarinForms.Resource.Id.search_close_btn = global::ResSched.Droid.Resource.Id.search_close_btn;
-			global::Xamarin.Auth.XamarinForms.Resource.Id.search_edit_frame = global::ResSched.Droid.Resource.Id.search_edit_frame;
-			global::Xamarin.Auth.XamarinForms.Resource.Id.search_go_btn = global::ResSched.Droid.Resource.Id.search_go_btn;
-			global::Xamarin.Auth.XamarinForms.Resource.Id.search_mag_icon = global::ResSched.Droid.Resource.Id.search_mag_icon;
-			global::Xamarin.Auth.XamarinForms.Resource.Id.search_plate = global::ResSched.Droid.Resource.Id.search_plate;
-			global::Xamarin.Auth.XamarinForms.Resource.Id.search_src_text = global::ResSched.Droid.Resource.Id.search_src_text;
-			global::Xamarin.Auth.XamarinForms.Resource.Id.search_voice_btn = global::ResSched.Droid.Resource.Id.search_voice_btn;
-			global::Xamarin.Auth.XamarinForms.Resource.Id.select_dialog_listview = global::ResSched.Droid.Resource.Id.select_dialog_listview;
-			global::Xamarin.Auth.XamarinForms.Resource.Id.shortcut = global::ResSched.Droid.Resource.Id.shortcut;
-			global::Xamarin.Auth.XamarinForms.Resource.Id.showCustom = global::ResSched.Droid.Resource.Id.showCustom;
-			global::Xamarin.Auth.XamarinForms.Resource.Id.showHome = global::ResSched.Droid.Resource.Id.showHome;
-			global::Xamarin.Auth.XamarinForms.Resource.Id.showTitle = global::ResSched.Droid.Resource.Id.showTitle;
-			global::Xamarin.Auth.XamarinForms.Resource.Id.smallLabel = global::ResSched.Droid.Resource.Id.smallLabel;
-			global::Xamarin.Auth.XamarinForms.Resource.Id.snackbar_action = global::ResSched.Droid.Resource.Id.snackbar_action;
-			global::Xamarin.Auth.XamarinForms.Resource.Id.snackbar_text = global::ResSched.Droid.Resource.Id.snackbar_text;
-			global::Xamarin.Auth.XamarinForms.Resource.Id.snap = global::ResSched.Droid.Resource.Id.snap;
-			global::Xamarin.Auth.XamarinForms.Resource.Id.spacer = global::ResSched.Droid.Resource.Id.spacer;
-			global::Xamarin.Auth.XamarinForms.Resource.Id.split_action_bar = global::ResSched.Droid.Resource.Id.split_action_bar;
-			global::Xamarin.Auth.XamarinForms.Resource.Id.src_atop = global::ResSched.Droid.Resource.Id.src_atop;
-			global::Xamarin.Auth.XamarinForms.Resource.Id.src_in = global::ResSched.Droid.Resource.Id.src_in;
-			global::Xamarin.Auth.XamarinForms.Resource.Id.src_over = global::ResSched.Droid.Resource.Id.src_over;
-			global::Xamarin.Auth.XamarinForms.Resource.Id.start = global::ResSched.Droid.Resource.Id.start;
-			global::Xamarin.Auth.XamarinForms.Resource.Id.status_bar_latest_event_content = global::ResSched.Droid.Resource.Id.status_bar_latest_event_content;
-			global::Xamarin.Auth.XamarinForms.Resource.Id.submenuarrow = global::ResSched.Droid.Resource.Id.submenuarrow;
-			global::Xamarin.Auth.XamarinForms.Resource.Id.submit_area = global::ResSched.Droid.Resource.Id.submit_area;
-			global::Xamarin.Auth.XamarinForms.Resource.Id.tabMode = global::ResSched.Droid.Resource.Id.tabMode;
-			global::Xamarin.Auth.XamarinForms.Resource.Id.tag_transition_group = global::ResSched.Droid.Resource.Id.tag_transition_group;
-			global::Xamarin.Auth.XamarinForms.Resource.Id.text = global::ResSched.Droid.Resource.Id.text;
-			global::Xamarin.Auth.XamarinForms.Resource.Id.text2 = global::ResSched.Droid.Resource.Id.text2;
-			global::Xamarin.Auth.XamarinForms.Resource.Id.textSpacerNoButtons = global::ResSched.Droid.Resource.Id.textSpacerNoButtons;
-			global::Xamarin.Auth.XamarinForms.Resource.Id.textSpacerNoTitle = global::ResSched.Droid.Resource.Id.textSpacerNoTitle;
-			global::Xamarin.Auth.XamarinForms.Resource.Id.text_input_password_toggle = global::ResSched.Droid.Resource.Id.text_input_password_toggle;
-			global::Xamarin.Auth.XamarinForms.Resource.Id.textinput_counter = global::ResSched.Droid.Resource.Id.textinput_counter;
-			global::Xamarin.Auth.XamarinForms.Resource.Id.textinput_error = global::ResSched.Droid.Resource.Id.textinput_error;
-			global::Xamarin.Auth.XamarinForms.Resource.Id.time = global::ResSched.Droid.Resource.Id.time;
-			global::Xamarin.Auth.XamarinForms.Resource.Id.title = global::ResSched.Droid.Resource.Id.title;
-			global::Xamarin.Auth.XamarinForms.Resource.Id.titleDividerNoCustom = global::ResSched.Droid.Resource.Id.titleDividerNoCustom;
-			global::Xamarin.Auth.XamarinForms.Resource.Id.title_template = global::ResSched.Droid.Resource.Id.title_template;
-			global::Xamarin.Auth.XamarinForms.Resource.Id.top = global::ResSched.Droid.Resource.Id.top;
-			global::Xamarin.Auth.XamarinForms.Resource.Id.topPanel = global::ResSched.Droid.Resource.Id.topPanel;
-			global::Xamarin.Auth.XamarinForms.Resource.Id.touch_outside = global::ResSched.Droid.Resource.Id.touch_outside;
-			global::Xamarin.Auth.XamarinForms.Resource.Id.transition_current_scene = global::ResSched.Droid.Resource.Id.transition_current_scene;
-			global::Xamarin.Auth.XamarinForms.Resource.Id.transition_layout_save = global::ResSched.Droid.Resource.Id.transition_layout_save;
-			global::Xamarin.Auth.XamarinForms.Resource.Id.transition_position = global::ResSched.Droid.Resource.Id.transition_position;
-			global::Xamarin.Auth.XamarinForms.Resource.Id.transition_scene_layoutid_cache = global::ResSched.Droid.Resource.Id.transition_scene_layoutid_cache;
-			global::Xamarin.Auth.XamarinForms.Resource.Id.transition_transform = global::ResSched.Droid.Resource.Id.transition_transform;
-			global::Xamarin.Auth.XamarinForms.Resource.Id.uniform = global::ResSched.Droid.Resource.Id.uniform;
-			global::Xamarin.Auth.XamarinForms.Resource.Id.up = global::ResSched.Droid.Resource.Id.up;
-			global::Xamarin.Auth.XamarinForms.Resource.Id.useLogo = global::ResSched.Droid.Resource.Id.useLogo;
-			global::Xamarin.Auth.XamarinForms.Resource.Id.view_offset_helper = global::ResSched.Droid.Resource.Id.view_offset_helper;
-			global::Xamarin.Auth.XamarinForms.Resource.Id.visible = global::ResSched.Droid.Resource.Id.visible;
-			global::Xamarin.Auth.XamarinForms.Resource.Id.volume_item_container = global::ResSched.Droid.Resource.Id.volume_item_container;
-			global::Xamarin.Auth.XamarinForms.Resource.Id.webview = global::ResSched.Droid.Resource.Id.webview;
-			global::Xamarin.Auth.XamarinForms.Resource.Id.withText = global::ResSched.Droid.Resource.Id.withText;
-			global::Xamarin.Auth.XamarinForms.Resource.Id.wrap_content = global::ResSched.Droid.Resource.Id.wrap_content;
-			global::Xamarin.Auth.XamarinForms.Resource.Integer.abc_config_activityDefaultDur = global::ResSched.Droid.Resource.Integer.abc_config_activityDefaultDur;
-			global::Xamarin.Auth.XamarinForms.Resource.Integer.abc_config_activityShortDur = global::ResSched.Droid.Resource.Integer.abc_config_activityShortDur;
-			global::Xamarin.Auth.XamarinForms.Resource.Integer.app_bar_elevation_anim_duration = global::ResSched.Droid.Resource.Integer.app_bar_elevation_anim_duration;
-			global::Xamarin.Auth.XamarinForms.Resource.Integer.bottom_sheet_slide_duration = global::ResSched.Droid.Resource.Integer.bottom_sheet_slide_duration;
-			global::Xamarin.Auth.XamarinForms.Resource.Integer.cancel_button_image_alpha = global::ResSched.Droid.Resource.Integer.cancel_button_image_alpha;
-			global::Xamarin.Auth.XamarinForms.Resource.Integer.config_tooltipAnimTime = global::ResSched.Droid.Resource.Integer.config_tooltipAnimTime;
-			global::Xamarin.Auth.XamarinForms.Resource.Integer.design_snackbar_text_max_lines = global::ResSched.Droid.Resource.Integer.design_snackbar_text_max_lines;
-			global::Xamarin.Auth.XamarinForms.Resource.Integer.hide_password_duration = global::ResSched.Droid.Resource.Integer.hide_password_duration;
-			global::Xamarin.Auth.XamarinForms.Resource.Integer.mr_controller_volume_group_list_animation_duration_ms = global::ResSched.Droid.Resource.Integer.mr_controller_volume_group_list_animation_duration_ms;
-			global::Xamarin.Auth.XamarinForms.Resource.Integer.mr_controller_volume_group_list_fade_in_duration_ms = global::ResSched.Droid.Resource.Integer.mr_controller_volume_group_list_fade_in_duration_ms;
-			global::Xamarin.Auth.XamarinForms.Resource.Integer.mr_controller_volume_group_list_fade_out_duration_ms = global::ResSched.Droid.Resource.Integer.mr_controller_volume_group_list_fade_out_duration_ms;
-			global::Xamarin.Auth.XamarinForms.Resource.Integer.show_password_duration = global::ResSched.Droid.Resource.Integer.show_password_duration;
-			global::Xamarin.Auth.XamarinForms.Resource.Integer.status_bar_notification_info_maxnum = global::ResSched.Droid.Resource.Integer.status_bar_notification_info_maxnum;
-			global::Xamarin.Auth.XamarinForms.Resource.Interpolator.mr_fast_out_slow_in = global::ResSched.Droid.Resource.Interpolator.mr_fast_out_slow_in;
-			global::Xamarin.Auth.XamarinForms.Resource.Interpolator.mr_linear_out_slow_in = global::ResSched.Droid.Resource.Interpolator.mr_linear_out_slow_in;
-			global::Xamarin.Auth.XamarinForms.Resource.Layout.abc_action_bar_title_item = global::ResSched.Droid.Resource.Layout.abc_action_bar_title_item;
-			global::Xamarin.Auth.XamarinForms.Resource.Layout.abc_action_bar_up_container = global::ResSched.Droid.Resource.Layout.abc_action_bar_up_container;
-			global::Xamarin.Auth.XamarinForms.Resource.Layout.abc_action_menu_item_layout = global::ResSched.Droid.Resource.Layout.abc_action_menu_item_layout;
-			global::Xamarin.Auth.XamarinForms.Resource.Layout.abc_action_menu_layout = global::ResSched.Droid.Resource.Layout.abc_action_menu_layout;
-			global::Xamarin.Auth.XamarinForms.Resource.Layout.abc_action_mode_bar = global::ResSched.Droid.Resource.Layout.abc_action_mode_bar;
-			global::Xamarin.Auth.XamarinForms.Resource.Layout.abc_action_mode_close_item_material = global::ResSched.Droid.Resource.Layout.abc_action_mode_close_item_material;
-			global::Xamarin.Auth.XamarinForms.Resource.Layout.abc_activity_chooser_view = global::ResSched.Droid.Resource.Layout.abc_activity_chooser_view;
-			global::Xamarin.Auth.XamarinForms.Resource.Layout.abc_activity_chooser_view_list_item = global::ResSched.Droid.Resource.Layout.abc_activity_chooser_view_list_item;
-			global::Xamarin.Auth.XamarinForms.Resource.Layout.abc_alert_dialog_button_bar_material = global::ResSched.Droid.Resource.Layout.abc_alert_dialog_button_bar_material;
-			global::Xamarin.Auth.XamarinForms.Resource.Layout.abc_alert_dialog_material = global::ResSched.Droid.Resource.Layout.abc_alert_dialog_material;
-			global::Xamarin.Auth.XamarinForms.Resource.Layout.abc_alert_dialog_title_material = global::ResSched.Droid.Resource.Layout.abc_alert_dialog_title_material;
-			global::Xamarin.Auth.XamarinForms.Resource.Layout.abc_dialog_title_material = global::ResSched.Droid.Resource.Layout.abc_dialog_title_material;
-			global::Xamarin.Auth.XamarinForms.Resource.Layout.abc_expanded_menu_layout = global::ResSched.Droid.Resource.Layout.abc_expanded_menu_layout;
-			global::Xamarin.Auth.XamarinForms.Resource.Layout.abc_list_menu_item_checkbox = global::ResSched.Droid.Resource.Layout.abc_list_menu_item_checkbox;
-			global::Xamarin.Auth.XamarinForms.Resource.Layout.abc_list_menu_item_icon = global::ResSched.Droid.Resource.Layout.abc_list_menu_item_icon;
-			global::Xamarin.Auth.XamarinForms.Resource.Layout.abc_list_menu_item_layout = global::ResSched.Droid.Resource.Layout.abc_list_menu_item_layout;
-			global::Xamarin.Auth.XamarinForms.Resource.Layout.abc_list_menu_item_radio = global::ResSched.Droid.Resource.Layout.abc_list_menu_item_radio;
-			global::Xamarin.Auth.XamarinForms.Resource.Layout.abc_popup_menu_header_item_layout = global::ResSched.Droid.Resource.Layout.abc_popup_menu_header_item_layout;
-			global::Xamarin.Auth.XamarinForms.Resource.Layout.abc_popup_menu_item_layout = global::ResSched.Droid.Resource.Layout.abc_popup_menu_item_layout;
-			global::Xamarin.Auth.XamarinForms.Resource.Layout.abc_screen_content_include = global::ResSched.Droid.Resource.Layout.abc_screen_content_include;
-			global::Xamarin.Auth.XamarinForms.Resource.Layout.abc_screen_simple = global::ResSched.Droid.Resource.Layout.abc_screen_simple;
-			global::Xamarin.Auth.XamarinForms.Resource.Layout.abc_screen_simple_overlay_action_mode = global::ResSched.Droid.Resource.Layout.abc_screen_simple_overlay_action_mode;
-			global::Xamarin.Auth.XamarinForms.Resource.Layout.abc_screen_toolbar = global::ResSched.Droid.Resource.Layout.abc_screen_toolbar;
-			global::Xamarin.Auth.XamarinForms.Resource.Layout.abc_search_dropdown_item_icons_2line = global::ResSched.Droid.Resource.Layout.abc_search_dropdown_item_icons_2line;
-			global::Xamarin.Auth.XamarinForms.Resource.Layout.abc_search_view = global::ResSched.Droid.Resource.Layout.abc_search_view;
-			global::Xamarin.Auth.XamarinForms.Resource.Layout.abc_select_dialog_material = global::ResSched.Droid.Resource.Layout.abc_select_dialog_material;
-			global::Xamarin.Auth.XamarinForms.Resource.Layout.activity_webview = global::ResSched.Droid.Resource.Layout.activity_webview;
-			global::Xamarin.Auth.XamarinForms.Resource.Layout.design_bottom_navigation_item = global::ResSched.Droid.Resource.Layout.design_bottom_navigation_item;
-			global::Xamarin.Auth.XamarinForms.Resource.Layout.design_bottom_sheet_dialog = global::ResSched.Droid.Resource.Layout.design_bottom_sheet_dialog;
-			global::Xamarin.Auth.XamarinForms.Resource.Layout.design_layout_snackbar = global::ResSched.Droid.Resource.Layout.design_layout_snackbar;
-			global::Xamarin.Auth.XamarinForms.Resource.Layout.design_layout_snackbar_include = global::ResSched.Droid.Resource.Layout.design_layout_snackbar_include;
-			global::Xamarin.Auth.XamarinForms.Resource.Layout.design_layout_tab_icon = global::ResSched.Droid.Resource.Layout.design_layout_tab_icon;
-			global::Xamarin.Auth.XamarinForms.Resource.Layout.design_layout_tab_text = global::ResSched.Droid.Resource.Layout.design_layout_tab_text;
-			global::Xamarin.Auth.XamarinForms.Resource.Layout.design_menu_item_action_area = global::ResSched.Droid.Resource.Layout.design_menu_item_action_area;
-			global::Xamarin.Auth.XamarinForms.Resource.Layout.design_navigation_item = global::ResSched.Droid.Resource.Layout.design_navigation_item;
-			global::Xamarin.Auth.XamarinForms.Resource.Layout.design_navigation_item_header = global::ResSched.Droid.Resource.Layout.design_navigation_item_header;
-			global::Xamarin.Auth.XamarinForms.Resource.Layout.design_navigation_item_separator = global::ResSched.Droid.Resource.Layout.design_navigation_item_separator;
-			global::Xamarin.Auth.XamarinForms.Resource.Layout.design_navigation_item_subheader = global::ResSched.Droid.Resource.Layout.design_navigation_item_subheader;
-			global::Xamarin.Auth.XamarinForms.Resource.Layout.design_navigation_menu = global::ResSched.Droid.Resource.Layout.design_navigation_menu;
-			global::Xamarin.Auth.XamarinForms.Resource.Layout.design_navigation_menu_item = global::ResSched.Droid.Resource.Layout.design_navigation_menu_item;
-			global::Xamarin.Auth.XamarinForms.Resource.Layout.design_text_input_password_icon = global::ResSched.Droid.Resource.Layout.design_text_input_password_icon;
-			global::Xamarin.Auth.XamarinForms.Resource.Layout.mr_chooser_dialog = global::ResSched.Droid.Resource.Layout.mr_chooser_dialog;
-			global::Xamarin.Auth.XamarinForms.Resource.Layout.mr_chooser_list_item = global::ResSched.Droid.Resource.Layout.mr_chooser_list_item;
-			global::Xamarin.Auth.XamarinForms.Resource.Layout.mr_controller_material_dialog_b = global::ResSched.Droid.Resource.Layout.mr_controller_material_dialog_b;
-			global::Xamarin.Auth.XamarinForms.Resource.Layout.mr_controller_volume_item = global::ResSched.Droid.Resource.Layout.mr_controller_volume_item;
-			global::Xamarin.Auth.XamarinForms.Resource.Layout.mr_playback_control = global::ResSched.Droid.Resource.Layout.mr_playback_control;
-			global::Xamarin.Auth.XamarinForms.Resource.Layout.mr_volume_control = global::ResSched.Droid.Resource.Layout.mr_volume_control;
-			global::Xamarin.Auth.XamarinForms.Resource.Layout.notification_action = global::ResSched.Droid.Resource.Layout.notification_action;
-			global::Xamarin.Auth.XamarinForms.Resource.Layout.notification_action_tombstone = global::ResSched.Droid.Resource.Layout.notification_action_tombstone;
-			global::Xamarin.Auth.XamarinForms.Resource.Layout.notification_media_action = global::ResSched.Droid.Resource.Layout.notification_media_action;
-			global::Xamarin.Auth.XamarinForms.Resource.Layout.notification_media_cancel_action = global::ResSched.Droid.Resource.Layout.notification_media_cancel_action;
-			global::Xamarin.Auth.XamarinForms.Resource.Layout.notification_template_big_media = global::ResSched.Droid.Resource.Layout.notification_template_big_media;
-			global::Xamarin.Auth.XamarinForms.Resource.Layout.notification_template_big_media_custom = global::ResSched.Droid.Resource.Layout.notification_template_big_media_custom;
-			global::Xamarin.Auth.XamarinForms.Resource.Layout.notification_template_big_media_narrow = global::ResSched.Droid.Resource.Layout.notification_template_big_media_narrow;
-			global::Xamarin.Auth.XamarinForms.Resource.Layout.notification_template_big_media_narrow_custom = global::ResSched.Droid.Resource.Layout.notification_template_big_media_narrow_custom;
-			global::Xamarin.Auth.XamarinForms.Resource.Layout.notification_template_custom_big = global::ResSched.Droid.Resource.Layout.notification_template_custom_big;
-			global::Xamarin.Auth.XamarinForms.Resource.Layout.notification_template_icon_group = global::ResSched.Droid.Resource.Layout.notification_template_icon_group;
-			global::Xamarin.Auth.XamarinForms.Resource.Layout.notification_template_lines_media = global::ResSched.Droid.Resource.Layout.notification_template_lines_media;
-			global::Xamarin.Auth.XamarinForms.Resource.Layout.notification_template_media = global::ResSched.Droid.Resource.Layout.notification_template_media;
-			global::Xamarin.Auth.XamarinForms.Resource.Layout.notification_template_media_custom = global::ResSched.Droid.Resource.Layout.notification_template_media_custom;
-			global::Xamarin.Auth.XamarinForms.Resource.Layout.notification_template_part_chronometer = global::ResSched.Droid.Resource.Layout.notification_template_part_chronometer;
-			global::Xamarin.Auth.XamarinForms.Resource.Layout.notification_template_part_time = global::ResSched.Droid.Resource.Layout.notification_template_part_time;
-			global::Xamarin.Auth.XamarinForms.Resource.Layout.select_dialog_item_material = global::ResSched.Droid.Resource.Layout.select_dialog_item_material;
-			global::Xamarin.Auth.XamarinForms.Resource.Layout.select_dialog_multichoice_material = global::ResSched.Droid.Resource.Layout.select_dialog_multichoice_material;
-			global::Xamarin.Auth.XamarinForms.Resource.Layout.select_dialog_singlechoice_material = global::ResSched.Droid.Resource.Layout.select_dialog_singlechoice_material;
-			global::Xamarin.Auth.XamarinForms.Resource.Layout.support_simple_spinner_dropdown_item = global::ResSched.Droid.Resource.Layout.support_simple_spinner_dropdown_item;
-			global::Xamarin.Auth.XamarinForms.Resource.Layout.tooltip = global::ResSched.Droid.Resource.Layout.tooltip;
-			global::Xamarin.Auth.XamarinForms.Resource.String.ApplicationName = global::ResSched.Droid.Resource.String.ApplicationName;
-			global::Xamarin.Auth.XamarinForms.Resource.String.Hello = global::ResSched.Droid.Resource.String.Hello;
-			global::Xamarin.Auth.XamarinForms.Resource.String.abc_action_bar_home_description = global::ResSched.Droid.Resource.String.abc_action_bar_home_description;
-			global::Xamarin.Auth.XamarinForms.Resource.String.abc_action_bar_up_description = global::ResSched.Droid.Resource.String.abc_action_bar_up_description;
-			global::Xamarin.Auth.XamarinForms.Resource.String.abc_action_menu_overflow_description = global::ResSched.Droid.Resource.String.abc_action_menu_overflow_description;
-			global::Xamarin.Auth.XamarinForms.Resource.String.abc_action_mode_done = global::ResSched.Droid.Resource.String.abc_action_mode_done;
-			global::Xamarin.Auth.XamarinForms.Resource.String.abc_activity_chooser_view_see_all = global::ResSched.Droid.Resource.String.abc_activity_chooser_view_see_all;
-			global::Xamarin.Auth.XamarinForms.Resource.String.abc_activitychooserview_choose_application = global::ResSched.Droid.Resource.String.abc_activitychooserview_choose_application;
-			global::Xamarin.Auth.XamarinForms.Resource.String.abc_capital_off = global::ResSched.Droid.Resource.String.abc_capital_off;
-			global::Xamarin.Auth.XamarinForms.Resource.String.abc_capital_on = global::ResSched.Droid.Resource.String.abc_capital_on;
-			global::Xamarin.Auth.XamarinForms.Resource.String.abc_font_family_body_1_material = global::ResSched.Droid.Resource.String.abc_font_family_body_1_material;
-			global::Xamarin.Auth.XamarinForms.Resource.String.abc_font_family_body_2_material = global::ResSched.Droid.Resource.String.abc_font_family_body_2_material;
-			global::Xamarin.Auth.XamarinForms.Resource.String.abc_font_family_button_material = global::ResSched.Droid.Resource.String.abc_font_family_button_material;
-			global::Xamarin.Auth.XamarinForms.Resource.String.abc_font_family_caption_material = global::ResSched.Droid.Resource.String.abc_font_family_caption_material;
-			global::Xamarin.Auth.XamarinForms.Resource.String.abc_font_family_display_1_material = global::ResSched.Droid.Resource.String.abc_font_family_display_1_material;
-			global::Xamarin.Auth.XamarinForms.Resource.String.abc_font_family_display_2_material = global::ResSched.Droid.Resource.String.abc_font_family_display_2_material;
-			global::Xamarin.Auth.XamarinForms.Resource.String.abc_font_family_display_3_material = global::ResSched.Droid.Resource.String.abc_font_family_display_3_material;
-			global::Xamarin.Auth.XamarinForms.Resource.String.abc_font_family_display_4_material = global::ResSched.Droid.Resource.String.abc_font_family_display_4_material;
-			global::Xamarin.Auth.XamarinForms.Resource.String.abc_font_family_headline_material = global::ResSched.Droid.Resource.String.abc_font_family_headline_material;
-			global::Xamarin.Auth.XamarinForms.Resource.String.abc_font_family_menu_material = global::ResSched.Droid.Resource.String.abc_font_family_menu_material;
-			global::Xamarin.Auth.XamarinForms.Resource.String.abc_font_family_subhead_material = global::ResSched.Droid.Resource.String.abc_font_family_subhead_material;
-			global::Xamarin.Auth.XamarinForms.Resource.String.abc_font_family_title_material = global::ResSched.Droid.Resource.String.abc_font_family_title_material;
-			global::Xamarin.Auth.XamarinForms.Resource.String.abc_search_hint = global::ResSched.Droid.Resource.String.abc_search_hint;
-			global::Xamarin.Auth.XamarinForms.Resource.String.abc_searchview_description_clear = global::ResSched.Droid.Resource.String.abc_searchview_description_clear;
-			global::Xamarin.Auth.XamarinForms.Resource.String.abc_searchview_description_query = global::ResSched.Droid.Resource.String.abc_searchview_description_query;
-			global::Xamarin.Auth.XamarinForms.Resource.String.abc_searchview_description_search = global::ResSched.Droid.Resource.String.abc_searchview_description_search;
-			global::Xamarin.Auth.XamarinForms.Resource.String.abc_searchview_description_submit = global::ResSched.Droid.Resource.String.abc_searchview_description_submit;
-			global::Xamarin.Auth.XamarinForms.Resource.String.abc_searchview_description_voice = global::ResSched.Droid.Resource.String.abc_searchview_description_voice;
-			global::Xamarin.Auth.XamarinForms.Resource.String.abc_shareactionprovider_share_with = global::ResSched.Droid.Resource.String.abc_shareactionprovider_share_with;
-			global::Xamarin.Auth.XamarinForms.Resource.String.abc_shareactionprovider_share_with_application = global::ResSched.Droid.Resource.String.abc_shareactionprovider_share_with_application;
-			global::Xamarin.Auth.XamarinForms.Resource.String.abc_toolbar_collapse_description = global::ResSched.Droid.Resource.String.abc_toolbar_collapse_description;
-			global::Xamarin.Auth.XamarinForms.Resource.String.appbar_scrolling_view_behavior = global::ResSched.Droid.Resource.String.appbar_scrolling_view_behavior;
-			global::Xamarin.Auth.XamarinForms.Resource.String.bottom_sheet_behavior = global::ResSched.Droid.Resource.String.bottom_sheet_behavior;
-			global::Xamarin.Auth.XamarinForms.Resource.String.character_counter_pattern = global::ResSched.Droid.Resource.String.character_counter_pattern;
-			global::Xamarin.Auth.XamarinForms.Resource.String.mr_button_content_description = global::ResSched.Droid.Resource.String.mr_button_content_description;
-			global::Xamarin.Auth.XamarinForms.Resource.String.mr_cast_button_connected = global::ResSched.Droid.Resource.String.mr_cast_button_connected;
-			global::Xamarin.Auth.XamarinForms.Resource.String.mr_cast_button_connecting = global::ResSched.Droid.Resource.String.mr_cast_button_connecting;
-			global::Xamarin.Auth.XamarinForms.Resource.String.mr_cast_button_disconnected = global::ResSched.Droid.Resource.String.mr_cast_button_disconnected;
-			global::Xamarin.Auth.XamarinForms.Resource.String.mr_chooser_searching = global::ResSched.Droid.Resource.String.mr_chooser_searching;
-			global::Xamarin.Auth.XamarinForms.Resource.String.mr_chooser_title = global::ResSched.Droid.Resource.String.mr_chooser_title;
-			global::Xamarin.Auth.XamarinForms.Resource.String.mr_controller_album_art = global::ResSched.Droid.Resource.String.mr_controller_album_art;
-			global::Xamarin.Auth.XamarinForms.Resource.String.mr_controller_casting_screen = global::ResSched.Droid.Resource.String.mr_controller_casting_screen;
-			global::Xamarin.Auth.XamarinForms.Resource.String.mr_controller_close_description = global::ResSched.Droid.Resource.String.mr_controller_close_description;
-			global::Xamarin.Auth.XamarinForms.Resource.String.mr_controller_collapse_group = global::ResSched.Droid.Resource.String.mr_controller_collapse_group;
-			global::Xamarin.Auth.XamarinForms.Resource.String.mr_controller_disconnect = global::ResSched.Droid.Resource.String.mr_controller_disconnect;
-			global::Xamarin.Auth.XamarinForms.Resource.String.mr_controller_expand_group = global::ResSched.Droid.Resource.String.mr_controller_expand_group;
-			global::Xamarin.Auth.XamarinForms.Resource.String.mr_controller_no_info_available = global::ResSched.Droid.Resource.String.mr_controller_no_info_available;
-			global::Xamarin.Auth.XamarinForms.Resource.String.mr_controller_no_media_selected = global::ResSched.Droid.Resource.String.mr_controller_no_media_selected;
-			global::Xamarin.Auth.XamarinForms.Resource.String.mr_controller_pause = global::ResSched.Droid.Resource.String.mr_controller_pause;
-			global::Xamarin.Auth.XamarinForms.Resource.String.mr_controller_play = global::ResSched.Droid.Resource.String.mr_controller_play;
-			global::Xamarin.Auth.XamarinForms.Resource.String.mr_controller_stop = global::ResSched.Droid.Resource.String.mr_controller_stop;
-			global::Xamarin.Auth.XamarinForms.Resource.String.mr_controller_stop_casting = global::ResSched.Droid.Resource.String.mr_controller_stop_casting;
-			global::Xamarin.Auth.XamarinForms.Resource.String.mr_controller_volume_slider = global::ResSched.Droid.Resource.String.mr_controller_volume_slider;
-			global::Xamarin.Auth.XamarinForms.Resource.String.mr_system_route_name = global::ResSched.Droid.Resource.String.mr_system_route_name;
-			global::Xamarin.Auth.XamarinForms.Resource.String.mr_user_route_category_name = global::ResSched.Droid.Resource.String.mr_user_route_category_name;
-			global::Xamarin.Auth.XamarinForms.Resource.String.password_toggle_content_description = global::ResSched.Droid.Resource.String.password_toggle_content_description;
-			global::Xamarin.Auth.XamarinForms.Resource.String.path_password_eye = global::ResSched.Droid.Resource.String.path_password_eye;
-			global::Xamarin.Auth.XamarinForms.Resource.String.path_password_eye_mask_strike_through = global::ResSched.Droid.Resource.String.path_password_eye_mask_strike_through;
-			global::Xamarin.Auth.XamarinForms.Resource.String.path_password_eye_mask_visible = global::ResSched.Droid.Resource.String.path_password_eye_mask_visible;
-			global::Xamarin.Auth.XamarinForms.Resource.String.path_password_strike_through = global::ResSched.Droid.Resource.String.path_password_strike_through;
-			global::Xamarin.Auth.XamarinForms.Resource.String.search_menu_title = global::ResSched.Droid.Resource.String.search_menu_title;
-			global::Xamarin.Auth.XamarinForms.Resource.String.status_bar_notification_info_overflow = global::ResSched.Droid.Resource.String.status_bar_notification_info_overflow;
-			global::Xamarin.Auth.XamarinForms.Resource.String.title_activity_webview = global::ResSched.Droid.Resource.String.title_activity_webview;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.AlertDialog_AppCompat = global::ResSched.Droid.Resource.Style.AlertDialog_AppCompat;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.AlertDialog_AppCompat_Light = global::ResSched.Droid.Resource.Style.AlertDialog_AppCompat_Light;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.Animation_AppCompat_Dialog = global::ResSched.Droid.Resource.Style.Animation_AppCompat_Dialog;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.Animation_AppCompat_DropDownUp = global::ResSched.Droid.Resource.Style.Animation_AppCompat_DropDownUp;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.Animation_AppCompat_Tooltip = global::ResSched.Droid.Resource.Style.Animation_AppCompat_Tooltip;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.Animation_Design_BottomSheetDialog = global::ResSched.Droid.Resource.Style.Animation_Design_BottomSheetDialog;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.Base_AlertDialog_AppCompat = global::ResSched.Droid.Resource.Style.Base_AlertDialog_AppCompat;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.Base_AlertDialog_AppCompat_Light = global::ResSched.Droid.Resource.Style.Base_AlertDialog_AppCompat_Light;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.Base_Animation_AppCompat_Dialog = global::ResSched.Droid.Resource.Style.Base_Animation_AppCompat_Dialog;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.Base_Animation_AppCompat_DropDownUp = global::ResSched.Droid.Resource.Style.Base_Animation_AppCompat_DropDownUp;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.Base_Animation_AppCompat_Tooltip = global::ResSched.Droid.Resource.Style.Base_Animation_AppCompat_Tooltip;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.Base_CardView = global::ResSched.Droid.Resource.Style.Base_CardView;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.Base_DialogWindowTitle_AppCompat = global::ResSched.Droid.Resource.Style.Base_DialogWindowTitle_AppCompat;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.Base_DialogWindowTitleBackground_AppCompat = global::ResSched.Droid.Resource.Style.Base_DialogWindowTitleBackground_AppCompat;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.Base_TextAppearance_AppCompat = global::ResSched.Droid.Resource.Style.Base_TextAppearance_AppCompat;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.Base_TextAppearance_AppCompat_Body1 = global::ResSched.Droid.Resource.Style.Base_TextAppearance_AppCompat_Body1;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.Base_TextAppearance_AppCompat_Body2 = global::ResSched.Droid.Resource.Style.Base_TextAppearance_AppCompat_Body2;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.Base_TextAppearance_AppCompat_Button = global::ResSched.Droid.Resource.Style.Base_TextAppearance_AppCompat_Button;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.Base_TextAppearance_AppCompat_Caption = global::ResSched.Droid.Resource.Style.Base_TextAppearance_AppCompat_Caption;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.Base_TextAppearance_AppCompat_Display1 = global::ResSched.Droid.Resource.Style.Base_TextAppearance_AppCompat_Display1;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.Base_TextAppearance_AppCompat_Display2 = global::ResSched.Droid.Resource.Style.Base_TextAppearance_AppCompat_Display2;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.Base_TextAppearance_AppCompat_Display3 = global::ResSched.Droid.Resource.Style.Base_TextAppearance_AppCompat_Display3;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.Base_TextAppearance_AppCompat_Display4 = global::ResSched.Droid.Resource.Style.Base_TextAppearance_AppCompat_Display4;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.Base_TextAppearance_AppCompat_Headline = global::ResSched.Droid.Resource.Style.Base_TextAppearance_AppCompat_Headline;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.Base_TextAppearance_AppCompat_Inverse = global::ResSched.Droid.Resource.Style.Base_TextAppearance_AppCompat_Inverse;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.Base_TextAppearance_AppCompat_Large = global::ResSched.Droid.Resource.Style.Base_TextAppearance_AppCompat_Large;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.Base_TextAppearance_AppCompat_Large_Inverse = global::ResSched.Droid.Resource.Style.Base_TextAppearance_AppCompat_Large_Inverse;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.Base_TextAppearance_AppCompat_Light_Widget_PopupMenu_Large = global::ResSched.Droid.Resource.Style.Base_TextAppearance_AppCompat_Light_Widget_PopupMenu_Large;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.Base_TextAppearance_AppCompat_Light_Widget_PopupMenu_Small = global::ResSched.Droid.Resource.Style.Base_TextAppearance_AppCompat_Light_Widget_PopupMenu_Small;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.Base_TextAppearance_AppCompat_Medium = global::ResSched.Droid.Resource.Style.Base_TextAppearance_AppCompat_Medium;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.Base_TextAppearance_AppCompat_Medium_Inverse = global::ResSched.Droid.Resource.Style.Base_TextAppearance_AppCompat_Medium_Inverse;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.Base_TextAppearance_AppCompat_Menu = global::ResSched.Droid.Resource.Style.Base_TextAppearance_AppCompat_Menu;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.Base_TextAppearance_AppCompat_SearchResult = global::ResSched.Droid.Resource.Style.Base_TextAppearance_AppCompat_SearchResult;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.Base_TextAppearance_AppCompat_SearchResult_Subtitle = global::ResSched.Droid.Resource.Style.Base_TextAppearance_AppCompat_SearchResult_Subtitle;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.Base_TextAppearance_AppCompat_SearchResult_Title = global::ResSched.Droid.Resource.Style.Base_TextAppearance_AppCompat_SearchResult_Title;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.Base_TextAppearance_AppCompat_Small = global::ResSched.Droid.Resource.Style.Base_TextAppearance_AppCompat_Small;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.Base_TextAppearance_AppCompat_Small_Inverse = global::ResSched.Droid.Resource.Style.Base_TextAppearance_AppCompat_Small_Inverse;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.Base_TextAppearance_AppCompat_Subhead = global::ResSched.Droid.Resource.Style.Base_TextAppearance_AppCompat_Subhead;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.Base_TextAppearance_AppCompat_Subhead_Inverse = global::ResSched.Droid.Resource.Style.Base_TextAppearance_AppCompat_Subhead_Inverse;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.Base_TextAppearance_AppCompat_Title = global::ResSched.Droid.Resource.Style.Base_TextAppearance_AppCompat_Title;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.Base_TextAppearance_AppCompat_Title_Inverse = global::ResSched.Droid.Resource.Style.Base_TextAppearance_AppCompat_Title_Inverse;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.Base_TextAppearance_AppCompat_Tooltip = global::ResSched.Droid.Resource.Style.Base_TextAppearance_AppCompat_Tooltip;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Menu = global::ResSched.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Menu;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Subtitle = global::ResSched.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Subtitle;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Subtitle_Inverse = global::ResSched.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Subtitle_Inverse;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Title = global::ResSched.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Title;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Title_Inverse = global::ResSched.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Title_Inverse;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionMode_Subtitle = global::ResSched.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionMode_Subtitle;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionMode_Title = global::ResSched.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionMode_Title;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button = global::ResSched.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button_Borderless_Colored = global::ResSched.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button_Borderless_Colored;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button_Colored = global::ResSched.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button_Colored;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button_Inverse = global::ResSched.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button_Inverse;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.Base_TextAppearance_AppCompat_Widget_DropDownItem = global::ResSched.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_DropDownItem;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.Base_TextAppearance_AppCompat_Widget_PopupMenu_Header = global::ResSched.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_PopupMenu_Header;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.Base_TextAppearance_AppCompat_Widget_PopupMenu_Large = global::ResSched.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_PopupMenu_Large;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.Base_TextAppearance_AppCompat_Widget_PopupMenu_Small = global::ResSched.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_PopupMenu_Small;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.Base_TextAppearance_AppCompat_Widget_Switch = global::ResSched.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_Switch;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.Base_TextAppearance_AppCompat_Widget_TextView_SpinnerItem = global::ResSched.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_TextView_SpinnerItem;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.Base_TextAppearance_Widget_AppCompat_ExpandedMenu_Item = global::ResSched.Droid.Resource.Style.Base_TextAppearance_Widget_AppCompat_ExpandedMenu_Item;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.Base_TextAppearance_Widget_AppCompat_Toolbar_Subtitle = global::ResSched.Droid.Resource.Style.Base_TextAppearance_Widget_AppCompat_Toolbar_Subtitle;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.Base_TextAppearance_Widget_AppCompat_Toolbar_Title = global::ResSched.Droid.Resource.Style.Base_TextAppearance_Widget_AppCompat_Toolbar_Title;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.Base_Theme_AppCompat = global::ResSched.Droid.Resource.Style.Base_Theme_AppCompat;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.Base_Theme_AppCompat_CompactMenu = global::ResSched.Droid.Resource.Style.Base_Theme_AppCompat_CompactMenu;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.Base_Theme_AppCompat_Dialog = global::ResSched.Droid.Resource.Style.Base_Theme_AppCompat_Dialog;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.Base_Theme_AppCompat_Dialog_Alert = global::ResSched.Droid.Resource.Style.Base_Theme_AppCompat_Dialog_Alert;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.Base_Theme_AppCompat_Dialog_FixedSize = global::ResSched.Droid.Resource.Style.Base_Theme_AppCompat_Dialog_FixedSize;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.Base_Theme_AppCompat_Dialog_MinWidth = global::ResSched.Droid.Resource.Style.Base_Theme_AppCompat_Dialog_MinWidth;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.Base_Theme_AppCompat_DialogWhenLarge = global::ResSched.Droid.Resource.Style.Base_Theme_AppCompat_DialogWhenLarge;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.Base_Theme_AppCompat_Light = global::ResSched.Droid.Resource.Style.Base_Theme_AppCompat_Light;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.Base_Theme_AppCompat_Light_DarkActionBar = global::ResSched.Droid.Resource.Style.Base_Theme_AppCompat_Light_DarkActionBar;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.Base_Theme_AppCompat_Light_Dialog = global::ResSched.Droid.Resource.Style.Base_Theme_AppCompat_Light_Dialog;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.Base_Theme_AppCompat_Light_Dialog_Alert = global::ResSched.Droid.Resource.Style.Base_Theme_AppCompat_Light_Dialog_Alert;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.Base_Theme_AppCompat_Light_Dialog_FixedSize = global::ResSched.Droid.Resource.Style.Base_Theme_AppCompat_Light_Dialog_FixedSize;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.Base_Theme_AppCompat_Light_Dialog_MinWidth = global::ResSched.Droid.Resource.Style.Base_Theme_AppCompat_Light_Dialog_MinWidth;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.Base_Theme_AppCompat_Light_DialogWhenLarge = global::ResSched.Droid.Resource.Style.Base_Theme_AppCompat_Light_DialogWhenLarge;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.Base_ThemeOverlay_AppCompat = global::ResSched.Droid.Resource.Style.Base_ThemeOverlay_AppCompat;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.Base_ThemeOverlay_AppCompat_ActionBar = global::ResSched.Droid.Resource.Style.Base_ThemeOverlay_AppCompat_ActionBar;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.Base_ThemeOverlay_AppCompat_Dark = global::ResSched.Droid.Resource.Style.Base_ThemeOverlay_AppCompat_Dark;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.Base_ThemeOverlay_AppCompat_Dark_ActionBar = global::ResSched.Droid.Resource.Style.Base_ThemeOverlay_AppCompat_Dark_ActionBar;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.Base_ThemeOverlay_AppCompat_Dialog = global::ResSched.Droid.Resource.Style.Base_ThemeOverlay_AppCompat_Dialog;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.Base_ThemeOverlay_AppCompat_Dialog_Alert = global::ResSched.Droid.Resource.Style.Base_ThemeOverlay_AppCompat_Dialog_Alert;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.Base_ThemeOverlay_AppCompat_Light = global::ResSched.Droid.Resource.Style.Base_ThemeOverlay_AppCompat_Light;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.Base_V11_Theme_AppCompat_Dialog = global::ResSched.Droid.Resource.Style.Base_V11_Theme_AppCompat_Dialog;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.Base_V11_Theme_AppCompat_Light_Dialog = global::ResSched.Droid.Resource.Style.Base_V11_Theme_AppCompat_Light_Dialog;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.Base_V11_ThemeOverlay_AppCompat_Dialog = global::ResSched.Droid.Resource.Style.Base_V11_ThemeOverlay_AppCompat_Dialog;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.Base_V12_Widget_AppCompat_AutoCompleteTextView = global::ResSched.Droid.Resource.Style.Base_V12_Widget_AppCompat_AutoCompleteTextView;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.Base_V12_Widget_AppCompat_EditText = global::ResSched.Droid.Resource.Style.Base_V12_Widget_AppCompat_EditText;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.Base_V14_Widget_Design_AppBarLayout = global::ResSched.Droid.Resource.Style.Base_V14_Widget_Design_AppBarLayout;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.Base_V21_Theme_AppCompat = global::ResSched.Droid.Resource.Style.Base_V21_Theme_AppCompat;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.Base_V21_Theme_AppCompat_Dialog = global::ResSched.Droid.Resource.Style.Base_V21_Theme_AppCompat_Dialog;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.Base_V21_Theme_AppCompat_Light = global::ResSched.Droid.Resource.Style.Base_V21_Theme_AppCompat_Light;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.Base_V21_Theme_AppCompat_Light_Dialog = global::ResSched.Droid.Resource.Style.Base_V21_Theme_AppCompat_Light_Dialog;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.Base_V21_ThemeOverlay_AppCompat_Dialog = global::ResSched.Droid.Resource.Style.Base_V21_ThemeOverlay_AppCompat_Dialog;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.Base_V21_Widget_Design_AppBarLayout = global::ResSched.Droid.Resource.Style.Base_V21_Widget_Design_AppBarLayout;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.Base_V22_Theme_AppCompat = global::ResSched.Droid.Resource.Style.Base_V22_Theme_AppCompat;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.Base_V22_Theme_AppCompat_Light = global::ResSched.Droid.Resource.Style.Base_V22_Theme_AppCompat_Light;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.Base_V23_Theme_AppCompat = global::ResSched.Droid.Resource.Style.Base_V23_Theme_AppCompat;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.Base_V23_Theme_AppCompat_Light = global::ResSched.Droid.Resource.Style.Base_V23_Theme_AppCompat_Light;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.Base_V26_Theme_AppCompat = global::ResSched.Droid.Resource.Style.Base_V26_Theme_AppCompat;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.Base_V26_Theme_AppCompat_Light = global::ResSched.Droid.Resource.Style.Base_V26_Theme_AppCompat_Light;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.Base_V26_Widget_AppCompat_Toolbar = global::ResSched.Droid.Resource.Style.Base_V26_Widget_AppCompat_Toolbar;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.Base_V26_Widget_Design_AppBarLayout = global::ResSched.Droid.Resource.Style.Base_V26_Widget_Design_AppBarLayout;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.Base_V7_Theme_AppCompat = global::ResSched.Droid.Resource.Style.Base_V7_Theme_AppCompat;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.Base_V7_Theme_AppCompat_Dialog = global::ResSched.Droid.Resource.Style.Base_V7_Theme_AppCompat_Dialog;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.Base_V7_Theme_AppCompat_Light = global::ResSched.Droid.Resource.Style.Base_V7_Theme_AppCompat_Light;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.Base_V7_Theme_AppCompat_Light_Dialog = global::ResSched.Droid.Resource.Style.Base_V7_Theme_AppCompat_Light_Dialog;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.Base_V7_ThemeOverlay_AppCompat_Dialog = global::ResSched.Droid.Resource.Style.Base_V7_ThemeOverlay_AppCompat_Dialog;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.Base_V7_Widget_AppCompat_AutoCompleteTextView = global::ResSched.Droid.Resource.Style.Base_V7_Widget_AppCompat_AutoCompleteTextView;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.Base_V7_Widget_AppCompat_EditText = global::ResSched.Droid.Resource.Style.Base_V7_Widget_AppCompat_EditText;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.Base_V7_Widget_AppCompat_Toolbar = global::ResSched.Droid.Resource.Style.Base_V7_Widget_AppCompat_Toolbar;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.Base_Widget_AppCompat_ActionBar = global::ResSched.Droid.Resource.Style.Base_Widget_AppCompat_ActionBar;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.Base_Widget_AppCompat_ActionBar_Solid = global::ResSched.Droid.Resource.Style.Base_Widget_AppCompat_ActionBar_Solid;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.Base_Widget_AppCompat_ActionBar_TabBar = global::ResSched.Droid.Resource.Style.Base_Widget_AppCompat_ActionBar_TabBar;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.Base_Widget_AppCompat_ActionBar_TabText = global::ResSched.Droid.Resource.Style.Base_Widget_AppCompat_ActionBar_TabText;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.Base_Widget_AppCompat_ActionBar_TabView = global::ResSched.Droid.Resource.Style.Base_Widget_AppCompat_ActionBar_TabView;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.Base_Widget_AppCompat_ActionButton = global::ResSched.Droid.Resource.Style.Base_Widget_AppCompat_ActionButton;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.Base_Widget_AppCompat_ActionButton_CloseMode = global::ResSched.Droid.Resource.Style.Base_Widget_AppCompat_ActionButton_CloseMode;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.Base_Widget_AppCompat_ActionButton_Overflow = global::ResSched.Droid.Resource.Style.Base_Widget_AppCompat_ActionButton_Overflow;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.Base_Widget_AppCompat_ActionMode = global::ResSched.Droid.Resource.Style.Base_Widget_AppCompat_ActionMode;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.Base_Widget_AppCompat_ActivityChooserView = global::ResSched.Droid.Resource.Style.Base_Widget_AppCompat_ActivityChooserView;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.Base_Widget_AppCompat_AutoCompleteTextView = global::ResSched.Droid.Resource.Style.Base_Widget_AppCompat_AutoCompleteTextView;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.Base_Widget_AppCompat_Button = global::ResSched.Droid.Resource.Style.Base_Widget_AppCompat_Button;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.Base_Widget_AppCompat_Button_Borderless = global::ResSched.Droid.Resource.Style.Base_Widget_AppCompat_Button_Borderless;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.Base_Widget_AppCompat_Button_Borderless_Colored = global::ResSched.Droid.Resource.Style.Base_Widget_AppCompat_Button_Borderless_Colored;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.Base_Widget_AppCompat_Button_ButtonBar_AlertDialog = global::ResSched.Droid.Resource.Style.Base_Widget_AppCompat_Button_ButtonBar_AlertDialog;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.Base_Widget_AppCompat_Button_Colored = global::ResSched.Droid.Resource.Style.Base_Widget_AppCompat_Button_Colored;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.Base_Widget_AppCompat_Button_Small = global::ResSched.Droid.Resource.Style.Base_Widget_AppCompat_Button_Small;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.Base_Widget_AppCompat_ButtonBar = global::ResSched.Droid.Resource.Style.Base_Widget_AppCompat_ButtonBar;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.Base_Widget_AppCompat_ButtonBar_AlertDialog = global::ResSched.Droid.Resource.Style.Base_Widget_AppCompat_ButtonBar_AlertDialog;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.Base_Widget_AppCompat_CompoundButton_CheckBox = global::ResSched.Droid.Resource.Style.Base_Widget_AppCompat_CompoundButton_CheckBox;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.Base_Widget_AppCompat_CompoundButton_RadioButton = global::ResSched.Droid.Resource.Style.Base_Widget_AppCompat_CompoundButton_RadioButton;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.Base_Widget_AppCompat_CompoundButton_Switch = global::ResSched.Droid.Resource.Style.Base_Widget_AppCompat_CompoundButton_Switch;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.Base_Widget_AppCompat_DrawerArrowToggle = global::ResSched.Droid.Resource.Style.Base_Widget_AppCompat_DrawerArrowToggle;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.Base_Widget_AppCompat_DrawerArrowToggle_Common = global::ResSched.Droid.Resource.Style.Base_Widget_AppCompat_DrawerArrowToggle_Common;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.Base_Widget_AppCompat_DropDownItem_Spinner = global::ResSched.Droid.Resource.Style.Base_Widget_AppCompat_DropDownItem_Spinner;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.Base_Widget_AppCompat_EditText = global::ResSched.Droid.Resource.Style.Base_Widget_AppCompat_EditText;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.Base_Widget_AppCompat_ImageButton = global::ResSched.Droid.Resource.Style.Base_Widget_AppCompat_ImageButton;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.Base_Widget_AppCompat_Light_ActionBar = global::ResSched.Droid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_Solid = global::ResSched.Droid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_Solid;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabBar = global::ResSched.Droid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabBar;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabText = global::ResSched.Droid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabText;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabText_Inverse = global::ResSched.Droid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabText_Inverse;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabView = global::ResSched.Droid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabView;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.Base_Widget_AppCompat_Light_PopupMenu = global::ResSched.Droid.Resource.Style.Base_Widget_AppCompat_Light_PopupMenu;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.Base_Widget_AppCompat_Light_PopupMenu_Overflow = global::ResSched.Droid.Resource.Style.Base_Widget_AppCompat_Light_PopupMenu_Overflow;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.Base_Widget_AppCompat_ListMenuView = global::ResSched.Droid.Resource.Style.Base_Widget_AppCompat_ListMenuView;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.Base_Widget_AppCompat_ListPopupWindow = global::ResSched.Droid.Resource.Style.Base_Widget_AppCompat_ListPopupWindow;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.Base_Widget_AppCompat_ListView = global::ResSched.Droid.Resource.Style.Base_Widget_AppCompat_ListView;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.Base_Widget_AppCompat_ListView_DropDown = global::ResSched.Droid.Resource.Style.Base_Widget_AppCompat_ListView_DropDown;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.Base_Widget_AppCompat_ListView_Menu = global::ResSched.Droid.Resource.Style.Base_Widget_AppCompat_ListView_Menu;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.Base_Widget_AppCompat_PopupMenu = global::ResSched.Droid.Resource.Style.Base_Widget_AppCompat_PopupMenu;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.Base_Widget_AppCompat_PopupMenu_Overflow = global::ResSched.Droid.Resource.Style.Base_Widget_AppCompat_PopupMenu_Overflow;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.Base_Widget_AppCompat_PopupWindow = global::ResSched.Droid.Resource.Style.Base_Widget_AppCompat_PopupWindow;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.Base_Widget_AppCompat_ProgressBar = global::ResSched.Droid.Resource.Style.Base_Widget_AppCompat_ProgressBar;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.Base_Widget_AppCompat_ProgressBar_Horizontal = global::ResSched.Droid.Resource.Style.Base_Widget_AppCompat_ProgressBar_Horizontal;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.Base_Widget_AppCompat_RatingBar = global::ResSched.Droid.Resource.Style.Base_Widget_AppCompat_RatingBar;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.Base_Widget_AppCompat_RatingBar_Indicator = global::ResSched.Droid.Resource.Style.Base_Widget_AppCompat_RatingBar_Indicator;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.Base_Widget_AppCompat_RatingBar_Small = global::ResSched.Droid.Resource.Style.Base_Widget_AppCompat_RatingBar_Small;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.Base_Widget_AppCompat_SearchView = global::ResSched.Droid.Resource.Style.Base_Widget_AppCompat_SearchView;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.Base_Widget_AppCompat_SearchView_ActionBar = global::ResSched.Droid.Resource.Style.Base_Widget_AppCompat_SearchView_ActionBar;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.Base_Widget_AppCompat_SeekBar = global::ResSched.Droid.Resource.Style.Base_Widget_AppCompat_SeekBar;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.Base_Widget_AppCompat_SeekBar_Discrete = global::ResSched.Droid.Resource.Style.Base_Widget_AppCompat_SeekBar_Discrete;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.Base_Widget_AppCompat_Spinner = global::ResSched.Droid.Resource.Style.Base_Widget_AppCompat_Spinner;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.Base_Widget_AppCompat_Spinner_Underlined = global::ResSched.Droid.Resource.Style.Base_Widget_AppCompat_Spinner_Underlined;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.Base_Widget_AppCompat_TextView_SpinnerItem = global::ResSched.Droid.Resource.Style.Base_Widget_AppCompat_TextView_SpinnerItem;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.Base_Widget_AppCompat_Toolbar = global::ResSched.Droid.Resource.Style.Base_Widget_AppCompat_Toolbar;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.Base_Widget_AppCompat_Toolbar_Button_Navigation = global::ResSched.Droid.Resource.Style.Base_Widget_AppCompat_Toolbar_Button_Navigation;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.Base_Widget_Design_AppBarLayout = global::ResSched.Droid.Resource.Style.Base_Widget_Design_AppBarLayout;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.Base_Widget_Design_TabLayout = global::ResSched.Droid.Resource.Style.Base_Widget_Design_TabLayout;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.CardView = global::ResSched.Droid.Resource.Style.CardView;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.CardView_Dark = global::ResSched.Droid.Resource.Style.CardView_Dark;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.CardView_Light = global::ResSched.Droid.Resource.Style.CardView_Light;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.Platform_AppCompat = global::ResSched.Droid.Resource.Style.Platform_AppCompat;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.Platform_AppCompat_Light = global::ResSched.Droid.Resource.Style.Platform_AppCompat_Light;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.Platform_ThemeOverlay_AppCompat = global::ResSched.Droid.Resource.Style.Platform_ThemeOverlay_AppCompat;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.Platform_ThemeOverlay_AppCompat_Dark = global::ResSched.Droid.Resource.Style.Platform_ThemeOverlay_AppCompat_Dark;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.Platform_ThemeOverlay_AppCompat_Light = global::ResSched.Droid.Resource.Style.Platform_ThemeOverlay_AppCompat_Light;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.Platform_V11_AppCompat = global::ResSched.Droid.Resource.Style.Platform_V11_AppCompat;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.Platform_V11_AppCompat_Light = global::ResSched.Droid.Resource.Style.Platform_V11_AppCompat_Light;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.Platform_V14_AppCompat = global::ResSched.Droid.Resource.Style.Platform_V14_AppCompat;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.Platform_V14_AppCompat_Light = global::ResSched.Droid.Resource.Style.Platform_V14_AppCompat_Light;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.Platform_V21_AppCompat = global::ResSched.Droid.Resource.Style.Platform_V21_AppCompat;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.Platform_V21_AppCompat_Light = global::ResSched.Droid.Resource.Style.Platform_V21_AppCompat_Light;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.Platform_V25_AppCompat = global::ResSched.Droid.Resource.Style.Platform_V25_AppCompat;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.Platform_V25_AppCompat_Light = global::ResSched.Droid.Resource.Style.Platform_V25_AppCompat_Light;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.Platform_Widget_AppCompat_Spinner = global::ResSched.Droid.Resource.Style.Platform_Widget_AppCompat_Spinner;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.RtlOverlay_DialogWindowTitle_AppCompat = global::ResSched.Droid.Resource.Style.RtlOverlay_DialogWindowTitle_AppCompat;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.RtlOverlay_Widget_AppCompat_ActionBar_TitleItem = global::ResSched.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_ActionBar_TitleItem;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.RtlOverlay_Widget_AppCompat_DialogTitle_Icon = global::ResSched.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_DialogTitle_Icon;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem = global::ResSched.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_InternalGroup = global::ResSched.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_InternalGroup;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_Text = global::ResSched.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_Text;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown = global::ResSched.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Icon1 = global::ResSched.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Icon1;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Icon2 = global::ResSched.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Icon2;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Query = global::ResSched.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Query;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Text = global::ResSched.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Text;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.RtlOverlay_Widget_AppCompat_SearchView_MagIcon = global::ResSched.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_SearchView_MagIcon;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.RtlUnderlay_Widget_AppCompat_ActionButton = global::ResSched.Droid.Resource.Style.RtlUnderlay_Widget_AppCompat_ActionButton;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.RtlUnderlay_Widget_AppCompat_ActionButton_Overflow = global::ResSched.Droid.Resource.Style.RtlUnderlay_Widget_AppCompat_ActionButton_Overflow;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.TextAppearance_AppCompat = global::ResSched.Droid.Resource.Style.TextAppearance_AppCompat;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.TextAppearance_AppCompat_Body1 = global::ResSched.Droid.Resource.Style.TextAppearance_AppCompat_Body1;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.TextAppearance_AppCompat_Body2 = global::ResSched.Droid.Resource.Style.TextAppearance_AppCompat_Body2;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.TextAppearance_AppCompat_Button = global::ResSched.Droid.Resource.Style.TextAppearance_AppCompat_Button;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.TextAppearance_AppCompat_Caption = global::ResSched.Droid.Resource.Style.TextAppearance_AppCompat_Caption;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.TextAppearance_AppCompat_Display1 = global::ResSched.Droid.Resource.Style.TextAppearance_AppCompat_Display1;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.TextAppearance_AppCompat_Display2 = global::ResSched.Droid.Resource.Style.TextAppearance_AppCompat_Display2;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.TextAppearance_AppCompat_Display3 = global::ResSched.Droid.Resource.Style.TextAppearance_AppCompat_Display3;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.TextAppearance_AppCompat_Display4 = global::ResSched.Droid.Resource.Style.TextAppearance_AppCompat_Display4;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.TextAppearance_AppCompat_Headline = global::ResSched.Droid.Resource.Style.TextAppearance_AppCompat_Headline;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.TextAppearance_AppCompat_Inverse = global::ResSched.Droid.Resource.Style.TextAppearance_AppCompat_Inverse;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.TextAppearance_AppCompat_Large = global::ResSched.Droid.Resource.Style.TextAppearance_AppCompat_Large;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.TextAppearance_AppCompat_Large_Inverse = global::ResSched.Droid.Resource.Style.TextAppearance_AppCompat_Large_Inverse;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.TextAppearance_AppCompat_Light_SearchResult_Subtitle = global::ResSched.Droid.Resource.Style.TextAppearance_AppCompat_Light_SearchResult_Subtitle;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.TextAppearance_AppCompat_Light_SearchResult_Title = global::ResSched.Droid.Resource.Style.TextAppearance_AppCompat_Light_SearchResult_Title;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.TextAppearance_AppCompat_Light_Widget_PopupMenu_Large = global::ResSched.Droid.Resource.Style.TextAppearance_AppCompat_Light_Widget_PopupMenu_Large;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.TextAppearance_AppCompat_Light_Widget_PopupMenu_Small = global::ResSched.Droid.Resource.Style.TextAppearance_AppCompat_Light_Widget_PopupMenu_Small;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.TextAppearance_AppCompat_Medium = global::ResSched.Droid.Resource.Style.TextAppearance_AppCompat_Medium;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.TextAppearance_AppCompat_Medium_Inverse = global::ResSched.Droid.Resource.Style.TextAppearance_AppCompat_Medium_Inverse;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.TextAppearance_AppCompat_Menu = global::ResSched.Droid.Resource.Style.TextAppearance_AppCompat_Menu;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.TextAppearance_AppCompat_SearchResult_Subtitle = global::ResSched.Droid.Resource.Style.TextAppearance_AppCompat_SearchResult_Subtitle;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.TextAppearance_AppCompat_SearchResult_Title = global::ResSched.Droid.Resource.Style.TextAppearance_AppCompat_SearchResult_Title;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.TextAppearance_AppCompat_Small = global::ResSched.Droid.Resource.Style.TextAppearance_AppCompat_Small;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.TextAppearance_AppCompat_Small_Inverse = global::ResSched.Droid.Resource.Style.TextAppearance_AppCompat_Small_Inverse;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.TextAppearance_AppCompat_Subhead = global::ResSched.Droid.Resource.Style.TextAppearance_AppCompat_Subhead;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.TextAppearance_AppCompat_Subhead_Inverse = global::ResSched.Droid.Resource.Style.TextAppearance_AppCompat_Subhead_Inverse;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.TextAppearance_AppCompat_Title = global::ResSched.Droid.Resource.Style.TextAppearance_AppCompat_Title;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.TextAppearance_AppCompat_Title_Inverse = global::ResSched.Droid.Resource.Style.TextAppearance_AppCompat_Title_Inverse;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.TextAppearance_AppCompat_Tooltip = global::ResSched.Droid.Resource.Style.TextAppearance_AppCompat_Tooltip;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Menu = global::ResSched.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Menu;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Subtitle = global::ResSched.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Subtitle;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Subtitle_Inverse = global::ResSched.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Subtitle_Inverse;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Title = global::ResSched.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Title;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Title_Inverse = global::ResSched.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Title_Inverse;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Subtitle = global::ResSched.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Subtitle;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Subtitle_Inverse = global::ResSched.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Subtitle_Inverse;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Title = global::ResSched.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Title;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Title_Inverse = global::ResSched.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Title_Inverse;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.TextAppearance_AppCompat_Widget_Button = global::ResSched.Droid.Resource.Style.TextAppearance_AppCompat_Widget_Button;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.TextAppearance_AppCompat_Widget_Button_Borderless_Colored = global::ResSched.Droid.Resource.Style.TextAppearance_AppCompat_Widget_Button_Borderless_Colored;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.TextAppearance_AppCompat_Widget_Button_Colored = global::ResSched.Droid.Resource.Style.TextAppearance_AppCompat_Widget_Button_Colored;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.TextAppearance_AppCompat_Widget_Button_Inverse = global::ResSched.Droid.Resource.Style.TextAppearance_AppCompat_Widget_Button_Inverse;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.TextAppearance_AppCompat_Widget_DropDownItem = global::ResSched.Droid.Resource.Style.TextAppearance_AppCompat_Widget_DropDownItem;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.TextAppearance_AppCompat_Widget_PopupMenu_Header = global::ResSched.Droid.Resource.Style.TextAppearance_AppCompat_Widget_PopupMenu_Header;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.TextAppearance_AppCompat_Widget_PopupMenu_Large = global::ResSched.Droid.Resource.Style.TextAppearance_AppCompat_Widget_PopupMenu_Large;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.TextAppearance_AppCompat_Widget_PopupMenu_Small = global::ResSched.Droid.Resource.Style.TextAppearance_AppCompat_Widget_PopupMenu_Small;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.TextAppearance_AppCompat_Widget_Switch = global::ResSched.Droid.Resource.Style.TextAppearance_AppCompat_Widget_Switch;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.TextAppearance_AppCompat_Widget_TextView_SpinnerItem = global::ResSched.Droid.Resource.Style.TextAppearance_AppCompat_Widget_TextView_SpinnerItem;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.TextAppearance_Compat_Notification = global::ResSched.Droid.Resource.Style.TextAppearance_Compat_Notification;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.TextAppearance_Compat_Notification_Info = global::ResSched.Droid.Resource.Style.TextAppearance_Compat_Notification_Info;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.TextAppearance_Compat_Notification_Info_Media = global::ResSched.Droid.Resource.Style.TextAppearance_Compat_Notification_Info_Media;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.TextAppearance_Compat_Notification_Line2 = global::ResSched.Droid.Resource.Style.TextAppearance_Compat_Notification_Line2;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.TextAppearance_Compat_Notification_Line2_Media = global::ResSched.Droid.Resource.Style.TextAppearance_Compat_Notification_Line2_Media;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.TextAppearance_Compat_Notification_Media = global::ResSched.Droid.Resource.Style.TextAppearance_Compat_Notification_Media;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.TextAppearance_Compat_Notification_Time = global::ResSched.Droid.Resource.Style.TextAppearance_Compat_Notification_Time;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.TextAppearance_Compat_Notification_Time_Media = global::ResSched.Droid.Resource.Style.TextAppearance_Compat_Notification_Time_Media;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.TextAppearance_Compat_Notification_Title = global::ResSched.Droid.Resource.Style.TextAppearance_Compat_Notification_Title;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.TextAppearance_Compat_Notification_Title_Media = global::ResSched.Droid.Resource.Style.TextAppearance_Compat_Notification_Title_Media;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.TextAppearance_Design_CollapsingToolbar_Expanded = global::ResSched.Droid.Resource.Style.TextAppearance_Design_CollapsingToolbar_Expanded;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.TextAppearance_Design_Counter = global::ResSched.Droid.Resource.Style.TextAppearance_Design_Counter;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.TextAppearance_Design_Counter_Overflow = global::ResSched.Droid.Resource.Style.TextAppearance_Design_Counter_Overflow;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.TextAppearance_Design_Error = global::ResSched.Droid.Resource.Style.TextAppearance_Design_Error;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.TextAppearance_Design_Hint = global::ResSched.Droid.Resource.Style.TextAppearance_Design_Hint;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.TextAppearance_Design_Snackbar_Message = global::ResSched.Droid.Resource.Style.TextAppearance_Design_Snackbar_Message;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.TextAppearance_Design_Tab = global::ResSched.Droid.Resource.Style.TextAppearance_Design_Tab;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.TextAppearance_MediaRouter_PrimaryText = global::ResSched.Droid.Resource.Style.TextAppearance_MediaRouter_PrimaryText;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.TextAppearance_MediaRouter_SecondaryText = global::ResSched.Droid.Resource.Style.TextAppearance_MediaRouter_SecondaryText;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.TextAppearance_MediaRouter_Title = global::ResSched.Droid.Resource.Style.TextAppearance_MediaRouter_Title;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.TextAppearance_Widget_AppCompat_ExpandedMenu_Item = global::ResSched.Droid.Resource.Style.TextAppearance_Widget_AppCompat_ExpandedMenu_Item;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.TextAppearance_Widget_AppCompat_Toolbar_Subtitle = global::ResSched.Droid.Resource.Style.TextAppearance_Widget_AppCompat_Toolbar_Subtitle;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.TextAppearance_Widget_AppCompat_Toolbar_Title = global::ResSched.Droid.Resource.Style.TextAppearance_Widget_AppCompat_Toolbar_Title;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.Theme_AppCompat = global::ResSched.Droid.Resource.Style.Theme_AppCompat;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.Theme_AppCompat_CompactMenu = global::ResSched.Droid.Resource.Style.Theme_AppCompat_CompactMenu;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.Theme_AppCompat_DayNight = global::ResSched.Droid.Resource.Style.Theme_AppCompat_DayNight;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.Theme_AppCompat_DayNight_DarkActionBar = global::ResSched.Droid.Resource.Style.Theme_AppCompat_DayNight_DarkActionBar;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.Theme_AppCompat_DayNight_Dialog = global::ResSched.Droid.Resource.Style.Theme_AppCompat_DayNight_Dialog;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.Theme_AppCompat_DayNight_Dialog_Alert = global::ResSched.Droid.Resource.Style.Theme_AppCompat_DayNight_Dialog_Alert;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.Theme_AppCompat_DayNight_Dialog_MinWidth = global::ResSched.Droid.Resource.Style.Theme_AppCompat_DayNight_Dialog_MinWidth;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.Theme_AppCompat_DayNight_DialogWhenLarge = global::ResSched.Droid.Resource.Style.Theme_AppCompat_DayNight_DialogWhenLarge;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.Theme_AppCompat_DayNight_NoActionBar = global::ResSched.Droid.Resource.Style.Theme_AppCompat_DayNight_NoActionBar;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.Theme_AppCompat_Dialog = global::ResSched.Droid.Resource.Style.Theme_AppCompat_Dialog;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.Theme_AppCompat_Dialog_Alert = global::ResSched.Droid.Resource.Style.Theme_AppCompat_Dialog_Alert;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.Theme_AppCompat_Dialog_MinWidth = global::ResSched.Droid.Resource.Style.Theme_AppCompat_Dialog_MinWidth;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.Theme_AppCompat_DialogWhenLarge = global::ResSched.Droid.Resource.Style.Theme_AppCompat_DialogWhenLarge;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.Theme_AppCompat_Light = global::ResSched.Droid.Resource.Style.Theme_AppCompat_Light;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.Theme_AppCompat_Light_DarkActionBar = global::ResSched.Droid.Resource.Style.Theme_AppCompat_Light_DarkActionBar;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.Theme_AppCompat_Light_Dialog = global::ResSched.Droid.Resource.Style.Theme_AppCompat_Light_Dialog;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.Theme_AppCompat_Light_Dialog_Alert = global::ResSched.Droid.Resource.Style.Theme_AppCompat_Light_Dialog_Alert;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.Theme_AppCompat_Light_Dialog_MinWidth = global::ResSched.Droid.Resource.Style.Theme_AppCompat_Light_Dialog_MinWidth;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.Theme_AppCompat_Light_DialogWhenLarge = global::ResSched.Droid.Resource.Style.Theme_AppCompat_Light_DialogWhenLarge;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.Theme_AppCompat_Light_NoActionBar = global::ResSched.Droid.Resource.Style.Theme_AppCompat_Light_NoActionBar;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.Theme_AppCompat_NoActionBar = global::ResSched.Droid.Resource.Style.Theme_AppCompat_NoActionBar;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.Theme_Design = global::ResSched.Droid.Resource.Style.Theme_Design;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.Theme_Design_BottomSheetDialog = global::ResSched.Droid.Resource.Style.Theme_Design_BottomSheetDialog;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.Theme_Design_Light = global::ResSched.Droid.Resource.Style.Theme_Design_Light;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.Theme_Design_Light_BottomSheetDialog = global::ResSched.Droid.Resource.Style.Theme_Design_Light_BottomSheetDialog;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.Theme_Design_Light_NoActionBar = global::ResSched.Droid.Resource.Style.Theme_Design_Light_NoActionBar;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.Theme_Design_NoActionBar = global::ResSched.Droid.Resource.Style.Theme_Design_NoActionBar;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.Theme_MediaRouter = global::ResSched.Droid.Resource.Style.Theme_MediaRouter;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.Theme_MediaRouter_Light = global::ResSched.Droid.Resource.Style.Theme_MediaRouter_Light;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.Theme_MediaRouter_Light_DarkControlPanel = global::ResSched.Droid.Resource.Style.Theme_MediaRouter_Light_DarkControlPanel;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.Theme_MediaRouter_LightControlPanel = global::ResSched.Droid.Resource.Style.Theme_MediaRouter_LightControlPanel;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.ThemeOverlay_AppCompat = global::ResSched.Droid.Resource.Style.ThemeOverlay_AppCompat;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.ThemeOverlay_AppCompat_ActionBar = global::ResSched.Droid.Resource.Style.ThemeOverlay_AppCompat_ActionBar;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.ThemeOverlay_AppCompat_Dark = global::ResSched.Droid.Resource.Style.ThemeOverlay_AppCompat_Dark;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.ThemeOverlay_AppCompat_Dark_ActionBar = global::ResSched.Droid.Resource.Style.ThemeOverlay_AppCompat_Dark_ActionBar;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.ThemeOverlay_AppCompat_Dialog = global::ResSched.Droid.Resource.Style.ThemeOverlay_AppCompat_Dialog;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.ThemeOverlay_AppCompat_Dialog_Alert = global::ResSched.Droid.Resource.Style.ThemeOverlay_AppCompat_Dialog_Alert;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.ThemeOverlay_AppCompat_Light = global::ResSched.Droid.Resource.Style.ThemeOverlay_AppCompat_Light;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.ThemeOverlay_MediaRouter_Dark = global::ResSched.Droid.Resource.Style.ThemeOverlay_MediaRouter_Dark;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.ThemeOverlay_MediaRouter_Light = global::ResSched.Droid.Resource.Style.ThemeOverlay_MediaRouter_Light;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.Widget_AppCompat_ActionBar = global::ResSched.Droid.Resource.Style.Widget_AppCompat_ActionBar;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.Widget_AppCompat_ActionBar_Solid = global::ResSched.Droid.Resource.Style.Widget_AppCompat_ActionBar_Solid;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.Widget_AppCompat_ActionBar_TabBar = global::ResSched.Droid.Resource.Style.Widget_AppCompat_ActionBar_TabBar;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.Widget_AppCompat_ActionBar_TabText = global::ResSched.Droid.Resource.Style.Widget_AppCompat_ActionBar_TabText;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.Widget_AppCompat_ActionBar_TabView = global::ResSched.Droid.Resource.Style.Widget_AppCompat_ActionBar_TabView;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.Widget_AppCompat_ActionButton = global::ResSched.Droid.Resource.Style.Widget_AppCompat_ActionButton;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.Widget_AppCompat_ActionButton_CloseMode = global::ResSched.Droid.Resource.Style.Widget_AppCompat_ActionButton_CloseMode;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.Widget_AppCompat_ActionButton_Overflow = global::ResSched.Droid.Resource.Style.Widget_AppCompat_ActionButton_Overflow;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.Widget_AppCompat_ActionMode = global::ResSched.Droid.Resource.Style.Widget_AppCompat_ActionMode;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.Widget_AppCompat_ActivityChooserView = global::ResSched.Droid.Resource.Style.Widget_AppCompat_ActivityChooserView;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.Widget_AppCompat_AutoCompleteTextView = global::ResSched.Droid.Resource.Style.Widget_AppCompat_AutoCompleteTextView;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.Widget_AppCompat_Button = global::ResSched.Droid.Resource.Style.Widget_AppCompat_Button;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.Widget_AppCompat_Button_Borderless = global::ResSched.Droid.Resource.Style.Widget_AppCompat_Button_Borderless;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.Widget_AppCompat_Button_Borderless_Colored = global::ResSched.Droid.Resource.Style.Widget_AppCompat_Button_Borderless_Colored;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.Widget_AppCompat_Button_ButtonBar_AlertDialog = global::ResSched.Droid.Resource.Style.Widget_AppCompat_Button_ButtonBar_AlertDialog;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.Widget_AppCompat_Button_Colored = global::ResSched.Droid.Resource.Style.Widget_AppCompat_Button_Colored;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.Widget_AppCompat_Button_Small = global::ResSched.Droid.Resource.Style.Widget_AppCompat_Button_Small;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.Widget_AppCompat_ButtonBar = global::ResSched.Droid.Resource.Style.Widget_AppCompat_ButtonBar;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.Widget_AppCompat_ButtonBar_AlertDialog = global::ResSched.Droid.Resource.Style.Widget_AppCompat_ButtonBar_AlertDialog;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.Widget_AppCompat_CompoundButton_CheckBox = global::ResSched.Droid.Resource.Style.Widget_AppCompat_CompoundButton_CheckBox;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.Widget_AppCompat_CompoundButton_RadioButton = global::ResSched.Droid.Resource.Style.Widget_AppCompat_CompoundButton_RadioButton;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.Widget_AppCompat_CompoundButton_Switch = global::ResSched.Droid.Resource.Style.Widget_AppCompat_CompoundButton_Switch;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.Widget_AppCompat_DrawerArrowToggle = global::ResSched.Droid.Resource.Style.Widget_AppCompat_DrawerArrowToggle;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.Widget_AppCompat_DropDownItem_Spinner = global::ResSched.Droid.Resource.Style.Widget_AppCompat_DropDownItem_Spinner;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.Widget_AppCompat_EditText = global::ResSched.Droid.Resource.Style.Widget_AppCompat_EditText;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.Widget_AppCompat_ImageButton = global::ResSched.Droid.Resource.Style.Widget_AppCompat_ImageButton;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.Widget_AppCompat_Light_ActionBar = global::ResSched.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.Widget_AppCompat_Light_ActionBar_Solid = global::ResSched.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_Solid;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.Widget_AppCompat_Light_ActionBar_Solid_Inverse = global::ResSched.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_Solid_Inverse;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.Widget_AppCompat_Light_ActionBar_TabBar = global::ResSched.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabBar;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.Widget_AppCompat_Light_ActionBar_TabBar_Inverse = global::ResSched.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabBar_Inverse;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.Widget_AppCompat_Light_ActionBar_TabText = global::ResSched.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabText;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.Widget_AppCompat_Light_ActionBar_TabText_Inverse = global::ResSched.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabText_Inverse;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.Widget_AppCompat_Light_ActionBar_TabView = global::ResSched.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabView;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.Widget_AppCompat_Light_ActionBar_TabView_Inverse = global::ResSched.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabView_Inverse;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.Widget_AppCompat_Light_ActionButton = global::ResSched.Droid.Resource.Style.Widget_AppCompat_Light_ActionButton;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.Widget_AppCompat_Light_ActionButton_CloseMode = global::ResSched.Droid.Resource.Style.Widget_AppCompat_Light_ActionButton_CloseMode;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.Widget_AppCompat_Light_ActionButton_Overflow = global::ResSched.Droid.Resource.Style.Widget_AppCompat_Light_ActionButton_Overflow;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.Widget_AppCompat_Light_ActionMode_Inverse = global::ResSched.Droid.Resource.Style.Widget_AppCompat_Light_ActionMode_Inverse;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.Widget_AppCompat_Light_ActivityChooserView = global::ResSched.Droid.Resource.Style.Widget_AppCompat_Light_ActivityChooserView;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.Widget_AppCompat_Light_AutoCompleteTextView = global::ResSched.Droid.Resource.Style.Widget_AppCompat_Light_AutoCompleteTextView;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.Widget_AppCompat_Light_DropDownItem_Spinner = global::ResSched.Droid.Resource.Style.Widget_AppCompat_Light_DropDownItem_Spinner;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.Widget_AppCompat_Light_ListPopupWindow = global::ResSched.Droid.Resource.Style.Widget_AppCompat_Light_ListPopupWindow;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.Widget_AppCompat_Light_ListView_DropDown = global::ResSched.Droid.Resource.Style.Widget_AppCompat_Light_ListView_DropDown;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.Widget_AppCompat_Light_PopupMenu = global::ResSched.Droid.Resource.Style.Widget_AppCompat_Light_PopupMenu;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.Widget_AppCompat_Light_PopupMenu_Overflow = global::ResSched.Droid.Resource.Style.Widget_AppCompat_Light_PopupMenu_Overflow;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.Widget_AppCompat_Light_SearchView = global::ResSched.Droid.Resource.Style.Widget_AppCompat_Light_SearchView;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.Widget_AppCompat_Light_Spinner_DropDown_ActionBar = global::ResSched.Droid.Resource.Style.Widget_AppCompat_Light_Spinner_DropDown_ActionBar;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.Widget_AppCompat_ListMenuView = global::ResSched.Droid.Resource.Style.Widget_AppCompat_ListMenuView;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.Widget_AppCompat_ListPopupWindow = global::ResSched.Droid.Resource.Style.Widget_AppCompat_ListPopupWindow;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.Widget_AppCompat_ListView = global::ResSched.Droid.Resource.Style.Widget_AppCompat_ListView;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.Widget_AppCompat_ListView_DropDown = global::ResSched.Droid.Resource.Style.Widget_AppCompat_ListView_DropDown;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.Widget_AppCompat_ListView_Menu = global::ResSched.Droid.Resource.Style.Widget_AppCompat_ListView_Menu;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.Widget_AppCompat_PopupMenu = global::ResSched.Droid.Resource.Style.Widget_AppCompat_PopupMenu;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.Widget_AppCompat_PopupMenu_Overflow = global::ResSched.Droid.Resource.Style.Widget_AppCompat_PopupMenu_Overflow;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.Widget_AppCompat_PopupWindow = global::ResSched.Droid.Resource.Style.Widget_AppCompat_PopupWindow;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.Widget_AppCompat_ProgressBar = global::ResSched.Droid.Resource.Style.Widget_AppCompat_ProgressBar;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.Widget_AppCompat_ProgressBar_Horizontal = global::ResSched.Droid.Resource.Style.Widget_AppCompat_ProgressBar_Horizontal;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.Widget_AppCompat_RatingBar = global::ResSched.Droid.Resource.Style.Widget_AppCompat_RatingBar;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.Widget_AppCompat_RatingBar_Indicator = global::ResSched.Droid.Resource.Style.Widget_AppCompat_RatingBar_Indicator;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.Widget_AppCompat_RatingBar_Small = global::ResSched.Droid.Resource.Style.Widget_AppCompat_RatingBar_Small;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.Widget_AppCompat_SearchView = global::ResSched.Droid.Resource.Style.Widget_AppCompat_SearchView;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.Widget_AppCompat_SearchView_ActionBar = global::ResSched.Droid.Resource.Style.Widget_AppCompat_SearchView_ActionBar;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.Widget_AppCompat_SeekBar = global::ResSched.Droid.Resource.Style.Widget_AppCompat_SeekBar;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.Widget_AppCompat_SeekBar_Discrete = global::ResSched.Droid.Resource.Style.Widget_AppCompat_SeekBar_Discrete;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.Widget_AppCompat_Spinner = global::ResSched.Droid.Resource.Style.Widget_AppCompat_Spinner;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.Widget_AppCompat_Spinner_DropDown = global::ResSched.Droid.Resource.Style.Widget_AppCompat_Spinner_DropDown;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.Widget_AppCompat_Spinner_DropDown_ActionBar = global::ResSched.Droid.Resource.Style.Widget_AppCompat_Spinner_DropDown_ActionBar;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.Widget_AppCompat_Spinner_Underlined = global::ResSched.Droid.Resource.Style.Widget_AppCompat_Spinner_Underlined;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.Widget_AppCompat_TextView_SpinnerItem = global::ResSched.Droid.Resource.Style.Widget_AppCompat_TextView_SpinnerItem;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.Widget_AppCompat_Toolbar = global::ResSched.Droid.Resource.Style.Widget_AppCompat_Toolbar;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.Widget_AppCompat_Toolbar_Button_Navigation = global::ResSched.Droid.Resource.Style.Widget_AppCompat_Toolbar_Button_Navigation;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.Widget_Compat_NotificationActionContainer = global::ResSched.Droid.Resource.Style.Widget_Compat_NotificationActionContainer;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.Widget_Compat_NotificationActionText = global::ResSched.Droid.Resource.Style.Widget_Compat_NotificationActionText;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.Widget_Design_AppBarLayout = global::ResSched.Droid.Resource.Style.Widget_Design_AppBarLayout;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.Widget_Design_BottomNavigationView = global::ResSched.Droid.Resource.Style.Widget_Design_BottomNavigationView;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.Widget_Design_BottomSheet_Modal = global::ResSched.Droid.Resource.Style.Widget_Design_BottomSheet_Modal;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.Widget_Design_CollapsingToolbar = global::ResSched.Droid.Resource.Style.Widget_Design_CollapsingToolbar;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.Widget_Design_CoordinatorLayout = global::ResSched.Droid.Resource.Style.Widget_Design_CoordinatorLayout;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.Widget_Design_FloatingActionButton = global::ResSched.Droid.Resource.Style.Widget_Design_FloatingActionButton;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.Widget_Design_NavigationView = global::ResSched.Droid.Resource.Style.Widget_Design_NavigationView;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.Widget_Design_ScrimInsetsFrameLayout = global::ResSched.Droid.Resource.Style.Widget_Design_ScrimInsetsFrameLayout;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.Widget_Design_Snackbar = global::ResSched.Droid.Resource.Style.Widget_Design_Snackbar;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.Widget_Design_TabLayout = global::ResSched.Droid.Resource.Style.Widget_Design_TabLayout;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.Widget_Design_TextInputLayout = global::ResSched.Droid.Resource.Style.Widget_Design_TextInputLayout;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.Widget_MediaRouter_Light_MediaRouteButton = global::ResSched.Droid.Resource.Style.Widget_MediaRouter_Light_MediaRouteButton;
-			global::Xamarin.Auth.XamarinForms.Resource.Style.Widget_MediaRouter_MediaRouteButton = global::ResSched.Droid.Resource.Style.Widget_MediaRouter_MediaRouteButton;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.ActionBar = global::ResSched.Droid.Resource.Styleable.ActionBar;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.ActionBar_background = global::ResSched.Droid.Resource.Styleable.ActionBar_background;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.ActionBar_backgroundSplit = global::ResSched.Droid.Resource.Styleable.ActionBar_backgroundSplit;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.ActionBar_backgroundStacked = global::ResSched.Droid.Resource.Styleable.ActionBar_backgroundStacked;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.ActionBar_contentInsetEnd = global::ResSched.Droid.Resource.Styleable.ActionBar_contentInsetEnd;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.ActionBar_contentInsetEndWithActions = global::ResSched.Droid.Resource.Styleable.ActionBar_contentInsetEndWithActions;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.ActionBar_contentInsetLeft = global::ResSched.Droid.Resource.Styleable.ActionBar_contentInsetLeft;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.ActionBar_contentInsetRight = global::ResSched.Droid.Resource.Styleable.ActionBar_contentInsetRight;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.ActionBar_contentInsetStart = global::ResSched.Droid.Resource.Styleable.ActionBar_contentInsetStart;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.ActionBar_contentInsetStartWithNavigation = global::ResSched.Droid.Resource.Styleable.ActionBar_contentInsetStartWithNavigation;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.ActionBar_customNavigationLayout = global::ResSched.Droid.Resource.Styleable.ActionBar_customNavigationLayout;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.ActionBar_displayOptions = global::ResSched.Droid.Resource.Styleable.ActionBar_displayOptions;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.ActionBar_divider = global::ResSched.Droid.Resource.Styleable.ActionBar_divider;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.ActionBar_elevation = global::ResSched.Droid.Resource.Styleable.ActionBar_elevation;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.ActionBar_height = global::ResSched.Droid.Resource.Styleable.ActionBar_height;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.ActionBar_hideOnContentScroll = global::ResSched.Droid.Resource.Styleable.ActionBar_hideOnContentScroll;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.ActionBar_homeAsUpIndicator = global::ResSched.Droid.Resource.Styleable.ActionBar_homeAsUpIndicator;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.ActionBar_homeLayout = global::ResSched.Droid.Resource.Styleable.ActionBar_homeLayout;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.ActionBar_icon = global::ResSched.Droid.Resource.Styleable.ActionBar_icon;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.ActionBar_indeterminateProgressStyle = global::ResSched.Droid.Resource.Styleable.ActionBar_indeterminateProgressStyle;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.ActionBar_itemPadding = global::ResSched.Droid.Resource.Styleable.ActionBar_itemPadding;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.ActionBar_logo = global::ResSched.Droid.Resource.Styleable.ActionBar_logo;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.ActionBar_navigationMode = global::ResSched.Droid.Resource.Styleable.ActionBar_navigationMode;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.ActionBar_popupTheme = global::ResSched.Droid.Resource.Styleable.ActionBar_popupTheme;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.ActionBar_progressBarPadding = global::ResSched.Droid.Resource.Styleable.ActionBar_progressBarPadding;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.ActionBar_progressBarStyle = global::ResSched.Droid.Resource.Styleable.ActionBar_progressBarStyle;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.ActionBar_subtitle = global::ResSched.Droid.Resource.Styleable.ActionBar_subtitle;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.ActionBar_subtitleTextStyle = global::ResSched.Droid.Resource.Styleable.ActionBar_subtitleTextStyle;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.ActionBar_title = global::ResSched.Droid.Resource.Styleable.ActionBar_title;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.ActionBar_titleTextStyle = global::ResSched.Droid.Resource.Styleable.ActionBar_titleTextStyle;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.ActionBarLayout = global::ResSched.Droid.Resource.Styleable.ActionBarLayout;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.ActionBarLayout_android_layout_gravity = global::ResSched.Droid.Resource.Styleable.ActionBarLayout_android_layout_gravity;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.ActionMenuItemView = global::ResSched.Droid.Resource.Styleable.ActionMenuItemView;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.ActionMenuItemView_android_minWidth = global::ResSched.Droid.Resource.Styleable.ActionMenuItemView_android_minWidth;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.ActionMenuView = global::ResSched.Droid.Resource.Styleable.ActionMenuView;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.ActionMode = global::ResSched.Droid.Resource.Styleable.ActionMode;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.ActionMode_background = global::ResSched.Droid.Resource.Styleable.ActionMode_background;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.ActionMode_backgroundSplit = global::ResSched.Droid.Resource.Styleable.ActionMode_backgroundSplit;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.ActionMode_closeItemLayout = global::ResSched.Droid.Resource.Styleable.ActionMode_closeItemLayout;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.ActionMode_height = global::ResSched.Droid.Resource.Styleable.ActionMode_height;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.ActionMode_subtitleTextStyle = global::ResSched.Droid.Resource.Styleable.ActionMode_subtitleTextStyle;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.ActionMode_titleTextStyle = global::ResSched.Droid.Resource.Styleable.ActionMode_titleTextStyle;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.ActivityChooserView = global::ResSched.Droid.Resource.Styleable.ActivityChooserView;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.ActivityChooserView_expandActivityOverflowButtonDrawable = global::ResSched.Droid.Resource.Styleable.ActivityChooserView_expandActivityOverflowButtonDrawable;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.ActivityChooserView_initialActivityCount = global::ResSched.Droid.Resource.Styleable.ActivityChooserView_initialActivityCount;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.AlertDialog = global::ResSched.Droid.Resource.Styleable.AlertDialog;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.AlertDialog_android_layout = global::ResSched.Droid.Resource.Styleable.AlertDialog_android_layout;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.AlertDialog_buttonPanelSideLayout = global::ResSched.Droid.Resource.Styleable.AlertDialog_buttonPanelSideLayout;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.AlertDialog_listItemLayout = global::ResSched.Droid.Resource.Styleable.AlertDialog_listItemLayout;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.AlertDialog_listLayout = global::ResSched.Droid.Resource.Styleable.AlertDialog_listLayout;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.AlertDialog_multiChoiceItemLayout = global::ResSched.Droid.Resource.Styleable.AlertDialog_multiChoiceItemLayout;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.AlertDialog_showTitle = global::ResSched.Droid.Resource.Styleable.AlertDialog_showTitle;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.AlertDialog_singleChoiceItemLayout = global::ResSched.Droid.Resource.Styleable.AlertDialog_singleChoiceItemLayout;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.AppBarLayout = global::ResSched.Droid.Resource.Styleable.AppBarLayout;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.AppBarLayout_android_background = global::ResSched.Droid.Resource.Styleable.AppBarLayout_android_background;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.AppBarLayout_android_keyboardNavigationCluster = global::ResSched.Droid.Resource.Styleable.AppBarLayout_android_keyboardNavigationCluster;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.AppBarLayout_android_touchscreenBlocksFocus = global::ResSched.Droid.Resource.Styleable.AppBarLayout_android_touchscreenBlocksFocus;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.AppBarLayout_elevation = global::ResSched.Droid.Resource.Styleable.AppBarLayout_elevation;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.AppBarLayout_expanded = global::ResSched.Droid.Resource.Styleable.AppBarLayout_expanded;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.AppBarLayoutStates = global::ResSched.Droid.Resource.Styleable.AppBarLayoutStates;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.AppBarLayoutStates_state_collapsed = global::ResSched.Droid.Resource.Styleable.AppBarLayoutStates_state_collapsed;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.AppBarLayoutStates_state_collapsible = global::ResSched.Droid.Resource.Styleable.AppBarLayoutStates_state_collapsible;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.AppBarLayout_Layout = global::ResSched.Droid.Resource.Styleable.AppBarLayout_Layout;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.AppBarLayout_Layout_layout_scrollFlags = global::ResSched.Droid.Resource.Styleable.AppBarLayout_Layout_layout_scrollFlags;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.AppBarLayout_Layout_layout_scrollInterpolator = global::ResSched.Droid.Resource.Styleable.AppBarLayout_Layout_layout_scrollInterpolator;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.AppCompatImageView = global::ResSched.Droid.Resource.Styleable.AppCompatImageView;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.AppCompatImageView_android_src = global::ResSched.Droid.Resource.Styleable.AppCompatImageView_android_src;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.AppCompatImageView_srcCompat = global::ResSched.Droid.Resource.Styleable.AppCompatImageView_srcCompat;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.AppCompatImageView_tint = global::ResSched.Droid.Resource.Styleable.AppCompatImageView_tint;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.AppCompatImageView_tintMode = global::ResSched.Droid.Resource.Styleable.AppCompatImageView_tintMode;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.AppCompatSeekBar = global::ResSched.Droid.Resource.Styleable.AppCompatSeekBar;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.AppCompatSeekBar_android_thumb = global::ResSched.Droid.Resource.Styleable.AppCompatSeekBar_android_thumb;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.AppCompatSeekBar_tickMark = global::ResSched.Droid.Resource.Styleable.AppCompatSeekBar_tickMark;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.AppCompatSeekBar_tickMarkTint = global::ResSched.Droid.Resource.Styleable.AppCompatSeekBar_tickMarkTint;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.AppCompatSeekBar_tickMarkTintMode = global::ResSched.Droid.Resource.Styleable.AppCompatSeekBar_tickMarkTintMode;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.AppCompatTextHelper = global::ResSched.Droid.Resource.Styleable.AppCompatTextHelper;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.AppCompatTextHelper_android_drawableBottom = global::ResSched.Droid.Resource.Styleable.AppCompatTextHelper_android_drawableBottom;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.AppCompatTextHelper_android_drawableEnd = global::ResSched.Droid.Resource.Styleable.AppCompatTextHelper_android_drawableEnd;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.AppCompatTextHelper_android_drawableLeft = global::ResSched.Droid.Resource.Styleable.AppCompatTextHelper_android_drawableLeft;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.AppCompatTextHelper_android_drawableRight = global::ResSched.Droid.Resource.Styleable.AppCompatTextHelper_android_drawableRight;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.AppCompatTextHelper_android_drawableStart = global::ResSched.Droid.Resource.Styleable.AppCompatTextHelper_android_drawableStart;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.AppCompatTextHelper_android_drawableTop = global::ResSched.Droid.Resource.Styleable.AppCompatTextHelper_android_drawableTop;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.AppCompatTextHelper_android_textAppearance = global::ResSched.Droid.Resource.Styleable.AppCompatTextHelper_android_textAppearance;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.AppCompatTextView = global::ResSched.Droid.Resource.Styleable.AppCompatTextView;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.AppCompatTextView_android_textAppearance = global::ResSched.Droid.Resource.Styleable.AppCompatTextView_android_textAppearance;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.AppCompatTextView_autoSizeMaxTextSize = global::ResSched.Droid.Resource.Styleable.AppCompatTextView_autoSizeMaxTextSize;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.AppCompatTextView_autoSizeMinTextSize = global::ResSched.Droid.Resource.Styleable.AppCompatTextView_autoSizeMinTextSize;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.AppCompatTextView_autoSizePresetSizes = global::ResSched.Droid.Resource.Styleable.AppCompatTextView_autoSizePresetSizes;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.AppCompatTextView_autoSizeStepGranularity = global::ResSched.Droid.Resource.Styleable.AppCompatTextView_autoSizeStepGranularity;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.AppCompatTextView_autoSizeTextType = global::ResSched.Droid.Resource.Styleable.AppCompatTextView_autoSizeTextType;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.AppCompatTextView_fontFamily = global::ResSched.Droid.Resource.Styleable.AppCompatTextView_fontFamily;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.AppCompatTextView_textAllCaps = global::ResSched.Droid.Resource.Styleable.AppCompatTextView_textAllCaps;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.AppCompatTheme = global::ResSched.Droid.Resource.Styleable.AppCompatTheme;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.AppCompatTheme_actionBarDivider = global::ResSched.Droid.Resource.Styleable.AppCompatTheme_actionBarDivider;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.AppCompatTheme_actionBarItemBackground = global::ResSched.Droid.Resource.Styleable.AppCompatTheme_actionBarItemBackground;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.AppCompatTheme_actionBarPopupTheme = global::ResSched.Droid.Resource.Styleable.AppCompatTheme_actionBarPopupTheme;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.AppCompatTheme_actionBarSize = global::ResSched.Droid.Resource.Styleable.AppCompatTheme_actionBarSize;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.AppCompatTheme_actionBarSplitStyle = global::ResSched.Droid.Resource.Styleable.AppCompatTheme_actionBarSplitStyle;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.AppCompatTheme_actionBarStyle = global::ResSched.Droid.Resource.Styleable.AppCompatTheme_actionBarStyle;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.AppCompatTheme_actionBarTabBarStyle = global::ResSched.Droid.Resource.Styleable.AppCompatTheme_actionBarTabBarStyle;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.AppCompatTheme_actionBarTabStyle = global::ResSched.Droid.Resource.Styleable.AppCompatTheme_actionBarTabStyle;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.AppCompatTheme_actionBarTabTextStyle = global::ResSched.Droid.Resource.Styleable.AppCompatTheme_actionBarTabTextStyle;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.AppCompatTheme_actionBarTheme = global::ResSched.Droid.Resource.Styleable.AppCompatTheme_actionBarTheme;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.AppCompatTheme_actionBarWidgetTheme = global::ResSched.Droid.Resource.Styleable.AppCompatTheme_actionBarWidgetTheme;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.AppCompatTheme_actionButtonStyle = global::ResSched.Droid.Resource.Styleable.AppCompatTheme_actionButtonStyle;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.AppCompatTheme_actionDropDownStyle = global::ResSched.Droid.Resource.Styleable.AppCompatTheme_actionDropDownStyle;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.AppCompatTheme_actionMenuTextAppearance = global::ResSched.Droid.Resource.Styleable.AppCompatTheme_actionMenuTextAppearance;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.AppCompatTheme_actionMenuTextColor = global::ResSched.Droid.Resource.Styleable.AppCompatTheme_actionMenuTextColor;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.AppCompatTheme_actionModeBackground = global::ResSched.Droid.Resource.Styleable.AppCompatTheme_actionModeBackground;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.AppCompatTheme_actionModeCloseButtonStyle = global::ResSched.Droid.Resource.Styleable.AppCompatTheme_actionModeCloseButtonStyle;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.AppCompatTheme_actionModeCloseDrawable = global::ResSched.Droid.Resource.Styleable.AppCompatTheme_actionModeCloseDrawable;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.AppCompatTheme_actionModeCopyDrawable = global::ResSched.Droid.Resource.Styleable.AppCompatTheme_actionModeCopyDrawable;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.AppCompatTheme_actionModeCutDrawable = global::ResSched.Droid.Resource.Styleable.AppCompatTheme_actionModeCutDrawable;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.AppCompatTheme_actionModeFindDrawable = global::ResSched.Droid.Resource.Styleable.AppCompatTheme_actionModeFindDrawable;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.AppCompatTheme_actionModePasteDrawable = global::ResSched.Droid.Resource.Styleable.AppCompatTheme_actionModePasteDrawable;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.AppCompatTheme_actionModePopupWindowStyle = global::ResSched.Droid.Resource.Styleable.AppCompatTheme_actionModePopupWindowStyle;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.AppCompatTheme_actionModeSelectAllDrawable = global::ResSched.Droid.Resource.Styleable.AppCompatTheme_actionModeSelectAllDrawable;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.AppCompatTheme_actionModeShareDrawable = global::ResSched.Droid.Resource.Styleable.AppCompatTheme_actionModeShareDrawable;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.AppCompatTheme_actionModeSplitBackground = global::ResSched.Droid.Resource.Styleable.AppCompatTheme_actionModeSplitBackground;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.AppCompatTheme_actionModeStyle = global::ResSched.Droid.Resource.Styleable.AppCompatTheme_actionModeStyle;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.AppCompatTheme_actionModeWebSearchDrawable = global::ResSched.Droid.Resource.Styleable.AppCompatTheme_actionModeWebSearchDrawable;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.AppCompatTheme_actionOverflowButtonStyle = global::ResSched.Droid.Resource.Styleable.AppCompatTheme_actionOverflowButtonStyle;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.AppCompatTheme_actionOverflowMenuStyle = global::ResSched.Droid.Resource.Styleable.AppCompatTheme_actionOverflowMenuStyle;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.AppCompatTheme_activityChooserViewStyle = global::ResSched.Droid.Resource.Styleable.AppCompatTheme_activityChooserViewStyle;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.AppCompatTheme_alertDialogButtonGroupStyle = global::ResSched.Droid.Resource.Styleable.AppCompatTheme_alertDialogButtonGroupStyle;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.AppCompatTheme_alertDialogCenterButtons = global::ResSched.Droid.Resource.Styleable.AppCompatTheme_alertDialogCenterButtons;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.AppCompatTheme_alertDialogStyle = global::ResSched.Droid.Resource.Styleable.AppCompatTheme_alertDialogStyle;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.AppCompatTheme_alertDialogTheme = global::ResSched.Droid.Resource.Styleable.AppCompatTheme_alertDialogTheme;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.AppCompatTheme_android_windowAnimationStyle = global::ResSched.Droid.Resource.Styleable.AppCompatTheme_android_windowAnimationStyle;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.AppCompatTheme_android_windowIsFloating = global::ResSched.Droid.Resource.Styleable.AppCompatTheme_android_windowIsFloating;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.AppCompatTheme_autoCompleteTextViewStyle = global::ResSched.Droid.Resource.Styleable.AppCompatTheme_autoCompleteTextViewStyle;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.AppCompatTheme_borderlessButtonStyle = global::ResSched.Droid.Resource.Styleable.AppCompatTheme_borderlessButtonStyle;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.AppCompatTheme_buttonBarButtonStyle = global::ResSched.Droid.Resource.Styleable.AppCompatTheme_buttonBarButtonStyle;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.AppCompatTheme_buttonBarNegativeButtonStyle = global::ResSched.Droid.Resource.Styleable.AppCompatTheme_buttonBarNegativeButtonStyle;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.AppCompatTheme_buttonBarNeutralButtonStyle = global::ResSched.Droid.Resource.Styleable.AppCompatTheme_buttonBarNeutralButtonStyle;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.AppCompatTheme_buttonBarPositiveButtonStyle = global::ResSched.Droid.Resource.Styleable.AppCompatTheme_buttonBarPositiveButtonStyle;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.AppCompatTheme_buttonBarStyle = global::ResSched.Droid.Resource.Styleable.AppCompatTheme_buttonBarStyle;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.AppCompatTheme_buttonStyle = global::ResSched.Droid.Resource.Styleable.AppCompatTheme_buttonStyle;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.AppCompatTheme_buttonStyleSmall = global::ResSched.Droid.Resource.Styleable.AppCompatTheme_buttonStyleSmall;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.AppCompatTheme_checkboxStyle = global::ResSched.Droid.Resource.Styleable.AppCompatTheme_checkboxStyle;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.AppCompatTheme_checkedTextViewStyle = global::ResSched.Droid.Resource.Styleable.AppCompatTheme_checkedTextViewStyle;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.AppCompatTheme_colorAccent = global::ResSched.Droid.Resource.Styleable.AppCompatTheme_colorAccent;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.AppCompatTheme_colorBackgroundFloating = global::ResSched.Droid.Resource.Styleable.AppCompatTheme_colorBackgroundFloating;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.AppCompatTheme_colorButtonNormal = global::ResSched.Droid.Resource.Styleable.AppCompatTheme_colorButtonNormal;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.AppCompatTheme_colorControlActivated = global::ResSched.Droid.Resource.Styleable.AppCompatTheme_colorControlActivated;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.AppCompatTheme_colorControlHighlight = global::ResSched.Droid.Resource.Styleable.AppCompatTheme_colorControlHighlight;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.AppCompatTheme_colorControlNormal = global::ResSched.Droid.Resource.Styleable.AppCompatTheme_colorControlNormal;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.AppCompatTheme_colorError = global::ResSched.Droid.Resource.Styleable.AppCompatTheme_colorError;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.AppCompatTheme_colorPrimary = global::ResSched.Droid.Resource.Styleable.AppCompatTheme_colorPrimary;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.AppCompatTheme_colorPrimaryDark = global::ResSched.Droid.Resource.Styleable.AppCompatTheme_colorPrimaryDark;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.AppCompatTheme_colorSwitchThumbNormal = global::ResSched.Droid.Resource.Styleable.AppCompatTheme_colorSwitchThumbNormal;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.AppCompatTheme_controlBackground = global::ResSched.Droid.Resource.Styleable.AppCompatTheme_controlBackground;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.AppCompatTheme_dialogPreferredPadding = global::ResSched.Droid.Resource.Styleable.AppCompatTheme_dialogPreferredPadding;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.AppCompatTheme_dialogTheme = global::ResSched.Droid.Resource.Styleable.AppCompatTheme_dialogTheme;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.AppCompatTheme_dividerHorizontal = global::ResSched.Droid.Resource.Styleable.AppCompatTheme_dividerHorizontal;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.AppCompatTheme_dividerVertical = global::ResSched.Droid.Resource.Styleable.AppCompatTheme_dividerVertical;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.AppCompatTheme_dropDownListViewStyle = global::ResSched.Droid.Resource.Styleable.AppCompatTheme_dropDownListViewStyle;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.AppCompatTheme_dropdownListPreferredItemHeight = global::ResSched.Droid.Resource.Styleable.AppCompatTheme_dropdownListPreferredItemHeight;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.AppCompatTheme_editTextBackground = global::ResSched.Droid.Resource.Styleable.AppCompatTheme_editTextBackground;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.AppCompatTheme_editTextColor = global::ResSched.Droid.Resource.Styleable.AppCompatTheme_editTextColor;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.AppCompatTheme_editTextStyle = global::ResSched.Droid.Resource.Styleable.AppCompatTheme_editTextStyle;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.AppCompatTheme_homeAsUpIndicator = global::ResSched.Droid.Resource.Styleable.AppCompatTheme_homeAsUpIndicator;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.AppCompatTheme_imageButtonStyle = global::ResSched.Droid.Resource.Styleable.AppCompatTheme_imageButtonStyle;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.AppCompatTheme_listChoiceBackgroundIndicator = global::ResSched.Droid.Resource.Styleable.AppCompatTheme_listChoiceBackgroundIndicator;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.AppCompatTheme_listDividerAlertDialog = global::ResSched.Droid.Resource.Styleable.AppCompatTheme_listDividerAlertDialog;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.AppCompatTheme_listMenuViewStyle = global::ResSched.Droid.Resource.Styleable.AppCompatTheme_listMenuViewStyle;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.AppCompatTheme_listPopupWindowStyle = global::ResSched.Droid.Resource.Styleable.AppCompatTheme_listPopupWindowStyle;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.AppCompatTheme_listPreferredItemHeight = global::ResSched.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemHeight;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.AppCompatTheme_listPreferredItemHeightLarge = global::ResSched.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemHeightLarge;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.AppCompatTheme_listPreferredItemHeightSmall = global::ResSched.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemHeightSmall;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingLeft = global::ResSched.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingLeft;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingRight = global::ResSched.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingRight;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.AppCompatTheme_panelBackground = global::ResSched.Droid.Resource.Styleable.AppCompatTheme_panelBackground;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.AppCompatTheme_panelMenuListTheme = global::ResSched.Droid.Resource.Styleable.AppCompatTheme_panelMenuListTheme;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.AppCompatTheme_panelMenuListWidth = global::ResSched.Droid.Resource.Styleable.AppCompatTheme_panelMenuListWidth;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.AppCompatTheme_popupMenuStyle = global::ResSched.Droid.Resource.Styleable.AppCompatTheme_popupMenuStyle;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.AppCompatTheme_popupWindowStyle = global::ResSched.Droid.Resource.Styleable.AppCompatTheme_popupWindowStyle;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.AppCompatTheme_radioButtonStyle = global::ResSched.Droid.Resource.Styleable.AppCompatTheme_radioButtonStyle;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.AppCompatTheme_ratingBarStyle = global::ResSched.Droid.Resource.Styleable.AppCompatTheme_ratingBarStyle;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.AppCompatTheme_ratingBarStyleIndicator = global::ResSched.Droid.Resource.Styleable.AppCompatTheme_ratingBarStyleIndicator;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.AppCompatTheme_ratingBarStyleSmall = global::ResSched.Droid.Resource.Styleable.AppCompatTheme_ratingBarStyleSmall;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.AppCompatTheme_searchViewStyle = global::ResSched.Droid.Resource.Styleable.AppCompatTheme_searchViewStyle;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.AppCompatTheme_seekBarStyle = global::ResSched.Droid.Resource.Styleable.AppCompatTheme_seekBarStyle;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.AppCompatTheme_selectableItemBackground = global::ResSched.Droid.Resource.Styleable.AppCompatTheme_selectableItemBackground;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.AppCompatTheme_selectableItemBackgroundBorderless = global::ResSched.Droid.Resource.Styleable.AppCompatTheme_selectableItemBackgroundBorderless;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.AppCompatTheme_spinnerDropDownItemStyle = global::ResSched.Droid.Resource.Styleable.AppCompatTheme_spinnerDropDownItemStyle;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.AppCompatTheme_spinnerStyle = global::ResSched.Droid.Resource.Styleable.AppCompatTheme_spinnerStyle;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.AppCompatTheme_switchStyle = global::ResSched.Droid.Resource.Styleable.AppCompatTheme_switchStyle;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.AppCompatTheme_textAppearanceLargePopupMenu = global::ResSched.Droid.Resource.Styleable.AppCompatTheme_textAppearanceLargePopupMenu;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.AppCompatTheme_textAppearanceListItem = global::ResSched.Droid.Resource.Styleable.AppCompatTheme_textAppearanceListItem;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.AppCompatTheme_textAppearanceListItemSecondary = global::ResSched.Droid.Resource.Styleable.AppCompatTheme_textAppearanceListItemSecondary;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.AppCompatTheme_textAppearanceListItemSmall = global::ResSched.Droid.Resource.Styleable.AppCompatTheme_textAppearanceListItemSmall;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.AppCompatTheme_textAppearancePopupMenuHeader = global::ResSched.Droid.Resource.Styleable.AppCompatTheme_textAppearancePopupMenuHeader;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.AppCompatTheme_textAppearanceSearchResultSubtitle = global::ResSched.Droid.Resource.Styleable.AppCompatTheme_textAppearanceSearchResultSubtitle;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.AppCompatTheme_textAppearanceSearchResultTitle = global::ResSched.Droid.Resource.Styleable.AppCompatTheme_textAppearanceSearchResultTitle;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.AppCompatTheme_textAppearanceSmallPopupMenu = global::ResSched.Droid.Resource.Styleable.AppCompatTheme_textAppearanceSmallPopupMenu;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.AppCompatTheme_textColorAlertDialogListItem = global::ResSched.Droid.Resource.Styleable.AppCompatTheme_textColorAlertDialogListItem;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.AppCompatTheme_textColorSearchUrl = global::ResSched.Droid.Resource.Styleable.AppCompatTheme_textColorSearchUrl;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.AppCompatTheme_toolbarNavigationButtonStyle = global::ResSched.Droid.Resource.Styleable.AppCompatTheme_toolbarNavigationButtonStyle;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.AppCompatTheme_toolbarStyle = global::ResSched.Droid.Resource.Styleable.AppCompatTheme_toolbarStyle;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.AppCompatTheme_tooltipForegroundColor = global::ResSched.Droid.Resource.Styleable.AppCompatTheme_tooltipForegroundColor;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.AppCompatTheme_tooltipFrameBackground = global::ResSched.Droid.Resource.Styleable.AppCompatTheme_tooltipFrameBackground;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.AppCompatTheme_windowActionBar = global::ResSched.Droid.Resource.Styleable.AppCompatTheme_windowActionBar;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.AppCompatTheme_windowActionBarOverlay = global::ResSched.Droid.Resource.Styleable.AppCompatTheme_windowActionBarOverlay;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.AppCompatTheme_windowActionModeOverlay = global::ResSched.Droid.Resource.Styleable.AppCompatTheme_windowActionModeOverlay;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.AppCompatTheme_windowFixedHeightMajor = global::ResSched.Droid.Resource.Styleable.AppCompatTheme_windowFixedHeightMajor;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.AppCompatTheme_windowFixedHeightMinor = global::ResSched.Droid.Resource.Styleable.AppCompatTheme_windowFixedHeightMinor;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.AppCompatTheme_windowFixedWidthMajor = global::ResSched.Droid.Resource.Styleable.AppCompatTheme_windowFixedWidthMajor;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.AppCompatTheme_windowFixedWidthMinor = global::ResSched.Droid.Resource.Styleable.AppCompatTheme_windowFixedWidthMinor;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.AppCompatTheme_windowMinWidthMajor = global::ResSched.Droid.Resource.Styleable.AppCompatTheme_windowMinWidthMajor;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.AppCompatTheme_windowMinWidthMinor = global::ResSched.Droid.Resource.Styleable.AppCompatTheme_windowMinWidthMinor;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.AppCompatTheme_windowNoTitle = global::ResSched.Droid.Resource.Styleable.AppCompatTheme_windowNoTitle;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.BottomNavigationView = global::ResSched.Droid.Resource.Styleable.BottomNavigationView;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.BottomNavigationView_elevation = global::ResSched.Droid.Resource.Styleable.BottomNavigationView_elevation;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.BottomNavigationView_itemBackground = global::ResSched.Droid.Resource.Styleable.BottomNavigationView_itemBackground;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.BottomNavigationView_itemIconTint = global::ResSched.Droid.Resource.Styleable.BottomNavigationView_itemIconTint;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.BottomNavigationView_itemTextColor = global::ResSched.Droid.Resource.Styleable.BottomNavigationView_itemTextColor;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.BottomNavigationView_menu = global::ResSched.Droid.Resource.Styleable.BottomNavigationView_menu;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.BottomSheetBehavior_Layout = global::ResSched.Droid.Resource.Styleable.BottomSheetBehavior_Layout;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.BottomSheetBehavior_Layout_behavior_hideable = global::ResSched.Droid.Resource.Styleable.BottomSheetBehavior_Layout_behavior_hideable;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.BottomSheetBehavior_Layout_behavior_peekHeight = global::ResSched.Droid.Resource.Styleable.BottomSheetBehavior_Layout_behavior_peekHeight;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.BottomSheetBehavior_Layout_behavior_skipCollapsed = global::ResSched.Droid.Resource.Styleable.BottomSheetBehavior_Layout_behavior_skipCollapsed;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.ButtonBarLayout = global::ResSched.Droid.Resource.Styleable.ButtonBarLayout;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.ButtonBarLayout_allowStacking = global::ResSched.Droid.Resource.Styleable.ButtonBarLayout_allowStacking;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.CardView = global::ResSched.Droid.Resource.Styleable.CardView;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.CardView_android_minHeight = global::ResSched.Droid.Resource.Styleable.CardView_android_minHeight;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.CardView_android_minWidth = global::ResSched.Droid.Resource.Styleable.CardView_android_minWidth;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.CardView_cardBackgroundColor = global::ResSched.Droid.Resource.Styleable.CardView_cardBackgroundColor;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.CardView_cardCornerRadius = global::ResSched.Droid.Resource.Styleable.CardView_cardCornerRadius;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.CardView_cardElevation = global::ResSched.Droid.Resource.Styleable.CardView_cardElevation;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.CardView_cardMaxElevation = global::ResSched.Droid.Resource.Styleable.CardView_cardMaxElevation;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.CardView_cardPreventCornerOverlap = global::ResSched.Droid.Resource.Styleable.CardView_cardPreventCornerOverlap;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.CardView_cardUseCompatPadding = global::ResSched.Droid.Resource.Styleable.CardView_cardUseCompatPadding;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.CardView_contentPadding = global::ResSched.Droid.Resource.Styleable.CardView_contentPadding;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.CardView_contentPaddingBottom = global::ResSched.Droid.Resource.Styleable.CardView_contentPaddingBottom;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.CardView_contentPaddingLeft = global::ResSched.Droid.Resource.Styleable.CardView_contentPaddingLeft;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.CardView_contentPaddingRight = global::ResSched.Droid.Resource.Styleable.CardView_contentPaddingRight;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.CardView_contentPaddingTop = global::ResSched.Droid.Resource.Styleable.CardView_contentPaddingTop;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.CollapsingToolbarLayout = global::ResSched.Droid.Resource.Styleable.CollapsingToolbarLayout;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.CollapsingToolbarLayout_collapsedTitleGravity = global::ResSched.Droid.Resource.Styleable.CollapsingToolbarLayout_collapsedTitleGravity;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.CollapsingToolbarLayout_collapsedTitleTextAppearance = global::ResSched.Droid.Resource.Styleable.CollapsingToolbarLayout_collapsedTitleTextAppearance;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.CollapsingToolbarLayout_contentScrim = global::ResSched.Droid.Resource.Styleable.CollapsingToolbarLayout_contentScrim;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.CollapsingToolbarLayout_expandedTitleGravity = global::ResSched.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleGravity;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMargin = global::ResSched.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMargin;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginBottom = global::ResSched.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginBottom;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginEnd = global::ResSched.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginEnd;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginStart = global::ResSched.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginStart;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginTop = global::ResSched.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginTop;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.CollapsingToolbarLayout_expandedTitleTextAppearance = global::ResSched.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleTextAppearance;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.CollapsingToolbarLayout_scrimAnimationDuration = global::ResSched.Droid.Resource.Styleable.CollapsingToolbarLayout_scrimAnimationDuration;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.CollapsingToolbarLayout_scrimVisibleHeightTrigger = global::ResSched.Droid.Resource.Styleable.CollapsingToolbarLayout_scrimVisibleHeightTrigger;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.CollapsingToolbarLayout_statusBarScrim = global::ResSched.Droid.Resource.Styleable.CollapsingToolbarLayout_statusBarScrim;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.CollapsingToolbarLayout_title = global::ResSched.Droid.Resource.Styleable.CollapsingToolbarLayout_title;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.CollapsingToolbarLayout_titleEnabled = global::ResSched.Droid.Resource.Styleable.CollapsingToolbarLayout_titleEnabled;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.CollapsingToolbarLayout_toolbarId = global::ResSched.Droid.Resource.Styleable.CollapsingToolbarLayout_toolbarId;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.CollapsingToolbarLayout_Layout = global::ResSched.Droid.Resource.Styleable.CollapsingToolbarLayout_Layout;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.CollapsingToolbarLayout_Layout_layout_collapseMode = global::ResSched.Droid.Resource.Styleable.CollapsingToolbarLayout_Layout_layout_collapseMode;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.CollapsingToolbarLayout_Layout_layout_collapseParallaxMultiplier = global::ResSched.Droid.Resource.Styleable.CollapsingToolbarLayout_Layout_layout_collapseParallaxMultiplier;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.ColorStateListItem = global::ResSched.Droid.Resource.Styleable.ColorStateListItem;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.ColorStateListItem_alpha = global::ResSched.Droid.Resource.Styleable.ColorStateListItem_alpha;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.ColorStateListItem_android_alpha = global::ResSched.Droid.Resource.Styleable.ColorStateListItem_android_alpha;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.ColorStateListItem_android_color = global::ResSched.Droid.Resource.Styleable.ColorStateListItem_android_color;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.CompoundButton = global::ResSched.Droid.Resource.Styleable.CompoundButton;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.CompoundButton_android_button = global::ResSched.Droid.Resource.Styleable.CompoundButton_android_button;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.CompoundButton_buttonTint = global::ResSched.Droid.Resource.Styleable.CompoundButton_buttonTint;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.CompoundButton_buttonTintMode = global::ResSched.Droid.Resource.Styleable.CompoundButton_buttonTintMode;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.CoordinatorLayout = global::ResSched.Droid.Resource.Styleable.CoordinatorLayout;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.CoordinatorLayout_keylines = global::ResSched.Droid.Resource.Styleable.CoordinatorLayout_keylines;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.CoordinatorLayout_statusBarBackground = global::ResSched.Droid.Resource.Styleable.CoordinatorLayout_statusBarBackground;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.CoordinatorLayout_Layout = global::ResSched.Droid.Resource.Styleable.CoordinatorLayout_Layout;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.CoordinatorLayout_Layout_android_layout_gravity = global::ResSched.Droid.Resource.Styleable.CoordinatorLayout_Layout_android_layout_gravity;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.CoordinatorLayout_Layout_layout_anchor = global::ResSched.Droid.Resource.Styleable.CoordinatorLayout_Layout_layout_anchor;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.CoordinatorLayout_Layout_layout_anchorGravity = global::ResSched.Droid.Resource.Styleable.CoordinatorLayout_Layout_layout_anchorGravity;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.CoordinatorLayout_Layout_layout_behavior = global::ResSched.Droid.Resource.Styleable.CoordinatorLayout_Layout_layout_behavior;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.CoordinatorLayout_Layout_layout_dodgeInsetEdges = global::ResSched.Droid.Resource.Styleable.CoordinatorLayout_Layout_layout_dodgeInsetEdges;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.CoordinatorLayout_Layout_layout_insetEdge = global::ResSched.Droid.Resource.Styleable.CoordinatorLayout_Layout_layout_insetEdge;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.CoordinatorLayout_Layout_layout_keyline = global::ResSched.Droid.Resource.Styleable.CoordinatorLayout_Layout_layout_keyline;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.DesignTheme = global::ResSched.Droid.Resource.Styleable.DesignTheme;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.DesignTheme_bottomSheetDialogTheme = global::ResSched.Droid.Resource.Styleable.DesignTheme_bottomSheetDialogTheme;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.DesignTheme_bottomSheetStyle = global::ResSched.Droid.Resource.Styleable.DesignTheme_bottomSheetStyle;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.DesignTheme_textColorError = global::ResSched.Droid.Resource.Styleable.DesignTheme_textColorError;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.DrawerArrowToggle = global::ResSched.Droid.Resource.Styleable.DrawerArrowToggle;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.DrawerArrowToggle_arrowHeadLength = global::ResSched.Droid.Resource.Styleable.DrawerArrowToggle_arrowHeadLength;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.DrawerArrowToggle_arrowShaftLength = global::ResSched.Droid.Resource.Styleable.DrawerArrowToggle_arrowShaftLength;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.DrawerArrowToggle_barLength = global::ResSched.Droid.Resource.Styleable.DrawerArrowToggle_barLength;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.DrawerArrowToggle_color = global::ResSched.Droid.Resource.Styleable.DrawerArrowToggle_color;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.DrawerArrowToggle_drawableSize = global::ResSched.Droid.Resource.Styleable.DrawerArrowToggle_drawableSize;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.DrawerArrowToggle_gapBetweenBars = global::ResSched.Droid.Resource.Styleable.DrawerArrowToggle_gapBetweenBars;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.DrawerArrowToggle_spinBars = global::ResSched.Droid.Resource.Styleable.DrawerArrowToggle_spinBars;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.DrawerArrowToggle_thickness = global::ResSched.Droid.Resource.Styleable.DrawerArrowToggle_thickness;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.FloatingActionButton = global::ResSched.Droid.Resource.Styleable.FloatingActionButton;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.FloatingActionButton_backgroundTint = global::ResSched.Droid.Resource.Styleable.FloatingActionButton_backgroundTint;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.FloatingActionButton_backgroundTintMode = global::ResSched.Droid.Resource.Styleable.FloatingActionButton_backgroundTintMode;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.FloatingActionButton_borderWidth = global::ResSched.Droid.Resource.Styleable.FloatingActionButton_borderWidth;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.FloatingActionButton_elevation = global::ResSched.Droid.Resource.Styleable.FloatingActionButton_elevation;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.FloatingActionButton_fabSize = global::ResSched.Droid.Resource.Styleable.FloatingActionButton_fabSize;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.FloatingActionButton_pressedTranslationZ = global::ResSched.Droid.Resource.Styleable.FloatingActionButton_pressedTranslationZ;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.FloatingActionButton_rippleColor = global::ResSched.Droid.Resource.Styleable.FloatingActionButton_rippleColor;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.FloatingActionButton_useCompatPadding = global::ResSched.Droid.Resource.Styleable.FloatingActionButton_useCompatPadding;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.FloatingActionButton_Behavior_Layout = global::ResSched.Droid.Resource.Styleable.FloatingActionButton_Behavior_Layout;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.FloatingActionButton_Behavior_Layout_behavior_autoHide = global::ResSched.Droid.Resource.Styleable.FloatingActionButton_Behavior_Layout_behavior_autoHide;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.FontFamily = global::ResSched.Droid.Resource.Styleable.FontFamily;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.FontFamily_fontProviderAuthority = global::ResSched.Droid.Resource.Styleable.FontFamily_fontProviderAuthority;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.FontFamily_fontProviderCerts = global::ResSched.Droid.Resource.Styleable.FontFamily_fontProviderCerts;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.FontFamily_fontProviderFetchStrategy = global::ResSched.Droid.Resource.Styleable.FontFamily_fontProviderFetchStrategy;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.FontFamily_fontProviderFetchTimeout = global::ResSched.Droid.Resource.Styleable.FontFamily_fontProviderFetchTimeout;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.FontFamily_fontProviderPackage = global::ResSched.Droid.Resource.Styleable.FontFamily_fontProviderPackage;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.FontFamily_fontProviderQuery = global::ResSched.Droid.Resource.Styleable.FontFamily_fontProviderQuery;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.FontFamilyFont = global::ResSched.Droid.Resource.Styleable.FontFamilyFont;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.FontFamilyFont_android_font = global::ResSched.Droid.Resource.Styleable.FontFamilyFont_android_font;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.FontFamilyFont_android_fontStyle = global::ResSched.Droid.Resource.Styleable.FontFamilyFont_android_fontStyle;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.FontFamilyFont_android_fontWeight = global::ResSched.Droid.Resource.Styleable.FontFamilyFont_android_fontWeight;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.FontFamilyFont_font = global::ResSched.Droid.Resource.Styleable.FontFamilyFont_font;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.FontFamilyFont_fontStyle = global::ResSched.Droid.Resource.Styleable.FontFamilyFont_fontStyle;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.FontFamilyFont_fontWeight = global::ResSched.Droid.Resource.Styleable.FontFamilyFont_fontWeight;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.ForegroundLinearLayout = global::ResSched.Droid.Resource.Styleable.ForegroundLinearLayout;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.ForegroundLinearLayout_android_foreground = global::ResSched.Droid.Resource.Styleable.ForegroundLinearLayout_android_foreground;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.ForegroundLinearLayout_android_foregroundGravity = global::ResSched.Droid.Resource.Styleable.ForegroundLinearLayout_android_foregroundGravity;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.ForegroundLinearLayout_foregroundInsidePadding = global::ResSched.Droid.Resource.Styleable.ForegroundLinearLayout_foregroundInsidePadding;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.LinearLayoutCompat = global::ResSched.Droid.Resource.Styleable.LinearLayoutCompat;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.LinearLayoutCompat_android_baselineAligned = global::ResSched.Droid.Resource.Styleable.LinearLayoutCompat_android_baselineAligned;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.LinearLayoutCompat_android_baselineAlignedChildIndex = global::ResSched.Droid.Resource.Styleable.LinearLayoutCompat_android_baselineAlignedChildIndex;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.LinearLayoutCompat_android_gravity = global::ResSched.Droid.Resource.Styleable.LinearLayoutCompat_android_gravity;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.LinearLayoutCompat_android_orientation = global::ResSched.Droid.Resource.Styleable.LinearLayoutCompat_android_orientation;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.LinearLayoutCompat_android_weightSum = global::ResSched.Droid.Resource.Styleable.LinearLayoutCompat_android_weightSum;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.LinearLayoutCompat_divider = global::ResSched.Droid.Resource.Styleable.LinearLayoutCompat_divider;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.LinearLayoutCompat_dividerPadding = global::ResSched.Droid.Resource.Styleable.LinearLayoutCompat_dividerPadding;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.LinearLayoutCompat_measureWithLargestChild = global::ResSched.Droid.Resource.Styleable.LinearLayoutCompat_measureWithLargestChild;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.LinearLayoutCompat_showDividers = global::ResSched.Droid.Resource.Styleable.LinearLayoutCompat_showDividers;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.LinearLayoutCompat_Layout = global::ResSched.Droid.Resource.Styleable.LinearLayoutCompat_Layout;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_gravity = global::ResSched.Droid.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_gravity;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_height = global::ResSched.Droid.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_height;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_weight = global::ResSched.Droid.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_weight;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_width = global::ResSched.Droid.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_width;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.ListPopupWindow = global::ResSched.Droid.Resource.Styleable.ListPopupWindow;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.ListPopupWindow_android_dropDownHorizontalOffset = global::ResSched.Droid.Resource.Styleable.ListPopupWindow_android_dropDownHorizontalOffset;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.ListPopupWindow_android_dropDownVerticalOffset = global::ResSched.Droid.Resource.Styleable.ListPopupWindow_android_dropDownVerticalOffset;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.MediaRouteButton = global::ResSched.Droid.Resource.Styleable.MediaRouteButton;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.MediaRouteButton_android_minHeight = global::ResSched.Droid.Resource.Styleable.MediaRouteButton_android_minHeight;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.MediaRouteButton_android_minWidth = global::ResSched.Droid.Resource.Styleable.MediaRouteButton_android_minWidth;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.MediaRouteButton_externalRouteEnabledDrawable = global::ResSched.Droid.Resource.Styleable.MediaRouteButton_externalRouteEnabledDrawable;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.MediaRouteButton_mediaRouteButtonTint = global::ResSched.Droid.Resource.Styleable.MediaRouteButton_mediaRouteButtonTint;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.MenuGroup = global::ResSched.Droid.Resource.Styleable.MenuGroup;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.MenuGroup_android_checkableBehavior = global::ResSched.Droid.Resource.Styleable.MenuGroup_android_checkableBehavior;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.MenuGroup_android_enabled = global::ResSched.Droid.Resource.Styleable.MenuGroup_android_enabled;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.MenuGroup_android_id = global::ResSched.Droid.Resource.Styleable.MenuGroup_android_id;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.MenuGroup_android_menuCategory = global::ResSched.Droid.Resource.Styleable.MenuGroup_android_menuCategory;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.MenuGroup_android_orderInCategory = global::ResSched.Droid.Resource.Styleable.MenuGroup_android_orderInCategory;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.MenuGroup_android_visible = global::ResSched.Droid.Resource.Styleable.MenuGroup_android_visible;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.MenuItem = global::ResSched.Droid.Resource.Styleable.MenuItem;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.MenuItem_actionLayout = global::ResSched.Droid.Resource.Styleable.MenuItem_actionLayout;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.MenuItem_actionProviderClass = global::ResSched.Droid.Resource.Styleable.MenuItem_actionProviderClass;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.MenuItem_actionViewClass = global::ResSched.Droid.Resource.Styleable.MenuItem_actionViewClass;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.MenuItem_alphabeticModifiers = global::ResSched.Droid.Resource.Styleable.MenuItem_alphabeticModifiers;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.MenuItem_android_alphabeticShortcut = global::ResSched.Droid.Resource.Styleable.MenuItem_android_alphabeticShortcut;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.MenuItem_android_checkable = global::ResSched.Droid.Resource.Styleable.MenuItem_android_checkable;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.MenuItem_android_checked = global::ResSched.Droid.Resource.Styleable.MenuItem_android_checked;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.MenuItem_android_enabled = global::ResSched.Droid.Resource.Styleable.MenuItem_android_enabled;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.MenuItem_android_icon = global::ResSched.Droid.Resource.Styleable.MenuItem_android_icon;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.MenuItem_android_id = global::ResSched.Droid.Resource.Styleable.MenuItem_android_id;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.MenuItem_android_menuCategory = global::ResSched.Droid.Resource.Styleable.MenuItem_android_menuCategory;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.MenuItem_android_numericShortcut = global::ResSched.Droid.Resource.Styleable.MenuItem_android_numericShortcut;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.MenuItem_android_onClick = global::ResSched.Droid.Resource.Styleable.MenuItem_android_onClick;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.MenuItem_android_orderInCategory = global::ResSched.Droid.Resource.Styleable.MenuItem_android_orderInCategory;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.MenuItem_android_title = global::ResSched.Droid.Resource.Styleable.MenuItem_android_title;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.MenuItem_android_titleCondensed = global::ResSched.Droid.Resource.Styleable.MenuItem_android_titleCondensed;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.MenuItem_android_visible = global::ResSched.Droid.Resource.Styleable.MenuItem_android_visible;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.MenuItem_contentDescription = global::ResSched.Droid.Resource.Styleable.MenuItem_contentDescription;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.MenuItem_iconTint = global::ResSched.Droid.Resource.Styleable.MenuItem_iconTint;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.MenuItem_iconTintMode = global::ResSched.Droid.Resource.Styleable.MenuItem_iconTintMode;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.MenuItem_numericModifiers = global::ResSched.Droid.Resource.Styleable.MenuItem_numericModifiers;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.MenuItem_showAsAction = global::ResSched.Droid.Resource.Styleable.MenuItem_showAsAction;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.MenuItem_tooltipText = global::ResSched.Droid.Resource.Styleable.MenuItem_tooltipText;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.MenuView = global::ResSched.Droid.Resource.Styleable.MenuView;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.MenuView_android_headerBackground = global::ResSched.Droid.Resource.Styleable.MenuView_android_headerBackground;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.MenuView_android_horizontalDivider = global::ResSched.Droid.Resource.Styleable.MenuView_android_horizontalDivider;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.MenuView_android_itemBackground = global::ResSched.Droid.Resource.Styleable.MenuView_android_itemBackground;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.MenuView_android_itemIconDisabledAlpha = global::ResSched.Droid.Resource.Styleable.MenuView_android_itemIconDisabledAlpha;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.MenuView_android_itemTextAppearance = global::ResSched.Droid.Resource.Styleable.MenuView_android_itemTextAppearance;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.MenuView_android_verticalDivider = global::ResSched.Droid.Resource.Styleable.MenuView_android_verticalDivider;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.MenuView_android_windowAnimationStyle = global::ResSched.Droid.Resource.Styleable.MenuView_android_windowAnimationStyle;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.MenuView_preserveIconSpacing = global::ResSched.Droid.Resource.Styleable.MenuView_preserveIconSpacing;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.MenuView_subMenuArrow = global::ResSched.Droid.Resource.Styleable.MenuView_subMenuArrow;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.NavigationView = global::ResSched.Droid.Resource.Styleable.NavigationView;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.NavigationView_android_background = global::ResSched.Droid.Resource.Styleable.NavigationView_android_background;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.NavigationView_android_fitsSystemWindows = global::ResSched.Droid.Resource.Styleable.NavigationView_android_fitsSystemWindows;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.NavigationView_android_maxWidth = global::ResSched.Droid.Resource.Styleable.NavigationView_android_maxWidth;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.NavigationView_elevation = global::ResSched.Droid.Resource.Styleable.NavigationView_elevation;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.NavigationView_headerLayout = global::ResSched.Droid.Resource.Styleable.NavigationView_headerLayout;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.NavigationView_itemBackground = global::ResSched.Droid.Resource.Styleable.NavigationView_itemBackground;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.NavigationView_itemIconTint = global::ResSched.Droid.Resource.Styleable.NavigationView_itemIconTint;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.NavigationView_itemTextAppearance = global::ResSched.Droid.Resource.Styleable.NavigationView_itemTextAppearance;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.NavigationView_itemTextColor = global::ResSched.Droid.Resource.Styleable.NavigationView_itemTextColor;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.NavigationView_menu = global::ResSched.Droid.Resource.Styleable.NavigationView_menu;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.PopupWindow = global::ResSched.Droid.Resource.Styleable.PopupWindow;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.PopupWindow_android_popupAnimationStyle = global::ResSched.Droid.Resource.Styleable.PopupWindow_android_popupAnimationStyle;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.PopupWindow_android_popupBackground = global::ResSched.Droid.Resource.Styleable.PopupWindow_android_popupBackground;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.PopupWindow_overlapAnchor = global::ResSched.Droid.Resource.Styleable.PopupWindow_overlapAnchor;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.PopupWindowBackgroundState = global::ResSched.Droid.Resource.Styleable.PopupWindowBackgroundState;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.PopupWindowBackgroundState_state_above_anchor = global::ResSched.Droid.Resource.Styleable.PopupWindowBackgroundState_state_above_anchor;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.RecycleListView = global::ResSched.Droid.Resource.Styleable.RecycleListView;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.RecycleListView_paddingBottomNoButtons = global::ResSched.Droid.Resource.Styleable.RecycleListView_paddingBottomNoButtons;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.RecycleListView_paddingTopNoTitle = global::ResSched.Droid.Resource.Styleable.RecycleListView_paddingTopNoTitle;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.RecyclerView = global::ResSched.Droid.Resource.Styleable.RecyclerView;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.RecyclerView_android_descendantFocusability = global::ResSched.Droid.Resource.Styleable.RecyclerView_android_descendantFocusability;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.RecyclerView_android_orientation = global::ResSched.Droid.Resource.Styleable.RecyclerView_android_orientation;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.RecyclerView_fastScrollEnabled = global::ResSched.Droid.Resource.Styleable.RecyclerView_fastScrollEnabled;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.RecyclerView_fastScrollHorizontalThumbDrawable = global::ResSched.Droid.Resource.Styleable.RecyclerView_fastScrollHorizontalThumbDrawable;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.RecyclerView_fastScrollHorizontalTrackDrawable = global::ResSched.Droid.Resource.Styleable.RecyclerView_fastScrollHorizontalTrackDrawable;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.RecyclerView_fastScrollVerticalThumbDrawable = global::ResSched.Droid.Resource.Styleable.RecyclerView_fastScrollVerticalThumbDrawable;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.RecyclerView_fastScrollVerticalTrackDrawable = global::ResSched.Droid.Resource.Styleable.RecyclerView_fastScrollVerticalTrackDrawable;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.RecyclerView_layoutManager = global::ResSched.Droid.Resource.Styleable.RecyclerView_layoutManager;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.RecyclerView_reverseLayout = global::ResSched.Droid.Resource.Styleable.RecyclerView_reverseLayout;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.RecyclerView_spanCount = global::ResSched.Droid.Resource.Styleable.RecyclerView_spanCount;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.RecyclerView_stackFromEnd = global::ResSched.Droid.Resource.Styleable.RecyclerView_stackFromEnd;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.ScrimInsetsFrameLayout = global::ResSched.Droid.Resource.Styleable.ScrimInsetsFrameLayout;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.ScrimInsetsFrameLayout_insetForeground = global::ResSched.Droid.Resource.Styleable.ScrimInsetsFrameLayout_insetForeground;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.ScrollingViewBehavior_Layout = global::ResSched.Droid.Resource.Styleable.ScrollingViewBehavior_Layout;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.ScrollingViewBehavior_Layout_behavior_overlapTop = global::ResSched.Droid.Resource.Styleable.ScrollingViewBehavior_Layout_behavior_overlapTop;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.SearchView = global::ResSched.Droid.Resource.Styleable.SearchView;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.SearchView_android_focusable = global::ResSched.Droid.Resource.Styleable.SearchView_android_focusable;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.SearchView_android_imeOptions = global::ResSched.Droid.Resource.Styleable.SearchView_android_imeOptions;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.SearchView_android_inputType = global::ResSched.Droid.Resource.Styleable.SearchView_android_inputType;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.SearchView_android_maxWidth = global::ResSched.Droid.Resource.Styleable.SearchView_android_maxWidth;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.SearchView_closeIcon = global::ResSched.Droid.Resource.Styleable.SearchView_closeIcon;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.SearchView_commitIcon = global::ResSched.Droid.Resource.Styleable.SearchView_commitIcon;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.SearchView_defaultQueryHint = global::ResSched.Droid.Resource.Styleable.SearchView_defaultQueryHint;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.SearchView_goIcon = global::ResSched.Droid.Resource.Styleable.SearchView_goIcon;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.SearchView_iconifiedByDefault = global::ResSched.Droid.Resource.Styleable.SearchView_iconifiedByDefault;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.SearchView_layout = global::ResSched.Droid.Resource.Styleable.SearchView_layout;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.SearchView_queryBackground = global::ResSched.Droid.Resource.Styleable.SearchView_queryBackground;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.SearchView_queryHint = global::ResSched.Droid.Resource.Styleable.SearchView_queryHint;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.SearchView_searchHintIcon = global::ResSched.Droid.Resource.Styleable.SearchView_searchHintIcon;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.SearchView_searchIcon = global::ResSched.Droid.Resource.Styleable.SearchView_searchIcon;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.SearchView_submitBackground = global::ResSched.Droid.Resource.Styleable.SearchView_submitBackground;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.SearchView_suggestionRowLayout = global::ResSched.Droid.Resource.Styleable.SearchView_suggestionRowLayout;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.SearchView_voiceIcon = global::ResSched.Droid.Resource.Styleable.SearchView_voiceIcon;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.SnackbarLayout = global::ResSched.Droid.Resource.Styleable.SnackbarLayout;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.SnackbarLayout_android_maxWidth = global::ResSched.Droid.Resource.Styleable.SnackbarLayout_android_maxWidth;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.SnackbarLayout_elevation = global::ResSched.Droid.Resource.Styleable.SnackbarLayout_elevation;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.SnackbarLayout_maxActionInlineWidth = global::ResSched.Droid.Resource.Styleable.SnackbarLayout_maxActionInlineWidth;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.Spinner = global::ResSched.Droid.Resource.Styleable.Spinner;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.Spinner_android_dropDownWidth = global::ResSched.Droid.Resource.Styleable.Spinner_android_dropDownWidth;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.Spinner_android_entries = global::ResSched.Droid.Resource.Styleable.Spinner_android_entries;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.Spinner_android_popupBackground = global::ResSched.Droid.Resource.Styleable.Spinner_android_popupBackground;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.Spinner_android_prompt = global::ResSched.Droid.Resource.Styleable.Spinner_android_prompt;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.Spinner_popupTheme = global::ResSched.Droid.Resource.Styleable.Spinner_popupTheme;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.SwitchCompat = global::ResSched.Droid.Resource.Styleable.SwitchCompat;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.SwitchCompat_android_textOff = global::ResSched.Droid.Resource.Styleable.SwitchCompat_android_textOff;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.SwitchCompat_android_textOn = global::ResSched.Droid.Resource.Styleable.SwitchCompat_android_textOn;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.SwitchCompat_android_thumb = global::ResSched.Droid.Resource.Styleable.SwitchCompat_android_thumb;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.SwitchCompat_showText = global::ResSched.Droid.Resource.Styleable.SwitchCompat_showText;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.SwitchCompat_splitTrack = global::ResSched.Droid.Resource.Styleable.SwitchCompat_splitTrack;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.SwitchCompat_switchMinWidth = global::ResSched.Droid.Resource.Styleable.SwitchCompat_switchMinWidth;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.SwitchCompat_switchPadding = global::ResSched.Droid.Resource.Styleable.SwitchCompat_switchPadding;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.SwitchCompat_switchTextAppearance = global::ResSched.Droid.Resource.Styleable.SwitchCompat_switchTextAppearance;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.SwitchCompat_thumbTextPadding = global::ResSched.Droid.Resource.Styleable.SwitchCompat_thumbTextPadding;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.SwitchCompat_thumbTint = global::ResSched.Droid.Resource.Styleable.SwitchCompat_thumbTint;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.SwitchCompat_thumbTintMode = global::ResSched.Droid.Resource.Styleable.SwitchCompat_thumbTintMode;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.SwitchCompat_track = global::ResSched.Droid.Resource.Styleable.SwitchCompat_track;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.SwitchCompat_trackTint = global::ResSched.Droid.Resource.Styleable.SwitchCompat_trackTint;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.SwitchCompat_trackTintMode = global::ResSched.Droid.Resource.Styleable.SwitchCompat_trackTintMode;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.TabItem = global::ResSched.Droid.Resource.Styleable.TabItem;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.TabItem_android_icon = global::ResSched.Droid.Resource.Styleable.TabItem_android_icon;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.TabItem_android_layout = global::ResSched.Droid.Resource.Styleable.TabItem_android_layout;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.TabItem_android_text = global::ResSched.Droid.Resource.Styleable.TabItem_android_text;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.TabLayout = global::ResSched.Droid.Resource.Styleable.TabLayout;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.TabLayout_tabBackground = global::ResSched.Droid.Resource.Styleable.TabLayout_tabBackground;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.TabLayout_tabContentStart = global::ResSched.Droid.Resource.Styleable.TabLayout_tabContentStart;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.TabLayout_tabGravity = global::ResSched.Droid.Resource.Styleable.TabLayout_tabGravity;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.TabLayout_tabIndicatorColor = global::ResSched.Droid.Resource.Styleable.TabLayout_tabIndicatorColor;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.TabLayout_tabIndicatorHeight = global::ResSched.Droid.Resource.Styleable.TabLayout_tabIndicatorHeight;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.TabLayout_tabMaxWidth = global::ResSched.Droid.Resource.Styleable.TabLayout_tabMaxWidth;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.TabLayout_tabMinWidth = global::ResSched.Droid.Resource.Styleable.TabLayout_tabMinWidth;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.TabLayout_tabMode = global::ResSched.Droid.Resource.Styleable.TabLayout_tabMode;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.TabLayout_tabPadding = global::ResSched.Droid.Resource.Styleable.TabLayout_tabPadding;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.TabLayout_tabPaddingBottom = global::ResSched.Droid.Resource.Styleable.TabLayout_tabPaddingBottom;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.TabLayout_tabPaddingEnd = global::ResSched.Droid.Resource.Styleable.TabLayout_tabPaddingEnd;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.TabLayout_tabPaddingStart = global::ResSched.Droid.Resource.Styleable.TabLayout_tabPaddingStart;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.TabLayout_tabPaddingTop = global::ResSched.Droid.Resource.Styleable.TabLayout_tabPaddingTop;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.TabLayout_tabSelectedTextColor = global::ResSched.Droid.Resource.Styleable.TabLayout_tabSelectedTextColor;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.TabLayout_tabTextAppearance = global::ResSched.Droid.Resource.Styleable.TabLayout_tabTextAppearance;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.TabLayout_tabTextColor = global::ResSched.Droid.Resource.Styleable.TabLayout_tabTextColor;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.TextAppearance = global::ResSched.Droid.Resource.Styleable.TextAppearance;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.TextAppearance_android_fontFamily = global::ResSched.Droid.Resource.Styleable.TextAppearance_android_fontFamily;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.TextAppearance_android_shadowColor = global::ResSched.Droid.Resource.Styleable.TextAppearance_android_shadowColor;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.TextAppearance_android_shadowDx = global::ResSched.Droid.Resource.Styleable.TextAppearance_android_shadowDx;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.TextAppearance_android_shadowDy = global::ResSched.Droid.Resource.Styleable.TextAppearance_android_shadowDy;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.TextAppearance_android_shadowRadius = global::ResSched.Droid.Resource.Styleable.TextAppearance_android_shadowRadius;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.TextAppearance_android_textColor = global::ResSched.Droid.Resource.Styleable.TextAppearance_android_textColor;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.TextAppearance_android_textColorHint = global::ResSched.Droid.Resource.Styleable.TextAppearance_android_textColorHint;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.TextAppearance_android_textColorLink = global::ResSched.Droid.Resource.Styleable.TextAppearance_android_textColorLink;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.TextAppearance_android_textSize = global::ResSched.Droid.Resource.Styleable.TextAppearance_android_textSize;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.TextAppearance_android_textStyle = global::ResSched.Droid.Resource.Styleable.TextAppearance_android_textStyle;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.TextAppearance_android_typeface = global::ResSched.Droid.Resource.Styleable.TextAppearance_android_typeface;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.TextAppearance_fontFamily = global::ResSched.Droid.Resource.Styleable.TextAppearance_fontFamily;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.TextAppearance_textAllCaps = global::ResSched.Droid.Resource.Styleable.TextAppearance_textAllCaps;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.TextInputLayout = global::ResSched.Droid.Resource.Styleable.TextInputLayout;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.TextInputLayout_android_hint = global::ResSched.Droid.Resource.Styleable.TextInputLayout_android_hint;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.TextInputLayout_android_textColorHint = global::ResSched.Droid.Resource.Styleable.TextInputLayout_android_textColorHint;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.TextInputLayout_counterEnabled = global::ResSched.Droid.Resource.Styleable.TextInputLayout_counterEnabled;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.TextInputLayout_counterMaxLength = global::ResSched.Droid.Resource.Styleable.TextInputLayout_counterMaxLength;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.TextInputLayout_counterOverflowTextAppearance = global::ResSched.Droid.Resource.Styleable.TextInputLayout_counterOverflowTextAppearance;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.TextInputLayout_counterTextAppearance = global::ResSched.Droid.Resource.Styleable.TextInputLayout_counterTextAppearance;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.TextInputLayout_errorEnabled = global::ResSched.Droid.Resource.Styleable.TextInputLayout_errorEnabled;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.TextInputLayout_errorTextAppearance = global::ResSched.Droid.Resource.Styleable.TextInputLayout_errorTextAppearance;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.TextInputLayout_hintAnimationEnabled = global::ResSched.Droid.Resource.Styleable.TextInputLayout_hintAnimationEnabled;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.TextInputLayout_hintEnabled = global::ResSched.Droid.Resource.Styleable.TextInputLayout_hintEnabled;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.TextInputLayout_hintTextAppearance = global::ResSched.Droid.Resource.Styleable.TextInputLayout_hintTextAppearance;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.TextInputLayout_passwordToggleContentDescription = global::ResSched.Droid.Resource.Styleable.TextInputLayout_passwordToggleContentDescription;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.TextInputLayout_passwordToggleDrawable = global::ResSched.Droid.Resource.Styleable.TextInputLayout_passwordToggleDrawable;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.TextInputLayout_passwordToggleEnabled = global::ResSched.Droid.Resource.Styleable.TextInputLayout_passwordToggleEnabled;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.TextInputLayout_passwordToggleTint = global::ResSched.Droid.Resource.Styleable.TextInputLayout_passwordToggleTint;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.TextInputLayout_passwordToggleTintMode = global::ResSched.Droid.Resource.Styleable.TextInputLayout_passwordToggleTintMode;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.Toolbar = global::ResSched.Droid.Resource.Styleable.Toolbar;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.Toolbar_android_gravity = global::ResSched.Droid.Resource.Styleable.Toolbar_android_gravity;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.Toolbar_android_minHeight = global::ResSched.Droid.Resource.Styleable.Toolbar_android_minHeight;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.Toolbar_buttonGravity = global::ResSched.Droid.Resource.Styleable.Toolbar_buttonGravity;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.Toolbar_collapseContentDescription = global::ResSched.Droid.Resource.Styleable.Toolbar_collapseContentDescription;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.Toolbar_collapseIcon = global::ResSched.Droid.Resource.Styleable.Toolbar_collapseIcon;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.Toolbar_contentInsetEnd = global::ResSched.Droid.Resource.Styleable.Toolbar_contentInsetEnd;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.Toolbar_contentInsetEndWithActions = global::ResSched.Droid.Resource.Styleable.Toolbar_contentInsetEndWithActions;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.Toolbar_contentInsetLeft = global::ResSched.Droid.Resource.Styleable.Toolbar_contentInsetLeft;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.Toolbar_contentInsetRight = global::ResSched.Droid.Resource.Styleable.Toolbar_contentInsetRight;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.Toolbar_contentInsetStart = global::ResSched.Droid.Resource.Styleable.Toolbar_contentInsetStart;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.Toolbar_contentInsetStartWithNavigation = global::ResSched.Droid.Resource.Styleable.Toolbar_contentInsetStartWithNavigation;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.Toolbar_logo = global::ResSched.Droid.Resource.Styleable.Toolbar_logo;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.Toolbar_logoDescription = global::ResSched.Droid.Resource.Styleable.Toolbar_logoDescription;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.Toolbar_maxButtonHeight = global::ResSched.Droid.Resource.Styleable.Toolbar_maxButtonHeight;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.Toolbar_navigationContentDescription = global::ResSched.Droid.Resource.Styleable.Toolbar_navigationContentDescription;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.Toolbar_navigationIcon = global::ResSched.Droid.Resource.Styleable.Toolbar_navigationIcon;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.Toolbar_popupTheme = global::ResSched.Droid.Resource.Styleable.Toolbar_popupTheme;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.Toolbar_subtitle = global::ResSched.Droid.Resource.Styleable.Toolbar_subtitle;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.Toolbar_subtitleTextAppearance = global::ResSched.Droid.Resource.Styleable.Toolbar_subtitleTextAppearance;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.Toolbar_subtitleTextColor = global::ResSched.Droid.Resource.Styleable.Toolbar_subtitleTextColor;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.Toolbar_title = global::ResSched.Droid.Resource.Styleable.Toolbar_title;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.Toolbar_titleMargin = global::ResSched.Droid.Resource.Styleable.Toolbar_titleMargin;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.Toolbar_titleMarginBottom = global::ResSched.Droid.Resource.Styleable.Toolbar_titleMarginBottom;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.Toolbar_titleMarginEnd = global::ResSched.Droid.Resource.Styleable.Toolbar_titleMarginEnd;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.Toolbar_titleMarginStart = global::ResSched.Droid.Resource.Styleable.Toolbar_titleMarginStart;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.Toolbar_titleMarginTop = global::ResSched.Droid.Resource.Styleable.Toolbar_titleMarginTop;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.Toolbar_titleMargins = global::ResSched.Droid.Resource.Styleable.Toolbar_titleMargins;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.Toolbar_titleTextAppearance = global::ResSched.Droid.Resource.Styleable.Toolbar_titleTextAppearance;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.Toolbar_titleTextColor = global::ResSched.Droid.Resource.Styleable.Toolbar_titleTextColor;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.View = global::ResSched.Droid.Resource.Styleable.View;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.View_android_focusable = global::ResSched.Droid.Resource.Styleable.View_android_focusable;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.View_android_theme = global::ResSched.Droid.Resource.Styleable.View_android_theme;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.View_paddingEnd = global::ResSched.Droid.Resource.Styleable.View_paddingEnd;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.View_paddingStart = global::ResSched.Droid.Resource.Styleable.View_paddingStart;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.View_theme = global::ResSched.Droid.Resource.Styleable.View_theme;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.ViewBackgroundHelper = global::ResSched.Droid.Resource.Styleable.ViewBackgroundHelper;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.ViewBackgroundHelper_android_background = global::ResSched.Droid.Resource.Styleable.ViewBackgroundHelper_android_background;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.ViewBackgroundHelper_backgroundTint = global::ResSched.Droid.Resource.Styleable.ViewBackgroundHelper_backgroundTint;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.ViewBackgroundHelper_backgroundTintMode = global::ResSched.Droid.Resource.Styleable.ViewBackgroundHelper_backgroundTintMode;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.ViewStubCompat = global::ResSched.Droid.Resource.Styleable.ViewStubCompat;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.ViewStubCompat_android_id = global::ResSched.Droid.Resource.Styleable.ViewStubCompat_android_id;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.ViewStubCompat_android_inflatedId = global::ResSched.Droid.Resource.Styleable.ViewStubCompat_android_inflatedId;
-			global::Xamarin.Auth.XamarinForms.Resource.Styleable.ViewStubCompat_android_layout = global::ResSched.Droid.Resource.Styleable.ViewStubCompat_android_layout;
 			global::Xamarin.Forms.Platform.Android.Resource.Attribute.actionBarSize = global::ResSched.Droid.Resource.Attribute.actionBarSize;
 		}
 		
@@ -2473,16 +75,10 @@ namespace ResSched.Droid
 			public const int design_snackbar_out = 2131034125;
 			
 			// aapt resource value: 0x7f05000e
-			public const int slide_in_right = 2131034126;
+			public const int tooltip_enter = 2131034126;
 			
 			// aapt resource value: 0x7f05000f
-			public const int slide_out_left = 2131034127;
-			
-			// aapt resource value: 0x7f050010
-			public const int tooltip_enter = 2131034128;
-			
-			// aapt resource value: 0x7f050011
-			public const int tooltip_exit = 2131034129;
+			public const int tooltip_exit = 2131034127;
 			
 			static Animation()
 			{
@@ -3989,497 +1585,497 @@ namespace ResSched.Droid
 		public partial class Dimension
 		{
 			
-			// aapt resource value: 0x7f09001b
-			public const int abc_action_bar_content_inset_material = 2131296283;
+			// aapt resource value: 0x7f08001b
+			public const int abc_action_bar_content_inset_material = 2131230747;
 			
-			// aapt resource value: 0x7f09001c
-			public const int abc_action_bar_content_inset_with_nav = 2131296284;
+			// aapt resource value: 0x7f08001c
+			public const int abc_action_bar_content_inset_with_nav = 2131230748;
 			
-			// aapt resource value: 0x7f090010
-			public const int abc_action_bar_default_height_material = 2131296272;
+			// aapt resource value: 0x7f080010
+			public const int abc_action_bar_default_height_material = 2131230736;
 			
-			// aapt resource value: 0x7f09001d
-			public const int abc_action_bar_default_padding_end_material = 2131296285;
+			// aapt resource value: 0x7f08001d
+			public const int abc_action_bar_default_padding_end_material = 2131230749;
 			
-			// aapt resource value: 0x7f09001e
-			public const int abc_action_bar_default_padding_start_material = 2131296286;
+			// aapt resource value: 0x7f08001e
+			public const int abc_action_bar_default_padding_start_material = 2131230750;
 			
-			// aapt resource value: 0x7f090020
-			public const int abc_action_bar_elevation_material = 2131296288;
+			// aapt resource value: 0x7f080020
+			public const int abc_action_bar_elevation_material = 2131230752;
 			
-			// aapt resource value: 0x7f090021
-			public const int abc_action_bar_icon_vertical_padding_material = 2131296289;
+			// aapt resource value: 0x7f080021
+			public const int abc_action_bar_icon_vertical_padding_material = 2131230753;
 			
-			// aapt resource value: 0x7f090022
-			public const int abc_action_bar_overflow_padding_end_material = 2131296290;
+			// aapt resource value: 0x7f080022
+			public const int abc_action_bar_overflow_padding_end_material = 2131230754;
 			
-			// aapt resource value: 0x7f090023
-			public const int abc_action_bar_overflow_padding_start_material = 2131296291;
+			// aapt resource value: 0x7f080023
+			public const int abc_action_bar_overflow_padding_start_material = 2131230755;
 			
-			// aapt resource value: 0x7f090011
-			public const int abc_action_bar_progress_bar_size = 2131296273;
+			// aapt resource value: 0x7f080011
+			public const int abc_action_bar_progress_bar_size = 2131230737;
 			
-			// aapt resource value: 0x7f090024
-			public const int abc_action_bar_stacked_max_height = 2131296292;
+			// aapt resource value: 0x7f080024
+			public const int abc_action_bar_stacked_max_height = 2131230756;
 			
-			// aapt resource value: 0x7f090025
-			public const int abc_action_bar_stacked_tab_max_width = 2131296293;
+			// aapt resource value: 0x7f080025
+			public const int abc_action_bar_stacked_tab_max_width = 2131230757;
 			
-			// aapt resource value: 0x7f090026
-			public const int abc_action_bar_subtitle_bottom_margin_material = 2131296294;
+			// aapt resource value: 0x7f080026
+			public const int abc_action_bar_subtitle_bottom_margin_material = 2131230758;
 			
-			// aapt resource value: 0x7f090027
-			public const int abc_action_bar_subtitle_top_margin_material = 2131296295;
+			// aapt resource value: 0x7f080027
+			public const int abc_action_bar_subtitle_top_margin_material = 2131230759;
 			
-			// aapt resource value: 0x7f090028
-			public const int abc_action_button_min_height_material = 2131296296;
+			// aapt resource value: 0x7f080028
+			public const int abc_action_button_min_height_material = 2131230760;
 			
-			// aapt resource value: 0x7f090029
-			public const int abc_action_button_min_width_material = 2131296297;
+			// aapt resource value: 0x7f080029
+			public const int abc_action_button_min_width_material = 2131230761;
 			
-			// aapt resource value: 0x7f09002a
-			public const int abc_action_button_min_width_overflow_material = 2131296298;
+			// aapt resource value: 0x7f08002a
+			public const int abc_action_button_min_width_overflow_material = 2131230762;
 			
-			// aapt resource value: 0x7f09000f
-			public const int abc_alert_dialog_button_bar_height = 2131296271;
+			// aapt resource value: 0x7f08000f
+			public const int abc_alert_dialog_button_bar_height = 2131230735;
 			
-			// aapt resource value: 0x7f09002b
-			public const int abc_button_inset_horizontal_material = 2131296299;
+			// aapt resource value: 0x7f08002b
+			public const int abc_button_inset_horizontal_material = 2131230763;
 			
-			// aapt resource value: 0x7f09002c
-			public const int abc_button_inset_vertical_material = 2131296300;
+			// aapt resource value: 0x7f08002c
+			public const int abc_button_inset_vertical_material = 2131230764;
 			
-			// aapt resource value: 0x7f09002d
-			public const int abc_button_padding_horizontal_material = 2131296301;
+			// aapt resource value: 0x7f08002d
+			public const int abc_button_padding_horizontal_material = 2131230765;
 			
-			// aapt resource value: 0x7f09002e
-			public const int abc_button_padding_vertical_material = 2131296302;
+			// aapt resource value: 0x7f08002e
+			public const int abc_button_padding_vertical_material = 2131230766;
 			
-			// aapt resource value: 0x7f09002f
-			public const int abc_cascading_menus_min_smallest_width = 2131296303;
+			// aapt resource value: 0x7f08002f
+			public const int abc_cascading_menus_min_smallest_width = 2131230767;
 			
-			// aapt resource value: 0x7f090014
-			public const int abc_config_prefDialogWidth = 2131296276;
+			// aapt resource value: 0x7f080014
+			public const int abc_config_prefDialogWidth = 2131230740;
 			
-			// aapt resource value: 0x7f090030
-			public const int abc_control_corner_material = 2131296304;
+			// aapt resource value: 0x7f080030
+			public const int abc_control_corner_material = 2131230768;
 			
-			// aapt resource value: 0x7f090031
-			public const int abc_control_inset_material = 2131296305;
+			// aapt resource value: 0x7f080031
+			public const int abc_control_inset_material = 2131230769;
 			
-			// aapt resource value: 0x7f090032
-			public const int abc_control_padding_material = 2131296306;
+			// aapt resource value: 0x7f080032
+			public const int abc_control_padding_material = 2131230770;
 			
-			// aapt resource value: 0x7f090015
-			public const int abc_dialog_fixed_height_major = 2131296277;
+			// aapt resource value: 0x7f080015
+			public const int abc_dialog_fixed_height_major = 2131230741;
 			
-			// aapt resource value: 0x7f090016
-			public const int abc_dialog_fixed_height_minor = 2131296278;
+			// aapt resource value: 0x7f080016
+			public const int abc_dialog_fixed_height_minor = 2131230742;
 			
-			// aapt resource value: 0x7f090017
-			public const int abc_dialog_fixed_width_major = 2131296279;
+			// aapt resource value: 0x7f080017
+			public const int abc_dialog_fixed_width_major = 2131230743;
 			
-			// aapt resource value: 0x7f090018
-			public const int abc_dialog_fixed_width_minor = 2131296280;
+			// aapt resource value: 0x7f080018
+			public const int abc_dialog_fixed_width_minor = 2131230744;
 			
-			// aapt resource value: 0x7f090033
-			public const int abc_dialog_list_padding_bottom_no_buttons = 2131296307;
+			// aapt resource value: 0x7f080033
+			public const int abc_dialog_list_padding_bottom_no_buttons = 2131230771;
 			
-			// aapt resource value: 0x7f090034
-			public const int abc_dialog_list_padding_top_no_title = 2131296308;
+			// aapt resource value: 0x7f080034
+			public const int abc_dialog_list_padding_top_no_title = 2131230772;
 			
-			// aapt resource value: 0x7f090019
-			public const int abc_dialog_min_width_major = 2131296281;
+			// aapt resource value: 0x7f080019
+			public const int abc_dialog_min_width_major = 2131230745;
 			
-			// aapt resource value: 0x7f09001a
-			public const int abc_dialog_min_width_minor = 2131296282;
+			// aapt resource value: 0x7f08001a
+			public const int abc_dialog_min_width_minor = 2131230746;
 			
-			// aapt resource value: 0x7f090035
-			public const int abc_dialog_padding_material = 2131296309;
+			// aapt resource value: 0x7f080035
+			public const int abc_dialog_padding_material = 2131230773;
 			
-			// aapt resource value: 0x7f090036
-			public const int abc_dialog_padding_top_material = 2131296310;
+			// aapt resource value: 0x7f080036
+			public const int abc_dialog_padding_top_material = 2131230774;
 			
-			// aapt resource value: 0x7f090037
-			public const int abc_dialog_title_divider_material = 2131296311;
+			// aapt resource value: 0x7f080037
+			public const int abc_dialog_title_divider_material = 2131230775;
 			
-			// aapt resource value: 0x7f090038
-			public const int abc_disabled_alpha_material_dark = 2131296312;
+			// aapt resource value: 0x7f080038
+			public const int abc_disabled_alpha_material_dark = 2131230776;
 			
-			// aapt resource value: 0x7f090039
-			public const int abc_disabled_alpha_material_light = 2131296313;
+			// aapt resource value: 0x7f080039
+			public const int abc_disabled_alpha_material_light = 2131230777;
 			
-			// aapt resource value: 0x7f09003a
-			public const int abc_dropdownitem_icon_width = 2131296314;
+			// aapt resource value: 0x7f08003a
+			public const int abc_dropdownitem_icon_width = 2131230778;
 			
-			// aapt resource value: 0x7f09003b
-			public const int abc_dropdownitem_text_padding_left = 2131296315;
+			// aapt resource value: 0x7f08003b
+			public const int abc_dropdownitem_text_padding_left = 2131230779;
 			
-			// aapt resource value: 0x7f09003c
-			public const int abc_dropdownitem_text_padding_right = 2131296316;
+			// aapt resource value: 0x7f08003c
+			public const int abc_dropdownitem_text_padding_right = 2131230780;
 			
-			// aapt resource value: 0x7f09003d
-			public const int abc_edit_text_inset_bottom_material = 2131296317;
+			// aapt resource value: 0x7f08003d
+			public const int abc_edit_text_inset_bottom_material = 2131230781;
 			
-			// aapt resource value: 0x7f09003e
-			public const int abc_edit_text_inset_horizontal_material = 2131296318;
+			// aapt resource value: 0x7f08003e
+			public const int abc_edit_text_inset_horizontal_material = 2131230782;
 			
-			// aapt resource value: 0x7f09003f
-			public const int abc_edit_text_inset_top_material = 2131296319;
+			// aapt resource value: 0x7f08003f
+			public const int abc_edit_text_inset_top_material = 2131230783;
 			
-			// aapt resource value: 0x7f090040
-			public const int abc_floating_window_z = 2131296320;
+			// aapt resource value: 0x7f080040
+			public const int abc_floating_window_z = 2131230784;
 			
-			// aapt resource value: 0x7f090041
-			public const int abc_list_item_padding_horizontal_material = 2131296321;
+			// aapt resource value: 0x7f080041
+			public const int abc_list_item_padding_horizontal_material = 2131230785;
 			
-			// aapt resource value: 0x7f090042
-			public const int abc_panel_menu_list_width = 2131296322;
+			// aapt resource value: 0x7f080042
+			public const int abc_panel_menu_list_width = 2131230786;
 			
-			// aapt resource value: 0x7f090043
-			public const int abc_progress_bar_height_material = 2131296323;
+			// aapt resource value: 0x7f080043
+			public const int abc_progress_bar_height_material = 2131230787;
 			
-			// aapt resource value: 0x7f090044
-			public const int abc_search_view_preferred_height = 2131296324;
+			// aapt resource value: 0x7f080044
+			public const int abc_search_view_preferred_height = 2131230788;
 			
-			// aapt resource value: 0x7f090045
-			public const int abc_search_view_preferred_width = 2131296325;
+			// aapt resource value: 0x7f080045
+			public const int abc_search_view_preferred_width = 2131230789;
 			
-			// aapt resource value: 0x7f090046
-			public const int abc_seekbar_track_background_height_material = 2131296326;
+			// aapt resource value: 0x7f080046
+			public const int abc_seekbar_track_background_height_material = 2131230790;
 			
-			// aapt resource value: 0x7f090047
-			public const int abc_seekbar_track_progress_height_material = 2131296327;
+			// aapt resource value: 0x7f080047
+			public const int abc_seekbar_track_progress_height_material = 2131230791;
 			
-			// aapt resource value: 0x7f090048
-			public const int abc_select_dialog_padding_start_material = 2131296328;
+			// aapt resource value: 0x7f080048
+			public const int abc_select_dialog_padding_start_material = 2131230792;
 			
-			// aapt resource value: 0x7f09001f
-			public const int abc_switch_padding = 2131296287;
+			// aapt resource value: 0x7f08001f
+			public const int abc_switch_padding = 2131230751;
 			
-			// aapt resource value: 0x7f090049
-			public const int abc_text_size_body_1_material = 2131296329;
+			// aapt resource value: 0x7f080049
+			public const int abc_text_size_body_1_material = 2131230793;
 			
-			// aapt resource value: 0x7f09004a
-			public const int abc_text_size_body_2_material = 2131296330;
+			// aapt resource value: 0x7f08004a
+			public const int abc_text_size_body_2_material = 2131230794;
 			
-			// aapt resource value: 0x7f09004b
-			public const int abc_text_size_button_material = 2131296331;
+			// aapt resource value: 0x7f08004b
+			public const int abc_text_size_button_material = 2131230795;
 			
-			// aapt resource value: 0x7f09004c
-			public const int abc_text_size_caption_material = 2131296332;
+			// aapt resource value: 0x7f08004c
+			public const int abc_text_size_caption_material = 2131230796;
 			
-			// aapt resource value: 0x7f09004d
-			public const int abc_text_size_display_1_material = 2131296333;
+			// aapt resource value: 0x7f08004d
+			public const int abc_text_size_display_1_material = 2131230797;
 			
-			// aapt resource value: 0x7f09004e
-			public const int abc_text_size_display_2_material = 2131296334;
+			// aapt resource value: 0x7f08004e
+			public const int abc_text_size_display_2_material = 2131230798;
 			
-			// aapt resource value: 0x7f09004f
-			public const int abc_text_size_display_3_material = 2131296335;
+			// aapt resource value: 0x7f08004f
+			public const int abc_text_size_display_3_material = 2131230799;
 			
-			// aapt resource value: 0x7f090050
-			public const int abc_text_size_display_4_material = 2131296336;
+			// aapt resource value: 0x7f080050
+			public const int abc_text_size_display_4_material = 2131230800;
 			
-			// aapt resource value: 0x7f090051
-			public const int abc_text_size_headline_material = 2131296337;
+			// aapt resource value: 0x7f080051
+			public const int abc_text_size_headline_material = 2131230801;
 			
-			// aapt resource value: 0x7f090052
-			public const int abc_text_size_large_material = 2131296338;
+			// aapt resource value: 0x7f080052
+			public const int abc_text_size_large_material = 2131230802;
 			
-			// aapt resource value: 0x7f090053
-			public const int abc_text_size_medium_material = 2131296339;
+			// aapt resource value: 0x7f080053
+			public const int abc_text_size_medium_material = 2131230803;
 			
-			// aapt resource value: 0x7f090054
-			public const int abc_text_size_menu_header_material = 2131296340;
+			// aapt resource value: 0x7f080054
+			public const int abc_text_size_menu_header_material = 2131230804;
 			
-			// aapt resource value: 0x7f090055
-			public const int abc_text_size_menu_material = 2131296341;
+			// aapt resource value: 0x7f080055
+			public const int abc_text_size_menu_material = 2131230805;
 			
-			// aapt resource value: 0x7f090056
-			public const int abc_text_size_small_material = 2131296342;
+			// aapt resource value: 0x7f080056
+			public const int abc_text_size_small_material = 2131230806;
 			
-			// aapt resource value: 0x7f090057
-			public const int abc_text_size_subhead_material = 2131296343;
+			// aapt resource value: 0x7f080057
+			public const int abc_text_size_subhead_material = 2131230807;
 			
-			// aapt resource value: 0x7f090012
-			public const int abc_text_size_subtitle_material_toolbar = 2131296274;
+			// aapt resource value: 0x7f080012
+			public const int abc_text_size_subtitle_material_toolbar = 2131230738;
 			
-			// aapt resource value: 0x7f090058
-			public const int abc_text_size_title_material = 2131296344;
+			// aapt resource value: 0x7f080058
+			public const int abc_text_size_title_material = 2131230808;
 			
-			// aapt resource value: 0x7f090013
-			public const int abc_text_size_title_material_toolbar = 2131296275;
+			// aapt resource value: 0x7f080013
+			public const int abc_text_size_title_material_toolbar = 2131230739;
 			
-			// aapt resource value: 0x7f09000c
-			public const int cardview_compat_inset_shadow = 2131296268;
+			// aapt resource value: 0x7f08000c
+			public const int cardview_compat_inset_shadow = 2131230732;
 			
-			// aapt resource value: 0x7f09000d
-			public const int cardview_default_elevation = 2131296269;
+			// aapt resource value: 0x7f08000d
+			public const int cardview_default_elevation = 2131230733;
 			
-			// aapt resource value: 0x7f09000e
-			public const int cardview_default_radius = 2131296270;
+			// aapt resource value: 0x7f08000e
+			public const int cardview_default_radius = 2131230734;
 			
-			// aapt resource value: 0x7f090094
-			public const int compat_button_inset_horizontal_material = 2131296404;
+			// aapt resource value: 0x7f080094
+			public const int compat_button_inset_horizontal_material = 2131230868;
 			
-			// aapt resource value: 0x7f090095
-			public const int compat_button_inset_vertical_material = 2131296405;
+			// aapt resource value: 0x7f080095
+			public const int compat_button_inset_vertical_material = 2131230869;
 			
-			// aapt resource value: 0x7f090096
-			public const int compat_button_padding_horizontal_material = 2131296406;
+			// aapt resource value: 0x7f080096
+			public const int compat_button_padding_horizontal_material = 2131230870;
 			
-			// aapt resource value: 0x7f090097
-			public const int compat_button_padding_vertical_material = 2131296407;
+			// aapt resource value: 0x7f080097
+			public const int compat_button_padding_vertical_material = 2131230871;
 			
-			// aapt resource value: 0x7f090098
-			public const int compat_control_corner_material = 2131296408;
+			// aapt resource value: 0x7f080098
+			public const int compat_control_corner_material = 2131230872;
 			
-			// aapt resource value: 0x7f090072
-			public const int design_appbar_elevation = 2131296370;
+			// aapt resource value: 0x7f080072
+			public const int design_appbar_elevation = 2131230834;
 			
-			// aapt resource value: 0x7f090073
-			public const int design_bottom_navigation_active_item_max_width = 2131296371;
+			// aapt resource value: 0x7f080073
+			public const int design_bottom_navigation_active_item_max_width = 2131230835;
 			
-			// aapt resource value: 0x7f090074
-			public const int design_bottom_navigation_active_text_size = 2131296372;
+			// aapt resource value: 0x7f080074
+			public const int design_bottom_navigation_active_text_size = 2131230836;
 			
-			// aapt resource value: 0x7f090075
-			public const int design_bottom_navigation_elevation = 2131296373;
+			// aapt resource value: 0x7f080075
+			public const int design_bottom_navigation_elevation = 2131230837;
 			
-			// aapt resource value: 0x7f090076
-			public const int design_bottom_navigation_height = 2131296374;
+			// aapt resource value: 0x7f080076
+			public const int design_bottom_navigation_height = 2131230838;
 			
-			// aapt resource value: 0x7f090077
-			public const int design_bottom_navigation_item_max_width = 2131296375;
+			// aapt resource value: 0x7f080077
+			public const int design_bottom_navigation_item_max_width = 2131230839;
 			
-			// aapt resource value: 0x7f090078
-			public const int design_bottom_navigation_item_min_width = 2131296376;
+			// aapt resource value: 0x7f080078
+			public const int design_bottom_navigation_item_min_width = 2131230840;
 			
-			// aapt resource value: 0x7f090079
-			public const int design_bottom_navigation_margin = 2131296377;
+			// aapt resource value: 0x7f080079
+			public const int design_bottom_navigation_margin = 2131230841;
 			
-			// aapt resource value: 0x7f09007a
-			public const int design_bottom_navigation_shadow_height = 2131296378;
+			// aapt resource value: 0x7f08007a
+			public const int design_bottom_navigation_shadow_height = 2131230842;
 			
-			// aapt resource value: 0x7f09007b
-			public const int design_bottom_navigation_text_size = 2131296379;
+			// aapt resource value: 0x7f08007b
+			public const int design_bottom_navigation_text_size = 2131230843;
 			
-			// aapt resource value: 0x7f09007c
-			public const int design_bottom_sheet_modal_elevation = 2131296380;
+			// aapt resource value: 0x7f08007c
+			public const int design_bottom_sheet_modal_elevation = 2131230844;
 			
-			// aapt resource value: 0x7f09007d
-			public const int design_bottom_sheet_peek_height_min = 2131296381;
+			// aapt resource value: 0x7f08007d
+			public const int design_bottom_sheet_peek_height_min = 2131230845;
 			
-			// aapt resource value: 0x7f09007e
-			public const int design_fab_border_width = 2131296382;
+			// aapt resource value: 0x7f08007e
+			public const int design_fab_border_width = 2131230846;
 			
-			// aapt resource value: 0x7f09007f
-			public const int design_fab_elevation = 2131296383;
+			// aapt resource value: 0x7f08007f
+			public const int design_fab_elevation = 2131230847;
 			
-			// aapt resource value: 0x7f090080
-			public const int design_fab_image_size = 2131296384;
+			// aapt resource value: 0x7f080080
+			public const int design_fab_image_size = 2131230848;
 			
-			// aapt resource value: 0x7f090081
-			public const int design_fab_size_mini = 2131296385;
+			// aapt resource value: 0x7f080081
+			public const int design_fab_size_mini = 2131230849;
 			
-			// aapt resource value: 0x7f090082
-			public const int design_fab_size_normal = 2131296386;
+			// aapt resource value: 0x7f080082
+			public const int design_fab_size_normal = 2131230850;
 			
-			// aapt resource value: 0x7f090083
-			public const int design_fab_translation_z_pressed = 2131296387;
+			// aapt resource value: 0x7f080083
+			public const int design_fab_translation_z_pressed = 2131230851;
 			
-			// aapt resource value: 0x7f090084
-			public const int design_navigation_elevation = 2131296388;
+			// aapt resource value: 0x7f080084
+			public const int design_navigation_elevation = 2131230852;
 			
-			// aapt resource value: 0x7f090085
-			public const int design_navigation_icon_padding = 2131296389;
+			// aapt resource value: 0x7f080085
+			public const int design_navigation_icon_padding = 2131230853;
 			
-			// aapt resource value: 0x7f090086
-			public const int design_navigation_icon_size = 2131296390;
+			// aapt resource value: 0x7f080086
+			public const int design_navigation_icon_size = 2131230854;
 			
-			// aapt resource value: 0x7f09006a
-			public const int design_navigation_max_width = 2131296362;
+			// aapt resource value: 0x7f08006a
+			public const int design_navigation_max_width = 2131230826;
 			
-			// aapt resource value: 0x7f090087
-			public const int design_navigation_padding_bottom = 2131296391;
+			// aapt resource value: 0x7f080087
+			public const int design_navigation_padding_bottom = 2131230855;
 			
-			// aapt resource value: 0x7f090088
-			public const int design_navigation_separator_vertical_padding = 2131296392;
+			// aapt resource value: 0x7f080088
+			public const int design_navigation_separator_vertical_padding = 2131230856;
 			
-			// aapt resource value: 0x7f09006b
-			public const int design_snackbar_action_inline_max_width = 2131296363;
+			// aapt resource value: 0x7f08006b
+			public const int design_snackbar_action_inline_max_width = 2131230827;
 			
-			// aapt resource value: 0x7f09006c
-			public const int design_snackbar_background_corner_radius = 2131296364;
+			// aapt resource value: 0x7f08006c
+			public const int design_snackbar_background_corner_radius = 2131230828;
 			
-			// aapt resource value: 0x7f090089
-			public const int design_snackbar_elevation = 2131296393;
+			// aapt resource value: 0x7f080089
+			public const int design_snackbar_elevation = 2131230857;
 			
-			// aapt resource value: 0x7f09006d
-			public const int design_snackbar_extra_spacing_horizontal = 2131296365;
+			// aapt resource value: 0x7f08006d
+			public const int design_snackbar_extra_spacing_horizontal = 2131230829;
 			
-			// aapt resource value: 0x7f09006e
-			public const int design_snackbar_max_width = 2131296366;
+			// aapt resource value: 0x7f08006e
+			public const int design_snackbar_max_width = 2131230830;
 			
-			// aapt resource value: 0x7f09006f
-			public const int design_snackbar_min_width = 2131296367;
+			// aapt resource value: 0x7f08006f
+			public const int design_snackbar_min_width = 2131230831;
 			
-			// aapt resource value: 0x7f09008a
-			public const int design_snackbar_padding_horizontal = 2131296394;
+			// aapt resource value: 0x7f08008a
+			public const int design_snackbar_padding_horizontal = 2131230858;
 			
-			// aapt resource value: 0x7f09008b
-			public const int design_snackbar_padding_vertical = 2131296395;
+			// aapt resource value: 0x7f08008b
+			public const int design_snackbar_padding_vertical = 2131230859;
 			
-			// aapt resource value: 0x7f090070
-			public const int design_snackbar_padding_vertical_2lines = 2131296368;
+			// aapt resource value: 0x7f080070
+			public const int design_snackbar_padding_vertical_2lines = 2131230832;
 			
-			// aapt resource value: 0x7f09008c
-			public const int design_snackbar_text_size = 2131296396;
+			// aapt resource value: 0x7f08008c
+			public const int design_snackbar_text_size = 2131230860;
 			
-			// aapt resource value: 0x7f09008d
-			public const int design_tab_max_width = 2131296397;
+			// aapt resource value: 0x7f08008d
+			public const int design_tab_max_width = 2131230861;
 			
-			// aapt resource value: 0x7f090071
-			public const int design_tab_scrollable_min_width = 2131296369;
+			// aapt resource value: 0x7f080071
+			public const int design_tab_scrollable_min_width = 2131230833;
 			
-			// aapt resource value: 0x7f09008e
-			public const int design_tab_text_size = 2131296398;
+			// aapt resource value: 0x7f08008e
+			public const int design_tab_text_size = 2131230862;
 			
-			// aapt resource value: 0x7f09008f
-			public const int design_tab_text_size_2line = 2131296399;
+			// aapt resource value: 0x7f08008f
+			public const int design_tab_text_size_2line = 2131230863;
 			
-			// aapt resource value: 0x7f090059
-			public const int disabled_alpha_material_dark = 2131296345;
+			// aapt resource value: 0x7f080059
+			public const int disabled_alpha_material_dark = 2131230809;
 			
-			// aapt resource value: 0x7f09005a
-			public const int disabled_alpha_material_light = 2131296346;
+			// aapt resource value: 0x7f08005a
+			public const int disabled_alpha_material_light = 2131230810;
 			
-			// aapt resource value: 0x7f090000
-			public const int fastscroll_default_thickness = 2131296256;
+			// aapt resource value: 0x7f080000
+			public const int fastscroll_default_thickness = 2131230720;
 			
-			// aapt resource value: 0x7f090001
-			public const int fastscroll_margin = 2131296257;
+			// aapt resource value: 0x7f080001
+			public const int fastscroll_margin = 2131230721;
 			
-			// aapt resource value: 0x7f090002
-			public const int fastscroll_minimum_range = 2131296258;
+			// aapt resource value: 0x7f080002
+			public const int fastscroll_minimum_range = 2131230722;
 			
-			// aapt resource value: 0x7f09005b
-			public const int highlight_alpha_material_colored = 2131296347;
+			// aapt resource value: 0x7f08005b
+			public const int highlight_alpha_material_colored = 2131230811;
 			
-			// aapt resource value: 0x7f09005c
-			public const int highlight_alpha_material_dark = 2131296348;
+			// aapt resource value: 0x7f08005c
+			public const int highlight_alpha_material_dark = 2131230812;
 			
-			// aapt resource value: 0x7f09005d
-			public const int highlight_alpha_material_light = 2131296349;
+			// aapt resource value: 0x7f08005d
+			public const int highlight_alpha_material_light = 2131230813;
 			
-			// aapt resource value: 0x7f09005e
-			public const int hint_alpha_material_dark = 2131296350;
+			// aapt resource value: 0x7f08005e
+			public const int hint_alpha_material_dark = 2131230814;
 			
-			// aapt resource value: 0x7f09005f
-			public const int hint_alpha_material_light = 2131296351;
+			// aapt resource value: 0x7f08005f
+			public const int hint_alpha_material_light = 2131230815;
 			
-			// aapt resource value: 0x7f090060
-			public const int hint_pressed_alpha_material_dark = 2131296352;
+			// aapt resource value: 0x7f080060
+			public const int hint_pressed_alpha_material_dark = 2131230816;
 			
-			// aapt resource value: 0x7f090061
-			public const int hint_pressed_alpha_material_light = 2131296353;
+			// aapt resource value: 0x7f080061
+			public const int hint_pressed_alpha_material_light = 2131230817;
 			
-			// aapt resource value: 0x7f090003
-			public const int item_touch_helper_max_drag_scroll_per_frame = 2131296259;
+			// aapt resource value: 0x7f080003
+			public const int item_touch_helper_max_drag_scroll_per_frame = 2131230723;
 			
-			// aapt resource value: 0x7f090004
-			public const int item_touch_helper_swipe_escape_max_velocity = 2131296260;
+			// aapt resource value: 0x7f080004
+			public const int item_touch_helper_swipe_escape_max_velocity = 2131230724;
 			
-			// aapt resource value: 0x7f090005
-			public const int item_touch_helper_swipe_escape_velocity = 2131296261;
+			// aapt resource value: 0x7f080005
+			public const int item_touch_helper_swipe_escape_velocity = 2131230725;
 			
-			// aapt resource value: 0x7f090006
-			public const int mr_controller_volume_group_list_item_height = 2131296262;
+			// aapt resource value: 0x7f080006
+			public const int mr_controller_volume_group_list_item_height = 2131230726;
 			
-			// aapt resource value: 0x7f090007
-			public const int mr_controller_volume_group_list_item_icon_size = 2131296263;
+			// aapt resource value: 0x7f080007
+			public const int mr_controller_volume_group_list_item_icon_size = 2131230727;
 			
-			// aapt resource value: 0x7f090008
-			public const int mr_controller_volume_group_list_max_height = 2131296264;
+			// aapt resource value: 0x7f080008
+			public const int mr_controller_volume_group_list_max_height = 2131230728;
 			
-			// aapt resource value: 0x7f09000b
-			public const int mr_controller_volume_group_list_padding_top = 2131296267;
+			// aapt resource value: 0x7f08000b
+			public const int mr_controller_volume_group_list_padding_top = 2131230731;
 			
-			// aapt resource value: 0x7f090009
-			public const int mr_dialog_fixed_width_major = 2131296265;
+			// aapt resource value: 0x7f080009
+			public const int mr_dialog_fixed_width_major = 2131230729;
 			
-			// aapt resource value: 0x7f09000a
-			public const int mr_dialog_fixed_width_minor = 2131296266;
+			// aapt resource value: 0x7f08000a
+			public const int mr_dialog_fixed_width_minor = 2131230730;
 			
-			// aapt resource value: 0x7f090099
-			public const int notification_action_icon_size = 2131296409;
+			// aapt resource value: 0x7f080099
+			public const int notification_action_icon_size = 2131230873;
 			
-			// aapt resource value: 0x7f09009a
-			public const int notification_action_text_size = 2131296410;
+			// aapt resource value: 0x7f08009a
+			public const int notification_action_text_size = 2131230874;
 			
-			// aapt resource value: 0x7f09009b
-			public const int notification_big_circle_margin = 2131296411;
+			// aapt resource value: 0x7f08009b
+			public const int notification_big_circle_margin = 2131230875;
 			
-			// aapt resource value: 0x7f090091
-			public const int notification_content_margin_start = 2131296401;
+			// aapt resource value: 0x7f080091
+			public const int notification_content_margin_start = 2131230865;
 			
-			// aapt resource value: 0x7f09009c
-			public const int notification_large_icon_height = 2131296412;
+			// aapt resource value: 0x7f08009c
+			public const int notification_large_icon_height = 2131230876;
 			
-			// aapt resource value: 0x7f09009d
-			public const int notification_large_icon_width = 2131296413;
+			// aapt resource value: 0x7f08009d
+			public const int notification_large_icon_width = 2131230877;
 			
-			// aapt resource value: 0x7f090092
-			public const int notification_main_column_padding_top = 2131296402;
+			// aapt resource value: 0x7f080092
+			public const int notification_main_column_padding_top = 2131230866;
 			
-			// aapt resource value: 0x7f090093
-			public const int notification_media_narrow_margin = 2131296403;
+			// aapt resource value: 0x7f080093
+			public const int notification_media_narrow_margin = 2131230867;
 			
-			// aapt resource value: 0x7f09009e
-			public const int notification_right_icon_size = 2131296414;
+			// aapt resource value: 0x7f08009e
+			public const int notification_right_icon_size = 2131230878;
 			
-			// aapt resource value: 0x7f090090
-			public const int notification_right_side_padding_top = 2131296400;
+			// aapt resource value: 0x7f080090
+			public const int notification_right_side_padding_top = 2131230864;
 			
-			// aapt resource value: 0x7f09009f
-			public const int notification_small_icon_background_padding = 2131296415;
+			// aapt resource value: 0x7f08009f
+			public const int notification_small_icon_background_padding = 2131230879;
 			
-			// aapt resource value: 0x7f0900a0
-			public const int notification_small_icon_size_as_large = 2131296416;
+			// aapt resource value: 0x7f0800a0
+			public const int notification_small_icon_size_as_large = 2131230880;
 			
-			// aapt resource value: 0x7f0900a1
-			public const int notification_subtext_size = 2131296417;
+			// aapt resource value: 0x7f0800a1
+			public const int notification_subtext_size = 2131230881;
 			
-			// aapt resource value: 0x7f0900a2
-			public const int notification_top_pad = 2131296418;
+			// aapt resource value: 0x7f0800a2
+			public const int notification_top_pad = 2131230882;
 			
-			// aapt resource value: 0x7f0900a3
-			public const int notification_top_pad_large_text = 2131296419;
+			// aapt resource value: 0x7f0800a3
+			public const int notification_top_pad_large_text = 2131230883;
 			
-			// aapt resource value: 0x7f090062
-			public const int tooltip_corner_radius = 2131296354;
+			// aapt resource value: 0x7f080062
+			public const int tooltip_corner_radius = 2131230818;
 			
-			// aapt resource value: 0x7f090063
-			public const int tooltip_horizontal_padding = 2131296355;
+			// aapt resource value: 0x7f080063
+			public const int tooltip_horizontal_padding = 2131230819;
 			
-			// aapt resource value: 0x7f090064
-			public const int tooltip_margin = 2131296356;
+			// aapt resource value: 0x7f080064
+			public const int tooltip_margin = 2131230820;
 			
-			// aapt resource value: 0x7f090065
-			public const int tooltip_precise_anchor_extra_offset = 2131296357;
+			// aapt resource value: 0x7f080065
+			public const int tooltip_precise_anchor_extra_offset = 2131230821;
 			
-			// aapt resource value: 0x7f090066
-			public const int tooltip_precise_anchor_threshold = 2131296358;
+			// aapt resource value: 0x7f080066
+			public const int tooltip_precise_anchor_threshold = 2131230822;
 			
-			// aapt resource value: 0x7f090067
-			public const int tooltip_vertical_padding = 2131296359;
+			// aapt resource value: 0x7f080067
+			public const int tooltip_vertical_padding = 2131230823;
 			
-			// aapt resource value: 0x7f090068
-			public const int tooltip_y_offset_non_touch = 2131296360;
+			// aapt resource value: 0x7f080068
+			public const int tooltip_y_offset_non_touch = 2131230824;
 			
-			// aapt resource value: 0x7f090069
-			public const int tooltip_y_offset_touch = 2131296361;
+			// aapt resource value: 0x7f080069
+			public const int tooltip_y_offset_touch = 2131230825;
 			
 			static Dimension()
 			{
@@ -4746,26 +2342,26 @@ namespace ResSched.Droid
 			// aapt resource value: 0x7f020053
 			public const int avd_hide_password = 2130837587;
 			
+			// aapt resource value: 0x7f020130
+			public const int avd_hide_password_1 = 2130837808;
+			
 			// aapt resource value: 0x7f020131
-			public const int avd_hide_password_1 = 2130837809;
+			public const int avd_hide_password_2 = 2130837809;
 			
 			// aapt resource value: 0x7f020132
-			public const int avd_hide_password_2 = 2130837810;
-			
-			// aapt resource value: 0x7f020133
-			public const int avd_hide_password_3 = 2130837811;
+			public const int avd_hide_password_3 = 2130837810;
 			
 			// aapt resource value: 0x7f020054
 			public const int avd_show_password = 2130837588;
 			
+			// aapt resource value: 0x7f020133
+			public const int avd_show_password_1 = 2130837811;
+			
 			// aapt resource value: 0x7f020134
-			public const int avd_show_password_1 = 2130837812;
+			public const int avd_show_password_2 = 2130837812;
 			
 			// aapt resource value: 0x7f020135
-			public const int avd_show_password_2 = 2130837813;
-			
-			// aapt resource value: 0x7f020136
-			public const int avd_show_password_3 = 2130837814;
+			public const int avd_show_password_3 = 2130837813;
 			
 			// aapt resource value: 0x7f020055
 			public const int design_bottom_navigation_item_background = 2130837589;
@@ -4786,646 +2382,643 @@ namespace ResSched.Droid
 			public const int design_snackbar_background = 2130837594;
 			
 			// aapt resource value: 0x7f02005b
-			public const int ic_arrow_back = 2130837595;
+			public const int ic_audiotrack_dark = 2130837595;
 			
 			// aapt resource value: 0x7f02005c
-			public const int ic_audiotrack_dark = 2130837596;
+			public const int ic_audiotrack_light = 2130837596;
 			
 			// aapt resource value: 0x7f02005d
-			public const int ic_audiotrack_light = 2130837597;
+			public const int ic_dialog_close_dark = 2130837597;
 			
 			// aapt resource value: 0x7f02005e
-			public const int ic_dialog_close_dark = 2130837598;
+			public const int ic_dialog_close_light = 2130837598;
 			
 			// aapt resource value: 0x7f02005f
-			public const int ic_dialog_close_light = 2130837599;
+			public const int ic_group_collapse_00 = 2130837599;
 			
 			// aapt resource value: 0x7f020060
-			public const int ic_group_collapse_00 = 2130837600;
+			public const int ic_group_collapse_01 = 2130837600;
 			
 			// aapt resource value: 0x7f020061
-			public const int ic_group_collapse_01 = 2130837601;
+			public const int ic_group_collapse_02 = 2130837601;
 			
 			// aapt resource value: 0x7f020062
-			public const int ic_group_collapse_02 = 2130837602;
+			public const int ic_group_collapse_03 = 2130837602;
 			
 			// aapt resource value: 0x7f020063
-			public const int ic_group_collapse_03 = 2130837603;
+			public const int ic_group_collapse_04 = 2130837603;
 			
 			// aapt resource value: 0x7f020064
-			public const int ic_group_collapse_04 = 2130837604;
+			public const int ic_group_collapse_05 = 2130837604;
 			
 			// aapt resource value: 0x7f020065
-			public const int ic_group_collapse_05 = 2130837605;
+			public const int ic_group_collapse_06 = 2130837605;
 			
 			// aapt resource value: 0x7f020066
-			public const int ic_group_collapse_06 = 2130837606;
+			public const int ic_group_collapse_07 = 2130837606;
 			
 			// aapt resource value: 0x7f020067
-			public const int ic_group_collapse_07 = 2130837607;
+			public const int ic_group_collapse_08 = 2130837607;
 			
 			// aapt resource value: 0x7f020068
-			public const int ic_group_collapse_08 = 2130837608;
+			public const int ic_group_collapse_09 = 2130837608;
 			
 			// aapt resource value: 0x7f020069
-			public const int ic_group_collapse_09 = 2130837609;
+			public const int ic_group_collapse_10 = 2130837609;
 			
 			// aapt resource value: 0x7f02006a
-			public const int ic_group_collapse_10 = 2130837610;
+			public const int ic_group_collapse_11 = 2130837610;
 			
 			// aapt resource value: 0x7f02006b
-			public const int ic_group_collapse_11 = 2130837611;
+			public const int ic_group_collapse_12 = 2130837611;
 			
 			// aapt resource value: 0x7f02006c
-			public const int ic_group_collapse_12 = 2130837612;
+			public const int ic_group_collapse_13 = 2130837612;
 			
 			// aapt resource value: 0x7f02006d
-			public const int ic_group_collapse_13 = 2130837613;
+			public const int ic_group_collapse_14 = 2130837613;
 			
 			// aapt resource value: 0x7f02006e
-			public const int ic_group_collapse_14 = 2130837614;
+			public const int ic_group_collapse_15 = 2130837614;
 			
 			// aapt resource value: 0x7f02006f
-			public const int ic_group_collapse_15 = 2130837615;
+			public const int ic_group_expand_00 = 2130837615;
 			
 			// aapt resource value: 0x7f020070
-			public const int ic_group_expand_00 = 2130837616;
+			public const int ic_group_expand_01 = 2130837616;
 			
 			// aapt resource value: 0x7f020071
-			public const int ic_group_expand_01 = 2130837617;
+			public const int ic_group_expand_02 = 2130837617;
 			
 			// aapt resource value: 0x7f020072
-			public const int ic_group_expand_02 = 2130837618;
+			public const int ic_group_expand_03 = 2130837618;
 			
 			// aapt resource value: 0x7f020073
-			public const int ic_group_expand_03 = 2130837619;
+			public const int ic_group_expand_04 = 2130837619;
 			
 			// aapt resource value: 0x7f020074
-			public const int ic_group_expand_04 = 2130837620;
+			public const int ic_group_expand_05 = 2130837620;
 			
 			// aapt resource value: 0x7f020075
-			public const int ic_group_expand_05 = 2130837621;
+			public const int ic_group_expand_06 = 2130837621;
 			
 			// aapt resource value: 0x7f020076
-			public const int ic_group_expand_06 = 2130837622;
+			public const int ic_group_expand_07 = 2130837622;
 			
 			// aapt resource value: 0x7f020077
-			public const int ic_group_expand_07 = 2130837623;
+			public const int ic_group_expand_08 = 2130837623;
 			
 			// aapt resource value: 0x7f020078
-			public const int ic_group_expand_08 = 2130837624;
+			public const int ic_group_expand_09 = 2130837624;
 			
 			// aapt resource value: 0x7f020079
-			public const int ic_group_expand_09 = 2130837625;
+			public const int ic_group_expand_10 = 2130837625;
 			
 			// aapt resource value: 0x7f02007a
-			public const int ic_group_expand_10 = 2130837626;
+			public const int ic_group_expand_11 = 2130837626;
 			
 			// aapt resource value: 0x7f02007b
-			public const int ic_group_expand_11 = 2130837627;
+			public const int ic_group_expand_12 = 2130837627;
 			
 			// aapt resource value: 0x7f02007c
-			public const int ic_group_expand_12 = 2130837628;
+			public const int ic_group_expand_13 = 2130837628;
 			
 			// aapt resource value: 0x7f02007d
-			public const int ic_group_expand_13 = 2130837629;
+			public const int ic_group_expand_14 = 2130837629;
 			
 			// aapt resource value: 0x7f02007e
-			public const int ic_group_expand_14 = 2130837630;
+			public const int ic_group_expand_15 = 2130837630;
 			
 			// aapt resource value: 0x7f02007f
-			public const int ic_group_expand_15 = 2130837631;
+			public const int ic_media_pause_dark = 2130837631;
 			
 			// aapt resource value: 0x7f020080
-			public const int ic_media_pause_dark = 2130837632;
+			public const int ic_media_pause_light = 2130837632;
 			
 			// aapt resource value: 0x7f020081
-			public const int ic_media_pause_light = 2130837633;
+			public const int ic_media_play_dark = 2130837633;
 			
 			// aapt resource value: 0x7f020082
-			public const int ic_media_play_dark = 2130837634;
+			public const int ic_media_play_light = 2130837634;
 			
 			// aapt resource value: 0x7f020083
-			public const int ic_media_play_light = 2130837635;
+			public const int ic_media_stop_dark = 2130837635;
 			
 			// aapt resource value: 0x7f020084
-			public const int ic_media_stop_dark = 2130837636;
+			public const int ic_media_stop_light = 2130837636;
 			
 			// aapt resource value: 0x7f020085
-			public const int ic_media_stop_light = 2130837637;
+			public const int ic_mr_button_connected_00_dark = 2130837637;
 			
 			// aapt resource value: 0x7f020086
-			public const int ic_mr_button_connected_00_dark = 2130837638;
+			public const int ic_mr_button_connected_00_light = 2130837638;
 			
 			// aapt resource value: 0x7f020087
-			public const int ic_mr_button_connected_00_light = 2130837639;
+			public const int ic_mr_button_connected_01_dark = 2130837639;
 			
 			// aapt resource value: 0x7f020088
-			public const int ic_mr_button_connected_01_dark = 2130837640;
+			public const int ic_mr_button_connected_01_light = 2130837640;
 			
 			// aapt resource value: 0x7f020089
-			public const int ic_mr_button_connected_01_light = 2130837641;
+			public const int ic_mr_button_connected_02_dark = 2130837641;
 			
 			// aapt resource value: 0x7f02008a
-			public const int ic_mr_button_connected_02_dark = 2130837642;
+			public const int ic_mr_button_connected_02_light = 2130837642;
 			
 			// aapt resource value: 0x7f02008b
-			public const int ic_mr_button_connected_02_light = 2130837643;
+			public const int ic_mr_button_connected_03_dark = 2130837643;
 			
 			// aapt resource value: 0x7f02008c
-			public const int ic_mr_button_connected_03_dark = 2130837644;
+			public const int ic_mr_button_connected_03_light = 2130837644;
 			
 			// aapt resource value: 0x7f02008d
-			public const int ic_mr_button_connected_03_light = 2130837645;
+			public const int ic_mr_button_connected_04_dark = 2130837645;
 			
 			// aapt resource value: 0x7f02008e
-			public const int ic_mr_button_connected_04_dark = 2130837646;
+			public const int ic_mr_button_connected_04_light = 2130837646;
 			
 			// aapt resource value: 0x7f02008f
-			public const int ic_mr_button_connected_04_light = 2130837647;
+			public const int ic_mr_button_connected_05_dark = 2130837647;
 			
 			// aapt resource value: 0x7f020090
-			public const int ic_mr_button_connected_05_dark = 2130837648;
+			public const int ic_mr_button_connected_05_light = 2130837648;
 			
 			// aapt resource value: 0x7f020091
-			public const int ic_mr_button_connected_05_light = 2130837649;
+			public const int ic_mr_button_connected_06_dark = 2130837649;
 			
 			// aapt resource value: 0x7f020092
-			public const int ic_mr_button_connected_06_dark = 2130837650;
+			public const int ic_mr_button_connected_06_light = 2130837650;
 			
 			// aapt resource value: 0x7f020093
-			public const int ic_mr_button_connected_06_light = 2130837651;
+			public const int ic_mr_button_connected_07_dark = 2130837651;
 			
 			// aapt resource value: 0x7f020094
-			public const int ic_mr_button_connected_07_dark = 2130837652;
+			public const int ic_mr_button_connected_07_light = 2130837652;
 			
 			// aapt resource value: 0x7f020095
-			public const int ic_mr_button_connected_07_light = 2130837653;
+			public const int ic_mr_button_connected_08_dark = 2130837653;
 			
 			// aapt resource value: 0x7f020096
-			public const int ic_mr_button_connected_08_dark = 2130837654;
+			public const int ic_mr_button_connected_08_light = 2130837654;
 			
 			// aapt resource value: 0x7f020097
-			public const int ic_mr_button_connected_08_light = 2130837655;
+			public const int ic_mr_button_connected_09_dark = 2130837655;
 			
 			// aapt resource value: 0x7f020098
-			public const int ic_mr_button_connected_09_dark = 2130837656;
+			public const int ic_mr_button_connected_09_light = 2130837656;
 			
 			// aapt resource value: 0x7f020099
-			public const int ic_mr_button_connected_09_light = 2130837657;
+			public const int ic_mr_button_connected_10_dark = 2130837657;
 			
 			// aapt resource value: 0x7f02009a
-			public const int ic_mr_button_connected_10_dark = 2130837658;
+			public const int ic_mr_button_connected_10_light = 2130837658;
 			
 			// aapt resource value: 0x7f02009b
-			public const int ic_mr_button_connected_10_light = 2130837659;
+			public const int ic_mr_button_connected_11_dark = 2130837659;
 			
 			// aapt resource value: 0x7f02009c
-			public const int ic_mr_button_connected_11_dark = 2130837660;
+			public const int ic_mr_button_connected_11_light = 2130837660;
 			
 			// aapt resource value: 0x7f02009d
-			public const int ic_mr_button_connected_11_light = 2130837661;
+			public const int ic_mr_button_connected_12_dark = 2130837661;
 			
 			// aapt resource value: 0x7f02009e
-			public const int ic_mr_button_connected_12_dark = 2130837662;
+			public const int ic_mr_button_connected_12_light = 2130837662;
 			
 			// aapt resource value: 0x7f02009f
-			public const int ic_mr_button_connected_12_light = 2130837663;
+			public const int ic_mr_button_connected_13_dark = 2130837663;
 			
 			// aapt resource value: 0x7f0200a0
-			public const int ic_mr_button_connected_13_dark = 2130837664;
+			public const int ic_mr_button_connected_13_light = 2130837664;
 			
 			// aapt resource value: 0x7f0200a1
-			public const int ic_mr_button_connected_13_light = 2130837665;
+			public const int ic_mr_button_connected_14_dark = 2130837665;
 			
 			// aapt resource value: 0x7f0200a2
-			public const int ic_mr_button_connected_14_dark = 2130837666;
+			public const int ic_mr_button_connected_14_light = 2130837666;
 			
 			// aapt resource value: 0x7f0200a3
-			public const int ic_mr_button_connected_14_light = 2130837667;
+			public const int ic_mr_button_connected_15_dark = 2130837667;
 			
 			// aapt resource value: 0x7f0200a4
-			public const int ic_mr_button_connected_15_dark = 2130837668;
+			public const int ic_mr_button_connected_15_light = 2130837668;
 			
 			// aapt resource value: 0x7f0200a5
-			public const int ic_mr_button_connected_15_light = 2130837669;
+			public const int ic_mr_button_connected_16_dark = 2130837669;
 			
 			// aapt resource value: 0x7f0200a6
-			public const int ic_mr_button_connected_16_dark = 2130837670;
+			public const int ic_mr_button_connected_16_light = 2130837670;
 			
 			// aapt resource value: 0x7f0200a7
-			public const int ic_mr_button_connected_16_light = 2130837671;
+			public const int ic_mr_button_connected_17_dark = 2130837671;
 			
 			// aapt resource value: 0x7f0200a8
-			public const int ic_mr_button_connected_17_dark = 2130837672;
+			public const int ic_mr_button_connected_17_light = 2130837672;
 			
 			// aapt resource value: 0x7f0200a9
-			public const int ic_mr_button_connected_17_light = 2130837673;
+			public const int ic_mr_button_connected_18_dark = 2130837673;
 			
 			// aapt resource value: 0x7f0200aa
-			public const int ic_mr_button_connected_18_dark = 2130837674;
+			public const int ic_mr_button_connected_18_light = 2130837674;
 			
 			// aapt resource value: 0x7f0200ab
-			public const int ic_mr_button_connected_18_light = 2130837675;
+			public const int ic_mr_button_connected_19_dark = 2130837675;
 			
 			// aapt resource value: 0x7f0200ac
-			public const int ic_mr_button_connected_19_dark = 2130837676;
+			public const int ic_mr_button_connected_19_light = 2130837676;
 			
 			// aapt resource value: 0x7f0200ad
-			public const int ic_mr_button_connected_19_light = 2130837677;
+			public const int ic_mr_button_connected_20_dark = 2130837677;
 			
 			// aapt resource value: 0x7f0200ae
-			public const int ic_mr_button_connected_20_dark = 2130837678;
+			public const int ic_mr_button_connected_20_light = 2130837678;
 			
 			// aapt resource value: 0x7f0200af
-			public const int ic_mr_button_connected_20_light = 2130837679;
+			public const int ic_mr_button_connected_21_dark = 2130837679;
 			
 			// aapt resource value: 0x7f0200b0
-			public const int ic_mr_button_connected_21_dark = 2130837680;
+			public const int ic_mr_button_connected_21_light = 2130837680;
 			
 			// aapt resource value: 0x7f0200b1
-			public const int ic_mr_button_connected_21_light = 2130837681;
+			public const int ic_mr_button_connected_22_dark = 2130837681;
 			
 			// aapt resource value: 0x7f0200b2
-			public const int ic_mr_button_connected_22_dark = 2130837682;
+			public const int ic_mr_button_connected_22_light = 2130837682;
 			
 			// aapt resource value: 0x7f0200b3
-			public const int ic_mr_button_connected_22_light = 2130837683;
+			public const int ic_mr_button_connected_23_dark = 2130837683;
 			
 			// aapt resource value: 0x7f0200b4
-			public const int ic_mr_button_connected_23_dark = 2130837684;
+			public const int ic_mr_button_connected_23_light = 2130837684;
 			
 			// aapt resource value: 0x7f0200b5
-			public const int ic_mr_button_connected_23_light = 2130837685;
+			public const int ic_mr_button_connected_24_dark = 2130837685;
 			
 			// aapt resource value: 0x7f0200b6
-			public const int ic_mr_button_connected_24_dark = 2130837686;
+			public const int ic_mr_button_connected_24_light = 2130837686;
 			
 			// aapt resource value: 0x7f0200b7
-			public const int ic_mr_button_connected_24_light = 2130837687;
+			public const int ic_mr_button_connected_25_dark = 2130837687;
 			
 			// aapt resource value: 0x7f0200b8
-			public const int ic_mr_button_connected_25_dark = 2130837688;
+			public const int ic_mr_button_connected_25_light = 2130837688;
 			
 			// aapt resource value: 0x7f0200b9
-			public const int ic_mr_button_connected_25_light = 2130837689;
+			public const int ic_mr_button_connected_26_dark = 2130837689;
 			
 			// aapt resource value: 0x7f0200ba
-			public const int ic_mr_button_connected_26_dark = 2130837690;
+			public const int ic_mr_button_connected_26_light = 2130837690;
 			
 			// aapt resource value: 0x7f0200bb
-			public const int ic_mr_button_connected_26_light = 2130837691;
+			public const int ic_mr_button_connected_27_dark = 2130837691;
 			
 			// aapt resource value: 0x7f0200bc
-			public const int ic_mr_button_connected_27_dark = 2130837692;
+			public const int ic_mr_button_connected_27_light = 2130837692;
 			
 			// aapt resource value: 0x7f0200bd
-			public const int ic_mr_button_connected_27_light = 2130837693;
+			public const int ic_mr_button_connected_28_dark = 2130837693;
 			
 			// aapt resource value: 0x7f0200be
-			public const int ic_mr_button_connected_28_dark = 2130837694;
+			public const int ic_mr_button_connected_28_light = 2130837694;
 			
 			// aapt resource value: 0x7f0200bf
-			public const int ic_mr_button_connected_28_light = 2130837695;
+			public const int ic_mr_button_connected_29_dark = 2130837695;
 			
 			// aapt resource value: 0x7f0200c0
-			public const int ic_mr_button_connected_29_dark = 2130837696;
+			public const int ic_mr_button_connected_29_light = 2130837696;
 			
 			// aapt resource value: 0x7f0200c1
-			public const int ic_mr_button_connected_29_light = 2130837697;
+			public const int ic_mr_button_connected_30_dark = 2130837697;
 			
 			// aapt resource value: 0x7f0200c2
-			public const int ic_mr_button_connected_30_dark = 2130837698;
+			public const int ic_mr_button_connected_30_light = 2130837698;
 			
 			// aapt resource value: 0x7f0200c3
-			public const int ic_mr_button_connected_30_light = 2130837699;
+			public const int ic_mr_button_connecting_00_dark = 2130837699;
 			
 			// aapt resource value: 0x7f0200c4
-			public const int ic_mr_button_connecting_00_dark = 2130837700;
+			public const int ic_mr_button_connecting_00_light = 2130837700;
 			
 			// aapt resource value: 0x7f0200c5
-			public const int ic_mr_button_connecting_00_light = 2130837701;
+			public const int ic_mr_button_connecting_01_dark = 2130837701;
 			
 			// aapt resource value: 0x7f0200c6
-			public const int ic_mr_button_connecting_01_dark = 2130837702;
+			public const int ic_mr_button_connecting_01_light = 2130837702;
 			
 			// aapt resource value: 0x7f0200c7
-			public const int ic_mr_button_connecting_01_light = 2130837703;
+			public const int ic_mr_button_connecting_02_dark = 2130837703;
 			
 			// aapt resource value: 0x7f0200c8
-			public const int ic_mr_button_connecting_02_dark = 2130837704;
+			public const int ic_mr_button_connecting_02_light = 2130837704;
 			
 			// aapt resource value: 0x7f0200c9
-			public const int ic_mr_button_connecting_02_light = 2130837705;
+			public const int ic_mr_button_connecting_03_dark = 2130837705;
 			
 			// aapt resource value: 0x7f0200ca
-			public const int ic_mr_button_connecting_03_dark = 2130837706;
+			public const int ic_mr_button_connecting_03_light = 2130837706;
 			
 			// aapt resource value: 0x7f0200cb
-			public const int ic_mr_button_connecting_03_light = 2130837707;
+			public const int ic_mr_button_connecting_04_dark = 2130837707;
 			
 			// aapt resource value: 0x7f0200cc
-			public const int ic_mr_button_connecting_04_dark = 2130837708;
+			public const int ic_mr_button_connecting_04_light = 2130837708;
 			
 			// aapt resource value: 0x7f0200cd
-			public const int ic_mr_button_connecting_04_light = 2130837709;
+			public const int ic_mr_button_connecting_05_dark = 2130837709;
 			
 			// aapt resource value: 0x7f0200ce
-			public const int ic_mr_button_connecting_05_dark = 2130837710;
+			public const int ic_mr_button_connecting_05_light = 2130837710;
 			
 			// aapt resource value: 0x7f0200cf
-			public const int ic_mr_button_connecting_05_light = 2130837711;
+			public const int ic_mr_button_connecting_06_dark = 2130837711;
 			
 			// aapt resource value: 0x7f0200d0
-			public const int ic_mr_button_connecting_06_dark = 2130837712;
+			public const int ic_mr_button_connecting_06_light = 2130837712;
 			
 			// aapt resource value: 0x7f0200d1
-			public const int ic_mr_button_connecting_06_light = 2130837713;
+			public const int ic_mr_button_connecting_07_dark = 2130837713;
 			
 			// aapt resource value: 0x7f0200d2
-			public const int ic_mr_button_connecting_07_dark = 2130837714;
+			public const int ic_mr_button_connecting_07_light = 2130837714;
 			
 			// aapt resource value: 0x7f0200d3
-			public const int ic_mr_button_connecting_07_light = 2130837715;
+			public const int ic_mr_button_connecting_08_dark = 2130837715;
 			
 			// aapt resource value: 0x7f0200d4
-			public const int ic_mr_button_connecting_08_dark = 2130837716;
+			public const int ic_mr_button_connecting_08_light = 2130837716;
 			
 			// aapt resource value: 0x7f0200d5
-			public const int ic_mr_button_connecting_08_light = 2130837717;
+			public const int ic_mr_button_connecting_09_dark = 2130837717;
 			
 			// aapt resource value: 0x7f0200d6
-			public const int ic_mr_button_connecting_09_dark = 2130837718;
+			public const int ic_mr_button_connecting_09_light = 2130837718;
 			
 			// aapt resource value: 0x7f0200d7
-			public const int ic_mr_button_connecting_09_light = 2130837719;
+			public const int ic_mr_button_connecting_10_dark = 2130837719;
 			
 			// aapt resource value: 0x7f0200d8
-			public const int ic_mr_button_connecting_10_dark = 2130837720;
+			public const int ic_mr_button_connecting_10_light = 2130837720;
 			
 			// aapt resource value: 0x7f0200d9
-			public const int ic_mr_button_connecting_10_light = 2130837721;
+			public const int ic_mr_button_connecting_11_dark = 2130837721;
 			
 			// aapt resource value: 0x7f0200da
-			public const int ic_mr_button_connecting_11_dark = 2130837722;
+			public const int ic_mr_button_connecting_11_light = 2130837722;
 			
 			// aapt resource value: 0x7f0200db
-			public const int ic_mr_button_connecting_11_light = 2130837723;
+			public const int ic_mr_button_connecting_12_dark = 2130837723;
 			
 			// aapt resource value: 0x7f0200dc
-			public const int ic_mr_button_connecting_12_dark = 2130837724;
+			public const int ic_mr_button_connecting_12_light = 2130837724;
 			
 			// aapt resource value: 0x7f0200dd
-			public const int ic_mr_button_connecting_12_light = 2130837725;
+			public const int ic_mr_button_connecting_13_dark = 2130837725;
 			
 			// aapt resource value: 0x7f0200de
-			public const int ic_mr_button_connecting_13_dark = 2130837726;
+			public const int ic_mr_button_connecting_13_light = 2130837726;
 			
 			// aapt resource value: 0x7f0200df
-			public const int ic_mr_button_connecting_13_light = 2130837727;
+			public const int ic_mr_button_connecting_14_dark = 2130837727;
 			
 			// aapt resource value: 0x7f0200e0
-			public const int ic_mr_button_connecting_14_dark = 2130837728;
+			public const int ic_mr_button_connecting_14_light = 2130837728;
 			
 			// aapt resource value: 0x7f0200e1
-			public const int ic_mr_button_connecting_14_light = 2130837729;
+			public const int ic_mr_button_connecting_15_dark = 2130837729;
 			
 			// aapt resource value: 0x7f0200e2
-			public const int ic_mr_button_connecting_15_dark = 2130837730;
+			public const int ic_mr_button_connecting_15_light = 2130837730;
 			
 			// aapt resource value: 0x7f0200e3
-			public const int ic_mr_button_connecting_15_light = 2130837731;
+			public const int ic_mr_button_connecting_16_dark = 2130837731;
 			
 			// aapt resource value: 0x7f0200e4
-			public const int ic_mr_button_connecting_16_dark = 2130837732;
+			public const int ic_mr_button_connecting_16_light = 2130837732;
 			
 			// aapt resource value: 0x7f0200e5
-			public const int ic_mr_button_connecting_16_light = 2130837733;
+			public const int ic_mr_button_connecting_17_dark = 2130837733;
 			
 			// aapt resource value: 0x7f0200e6
-			public const int ic_mr_button_connecting_17_dark = 2130837734;
+			public const int ic_mr_button_connecting_17_light = 2130837734;
 			
 			// aapt resource value: 0x7f0200e7
-			public const int ic_mr_button_connecting_17_light = 2130837735;
+			public const int ic_mr_button_connecting_18_dark = 2130837735;
 			
 			// aapt resource value: 0x7f0200e8
-			public const int ic_mr_button_connecting_18_dark = 2130837736;
+			public const int ic_mr_button_connecting_18_light = 2130837736;
 			
 			// aapt resource value: 0x7f0200e9
-			public const int ic_mr_button_connecting_18_light = 2130837737;
+			public const int ic_mr_button_connecting_19_dark = 2130837737;
 			
 			// aapt resource value: 0x7f0200ea
-			public const int ic_mr_button_connecting_19_dark = 2130837738;
+			public const int ic_mr_button_connecting_19_light = 2130837738;
 			
 			// aapt resource value: 0x7f0200eb
-			public const int ic_mr_button_connecting_19_light = 2130837739;
+			public const int ic_mr_button_connecting_20_dark = 2130837739;
 			
 			// aapt resource value: 0x7f0200ec
-			public const int ic_mr_button_connecting_20_dark = 2130837740;
+			public const int ic_mr_button_connecting_20_light = 2130837740;
 			
 			// aapt resource value: 0x7f0200ed
-			public const int ic_mr_button_connecting_20_light = 2130837741;
+			public const int ic_mr_button_connecting_21_dark = 2130837741;
 			
 			// aapt resource value: 0x7f0200ee
-			public const int ic_mr_button_connecting_21_dark = 2130837742;
+			public const int ic_mr_button_connecting_21_light = 2130837742;
 			
 			// aapt resource value: 0x7f0200ef
-			public const int ic_mr_button_connecting_21_light = 2130837743;
+			public const int ic_mr_button_connecting_22_dark = 2130837743;
 			
 			// aapt resource value: 0x7f0200f0
-			public const int ic_mr_button_connecting_22_dark = 2130837744;
+			public const int ic_mr_button_connecting_22_light = 2130837744;
 			
 			// aapt resource value: 0x7f0200f1
-			public const int ic_mr_button_connecting_22_light = 2130837745;
+			public const int ic_mr_button_connecting_23_dark = 2130837745;
 			
 			// aapt resource value: 0x7f0200f2
-			public const int ic_mr_button_connecting_23_dark = 2130837746;
+			public const int ic_mr_button_connecting_23_light = 2130837746;
 			
 			// aapt resource value: 0x7f0200f3
-			public const int ic_mr_button_connecting_23_light = 2130837747;
+			public const int ic_mr_button_connecting_24_dark = 2130837747;
 			
 			// aapt resource value: 0x7f0200f4
-			public const int ic_mr_button_connecting_24_dark = 2130837748;
+			public const int ic_mr_button_connecting_24_light = 2130837748;
 			
 			// aapt resource value: 0x7f0200f5
-			public const int ic_mr_button_connecting_24_light = 2130837749;
+			public const int ic_mr_button_connecting_25_dark = 2130837749;
 			
 			// aapt resource value: 0x7f0200f6
-			public const int ic_mr_button_connecting_25_dark = 2130837750;
+			public const int ic_mr_button_connecting_25_light = 2130837750;
 			
 			// aapt resource value: 0x7f0200f7
-			public const int ic_mr_button_connecting_25_light = 2130837751;
+			public const int ic_mr_button_connecting_26_dark = 2130837751;
 			
 			// aapt resource value: 0x7f0200f8
-			public const int ic_mr_button_connecting_26_dark = 2130837752;
+			public const int ic_mr_button_connecting_26_light = 2130837752;
 			
 			// aapt resource value: 0x7f0200f9
-			public const int ic_mr_button_connecting_26_light = 2130837753;
+			public const int ic_mr_button_connecting_27_dark = 2130837753;
 			
 			// aapt resource value: 0x7f0200fa
-			public const int ic_mr_button_connecting_27_dark = 2130837754;
+			public const int ic_mr_button_connecting_27_light = 2130837754;
 			
 			// aapt resource value: 0x7f0200fb
-			public const int ic_mr_button_connecting_27_light = 2130837755;
+			public const int ic_mr_button_connecting_28_dark = 2130837755;
 			
 			// aapt resource value: 0x7f0200fc
-			public const int ic_mr_button_connecting_28_dark = 2130837756;
+			public const int ic_mr_button_connecting_28_light = 2130837756;
 			
 			// aapt resource value: 0x7f0200fd
-			public const int ic_mr_button_connecting_28_light = 2130837757;
+			public const int ic_mr_button_connecting_29_dark = 2130837757;
 			
 			// aapt resource value: 0x7f0200fe
-			public const int ic_mr_button_connecting_29_dark = 2130837758;
+			public const int ic_mr_button_connecting_29_light = 2130837758;
 			
 			// aapt resource value: 0x7f0200ff
-			public const int ic_mr_button_connecting_29_light = 2130837759;
+			public const int ic_mr_button_connecting_30_dark = 2130837759;
 			
 			// aapt resource value: 0x7f020100
-			public const int ic_mr_button_connecting_30_dark = 2130837760;
+			public const int ic_mr_button_connecting_30_light = 2130837760;
 			
 			// aapt resource value: 0x7f020101
-			public const int ic_mr_button_connecting_30_light = 2130837761;
+			public const int ic_mr_button_disabled_dark = 2130837761;
 			
 			// aapt resource value: 0x7f020102
-			public const int ic_mr_button_disabled_dark = 2130837762;
+			public const int ic_mr_button_disabled_light = 2130837762;
 			
 			// aapt resource value: 0x7f020103
-			public const int ic_mr_button_disabled_light = 2130837763;
+			public const int ic_mr_button_disconnected_dark = 2130837763;
 			
 			// aapt resource value: 0x7f020104
-			public const int ic_mr_button_disconnected_dark = 2130837764;
+			public const int ic_mr_button_disconnected_light = 2130837764;
 			
 			// aapt resource value: 0x7f020105
-			public const int ic_mr_button_disconnected_light = 2130837765;
+			public const int ic_mr_button_grey = 2130837765;
 			
 			// aapt resource value: 0x7f020106
-			public const int ic_mr_button_grey = 2130837766;
+			public const int ic_vol_type_speaker_dark = 2130837766;
 			
 			// aapt resource value: 0x7f020107
-			public const int ic_vol_type_speaker_dark = 2130837767;
+			public const int ic_vol_type_speaker_group_dark = 2130837767;
 			
 			// aapt resource value: 0x7f020108
-			public const int ic_vol_type_speaker_group_dark = 2130837768;
+			public const int ic_vol_type_speaker_group_light = 2130837768;
 			
 			// aapt resource value: 0x7f020109
-			public const int ic_vol_type_speaker_group_light = 2130837769;
+			public const int ic_vol_type_speaker_light = 2130837769;
 			
 			// aapt resource value: 0x7f02010a
-			public const int ic_vol_type_speaker_light = 2130837770;
+			public const int ic_vol_type_tv_dark = 2130837770;
 			
 			// aapt resource value: 0x7f02010b
-			public const int ic_vol_type_tv_dark = 2130837771;
+			public const int ic_vol_type_tv_light = 2130837771;
 			
 			// aapt resource value: 0x7f02010c
-			public const int ic_vol_type_tv_light = 2130837772;
+			public const int mr_button_connected_dark = 2130837772;
 			
 			// aapt resource value: 0x7f02010d
-			public const int mr_button_connected_dark = 2130837773;
+			public const int mr_button_connected_light = 2130837773;
 			
 			// aapt resource value: 0x7f02010e
-			public const int mr_button_connected_light = 2130837774;
+			public const int mr_button_connecting_dark = 2130837774;
 			
 			// aapt resource value: 0x7f02010f
-			public const int mr_button_connecting_dark = 2130837775;
+			public const int mr_button_connecting_light = 2130837775;
 			
 			// aapt resource value: 0x7f020110
-			public const int mr_button_connecting_light = 2130837776;
+			public const int mr_button_dark = 2130837776;
 			
 			// aapt resource value: 0x7f020111
-			public const int mr_button_dark = 2130837777;
+			public const int mr_button_light = 2130837777;
 			
 			// aapt resource value: 0x7f020112
-			public const int mr_button_light = 2130837778;
+			public const int mr_dialog_close_dark = 2130837778;
 			
 			// aapt resource value: 0x7f020113
-			public const int mr_dialog_close_dark = 2130837779;
+			public const int mr_dialog_close_light = 2130837779;
 			
 			// aapt resource value: 0x7f020114
-			public const int mr_dialog_close_light = 2130837780;
+			public const int mr_dialog_material_background_dark = 2130837780;
 			
 			// aapt resource value: 0x7f020115
-			public const int mr_dialog_material_background_dark = 2130837781;
+			public const int mr_dialog_material_background_light = 2130837781;
 			
 			// aapt resource value: 0x7f020116
-			public const int mr_dialog_material_background_light = 2130837782;
+			public const int mr_group_collapse = 2130837782;
 			
 			// aapt resource value: 0x7f020117
-			public const int mr_group_collapse = 2130837783;
+			public const int mr_group_expand = 2130837783;
 			
 			// aapt resource value: 0x7f020118
-			public const int mr_group_expand = 2130837784;
+			public const int mr_media_pause_dark = 2130837784;
 			
 			// aapt resource value: 0x7f020119
-			public const int mr_media_pause_dark = 2130837785;
+			public const int mr_media_pause_light = 2130837785;
 			
 			// aapt resource value: 0x7f02011a
-			public const int mr_media_pause_light = 2130837786;
+			public const int mr_media_play_dark = 2130837786;
 			
 			// aapt resource value: 0x7f02011b
-			public const int mr_media_play_dark = 2130837787;
+			public const int mr_media_play_light = 2130837787;
 			
 			// aapt resource value: 0x7f02011c
-			public const int mr_media_play_light = 2130837788;
+			public const int mr_media_stop_dark = 2130837788;
 			
 			// aapt resource value: 0x7f02011d
-			public const int mr_media_stop_dark = 2130837789;
+			public const int mr_media_stop_light = 2130837789;
 			
 			// aapt resource value: 0x7f02011e
-			public const int mr_media_stop_light = 2130837790;
+			public const int mr_vol_type_audiotrack_dark = 2130837790;
 			
 			// aapt resource value: 0x7f02011f
-			public const int mr_vol_type_audiotrack_dark = 2130837791;
+			public const int mr_vol_type_audiotrack_light = 2130837791;
 			
 			// aapt resource value: 0x7f020120
-			public const int mr_vol_type_audiotrack_light = 2130837792;
+			public const int navigation_empty_icon = 2130837792;
 			
 			// aapt resource value: 0x7f020121
-			public const int navigation_empty_icon = 2130837793;
+			public const int notification_action_background = 2130837793;
 			
 			// aapt resource value: 0x7f020122
-			public const int notification_action_background = 2130837794;
+			public const int notification_bg = 2130837794;
 			
 			// aapt resource value: 0x7f020123
-			public const int notification_bg = 2130837795;
+			public const int notification_bg_low = 2130837795;
 			
 			// aapt resource value: 0x7f020124
-			public const int notification_bg_low = 2130837796;
+			public const int notification_bg_low_normal = 2130837796;
 			
 			// aapt resource value: 0x7f020125
-			public const int notification_bg_low_normal = 2130837797;
+			public const int notification_bg_low_pressed = 2130837797;
 			
 			// aapt resource value: 0x7f020126
-			public const int notification_bg_low_pressed = 2130837798;
+			public const int notification_bg_normal = 2130837798;
 			
 			// aapt resource value: 0x7f020127
-			public const int notification_bg_normal = 2130837799;
+			public const int notification_bg_normal_pressed = 2130837799;
 			
 			// aapt resource value: 0x7f020128
-			public const int notification_bg_normal_pressed = 2130837800;
-			
-			// aapt resource value: 0x7f020129
-			public const int notification_icon_background = 2130837801;
-			
-			// aapt resource value: 0x7f02012f
-			public const int notification_template_icon_bg = 2130837807;
-			
-			// aapt resource value: 0x7f020130
-			public const int notification_template_icon_low_bg = 2130837808;
-			
-			// aapt resource value: 0x7f02012a
-			public const int notification_tile_bg = 2130837802;
-			
-			// aapt resource value: 0x7f02012b
-			public const int notify_panel_notification_icon_bg = 2130837803;
-			
-			// aapt resource value: 0x7f02012c
-			public const int tooltip_frame_dark = 2130837804;
-			
-			// aapt resource value: 0x7f02012d
-			public const int tooltip_frame_light = 2130837805;
+			public const int notification_icon_background = 2130837800;
 			
 			// aapt resource value: 0x7f02012e
-			public const int xamarin_logo = 2130837806;
+			public const int notification_template_icon_bg = 2130837806;
+			
+			// aapt resource value: 0x7f02012f
+			public const int notification_template_icon_low_bg = 2130837807;
+			
+			// aapt resource value: 0x7f020129
+			public const int notification_tile_bg = 2130837801;
+			
+			// aapt resource value: 0x7f02012a
+			public const int notify_panel_notification_icon_bg = 2130837802;
+			
+			// aapt resource value: 0x7f02012b
+			public const int tooltip_frame_dark = 2130837803;
+			
+			// aapt resource value: 0x7f02012c
+			public const int tooltip_frame_light = 2130837804;
+			
+			// aapt resource value: 0x7f02012d
+			public const int xamarin_logo = 2130837805;
 			
 			static Drawable()
 			{
@@ -5440,617 +3033,614 @@ namespace ResSched.Droid
 		public partial class Id
 		{
 			
-			// aapt resource value: 0x7f0a0032
-			public const int ALT = 2131361842;
+			// aapt resource value: 0x7f090032
+			public const int ALT = 2131296306;
 			
-			// aapt resource value: 0x7f0a0033
-			public const int CTRL = 2131361843;
+			// aapt resource value: 0x7f090033
+			public const int CTRL = 2131296307;
 			
-			// aapt resource value: 0x7f0a0034
-			public const int FUNCTION = 2131361844;
+			// aapt resource value: 0x7f090034
+			public const int FUNCTION = 2131296308;
 			
-			// aapt resource value: 0x7f0a0035
-			public const int META = 2131361845;
+			// aapt resource value: 0x7f090035
+			public const int META = 2131296309;
 			
-			// aapt resource value: 0x7f0a0036
-			public const int SHIFT = 2131361846;
+			// aapt resource value: 0x7f090036
+			public const int SHIFT = 2131296310;
 			
-			// aapt resource value: 0x7f0a0037
-			public const int SYM = 2131361847;
+			// aapt resource value: 0x7f090037
+			public const int SYM = 2131296311;
 			
-			// aapt resource value: 0x7f0a00b7
-			public const int action0 = 2131361975;
+			// aapt resource value: 0x7f0900b6
+			public const int action0 = 2131296438;
 			
-			// aapt resource value: 0x7f0a007c
-			public const int action_bar = 2131361916;
+			// aapt resource value: 0x7f09007c
+			public const int action_bar = 2131296380;
 			
-			// aapt resource value: 0x7f0a0001
-			public const int action_bar_activity_content = 2131361793;
+			// aapt resource value: 0x7f090001
+			public const int action_bar_activity_content = 2131296257;
 			
-			// aapt resource value: 0x7f0a007b
-			public const int action_bar_container = 2131361915;
+			// aapt resource value: 0x7f09007b
+			public const int action_bar_container = 2131296379;
 			
-			// aapt resource value: 0x7f0a0077
-			public const int action_bar_root = 2131361911;
+			// aapt resource value: 0x7f090077
+			public const int action_bar_root = 2131296375;
 			
-			// aapt resource value: 0x7f0a0002
-			public const int action_bar_spinner = 2131361794;
+			// aapt resource value: 0x7f090002
+			public const int action_bar_spinner = 2131296258;
 			
-			// aapt resource value: 0x7f0a005b
-			public const int action_bar_subtitle = 2131361883;
+			// aapt resource value: 0x7f09005b
+			public const int action_bar_subtitle = 2131296347;
 			
-			// aapt resource value: 0x7f0a005a
-			public const int action_bar_title = 2131361882;
+			// aapt resource value: 0x7f09005a
+			public const int action_bar_title = 2131296346;
 			
-			// aapt resource value: 0x7f0a00b4
-			public const int action_container = 2131361972;
+			// aapt resource value: 0x7f0900b3
+			public const int action_container = 2131296435;
 			
-			// aapt resource value: 0x7f0a007d
-			public const int action_context_bar = 2131361917;
+			// aapt resource value: 0x7f09007d
+			public const int action_context_bar = 2131296381;
 			
-			// aapt resource value: 0x7f0a00bb
-			public const int action_divider = 2131361979;
+			// aapt resource value: 0x7f0900ba
+			public const int action_divider = 2131296442;
 			
-			// aapt resource value: 0x7f0a00b5
-			public const int action_image = 2131361973;
+			// aapt resource value: 0x7f0900b4
+			public const int action_image = 2131296436;
 			
-			// aapt resource value: 0x7f0a0003
-			public const int action_menu_divider = 2131361795;
+			// aapt resource value: 0x7f090003
+			public const int action_menu_divider = 2131296259;
 			
-			// aapt resource value: 0x7f0a0004
-			public const int action_menu_presenter = 2131361796;
+			// aapt resource value: 0x7f090004
+			public const int action_menu_presenter = 2131296260;
 			
-			// aapt resource value: 0x7f0a0079
-			public const int action_mode_bar = 2131361913;
+			// aapt resource value: 0x7f090079
+			public const int action_mode_bar = 2131296377;
 			
-			// aapt resource value: 0x7f0a0078
-			public const int action_mode_bar_stub = 2131361912;
+			// aapt resource value: 0x7f090078
+			public const int action_mode_bar_stub = 2131296376;
 			
-			// aapt resource value: 0x7f0a005c
-			public const int action_mode_close_button = 2131361884;
+			// aapt resource value: 0x7f09005c
+			public const int action_mode_close_button = 2131296348;
 			
-			// aapt resource value: 0x7f0a00b6
-			public const int action_text = 2131361974;
+			// aapt resource value: 0x7f0900b5
+			public const int action_text = 2131296437;
 			
-			// aapt resource value: 0x7f0a00c4
-			public const int actions = 2131361988;
+			// aapt resource value: 0x7f0900c3
+			public const int actions = 2131296451;
 			
-			// aapt resource value: 0x7f0a005d
-			public const int activity_chooser_view_content = 2131361885;
+			// aapt resource value: 0x7f09005d
+			public const int activity_chooser_view_content = 2131296349;
 			
-			// aapt resource value: 0x7f0a0027
-			public const int add = 2131361831;
+			// aapt resource value: 0x7f090027
+			public const int add = 2131296295;
 			
-			// aapt resource value: 0x7f0a0070
-			public const int alertTitle = 2131361904;
+			// aapt resource value: 0x7f090070
+			public const int alertTitle = 2131296368;
 			
-			// aapt resource value: 0x7f0a0052
-			public const int all = 2131361874;
+			// aapt resource value: 0x7f090052
+			public const int all = 2131296338;
 			
-			// aapt resource value: 0x7f0a0038
-			public const int always = 2131361848;
+			// aapt resource value: 0x7f090038
+			public const int always = 2131296312;
 			
-			// aapt resource value: 0x7f0a0056
-			public const int async = 2131361878;
+			// aapt resource value: 0x7f090056
+			public const int async = 2131296342;
 			
-			// aapt resource value: 0x7f0a0044
-			public const int auto = 2131361860;
+			// aapt resource value: 0x7f090044
+			public const int auto = 2131296324;
 			
-			// aapt resource value: 0x7f0a002f
-			public const int beginning = 2131361839;
+			// aapt resource value: 0x7f09002f
+			public const int beginning = 2131296303;
 			
-			// aapt resource value: 0x7f0a0057
-			public const int blocking = 2131361879;
+			// aapt resource value: 0x7f090057
+			public const int blocking = 2131296343;
 			
-			// aapt resource value: 0x7f0a003d
-			public const int bottom = 2131361853;
+			// aapt resource value: 0x7f09003d
+			public const int bottom = 2131296317;
 			
-			// aapt resource value: 0x7f0a0063
-			public const int buttonPanel = 2131361891;
+			// aapt resource value: 0x7f090063
+			public const int buttonPanel = 2131296355;
 			
-			// aapt resource value: 0x7f0a00b8
-			public const int cancel_action = 2131361976;
+			// aapt resource value: 0x7f0900b7
+			public const int cancel_action = 2131296439;
 			
-			// aapt resource value: 0x7f0a0045
-			public const int center = 2131361861;
+			// aapt resource value: 0x7f090045
+			public const int center = 2131296325;
 			
-			// aapt resource value: 0x7f0a0046
-			public const int center_horizontal = 2131361862;
+			// aapt resource value: 0x7f090046
+			public const int center_horizontal = 2131296326;
 			
-			// aapt resource value: 0x7f0a0047
-			public const int center_vertical = 2131361863;
+			// aapt resource value: 0x7f090047
+			public const int center_vertical = 2131296327;
 			
-			// aapt resource value: 0x7f0a0073
-			public const int checkbox = 2131361907;
+			// aapt resource value: 0x7f090073
+			public const int checkbox = 2131296371;
 			
-			// aapt resource value: 0x7f0a00c0
-			public const int chronometer = 2131361984;
+			// aapt resource value: 0x7f0900bf
+			public const int chronometer = 2131296447;
 			
-			// aapt resource value: 0x7f0a004e
-			public const int clip_horizontal = 2131361870;
+			// aapt resource value: 0x7f09004e
+			public const int clip_horizontal = 2131296334;
 			
-			// aapt resource value: 0x7f0a004f
-			public const int clip_vertical = 2131361871;
+			// aapt resource value: 0x7f09004f
+			public const int clip_vertical = 2131296335;
 			
-			// aapt resource value: 0x7f0a0039
-			public const int collapseActionView = 2131361849;
+			// aapt resource value: 0x7f090039
+			public const int collapseActionView = 2131296313;
 			
-			// aapt resource value: 0x7f0a008e
-			public const int container = 2131361934;
+			// aapt resource value: 0x7f09008d
+			public const int container = 2131296397;
 			
-			// aapt resource value: 0x7f0a0066
-			public const int contentPanel = 2131361894;
+			// aapt resource value: 0x7f090066
+			public const int contentPanel = 2131296358;
 			
-			// aapt resource value: 0x7f0a008f
-			public const int coordinator = 2131361935;
+			// aapt resource value: 0x7f09008e
+			public const int coordinator = 2131296398;
 			
-			// aapt resource value: 0x7f0a006d
-			public const int custom = 2131361901;
+			// aapt resource value: 0x7f09006d
+			public const int custom = 2131296365;
 			
-			// aapt resource value: 0x7f0a006c
-			public const int customPanel = 2131361900;
+			// aapt resource value: 0x7f09006c
+			public const int customPanel = 2131296364;
 			
-			// aapt resource value: 0x7f0a007a
-			public const int decor_content_parent = 2131361914;
+			// aapt resource value: 0x7f09007a
+			public const int decor_content_parent = 2131296378;
 			
-			// aapt resource value: 0x7f0a0060
-			public const int default_activity_button = 2131361888;
+			// aapt resource value: 0x7f090060
+			public const int default_activity_button = 2131296352;
 			
-			// aapt resource value: 0x7f0a0091
-			public const int design_bottom_sheet = 2131361937;
+			// aapt resource value: 0x7f090090
+			public const int design_bottom_sheet = 2131296400;
 			
-			// aapt resource value: 0x7f0a0098
-			public const int design_menu_item_action_area = 2131361944;
+			// aapt resource value: 0x7f090097
+			public const int design_menu_item_action_area = 2131296407;
 			
-			// aapt resource value: 0x7f0a0097
-			public const int design_menu_item_action_area_stub = 2131361943;
+			// aapt resource value: 0x7f090096
+			public const int design_menu_item_action_area_stub = 2131296406;
 			
-			// aapt resource value: 0x7f0a0096
-			public const int design_menu_item_text = 2131361942;
+			// aapt resource value: 0x7f090095
+			public const int design_menu_item_text = 2131296405;
 			
-			// aapt resource value: 0x7f0a0095
-			public const int design_navigation_view = 2131361941;
+			// aapt resource value: 0x7f090094
+			public const int design_navigation_view = 2131296404;
 			
-			// aapt resource value: 0x7f0a0020
-			public const int disableHome = 2131361824;
+			// aapt resource value: 0x7f090020
+			public const int disableHome = 2131296288;
 			
-			// aapt resource value: 0x7f0a007e
-			public const int edit_query = 2131361918;
+			// aapt resource value: 0x7f09007e
+			public const int edit_query = 2131296382;
 			
-			// aapt resource value: 0x7f0a0030
-			public const int end = 2131361840;
+			// aapt resource value: 0x7f090030
+			public const int end = 2131296304;
 			
-			// aapt resource value: 0x7f0a00c6
-			public const int end_padder = 2131361990;
+			// aapt resource value: 0x7f0900c5
+			public const int end_padder = 2131296453;
 			
-			// aapt resource value: 0x7f0a003f
-			public const int enterAlways = 2131361855;
+			// aapt resource value: 0x7f09003f
+			public const int enterAlways = 2131296319;
 			
-			// aapt resource value: 0x7f0a0040
-			public const int enterAlwaysCollapsed = 2131361856;
+			// aapt resource value: 0x7f090040
+			public const int enterAlwaysCollapsed = 2131296320;
 			
-			// aapt resource value: 0x7f0a0041
-			public const int exitUntilCollapsed = 2131361857;
+			// aapt resource value: 0x7f090041
+			public const int exitUntilCollapsed = 2131296321;
 			
-			// aapt resource value: 0x7f0a005e
-			public const int expand_activities_button = 2131361886;
+			// aapt resource value: 0x7f09005e
+			public const int expand_activities_button = 2131296350;
 			
-			// aapt resource value: 0x7f0a0072
-			public const int expanded_menu = 2131361906;
+			// aapt resource value: 0x7f090072
+			public const int expanded_menu = 2131296370;
 			
-			// aapt resource value: 0x7f0a0050
-			public const int fill = 2131361872;
+			// aapt resource value: 0x7f090050
+			public const int fill = 2131296336;
 			
-			// aapt resource value: 0x7f0a0051
-			public const int fill_horizontal = 2131361873;
+			// aapt resource value: 0x7f090051
+			public const int fill_horizontal = 2131296337;
 			
-			// aapt resource value: 0x7f0a0048
-			public const int fill_vertical = 2131361864;
+			// aapt resource value: 0x7f090048
+			public const int fill_vertical = 2131296328;
 			
-			// aapt resource value: 0x7f0a0054
-			public const int @fixed = 2131361876;
+			// aapt resource value: 0x7f090054
+			public const int @fixed = 2131296340;
 			
-			// aapt resource value: 0x7f0a0058
-			public const int forever = 2131361880;
+			// aapt resource value: 0x7f090058
+			public const int forever = 2131296344;
 			
-			// aapt resource value: 0x7f0a000a
-			public const int ghost_view = 2131361802;
+			// aapt resource value: 0x7f09000a
+			public const int ghost_view = 2131296266;
 			
-			// aapt resource value: 0x7f0a0005
-			public const int home = 2131361797;
+			// aapt resource value: 0x7f090005
+			public const int home = 2131296261;
 			
-			// aapt resource value: 0x7f0a0021
-			public const int homeAsUp = 2131361825;
+			// aapt resource value: 0x7f090021
+			public const int homeAsUp = 2131296289;
 			
-			// aapt resource value: 0x7f0a0062
-			public const int icon = 2131361890;
+			// aapt resource value: 0x7f090062
+			public const int icon = 2131296354;
 			
-			// aapt resource value: 0x7f0a00c5
-			public const int icon_group = 2131361989;
+			// aapt resource value: 0x7f0900c4
+			public const int icon_group = 2131296452;
 			
-			// aapt resource value: 0x7f0a003a
-			public const int ifRoom = 2131361850;
+			// aapt resource value: 0x7f09003a
+			public const int ifRoom = 2131296314;
 			
-			// aapt resource value: 0x7f0a005f
-			public const int image = 2131361887;
+			// aapt resource value: 0x7f09005f
+			public const int image = 2131296351;
 			
-			// aapt resource value: 0x7f0a00c1
-			public const int info = 2131361985;
+			// aapt resource value: 0x7f0900c0
+			public const int info = 2131296448;
 			
-			// aapt resource value: 0x7f0a0059
-			public const int italic = 2131361881;
+			// aapt resource value: 0x7f090059
+			public const int italic = 2131296345;
 			
-			// aapt resource value: 0x7f0a0000
-			public const int item_touch_helper_previous_elevation = 2131361792;
+			// aapt resource value: 0x7f090000
+			public const int item_touch_helper_previous_elevation = 2131296256;
 			
-			// aapt resource value: 0x7f0a008d
-			public const int largeLabel = 2131361933;
+			// aapt resource value: 0x7f09008c
+			public const int largeLabel = 2131296396;
 			
-			// aapt resource value: 0x7f0a0049
-			public const int left = 2131361865;
+			// aapt resource value: 0x7f090049
+			public const int left = 2131296329;
 			
-			// aapt resource value: 0x7f0a0017
-			public const int line1 = 2131361815;
+			// aapt resource value: 0x7f090017
+			public const int line1 = 2131296279;
 			
-			// aapt resource value: 0x7f0a0018
-			public const int line3 = 2131361816;
+			// aapt resource value: 0x7f090018
+			public const int line3 = 2131296280;
 			
-			// aapt resource value: 0x7f0a001d
-			public const int listMode = 2131361821;
+			// aapt resource value: 0x7f09001d
+			public const int listMode = 2131296285;
 			
-			// aapt resource value: 0x7f0a0061
-			public const int list_item = 2131361889;
+			// aapt resource value: 0x7f090061
+			public const int list_item = 2131296353;
 			
-			// aapt resource value: 0x7f0a00cb
-			public const int masked = 2131361995;
+			// aapt resource value: 0x7f0900ca
+			public const int masked = 2131296458;
 			
-			// aapt resource value: 0x7f0a00ba
-			public const int media_actions = 2131361978;
+			// aapt resource value: 0x7f0900b9
+			public const int media_actions = 2131296441;
 			
-			// aapt resource value: 0x7f0a00c9
-			public const int message = 2131361993;
+			// aapt resource value: 0x7f0900c8
+			public const int message = 2131296456;
 			
-			// aapt resource value: 0x7f0a0031
-			public const int middle = 2131361841;
+			// aapt resource value: 0x7f090031
+			public const int middle = 2131296305;
 			
-			// aapt resource value: 0x7f0a0053
-			public const int mini = 2131361875;
+			// aapt resource value: 0x7f090053
+			public const int mini = 2131296339;
 			
-			// aapt resource value: 0x7f0a00a6
-			public const int mr_art = 2131361958;
+			// aapt resource value: 0x7f0900a5
+			public const int mr_art = 2131296421;
 			
-			// aapt resource value: 0x7f0a009b
-			public const int mr_chooser_list = 2131361947;
+			// aapt resource value: 0x7f09009a
+			public const int mr_chooser_list = 2131296410;
 			
-			// aapt resource value: 0x7f0a009e
-			public const int mr_chooser_route_desc = 2131361950;
+			// aapt resource value: 0x7f09009d
+			public const int mr_chooser_route_desc = 2131296413;
 			
-			// aapt resource value: 0x7f0a009c
-			public const int mr_chooser_route_icon = 2131361948;
+			// aapt resource value: 0x7f09009b
+			public const int mr_chooser_route_icon = 2131296411;
 			
-			// aapt resource value: 0x7f0a009d
-			public const int mr_chooser_route_name = 2131361949;
+			// aapt resource value: 0x7f09009c
+			public const int mr_chooser_route_name = 2131296412;
 			
-			// aapt resource value: 0x7f0a009a
-			public const int mr_chooser_title = 2131361946;
+			// aapt resource value: 0x7f090099
+			public const int mr_chooser_title = 2131296409;
 			
-			// aapt resource value: 0x7f0a00a3
-			public const int mr_close = 2131361955;
+			// aapt resource value: 0x7f0900a2
+			public const int mr_close = 2131296418;
 			
-			// aapt resource value: 0x7f0a00a9
-			public const int mr_control_divider = 2131361961;
+			// aapt resource value: 0x7f0900a8
+			public const int mr_control_divider = 2131296424;
 			
-			// aapt resource value: 0x7f0a00af
-			public const int mr_control_playback_ctrl = 2131361967;
+			// aapt resource value: 0x7f0900ae
+			public const int mr_control_playback_ctrl = 2131296430;
 			
-			// aapt resource value: 0x7f0a00b2
-			public const int mr_control_subtitle = 2131361970;
+			// aapt resource value: 0x7f0900b1
+			public const int mr_control_subtitle = 2131296433;
 			
-			// aapt resource value: 0x7f0a00b1
-			public const int mr_control_title = 2131361969;
+			// aapt resource value: 0x7f0900b0
+			public const int mr_control_title = 2131296432;
 			
-			// aapt resource value: 0x7f0a00b0
-			public const int mr_control_title_container = 2131361968;
+			// aapt resource value: 0x7f0900af
+			public const int mr_control_title_container = 2131296431;
 			
-			// aapt resource value: 0x7f0a00a4
-			public const int mr_custom_control = 2131361956;
+			// aapt resource value: 0x7f0900a3
+			public const int mr_custom_control = 2131296419;
 			
-			// aapt resource value: 0x7f0a00a5
-			public const int mr_default_control = 2131361957;
+			// aapt resource value: 0x7f0900a4
+			public const int mr_default_control = 2131296420;
 			
-			// aapt resource value: 0x7f0a00a0
-			public const int mr_dialog_area = 2131361952;
+			// aapt resource value: 0x7f09009f
+			public const int mr_dialog_area = 2131296415;
 			
-			// aapt resource value: 0x7f0a009f
-			public const int mr_expandable_area = 2131361951;
+			// aapt resource value: 0x7f09009e
+			public const int mr_expandable_area = 2131296414;
 			
-			// aapt resource value: 0x7f0a00b3
-			public const int mr_group_expand_collapse = 2131361971;
+			// aapt resource value: 0x7f0900b2
+			public const int mr_group_expand_collapse = 2131296434;
 			
-			// aapt resource value: 0x7f0a00a7
-			public const int mr_media_main_control = 2131361959;
+			// aapt resource value: 0x7f0900a6
+			public const int mr_media_main_control = 2131296422;
 			
-			// aapt resource value: 0x7f0a00a2
-			public const int mr_name = 2131361954;
+			// aapt resource value: 0x7f0900a1
+			public const int mr_name = 2131296417;
 			
-			// aapt resource value: 0x7f0a00a8
-			public const int mr_playback_control = 2131361960;
+			// aapt resource value: 0x7f0900a7
+			public const int mr_playback_control = 2131296423;
 			
-			// aapt resource value: 0x7f0a00a1
-			public const int mr_title_bar = 2131361953;
+			// aapt resource value: 0x7f0900a0
+			public const int mr_title_bar = 2131296416;
 			
-			// aapt resource value: 0x7f0a00aa
-			public const int mr_volume_control = 2131361962;
+			// aapt resource value: 0x7f0900a9
+			public const int mr_volume_control = 2131296425;
 			
-			// aapt resource value: 0x7f0a00ab
-			public const int mr_volume_group_list = 2131361963;
+			// aapt resource value: 0x7f0900aa
+			public const int mr_volume_group_list = 2131296426;
 			
-			// aapt resource value: 0x7f0a00ad
-			public const int mr_volume_item_icon = 2131361965;
+			// aapt resource value: 0x7f0900ac
+			public const int mr_volume_item_icon = 2131296428;
 			
-			// aapt resource value: 0x7f0a00ae
-			public const int mr_volume_slider = 2131361966;
+			// aapt resource value: 0x7f0900ad
+			public const int mr_volume_slider = 2131296429;
 			
-			// aapt resource value: 0x7f0a0028
-			public const int multiply = 2131361832;
+			// aapt resource value: 0x7f090028
+			public const int multiply = 2131296296;
 			
-			// aapt resource value: 0x7f0a0094
-			public const int navigation_header_container = 2131361940;
+			// aapt resource value: 0x7f090093
+			public const int navigation_header_container = 2131296403;
 			
-			// aapt resource value: 0x7f0a003b
-			public const int never = 2131361851;
+			// aapt resource value: 0x7f09003b
+			public const int never = 2131296315;
 			
-			// aapt resource value: 0x7f0a0022
-			public const int none = 2131361826;
+			// aapt resource value: 0x7f090022
+			public const int none = 2131296290;
 			
-			// aapt resource value: 0x7f0a001e
-			public const int normal = 2131361822;
+			// aapt resource value: 0x7f09001e
+			public const int normal = 2131296286;
 			
-			// aapt resource value: 0x7f0a00c3
-			public const int notification_background = 2131361987;
+			// aapt resource value: 0x7f0900c2
+			public const int notification_background = 2131296450;
 			
-			// aapt resource value: 0x7f0a00bd
-			public const int notification_main_column = 2131361981;
+			// aapt resource value: 0x7f0900bc
+			public const int notification_main_column = 2131296444;
 			
-			// aapt resource value: 0x7f0a00bc
-			public const int notification_main_column_container = 2131361980;
+			// aapt resource value: 0x7f0900bb
+			public const int notification_main_column_container = 2131296443;
 			
-			// aapt resource value: 0x7f0a004c
-			public const int parallax = 2131361868;
+			// aapt resource value: 0x7f09004c
+			public const int parallax = 2131296332;
 			
-			// aapt resource value: 0x7f0a0065
-			public const int parentPanel = 2131361893;
+			// aapt resource value: 0x7f090065
+			public const int parentPanel = 2131296357;
 			
-			// aapt resource value: 0x7f0a000b
-			public const int parent_matrix = 2131361803;
+			// aapt resource value: 0x7f09000b
+			public const int parent_matrix = 2131296267;
 			
-			// aapt resource value: 0x7f0a004d
-			public const int pin = 2131361869;
+			// aapt resource value: 0x7f09004d
+			public const int pin = 2131296333;
 			
-			// aapt resource value: 0x7f0a0006
-			public const int progress_circular = 2131361798;
+			// aapt resource value: 0x7f090006
+			public const int progress_circular = 2131296262;
 			
-			// aapt resource value: 0x7f0a0007
-			public const int progress_horizontal = 2131361799;
+			// aapt resource value: 0x7f090007
+			public const int progress_horizontal = 2131296263;
 			
-			// aapt resource value: 0x7f0a0075
-			public const int radio = 2131361909;
+			// aapt resource value: 0x7f090075
+			public const int radio = 2131296373;
 			
-			// aapt resource value: 0x7f0a004a
-			public const int right = 2131361866;
+			// aapt resource value: 0x7f09004a
+			public const int right = 2131296330;
 			
-			// aapt resource value: 0x7f0a00c2
-			public const int right_icon = 2131361986;
+			// aapt resource value: 0x7f0900c1
+			public const int right_icon = 2131296449;
 			
-			// aapt resource value: 0x7f0a00be
-			public const int right_side = 2131361982;
+			// aapt resource value: 0x7f0900bd
+			public const int right_side = 2131296445;
 			
-			// aapt resource value: 0x7f0a000c
-			public const int save_image_matrix = 2131361804;
+			// aapt resource value: 0x7f09000c
+			public const int save_image_matrix = 2131296268;
 			
-			// aapt resource value: 0x7f0a000d
-			public const int save_non_transition_alpha = 2131361805;
+			// aapt resource value: 0x7f09000d
+			public const int save_non_transition_alpha = 2131296269;
 			
-			// aapt resource value: 0x7f0a000e
-			public const int save_scale_type = 2131361806;
+			// aapt resource value: 0x7f09000e
+			public const int save_scale_type = 2131296270;
 			
-			// aapt resource value: 0x7f0a0029
-			public const int screen = 2131361833;
+			// aapt resource value: 0x7f090029
+			public const int screen = 2131296297;
 			
-			// aapt resource value: 0x7f0a0042
-			public const int scroll = 2131361858;
+			// aapt resource value: 0x7f090042
+			public const int scroll = 2131296322;
 			
-			// aapt resource value: 0x7f0a006b
-			public const int scrollIndicatorDown = 2131361899;
+			// aapt resource value: 0x7f09006b
+			public const int scrollIndicatorDown = 2131296363;
 			
-			// aapt resource value: 0x7f0a0067
-			public const int scrollIndicatorUp = 2131361895;
+			// aapt resource value: 0x7f090067
+			public const int scrollIndicatorUp = 2131296359;
 			
-			// aapt resource value: 0x7f0a0068
-			public const int scrollView = 2131361896;
+			// aapt resource value: 0x7f090068
+			public const int scrollView = 2131296360;
 			
-			// aapt resource value: 0x7f0a0055
-			public const int scrollable = 2131361877;
+			// aapt resource value: 0x7f090055
+			public const int scrollable = 2131296341;
 			
-			// aapt resource value: 0x7f0a0080
-			public const int search_badge = 2131361920;
+			// aapt resource value: 0x7f090080
+			public const int search_badge = 2131296384;
 			
-			// aapt resource value: 0x7f0a007f
-			public const int search_bar = 2131361919;
+			// aapt resource value: 0x7f09007f
+			public const int search_bar = 2131296383;
 			
-			// aapt resource value: 0x7f0a0081
-			public const int search_button = 2131361921;
+			// aapt resource value: 0x7f090081
+			public const int search_button = 2131296385;
 			
-			// aapt resource value: 0x7f0a0086
-			public const int search_close_btn = 2131361926;
+			// aapt resource value: 0x7f090086
+			public const int search_close_btn = 2131296390;
 			
-			// aapt resource value: 0x7f0a0082
-			public const int search_edit_frame = 2131361922;
+			// aapt resource value: 0x7f090082
+			public const int search_edit_frame = 2131296386;
 			
-			// aapt resource value: 0x7f0a0088
-			public const int search_go_btn = 2131361928;
+			// aapt resource value: 0x7f090088
+			public const int search_go_btn = 2131296392;
 			
-			// aapt resource value: 0x7f0a0083
-			public const int search_mag_icon = 2131361923;
+			// aapt resource value: 0x7f090083
+			public const int search_mag_icon = 2131296387;
 			
-			// aapt resource value: 0x7f0a0084
-			public const int search_plate = 2131361924;
+			// aapt resource value: 0x7f090084
+			public const int search_plate = 2131296388;
 			
-			// aapt resource value: 0x7f0a0085
-			public const int search_src_text = 2131361925;
+			// aapt resource value: 0x7f090085
+			public const int search_src_text = 2131296389;
 			
-			// aapt resource value: 0x7f0a0089
-			public const int search_voice_btn = 2131361929;
+			// aapt resource value: 0x7f090089
+			public const int search_voice_btn = 2131296393;
 			
-			// aapt resource value: 0x7f0a008a
-			public const int select_dialog_listview = 2131361930;
+			// aapt resource value: 0x7f09008a
+			public const int select_dialog_listview = 2131296394;
 			
-			// aapt resource value: 0x7f0a0074
-			public const int shortcut = 2131361908;
+			// aapt resource value: 0x7f090074
+			public const int shortcut = 2131296372;
 			
-			// aapt resource value: 0x7f0a0023
-			public const int showCustom = 2131361827;
+			// aapt resource value: 0x7f090023
+			public const int showCustom = 2131296291;
 			
-			// aapt resource value: 0x7f0a0024
-			public const int showHome = 2131361828;
+			// aapt resource value: 0x7f090024
+			public const int showHome = 2131296292;
 			
-			// aapt resource value: 0x7f0a0025
-			public const int showTitle = 2131361829;
+			// aapt resource value: 0x7f090025
+			public const int showTitle = 2131296293;
 			
-			// aapt resource value: 0x7f0a00c7
-			public const int sliding_tabs = 2131361991;
+			// aapt resource value: 0x7f0900c6
+			public const int sliding_tabs = 2131296454;
 			
-			// aapt resource value: 0x7f0a008c
-			public const int smallLabel = 2131361932;
+			// aapt resource value: 0x7f09008b
+			public const int smallLabel = 2131296395;
 			
-			// aapt resource value: 0x7f0a0093
-			public const int snackbar_action = 2131361939;
+			// aapt resource value: 0x7f090092
+			public const int snackbar_action = 2131296402;
 			
-			// aapt resource value: 0x7f0a0092
-			public const int snackbar_text = 2131361938;
+			// aapt resource value: 0x7f090091
+			public const int snackbar_text = 2131296401;
 			
-			// aapt resource value: 0x7f0a0043
-			public const int snap = 2131361859;
+			// aapt resource value: 0x7f090043
+			public const int snap = 2131296323;
 			
-			// aapt resource value: 0x7f0a0064
-			public const int spacer = 2131361892;
+			// aapt resource value: 0x7f090064
+			public const int spacer = 2131296356;
 			
-			// aapt resource value: 0x7f0a0008
-			public const int split_action_bar = 2131361800;
+			// aapt resource value: 0x7f090008
+			public const int split_action_bar = 2131296264;
 			
-			// aapt resource value: 0x7f0a002a
-			public const int src_atop = 2131361834;
+			// aapt resource value: 0x7f09002a
+			public const int src_atop = 2131296298;
 			
-			// aapt resource value: 0x7f0a002b
-			public const int src_in = 2131361835;
+			// aapt resource value: 0x7f09002b
+			public const int src_in = 2131296299;
 			
-			// aapt resource value: 0x7f0a002c
-			public const int src_over = 2131361836;
+			// aapt resource value: 0x7f09002c
+			public const int src_over = 2131296300;
 			
-			// aapt resource value: 0x7f0a004b
-			public const int start = 2131361867;
+			// aapt resource value: 0x7f09004b
+			public const int start = 2131296331;
 			
-			// aapt resource value: 0x7f0a00b9
-			public const int status_bar_latest_event_content = 2131361977;
+			// aapt resource value: 0x7f0900b8
+			public const int status_bar_latest_event_content = 2131296440;
 			
-			// aapt resource value: 0x7f0a0076
-			public const int submenuarrow = 2131361910;
+			// aapt resource value: 0x7f090076
+			public const int submenuarrow = 2131296374;
 			
-			// aapt resource value: 0x7f0a0087
-			public const int submit_area = 2131361927;
+			// aapt resource value: 0x7f090087
+			public const int submit_area = 2131296391;
 			
-			// aapt resource value: 0x7f0a001f
-			public const int tabMode = 2131361823;
+			// aapt resource value: 0x7f09001f
+			public const int tabMode = 2131296287;
 			
-			// aapt resource value: 0x7f0a0019
-			public const int tag_transition_group = 2131361817;
+			// aapt resource value: 0x7f090019
+			public const int tag_transition_group = 2131296281;
 			
-			// aapt resource value: 0x7f0a001a
-			public const int text = 2131361818;
+			// aapt resource value: 0x7f09001a
+			public const int text = 2131296282;
 			
-			// aapt resource value: 0x7f0a001b
-			public const int text2 = 2131361819;
+			// aapt resource value: 0x7f09001b
+			public const int text2 = 2131296283;
 			
-			// aapt resource value: 0x7f0a006a
-			public const int textSpacerNoButtons = 2131361898;
+			// aapt resource value: 0x7f09006a
+			public const int textSpacerNoButtons = 2131296362;
 			
-			// aapt resource value: 0x7f0a0069
-			public const int textSpacerNoTitle = 2131361897;
+			// aapt resource value: 0x7f090069
+			public const int textSpacerNoTitle = 2131296361;
 			
-			// aapt resource value: 0x7f0a0099
-			public const int text_input_password_toggle = 2131361945;
+			// aapt resource value: 0x7f090098
+			public const int text_input_password_toggle = 2131296408;
 			
-			// aapt resource value: 0x7f0a0014
-			public const int textinput_counter = 2131361812;
+			// aapt resource value: 0x7f090014
+			public const int textinput_counter = 2131296276;
 			
-			// aapt resource value: 0x7f0a0015
-			public const int textinput_error = 2131361813;
+			// aapt resource value: 0x7f090015
+			public const int textinput_error = 2131296277;
 			
-			// aapt resource value: 0x7f0a00bf
-			public const int time = 2131361983;
+			// aapt resource value: 0x7f0900be
+			public const int time = 2131296446;
 			
-			// aapt resource value: 0x7f0a001c
-			public const int title = 2131361820;
+			// aapt resource value: 0x7f09001c
+			public const int title = 2131296284;
 			
-			// aapt resource value: 0x7f0a0071
-			public const int titleDividerNoCustom = 2131361905;
+			// aapt resource value: 0x7f090071
+			public const int titleDividerNoCustom = 2131296369;
 			
-			// aapt resource value: 0x7f0a006f
-			public const int title_template = 2131361903;
+			// aapt resource value: 0x7f09006f
+			public const int title_template = 2131296367;
 			
-			// aapt resource value: 0x7f0a00c8
-			public const int toolbar = 2131361992;
+			// aapt resource value: 0x7f0900c7
+			public const int toolbar = 2131296455;
 			
-			// aapt resource value: 0x7f0a003e
-			public const int top = 2131361854;
+			// aapt resource value: 0x7f09003e
+			public const int top = 2131296318;
 			
-			// aapt resource value: 0x7f0a006e
-			public const int topPanel = 2131361902;
+			// aapt resource value: 0x7f09006e
+			public const int topPanel = 2131296366;
 			
-			// aapt resource value: 0x7f0a0090
-			public const int touch_outside = 2131361936;
+			// aapt resource value: 0x7f09008f
+			public const int touch_outside = 2131296399;
 			
-			// aapt resource value: 0x7f0a000f
-			public const int transition_current_scene = 2131361807;
+			// aapt resource value: 0x7f09000f
+			public const int transition_current_scene = 2131296271;
 			
-			// aapt resource value: 0x7f0a0010
-			public const int transition_layout_save = 2131361808;
+			// aapt resource value: 0x7f090010
+			public const int transition_layout_save = 2131296272;
 			
-			// aapt resource value: 0x7f0a0011
-			public const int transition_position = 2131361809;
+			// aapt resource value: 0x7f090011
+			public const int transition_position = 2131296273;
 			
-			// aapt resource value: 0x7f0a0012
-			public const int transition_scene_layoutid_cache = 2131361810;
+			// aapt resource value: 0x7f090012
+			public const int transition_scene_layoutid_cache = 2131296274;
 			
-			// aapt resource value: 0x7f0a0013
-			public const int transition_transform = 2131361811;
+			// aapt resource value: 0x7f090013
+			public const int transition_transform = 2131296275;
 			
-			// aapt resource value: 0x7f0a002d
-			public const int uniform = 2131361837;
+			// aapt resource value: 0x7f09002d
+			public const int uniform = 2131296301;
 			
-			// aapt resource value: 0x7f0a0009
-			public const int up = 2131361801;
+			// aapt resource value: 0x7f090009
+			public const int up = 2131296265;
 			
-			// aapt resource value: 0x7f0a0026
-			public const int useLogo = 2131361830;
+			// aapt resource value: 0x7f090026
+			public const int useLogo = 2131296294;
 			
-			// aapt resource value: 0x7f0a0016
-			public const int view_offset_helper = 2131361814;
+			// aapt resource value: 0x7f090016
+			public const int view_offset_helper = 2131296278;
 			
-			// aapt resource value: 0x7f0a00ca
-			public const int visible = 2131361994;
+			// aapt resource value: 0x7f0900c9
+			public const int visible = 2131296457;
 			
-			// aapt resource value: 0x7f0a00ac
-			public const int volume_item_container = 2131361964;
+			// aapt resource value: 0x7f0900ab
+			public const int volume_item_container = 2131296427;
 			
-			// aapt resource value: 0x7f0a008b
-			public const int webview = 2131361931;
+			// aapt resource value: 0x7f09003c
+			public const int withText = 2131296316;
 			
-			// aapt resource value: 0x7f0a003c
-			public const int withText = 2131361852;
-			
-			// aapt resource value: 0x7f0a002e
-			public const int wrap_content = 2131361838;
+			// aapt resource value: 0x7f09002e
+			public const int wrap_content = 2131296302;
 			
 			static Id()
 			{
@@ -6215,133 +3805,130 @@ namespace ResSched.Droid
 			public const int abc_select_dialog_material = 2130968601;
 			
 			// aapt resource value: 0x7f04001a
-			public const int activity_webview = 2130968602;
+			public const int design_bottom_navigation_item = 2130968602;
 			
 			// aapt resource value: 0x7f04001b
-			public const int design_bottom_navigation_item = 2130968603;
+			public const int design_bottom_sheet_dialog = 2130968603;
 			
 			// aapt resource value: 0x7f04001c
-			public const int design_bottom_sheet_dialog = 2130968604;
+			public const int design_layout_snackbar = 2130968604;
 			
 			// aapt resource value: 0x7f04001d
-			public const int design_layout_snackbar = 2130968605;
+			public const int design_layout_snackbar_include = 2130968605;
 			
 			// aapt resource value: 0x7f04001e
-			public const int design_layout_snackbar_include = 2130968606;
+			public const int design_layout_tab_icon = 2130968606;
 			
 			// aapt resource value: 0x7f04001f
-			public const int design_layout_tab_icon = 2130968607;
+			public const int design_layout_tab_text = 2130968607;
 			
 			// aapt resource value: 0x7f040020
-			public const int design_layout_tab_text = 2130968608;
+			public const int design_menu_item_action_area = 2130968608;
 			
 			// aapt resource value: 0x7f040021
-			public const int design_menu_item_action_area = 2130968609;
+			public const int design_navigation_item = 2130968609;
 			
 			// aapt resource value: 0x7f040022
-			public const int design_navigation_item = 2130968610;
+			public const int design_navigation_item_header = 2130968610;
 			
 			// aapt resource value: 0x7f040023
-			public const int design_navigation_item_header = 2130968611;
+			public const int design_navigation_item_separator = 2130968611;
 			
 			// aapt resource value: 0x7f040024
-			public const int design_navigation_item_separator = 2130968612;
+			public const int design_navigation_item_subheader = 2130968612;
 			
 			// aapt resource value: 0x7f040025
-			public const int design_navigation_item_subheader = 2130968613;
+			public const int design_navigation_menu = 2130968613;
 			
 			// aapt resource value: 0x7f040026
-			public const int design_navigation_menu = 2130968614;
+			public const int design_navigation_menu_item = 2130968614;
 			
 			// aapt resource value: 0x7f040027
-			public const int design_navigation_menu_item = 2130968615;
+			public const int design_text_input_password_icon = 2130968615;
 			
 			// aapt resource value: 0x7f040028
-			public const int design_text_input_password_icon = 2130968616;
+			public const int mr_chooser_dialog = 2130968616;
 			
 			// aapt resource value: 0x7f040029
-			public const int mr_chooser_dialog = 2130968617;
+			public const int mr_chooser_list_item = 2130968617;
 			
 			// aapt resource value: 0x7f04002a
-			public const int mr_chooser_list_item = 2130968618;
+			public const int mr_controller_material_dialog_b = 2130968618;
 			
 			// aapt resource value: 0x7f04002b
-			public const int mr_controller_material_dialog_b = 2130968619;
+			public const int mr_controller_volume_item = 2130968619;
 			
 			// aapt resource value: 0x7f04002c
-			public const int mr_controller_volume_item = 2130968620;
+			public const int mr_playback_control = 2130968620;
 			
 			// aapt resource value: 0x7f04002d
-			public const int mr_playback_control = 2130968621;
+			public const int mr_volume_control = 2130968621;
 			
 			// aapt resource value: 0x7f04002e
-			public const int mr_volume_control = 2130968622;
+			public const int notification_action = 2130968622;
 			
 			// aapt resource value: 0x7f04002f
-			public const int notification_action = 2130968623;
+			public const int notification_action_tombstone = 2130968623;
 			
 			// aapt resource value: 0x7f040030
-			public const int notification_action_tombstone = 2130968624;
+			public const int notification_media_action = 2130968624;
 			
 			// aapt resource value: 0x7f040031
-			public const int notification_media_action = 2130968625;
+			public const int notification_media_cancel_action = 2130968625;
 			
 			// aapt resource value: 0x7f040032
-			public const int notification_media_cancel_action = 2130968626;
+			public const int notification_template_big_media = 2130968626;
 			
 			// aapt resource value: 0x7f040033
-			public const int notification_template_big_media = 2130968627;
+			public const int notification_template_big_media_custom = 2130968627;
 			
 			// aapt resource value: 0x7f040034
-			public const int notification_template_big_media_custom = 2130968628;
+			public const int notification_template_big_media_narrow = 2130968628;
 			
 			// aapt resource value: 0x7f040035
-			public const int notification_template_big_media_narrow = 2130968629;
+			public const int notification_template_big_media_narrow_custom = 2130968629;
 			
 			// aapt resource value: 0x7f040036
-			public const int notification_template_big_media_narrow_custom = 2130968630;
+			public const int notification_template_custom_big = 2130968630;
 			
 			// aapt resource value: 0x7f040037
-			public const int notification_template_custom_big = 2130968631;
+			public const int notification_template_icon_group = 2130968631;
 			
 			// aapt resource value: 0x7f040038
-			public const int notification_template_icon_group = 2130968632;
+			public const int notification_template_lines_media = 2130968632;
 			
 			// aapt resource value: 0x7f040039
-			public const int notification_template_lines_media = 2130968633;
+			public const int notification_template_media = 2130968633;
 			
 			// aapt resource value: 0x7f04003a
-			public const int notification_template_media = 2130968634;
+			public const int notification_template_media_custom = 2130968634;
 			
 			// aapt resource value: 0x7f04003b
-			public const int notification_template_media_custom = 2130968635;
+			public const int notification_template_part_chronometer = 2130968635;
 			
 			// aapt resource value: 0x7f04003c
-			public const int notification_template_part_chronometer = 2130968636;
+			public const int notification_template_part_time = 2130968636;
 			
 			// aapt resource value: 0x7f04003d
-			public const int notification_template_part_time = 2130968637;
+			public const int select_dialog_item_material = 2130968637;
 			
 			// aapt resource value: 0x7f04003e
-			public const int select_dialog_item_material = 2130968638;
+			public const int select_dialog_multichoice_material = 2130968638;
 			
 			// aapt resource value: 0x7f04003f
-			public const int select_dialog_multichoice_material = 2130968639;
+			public const int select_dialog_singlechoice_material = 2130968639;
 			
 			// aapt resource value: 0x7f040040
-			public const int select_dialog_singlechoice_material = 2130968640;
+			public const int support_simple_spinner_dropdown_item = 2130968640;
 			
 			// aapt resource value: 0x7f040041
-			public const int support_simple_spinner_dropdown_item = 2130968641;
+			public const int Tabbar = 2130968641;
 			
 			// aapt resource value: 0x7f040042
-			public const int Tabbar = 2130968642;
+			public const int Toolbar = 2130968642;
 			
 			// aapt resource value: 0x7f040043
-			public const int Toolbar = 2130968643;
-			
-			// aapt resource value: 0x7f040044
-			public const int tooltip = 2130968644;
+			public const int tooltip = 2130968643;
 			
 			static Layout()
 			{
@@ -6378,194 +3965,185 @@ namespace ResSched.Droid
 		public partial class String
 		{
 			
-			// aapt resource value: 0x7f080001
-			public const int ApplicationName = 2131230721;
+			// aapt resource value: 0x7f0a0015
+			public const int abc_action_bar_home_description = 2131361813;
 			
-			// aapt resource value: 0x7f080000
-			public const int Hello = 2131230720;
+			// aapt resource value: 0x7f0a0016
+			public const int abc_action_bar_up_description = 2131361814;
 			
-			// aapt resource value: 0x7f080018
-			public const int abc_action_bar_home_description = 2131230744;
+			// aapt resource value: 0x7f0a0017
+			public const int abc_action_menu_overflow_description = 2131361815;
 			
-			// aapt resource value: 0x7f080019
-			public const int abc_action_bar_up_description = 2131230745;
+			// aapt resource value: 0x7f0a0018
+			public const int abc_action_mode_done = 2131361816;
 			
-			// aapt resource value: 0x7f08001a
-			public const int abc_action_menu_overflow_description = 2131230746;
+			// aapt resource value: 0x7f0a0019
+			public const int abc_activity_chooser_view_see_all = 2131361817;
 			
-			// aapt resource value: 0x7f08001b
-			public const int abc_action_mode_done = 2131230747;
+			// aapt resource value: 0x7f0a001a
+			public const int abc_activitychooserview_choose_application = 2131361818;
 			
-			// aapt resource value: 0x7f08001c
-			public const int abc_activity_chooser_view_see_all = 2131230748;
+			// aapt resource value: 0x7f0a001b
+			public const int abc_capital_off = 2131361819;
 			
-			// aapt resource value: 0x7f08001d
-			public const int abc_activitychooserview_choose_application = 2131230749;
+			// aapt resource value: 0x7f0a001c
+			public const int abc_capital_on = 2131361820;
 			
-			// aapt resource value: 0x7f08001e
-			public const int abc_capital_off = 2131230750;
+			// aapt resource value: 0x7f0a0027
+			public const int abc_font_family_body_1_material = 2131361831;
 			
-			// aapt resource value: 0x7f08001f
-			public const int abc_capital_on = 2131230751;
+			// aapt resource value: 0x7f0a0028
+			public const int abc_font_family_body_2_material = 2131361832;
 			
-			// aapt resource value: 0x7f08002a
-			public const int abc_font_family_body_1_material = 2131230762;
+			// aapt resource value: 0x7f0a0029
+			public const int abc_font_family_button_material = 2131361833;
 			
-			// aapt resource value: 0x7f08002b
-			public const int abc_font_family_body_2_material = 2131230763;
+			// aapt resource value: 0x7f0a002a
+			public const int abc_font_family_caption_material = 2131361834;
 			
-			// aapt resource value: 0x7f08002c
-			public const int abc_font_family_button_material = 2131230764;
+			// aapt resource value: 0x7f0a002b
+			public const int abc_font_family_display_1_material = 2131361835;
 			
-			// aapt resource value: 0x7f08002d
-			public const int abc_font_family_caption_material = 2131230765;
+			// aapt resource value: 0x7f0a002c
+			public const int abc_font_family_display_2_material = 2131361836;
 			
-			// aapt resource value: 0x7f08002e
-			public const int abc_font_family_display_1_material = 2131230766;
+			// aapt resource value: 0x7f0a002d
+			public const int abc_font_family_display_3_material = 2131361837;
 			
-			// aapt resource value: 0x7f08002f
-			public const int abc_font_family_display_2_material = 2131230767;
+			// aapt resource value: 0x7f0a002e
+			public const int abc_font_family_display_4_material = 2131361838;
 			
-			// aapt resource value: 0x7f080030
-			public const int abc_font_family_display_3_material = 2131230768;
+			// aapt resource value: 0x7f0a002f
+			public const int abc_font_family_headline_material = 2131361839;
 			
-			// aapt resource value: 0x7f080031
-			public const int abc_font_family_display_4_material = 2131230769;
+			// aapt resource value: 0x7f0a0030
+			public const int abc_font_family_menu_material = 2131361840;
 			
-			// aapt resource value: 0x7f080032
-			public const int abc_font_family_headline_material = 2131230770;
+			// aapt resource value: 0x7f0a0031
+			public const int abc_font_family_subhead_material = 2131361841;
 			
-			// aapt resource value: 0x7f080033
-			public const int abc_font_family_menu_material = 2131230771;
+			// aapt resource value: 0x7f0a0032
+			public const int abc_font_family_title_material = 2131361842;
 			
-			// aapt resource value: 0x7f080034
-			public const int abc_font_family_subhead_material = 2131230772;
+			// aapt resource value: 0x7f0a001d
+			public const int abc_search_hint = 2131361821;
 			
-			// aapt resource value: 0x7f080035
-			public const int abc_font_family_title_material = 2131230773;
+			// aapt resource value: 0x7f0a001e
+			public const int abc_searchview_description_clear = 2131361822;
 			
-			// aapt resource value: 0x7f080020
-			public const int abc_search_hint = 2131230752;
+			// aapt resource value: 0x7f0a001f
+			public const int abc_searchview_description_query = 2131361823;
 			
-			// aapt resource value: 0x7f080021
-			public const int abc_searchview_description_clear = 2131230753;
+			// aapt resource value: 0x7f0a0020
+			public const int abc_searchview_description_search = 2131361824;
 			
-			// aapt resource value: 0x7f080022
-			public const int abc_searchview_description_query = 2131230754;
+			// aapt resource value: 0x7f0a0021
+			public const int abc_searchview_description_submit = 2131361825;
 			
-			// aapt resource value: 0x7f080023
-			public const int abc_searchview_description_search = 2131230755;
+			// aapt resource value: 0x7f0a0022
+			public const int abc_searchview_description_voice = 2131361826;
 			
-			// aapt resource value: 0x7f080024
-			public const int abc_searchview_description_submit = 2131230756;
+			// aapt resource value: 0x7f0a0023
+			public const int abc_shareactionprovider_share_with = 2131361827;
 			
-			// aapt resource value: 0x7f080025
-			public const int abc_searchview_description_voice = 2131230757;
+			// aapt resource value: 0x7f0a0024
+			public const int abc_shareactionprovider_share_with_application = 2131361828;
 			
-			// aapt resource value: 0x7f080026
-			public const int abc_shareactionprovider_share_with = 2131230758;
+			// aapt resource value: 0x7f0a0025
+			public const int abc_toolbar_collapse_description = 2131361829;
 			
-			// aapt resource value: 0x7f080027
-			public const int abc_shareactionprovider_share_with_application = 2131230759;
+			// aapt resource value: 0x7f0a0033
+			public const int appbar_scrolling_view_behavior = 2131361843;
 			
-			// aapt resource value: 0x7f080028
-			public const int abc_toolbar_collapse_description = 2131230760;
+			// aapt resource value: 0x7f0a0034
+			public const int bottom_sheet_behavior = 2131361844;
 			
-			// aapt resource value: 0x7f080036
-			public const int appbar_scrolling_view_behavior = 2131230774;
+			// aapt resource value: 0x7f0a0035
+			public const int character_counter_pattern = 2131361845;
 			
-			// aapt resource value: 0x7f080037
-			public const int bottom_sheet_behavior = 2131230775;
+			// aapt resource value: 0x7f0a0000
+			public const int mr_button_content_description = 2131361792;
 			
-			// aapt resource value: 0x7f080038
-			public const int character_counter_pattern = 2131230776;
+			// aapt resource value: 0x7f0a0001
+			public const int mr_cast_button_connected = 2131361793;
 			
-			// aapt resource value: 0x7f080003
-			public const int mr_button_content_description = 2131230723;
+			// aapt resource value: 0x7f0a0002
+			public const int mr_cast_button_connecting = 2131361794;
 			
-			// aapt resource value: 0x7f080004
-			public const int mr_cast_button_connected = 2131230724;
+			// aapt resource value: 0x7f0a0003
+			public const int mr_cast_button_disconnected = 2131361795;
 			
-			// aapt resource value: 0x7f080005
-			public const int mr_cast_button_connecting = 2131230725;
+			// aapt resource value: 0x7f0a0004
+			public const int mr_chooser_searching = 2131361796;
 			
-			// aapt resource value: 0x7f080006
-			public const int mr_cast_button_disconnected = 2131230726;
+			// aapt resource value: 0x7f0a0005
+			public const int mr_chooser_title = 2131361797;
 			
-			// aapt resource value: 0x7f080007
-			public const int mr_chooser_searching = 2131230727;
+			// aapt resource value: 0x7f0a0006
+			public const int mr_controller_album_art = 2131361798;
 			
-			// aapt resource value: 0x7f080008
-			public const int mr_chooser_title = 2131230728;
+			// aapt resource value: 0x7f0a0007
+			public const int mr_controller_casting_screen = 2131361799;
 			
-			// aapt resource value: 0x7f080009
-			public const int mr_controller_album_art = 2131230729;
+			// aapt resource value: 0x7f0a0008
+			public const int mr_controller_close_description = 2131361800;
 			
-			// aapt resource value: 0x7f08000a
-			public const int mr_controller_casting_screen = 2131230730;
+			// aapt resource value: 0x7f0a0009
+			public const int mr_controller_collapse_group = 2131361801;
 			
-			// aapt resource value: 0x7f08000b
-			public const int mr_controller_close_description = 2131230731;
+			// aapt resource value: 0x7f0a000a
+			public const int mr_controller_disconnect = 2131361802;
 			
-			// aapt resource value: 0x7f08000c
-			public const int mr_controller_collapse_group = 2131230732;
+			// aapt resource value: 0x7f0a000b
+			public const int mr_controller_expand_group = 2131361803;
 			
-			// aapt resource value: 0x7f08000d
-			public const int mr_controller_disconnect = 2131230733;
+			// aapt resource value: 0x7f0a000c
+			public const int mr_controller_no_info_available = 2131361804;
 			
-			// aapt resource value: 0x7f08000e
-			public const int mr_controller_expand_group = 2131230734;
+			// aapt resource value: 0x7f0a000d
+			public const int mr_controller_no_media_selected = 2131361805;
 			
-			// aapt resource value: 0x7f08000f
-			public const int mr_controller_no_info_available = 2131230735;
+			// aapt resource value: 0x7f0a000e
+			public const int mr_controller_pause = 2131361806;
 			
-			// aapt resource value: 0x7f080010
-			public const int mr_controller_no_media_selected = 2131230736;
+			// aapt resource value: 0x7f0a000f
+			public const int mr_controller_play = 2131361807;
 			
-			// aapt resource value: 0x7f080011
-			public const int mr_controller_pause = 2131230737;
+			// aapt resource value: 0x7f0a0010
+			public const int mr_controller_stop = 2131361808;
 			
-			// aapt resource value: 0x7f080012
-			public const int mr_controller_play = 2131230738;
+			// aapt resource value: 0x7f0a0011
+			public const int mr_controller_stop_casting = 2131361809;
 			
-			// aapt resource value: 0x7f080013
-			public const int mr_controller_stop = 2131230739;
+			// aapt resource value: 0x7f0a0012
+			public const int mr_controller_volume_slider = 2131361810;
 			
-			// aapt resource value: 0x7f080014
-			public const int mr_controller_stop_casting = 2131230740;
+			// aapt resource value: 0x7f0a0013
+			public const int mr_system_route_name = 2131361811;
 			
-			// aapt resource value: 0x7f080015
-			public const int mr_controller_volume_slider = 2131230741;
+			// aapt resource value: 0x7f0a0014
+			public const int mr_user_route_category_name = 2131361812;
 			
-			// aapt resource value: 0x7f080016
-			public const int mr_system_route_name = 2131230742;
+			// aapt resource value: 0x7f0a0036
+			public const int password_toggle_content_description = 2131361846;
 			
-			// aapt resource value: 0x7f080017
-			public const int mr_user_route_category_name = 2131230743;
+			// aapt resource value: 0x7f0a0037
+			public const int path_password_eye = 2131361847;
 			
-			// aapt resource value: 0x7f080039
-			public const int password_toggle_content_description = 2131230777;
+			// aapt resource value: 0x7f0a0038
+			public const int path_password_eye_mask_strike_through = 2131361848;
 			
-			// aapt resource value: 0x7f08003a
-			public const int path_password_eye = 2131230778;
+			// aapt resource value: 0x7f0a0039
+			public const int path_password_eye_mask_visible = 2131361849;
 			
-			// aapt resource value: 0x7f08003b
-			public const int path_password_eye_mask_strike_through = 2131230779;
+			// aapt resource value: 0x7f0a003a
+			public const int path_password_strike_through = 2131361850;
 			
-			// aapt resource value: 0x7f08003c
-			public const int path_password_eye_mask_visible = 2131230780;
+			// aapt resource value: 0x7f0a0026
+			public const int search_menu_title = 2131361830;
 			
-			// aapt resource value: 0x7f08003d
-			public const int path_password_strike_through = 2131230781;
-			
-			// aapt resource value: 0x7f080029
-			public const int search_menu_title = 2131230761;
-			
-			// aapt resource value: 0x7f08003e
-			public const int status_bar_notification_info_overflow = 2131230782;
-			
-			// aapt resource value: 0x7f080002
-			public const int title_activity_webview = 2131230722;
+			// aapt resource value: 0x7f0a003b
+			public const int status_bar_notification_info_overflow = 2131361851;
 			
 			static String()
 			{

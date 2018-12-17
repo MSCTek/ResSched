@@ -14,6 +14,7 @@ namespace ResSched.ObjModel
         private DateTime _reservedOnDateTime;
         private Guid _resourceId;
         private Guid _resourceScheduleId;
+        private bool _isDeleted;
 
         public ResourceSchedule()
         {
@@ -58,6 +59,12 @@ namespace ResSched.ObjModel
         {
             get { return _resourceScheduleId; }
             set { Set(nameof(ResourceScheduleId), ref _resourceScheduleId, value); }
+        }
+
+        public bool IsDeleted
+        {
+            get { return _isDeleted; }
+            set { Set(nameof(IsDeleted), ref _isDeleted, value); }
         }
     }
 }

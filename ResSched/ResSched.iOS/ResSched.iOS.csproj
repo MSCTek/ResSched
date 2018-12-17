@@ -30,8 +30,7 @@
     <MtouchDebug>true</MtouchDebug>
     <CodesignKey>iPhone Developer</CodesignKey>
     <CodesignProvision>ResSchedulerPPDev</CodesignProvision>
-    <CodesignEntitlements>
-    </CodesignEntitlements>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhoneSimulator' ">
     <DebugType>none</DebugType>
@@ -178,7 +177,7 @@
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <ItemGroup>
     <ProjectReference Include="..\ResSched\ResSched.csproj">
-      <Project>{B8A9D08F-F55A-461F-8A6C-73FF7020E816}</Project>
+      <Project>{3ED81455-715A-45FF-BAE9-C75E19C065CA}</Project>
       <Name>ResSched</Name>
     </ProjectReference>
   </ItemGroup>

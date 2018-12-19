@@ -10,13 +10,15 @@ namespace ResSched.Views
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class MainPage : MasterDetailPage
     {
-        Dictionary<int, NavigationPage> MenuPages = new Dictionary<int, NavigationPage>();
+        private Dictionary<int, NavigationPage> MenuPages = new Dictionary<int, NavigationPage>();
+
         public MainPage()
         {
             InitializeComponent();
 
             MasterBehavior = MasterBehavior.Popover;
             MenuPages.Add((int)MenuItemType.Browse, (NavigationPage)Detail);
+            this.IsPresentedChanged += OnPresentedChanged;
         }
 
         public async Task NavigateFromMenu(int id)
@@ -28,12 +30,15 @@ namespace ResSched.Views
                     case (int)MenuItemType.Browse:
                         MenuPages.Add(id, new NavigationPage(new ItemsPage()));
                         break;
+
                     case (int)MenuItemType.About:
                         MenuPages.Add(id, new NavigationPage(new AboutPage()));
                         break;
+
                     case (int)MenuItemType.Login:
                         MenuPages.Add(id, new NavigationPage(new Login()));
                         break;
+
                     case (int)MenuItemType.MyReservations:
                         MenuPages.Add(id, new NavigationPage(new MyReservationsPage()));
                         break;
@@ -51,6 +56,11 @@ namespace ResSched.Views
 
                 IsPresented = false;
             }
+        }
+
+        private void OnPresentedChanged(object sender, EventArgs e)
+        {
+            ((MenuPage)this.Master).Refresh();
         }
     }
 }

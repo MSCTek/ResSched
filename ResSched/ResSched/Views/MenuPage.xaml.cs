@@ -1,6 +1,5 @@
 ﻿using ResSched.Models;
-using System;
-using System.Collections.Generic;
+using ResSched.ViewModels;
 
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
@@ -10,39 +9,34 @@ namespace ResSched.Views
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class MenuPage : ContentPage
     {
-        private MainPage RootPage { get => Application.Current.MainPage as MainPage; }
-        private List<HomeMenuItem> menuItems;
+        //private List<HomeMenuItem> menuItems;
 
         public MenuPage()
         {
             InitializeComponent();
 
+            Refresh();
 
-            //TODO: Remove MyReservation page if the user is not logged in
-            menuItems = new List<HomeMenuItem>
+            if (this.BindingContext != null)
             {
-                new HomeMenuItem {Id = MenuItemType.Browse, Title="Browse" },
-                new HomeMenuItem {Id = MenuItemType.MyReservations, Title="My Reservations" },
-                new HomeMenuItem {Id = MenuItemType.About, Title="About" },
-                new HomeMenuItem {Id = MenuItemType.Login, Title="Login" }
-            };
-
-            ListViewMenu.ItemsSource = menuItems;
-
-            ListViewMenu.SelectedItem = menuItems[0];
+                var vm = (MenuViewModel)this.BindingContext;
+                ListViewMenu.SelectedItem = vm.MenuItems[0];
+            }
             ListViewMenu.ItemSelected += OnMenuItemSelected;
         }
 
-        private async void OnMenuItemSelected(object sender, SelectedItemChangedEventArgs  e)
-        {
-            if (e.SelectedItem == null)
-                return;
+        private MainPage RootPage { get => Application.Current.MainPage as MainPage; }
 
-            var id = (int)((HomeMenuItem)e.SelectedItem).Id;
-            await RootPage.NavigateFromMenu(id);
+        public void Refresh()
+        {
+            if (this.BindingContext != null)
+            {
+                var vm = (MenuViewModel)this.BindingContext;
+                vm.RefreshMenuItems();
+            }
         }
 
-        public void TakeMeHere(int pageNumber)
+        /*public void TakeMeHere(int pageNumber)
         {
             ListViewMenu.SelectedItem = menuItems[pageNumber];
         }
@@ -51,6 +45,21 @@ namespace ResSched.Views
         {
             int id = (int)page;
             ListViewMenu.SelectedItem = menuItems[id];
+        }*/
+
+        protected override void OnAppearing()
+        {
+            base.OnAppearing();
+            Refresh();
+        }
+
+        private async void OnMenuItemSelected(object sender, SelectedItemChangedEventArgs e)
+        {
+            if (e.SelectedItem == null)
+                return;
+
+            var id = (int)((HomeMenuItem)e.SelectedItem).Id;
+            await RootPage.NavigateFromMenu(id);
         }
     }
 }

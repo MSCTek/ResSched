@@ -3,12 +3,16 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:conv="clr-namespace:ResSched.Converters"
              x:Class="ResSched.Views.MenuPage"
+             xmlns:vm="clr-namespace:ResSched.ViewModels"
              Title="Menu">
-    
+
+    <ContentPage.BindingContext>
+        <vm:MenuViewModel />
+    </ContentPage.BindingContext>
+
     <ContentPage.Content>
         <StackLayout VerticalOptions="FillAndExpand">
-            <ListView x:Name="ListViewMenu"
-                    HasUnevenRows="True">
+            <ListView x:Name="ListViewMenu" ItemsSource="{Binding MenuItems}" HasUnevenRows="True">
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell>
@@ -21,5 +25,4 @@
             </ListView>
         </StackLayout>
     </ContentPage.Content>
-
 </ContentPage>

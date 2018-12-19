@@ -1,7 +1,5 @@
-﻿
-using Microsoft.AppCenter.Analytics;
+﻿using Microsoft.AppCenter.Analytics;
 using Microsoft.AppCenter.Crashes;
-using ResSched.Models;
 using System;
 using System.Collections.Generic;
 using Xamarin.Essentials;
@@ -13,11 +11,12 @@ namespace ResSched.Views
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class AboutPage : ContentPage
     {
-        private MainPage RootPage { get => Application.Current.MainPage as MainPage; }
         public AboutPage()
         {
             InitializeComponent();
         }
+
+        private MainPage RootPage { get => Application.Current.MainPage as MainPage; }
 
         private void FacebookGestureRecognizer_Tapped(object sender, EventArgs e)
         {
@@ -57,20 +56,9 @@ namespace ResSched.Views
         private void SlackGestureRecognizer_Tapped(object sender, EventArgs e)
         {
             Application.Current.MainPage.DisplayAlert(
-                "Wait!", 
-                "You must be a member to join our Slack Channel!", 
+                "Wait!",
+                "You must be a member to join our Slack Channel!",
                 "OK");
-        }
-
-        private void TwitterGestureRecognizer_Tapped(object sender, EventArgs e)
-        {
-            Device.OpenUri(new Uri("https://twitter.com/fox_build"));
-            //Device.OpenUri(new Uri( "https://twitter.com/intent/tweet?text=Home&url=https%3A%2F%2Ffox.build%2F&via=@fox_build"));
-        }
-
-        private void BackButton_Tapped(object sender, EventArgs e)
-        {
-            (RootPage.Master as MenuPage).TakeMeHere(MenuItemType.Browse);
         }
 
         private void TestCrashButton_Clicked(object sender, EventArgs e)
@@ -80,5 +68,16 @@ namespace ResSched.Views
             int zero = 0;
             var badNUmber = zero / zero;
         }
+
+        private void TwitterGestureRecognizer_Tapped(object sender, EventArgs e)
+        {
+            Device.OpenUri(new Uri("https://twitter.com/fox_build"));
+            //Device.OpenUri(new Uri( "https://twitter.com/intent/tweet?text=Home&url=https%3A%2F%2Ffox.build%2F&via=@fox_build"));
+        }
+
+        /*private void BackButton_Tapped(object sender, EventArgs e)
+        {
+            (RootPage.Master as MenuPage).TakeMeHere(MenuItemType.Browse);
+        }*/
     }
 }

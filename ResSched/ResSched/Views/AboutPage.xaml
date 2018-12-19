@@ -20,7 +20,7 @@
     <ContentPage.Content>
         <Grid RowSpacing="0">
             <Grid.RowDefinitions>
-                <RowDefinition Height="100" />
+                <RowDefinition Height="80" />
                 <RowDefinition Height="2" />
                 <RowDefinition Height="*" />
             </Grid.RowDefinitions>
@@ -45,7 +45,7 @@
                     <Label Text="About Us" FontSize="Default" />
                 </StackLayout>
 
-                <Image Grid.Column="1" Margin="0,10,15,0" HeightRequest="75" VerticalOptions="End">
+                <Image Grid.Column="1" Margin="0,5,15,0" HeightRequest="75" VerticalOptions="End">
                     <Image.Source>
                         <UriImageSource Uri="{StaticResource FoxImage}" CacheValidity="100" CachingEnabled="True" />
                     </Image.Source>
@@ -93,10 +93,10 @@
                         </Label>
                     </StackLayout>
 
-                    <Button Text="Test Crash" Clicked="TestCrashButton_Clicked" />
+                    <Button Text="Test Crash" Clicked="TestCrashButton_Clicked" IsVisible="{Binding IsDevEnv}" />
 
                     <!-- This is just a test of the third font awesome library-->
-                    <Label x:Name="Meh" Style="{StaticResource FA.Regular.LabelStyle}" Text="&#xf11a;"
+                    <Label x:Name="Meh" Style="{StaticResource FA.Regular.LabelStyle}" Text="&#xf11a;" IsVisible="{Binding IsDevEnv}"
                            HeightRequest="100" TextColor="Green" FontSize="42" />
                 </StackLayout>
             </ScrollView>

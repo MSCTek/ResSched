@@ -3,22 +3,22 @@ using System;
 
 namespace ResSched.DataModel
 {
-    [Table("Resource")]
-    public class Resource
+    [Table("User")]
+    public class User
     {
         public string CreatedBy { get; set; }
 
         public DateTime CreatedDate { get; set; }
 
-        public string Description { get; set; }
+        public string Email { get; set; }
 
-        public string ImageLink { get; set; }
-
-        public string ImageLinkThumb { get; set; }
+        public string InstallationId { get; set; }
 
         public bool IsActive { get; set; }
 
         public bool IsDeleted { get; set; }
+
+        public DateTime LastLoginDate { get; set; }
 
         public string LastModifiedBy { get; set; }
 
@@ -27,6 +27,6 @@ namespace ResSched.DataModel
         public string Name { get; set; }
 
         [PrimaryKey]
-        public Guid ResourceId { get; set; }
+        public Guid UserId { get; set; }
     }
 }

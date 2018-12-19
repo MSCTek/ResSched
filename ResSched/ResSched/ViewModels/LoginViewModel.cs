@@ -9,13 +9,23 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Net.Http;
 using System.Threading.Tasks;
-using Xamarin.Forms;
 
 namespace ResSched.ViewModels
 {
+    public enum GuestText
+    {
+        Sign_in_as_Guest,
+        Sign_out_as_Guest,
+    }
+
+    public enum MicrosoftText
+    {
+        Sign_in_with_Microsoft,
+        Sign_out_with_Microsoft,
+    }
+
     public class LoginViewModel : BaseViewModel
     {
-
         public LoginViewModel()
         {
             GuestButtonText = GuestText.Sign_in_as_Guest.ToDescription();
@@ -152,7 +162,6 @@ namespace ResSched.ViewModels
                 UserPrincipalName = user["userPrincipalName"].ToString();
 
                 RecordSuccessfulLogin(DisplayName, UserPrincipalName, "Microsoft");
-
             }
             else
             {
@@ -167,6 +176,12 @@ namespace ResSched.ViewModels
         private bool _isUserVisible;
         private string _microsoftButtonText;
 
+        public string GuestButtonText
+        {
+            get { return _guestButtonText; }
+            set { Set(nameof(GuestButtonText), ref _guestButtonText, value); }
+        }
+
         public bool IsUserVisible
         {
             get { return _isUserVisible; }
@@ -179,13 +194,7 @@ namespace ResSched.ViewModels
             set { Set(nameof(MicrosoftButtonText), ref _microsoftButtonText, value); }
         }
 
-        public string GuestButtonText
-        {
-            get { return _guestButtonText; }
-            set { Set(nameof(GuestButtonText), ref _guestButtonText, value); }
-        }
-
-        #endregion
+        #endregion UI properties
 
         #region display properties
 
@@ -248,17 +257,5 @@ namespace ResSched.ViewModels
         }
 
         #endregion display properties
-    }
-
-    public enum MicrosoftText
-    {
-        Sign_in_with_Microsoft,
-        Sign_out_with_Microsoft,
-    }
-
-    public enum GuestText
-    {
-        Sign_in_as_Guest,
-        Sign_out_as_Guest,
     }
 }

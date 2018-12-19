@@ -5,63 +5,61 @@
              x:Class="ResSched.Views.MyReservationsPage"
              Title="My Reservations">
 
-    <ContentPage.BindingContext>
+  <!--<ContentPage.BindingContext>
         <vm:MyReservationsViewModel />
-    </ContentPage.BindingContext>
+    </ContentPage.BindingContext>-->
 
-    <ContentPage.Content>
-        <Grid RowSpacing="0">
-            <Grid.RowDefinitions>
-                <RowDefinition Height="100" />
-                <RowDefinition Height="2" />
-                <RowDefinition Height="*" />
-            </Grid.RowDefinitions>
+  <ContentPage.Content>
+    <Grid RowSpacing="0">
+      <Grid.RowDefinitions>
+        <RowDefinition Height="80" />
+        <RowDefinition Height="2" />
+        <RowDefinition Height="*" />
+      </Grid.RowDefinitions>
 
-            <Grid Grid.Row="0" BackgroundColor="White">
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="*" />
-                    <ColumnDefinition Width="auto" />
-                </Grid.ColumnDefinitions>
+      <Grid Grid.Row="0" BackgroundColor="White">
+        <Grid.ColumnDefinitions>
+          <ColumnDefinition Width="*" />
+          <ColumnDefinition Width="auto" />
+        </Grid.ColumnDefinitions>
 
-                <StackLayout Grid.Column="0" Orientation="Vertical" Margin="20,10" Spacing="3">
-                    <Label Text="Fox.Build" FontSize="Medium" />
-                    <Label Text="My Reservations" FontSize="Default" />
-                </StackLayout>
+        <StackLayout Grid.Column="0" Orientation="Vertical" Margin="20,10" Spacing="3">
+          <Label Text="Fox.Build" FontSize="Medium" />
+          <Label Text="My Reservations" FontSize="Default" />
+        </StackLayout>
 
-                <Image Grid.Column="1" Margin="0,5,15,0" HeightRequest="75" VerticalOptions="End">
-                    <Image.Source>
-                        <UriImageSource Uri="{StaticResource FoxImage}" CacheValidity="100" CachingEnabled="True" />
-                    </Image.Source>
-                </Image>
-            </Grid>
-            
-            <BoxView Grid.Row="1" BackgroundColor="Gray" />
+        <Image Grid.Column="1" Margin="0,5,15,0" HeightRequest="75" VerticalOptions="End">
+          <Image.Source>
+            <UriImageSource Uri="{StaticResource FoxImage}" CacheValidity="100" CachingEnabled="True" />
+          </Image.Source>
+        </Image>
+      </Grid>
 
-            <!-- TODO: Convert to a list view -->
-            <Grid Grid.Row="2">
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="1*"/>
-                    <RowDefinition Height="4*"/>
-                </Grid.RowDefinitions>
-                <StackLayout Grid.Row="0" Orientation="Horizontal" Margin="10,5">
-                    <Image  HeightRequest="80">
-                        <Image.Source>
-                            <UriImageSource Uri="{StaticResource RedFoxImage}" CacheValidity="100" CachingEnabled="True" />
-                        </Image.Source>
-                    </Image>
-                    <StackLayout Orientation="Vertical" >
-                        <Label Text="#1 Red Fox Meeting Room" FontSize="Medium"/>
-                        <Label Text="Nov 24, 2018" />
-                        <Label Text="1pm - 3pm" />
-                    </StackLayout>
-                </StackLayout>
-                <StackLayout Grid.Row="1" Margin="10,0" >
-                    <Label Text="Reservation Notes: Monthly Constitutional Meetup Group" />
-                    <Label Text="Created: Nov 3, 2018 2:34pm" />
-                </StackLayout>
-            </Grid>
-            
-        </Grid>
-    </ContentPage.Content>
-    
+      <BoxView Grid.Row="1" BackgroundColor="Gray" />
+
+      <!-- TODO: Convert to a list view -->
+      <Grid Grid.Row="2" Margin="15,10,15,5">
+        <Grid.RowDefinitions>
+          <RowDefinition Height="auto" />
+          <RowDefinition Height="auto" />
+        </Grid.RowDefinitions>
+        <StackLayout Grid.Row="0" Orientation="Horizontal">
+          <Image  HeightRequest="80">
+            <Image.Source>
+              <UriImageSource Uri="{StaticResource RedFoxImage}" CacheValidity="100" CachingEnabled="True" />
+            </Image.Source>
+          </Image>
+          <StackLayout Orientation="Vertical">
+            <Label Text="#1 Red Fox Meeting Room" FontSize="Medium" />
+            <Label Text="Nov 24, 2018" />
+            <Label Text="1pm - 3pm" />
+          </StackLayout>
+        </StackLayout>
+        <StackLayout Grid.Row="1">
+          <Label Text="Reservation Notes: Monthly Constitutional Meetup Group" />
+          <Label Text="Created: Nov 3, 2018 2:34pm" />
+        </StackLayout>
+      </Grid>
+    </Grid>
+  </ContentPage.Content>
 </ContentPage>

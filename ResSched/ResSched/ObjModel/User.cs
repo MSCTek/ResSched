@@ -5,12 +5,17 @@ namespace ResSched.ObjModel
 {
     public partial class User : ObservableObject
     {
+        private string _createdBy;
+        private DateTime _createdDate;
         private string _email;
-        private Guid _installationId;
+        private string _installationId;
+        private bool _isActive;
+        private bool _isDeleted;
         private DateTime _lastLoginDate;
+        private string _lastModifiedBy;
+        private DateTime _lastModifiedDate;
         private string _name;
         private Guid _userId;
-
         public User()
         {
         }
@@ -21,7 +26,7 @@ namespace ResSched.ObjModel
             set { Set(nameof(Email), ref _email, value); }
         }
 
-        public Guid InstallationId
+        public string InstallationId
         {
             get { return _installationId; }
             set { Set(nameof(InstallationId), ref _installationId, value); }

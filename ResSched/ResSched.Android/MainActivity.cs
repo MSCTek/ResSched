@@ -1,5 +1,4 @@
 ﻿using System;
-
 using Android.App;
 using Android.Content.PM;
 using Android.Runtime;
@@ -9,19 +8,25 @@ using Android.OS;
 using Plugin.CurrentActivity;
 using Microsoft.Identity.Client;
 using Android.Content;
+//using Microsoft.WindowsAzure.MobileServices;
 
 namespace ResSched.Droid
 {
     [Activity(Label = "ResSched", Icon = "@mipmap/icon", Theme = "@style/MainTheme", MainLauncher = true, ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation)]
     public class MainActivity : global::Xamarin.Forms.Platform.Android.FormsAppCompatActivity
     {
-        
+
+        //public static MobileServiceClient MobileService = new MobileServiceClient("https://ressched.azurewebsites.net");
+
         protected override void OnCreate(Bundle savedInstanceState)
         {
             TabLayoutResource = Resource.Layout.Tabbar;
             ToolbarResource = Resource.Layout.Toolbar;
 
             base.OnCreate(savedInstanceState);
+
+            // Initialize Azure Mobile Apps
+            Microsoft.WindowsAzure.MobileServices.CurrentPlatform.Init();
 
             //for Xamarin.Auth
             //global::Xamarin.Auth.Presenters.XamarinAndroid.AuthenticationConfiguration.Init(this, savedInstanceState);

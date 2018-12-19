@@ -7,6 +7,11 @@ namespace ResSched.ObjModel
 {
     public partial class ResourceSchedule : ObservableObject
     {
+        private string _createdBy;
+        private DateTime _createdDate;
+        private bool _isDeleted;
+        private string _lastModifiedBy;
+        private DateTime _lastModifiedDate;
         private DateTime _reservationDateTime;
         private string _reservationNotes;
         private Guid _reservedByUserId;
@@ -14,10 +19,14 @@ namespace ResSched.ObjModel
         private DateTime _reservedOnDateTime;
         private Guid _resourceId;
         private Guid _resourceScheduleId;
-        private bool _isDeleted;
-
         public ResourceSchedule()
         {
+        }
+
+        public bool IsDeleted
+        {
+            get { return _isDeleted; }
+            set { Set(nameof(IsDeleted), ref _isDeleted, value); }
         }
 
         public DateTime ReservationDateTime
@@ -59,12 +68,6 @@ namespace ResSched.ObjModel
         {
             get { return _resourceScheduleId; }
             set { Set(nameof(ResourceScheduleId), ref _resourceScheduleId, value); }
-        }
-
-        public bool IsDeleted
-        {
-            get { return _isDeleted; }
-            set { Set(nameof(IsDeleted), ref _isDeleted, value); }
         }
     }
 }

@@ -26,6 +26,9 @@ namespace ResSched.iOS
             //Xamarin.Auth
             //global::Xamarin.Auth.Presenters.XamarinIOS.AuthenticationConfiguration.Init();
 
+            // Initialize Azure Mobile Apps
+            Microsoft.WindowsAzure.MobileServices.CurrentPlatform.Init();
+
             global::Xamarin.Forms.Forms.Init();
             LoadApplication(new App());
 

@@ -4,6 +4,7 @@ using System.Linq;
 
 using Foundation;
 using Microsoft.Identity.Client;
+using ResSched.iOS.Modules;
 using UIKit;
 
 namespace ResSched.iOS
@@ -30,7 +31,7 @@ namespace ResSched.iOS
             Microsoft.WindowsAzure.MobileServices.CurrentPlatform.Init();
 
             global::Xamarin.Forms.Forms.Init();
-            LoadApplication(new App());
+            LoadApplication(new App(new IOSPlatformModule()));
 
             return base.FinishedLaunching(app, options);
         }

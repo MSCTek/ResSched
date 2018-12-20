@@ -87,6 +87,8 @@
     <BundleResource Include="Resources\fa-regular-400.ttf" />
     <BundleResource Include="Resources\fa-brands-400.ttf" />
     <BundleResource Include="Resources\fa-solid-900.ttf" />
+    <Compile Include="Modules\IOSPlatformModule.cs" />
+    <Compile Include="Services\IOSSQLite.cs" />
   </ItemGroup>
   <ItemGroup>
     <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Contents.json">
@@ -171,9 +173,6 @@
     <PackageReference Include="MvvmLightLibs">
       <Version>5.4.1.1</Version>
     </PackageReference>
-    <PackageReference Include="Ninject">
-      <Version>3.3.4</Version>
-    </PackageReference>
     <PackageReference Include="sqlite-net-pcl">
       <Version>1.4.118</Version>
     </PackageReference>
@@ -182,6 +181,9 @@
     </PackageReference>
     <PackageReference Include="Xamarin.Forms" Version="3.1.0.697729" />
     <PackageReference Include="Newtonsoft.Json" Version="11.0.2" />
+    <PackageReference Include="Portable.Ninject">
+      <Version>3.3.1</Version>
+    </PackageReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <ItemGroup>
@@ -189,5 +191,9 @@
       <Project>{3ED81455-715A-45FF-BAE9-C75E19C065CA}</Project>
       <Name>ResSched</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Modules\" />
+    <Folder Include="Services\" />
   </ItemGroup>
 </Project>

@@ -34,18 +34,18 @@
 	<string>ResSched</string>
 	<key>XSAppIconAssets</key>
 	<string>Assets.xcassets/AppIcon.appiconset</string>
-  <key>CFBundleURLTypes</key>
-  <array>
-    <dict>
-      <key>CFBundleTypeRole</key>
-      <string>Editor</string>
-      <key>CFBundleURLName</key>
-      <string>com.msctek.ressched.dev</string>
-      <key>CFBundleURLSchemes</key>
-      <array>
-        <string>msal7fda6409-a86f-4e4f-8d59-288588dffa46</string>
-      </array>
-    </dict>
-  </array>
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>CFBundleURLName</key>
+			<string>com.msctek.ressched.dev</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>msal7fda6409-a86f-4e4f-8d59-288588dffa46</string>
+			</array>
+		</dict>
+	</array>
 </dict>
 </plist>

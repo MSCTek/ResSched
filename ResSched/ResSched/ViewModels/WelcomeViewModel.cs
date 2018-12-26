@@ -1,8 +1,5 @@
-﻿using System;
+﻿using ResSched.Interfaces;
 using System.Threading.Tasks;
-using GalaSoft.MvvmLight;
-using ResSched.Interfaces;
-using ResSched.Services;
 
 namespace ResSched.ViewModels
 {
@@ -15,6 +12,12 @@ namespace ResSched.ViewModels
         {
             _dataLoadService = dataLoadService;
             DisplayMessage = string.Empty;
+        }
+
+        public string DisplayMessage
+        {
+            get { return _displayMessage; }
+            set { Set(nameof(DisplayMessage), ref _displayMessage, value); }
         }
 
         public async Task Init()
@@ -32,13 +35,6 @@ namespace ResSched.ViewModels
             await Task.Delay(3000);
 
             Xamarin.Forms.Application.Current.MainPage = new Views.MainPage();
-
-        }
-
-        public string DisplayMessage
-        {
-            get { return _displayMessage; }
-            set { Set(nameof(DisplayMessage), ref _displayMessage, value); }
         }
     }
 }

@@ -13,7 +13,6 @@ namespace ResSched.Views
         public ItemsPage()
         {
             InitializeComponent();
-
             BindingContext = viewModel = new ItemsViewModel();
         }
 
@@ -23,7 +22,7 @@ namespace ResSched.Views
             if (BindingContext != null)
             {
                 var vm = BindingContext as ItemsViewModel;
-                await vm.Init();
+                await vm.InitVM();
             }
         }
 

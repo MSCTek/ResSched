@@ -9,8 +9,8 @@ namespace ResSched.Modules
         public override void Load()
         {
             Bind<IDatabase>().To<Database.Database>().InSingletonScope();
-            Bind<IDataRetrievalService>().To<DataRetrievalService>().InSingletonScope();
             Bind<IDataLoadService>().To<DataLoadSampleDataService>().InSingletonScope();
+            Bind<IDataRetrievalService>().To<DataRetrievalService>().InSingletonScope();
         }
     }
 }

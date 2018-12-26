@@ -1,9 +1,6 @@
 ﻿using GalaSoft.MvvmLight;
 using Ninject;
 using ResSched.Interfaces;
-using ResSched.Models;
-using ResSched.Services;
-using Xamarin.Forms;
 
 namespace ResSched.ViewModels
 {
@@ -11,13 +8,9 @@ namespace ResSched.ViewModels
     {
         protected IDataRetrievalService _dataService;
 
-        public BaseViewModel()
-        {
-        }
-
         public bool Init()
         {
-            //TODO: move this to the constructors...but hey, so convienient just like this...
+            //TODO: move this to the constructors...but hey, so convienient just like this...maybe leave it as is...
             var ker = ((ResSched.App)Xamarin.Forms.Application.Current).Kernel;
             _dataService = ker.Get<IDataRetrievalService>();
             return true;
@@ -25,7 +18,7 @@ namespace ResSched.ViewModels
 
         private bool _isBusy = false;
         private string title = string.Empty;
-        public IDataStore<Item> DataStore => DependencyService.Get<IDataStore<Item>>() ?? new MockDataStore();
+        //public IDataStore<Item> DataStore => DependencyService.Get<IDataStore<Item>>() ?? new MockDataStore();
 
         public bool IsBusy
         {

@@ -20,7 +20,7 @@ namespace ResSched.ViewModels
             set { Set(nameof(Reservations), ref _reservations, value); }
         }
 
-        public async Task Init()
+        public async Task InitVM()
         {
             if (base.Init())
             {

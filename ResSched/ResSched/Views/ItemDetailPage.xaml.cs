@@ -1,30 +1,24 @@
-﻿using System;
-
+﻿using ResSched.ViewModels;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
-
-using ResSched.Models;
-using ResSched.ViewModels;
 
 namespace ResSched.Views
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class ItemDetailPage : ContentPage
     {
-        ItemDetailViewModel viewModel;
+        private ItemDetailViewModel viewModel;
 
         public ItemDetailPage(ItemDetailViewModel viewModel)
         {
             InitializeComponent();
-
             BindingContext = this.viewModel = viewModel;
         }
 
         protected override async void OnAppearing()
         {
             base.OnAppearing();
-
-            if(viewModel != null)
+            if (viewModel != null)
             {
                 await viewModel.Refresh();
             }

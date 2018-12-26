@@ -21,7 +21,7 @@ namespace ResSched.ViewModels
             set { Set(nameof(Items), ref _items, value); }
         }
 
-        public async Task Init()
+        public async Task InitVM()
         {
             if (base.Init())
             {

@@ -1,8 +1,5 @@
-﻿using GalaSoft.MvvmLight;
-using ResSched.DataModel;
+﻿using ResSched.DataModel;
 using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace ResSched.SampleData
 {
@@ -10,7 +7,8 @@ namespace ResSched.SampleData
     {
         public static ResourceSchedule SampleSchedule1
         {
-            get{
+            get
+            {
                 return new ResourceSchedule()
                 {
                     ResourceScheduleId = Guid.NewGuid(),
@@ -30,7 +28,6 @@ namespace ResSched.SampleData
                 };
             }
         }
-
 
         public static ResourceSchedule SampleSchedule2
         {
@@ -55,6 +52,5 @@ namespace ResSched.SampleData
                 };
             }
         }
-
     }
 }

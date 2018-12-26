@@ -6,7 +6,6 @@ using Ninject;
 using Ninject.Modules;
 using ResSched.Interfaces;
 using ResSched.Modules;
-using ResSched.Services;
 using ResSched.ViewModels;
 using ResSched.Views;
 using System;
@@ -57,11 +56,6 @@ namespace ResSched
                 RedirectUri = Config.MSALRedirectUri,
             };
 
-            if (UseMockDataStore)
-                DependencyService.Register<MockDataStore>();
-            else
-                DependencyService.Register<AzureDataStore>();
-
             // Register core services
             Kernel = new StandardKernel(new CoreModule());
 
@@ -87,16 +81,14 @@ namespace ResSched
             var welcome = new WelcomePage();
             welcome.BindingContext = new WelcomeViewModel(Kernel.Get<IDataLoadService>());
             MainPage = welcome;
-
-            
         }
+
+        public IKernel Kernel { get; set; }
 
         public void NavigateToMainPage()
         {
             MainPage = new MainPage();
         }
-
-        public IKernel Kernel { get; set; }
 
         protected override void OnResume()
         {

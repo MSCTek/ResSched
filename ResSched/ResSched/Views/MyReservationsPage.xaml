@@ -5,7 +5,6 @@
              x:Class="ResSched.Views.MyReservationsPage"
              Title="My Reservations">
 
-
   <ContentPage.Content>
     <Grid RowSpacing="0">
       <Grid.RowDefinitions>
@@ -33,43 +32,42 @@
       </Grid>
 
       <BoxView Grid.Row="1" BackgroundColor="Gray" />
- 
-       <ListView Grid.Row="2" ItemsSource="{Binding Reservations}"
-              VerticalOptions="FillAndExpand"
-              HasUnevenRows="true"
-              CachingStrategy="RecycleElement">
-                
+
+      <ListView Grid.Row="2" ItemsSource="{Binding Reservations}"
+             VerticalOptions="FillAndExpand"
+             HasUnevenRows="true"
+             CachingStrategy="RecycleElement">
+
         <ListView.ItemTemplate>
           <DataTemplate>
             <ViewCell>
-                
-      <Grid  Margin="15,10,15,5">
-        <Grid.RowDefinitions>
-          <RowDefinition Height="auto" />
-          <RowDefinition Height="auto" />
-        </Grid.RowDefinitions>
-        <StackLayout Grid.Row="0" Orientation="Horizontal">
-          <Image  HeightRequest="80">
-            <Image.Source>
-              <UriImageSource Uri="{Binding Resource.ImageLink}" CacheValidity="100" CachingEnabled="True" />
-            </Image.Source>
-          </Image>
-          <StackLayout Orientation="Vertical">
-            <Label Text="{Binding Resource.Name}" FontSize="Medium" />
-            <Label Text="{Binding ReservationDateTime}" />
-            <Label Text="{Binding ReservationDateTime}" />
-          </StackLayout>
-        </StackLayout>
-        <StackLayout Grid.Row="1">
-          <Label Text="{Binding ReservationNotes}" />
-          <Label Text="{Binding ReservedOnDateTime}" />
-        </StackLayout>
-      </Grid>
-                            </ViewCell>
-                        </DataTemplate>
-                </ListView.ItemTemplate>
-                </ListView>
+
+              <Grid  Margin="15,10,15,5">
+                <Grid.RowDefinitions>
+                  <RowDefinition Height="auto" />
+                  <RowDefinition Height="auto" />
+                </Grid.RowDefinitions>
+                <StackLayout Grid.Row="0" Orientation="Horizontal">
+                  <Image  HeightRequest="80">
+                    <Image.Source>
+                      <UriImageSource Uri="{Binding Resource.ImageLink}" CacheValidity="100" CachingEnabled="True" />
+                    </Image.Source>
+                  </Image>
+                  <StackLayout Orientation="Vertical">
+                    <Label Text="{Binding Resource.Name}" FontSize="Medium" />
+                    <Label Text="{Binding ReservationStartDateTime}" />
+                    <Label Text="{Binding ReservationEndDateTime}" />
+                  </StackLayout>
+                </StackLayout>
+                <StackLayout Grid.Row="1">
+                  <Label Text="{Binding ReservationNotes}" />
+                  <Label Text="{Binding ReservedOnDateTime}" />
+                </StackLayout>
+              </Grid>
+            </ViewCell>
+          </DataTemplate>
+        </ListView.ItemTemplate>
+      </ListView>
     </Grid>
-        
   </ContentPage.Content>
 </ContentPage>

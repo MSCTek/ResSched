@@ -172,8 +172,8 @@
     <PackageReference Include="MvvmLightLibs">
       <Version>5.4.1.1</Version>
     </PackageReference>
-    <PackageReference Include="Ninject">
-      <Version>3.3.4</Version>
+    <PackageReference Include="Portable.Ninject">
+      <Version>3.3.1</Version>
     </PackageReference>
     <PackageReference Include="sqlite-net-pcl">
       <Version>1.5.231</Version>

@@ -1,5 +1,6 @@
 ﻿using System;
 using Ninject.Modules;
+using ResSched.Interfaces;
 using ResSched.iOS.Services;
 using ResSched.Services;
 

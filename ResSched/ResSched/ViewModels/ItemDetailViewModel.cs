@@ -120,6 +120,7 @@ namespace ResSched.ViewModels
             BuildHourlySchedule();
         }
 
+        //TODO: move this biz logic backward - out of the view model and into a helper class
         private void BuildHourlySchedule()
         {
             if (SelectedDay != DateTime.MinValue && Schedule != null)
@@ -134,13 +135,16 @@ namespace ResSched.ViewModels
                 }
                 //TODO: maybe move this to the config file?
                 List<int> hours = new List<int>() { 8, 9, 10, 11, 12, 13, 14, 15, 16, 17 };
+
                 foreach (var h in hours)
                 {
                     var hour = SelectedDay.AddHours(h);
+                    var sched = Schedule.Where(x => x.ReservationStartDateTime <= hour && x.ReservationEndDateTime >= hour).FirstOrDefault();
+
                     ScheduleByDay.Add(new HourlySchedule()
                     {
                         Hour = hour,
-                        ResourceSchedule = Schedule.FirstOrDefault(x => x.ReservationDateTime == hour)
+                        ResourceSchedule = sched
                     });
                 }
             }

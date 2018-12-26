@@ -10,8 +10,9 @@ namespace ResSched.ObjModel
         private bool _isDeleted;
         private string _lastModifiedBy;
         private DateTime _lastModifiedDate;
-        private DateTime _reservationDateTime;
+        private DateTime _reservationEndDateTime;
         private string _reservationNotes;
+        private DateTime _reservationStartDateTime;
         private string _reservedByUserEmail;
         private Guid _reservedByUserId;
         private string _reservedForUser;
@@ -54,16 +55,22 @@ namespace ResSched.ObjModel
             set { Set(nameof(LastModifiedDate), ref _lastModifiedDate, value); }
         }
 
-        public DateTime ReservationDateTime
+        public DateTime ReservationEndDateTime
         {
-            get { return _reservationDateTime; }
-            set { Set(nameof(ReservationDateTime), ref _reservationDateTime, value); }
+            get { return _reservationEndDateTime; }
+            set { Set(nameof(ReservationEndDateTime), ref _reservationEndDateTime, value); }
         }
 
         public string ReservationNotes
         {
             get { return _reservationNotes; }
             set { Set(nameof(ReservationNotes), ref _reservationNotes, value); }
+        }
+
+        public DateTime ReservationStartDateTime
+        {
+            get { return _reservationStartDateTime; }
+            set { Set(nameof(ReservationStartDateTime), ref _reservationStartDateTime, value); }
         }
 
         public string ReservedByUserEmail

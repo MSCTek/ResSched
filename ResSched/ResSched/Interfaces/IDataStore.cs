@@ -2,8 +2,9 @@
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
-namespace ResSched.Services
+namespace ResSched.Interfaces
 {
+    [Obsolete]
     public interface IDataStore<T>
     {
         Task<bool> AddItemAsync(T item);

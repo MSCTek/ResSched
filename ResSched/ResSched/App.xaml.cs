@@ -4,6 +4,7 @@ using Microsoft.AppCenter.Crashes;
 using Microsoft.Identity.Client;
 using Ninject;
 using Ninject.Modules;
+using ResSched.Interfaces;
 using ResSched.Modules;
 using ResSched.Services;
 using ResSched.ViewModels;

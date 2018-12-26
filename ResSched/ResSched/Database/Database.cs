@@ -1,4 +1,5 @@
 ﻿using ResSched.DataModel;
+using ResSched.Interfaces;
 using ResSched.Services;
 using SQLite;
 using System;

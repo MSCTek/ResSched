@@ -1,5 +1,6 @@
 ﻿using System;
 using System.IO;
+using ResSched.Interfaces;
 using ResSched.Services;
 using SQLite;
 
@@ -14,7 +15,7 @@ namespace ResSched.iOS.Services
             string documentsPath = Environment.GetFolderPath(Environment.SpecialFolder.Personal); // Documents folder
             string libraryPath = Path.Combine(documentsPath, "..", "Library"); // Library folder
             var path = Path.Combine(libraryPath, DBName);
-            var param = new SQLiteConnectionString(path, false);
+            //var param = new SQLiteConnectionString(path, false);
             var connection = new SQLiteAsyncConnection(path, SQLiteOpenFlags.ReadWrite | SQLiteOpenFlags.Create | SQLiteOpenFlags.SharedCache);
             return connection;
         }

@@ -3,7 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
-namespace ResSched.Services
+namespace ResSched.Interfaces
 {
     public partial interface IDataRetrievalService
     {

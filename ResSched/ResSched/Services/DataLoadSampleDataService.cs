@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using ResSched.DataModel;
+using ResSched.Interfaces;
 
 namespace ResSched.Services
 {
@@ -65,7 +66,6 @@ namespace ResSched.Services
             return await _db.GetAsyncConnection().InsertAllAsync(resources);
 
         }
-
 
         public async Task<int> LoadResourceSchedules(List<ResourceSchedule> resourceSchedules = null)
         {

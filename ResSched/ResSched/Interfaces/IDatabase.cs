@@ -1,7 +1,7 @@
 ﻿using SQLite;
 using System.Threading.Tasks;
 
-namespace ResSched.Services
+namespace ResSched.Interfaces
 {
     public interface IDatabase
     {

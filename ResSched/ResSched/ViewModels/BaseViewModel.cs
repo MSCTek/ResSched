@@ -1,5 +1,6 @@
 ﻿using GalaSoft.MvvmLight;
 using Ninject;
+using ResSched.Interfaces;
 using ResSched.Models;
 using ResSched.Services;
 using Xamarin.Forms;

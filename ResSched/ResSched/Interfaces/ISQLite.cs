@@ -1,6 +1,6 @@
 ﻿using SQLite;
 
-namespace ResSched.Services
+namespace ResSched.Interfaces
 {
     public interface ISQLite
     {

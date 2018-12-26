@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Threading.Tasks;
 using ResSched.DataModel;
 
-namespace ResSched.Services
+namespace ResSched.Interfaces
 {
     public partial interface IDataLoadService
     {

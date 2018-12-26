@@ -16,7 +16,8 @@ namespace ResSched.DataModel
 
         public DateTime LastModifiedDate { get; set; }
 
-        public DateTime ReservationDateTime { get; set; }
+        public DateTime ReservationStartDateTime { get; set; }
+        public DateTime ReservationEndDateTime { get; set; }
 
         public string ReservationNotes { get; set; }
 

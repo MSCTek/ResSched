@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Threading.Tasks;
 using GalaSoft.MvvmLight;
+using ResSched.Interfaces;
 using ResSched.Services;
 
 namespace ResSched.ViewModels

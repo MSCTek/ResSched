@@ -2,10 +2,12 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using ResSched.Interfaces;
 using ResSched.Models;
 
 namespace ResSched.Services
 {
+    [Obsolete]
     public class MockDataStore : IDataStore<Item>
     {
         List<Item> items;

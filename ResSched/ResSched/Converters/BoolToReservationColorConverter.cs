@@ -4,14 +4,14 @@ using Xamarin.Forms;
 
 namespace ResSched.Converters
 {
-    public class MyReallyGreatConverter : IValueConverter
+    public class BoolToReservationColorConverter : IValueConverter
     {
         public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
         {
-            if ((string)value == "hello")
-                return "Blue";
+            if ((bool)value == false)
+                return "LightGray";
             else
-                return "Red";
+                return "Black";
         }
 
         public object ConvertBack(object value, Type targetType, object parameter, CultureInfo culture)

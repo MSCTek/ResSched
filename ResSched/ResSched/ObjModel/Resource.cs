@@ -16,6 +16,7 @@ namespace ResSched.ObjModel
         private DateTime _lastModifiedDate;
         private string _name;
         private Guid _resourceId;
+
         public Resource()
         {
         }

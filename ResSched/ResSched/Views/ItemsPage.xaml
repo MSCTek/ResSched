@@ -4,7 +4,8 @@
              x:Class="ResSched.Views.ItemsPage"
               Title="{Binding Title}"
              x:Name="BrowseItemsPage">
-  <!--<ContentPage.ToolbarItems>
+
+    <!--<ContentPage.ToolbarItems>
         <ToolbarItem Text="Add" Clicked="AddItem_Clicked">
             <ToolbarItem.Icon>
                 <OnPlatform x:TypeArguments="FileImageSource">
@@ -14,9 +15,9 @@
         </ToolbarItem>
     </ContentPage.ToolbarItems>-->
 
-  <ContentPage.Content>
-    <StackLayout>
-      <ListView x:Name="ItemsListView"
+    <ContentPage.Content>
+        <StackLayout>
+            <ListView x:Name="ItemsListView"
               ItemsSource="{Binding Items}"
               VerticalOptions="FillAndExpand"
               HasUnevenRows="true"
@@ -25,23 +26,24 @@
               IsRefreshing="{Binding IsBusy, Mode=OneWay}"
               CachingStrategy="RecycleElement"
               ItemSelected="OnItemSelected">
-        <ListView.ItemTemplate>
-          <DataTemplate>
-            <ViewCell>
-              <StackLayout Padding="10">
-                <Label Text="{Binding Name}"
-                    LineBreakMode="NoWrap"
-                    Style="{DynamicResource ListItemTextStyle}"
-                    FontSize="16" />
-                <Label Text="{Binding Description}"
-                    LineBreakMode="NoWrap"
-                    Style="{DynamicResource ListItemDetailTextStyle}"
-                    FontSize="13" />
-              </StackLayout>
-            </ViewCell>
-          </DataTemplate>
-        </ListView.ItemTemplate>
-      </ListView>
-    </StackLayout>
-  </ContentPage.Content>
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout  Orientation="Horizontal">
+                                <Image Grid.Column="1" Margin="10,5,0,5" HeightRequest="60" VerticalOptions="End">
+                                    <Image.Source>
+                                        <UriImageSource Uri="{Binding ImageLinkThumb}" CacheValidity="100" CachingEnabled="True" />
+                                    </Image.Source>
+                                </Image>
+                                <StackLayout Padding="10" Orientation="Vertical">
+                                    <Label Text="{Binding Name}" LineBreakMode="NoWrap"  Style="{DynamicResource ListItemTextStyle}"  FontSize="16" />
+                                    <Label Text="{Binding Description}"  LineBreakMode="NoWrap"  Style="{DynamicResource ListItemDetailTextStyle}"  FontSize="13" />
+                                </StackLayout>
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+    </ContentPage.Content>
 </ContentPage>

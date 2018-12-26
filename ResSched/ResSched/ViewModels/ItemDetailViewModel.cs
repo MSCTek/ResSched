@@ -21,7 +21,8 @@ namespace ResSched.ViewModels
             set { Set(nameof(Hour), ref _hour, value); }
         }
 
-        public string HourDisplay { get { return this.Hour.ToLongTimeString(); } }
+        public string HourDisplay { get { return this.Hour.ToShortTimeString(); } }
+        public bool IsReserved { get { return ResourceSchedule == null ? false : true; } }
         public string ReservedMessage { get { return ResourceSchedule == null ? "Open" : ResourceSchedule.ReservedForUser; } }
 
         public ResourceSchedule ResourceSchedule
@@ -56,6 +57,28 @@ namespace ResSched.ViewModels
             Schedule = new ObservableCollection<ResourceSchedule>();
         }
 
+        public RelayCommand NextDayCommand
+        {
+            get
+            {
+                return new RelayCommand(() =>
+                {
+                    SelectedDay = SelectedDay.AddDays(1);
+                });
+            }
+        }
+
+        public RelayCommand PreviousDayCommand
+        {
+            get
+            {
+                return new RelayCommand(() =>
+                {
+                    SelectedDay = SelectedDay.AddDays(-1);
+                });
+            }
+        }
+
         public Resource Resource
         {
             get { return _resource; }
@@ -74,6 +97,8 @@ namespace ResSched.ViewModels
             set { Set(nameof(ScheduleByDay), ref _scheduleByDay, value); }
         }
 
+        public string SelectedDateDisplay { get { return SelectedDay.ToLongDateString(); } }
+
         public DateTime SelectedDay
         {
             get { return _selectedDay; }
@@ -83,6 +108,7 @@ namespace ResSched.ViewModels
                 {
                     //if the new value is different
                     BuildHourlySchedule();
+                    RaisePropertyChanged(nameof(SelectedDateDisplay));
                 }
             }
         }

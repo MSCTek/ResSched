@@ -1,66 +1,81 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:cnvt="clr-namespace:ResSched.Converters"
              x:Class="ResSched.Views.ItemDetailPage"
              Title="{Binding Resource.Name}">
-    
+
+    <ContentPage.Resources>
+        <cnvt:BoolToReservationColorConverter x:Key="BoolToReservationColorConverter" />
+    </ContentPage.Resources>
+
     <ContentPage.Content>
-    <Grid RowSpacing="0">
-      <Grid.RowDefinitions>
-        <RowDefinition Height="80" />
-        <RowDefinition Height="2" />
-        <RowDefinition Height="*" />
-      </Grid.RowDefinitions>
+        <Grid RowSpacing="0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="80" />
+                <RowDefinition Height="2" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
 
-      <Grid Grid.Row="0" BackgroundColor="White">
-        <Grid.ColumnDefinitions>
-          <ColumnDefinition Width="*" />
-          <ColumnDefinition Width="auto" />
-        </Grid.ColumnDefinitions>
+            <Grid Grid.Row="0" BackgroundColor="White">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="auto" />
+                </Grid.ColumnDefinitions>
 
-        <StackLayout Grid.Column="0" Orientation="Vertical" Margin="20,10" Spacing="3">
-          <Label Text="Fox.Build" FontSize="Medium" />
-          <Label Text="Resource Schedules" FontSize="Default" />
-        </StackLayout>
-                
-             <Image Grid.Column="1" Margin="0,5,15,0" HeightRequest="75" VerticalOptions="End">
-          <Image.Source>
-            <UriImageSource Uri="{StaticResource FoxImage}" CacheValidity="100" CachingEnabled="True" />
-          </Image.Source>
-        </Image>
-      </Grid>
+                <StackLayout Grid.Column="0" Orientation="Vertical" Margin="20,10" Spacing="3">
+                    <Label Text="Fox.Build" FontSize="Medium" />
+                    <Label Text="Resource Schedules" FontSize="Default" />
+                </StackLayout>
 
-      <BoxView Grid.Row="1" BackgroundColor="Gray" />
- 
-    
-    <StackLayout Grid.Row="2" Spacing="20" Padding="15">
-        <Label Text="Text:" FontSize="Medium" />
-        <Label Text="{Binding Resource.Name}" FontSize="Small"/>
-        <Label Text="Description:" FontSize="Medium" />
-        <Label Text="{Binding Resource.Description}" FontSize="Small"/>
-        <Label Text="{Binding CurrentDateDisplay}" FontSize="Medium"/>
-    </StackLayout>
-    
-            
-     <ListView Grid.Row="3"
-              ItemsSource="{Binding ScheduleByDay}"
-              VerticalOptions="FillAndExpand"
-              HasUnevenRows="true"              
-              CachingStrategy="RecycleElement">
-                 <ListView.ItemTemplate>
-          <DataTemplate>
-            <ViewCell>
-                            <StackLayout Orientation="Horizontal">
-                       <Label Text="{Binding HourDisplay}"/> 
-                                 <Label Text="{Binding ReservedMessage}"/>
-                            <Button Text="Schedule" Command="{Binding ScheduleResourceCommand}"/>
-                        </StackLayout>    
-                        </ViewCell>
-                        </DataTemplate>
-                    </ListView.ItemTemplate>
-                        
-                </ListView>
+                <Image Grid.Column="1" Margin="0,5,15,0" HeightRequest="75" VerticalOptions="End">
+                    <Image.Source>
+                        <UriImageSource Uri="{StaticResource FoxImage}" CacheValidity="100" CachingEnabled="True" />
+                    </Image.Source>
+                </Image>
             </Grid>
-        </ContentPage.Content>
-        
+
+            <BoxView Grid.Row="1" BackgroundColor="Gray" />
+
+            <StackLayout Grid.Row="2" Spacing="20" Padding="15">
+                <Label Text="Text:" FontSize="Medium" />
+                <Label Text="{Binding Resource.Name}" FontSize="Small" />
+                <Label Text="Description:" FontSize="Medium" />
+                <Label Text="{Binding Resource.Description}" FontSize="Small" />
+
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="1*" />
+                        <ColumnDefinition Width="3*" />
+                        <ColumnDefinition Width="1*" />
+                    </Grid.ColumnDefinitions>
+                    <Button Grid.Column="0" Text="--" Command="{Binding PreviousDayCommand}" />
+                    <Label Grid.Column="1" Text="{Binding SelectedDateDisplay}"  HorizontalOptions="Center" HorizontalTextAlignment="Center" />
+                    <Button Grid.Column="2" Text="--" Command="{Binding NextDayCommand}" />
+                </Grid>
+            </StackLayout>
+
+            <ListView Grid.Row="3" Margin="40,5"
+              ItemsSource="{Binding ScheduleByDay}"
+              HorizontalOptions="CenterAndExpand"
+              VerticalOptions="FillAndExpand"
+              HasUnevenRows="true"
+              CachingStrategy="RecycleElement">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="1*" />
+                                    <ColumnDefinition Width="3*" />
+                                </Grid.ColumnDefinitions>
+                                <Label Grid.Column="0" Text="{Binding HourDisplay}" />
+                                <Label Grid.Column="1" Text="{Binding ReservedMessage}" TextColor="{Binding IsReserved, Converter={StaticResource BoolToReservationColorConverter}}" />
+                            </Grid>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </Grid>
+    </ContentPage.Content>
 </ContentPage>

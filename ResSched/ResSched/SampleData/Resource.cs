@@ -1,12 +1,13 @@
-﻿using GalaSoft.MvvmLight;
+﻿using ResSched.DataModel;
 using System;
-using ResSched.DataModel;
 
 namespace ResSched.SampleData
 {
     public class SampleResource
     {
         public static Guid MeetingRoom1_ID = new Guid("0ce812ed-615c-4fad-8661-6c699e911204");
+        public static Guid MeetingRoom3_ID = new Guid("1c7c8906-7603-4100-88cf-3ff04b1c1bc9");
+
         public static Resource MeetingRoom1
         {
             get
@@ -35,7 +36,7 @@ namespace ResSched.SampleData
                 return new Resource()
                 {
                     Name = "#2 Gray Fox Meeting Room",
-                    Description = "5 people max, bow window",
+                    Description = "5 people max",
                     IsActive = true,
                     ResourceId = new Guid("88605046-d79e-4e45-a706-7e578b6f7997"),
                     ImageLink = "https://github.com/robintschroeder/ResSched/blob/master/Assets/Gray_Fox_500x500.png?raw=true",
@@ -48,7 +49,7 @@ namespace ResSched.SampleData
                 };
             }
         }
-        public static Guid MeetingRoom3_ID = new Guid("1c7c8906-7603-4100-88cf-3ff04b1c1bc9");
+
         public static Resource MeetingRoom3
         {
             get

@@ -1,5 +1,4 @@
-﻿using System.Threading.Tasks;
-using GalaSoft.MvvmLight;
+﻿using GalaSoft.MvvmLight;
 using Ninject;
 using ResSched.Models;
 using ResSched.Services;
@@ -10,13 +9,14 @@ namespace ResSched.ViewModels
     public class BaseViewModel : ObservableObject
     {
         protected IDataRetrievalService _dataService;
+
         public BaseViewModel()
         {
-
         }
 
         public bool Init()
         {
+            //TODO: move this to the constructors...but hey, so convienient just like this...
             var ker = ((ResSched.App)Xamarin.Forms.Application.Current).Kernel;
             _dataService = ker.Get<IDataRetrievalService>();
             return true;

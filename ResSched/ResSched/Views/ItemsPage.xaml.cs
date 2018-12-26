@@ -1,5 +1,4 @@
-﻿using ResSched.Models;
-using ResSched.ObjModel;
+﻿using ResSched.ObjModel;
 using ResSched.ViewModels;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
@@ -18,13 +17,13 @@ namespace ResSched.Views
             BindingContext = viewModel = new ItemsViewModel();
         }
 
-        protected override async  void OnAppearing()
+        protected override async void OnAppearing()
         {
             base.OnAppearing();
-            if(BindingContext != null)
+            if (BindingContext != null)
             {
                 var vm = BindingContext as ItemsViewModel;
-                await vm.Refresh();
+                await vm.Init();
             }
         }
 
@@ -39,7 +38,5 @@ namespace ResSched.Views
             // Manually deselect item.
             ItemsListView.SelectedItem = null;
         }
-
-       
     }
 }

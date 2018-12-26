@@ -1,17 +1,46 @@
-﻿using System;
+﻿using GalaSoft.MvvmLight;
+using GalaSoft.MvvmLight.Command;
+using ResSched.Mappers;
+using ResSched.ObjModel;
+using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Linq;
 using System.Threading.Tasks;
-using GalaSoft.MvvmLight;
-using GalaSoft.MvvmLight.Command;
-using ResSched.Mappers;
-using ResSched.Models;
-using ResSched.ObjModel;
-using ResSched.Services;
 
 namespace ResSched.ViewModels
 {
+    public class HourlySchedule : ObservableObject
+    {
+        private DateTime _hour;
+        private ResourceSchedule _resourceSchedule;
+
+        public DateTime Hour
+        {
+            get { return _hour; }
+            set { Set(nameof(Hour), ref _hour, value); }
+        }
+
+        public string HourDisplay { get { return this.Hour.ToLongTimeString(); } }
+        public string ReservedMessage { get { return ResourceSchedule == null ? "Open" : ResourceSchedule.ReservedForUser; } }
+
+        public ResourceSchedule ResourceSchedule
+        {
+            get { return _resourceSchedule; }
+            set { Set(nameof(ResourceSchedule), ref _resourceSchedule, value); }
+        }
+
+        public RelayCommand ScheduleResourceCommand
+        {
+            get
+            {
+                return new RelayCommand(() =>
+                {
+                });
+            }
+        }
+    }
+
     public class ItemDetailViewModel : BaseViewModel
     {
         private Resource _resource;
@@ -27,16 +56,22 @@ namespace ResSched.ViewModels
             Schedule = new ObservableCollection<ResourceSchedule>();
         }
 
-        public ObservableCollection<HourlySchedule> ScheduleByDay
+        public Resource Resource
         {
-            get { return _scheduleByDay; }
-            set { Set(nameof(ScheduleByDay), ref _scheduleByDay, value); }
+            get { return _resource; }
+            set { Set(nameof(Resource), ref _resource, value); }
         }
 
         public ObservableCollection<ResourceSchedule> Schedule
         {
             get { return _schedule; }
             set { Set(nameof(Schedule), ref _schedule, value); }
+        }
+
+        public ObservableCollection<HourlySchedule> ScheduleByDay
+        {
+            get { return _scheduleByDay; }
+            set { Set(nameof(ScheduleByDay), ref _scheduleByDay, value); }
         }
 
         public DateTime SelectedDay
@@ -52,6 +87,13 @@ namespace ResSched.ViewModels
             }
         }
 
+        public async Task Refresh()
+        {
+            base.Init();
+            Schedule = (await base._dataService.GetResourceSchedules(Resource.ResourceId)).ToObservableCollection();
+            BuildHourlySchedule();
+        }
+
         private void BuildHourlySchedule()
         {
             if (SelectedDay != DateTime.MinValue && Schedule != null)
@@ -64,6 +106,7 @@ namespace ResSched.ViewModels
                 {
                     ScheduleByDay.Clear();
                 }
+                //TODO: maybe move this to the config file?
                 List<int> hours = new List<int>() { 8, 9, 10, 11, 12, 13, 14, 15, 16, 17 };
                 foreach (var h in hours)
                 {
@@ -73,58 +116,7 @@ namespace ResSched.ViewModels
                         Hour = hour,
                         ResourceSchedule = Schedule.FirstOrDefault(x => x.ReservationDateTime == hour)
                     });
-
                 }
-
-            }
-
-        }
-
-        public Resource Resource
-        {
-            get { return _resource; }
-            set { Set(nameof(Resource), ref _resource, value); }
-        }
-
-        public async Task Refresh()
-        {
-            base.Init();
-            Schedule = (await base._dataService.GetResourceSchedules(Resource.ResourceId)).ToObservableCollection();
-            BuildHourlySchedule();
-        }
-
-
-    }
-
-    public class HourlySchedule : ObservableObject
-    {
-        private DateTime _hour;
-        private ResourceSchedule _resourceSchedule;
-
-        public string ReservedMessage { get { return ResourceSchedule == null ? "Open" : ResourceSchedule.ReservedForUser; } }
-
-        public string HourDisplay { get { return this.Hour.ToLongTimeString(); } }
-
-        public DateTime Hour
-        {
-            get { return _hour; }
-            set { Set(nameof(Hour), ref _hour, value); }
-        }
-
-        public ResourceSchedule ResourceSchedule
-        {
-            get { return _resourceSchedule; }
-            set { Set(nameof(ResourceSchedule), ref _resourceSchedule, value); }
-        }
-
-        public RelayCommand ScheduleResourceCommand
-        {
-            get
-            {
-                return new RelayCommand(() =>
-                {
-
-                });
             }
         }
     }

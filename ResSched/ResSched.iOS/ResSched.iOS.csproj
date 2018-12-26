@@ -174,7 +174,7 @@
       <Version>5.4.1.1</Version>
     </PackageReference>
     <PackageReference Include="sqlite-net-pcl">
-      <Version>1.4.118</Version>
+      <Version>1.5.231</Version>
     </PackageReference>
     <PackageReference Include="Xamarin.Essentials">
       <Version>0.11.0-preview</Version>
@@ -192,8 +192,5 @@
       <Name>ResSched</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Modules\" />
-    <Folder Include="Services\" />
-  </ItemGroup>
+  <ItemGroup />
 </Project>

@@ -1,5 +1,5 @@
 ﻿using ResSched.ViewModels;
-
+using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -11,12 +11,11 @@ namespace ResSched.Views
         public MyReservationsPage()
         {
             InitializeComponent();
-            
         }
 
-        public void Refresh()
+        public async Task Refresh()
         {
-            if(BindingContext == null)
+            if (BindingContext == null)
             {
                 BindingContext = new MyReservationsViewModel();
             }
@@ -24,14 +23,14 @@ namespace ResSched.Views
             if (this.BindingContext != null)
             {
                 var vm = (MyReservationsViewModel)this.BindingContext;
-                vm.Init();
+                await vm.Init();
             }
         }
 
-        protected override void OnAppearing()
+        protected override async void OnAppearing()
         {
             base.OnAppearing();
-            Refresh();
+            await Refresh();
         }
     }
 }

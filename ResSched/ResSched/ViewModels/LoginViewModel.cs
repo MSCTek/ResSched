@@ -96,7 +96,7 @@ namespace ResSched.ViewModels
                                 MicrosoftButtonText = MicrosoftText.Sign_out_with_Microsoft.ToDescription();
                                 GuestButtonText = GuestText.Sign_in_as_Guest.ToDescription();
                             }
-                            catch (MsalUiRequiredException ex)
+                            catch (MsalUiRequiredException)
                             {
                                 authResult = await App.PCA.AcquireTokenAsync(App.AuthScopes, App.UiParent);
                                 await RefreshUserDataAsync(authResult.AccessToken);
@@ -132,8 +132,8 @@ namespace ResSched.ViewModels
 
         private void RecordSuccessfulLogin(string userName, string userEmail, string loginSource)
         {
-            App.AuthUserEmail = userName;
-            App.AuthUserName = userEmail;
+            App.AuthUserEmail = userEmail;
+            App.AuthUserName = userName;
 
             Analytics.TrackEvent("Successful Login", new Dictionary<string, string>{
                             { "Source", loginSource },

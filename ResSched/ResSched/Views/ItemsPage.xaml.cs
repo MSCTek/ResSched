@@ -1,4 +1,5 @@
 ﻿using ResSched.Models;
+using ResSched.ObjModel;
 using ResSched.ViewModels;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
@@ -17,17 +18,19 @@ namespace ResSched.Views
             BindingContext = viewModel = new ItemsViewModel();
         }
 
-        protected override void OnAppearing()
+        protected override async  void OnAppearing()
         {
             base.OnAppearing();
-
-            if (viewModel.Items.Count == 0)
-                viewModel.LoadItemsCommand.Execute(null);
+            if(BindingContext != null)
+            {
+                var vm = BindingContext as ItemsViewModel;
+                await vm.Refresh();
+            }
         }
 
         private async void OnItemSelected(object sender, SelectedItemChangedEventArgs args)
         {
-            var item = args.SelectedItem as Item;
+            var item = args.SelectedItem as Resource;
             if (item == null)
                 return;
 
@@ -37,9 +40,6 @@ namespace ResSched.Views
             ItemsListView.SelectedItem = null;
         }
 
-        /*async void AddItem_Clicked(object sender, EventArgs e)
-        {
-            await Navigation.PushModalAsync(new NavigationPage(new NewItemPage()));
-        }*/
+       
     }
 }

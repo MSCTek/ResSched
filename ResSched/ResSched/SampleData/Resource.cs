@@ -1,11 +1,13 @@
 ﻿using GalaSoft.MvvmLight;
 using System;
+using ResSched.DataModel;
 
-namespace ResSched.ObjModel
+namespace ResSched.SampleData
 {
-    public partial class Resource : ObservableObject
+    public class SampleResource
     {
-        public static Resource SampleMeetingRoom1
+        public static Guid MeetingRoom1_ID = new Guid("0ce812ed-615c-4fad-8661-6c699e911204");
+        public static Resource MeetingRoom1
         {
             get
             {
@@ -13,7 +15,7 @@ namespace ResSched.ObjModel
                 {
                     Name = "#1 Red Fox Meeting Room",
                     Description = "10 people max, bow window",
-                    ResourceId = new Guid("0ce812ed-615c-4fad-8661-6c699e911204"),
+                    ResourceId = MeetingRoom1_ID,
                     ImageLink = "https://github.com/robintschroeder/ResSched/blob/master/Assets/Red_Fox_500x500.png?raw=true",
                     ImageLinkThumb = "https://github.com/robintschroeder/ResSched/blob/master/Assets/Red_Fox_500x500.png?raw=true",
                     IsActive = true,
@@ -26,7 +28,7 @@ namespace ResSched.ObjModel
             }
         }
 
-        public static Resource SampleMeetingRoom2
+        public static Resource MeetingRoom2
         {
             get
             {
@@ -46,8 +48,8 @@ namespace ResSched.ObjModel
                 };
             }
         }
-
-        public static Resource SampleMeetingRoom3
+        public static Guid MeetingRoom3_ID = new Guid("1c7c8906-7603-4100-88cf-3ff04b1c1bc9");
+        public static Resource MeetingRoom3
         {
             get
             {
@@ -56,7 +58,7 @@ namespace ResSched.ObjModel
                     Name = "#3 Artic Fox Meeting Room",
                     Description = "5 people max",
                     IsActive = true,
-                    ResourceId = new Guid("1c7c8906-7603-4100-88cf-3ff04b1c1bc9"),
+                    ResourceId = MeetingRoom3_ID,
                     ImageLink = "https://github.com/robintschroeder/ResSched/blob/master/Assets/Arctic_Fox_500x500.png?raw=true",
                     ImageLinkThumb = "https://github.com/robintschroeder/ResSched/blob/master/Assets/Arctic_Fox_500x500.png?raw=true",
                     IsDeleted = false,
@@ -68,7 +70,7 @@ namespace ResSched.ObjModel
             }
         }
 
-        public static Resource SampleXCarve
+        public static Resource XCarve
         {
             get
             {

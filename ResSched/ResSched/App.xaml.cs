@@ -6,6 +6,7 @@ using Ninject;
 using Ninject.Modules;
 using ResSched.Modules;
 using ResSched.Services;
+using ResSched.ViewModels;
 using ResSched.Views;
 using System;
 using System.Diagnostics;
@@ -38,6 +39,12 @@ namespace ResSched
         public static string AuthUserName = string.Empty;
 
         #endregion AuthId
+
+        //This empty constructor is used only for the ios XAML designer.
+        public App()
+        {
+            InitializeComponent();
+        }
 
         public App(params INinjectModule[] platformModules)
         {
@@ -75,6 +82,16 @@ namespace ResSched
                 throw new InvalidOperationException("ERROR: SQLite Database could not be created.");
             }
 
+            //MainPage = new MainPage()
+            var welcome = new WelcomePage();
+            welcome.BindingContext = new WelcomeViewModel(Kernel.Get<IDataLoadService>());
+            MainPage = welcome;
+
+            
+        }
+
+        public void NavigateToMainPage()
+        {
             MainPage = new MainPage();
         }
 

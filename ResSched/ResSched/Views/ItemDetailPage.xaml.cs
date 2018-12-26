@@ -20,18 +20,14 @@ namespace ResSched.Views
             BindingContext = this.viewModel = viewModel;
         }
 
-        public ItemDetailPage()
+        protected override async void OnAppearing()
         {
-            InitializeComponent();
+            base.OnAppearing();
 
-            var item = new Item
+            if(viewModel != null)
             {
-                Text = "Item 1",
-                Description = "This is an item description."
-            };
-
-            viewModel = new ItemDetailViewModel(item);
-            BindingContext = viewModel;
+                await viewModel.Refresh();
+            }
         }
     }
 }

@@ -7,52 +7,42 @@ using Xamarin.Forms;
 
 using ResSched.Models;
 using ResSched.Views;
+using ResSched.Services;
+using Ninject;
+using ResSched.Mappers;
+using ResSched.ObjModel;
 
 namespace ResSched.ViewModels
 {
     public class ItemsViewModel : BaseViewModel
     {
-        public ObservableCollection<Item> Items { get; set; }
-        public Command LoadItemsCommand { get; set; }
+        private IDataRetrievalService _dataService;
+        private ObservableCollection<Resource> _items;
+        //public Command LoadItemsCommand { get; set; }
 
         public ItemsViewModel()
         {
-            Title = "Browse Items";
-            Items = new ObservableCollection<Item>();
-            LoadItemsCommand = new Command(async () => await ExecuteLoadItemsCommand());
+            Title = "Browse Resources";
+            Items = new ObservableCollection<Resource>();
 
-            MessagingCenter.Subscribe<NewItemPage, Item>(this, "AddItem", async (obj, item) =>
-            {
-                var newItem = item as Item;
-                Items.Add(newItem);
-                await DataStore.AddItemAsync(newItem);
-            });
+            var ker = ((ResSched.App)Xamarin.Forms.Application.Current).Kernel;
+            PreInit(ker.Get<IDataRetrievalService>());
+
         }
-
-        async Task ExecuteLoadItemsCommand()
+        private void PreInit(IDataRetrievalService dataRetrievalService)
         {
-            if (IsBusy)
-                return;
 
-            IsBusy = true;
-
-            try
-            {
-                Items.Clear();
-                var items = await DataStore.GetItemsAsync(true);
-                foreach (var item in items)
-                {
-                    Items.Add(item);
-                }
-            }
-            catch (Exception ex)
-            {
-                Debug.WriteLine(ex);
-            }
-            finally
-            {
-                IsBusy = false;
-            }
+            _dataService = dataRetrievalService;
         }
+        public async Task Refresh()
+        {
+           Items = (await _dataService.GetAllResources()).ToObservableCollection();
+        }
+        public ObservableCollection<Resource> Items
+        {
+            get { return _items; }
+            set { Set(nameof(Items), ref _items, value); }
+        }
+
     }
 }

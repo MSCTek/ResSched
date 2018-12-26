@@ -1,12 +1,66 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="ResSched.Views.ItemDetailPage"
-             Title="{Binding Title}">
-    <StackLayout Spacing="20" Padding="15">
+             Title="{Binding Resource.Name}">
+    
+    <ContentPage.Content>
+    <Grid RowSpacing="0">
+      <Grid.RowDefinitions>
+        <RowDefinition Height="80" />
+        <RowDefinition Height="2" />
+        <RowDefinition Height="*" />
+      </Grid.RowDefinitions>
+
+      <Grid Grid.Row="0" BackgroundColor="White">
+        <Grid.ColumnDefinitions>
+          <ColumnDefinition Width="*" />
+          <ColumnDefinition Width="auto" />
+        </Grid.ColumnDefinitions>
+
+        <StackLayout Grid.Column="0" Orientation="Vertical" Margin="20,10" Spacing="3">
+          <Label Text="Fox.Build" FontSize="Medium" />
+          <Label Text="Resource Schedules" FontSize="Default" />
+        </StackLayout>
+                
+             <Image Grid.Column="1" Margin="0,5,15,0" HeightRequest="75" VerticalOptions="End">
+          <Image.Source>
+            <UriImageSource Uri="{StaticResource FoxImage}" CacheValidity="100" CachingEnabled="True" />
+          </Image.Source>
+        </Image>
+      </Grid>
+
+      <BoxView Grid.Row="1" BackgroundColor="Gray" />
+ 
+    
+    <StackLayout Grid.Row="2" Spacing="20" Padding="15">
         <Label Text="Text:" FontSize="Medium" />
-        <Label Text="{Binding Item.Text}" FontSize="Small"/>
+        <Label Text="{Binding Resource.Name}" FontSize="Small"/>
         <Label Text="Description:" FontSize="Medium" />
-        <Label Text="{Binding Item.Description}" FontSize="Small"/>
+        <Label Text="{Binding Resource.Description}" FontSize="Small"/>
+        <Label Text="{Binding CurrentDateDisplay}" FontSize="Medium"/>
     </StackLayout>
+    
+            
+     <ListView Grid.Row="3"
+              ItemsSource="{Binding ScheduleByDay}"
+              VerticalOptions="FillAndExpand"
+              HasUnevenRows="true"              
+              CachingStrategy="RecycleElement">
+                 <ListView.ItemTemplate>
+          <DataTemplate>
+            <ViewCell>
+                            <StackLayout Orientation="Horizontal">
+                       <Label Text="{Binding HourDisplay}"/> 
+                                 <Label Text="{Binding ReservedMessage}"/>
+                            <Button Text="Schedule" Command="{Binding ScheduleResourceCommand}"/>
+                        </StackLayout>    
+                        </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                        
+                </ListView>
+            </Grid>
+        </ContentPage.Content>
+        
 </ContentPage>

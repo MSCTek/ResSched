@@ -1,4 +1,5 @@
-﻿using ResSched.Mappers;
+﻿using Ninject;
+using ResSched.Mappers;
 using ResSched.ObjModel;
 using ResSched.Services;
 using System.Collections.ObjectModel;
@@ -8,13 +9,24 @@ namespace ResSched.ViewModels
 {
     public class MyReservationsViewModel : BaseViewModel
     {
-        private IDataRetrievalService _dataService;
+
         private ObservableCollection<ResourceSchedule> _reservations;
 
-        public MyReservationsViewModel(IDataRetrievalService dataRetrievalService)
+        public MyReservationsViewModel()
         {
             Title = "My Reservations";
-            _dataService = dataRetrievalService;
+            var ker = ((ResSched.App)Xamarin.Forms.Application.Current).Kernel;
+            PreInit(ker.Get<IDataRetrievalService>());
+        }
+        /*public MyReservationsViewModel(IDataRetrievalService dataRetrievalService)
+        {
+
+        }*/
+
+        private void PreInit(IDataRetrievalService dataRetrievalService)
+        {
+
+            //_dataService = dataRetrievalService;
         }
 
         public ObservableCollection<ResourceSchedule> Reservations

@@ -15,6 +15,7 @@ namespace ResSched.SampleData
                 return new User()
                 {
                     Name = "George Washington",
+                    UserName = "gWashington",
                     Email = "gWashington@gmail.com",
                     InstallationId = null,
                     LastLoginDate = DateTime.UtcNow,
@@ -36,6 +37,7 @@ namespace ResSched.SampleData
                 return new User()
                 {
                     Name = "guest",
+                    UserName = "guest",
                     Email = SampleUserGuest_Email,
                     InstallationId = null,
                     LastLoginDate = DateTime.UtcNow,
@@ -57,6 +59,7 @@ namespace ResSched.SampleData
                 return new User()
                 {
                     Name = "Micky Mouse",
+                    UserName = "mikMouse",
                     Email = "mikMouse@gmail.com",
                     InstallationId = null,
                     LastLoginDate = DateTime.UtcNow,
@@ -78,6 +81,7 @@ namespace ResSched.SampleData
                 return new User()
                 {
                     Name = "Minnie Mouse",
+                    UserName = "minMouse",
                     Email = "minMouse@gmail.com",
                     InstallationId = null,
                     LastLoginDate = DateTime.UtcNow,

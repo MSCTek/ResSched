@@ -16,6 +16,7 @@ namespace ResSched.ObjModel
         private DateTime _lastModifiedDate;
         private string _name;
         private Guid _userId;
+        private string _userName;
 
         public User()
         {
@@ -85,6 +86,12 @@ namespace ResSched.ObjModel
         {
             get { return _userId; }
             set { Set(nameof(UserId), ref _userId, value); }
+        }
+
+        public string UserName
+        {
+            get { return _userName; }
+            set { Set(nameof(UserName), ref _userName, value); }
         }
     }
 }

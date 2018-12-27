@@ -6,61 +6,70 @@
         <ResourceDictionary>
 
             <Style x:Key="FA.Regular.LabelStyle"  TargetType="Label">
-                <Setter Property="FontFamily" >
+                <Setter Property="FontFamily">
                     <Setter.Value>
-                        <OnPlatform x:TypeArguments="x:String" 
-                                    Android="fa-regular-400.ttf#Font Awesome 5 Free Regular" 
-                                    iOS="Font Awesome 5 Free" 
+                        <OnPlatform x:TypeArguments="x:String"
+                                    Android="fa-regular-400.ttf#Font Awesome 5 Free Regular"
+                                    iOS="Font Awesome 5 Free"
                                     WinPhone="Assets/fa-regular-400.ttf#Font Awesome 5 Free" />
                     </Setter.Value>
                 </Setter>
             </Style>
-            
-            <Style x:Key="FA.Brands.LabelStyle"  TargetType="Label">
-                <Setter Property="FontFamily" >
+
+            <Style x:Key="FA.Regular.ButtonStyle"  TargetType="Button">
+                <Setter Property="FontFamily">
                     <Setter.Value>
-                        <OnPlatform x:TypeArguments="x:String" 
-                                    Android="fa-brands-400.ttf#Font Awesome 5 Brands Regular" 
-                                    iOS="Font Awesome 5 Brands Regular" 
+                        <OnPlatform x:TypeArguments="x:String"
+                                    Android="fa-regular-400.ttf#Font Awesome 5 Free Regular"
+                                    iOS="Font Awesome 5 Free"
+                                    WinPhone="Assets/fa-regular-400.ttf#Font Awesome 5 Free" />
+                    </Setter.Value>
+                </Setter>
+            </Style>
+
+            <Style x:Key="FA.Brands.LabelStyle"  TargetType="Label">
+                <Setter Property="FontFamily">
+                    <Setter.Value>
+                        <OnPlatform x:TypeArguments="x:String"
+                                    Android="fa-brands-400.ttf#Font Awesome 5 Brands Regular"
+                                    iOS="Font Awesome 5 Brands Regular"
                                     WinPhone="Assets/fa-brands-400.ttf#Font Awesome 5 Brands" />
                     </Setter.Value>
                 </Setter>
             </Style>
-            
+
             <Style x:Key="FA.Solid.LabelStyle"  TargetType="Label">
-                <Setter Property="FontFamily" >
+                <Setter Property="FontFamily">
                     <Setter.Value>
-                        <OnPlatform x:TypeArguments="x:String" 
-                                    Android="fa-solid-900.ttf#Font Awesome 5 Free Solid" 
-                                    iOS="Font Awesome 5 Free" 
+                        <OnPlatform x:TypeArguments="x:String"
+                                    Android="fa-solid-900.ttf#Font Awesome 5 Free Solid"
+                                    iOS="Font Awesome 5 Free"
                                     WinPhone="Assets/fa-solid-900.ttf#Font Awesome 5 Free Solid" />
                     </Setter.Value>
                 </Setter>
             </Style>
 
             <Style x:Key="HeaderLabelStyle" TargetType="Label">
-                <Setter Property="FontAttributes" Value="Bold"/>
-                <Setter Property="FontSize" Value="Large"/>
+                <Setter Property="FontAttributes" Value="Bold" />
+                <Setter Property="FontSize" Value="Large" />
             </Style>
 
             <Style x:Key="ButtonStyle" TargetType="Button">
-                <Setter Property="BackgroundColor" Value="SlateGray"/>
-                <Setter Property="TextColor" Value="White"/>
+                <Setter Property="BackgroundColor" Value="SlateGray" />
+                <Setter Property="TextColor" Value="White" />
             </Style>
-            
+
             <x:String x:Key="FontAwesomeFacebook">&#xf09a;</x:String>
 
             <x:String x:Key="FoxImage">https://github.com/robintschroeder/ResSched/blob/master/Assets/FoxBuild_400x400.jpg?raw=true</x:String>
             <x:String x:Key="RedFoxImage">https://github.com/robintschroeder/ResSched/blob/master/Assets/Red_Fox_500x500.png?raw=true</x:String>
-            
-            
+
             <!--Global Styles-->
             <Color x:Key="NavigationPrimary">#2196F3</Color>
             <Style TargetType="NavigationPage">
                 <Setter Property="BarBackgroundColor" Value="{StaticResource NavigationPrimary}" />
                 <Setter Property="BarTextColor" Value="White" />
             </Style>
-
         </ResourceDictionary>
     </Application.Resources>
 </Application>

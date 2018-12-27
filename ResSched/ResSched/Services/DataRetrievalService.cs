@@ -1,9 +1,9 @@
-﻿using ResSched.Mappers;
+﻿using ResSched.Interfaces;
+using ResSched.Mappers;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using ResSched.Interfaces;
 
 namespace ResSched.Services
 {
@@ -16,10 +16,13 @@ namespace ResSched.Services
             _db = database;
         }
 
-        public async Task<List<ObjModel.ResourceSchedule>> GetResourceSchedules(Guid resourceId)
+        public async Task<List<ObjModel.Resource>> GetAllResources()
         {
-            var returnMe = new List<ObjModel.ResourceSchedule>();
-            var dataResults = await _db.GetAsyncConnection().Table<DataModel.ResourceSchedule>().Where(x => x.ResourceId == resourceId).ToListAsync();
+            var returnMe = new List<ObjModel.Resource>();
+            var dataResults = await _db.GetAsyncConnection()
+                .Table<DataModel.Resource>()
+                .OrderBy(x => x.Name).ToListAsync();
+
             if (dataResults.Any())
             {
                 foreach (var d in dataResults)
@@ -30,13 +33,18 @@ namespace ResSched.Services
             return returnMe;
         }
 
-        public async Task<List<ObjModel.Resource>> GetAllResources()
+        public async Task<List<ObjModel.ResourceSchedule>> GetResourceSchedules(Guid resourceId)
         {
-            var returnMe = new List<ObjModel.Resource>();
-            var dataResults = await _db.GetAsyncConnection().Table<DataModel.Resource>().OrderBy(x => x.Name).ToListAsync();
+            var returnMe = new List<ObjModel.ResourceSchedule>();
+
+            var dataResults = await _db.GetAsyncConnection()
+                .Table<DataModel.ResourceSchedule>()
+                .Where(x => x.ResourceId == resourceId)
+                .ToListAsync();
+
             if (dataResults.Any())
             {
-                foreach(var d in dataResults)
+                foreach (var d in dataResults)
                 {
                     returnMe.Add(d.ToModelObj());
                 }
@@ -47,13 +55,20 @@ namespace ResSched.Services
         public async Task<List<ObjModel.ResourceSchedule>> GetResourceSchedulesForUser(string userEmail)
         {
             var returnMe = new List<ObjModel.ResourceSchedule>();
-            var dataResults = await _db.GetAsyncConnection().Table<DataModel.ResourceSchedule>().Where(x => x.ReservedByUserEmail.ToLower() == userEmail.ToLower()).ToListAsync();
+
+            var dataResults = await _db.GetAsyncConnection()
+                .Table<DataModel.ResourceSchedule>()
+                .Where(x => x.ReservedByUserEmail.ToLower() == userEmail.ToLower())
+                .ToListAsync();
+
             if (dataResults.Any())
             {
                 foreach (var d in dataResults)
                 {
                     var resSchedObj = d.ToModelObj();
-                    var resourceData = await _db.GetAsyncConnection().Table<DataModel.Resource>().Where(x => x.ResourceId == d.ResourceId).FirstOrDefaultAsync();
+                    var resourceData = await _db.GetAsyncConnection()
+                        .Table<DataModel.Resource>()
+                        .Where(x => x.ResourceId == d.ResourceId).FirstOrDefaultAsync();
                     if (resourceData != null)
                     {
                         resSchedObj.Resource = resourceData.ToModelObj();

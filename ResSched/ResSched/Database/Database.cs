@@ -1,6 +1,5 @@
 ﻿using ResSched.DataModel;
 using ResSched.Interfaces;
-using ResSched.Services;
 using SQLite;
 using System;
 using System.Threading.Tasks;
@@ -43,6 +42,8 @@ namespace ResSched.Database
                 if (AsyncConnection != null)
                 {
                     await AsyncConnection.DropTableAsync<Resource>();
+                    await AsyncConnection.DropTableAsync<ResourceSchedule>();
+                    await AsyncConnection.DropTableAsync<User>();
 
                     //await _asyncConn.DropTableAsync<ModelData.DataSync.Queue>();
                 }

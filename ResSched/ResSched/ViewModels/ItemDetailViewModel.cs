@@ -52,7 +52,7 @@ namespace ResSched.ViewModels
         public ItemDetailViewModel(Resource selected = null)
         {
             Resource = selected;
-            SelectedDay = DateTime.Now.Date.AddDays(4);
+            SelectedDay = DateTime.Now.Date;
             ScheduleByDay = new ObservableCollection<HourlySchedule>();
             Schedule = new ObservableCollection<ResourceSchedule>();
         }
@@ -97,7 +97,8 @@ namespace ResSched.ViewModels
             set { Set(nameof(ScheduleByDay), ref _scheduleByDay, value); }
         }
 
-        public string SelectedDateDisplay { get { return SelectedDay.ToLongDateString(); } }
+        public string SelectedDateDisplay { get { return SelectedDay.ToString("dd MMM yyyy"); } }
+        public string SelectedDateWeekdayDisplay { get { return SelectedDay.ToString("dddd"); } }
 
         public DateTime SelectedDay
         {
@@ -109,6 +110,7 @@ namespace ResSched.ViewModels
                     //if the new value is different
                     BuildHourlySchedule();
                     RaisePropertyChanged(nameof(SelectedDateDisplay));
+                    RaisePropertyChanged(nameof(SelectedDateWeekdayDisplay));
                 }
             }
         }
@@ -139,7 +141,9 @@ namespace ResSched.ViewModels
                 foreach (var h in hours)
                 {
                     var hour = SelectedDay.AddHours(h);
-                    var sched = Schedule.Where(x => x.ReservationStartDateTime <= hour && x.ReservationEndDateTime >= hour).FirstOrDefault();
+                    var sched = Schedule
+                        .Where(x => x.ReservationStartDateTime <= hour && x.ReservationEndDateTime >= hour)
+                        .FirstOrDefault();
 
                     ScheduleByDay.Add(new HourlySchedule()
                     {

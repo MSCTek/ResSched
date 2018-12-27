@@ -14,7 +14,10 @@
             <Grid.RowDefinitions>
                 <RowDefinition Height="80" />
                 <RowDefinition Height="2" />
+                <RowDefinition Height="auto" />
+                <RowDefinition Height="auto" />
                 <RowDefinition Height="*" />
+                <RowDefinition Height="auto" />
             </Grid.RowDefinitions>
 
             <Grid Grid.Row="0" BackgroundColor="White">
@@ -37,45 +40,55 @@
 
             <BoxView Grid.Row="1" BackgroundColor="Gray" />
 
-            <StackLayout Grid.Row="2" Spacing="20" Padding="15">
-                <Label Text="Text:" FontSize="Medium" />
-                <Label Text="{Binding Resource.Name}" FontSize="Small" />
-                <Label Text="Description:" FontSize="Medium" />
-                <Label Text="{Binding Resource.Description}" FontSize="Small" />
-
-                <Grid>
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="1*" />
-                        <ColumnDefinition Width="3*" />
-                        <ColumnDefinition Width="1*" />
-                    </Grid.ColumnDefinitions>
-                    <Button Grid.Column="0" Text="--" Command="{Binding PreviousDayCommand}" />
-                    <Label Grid.Column="1" Text="{Binding SelectedDateDisplay}"  HorizontalOptions="Center" HorizontalTextAlignment="Center" />
-                    <Button Grid.Column="2" Text="--" Command="{Binding NextDayCommand}" />
-                </Grid>
+            <StackLayout Grid.Row="2" Spacing="20" Padding="15" Orientation="Horizontal">
+                <Image  HeightRequest="80">
+                    <Image.Source>
+                        <UriImageSource Uri="{Binding Resource.ImageLink}" CacheValidity="100" CachingEnabled="True" />
+                    </Image.Source>
+                </Image>
+                <StackLayout Orientation="Vertical">
+                    <Label Text="{Binding Resource.Name}" FontSize="Medium" />
+                    <Label Text="{Binding Resource.Description}" />
+                </StackLayout>
             </StackLayout>
 
-            <ListView Grid.Row="3" Margin="40,5"
+            <Grid Grid.Row="3">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="1*" />
+                    <ColumnDefinition Width="3*" />
+                    <ColumnDefinition Width="1*" />
+                </Grid.ColumnDefinitions>
+                <Button Grid.Column="0" Style="{StaticResource FA.Regular.ButtonStyle}" Text="&#xf359;" Command="{Binding PreviousDayCommand}" />
+                <StackLayout Grid.Column="1">
+                    <Label  Text="{Binding SelectedDateWeekdayDisplay}"  HorizontalOptions="Center" HorizontalTextAlignment="Center" />
+                    <Label  Text="{Binding SelectedDateDisplay}"  HorizontalOptions="Center" HorizontalTextAlignment="Center" />
+                </StackLayout>
+                <Button Grid.Column="2" Style="{StaticResource FA.Regular.ButtonStyle}" Text="&#xf35a;" Command="{Binding NextDayCommand}" />
+            </Grid>
+
+            <ListView Grid.Row="4" Margin="5"
               ItemsSource="{Binding ScheduleByDay}"
-              HorizontalOptions="CenterAndExpand"
-              VerticalOptions="FillAndExpand"
+              HorizontalOptions="Center"
               HasUnevenRows="true"
               CachingStrategy="RecycleElement">
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell>
-                            <Grid>
+                            <Grid HorizontalOptions="Center">
                                 <Grid.ColumnDefinitions>
                                     <ColumnDefinition Width="1*" />
-                                    <ColumnDefinition Width="3*" />
+                                    <ColumnDefinition Width="1*" />
                                 </Grid.ColumnDefinitions>
-                                <Label Grid.Column="0" Text="{Binding HourDisplay}" />
-                                <Label Grid.Column="1" Text="{Binding ReservedMessage}" TextColor="{Binding IsReserved, Converter={StaticResource BoolToReservationColorConverter}}" />
+                                <Label Grid.Column="0" Text="{Binding HourDisplay}" HorizontalOptions="Start" VerticalOptions="Center"/>
+                                <Label Grid.Column="1" Text="{Binding ReservedMessage}" HorizontalOptions="Start" VerticalOptions="Center" Margin="5"
+                                       TextColor="{Binding IsReserved, Converter={StaticResource BoolToReservationColorConverter}}" />
                             </Grid>
                         </ViewCell>
                     </DataTemplate>
                 </ListView.ItemTemplate>
             </ListView>
+
+            <Button Grid.Row="5" Text="Book It" Command="{Binding BookItCommand}" />
         </Grid>
     </ContentPage.Content>
 </ContentPage>

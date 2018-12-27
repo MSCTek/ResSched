@@ -79,7 +79,9 @@
     <Compile Include="CustomRenderers\IconLabelRenderer.cs" />
     <Compile Include="Main.cs" />
     <Compile Include="AppDelegate.cs" />
-    <None Include="Entitlements.plist" />
+    <None Include="Entitlements.plist">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="Info.plist">
       <SubType>Designer</SubType>
     </None>

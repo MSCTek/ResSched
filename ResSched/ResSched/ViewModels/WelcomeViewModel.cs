@@ -23,9 +23,11 @@ namespace ResSched.ViewModels
         public async Task Init()
         {
             DisplayMessage = string.Empty;
+
             var numUsers = await _dataLoadService.LoadUsers();
             var numResources = await _dataLoadService.LoadResources();
             var numResourceSchedules = await _dataLoadService.LoadResourceSchedules();
+
             DisplayMessage = $"Loaded: \n" +
                 $"{numUsers} Users \n" +
                 $"{numResources} Resources \n" +

@@ -52,21 +52,25 @@
                 </StackLayout>
             </StackLayout>
 
-            <Grid Grid.Row="3">
+            <Grid Grid.Row="3" Margin="15,0">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="1*" />
-                    <ColumnDefinition Width="3*" />
+                    <ColumnDefinition Width="5*" />
                     <ColumnDefinition Width="1*" />
                 </Grid.ColumnDefinitions>
-                <Button Grid.Column="0" Style="{StaticResource FA.Regular.ButtonStyle}" Text="&#xf359;" Command="{Binding PreviousDayCommand}" />
+                <Button Grid.Column="0" Style="{StaticResource FA.Regular.ButtonStyle}" Text="&#xf359;"
+                        Command="{Binding PreviousDayCommand}" IsEnabled="{Binding CanNavigateBackward}" />
                 <StackLayout Grid.Column="1">
-                    <Label  Text="{Binding SelectedDateWeekdayDisplay}"  HorizontalOptions="Center" HorizontalTextAlignment="Center" />
-                    <Label  Text="{Binding SelectedDateDisplay}"  HorizontalOptions="Center" HorizontalTextAlignment="Center" />
+                    <!--<Label Text="{Binding SelectedDateWeekdayDisplay}" HorizontalOptions="Center" HorizontalTextAlignment="Center" />
+                    <Label Text="{Binding SelectedDateDisplay}" HorizontalOptions="Center" HorizontalTextAlignment="Center" />-->
+                    <DatePicker Format="D" Date="{Binding SelectedDate}" MaximumDate="{Binding MaxDate}" MinimumDate="{Binding MinDate}"
+                                HorizontalOptions="Center" />
                 </StackLayout>
-                <Button Grid.Column="2" Style="{StaticResource FA.Regular.ButtonStyle}" Text="&#xf35a;" Command="{Binding NextDayCommand}" />
+                <Button Grid.Column="2" Style="{StaticResource FA.Regular.ButtonStyle}" Text="&#xf35a;"
+                        Command="{Binding NextDayCommand}"  IsEnabled="{Binding CanNavigateForward}" />
             </Grid>
 
-            <ListView Grid.Row="4" Margin="5"
+            <ListView Grid.Row="4" Margin="15"
               ItemsSource="{Binding ScheduleByDay}"
               HorizontalOptions="Center"
               HasUnevenRows="true"
@@ -79,7 +83,7 @@
                                     <ColumnDefinition Width="1*" />
                                     <ColumnDefinition Width="1*" />
                                 </Grid.ColumnDefinitions>
-                                <Label Grid.Column="0" Text="{Binding HourDisplay}" HorizontalOptions="Start" VerticalOptions="Center"/>
+                                <Label Grid.Column="0" Text="{Binding HourDisplay}" HorizontalOptions="Start" VerticalOptions="Center" />
                                 <Label Grid.Column="1" Text="{Binding ReservedMessage}" HorizontalOptions="Start" VerticalOptions="Center" Margin="5"
                                        TextColor="{Binding IsReserved, Converter={StaticResource BoolToReservationColorConverter}}" />
                             </Grid>
@@ -88,7 +92,8 @@
                 </ListView.ItemTemplate>
             </ListView>
 
-            <Button Grid.Row="5" Text="Book It" Command="{Binding BookItCommand}" />
+            <Button Grid.Row="5" Text="Book It" Command="{Binding BookItCommand}" IsEnabled="{Binding CanBook}"
+                    WidthRequest="250" HorizontalOptions="Center" Margin="15" />
         </Grid>
     </ContentPage.Content>
 </ContentPage>

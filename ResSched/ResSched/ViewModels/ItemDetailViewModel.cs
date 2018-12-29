@@ -1,6 +1,6 @@
-﻿using GalaSoft.MvvmLight;
-using GalaSoft.MvvmLight.Command;
+﻿using GalaSoft.MvvmLight.Command;
 using ResSched.Mappers;
+using ResSched.Models;
 using ResSched.ObjModel;
 using System;
 using System.Collections.Generic;
@@ -10,28 +10,25 @@ using System.Threading.Tasks;
 
 namespace ResSched.ViewModels
 {
-    public class HourlySchedule : ObservableObject
+    public class ItemDetailViewModel : BaseViewModel
     {
-        private DateTime _hour;
-        private ResourceSchedule _resourceSchedule;
+        //TODO: maybe move this to the config file?
+        private List<int> _hours = new List<int>() { 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20 };
 
-        public DateTime Hour
+        private Resource _resource;
+        private ObservableCollection<ResourceSchedule> _schedule;
+        private ObservableCollection<HourlySchedule> _scheduleByDay;
+        private DateTime _selectedDate;
+
+        public ItemDetailViewModel(Resource selected = null)
         {
-            get { return _hour; }
-            set { Set(nameof(Hour), ref _hour, value); }
+            Resource = selected;
+            SelectedDate = DateTime.Now.Date;
+            ScheduleByDay = new ObservableCollection<HourlySchedule>();
+            Schedule = new ObservableCollection<ResourceSchedule>();
         }
 
-        public string HourDisplay { get { return this.Hour.ToShortTimeString(); } }
-        public bool IsReserved { get { return ResourceSchedule == null ? false : true; } }
-        public string ReservedMessage { get { return ResourceSchedule == null ? "Open" : ResourceSchedule.ReservedForUser; } }
-
-        public ResourceSchedule ResourceSchedule
-        {
-            get { return _resourceSchedule; }
-            set { Set(nameof(ResourceSchedule), ref _resourceSchedule, value); }
-        }
-
-        public RelayCommand ScheduleResourceCommand
+        public RelayCommand BookItCommand
         {
             get
             {
@@ -40,21 +37,32 @@ namespace ResSched.ViewModels
                 });
             }
         }
-    }
 
-    public class ItemDetailViewModel : BaseViewModel
-    {
-        private Resource _resource;
-        private ObservableCollection<ResourceSchedule> _schedule;
-        private ObservableCollection<HourlySchedule> _scheduleByDay;
-        private DateTime _selectedDay;
-
-        public ItemDetailViewModel(Resource selected = null)
+        public bool CanBook
         {
-            Resource = selected;
-            SelectedDay = DateTime.Now.Date;
-            ScheduleByDay = new ObservableCollection<HourlySchedule>();
-            Schedule = new ObservableCollection<ResourceSchedule>();
+            get { return SelectedDate >= DateTime.Now.Date; }
+        }
+
+        public bool CanNavigateBackward
+        {
+            get { return SelectedDate.AddDays(-1) > MinDate; }
+        }
+
+        public bool CanNavigateForward
+        {
+            get { return SelectedDate.AddDays(1) < MaxDate; }
+        }
+
+        public DateTime MaxDate
+        {
+            //they can book resources 14 days in the future
+            get { return DateTime.Now.AddDays(45); }
+        }
+
+        public DateTime MinDate
+        {
+            //they can go back and view schedules for one week in the past, but can't book anything
+            get { return DateTime.Now.AddDays(-7); }
         }
 
         public RelayCommand NextDayCommand
@@ -63,7 +71,7 @@ namespace ResSched.ViewModels
             {
                 return new RelayCommand(() =>
                 {
-                    SelectedDay = SelectedDay.AddDays(1);
+                    SelectedDate = SelectedDate.AddDays(1);
                 });
             }
         }
@@ -74,7 +82,7 @@ namespace ResSched.ViewModels
             {
                 return new RelayCommand(() =>
                 {
-                    SelectedDay = SelectedDay.AddDays(-1);
+                    SelectedDate = SelectedDate.AddDays(-1);
                 });
             }
         }
@@ -97,23 +105,26 @@ namespace ResSched.ViewModels
             set { Set(nameof(ScheduleByDay), ref _scheduleByDay, value); }
         }
 
-        public string SelectedDateDisplay { get { return SelectedDay.ToString("dd MMM yyyy"); } }
-        public string SelectedDateWeekdayDisplay { get { return SelectedDay.ToString("dddd"); } }
-
-        public DateTime SelectedDay
+        public DateTime SelectedDate
         {
-            get { return _selectedDay; }
+            get { return _selectedDate; }
             set
             {
-                if (Set(nameof(SelectedDay), ref _selectedDay, value))
+                if (Set(nameof(SelectedDate), ref _selectedDate, value))
                 {
                     //if the new value is different
                     BuildHourlySchedule();
                     RaisePropertyChanged(nameof(SelectedDateDisplay));
                     RaisePropertyChanged(nameof(SelectedDateWeekdayDisplay));
+                    RaisePropertyChanged(nameof(CanNavigateForward));
+                    RaisePropertyChanged(nameof(CanNavigateBackward));
+                    RaisePropertyChanged(nameof(CanBook));
                 }
             }
         }
+
+        public string SelectedDateDisplay { get { return SelectedDate.ToString("dd MMM yyyy"); } }
+        public string SelectedDateWeekdayDisplay { get { return SelectedDate.ToString("dddd"); } }
 
         public async Task Refresh()
         {
@@ -125,7 +136,7 @@ namespace ResSched.ViewModels
         //TODO: move this biz logic backward - out of the view model and into a helper class
         private void BuildHourlySchedule()
         {
-            if (SelectedDay != DateTime.MinValue && Schedule != null)
+            if (SelectedDate != DateTime.MinValue && Schedule != null)
             {
                 if (ScheduleByDay == null)
                 {
@@ -135,12 +146,10 @@ namespace ResSched.ViewModels
                 {
                     ScheduleByDay.Clear();
                 }
-                //TODO: maybe move this to the config file?
-                List<int> hours = new List<int>() { 8, 9, 10, 11, 12, 13, 14, 15, 16, 17 };
 
-                foreach (var h in hours)
+                foreach (var h in _hours)
                 {
-                    var hour = SelectedDay.AddHours(h);
+                    var hour = SelectedDate.AddHours(h);
                     var sched = Schedule
                         .Where(x => x.ReservationStartDateTime <= hour && x.ReservationEndDateTime >= hour)
                         .FirstOrDefault();

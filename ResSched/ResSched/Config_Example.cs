@@ -1,6 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using System.Collections.Generic;
 
 namespace ResSched
 {
@@ -8,6 +6,10 @@ namespace ResSched
     //public class Config
     {
         //These are shared by all environments
+
+        public static List<int> Hours = new List<int>() { 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20 };
+        public const string ApplicationURL = "";
+
         public const string MSALClientId = "";
         public const string MSALRedirectUri = "msal_______://auth";
         public static string[] MSALAuthScopes = { "User.Read" };
@@ -40,6 +42,5 @@ namespace ResSched
         public const string AppCenteriOS = "";
 
 #endif
-
     }
 }

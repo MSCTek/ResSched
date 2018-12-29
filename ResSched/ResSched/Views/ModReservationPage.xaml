@@ -1,9 +1,8 @@
-<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:cnvt="clr-namespace:ResSched.Converters"
-             x:Class="ResSched.Views.ItemDetailPage"
-             Title="{Binding Resource.Name}">
+             x:Class="ResSched.Views.ModReservationPage">
 
     <ContentPage.Resources>
         <cnvt:BoolToReservationColorConverter x:Key="BoolToReservationColorConverter" />
@@ -29,7 +28,7 @@
 
                 <StackLayout Grid.Column="0" Orientation="Vertical" Margin="20,10" Spacing="3">
                     <Label Text="Fox.Build" FontSize="Medium" />
-                    <Label Text="Resource Schedules" FontSize="Default" />
+                    <Label Text="Book a Reservation" FontSize="Default" />
                 </StackLayout>
 
                 <Image Grid.Column="1" Margin="0,5,15,0" HeightRequest="75" VerticalOptions="End">
@@ -41,41 +40,28 @@
 
             <BoxView Grid.Row="1" BackgroundColor="Gray" />
 
-            <StackLayout Grid.Row="2" Spacing="20" Padding="15" Orientation="Horizontal">
-                <Image  HeightRequest="80">
-                    <Image.Source>
-                        <UriImageSource Uri="{Binding Resource.ImageLink}" CacheValidity="100" CachingEnabled="True" />
-                    </Image.Source>
-                </Image>
-                <StackLayout Orientation="Vertical">
-                    <Label Text="{Binding Resource.Name}" FontSize="Medium" />
-                    <Label Text="{Binding Resource.Description}" />
-                </StackLayout>
+            <StackLayout Grid.Row="2" Spacing="3" Margin="30,10">
+                <Label Text="{Binding SelectedDateDisplay}" HorizontalOptions="Center" HorizontalTextAlignment="Center" FontSize="Medium"/>
+
+                <Label Text="Reserved For (required):" />
+                <Entry Text="{Binding ResourceSchedule.ReservedForUser}" />
+
+                <Label Text="Reservation Notes:" />
+                <Entry Text="{Binding ResourceSchedule.ReservationNotes}" />
+
+                <Label Text="Start Time:" />
+                <Picker ItemsSource="{Binding StartHourList}" SelectedItem="{Binding SelectedStartHour}" />
+
+                <Label Text="End Time:" />
+                <Picker ItemsSource="{Binding EndHourList}" SelectedItem="{Binding SelectedEndHour}" />
             </StackLayout>
 
-            <Grid Grid.Row="3" Margin="15,0">
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="1*" />
-                    <ColumnDefinition Width="5*" />
-                    <ColumnDefinition Width="1*" />
-                </Grid.ColumnDefinitions>
-                <Button Grid.Column="0" Style="{StaticResource FA.Regular.ButtonStyle}" Text="&#xf359;"
-                        Command="{Binding PreviousDayCommand}" IsEnabled="{Binding CanNavigateBackward}" />
-                <StackLayout Grid.Column="1">
-                    <!--<Label Text="{Binding SelectedDateWeekdayDisplay}" HorizontalOptions="Center" HorizontalTextAlignment="Center" />
-                    <Label Text="{Binding SelectedDateDisplay}" HorizontalOptions="Center" HorizontalTextAlignment="Center" />-->
-                    <DatePicker Format="D" Date="{Binding SelectedDate}" MaximumDate="{Binding MaxDate}" MinimumDate="{Binding MinDate}"
-                                HorizontalOptions="Center" />
-                </StackLayout>
-                <Button Grid.Column="2" Style="{StaticResource FA.Regular.ButtonStyle}" Text="&#xf35a;"
-                        Command="{Binding NextDayCommand}"  IsEnabled="{Binding CanNavigateForward}" />
-            </Grid>
+            <StackLayout Grid.Row="3" Spacing="3">
+                <Label Text="Existing Schedule:" HorizontalOptions="Center" HorizontalTextAlignment="Center" />
+            </StackLayout>
 
             <ListView Grid.Row="4" Margin="15"
-              ItemsSource="{Binding HourlySchedules}"
-              HorizontalOptions="Center"
-              HasUnevenRows="true"
-              CachingStrategy="RecycleElement">
+                    ItemsSource="{Binding HourlySchedules}" HorizontalOptions="Center" HasUnevenRows="true" CachingStrategy="RecycleElement">
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell>
@@ -91,11 +77,11 @@
                                 <Label Grid.Column="1" Text="{Binding HourDisplay}" HorizontalOptions="Start" VerticalOptions="Center" />
                                 <Label Grid.Column="2" Text="{Binding ReservedMessage}" HorizontalOptions="Start" VerticalOptions="Center" Margin="5"
                                        TextColor="{Binding IsReserved, Converter={StaticResource BoolToReservationColorConverter}}" />
-                                <Label Grid.Column="3" Text="&#xf044;" VerticalOptions="Center" Margin="5" FontSize="Medium" IsVisible="{Binding IsMyReservation}" Style="{DynamicResource FA.Regular.LabelStyle}">
+                                <!--<Label Grid.Column="3" Text="&#xf044;" VerticalOptions="Center" Margin="5" FontSize="Medium" IsVisible="{Binding IsMyReservation}" Style="{DynamicResource FA.Regular.LabelStyle}">
                                     <Label.GestureRecognizers>
                                         <TapGestureRecognizer Tapped="EditReservation_Tapped" />
                                     </Label.GestureRecognizers>
-                                </Label>
+                                </Label>-->
                             </Grid>
                         </ViewCell>
                     </DataTemplate>
@@ -107,10 +93,8 @@
                     <ColumnDefinition Width="1*" />
                     <ColumnDefinition Width="1*" />
                 </Grid.ColumnDefinitions>
-                <Button Grid.Column="0" Text="Go Back" Clicked="Cancel_OnClicked"
-                    WidthRequest="250" HorizontalOptions="Center" />
-                <Button Grid.Column="1" Text="Book It!" IsEnabled="{Binding CanBook}" Clicked="CanBook_OnClicked"
-                    WidthRequest="250" HorizontalOptions="Center" />
+                <Button Grid.Column="0" Text="Cancel" Command="{Binding CancelCommand}" />
+                <Button Grid.Column="1" Text="Reserve" Command="{Binding ReserveCommand}" />
             </Grid>
         </Grid>
     </ContentPage.Content>

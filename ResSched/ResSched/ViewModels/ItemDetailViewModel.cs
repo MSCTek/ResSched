@@ -1,50 +1,27 @@
 ﻿using GalaSoft.MvvmLight.Command;
+using ResSched.Helpers;
 using ResSched.Mappers;
 using ResSched.Models;
 using ResSched.ObjModel;
 using System;
-using System.Collections.Generic;
 using System.Collections.ObjectModel;
-using System.Linq;
 using System.Threading.Tasks;
-using Xamarin.Forms;
 
 namespace ResSched.ViewModels
 {
     public class ItemDetailViewModel : BaseViewModel
     {
-        //TODO: maybe move this to the config file?
-        private List<int> _hours = new List<int>() { 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20 };
-
+        private ObservableCollection<HourlySchedule> _hourlySchedules;
         private Resource _resource;
-        private ObservableCollection<ResourceSchedule> _schedule;
-        private ObservableCollection<HourlySchedule> _scheduleByDay;
+        private ObservableCollection<ResourceSchedule> _resourceSchedules;
         private DateTime _selectedDate;
 
         public ItemDetailViewModel(Resource selected = null)
         {
             Resource = selected;
             SelectedDate = DateTime.Now.Date;
-            ScheduleByDay = new ObservableCollection<HourlySchedule>();
-            Schedule = new ObservableCollection<ResourceSchedule>();
-        }
-
-        public RelayCommand BookItCommand
-        {
-            get
-            {
-                return new RelayCommand(() =>
-                {
-                    if (string.IsNullOrEmpty(App.AuthUserEmail))
-                    {
-                        //users that are not logged in cannot reserve resrouces
-                        Application.Current.MainPage.DisplayAlert("Sorry", "Please Login to reserve a resource!", "OK");
-                    }
-                    else
-                    {
-                    }
-                });
-            }
+            HourlySchedules = new ObservableCollection<HourlySchedule>();
+            ResourceSchedules = new ObservableCollection<ResourceSchedule>();
         }
 
         public bool CanBook
@@ -60,6 +37,12 @@ namespace ResSched.ViewModels
         public bool CanNavigateForward
         {
             get { return SelectedDate.AddDays(1) < MaxDate; }
+        }
+
+        public ObservableCollection<HourlySchedule> HourlySchedules
+        {
+            get { return _hourlySchedules; }
+            set { Set(nameof(HourlySchedules), ref _hourlySchedules, value); }
         }
 
         public DateTime MaxDate
@@ -102,16 +85,10 @@ namespace ResSched.ViewModels
             set { Set(nameof(Resource), ref _resource, value); }
         }
 
-        public ObservableCollection<ResourceSchedule> Schedule
+        public ObservableCollection<ResourceSchedule> ResourceSchedules
         {
-            get { return _schedule; }
-            set { Set(nameof(Schedule), ref _schedule, value); }
-        }
-
-        public ObservableCollection<HourlySchedule> ScheduleByDay
-        {
-            get { return _scheduleByDay; }
-            set { Set(nameof(ScheduleByDay), ref _scheduleByDay, value); }
+            get { return _resourceSchedules; }
+            set { Set(nameof(ResourceSchedules), ref _resourceSchedules, value); }
         }
 
         public DateTime SelectedDate
@@ -138,37 +115,15 @@ namespace ResSched.ViewModels
         public async Task Refresh()
         {
             base.Init();
-            Schedule = (await base._dataService.GetResourceSchedules(Resource.ResourceId)).ToObservableCollection();
-            BuildHourlySchedule();
+            ResourceSchedules = (await base._dataService.GetResourceSchedules(Resource.ResourceId)).ToObservableCollection();
+            HourlySchedules = await _dataService.BuildHourlyScheduleAsync(SelectedDate, Resource.ResourceId);
         }
 
-        //TODO: move this biz logic backward - out of the view model and into a helper class
-        private void BuildHourlySchedule()
+        private async void BuildHourlySchedule()
         {
-            if (SelectedDate != DateTime.MinValue && Schedule != null)
+            if (base.Init())
             {
-                if (ScheduleByDay == null)
-                {
-                    ScheduleByDay = new ObservableCollection<HourlySchedule>();
-                }
-                else
-                {
-                    ScheduleByDay.Clear();
-                }
-
-                foreach (var h in _hours)
-                {
-                    var hour = SelectedDate.AddHours(h);
-                    var sched = Schedule
-                        .Where(x => x.ReservationStartDateTime <= hour && x.ReservationEndDateTime >= hour)
-                        .FirstOrDefault();
-
-                    ScheduleByDay.Add(new HourlySchedule()
-                    {
-                        Hour = hour,
-                        ResourceSchedule = sched
-                    });
-                }
+                HourlySchedules = await _dataService.BuildHourlyScheduleAsync(SelectedDate, Resource.ResourceId);
             }
         }
     }

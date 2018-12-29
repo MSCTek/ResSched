@@ -1,8 +1,7 @@
-﻿using System;
-using System.IO;
-using ResSched.Interfaces;
-using ResSched.Services;
+﻿using ResSched.Interfaces;
 using SQLite;
+using System;
+using System.IO;
 
 namespace ResSched.iOS.Services
 {

@@ -1,5 +1,6 @@
 ﻿using ResSched.Interfaces;
 using ResSched.Mappers;
+using ResSched.ObjModel;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -22,6 +23,25 @@ namespace ResSched.Services
             var dataResults = await _db.GetAsyncConnection()
                 .Table<DataModel.Resource>()
                 .OrderBy(x => x.Name).ToListAsync();
+
+            if (dataResults.Any())
+            {
+                foreach (var d in dataResults)
+                {
+                    returnMe.Add(d.ToModelObj());
+                }
+            }
+            return returnMe;
+        }
+
+        public async Task<List<ObjModel.ResourceSchedule>> GetResourceSchedules(Guid resourceId, DateTime selectedDate)
+        {
+            var returnMe = new List<ObjModel.ResourceSchedule>();
+            var dataResults = await _db.GetAsyncConnection()
+                .Table<DataModel.ResourceSchedule>()
+                .Where(x => x.ResourceId == resourceId)
+                .Where(y => y.ReservationDate == selectedDate)
+                .ToListAsync();
 
             if (dataResults.Any())
             {
@@ -77,6 +97,11 @@ namespace ResSched.Services
                 }
             }
             return returnMe;
+        }
+
+        public async Task<int> WriteResourceSchedule(ResourceSchedule resourceSchedule)
+        {
+            return await _db.GetAsyncConnection().InsertOrReplaceAsync(resourceSchedule.ToModelData());
         }
     }
 }

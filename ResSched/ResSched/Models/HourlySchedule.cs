@@ -9,6 +9,8 @@ namespace ResSched.Models
         private DateTime _hour;
         private ResourceSchedule _resourceSchedule;
 
+        public string CalendarIcon { get { return (IsReserved) ? "\uf273" : "\uf133"; } }
+
         public DateTime Hour
         {
             get { return _hour; }
@@ -18,7 +20,6 @@ namespace ResSched.Models
         public string HourDisplay { get { return this.Hour.ToShortTimeString(); } }
 
         public bool IsReserved { get { return ResourceSchedule == null ? false : true; } }
-
         public string ReservedMessage { get { return ResourceSchedule == null ? "Open" : ResourceSchedule.ReservedForUser; } }
 
         public ResourceSchedule ResourceSchedule

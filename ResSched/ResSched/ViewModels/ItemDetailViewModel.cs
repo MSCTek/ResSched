@@ -7,6 +7,7 @@ using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Linq;
 using System.Threading.Tasks;
+using Xamarin.Forms;
 
 namespace ResSched.ViewModels
 {
@@ -34,6 +35,14 @@ namespace ResSched.ViewModels
             {
                 return new RelayCommand(() =>
                 {
+                    if (string.IsNullOrEmpty(App.AuthUserEmail))
+                    {
+                        //users that are not logged in cannot reserve resrouces
+                        Application.Current.MainPage.DisplayAlert("Sorry", "Please Login to reserve a resource!", "OK");
+                    }
+                    else
+                    {
+                    }
                 });
             }
         }

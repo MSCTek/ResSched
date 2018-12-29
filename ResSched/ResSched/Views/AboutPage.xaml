@@ -5,18 +5,6 @@
              x:Class="ResSched.Views.AboutPage"
              xmlns:vm="clr-namespace:ResSched.ViewModels">
 
-    <ContentPage.BindingContext>
-        <vm:AboutViewModel />
-    </ContentPage.BindingContext>
-
-    <ContentPage.Resources>
-        <ResourceDictionary>
-            <Color x:Key="Primary">#2196F3</Color>
-            <Color x:Key="Accent">#96d1ff</Color>
-            <Color x:Key="LightTextColor">#999999</Color>
-        </ResourceDictionary>
-    </ContentPage.Resources>
-
     <ContentPage.Content>
         <Grid RowSpacing="0">
             <Grid.RowDefinitions>
@@ -25,20 +13,11 @@
                 <RowDefinition Height="*" />
             </Grid.RowDefinitions>
 
-            <ctrl:IconLabel Text="&#xf060;" />
-
             <Grid Grid.Row="0" BackgroundColor="White">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="*" />
                     <ColumnDefinition Width="auto" />
                 </Grid.ColumnDefinitions>
-
-                <!--<Label Grid.Column="0" x:Name="BackButton" Style="{StaticResource FA.Solid.LabelStyle}"
-                   Text="&#xf060;"  TextColor="Black" FontSize="32" Margin="10">
-                    <Label.GestureRecognizers>
-                        <TapGestureRecognizer Tapped="BackButton_Tapped" />
-                    </Label.GestureRecognizers>
-                </Label>-->
 
                 <StackLayout Grid.Column="0" Orientation="Vertical" Margin="20,10" Spacing="3">
                     <Label Text="Fox.Build" FontSize="Medium" />
@@ -65,7 +44,7 @@
                         <Label Text="St. Charles, IL  60174" />
                         <StackLayout Orientation="Horizontal">
                             <StackLayout.GestureRecognizers>
-                                <TapGestureRecognizer Tapped="PhoneGestureRecognizer_Tapped" />
+                                <TapGestureRecognizer Command="{Binding PhoneCommand}" />
                             </StackLayout.GestureRecognizers>
                             <Label Style="{StaticResource FA.Solid.LabelStyle}" Text="&#xf095;" HeightRequest="50" TextColor="Black" FontSize="20" />
                             <Label Text="P: (630) 344-9385" />
@@ -76,28 +55,28 @@
                         <Label x:Name="FacebookIcon" Style="{StaticResource FA.Brands.LabelStyle}" Text="&#xf082;"
                            HeightRequest="100" TextColor="#3b5998" FontSize="42">
                             <Label.GestureRecognizers>
-                                <TapGestureRecognizer Tapped="FacebookGestureRecognizer_Tapped" />
+                                <TapGestureRecognizer Command="{Binding FacebookCommand}" />
                             </Label.GestureRecognizers>
                         </Label>
                         <Label x:Name="TwitterIcon" Style="{StaticResource FA.Brands.LabelStyle}" Text="&#xf081;"
                            HeightRequest="100" TextColor="#00aced" FontSize="42">
                             <Label.GestureRecognizers>
-                                <TapGestureRecognizer Tapped="TwitterGestureRecognizer_Tapped" />
+                                <TapGestureRecognizer Command="{Binding TwitterCommand}" />
                             </Label.GestureRecognizers>
                         </Label>
                         <Label x:Name="SlackIcon" Style="{StaticResource FA.Brands.LabelStyle}" Text="&#xf198;"
                            HeightRequest="100" TextColor="#3F0F3F" FontSize="42">
                             <Label.GestureRecognizers>
-                                <TapGestureRecognizer Tapped="SlackGestureRecognizer_Tapped" />
+                                <TapGestureRecognizer Command="{Binding SlackCommand}" />
                             </Label.GestureRecognizers>
                         </Label>
                     </StackLayout>
 
-                    <Button Text="Test Crash" Clicked="TestCrashButton_Clicked" IsVisible="{Binding IsDevEnv}" />
+                    <Button Text="Test Crash" Command="{Binding TestCrashCommand}"  IsVisible="{Binding IsDevEnv}" />
 
-                    <!-- This is just a test of the third font awesome library-->
+                    <!-- This is just a test of the third font awesome library
                     <Label x:Name="Meh" Style="{StaticResource FA.Regular.LabelStyle}" Text="&#xf11a;" IsVisible="{Binding IsDevEnv}"
-                           HeightRequest="100" TextColor="Green" FontSize="42" />
+                           HeightRequest="100" TextColor="Green" FontSize="42" />-->
                 </StackLayout>
             </ScrollView>
         </Grid>

@@ -40,7 +40,7 @@ namespace ResSched.ViewModels
                     new HomeMenuItem {Id = MenuItemType.Browse, Title="Browse" },
                     new HomeMenuItem {Id = MenuItemType.MyReservations, Title="My Reservations" },
                     new HomeMenuItem {Id = MenuItemType.About, Title="About" },
-                    new HomeMenuItem {Id = MenuItemType.Login, Title="Login" }
+                    new HomeMenuItem {Id = MenuItemType.Login, Title="Logout" }
                 };
             }
 

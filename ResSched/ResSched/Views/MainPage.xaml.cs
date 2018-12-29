@@ -17,7 +17,8 @@ namespace ResSched.Views
             InitializeComponent();
 
             MasterBehavior = MasterBehavior.Popover;
-            MenuPages.Add((int)MenuItemType.Browse, (NavigationPage)Detail);
+            //why are we doing this?
+            MenuPages.Add((int)MenuItemType.Login, (NavigationPage)Detail);
             this.IsPresentedChanged += OnPresentedChanged;
         }
 

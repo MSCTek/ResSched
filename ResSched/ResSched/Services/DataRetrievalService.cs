@@ -99,6 +99,12 @@ namespace ResSched.Services
             return returnMe;
         }
 
+        public async Task<User> GetUserByEmail(string userEmail)
+        {
+            var user = await _db.GetAsyncConnection().Table<DataModel.User>().Where(x => x.Email.ToLower() == userEmail.ToLower()).FirstOrDefaultAsync();
+            return (user != null) ? user.ToModelObj() : null;
+        }
+
         public async Task<int> WriteResourceSchedule(ResourceSchedule resourceSchedule)
         {
             return await _db.GetAsyncConnection().InsertOrReplaceAsync(resourceSchedule.ToModelData());

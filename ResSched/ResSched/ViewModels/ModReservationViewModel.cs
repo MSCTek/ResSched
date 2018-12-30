@@ -95,6 +95,11 @@ namespace ResSched.ViewModels
                             ResourceSchedule.ReservedByUserEmail = App.AuthUserEmail;
                         }
 
+                        if (ResourceSchedule.ReservedByUserId == Guid.Empty)
+                        {
+                            ResourceSchedule.ReservedByUserId = App.AuthUserId;
+                        }
+
                         ResourceSchedule.ReservedOnDateTime = DateTime.Now;
 
                         //update the SQLite db

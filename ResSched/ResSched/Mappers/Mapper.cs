@@ -42,6 +42,25 @@
             };
         }
 
+        public static DataModel.User ToModelData(this ObjModel.User source)
+        {
+            return new DataModel.User()
+            {
+                CreatedBy = source.CreatedBy,
+                CreatedDate = source.CreatedDate,
+                IsDeleted = source.IsDeleted,
+                LastModifiedBy = source.LastModifiedBy,
+                LastModifiedDate = source.LastModifiedDate,
+                Email = source.Email,
+                InstallationId = source.InstallationId,
+                IsActive = source.IsActive,
+                LastLoginDate = source.LastLoginDate,
+                Name = source.Name,
+                UserId = source.UserId,
+                UserName = source.UserName
+            };
+        }
+
         public static ObjModel.ResourceSchedule ToModelObj(this DataModel.ResourceSchedule source)
         {
             return new ObjModel.ResourceSchedule()
@@ -79,6 +98,25 @@
                 ImageLinkThumb = source.ImageLinkThumb,
                 IsActive = source.IsActive,
                 Name = source.Name
+            };
+        }
+
+        public static ObjModel.User ToModelObj(this DataModel.User source)
+        {
+            return new ObjModel.User()
+            {
+                CreatedBy = source.CreatedBy,
+                CreatedDate = source.CreatedDate,
+                IsDeleted = source.IsDeleted,
+                LastModifiedBy = source.LastModifiedBy,
+                LastModifiedDate = source.LastModifiedDate,
+                Email = source.Email,
+                InstallationId = source.InstallationId,
+                IsActive = source.IsActive,
+                LastLoginDate = source.LastLoginDate,
+                Name = source.Name,
+                UserId = source.UserId,
+                UserName = source.UserName
             };
         }
     }

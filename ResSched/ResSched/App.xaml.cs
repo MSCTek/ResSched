@@ -36,6 +36,7 @@ namespace ResSched
         #region AuthId
 
         public static string AuthUserEmail = string.Empty;
+        public static Guid AuthUserId = Guid.Empty;
         public static string AuthUserName = string.Empty;
 
         #endregion AuthId

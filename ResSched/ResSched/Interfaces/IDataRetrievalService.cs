@@ -15,6 +15,8 @@ namespace ResSched.Interfaces
 
         Task<List<ResourceSchedule>> GetResourceSchedulesForUser(string userEmail);
 
+        Task<User> GetUserByEmail(string userEmail);
+
         Task<int> WriteResourceSchedule(ResourceSchedule resourceSchedule);
     }
 }

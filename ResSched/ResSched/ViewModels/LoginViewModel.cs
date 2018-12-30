@@ -37,7 +37,7 @@ namespace ResSched.ViewModels
         {
             get
             {
-                return new RelayCommand(() =>
+                return new RelayCommand(async () =>
                 {
                     try
                     {
@@ -50,7 +50,15 @@ namespace ResSched.ViewModels
                             SurName = "Guest";
                             UserPrincipalName = "guest@guest.com";
 
-                            RecordSuccessfulLogin(DisplayName, UserPrincipalName, "Guest Login");
+                            var userId = await CheckAuthorization(UserPrincipalName);
+                            if (userId != null && userId != Guid.Empty)
+                            {
+                                RecordSuccessfulLogin(DisplayName, UserPrincipalName, userId, "Guest Login");
+                            }
+                            else
+                            {
+                                Analytics.TrackEvent($"Unknown User: {UserPrincipalName} tried to login and does not have authorization.");
+                            }
 
                             GuestButtonText = GuestText.Sign_out_as_Guest.ToDescription();
                             MicrosoftButtonText = MicrosoftText.Sign_in_with_Microsoft.ToDescription();
@@ -130,8 +138,20 @@ namespace ResSched.ViewModels
             }
         }
 
-        private void RecordSuccessfulLogin(string userName, string userEmail, string loginSource)
+        private async Task<Guid> CheckAuthorization(string userEmail)
         {
+            Guid userId = Guid.Empty;
+            if (base.Init())
+            {
+                var user = await _dataService.GetUserByEmail(userEmail);
+                userId = user.UserId;
+            }
+            return userId;
+        }
+
+        private void RecordSuccessfulLogin(string userName, string userEmail, Guid userId, string loginSource)
+        {
+            App.AuthUserId = userId;
             App.AuthUserEmail = userEmail;
             App.AuthUserName = userName;
 
@@ -161,7 +181,15 @@ namespace ResSched.ViewModels
                 SurName = user["surname"].ToString();
                 UserPrincipalName = user["userPrincipalName"].ToString();
 
-                RecordSuccessfulLogin(DisplayName, UserPrincipalName, "Microsoft");
+                var userId = await CheckAuthorization(UserPrincipalName);
+                if (userId != null && userId != Guid.Empty)
+                {
+                    RecordSuccessfulLogin(DisplayName, UserPrincipalName, userId, "Microsoft");
+                }
+                else
+                {
+                    Analytics.TrackEvent($"Unknown User: {UserPrincipalName} tried to login and does not have authorization.");
+                }
             }
             else
             {

@@ -54,10 +54,8 @@
     <MtouchArch>ARM64</MtouchArch>
     <CodesignKey>iPhone Developer</CodesignKey>
     <MtouchDebug>true</MtouchDebug>
-    <CodesignEntitlements>
-    </CodesignEntitlements>
-    <CodesignProvision>
-    </CodesignProvision>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <CodesignProvision>ResSchedulerPPDev</CodesignProvision>
     <CodesignExtraArgs />
     <CodesignResourceRules />
     <MtouchSdkVersion>11.2</MtouchSdkVersion>

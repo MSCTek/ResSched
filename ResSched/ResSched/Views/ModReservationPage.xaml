@@ -28,7 +28,7 @@
 
                 <StackLayout Grid.Column="0" Orientation="Vertical" Margin="20,10" Spacing="3">
                     <Label Text="Fox.Build" FontSize="Medium" />
-                    <Label Text="Book a Reservation" FontSize="Default" />
+                    <Label Text="{Binding PageHeaderText}" FontSize="Default" />
                 </StackLayout>
 
                 <Image Grid.Column="1" Margin="0,5,15,0" HeightRequest="75" VerticalOptions="End">
@@ -41,7 +41,7 @@
             <BoxView Grid.Row="1" BackgroundColor="Gray" />
 
             <StackLayout Grid.Row="2" Spacing="3" Margin="30,10">
-                <Label Text="{Binding SelectedDateDisplay}" HorizontalOptions="Center" HorizontalTextAlignment="Center" FontSize="Medium"/>
+                <Label Text="{Binding SelectedDateDisplay}" HorizontalOptions="Center" HorizontalTextAlignment="Center" FontSize="Medium" />
 
                 <Label Text="Reserved For (required):" />
                 <Entry Text="{Binding ResourceSchedule.ReservedForUser}" />
@@ -50,10 +50,10 @@
                 <Entry Text="{Binding ResourceSchedule.ReservationNotes}" />
 
                 <Label Text="Start Time:" />
-                <Picker ItemsSource="{Binding StartHourList}" SelectedItem="{Binding SelectedStartHour}" />
+                <Picker ItemsSource="{Binding StartHourList}" SelectedIndex="{Binding SelectedStartHourIndex}" SelectedItem="{Binding SelectedStartHour}" />
 
                 <Label Text="End Time:" />
-                <Picker ItemsSource="{Binding EndHourList}" SelectedItem="{Binding SelectedEndHour}" />
+                <Picker ItemsSource="{Binding EndHourList}" SelectedItem="{Binding SelectedEndHour, Mode=TwoWay}" />
             </StackLayout>
 
             <StackLayout Grid.Row="3" Spacing="3">
@@ -94,7 +94,7 @@
                     <ColumnDefinition Width="1*" />
                 </Grid.ColumnDefinitions>
                 <Button Grid.Column="0" Text="Cancel" Command="{Binding CancelCommand}" />
-                <Button Grid.Column="1" Text="Reserve" Command="{Binding ReserveCommand}" />
+                <Button Grid.Column="1" Text="{Binding SubmitButtonText}" Command="{Binding ReserveCommand}" />
             </Grid>
         </Grid>
     </ContentPage.Content>

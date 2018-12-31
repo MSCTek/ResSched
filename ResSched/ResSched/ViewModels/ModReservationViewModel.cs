@@ -15,34 +15,38 @@ namespace ResSched.ViewModels
     {
         private ObservableCollection<string> _endHourList;
         private ObservableCollection<HourlySchedule> _hourlySchedules;
+        private string _pageHeaderText;
         private ResourceSchedule _resourceSchedule;
         private DateTime _selectedDate;
         private string _selectedEndHour;
         private string _selectedStartHour;
         private ObservableCollection<string> _startHourList;
+        private string _submitButtonText;
 
         //constructor for existing records
         public ModReservationViewModel(HourlySchedule hourlySchedule)
         {
             base.Init();
+            SubmitButtonText = "Update Reservation";
+            PageHeaderText = "Modify an Existing Reservation";
             ResourceSchedule = hourlySchedule.ResourceSchedule;
-            SelectedStartHour = ResourceSchedule.ReservationStartDateTime.ToShortTimeString();
-            SelectedEndHour = ResourceSchedule.ReservationEndDateTime.ToShortTimeString();
             SelectedDate = hourlySchedule.ResourceSchedule.ReservationStartDateTime.Date;
-            BuildHourlySchedule();
+            BuildHourlyScheduleAsync();
         }
 
         //constructor for new records
         public ModReservationViewModel(DateTime selectedDate, Resource resource)
         {
             base.Init();
+            SubmitButtonText = "Reserve";
+            PageHeaderText = "Make a Reservation";
             ResourceSchedule = new ResourceSchedule()
             {
                 Resource = resource,
                 ResourceId = resource.ResourceId
             };
             SelectedDate = selectedDate;
-            BuildHourlySchedule();
+            BuildHourlyScheduleAsync();
         }
 
         public RelayCommand CancelCommand
@@ -66,6 +70,12 @@ namespace ResSched.ViewModels
         {
             get { return _hourlySchedules; }
             set { Set(nameof(HourlySchedules), ref _hourlySchedules, value); }
+        }
+
+        public string PageHeaderText
+        {
+            get { return _pageHeaderText; }
+            set { Set(nameof(PageHeaderText), ref _pageHeaderText, value); }
         }
 
         public RelayCommand ReserveCommand
@@ -131,7 +141,7 @@ namespace ResSched.ViewModels
             set { Set(nameof(SelectedDate), ref _selectedDate, value); }
         }
 
-        public string SelectedDateDisplay { get { return SelectedDate.ToLongDateString(); } }
+        public string SelectedDateDisplay { get { return SelectedDate.ToString("dddd, dd MMM yyyy"); } }
 
         public string SelectedEndHour
         {
@@ -155,7 +165,7 @@ namespace ResSched.ViewModels
             {
                 if (Set(nameof(SelectedStartHour), ref _selectedStartHour, value))
                 {
-                    if (SelectedDate != DateTime.MinValue && !string.IsNullOrEmpty(SelectedStartHour))
+                    if (SelectedDate != DateTime.MinValue && !string.IsNullOrEmpty(SelectedStartHour) && StartHourList != null)
                     {
                         ResourceSchedule.ReservationStartDateTime = ParseSelected(SelectedDate, SelectedStartHour);
                     }
@@ -169,23 +179,18 @@ namespace ResSched.ViewModels
             set { Set(nameof(StartHourList), ref _startHourList, value); }
         }
 
-        private async void BuildHourlySchedule()
+        public string SubmitButtonText
+        {
+            get { return _submitButtonText; }
+            set { Set(nameof(SubmitButtonText), ref _submitButtonText, value); }
+        }
+
+        private async void BuildHourlyScheduleAsync()
         {
             HourlySchedules = await _dataService.BuildHourlyScheduleAsync(SelectedDate, ResourceSchedule.ResourceId);
 
             if (HourlySchedules.Any())
             {
-                //if the page has new values, make sure they are marked in the list:
-                if (SelectedStartHour != null)
-                {
-                    var start = HourlySchedules.Where(x => x.HourDisplay == SelectedStartHour).FirstOrDefault();
-                    if (start != null && !start.IsReserved)
-                    {
-                        //stop here
-                        start.IsInReservationProcess = true;
-                    }
-                }
-
                 //build up the lists for the dropdowns
                 var startHourList = new ObservableCollection<string>();
                 var endHourList = new ObservableCollection<string>();
@@ -205,8 +210,8 @@ namespace ResSched.ViewModels
                 StartHourList = startHourList;
                 EndHourList = endHourList;
 
-                RaisePropertyChanged(nameof(SelectedStartHour));
-                RaisePropertyChanged(nameof(SelectedEndHour));
+                SelectedStartHour = ResourceSchedule.ReservationStartDateTime.ToShortTimeString();
+                SelectedEndHour = ResourceSchedule.ReservationEndDateTime.ToShortTimeString();
             }
         }
 

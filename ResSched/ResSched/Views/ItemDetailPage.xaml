@@ -79,7 +79,7 @@
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell>
-                            <Grid Margin="40,0,0,0">
+                            <Grid Margin="40,0,0,20">
                                 <Grid.ColumnDefinitions>
                                     <ColumnDefinition Width="auto" />
                                     <ColumnDefinition Width="1*" />
@@ -107,9 +107,9 @@
                     <ColumnDefinition Width="1*" />
                     <ColumnDefinition Width="1*" />
                 </Grid.ColumnDefinitions>
-                <Button Grid.Column="0" Text="Go Back" Clicked="Cancel_OnClicked"
+                <Button Grid.Column="0" Text="Back To List" Clicked="Cancel_OnClicked"
                     WidthRequest="250" HorizontalOptions="Center" />
-                <Button Grid.Column="1" Text="Book It!" IsEnabled="{Binding CanBook}" Clicked="CanBook_OnClicked"
+                <Button Grid.Column="1" Text="Make Reservation" IsEnabled="{Binding CanBook}" Clicked="CanBook_OnClicked"
                     WidthRequest="250" HorizontalOptions="Center" />
             </Grid>
         </Grid>

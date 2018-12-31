@@ -5,11 +5,11 @@ using System.Threading.Tasks;
 
 namespace ResSched.ViewModels
 {
-    public class ItemsViewModel : BaseViewModel
+    public class BrowseResourcesViewModel : BaseViewModel
     {
         private ObservableCollection<Resource> _items;
 
-        public ItemsViewModel()
+        public BrowseResourcesViewModel()
         {
             Title = "Browse Resources";
             Items = new ObservableCollection<Resource>();

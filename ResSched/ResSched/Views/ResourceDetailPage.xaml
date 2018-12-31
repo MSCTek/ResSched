@@ -2,7 +2,7 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:cnvt="clr-namespace:ResSched.Converters"
-             x:Class="ResSched.Views.ItemDetailPage"
+             x:Class="ResSched.Views.ResourceDetailPage"
              Title="{Binding Resource.Name}">
 
     <ContentPage.Resources>
@@ -79,7 +79,7 @@
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell>
-                            <Grid Margin="40,0,0,20">
+                            <Grid Margin="40,0,20,0">
                                 <Grid.ColumnDefinitions>
                                     <ColumnDefinition Width="auto" />
                                     <ColumnDefinition Width="1*" />

@@ -9,14 +9,14 @@ using System.Threading.Tasks;
 
 namespace ResSched.ViewModels
 {
-    public class ItemDetailViewModel : BaseViewModel
+    public class ResourceDetailViewModel : BaseViewModel
     {
         private ObservableCollection<HourlySchedule> _hourlySchedules;
         private Resource _resource;
         private ObservableCollection<ResourceSchedule> _resourceSchedules;
         private DateTime _selectedDate;
 
-        public ItemDetailViewModel(Resource selected = null)
+        public ResourceDetailViewModel(Resource selected = null)
         {
             Resource = selected;
             SelectedDate = DateTime.Now.Date;

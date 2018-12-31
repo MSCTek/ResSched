@@ -28,7 +28,7 @@ namespace ResSched.ViewModels
             {
                 items = new ObservableCollection<HomeMenuItem>
                 {
-                    new HomeMenuItem {Id = MenuItemType.Browse, Title="Browse" },
+                    new HomeMenuItem {Id = MenuItemType.Browse, Title="Browse Resources" },
                     new HomeMenuItem {Id = MenuItemType.About, Title="About" },
                     new HomeMenuItem {Id = MenuItemType.Login, Title="Login" }
                 };
@@ -37,7 +37,7 @@ namespace ResSched.ViewModels
             {
                 items = new ObservableCollection<HomeMenuItem>
                 {
-                    new HomeMenuItem {Id = MenuItemType.Browse, Title="Browse" },
+                    new HomeMenuItem {Id = MenuItemType.Browse, Title="Browse Resources" },
                     new HomeMenuItem {Id = MenuItemType.MyReservations, Title="My Reservations" },
                     new HomeMenuItem {Id = MenuItemType.About, Title="About" },
                     new HomeMenuItem {Id = MenuItemType.Login, Title="Logout" }

@@ -26,6 +26,12 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Compile Update="Views\BrowseResourcesPage.xaml.cs">
+      <DependentUpon>BrowseResourcesPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\ResourceDetailPage.xaml.cs">
+      <DependentUpon>ResourceDetailPage.xaml</DependentUpon>
+    </Compile>
     <Compile Update="Views\MyReservationsPage.xaml.cs">
       <DependentUpon>MyReservationsPage.xaml</DependentUpon>
     </Compile>

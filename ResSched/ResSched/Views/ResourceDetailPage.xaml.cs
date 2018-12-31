@@ -6,11 +6,11 @@ using Xamarin.Forms.Xaml;
 namespace ResSched.Views
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class ItemDetailPage : ContentPage
+    public partial class ResourceDetailPage : ContentPage
     {
-        private ItemDetailViewModel viewModel;
+        private ResourceDetailViewModel viewModel;
 
-        public ItemDetailPage(ItemDetailViewModel viewModel)
+        public ResourceDetailPage(ResourceDetailViewModel viewModel)
         {
             InitializeComponent();
             BindingContext = this.viewModel = viewModel;

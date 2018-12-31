@@ -6,14 +6,14 @@ using Xamarin.Forms.Xaml;
 namespace ResSched.Views
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class ItemsPage : ContentPage
+    public partial class BrowseResourcesPage : ContentPage
     {
-        private ItemsViewModel viewModel;
+        private BrowseResourcesViewModel viewModel;
 
-        public ItemsPage()
+        public BrowseResourcesPage()
         {
             InitializeComponent();
-            BindingContext = viewModel = new ItemsViewModel();
+            BindingContext = viewModel = new BrowseResourcesViewModel();
         }
 
         protected override async void OnAppearing()
@@ -21,7 +21,7 @@ namespace ResSched.Views
             base.OnAppearing();
             if (BindingContext != null)
             {
-                var vm = BindingContext as ItemsViewModel;
+                var vm = BindingContext as BrowseResourcesViewModel;
                 await vm.InitVM();
             }
         }
@@ -32,7 +32,7 @@ namespace ResSched.Views
             if (item == null)
                 return;
 
-            await Navigation.PushModalAsync(new ItemDetailPage(new ItemDetailViewModel(item)));
+            await Navigation.PushModalAsync(new ResourceDetailPage(new ResourceDetailViewModel(item)));
 
             // Manually deselect item.
             ItemsListView.SelectedItem = null;

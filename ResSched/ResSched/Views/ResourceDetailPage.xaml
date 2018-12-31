@@ -3,8 +3,13 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:cnvt="clr-namespace:ResSched.Converters"
              x:Class="ResSched.Views.ResourceDetailPage"
-             Title="{Binding Resource.Name}"
-             Padding="0,25,0,0">
+             Title="{Binding Resource.Name}">
+
+    <ContentPage.Padding>
+        <OnPlatform x:TypeArguments="Thickness">
+            <On Platform="iOS" Value="0,25,0,0" />
+        </OnPlatform>
+    </ContentPage.Padding>
 
     <ContentPage.Resources>
         <cnvt:BoolToReservationColorConverter x:Key="BoolToReservationColorConverter" />

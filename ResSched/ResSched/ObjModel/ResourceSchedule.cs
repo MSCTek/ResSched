@@ -68,6 +68,8 @@ namespace ResSched.ObjModel
             set { Set(nameof(ReservationEndDateTime), ref _reservationEndDateTime, value); }
         }
 
+        public string ReservationEndDateTimeDisplay { get { return ReservationEndDateTime.ToString("hh:mm tt"); } }
+
         public string ReservationNotes
         {
             get { return _reservationNotes; }
@@ -79,6 +81,8 @@ namespace ResSched.ObjModel
             get { return _reservationStartDateTime; }
             set { Set(nameof(ReservationStartDateTime), ref _reservationStartDateTime, value); }
         }
+
+        public string ReservationStartDateTimeDisplay { get { return ReservationStartDateTime.ToString("d MMM yyyy  hh:mm tt"); } }
 
         public string ReservedByUserEmail
         {
@@ -103,6 +107,8 @@ namespace ResSched.ObjModel
             get { return _reservedOnDateTime; }
             set { Set(nameof(ReservedOnDateTime), ref _reservedOnDateTime, value); }
         }
+
+        public string ReservedOnDateTimeDisplay { get { return ReservedOnDateTime.ToString("d MMM yyyy  hh:mm tt"); } }
 
         public Resource Resource
         {

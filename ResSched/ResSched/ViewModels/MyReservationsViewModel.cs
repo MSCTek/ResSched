@@ -1,5 +1,6 @@
 ﻿using ResSched.Mappers;
 using ResSched.ObjModel;
+using System;
 using System.Collections.ObjectModel;
 using System.Threading.Tasks;
 
@@ -14,6 +15,14 @@ namespace ResSched.ViewModels
             Title = "My Reservations";
         }
 
+        /*public RelayCommand<Guid> CancelReservationCommand
+        {
+            get
+            {
+                return new RelayCommand<Guid>(OnCancelReservation);
+            }
+        }*/
+
         public ObservableCollection<ResourceSchedule> Reservations
         {
             get { return _reservations; }
@@ -26,6 +35,12 @@ namespace ResSched.ViewModels
             {
                 Reservations = (await base._dataService.GetResourceSchedulesForUser(App.AuthUserEmail)).ToObservableCollection();
             }
+        }
+
+        public async void OnCancelReservation(Guid resourceScheduleId)
+        {
+            await base._dataService.SoftDeleteReservation(resourceScheduleId);
+            await InitVM();
         }
     }
 }

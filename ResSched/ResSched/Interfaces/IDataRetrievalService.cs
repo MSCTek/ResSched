@@ -17,6 +17,8 @@ namespace ResSched.Interfaces
 
         Task<User> GetUserByEmail(string userEmail);
 
+        Task<bool> SoftDeleteReservation(Guid reservationId);
+
         Task<int> WriteResourceSchedule(ResourceSchedule resourceSchedule);
     }
 }

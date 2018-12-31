@@ -3,6 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:vm="clr-namespace:ResSched.ViewModels"
              x:Class="ResSched.Views.MyReservationsPage"
+             x:Name="ParentPage"
              Title="My Reservations">
 
     <ContentPage.Content>
@@ -38,27 +39,43 @@
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell>
-                            <Grid  Margin="15,10,15,5">
+                            <Grid  Margin="15,10,15,10">
                                 <Grid.RowDefinitions>
                                     <RowDefinition Height="auto" />
                                     <RowDefinition Height="auto" />
+                                    <RowDefinition Height="1" />
                                 </Grid.RowDefinitions>
-                                <StackLayout Grid.Row="0" Orientation="Horizontal">
-                                    <Image  HeightRequest="80">
+                                <StackLayout Grid.Row="0" Orientation="Horizontal" Spacing="10">
+                                    <Image  HeightRequest="70">
                                         <Image.Source>
                                             <UriImageSource Uri="{Binding Resource.ImageLink}" CacheValidity="100" CachingEnabled="True" />
                                         </Image.Source>
                                     </Image>
                                     <StackLayout Orientation="Vertical">
                                         <Label Text="{Binding Resource.Name}" FontSize="Medium" />
-                                        <Label Text="{Binding ReservationStartDateTime}" />
-                                        <Label Text="{Binding ReservationEndDateTime}" />
+                                        <StackLayout Orientation="Horizontal" Spacing="2">
+                                            <Label Text="{Binding ReservationStartDateTimeDisplay}" />
+                                            <Label Text=" - " />
+                                            <Label Text="{Binding ReservationEndDateTimeDisplay}" />
+                                        </StackLayout>
                                     </StackLayout>
                                 </StackLayout>
-                                <StackLayout Grid.Row="1">
+                                <StackLayout Grid.Row="1" Spacing="2">
+                                    <StackLayout Orientation="Horizontal">
+                                        <Label Text="Reserved For:" />
+                                        <Label Text="{Binding ReservedForUser}" />
+                                    </StackLayout>
                                     <Label Text="{Binding ReservationNotes}" />
-                                    <Label Text="{Binding ReservedOnDateTime}" />
+                                    <StackLayout Orientation="Horizontal">
+                                        <Label Text="Reserved On:" />
+                                        <Label Text="{Binding ReservedOnDateTimeDisplay}" />
+                                    </StackLayout>
+                                    <!--<Button Text="Cancel this Reservation"
+                                            Command="{Binding Source={x:Reference ParentPage}, Path=BindingContext.CancelReservationCommand}"
+                                            CommandParameter="{Binding ResourceScheduleId}" />-->
+                                    <Button Text="Cancel this Reservation" Clicked="CancelReservationButton_Clicked" />
                                 </StackLayout>
+                                <BoxView Grid.Row="2" BackgroundColor="Gray" />
                             </Grid>
                         </ViewCell>
                     </DataTemplate>

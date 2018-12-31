@@ -1,4 +1,5 @@
-﻿using ResSched.Interfaces;
+﻿using Microsoft.AppCenter.Analytics;
+using ResSched.Interfaces;
 using ResSched.Mappers;
 using ResSched.ObjModel;
 using System;
@@ -39,7 +40,7 @@ namespace ResSched.Services
             var returnMe = new List<ObjModel.ResourceSchedule>();
             var dataResults = await _db.GetAsyncConnection()
                 .Table<DataModel.ResourceSchedule>()
-                .Where(x => x.ResourceId == resourceId)
+                .Where(x => x.ResourceId == resourceId && x.IsDeleted == false)
                 .Where(y => y.ReservationDate == selectedDate)
                 .ToListAsync();
 
@@ -59,7 +60,7 @@ namespace ResSched.Services
 
             var dataResults = await _db.GetAsyncConnection()
                 .Table<DataModel.ResourceSchedule>()
-                .Where(x => x.ResourceId == resourceId)
+                .Where(x => x.ResourceId == resourceId && x.IsDeleted == false)
                 .ToListAsync();
 
             if (dataResults.Any())
@@ -78,7 +79,7 @@ namespace ResSched.Services
 
             var dataResults = await _db.GetAsyncConnection()
                 .Table<DataModel.ResourceSchedule>()
-                .Where(x => x.ReservedByUserEmail.ToLower() == userEmail.ToLower())
+                .Where(x => x.ReservedByUserEmail.ToLower() == userEmail.ToLower() && x.IsDeleted == false)
                 .ToListAsync();
 
             if (dataResults.Any())
@@ -88,7 +89,7 @@ namespace ResSched.Services
                     var resSchedObj = d.ToModelObj();
                     var resourceData = await _db.GetAsyncConnection()
                         .Table<DataModel.Resource>()
-                        .Where(x => x.ResourceId == d.ResourceId).FirstOrDefaultAsync();
+                        .Where(x => x.ResourceId == d.ResourceId && d.IsDeleted == false).FirstOrDefaultAsync();
                     if (resourceData != null)
                     {
                         resSchedObj.Resource = resourceData.ToModelObj();
@@ -101,8 +102,32 @@ namespace ResSched.Services
 
         public async Task<User> GetUserByEmail(string userEmail)
         {
-            var user = await _db.GetAsyncConnection().Table<DataModel.User>().Where(x => x.Email.ToLower() == userEmail.ToLower()).FirstOrDefaultAsync();
+            var user = await _db.GetAsyncConnection().Table<DataModel.User>().Where(x => x.Email.ToLower() == userEmail.ToLower() && x.IsDeleted == false && x.IsActive == true).FirstOrDefaultAsync();
             return (user != null) ? user.ToModelObj() : null;
+        }
+
+        public async Task<bool> SoftDeleteReservation(Guid resourceScheduleId)
+        {
+            var toBeDeleted = await _db.GetAsyncConnection().Table<DataModel.ResourceSchedule>().Where(x => x.ResourceScheduleId == resourceScheduleId).FirstOrDefaultAsync();
+            if (toBeDeleted != null)
+            {
+                toBeDeleted.IsDeleted = true;
+                toBeDeleted.LastModifiedBy = App.AuthUserName;
+                toBeDeleted.LastModifiedDate = DateTime.Now;
+                if (1 == await _db.GetAsyncConnection().UpdateAsync(toBeDeleted))
+                {
+                    return true;
+                }
+                else
+                {
+                    Analytics.TrackEvent("Had a problem soft deleting a resource schedule.");
+                }
+            }
+            else
+            {
+                Analytics.TrackEvent("Couldn't find the corresponding record to delete!");
+            }
+            return false;
         }
 
         public async Task<int> WriteResourceSchedule(ResourceSchedule resourceSchedule)

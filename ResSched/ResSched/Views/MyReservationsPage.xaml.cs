@@ -1,4 +1,5 @@
-﻿using ResSched.ViewModels;
+﻿using ResSched.ObjModel;
+using ResSched.ViewModels;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -22,6 +23,16 @@ namespace ResSched.Views
             {
                 var vm = (MyReservationsViewModel)this.BindingContext;
                 await vm.InitVM();
+            }
+        }
+
+        private async void CancelReservationButton_Clicked(object sender, System.EventArgs e)
+        {
+            var answer = await DisplayAlert("Please Confirm", "Are you sure you want to delete this reservation?", "Yes", "No");
+            if (answer)
+            {
+                var id = ((ResourceSchedule)(((Button)sender).BindingContext)).ResourceScheduleId;
+                ((MyReservationsViewModel)this.BindingContext).OnCancelReservation(id);
             }
         }
     }

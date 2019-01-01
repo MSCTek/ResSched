@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ResSched.Views.EventsPage">
+
+    <ContentPage.Content>
+        <Grid RowSpacing="0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="80" />
+                <RowDefinition Height="2" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+
+            <Grid Grid.Row="0" BackgroundColor="White">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="auto" />
+                </Grid.ColumnDefinitions>
+
+                <StackLayout Grid.Column="0" Orientation="Vertical" Margin="20,10" Spacing="3">
+                    <Label Text="Fox.Build" FontSize="Medium" />
+                    <Label Text="Events" FontSize="Default" />
+                </StackLayout>
+
+                <Image Grid.Column="1" Margin="0,5,15,0" HeightRequest="75" VerticalOptions="End">
+                    <Image.Source>
+                        <UriImageSource Uri="{StaticResource FoxImage}" CacheValidity="100" CachingEnabled="True" />
+                    </Image.Source>
+                </Image>
+            </Grid>
+
+            <BoxView Grid.Row="1" BackgroundColor="Gray" />
+
+            <ListView x:Name="ItemsListView" Grid.Row="2"
+              ItemsSource="{Binding Events}"
+              VerticalOptions="FillAndExpand" HasUnevenRows="true"
+              CachingStrategy="RecycleElement">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout Padding="10">
+                                <Grid HorizontalOptions="FillAndExpand">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="*" />
+                                        <ColumnDefinition Width="auto" />
+                                    </Grid.ColumnDefinitions>
+                                    <Label Grid.Column="0" Text="{Binding name}" LineBreakMode="WordWrap"  Style="{DynamicResource ListItemTextStyle}"  FontSize="Medium" />
+                                    <Image Grid.Column="1" Margin="10,5,0,5" HeightRequest="50" VerticalOptions="Start" HorizontalOptions="End">
+                                        <Image.Source>
+                                            <UriImageSource Uri="{Binding photo_url}" CacheValidity="100" CachingEnabled="True" />
+                                        </Image.Source>
+                                    </Image>
+                                </Grid>
+                                <Label Text="{Binding descriptionDisplay}"  LineBreakMode="TailTruncation"  Style="{DynamicResource ListItemDetailTextStyle}" />
+                                <Button Text="Learn More"  Clicked="LearnMoreButton_Clicked" />
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

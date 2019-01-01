@@ -19,6 +19,8 @@ namespace ResSched
         public const string SlackRedirectUri = "";
         public static string[] SlackScopes = { "users:read" };
 
+        public static string MeetupEventsRestUrl = "";
+
 #if DEV
 
         public const string AppCenterUWP = "";

@@ -30,6 +30,7 @@ namespace ResSched.ViewModels
                 {
                     new HomeMenuItem {Id = MenuItemType.Browse, Title="Browse Resources" },
                     new HomeMenuItem {Id = MenuItemType.About, Title="About" },
+                    new HomeMenuItem {Id = MenuItemType.Events, Title="Events"},
                     new HomeMenuItem {Id = MenuItemType.Login, Title="Login" }
                 };
             }
@@ -40,6 +41,7 @@ namespace ResSched.ViewModels
                     new HomeMenuItem {Id = MenuItemType.Browse, Title="Browse Resources" },
                     new HomeMenuItem {Id = MenuItemType.MyReservations, Title="My Reservations" },
                     new HomeMenuItem {Id = MenuItemType.About, Title="About" },
+                    new HomeMenuItem {Id = MenuItemType.Events, Title="Events"},
                     new HomeMenuItem {Id = MenuItemType.Login, Title="Logout" }
                 };
             }

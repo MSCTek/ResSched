@@ -43,6 +43,10 @@ namespace ResSched.Views
                     case (int)MenuItemType.MyReservations:
                         MenuPages.Add(id, new NavigationPage(new MyReservationsPage()));
                         break;
+
+                    case (int)MenuItemType.Events:
+                        MenuPages.Add(id, new NavigationPage(new EventsPage()));
+                        break;
                 }
             }
 

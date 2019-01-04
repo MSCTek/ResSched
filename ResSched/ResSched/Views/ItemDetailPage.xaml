@@ -42,7 +42,7 @@
             <BoxView Grid.Row="1" BackgroundColor="Gray" />
 
             <StackLayout Grid.Row="2" Spacing="20" Padding="15" Orientation="Horizontal">
-                <Image  HeightRequest="80">
+                <Image  HeightRequest="60">
                     <Image.Source>
                         <UriImageSource Uri="{Binding Resource.ImageLink}" CacheValidity="100" CachingEnabled="True" />
                     </Image.Source>
@@ -55,19 +55,19 @@
 
             <Grid Grid.Row="3" Margin="15,0">
                 <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="1*" />
-                    <ColumnDefinition Width="5*" />
-                    <ColumnDefinition Width="1*" />
+                    <ColumnDefinition Width="auto" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="auto" />
                 </Grid.ColumnDefinitions>
-                <Button Grid.Column="0" Style="{StaticResource FA.Regular.ButtonStyle}" Text="&#xf359;"
+                <Button Grid.Column="0" Style="{StaticResource FA.Regular.ButtonStyle}" Text="&#xf359;" WidthRequest="50"
                         Command="{Binding PreviousDayCommand}" IsEnabled="{Binding CanNavigateBackward}" />
                 <StackLayout Grid.Column="1">
                     <!--<Label Text="{Binding SelectedDateWeekdayDisplay}" HorizontalOptions="Center" HorizontalTextAlignment="Center" />
                     <Label Text="{Binding SelectedDateDisplay}" HorizontalOptions="Center" HorizontalTextAlignment="Center" />-->
-                    <DatePicker Format="D" Date="{Binding SelectedDate}" MaximumDate="{Binding MaxDate}" MinimumDate="{Binding MinDate}"
-                                HorizontalOptions="Center" />
+                    <DatePicker Format="ddd, d MMM yyyy" Date="{Binding SelectedDate}" MaximumDate="{Binding MaxDate}" MinimumDate="{Binding MinDate}"
+                                HorizontalOptions="CenterAndExpand" WidthRequest="300" />
                 </StackLayout>
-                <Button Grid.Column="2" Style="{StaticResource FA.Regular.ButtonStyle}" Text="&#xf35a;"
+                <Button Grid.Column="2" Style="{StaticResource FA.Regular.ButtonStyle}" Text="&#xf35a;" WidthRequest="50"
                         Command="{Binding NextDayCommand}"  IsEnabled="{Binding CanNavigateForward}" />
             </Grid>
 
@@ -79,7 +79,7 @@
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell>
-                            <Grid Margin="40,0,0,20">
+                            <Grid Margin="40,0,20,0">
                                 <Grid.ColumnDefinitions>
                                     <ColumnDefinition Width="auto" />
                                     <ColumnDefinition Width="1*" />

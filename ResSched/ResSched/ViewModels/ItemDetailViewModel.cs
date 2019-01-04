@@ -18,10 +18,10 @@ namespace ResSched.ViewModels
 
         public ItemDetailViewModel(Resource selected = null)
         {
-            Resource = selected;
-            SelectedDate = DateTime.Now.Date;
             HourlySchedules = new ObservableCollection<HourlySchedule>();
             ResourceSchedules = new ObservableCollection<ResourceSchedule>();
+            Resource = selected;
+            SelectedDate = DateTime.Now.Date;
         }
 
         public bool CanBook

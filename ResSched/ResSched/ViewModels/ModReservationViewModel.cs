@@ -5,6 +5,7 @@ using ResSched.Models;
 using ResSched.ObjModel;
 using System;
 using System.Collections.ObjectModel;
+using System.Diagnostics;
 using System.Globalization;
 using System.Linq;
 using Xamarin.Forms;
@@ -217,9 +218,25 @@ namespace ResSched.ViewModels
 
         private DateTime ParseSelected(DateTime selectedDate, string selectedHour)
         {
-            const string FMT = "yyyy-MM-dd-h:mm tt";
-            string newDateStr = $"{selectedDate.Year}-{selectedDate.Month}-{selectedDate.Day}-{selectedHour}";
-            return DateTime.ParseExact(newDateStr, FMT, CultureInfo.InvariantCulture);
+            string newDateStr = $"{selectedDate.Month}/{selectedDate.Day}/{selectedDate.Year} {selectedHour}";
+            Debug.WriteLine($"CHECK THIS DATE: {newDateStr}");
+
+            DateTime dt;
+            var converted = DateTime.TryParse(newDateStr, out dt);
+            if (converted)
+            {
+                // Converted okay.
+                //var newFormat = dt.ToString("yyyy/MM/dd hh:mm:ss");
+                // Outputs: 2001/01/01 01:00:00
+                return dt;
+            }
+            else
+            {
+                // Failed to convert.
+                //try something else
+                const string FMT = "MM/dd/yyyy hh:mm tt";
+                return DateTime.ParseExact(newDateStr, FMT, CultureInfo.InvariantCulture);
+            }
         }
 
         private bool Validate()

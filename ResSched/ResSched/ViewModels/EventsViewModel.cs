@@ -2,6 +2,7 @@
 using ResSched.Models.MeetupEvents;
 using System.Collections.ObjectModel;
 using System.Threading.Tasks;
+using Xamarin.Essentials;
 
 namespace ResSched.ViewModels
 {
@@ -9,9 +10,12 @@ namespace ResSched.ViewModels
     {
         private ObservableCollection<Result> _events;
         private Models.MeetupEvents.RootObject _root;
+        private bool _showNeedInternetMessage;
 
         public EventsViewModel()
         {
+            Events = new ObservableCollection<Result>();
+            Root = new RootObject();
         }
 
         public ObservableCollection<Result> Events
@@ -26,12 +30,26 @@ namespace ResSched.ViewModels
             set { Set(nameof(Root), ref _root, value); }
         }
 
+        public bool ShowNeedInternetMessage
+        {
+            get { return _showNeedInternetMessage; }
+            set { Set(nameof(ShowNeedInternetMessage), ref _showNeedInternetMessage, value); }
+        }
+
         public async Task InitVM()
         {
             if (base.Init())
             {
-                Root = await Helpers.HTTPClientService.RefreshDataAsync();
-                Events = Root.results.ToObservableCollection();
+                if (Connectivity.NetworkAccess == NetworkAccess.Internet)
+                {
+                    Root = await Helpers.HTTPClientService.RefreshDataAsync();
+                    Events = Root.results.ToObservableCollection();
+                    ShowNeedInternetMessage = false;
+                }
+                else
+                {
+                    ShowNeedInternetMessage = true;
+                }
             }
         }
     }

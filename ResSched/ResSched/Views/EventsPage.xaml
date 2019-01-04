@@ -1,7 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:cnvt="clr-namespace:ResSched.Converters"
              x:Class="ResSched.Views.EventsPage">
+
+    <ContentPage.Resources>
+        <cnvt:AntiBoolConverter x:Key="AntiBoolConverter" />
+    </ContentPage.Resources>
 
     <ContentPage.Content>
         <Grid RowSpacing="0">
@@ -31,8 +36,11 @@
 
             <BoxView Grid.Row="1" BackgroundColor="Gray" />
 
+            <Label Grid.Row="2" Text="Oh No! You need an internet connection to view upcoming events at Fox.Build!"
+                   HorizontalOptions="Center" HorizontalTextAlignment="Center" Margin="40" IsVisible="{Binding ShowNeedInternetMessage}" />
+
             <ListView x:Name="ItemsListView" Grid.Row="2"
-              ItemsSource="{Binding Events}"
+              ItemsSource="{Binding Events}" IsVisible="{Binding ShowNeedInternetMessage, Converter={StaticResource AntiBoolConverter}}"
               VerticalOptions="FillAndExpand" HasUnevenRows="true"
               CachingStrategy="RecycleElement">
                 <ListView.ItemTemplate>

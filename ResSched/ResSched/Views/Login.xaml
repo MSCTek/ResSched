@@ -17,8 +17,8 @@
                 </Image.Source>
             </Image>
 
-            <Button Text="Sign in with Microsoft" Command="{Binding MicrosoftSignInCommand}" Style="{StaticResource ButtonStyle}" />
-            <Button Text="Sign in with Google" Style="{StaticResource ButtonStyle}"/>
+            <Button Text="{Binding MicrosoftButtonText}" Command="{Binding MicrosoftSignInCommand}" Style="{StaticResource ButtonStyle}" />
+            <!--<Button Text="Sign in with Google" Style="{StaticResource ButtonStyle}"/>-->
 
             <Button Text="{Binding GuestButtonText}" Command="{Binding GuestSignInCommand}" Margin="0,20,0,10" Style="{StaticResource ButtonStyle}"/>
 

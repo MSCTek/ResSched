@@ -51,7 +51,7 @@ namespace ResSched.ViewModels
                             UserPrincipalName = "guest@guest.com";
 
                             var userId = await CheckAuthorization(UserPrincipalName);
-                            if (userId != null && userId != Guid.Empty)
+                            if (userId != Guid.Empty)
                             {
                                 RecordSuccessfulLogin(DisplayName, UserPrincipalName, userId, "Guest Login");
                             }
@@ -99,7 +99,7 @@ namespace ResSched.ViewModels
                             {
                                 IAccount firstAccount = accounts.FirstOrDefault();
                                 authResult = await App.PCA.AcquireTokenSilentAsync(App.AuthScopes, firstAccount);
-                                await RefreshUserDataAsync(authResult.AccessToken).ConfigureAwait(false);
+                                await RefreshUserDataAzureADAsync(authResult.AccessToken).ConfigureAwait(false);
 
                                 MicrosoftButtonText = MicrosoftText.Sign_out_with_Microsoft.ToDescription();
                                 GuestButtonText = GuestText.Sign_in_as_Guest.ToDescription();
@@ -107,7 +107,7 @@ namespace ResSched.ViewModels
                             catch (MsalUiRequiredException)
                             {
                                 authResult = await App.PCA.AcquireTokenAsync(App.AuthScopes, App.UiParent);
-                                await RefreshUserDataAsync(authResult.AccessToken);
+                                await RefreshUserDataAzureADAsync(authResult.AccessToken);
 
                                 MicrosoftButtonText = MicrosoftText.Sign_out_with_Microsoft.ToDescription();
                                 GuestButtonText = GuestText.Sign_in_as_Guest.ToDescription();
@@ -144,7 +144,7 @@ namespace ResSched.ViewModels
             if (base.Init())
             {
                 var user = await _dataService.GetUserByEmail(userEmail);
-                userId = user.UserId;
+                userId = (user != null) ? user.UserId : Guid.Empty;
             }
             return userId;
         }
@@ -163,7 +163,7 @@ namespace ResSched.ViewModels
             ErrorDescription = string.Empty;
         }
 
-        private async Task RefreshUserDataAsync(string token)
+        private async Task RefreshUserDataAzureADAsync(string token)
         {
             //get data from API
             HttpClient client = new HttpClient();
@@ -182,13 +182,14 @@ namespace ResSched.ViewModels
                 UserPrincipalName = user["userPrincipalName"].ToString();
 
                 var userId = await CheckAuthorization(UserPrincipalName);
-                if (userId != null && userId != Guid.Empty)
+                if (userId != Guid.Empty)
                 {
                     RecordSuccessfulLogin(DisplayName, UserPrincipalName, userId, "Microsoft");
                 }
                 else
                 {
                     Analytics.TrackEvent($"Unknown User: {UserPrincipalName} tried to login and does not have authorization.");
+                    ErrorDescription = "Sorry, we couldn't log you in. \nPlease contact the folks at Fox.Build \nto add your email address to the list. \nThanks!";
                 }
             }
             else

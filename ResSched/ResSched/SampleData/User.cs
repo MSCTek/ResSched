@@ -95,5 +95,27 @@ namespace ResSched.SampleData
                 };
             }
         }
+
+        public static User SampleUserRobin
+        {
+            get
+            {
+                return new User()
+                {
+                    Name = "Robin Schroeder",
+                    UserName = "rschroeder",
+                    Email = "robin@msctek.com",
+                    InstallationId = null,
+                    LastLoginDate = DateTime.UtcNow,
+                    UserId = Guid.Parse("7d687c23-fefb-458d-b3e9-814247a9a9d6"),
+                    IsActive = true,
+                    IsDeleted = false,
+                    CreatedBy = "gWashington",
+                    CreatedDate = DateTime.UtcNow.AddDays(-1),
+                    LastModifiedBy = "gWashinton",
+                    LastModifiedDate = DateTime.UtcNow.AddDays(-1),
+                };
+            }
+        }
     }
 }

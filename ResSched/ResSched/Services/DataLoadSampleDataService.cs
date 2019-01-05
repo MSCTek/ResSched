@@ -100,7 +100,8 @@ namespace ResSched.Services
                         SampleData.SampleUser.SampleUserGeorge,
                         SampleData.SampleUser.SampleUserMicky,
                         SampleData.SampleUser.SampleUserMinnie,
-                        SampleData.SampleUser.SampleUserGuest
+                        SampleData.SampleUser.SampleUserGuest,
+                        SampleData.SampleUser.SampleUserRobin
                     };
                 }
 

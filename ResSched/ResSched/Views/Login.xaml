@@ -7,45 +7,44 @@
     <ContentPage.BindingContext>
         <vm:LoginViewModel />
     </ContentPage.BindingContext>
-    
+
     <ContentPage.Content>
         <StackLayout HorizontalOptions="Center" Spacing="0">
 
-            <Image Margin="0,40,0,0" HeightRequest="150" >
+            <Image Margin="0,40,0,0" HeightRequest="150">
                 <Image.Source>
-                    <UriImageSource Uri="{StaticResource FoxImage}" CacheValidity="100" CachingEnabled="True"/>
+                    <UriImageSource Uri="{StaticResource FoxImage}" CacheValidity="100" CachingEnabled="True" />
                 </Image.Source>
             </Image>
 
             <Button Text="{Binding MicrosoftButtonText}" Command="{Binding MicrosoftSignInCommand}" Style="{StaticResource ButtonStyle}" />
-            <!--<Button Text="Sign in with Google" Style="{StaticResource ButtonStyle}"/>-->
+            <!--<Button Text="Sign in with Google" Style="{StaticResource ButtonStyle}" />-->
 
-            <Button Text="{Binding GuestButtonText}" Command="{Binding GuestSignInCommand}" Margin="0,20,0,10" Style="{StaticResource ButtonStyle}"/>
+            <Button Text="{Binding GuestButtonText}" Command="{Binding GuestSignInCommand}" Margin="0,20,0,10" Style="{StaticResource ButtonStyle}" />
 
             <StackLayout IsVisible="{Binding IsUserVisible}" Padding="5,10">
                 <StackLayout Orientation="Horizontal">
                     <Label Text="DisplayName " FontAttributes="Bold" />
-                    <Label Text ="{Binding DisplayName}"  />
+                    <Label Text ="{Binding DisplayName}" />
                 </StackLayout>
                 <StackLayout Orientation="Horizontal">
                     <Label Text="GivenName " FontAttributes="Bold" />
-                    <Label Text="{Binding GivenName}"  />
+                    <Label Text="{Binding GivenName}" />
                 </StackLayout>
                 <StackLayout Orientation="Horizontal">
                     <Label Text="Surname " FontAttributes="Bold" />
-                    <Label Text="{Binding SurName}"  />
+                    <Label Text="{Binding SurName}" />
                 </StackLayout>
                 <StackLayout Orientation="Horizontal">
                     <Label Text="Id " FontAttributes="Bold" />
-                    <Label Text="{Binding Id}"  />
+                    <Label Text="{Binding Id}" />
                 </StackLayout>
                 <StackLayout Orientation="Horizontal">
                     <Label Text="UserPrincipalName " FontAttributes="Bold" />
-                    <Label Text="{Binding UserPrincipalName}"/>
+                    <Label Text="{Binding UserPrincipalName}" />
                 </StackLayout>
-                <Label Text="{Binding ErrorDescription} " FontAttributes="Bold" />
+                <Label Text="{Binding ErrorDescription} " FontAttributes="Bold" Margin="0,20" />
             </StackLayout>
-
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

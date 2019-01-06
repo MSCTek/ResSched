@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="CodeGenHero.DataService" Version="1.0.29" />
+    <PackageReference Include="CodeGenHero.Logging" Version="1.0.7" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CodeGenHero.ResourceScheduler.DTO\CodeGenHero.ResourceScheduler.DTO.csproj" />
+    <ProjectReference Include="..\CodeGenHero.ResourceScheduler.Service.DataService\CodeGenHero.ResourceScheduler.Service.DataService.csproj" />
+  </ItemGroup>
+
+</Project>

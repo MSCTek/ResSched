@@ -1,0 +1,17 @@
+{
+  "FileGroupMessage": "",
+  "FileList": [
+    {
+      "FileLastChange": "2019-01-05T15:21:07.7677501-06:00",
+      "Filename": "ResourceSchedulesController.cs"
+    },
+    {
+      "FileLastChange": "2019-01-05T15:21:09.0732507-06:00",
+      "Filename": "ResourcesController.cs"
+    },
+    {
+      "FileLastChange": "2019-01-05T15:21:09.5419621-06:00",
+      "Filename": "UsersController.cs"
+    }
+  ]
+}

@@ -1,0 +1,161 @@
+{
+  "Author": null,
+  "BlueprintTemplates": [
+    {
+      "Description": "Maps DTO objects to SQLite model data objects as well as MvvmLight objects and vice versa.",
+      "Id": "5078579f-7ab4-430d-9dcc-a3190f678efc",
+      "IsActive": false,
+      "Name": "MapperDtoToSqliteModelDataAndMvvmLightModelObject",
+      "Settings": [
+        {
+          "HiddenIndicator": false,
+          "Name": "DtoNamespace",
+          "Value": "{baseNamespace}.DTO.{namespacePostfix}"
+        },
+        {
+          "HiddenIndicator": true,
+          "Name": "MapperDtoToSqliteModelDataAndMvvmLightModelObjectOutputFilePath",
+          "Value": "Xamarin\\ModelMapper\\ModelMapper{namespacePostfix}Dto.cs"
+        }
+      ],
+      "Version": "1.1"
+    },
+    {
+      "Description": "Maps SQLite model data objects to MvvmLight objects and vice versa.",
+      "Id": "ec39b410-017a-407f-be75-0cf4fd66efd2",
+      "IsActive": false,
+      "Name": "MapperSqliteModelDataToMvvmLightModelObject",
+      "Settings": [
+        {
+          "HiddenIndicator": true,
+          "Name": "MapperSqliteModelDataToMvvmLightModelObjectOutputFilePath",
+          "Value": "Xamarin\\ModelMapper\\ModelMapper{namespacePostfix}.cs"
+        }
+      ],
+      "Version": "1.1"
+    },
+    {
+      "Description": "MvvmLight Model Objects).",
+      "Id": "c644a31c-7ebc-4383-bc7f-0ea7c5bf6ed4",
+      "IsActive": false,
+      "Name": "MvvmLightModelObject",
+      "Settings": [
+        {
+          "HiddenIndicator": true,
+          "Name": "MvvmLightModelObjectOutputFilePath",
+          "Value": "Xamarin\\ModelObj\\{namespacePostfix}\\[tablename].cs"
+        },
+        {
+          "HiddenIndicator": false,
+          "Name": "SqliteModelObjectBaseAuditEditNamespace",
+          "Value": "CodeGenHero.Xam.MvvmLight"
+        }
+      ],
+      "Version": "1.1"
+    },
+    {
+      "Description": "Provides the classes necessary to read/write data from/into a SQLite database for persistence.",
+      "Id": "c5caad15-b3be-4443-87d8-7cabde59f7b0",
+      "IsActive": false,
+      "Name": "SqliteModelData",
+      "Settings": [
+        {
+          "HiddenIndicator": false,
+          "Name": "SqliteModelDataBaseAuditEditNamespace",
+          "Value": "CodeGenHero.Xam.Sqlite"
+        },
+        {
+          "HiddenIndicator": true,
+          "Name": "SqliteModelDataOutputFilePath",
+          "Value": "Xamarin\\ModelData\\{namespacePostfix}\\[tablename].cs"
+        }
+      ],
+      "Version": "1.1"
+    },
+    {
+      "Description": "Sample Data Objects for use in generating demo versions.",
+      "Id": "9131a0a2-7ceb-4f4c-b8a9-6740ac19f66c",
+      "IsActive": false,
+      "Name": "XamSample",
+      "Settings": [
+        {
+          "HiddenIndicator": false,
+          "Name": "XamSampleCount",
+          "Value": "3"
+        },
+        {
+          "HiddenIndicator": false,
+          "Name": "XamSampleDigits",
+          "Value": "2"
+        },
+        {
+          "HiddenIndicator": false,
+          "Name": "XamSampleNamespace",
+          "Value": "{baseNamespace}.XamSample.{namespacePostfix}"
+        },
+        {
+          "HiddenIndicator": true,
+          "Name": "XamSampleOutputFilePath",
+          "Value": "XamSample\\{namespacePostfix}\\[tablename].cs"
+        }
+      ],
+      "Version": "1.1"
+    }
+  ],
+  "Description": null,
+  "Id": "00000000-0000-0000-0000-000000000000",
+  "Name": null,
+  "Settings": [
+    {
+      "HiddenIndicator": false,
+      "Name": "BaseNamespace",
+      "Value": "CodeGenHero.ResourceScheduler"
+    },
+    {
+      "HiddenIndicator": false,
+      "Name": "NamespacePostfix",
+      "Value": "RS"
+    },
+    {
+      "HiddenIndicator": false,
+      "Name": "PrependSchemaNameIndicator",
+      "Value": "true"
+    },
+    {
+      "HiddenIndicator": false,
+      "Name": "RepositoryDbContextName",
+      "Value": "{namespacePostFix}DataContext"
+    },
+    {
+      "HiddenIndicator": false,
+      "Name": "RegexExclude",
+      "Value": ""
+    },
+    {
+      "HiddenIndicator": false,
+      "Name": "RegexInclude",
+      "Value": ""
+    },
+    {
+      "HiddenIndicator": false,
+      "Name": "SqliteModelObjectNamespace",
+      "Value": "{baseNamespace}.Xam.ModelObj.{namespacePostfix}"
+    },
+    {
+      "HiddenIndicator": false,
+      "Name": "SqliteModelDataNamespace",
+      "Value": "{baseNamespace}.Xam.ModelData.{namespacePostfix}"
+    },
+    {
+      "HiddenIndicator": false,
+      "Name": "SqliteModelMapperClassName",
+      "Value": "ModelMapper"
+    },
+    {
+      "HiddenIndicator": false,
+      "Name": "SqliteModelMapperClassNamespace",
+      "Value": "{baseNamespace}.Xam"
+    }
+  ],
+  "Version": null
+}

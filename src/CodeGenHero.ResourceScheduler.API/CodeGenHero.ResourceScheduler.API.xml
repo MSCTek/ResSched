@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>CodeGenHero.BingoBuzz.API</name>
+    </assembly>
+    <members>
+        <member name="P:CodeGenHero.BingoBuzz.API.Controllers.BB.BBBaseApiController.Log">
+             <summary>
+            
+             </summary>
+             <remarks>
+             This is private for a reason - using ILoggingService here in place of Log4NetLoggingService would be preferable.
+             However, doing so causes the CallerMemberName and CallerFilePath attributes to return null.
+             This is because those attributes are used by the compiler (not at runtime) to do their magic.
+             Thus, by abstracting them in an interface the compiler cannot tell which methods are calling.
+             </remarks>
+        </member>
+        <member name="M:CodeGenHero.BingoBuzz.API.Controllers.BB.BingoInstanceContentsBBController.RunCustomLogicAfterGetQueryableList(System.Linq.IQueryable{CodeGenHero.BingoBuzz.Repository.Entities.BB.BingoInstanceContent}@,System.Collections.Generic.List{System.String}@)">
+            <summary>
+            Including the events
+            </summary>
+            <param name="dbItems"></param>
+            <param name="filterList"></param>
+        </member>
+    </members>
+</doc>

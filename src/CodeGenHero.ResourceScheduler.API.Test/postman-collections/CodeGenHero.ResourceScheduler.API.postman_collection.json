@@ -1,0 +1,657 @@
+{
+	"info": {
+		"_postman_id": "1cb24f96-db91-4579-92f9-6645dff9116a",
+		"name": "CodeGenHero.ResourceScheduler.API",
+		"description": "This collection is created for Chicago .NET User Group meetup which tests CodeGenHeroApi.\n\nGithub Link: https://github.com/MSCTek/CodeGenHero\n",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Check Status",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "api-version",
+						"value": "{{api-version}}",
+						"description": "Default ApiVersion"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{baseApiUrl}}/APIStatus",
+					"host": [
+						"{{baseApiUrl}}"
+					],
+					"path": [
+						"APIStatus"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create A User",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "2994c9b5-cfe0-4262-963e-f6ba2ce16e6e",
+						"exec": [
+							"pm.test(\"Status code is 201\", function () {",
+							"    pm.response.to.have.status(201);",
+							"});",
+							"",
+							"",
+							"pm.test(\"User has Data\", function () {",
+							"    var jsonData = pm.response.json();",
+							"    pm.globals.set(\"userId\", jsonData.id);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "api-version",
+						"value": "{{api-version}}",
+						"description": "Default ApiVersion"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json, text/json, application/json-patch+json, application/bson",
+						"description": "Accept Headers"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": "Content Type- Json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \r\n   \"id\" :\"{{$guid}}\",\r\n   \"installationId\": \"Postman Test\",\r\n   \"name\": \"Test Name\",\r\n   \"userName\": \"Test UserName\",\r\n   \"email\": \"api@test.com\",\r\n   \"lastLoginDate\": \"2019-01-02T00:00:00.0\",\r\n   \"isActive\": true,\r\n   \"isDeleted\": false,\r\n   \"createdBy\": \"{{userName}}\",\r\n   \"createdDate\": \"2019-01-01T00:00:00.0\",\r\n   \"updatedBy\": \"{{userName}}\",\r\n   \"updatedDate\": \"2019-01-01T00:00:00.0\"\r\n}"
+				},
+				"url": {
+					"raw": "{{baseApiUrl}}/Users",
+					"host": [
+						"{{baseApiUrl}}"
+					],
+					"path": [
+						"Users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Users",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "7b0edee1-a7c8-4c0c-bd94-35b92c051635",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"",
+							" var jsonData = pm.response.json();",
+							"",
+							"pm.test(\"At least 1 user exists\", function () {",
+							"    pm.expect(jsonData.length).to.be.at.least(1);",
+							"});",
+							"",
+							" pm.test(\"New user exists in the system.\", function(){",
+							"    var expectedUserId = pm.globals.get(\"userId\");",
+							"    var condition = jsonData.filter(function(e){ return e.id === expectedUserId}).length > 0;",
+							"    pm.expect(condition).to.be.true;",
+							" });",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "api-version",
+						"value": "{{api-version}}",
+						"description": "Default ApiVersion"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json, text/json, application/json-patch+json, application/bson",
+						"description": "Accept Headers"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": "Content Type- Json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{baseApiUrl}}/Users",
+					"host": [
+						"{{baseApiUrl}}"
+					],
+					"path": [
+						"Users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create First Resource",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "693c28db-2b4a-410b-9444-2594b7fd961b",
+						"exec": [
+							"pm.test(\"Status code is 201\", function () {",
+							"    pm.response.to.have.status(201);",
+							"});",
+							"",
+							"",
+							"pm.test(\"First Resource Has Data\", function () {",
+							"    var jsonData = pm.response.json();",
+							"    pm.globals.set(\"firstResourceId\", jsonData.id);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "api-version",
+						"value": "{{api-version}}",
+						"description": "Default ApiVersion"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json, text/json, application/json-patch+json, application/bson",
+						"description": "Accept Headers"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": "Content Type- Json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \r\n   \"id\" :\"{{$guid}}\",\r\n   \"name\": \"Test Resource 1\",\r\n   \"description\": \"Test Resource 1 Description\",\r\n   \"imageLink\": \"Test Resource 1 ImageLink\",\r\n   \"imageLinkThumb\": \"Test Resource 1 ImageLinkThumb\",\r\n   \"isActive\": true,\r\n   \"isDeleted\": false,\r\n   \"createdBy\": \"{{userName}}\",\r\n   \"createdDate\": \"2019-01-01T00:00:00.0\",\r\n   \"updatedBy\": \"{{userName}}\",\r\n   \"updatedDate\": \"2019-01-01T00:00:00.0\"\r\n}\r\n"
+				},
+				"url": {
+					"raw": "{{baseApiUrl}}/Resources",
+					"host": [
+						"{{baseApiUrl}}"
+					],
+					"path": [
+						"Resources"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Second Resource",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "693c28db-2b4a-410b-9444-2594b7fd961b",
+						"exec": [
+							"pm.test(\"Status code is 201\", function () {",
+							"    pm.response.to.have.status(201);",
+							"});",
+							"",
+							"",
+							"pm.test(\"First Resource Has Data\", function () {",
+							"    var jsonData = pm.response.json();",
+							"    pm.globals.set(\"secondResourceId\", jsonData.id);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"description": "Default ApiVersion",
+						"key": "api-version",
+						"value": "{{api-version}}"
+					},
+					{
+						"description": "Accept Headers",
+						"key": "Accept",
+						"value": "application/json, text/json, application/json-patch+json, application/bson"
+					},
+					{
+						"description": "Content Type- Json",
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \r\n   \"id\" :\"{{$guid}}\",\r\n   \"name\": \"Test Resource 2\",\r\n   \"description\": \"Test Resource 2 Description\",\r\n   \"imageLink\": \"Test ImageLink 2\",\r\n   \"imageLinkThumb\": \"Test ImageLinkThumb 2\",\r\n   \"isActive\": true,\r\n   \"isDeleted\": false,\r\n   \"createdBy\": \"{{userName}}\",\r\n   \"createdDate\": \"2019-01-01T00:00:00.0\",\r\n   \"updatedBy\": \"{{userName}}\",\r\n   \"updatedDate\": \"2019-01-01T00:00:00.0\"\r\n}\r\n"
+				},
+				"url": {
+					"raw": "{{baseApiUrl}}/Resources",
+					"host": [
+						"{{baseApiUrl}}"
+					],
+					"path": [
+						"Resources"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Resources",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "20809a66-fa38-4b25-82eb-04894ff5dfd3",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"",
+							"",
+							"pm.test(\"At least one resource exists\", function () {",
+							"    var jsonData = pm.response.json();",
+							"    pm.expect(jsonData.length).to.be.at.least(2);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"description": "Default ApiVersion",
+						"key": "api-version",
+						"value": "{{api-version}}"
+					},
+					{
+						"description": "Accept Headers",
+						"key": "Accept",
+						"value": "application/json, text/json, application/json-patch+json, application/bson"
+					},
+					{
+						"description": "Content Type- Json",
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{baseApiUrl}}/Resources",
+					"host": [
+						"{{baseApiUrl}}"
+					],
+					"path": [
+						"Resources"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create First Resource Schedule",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "3902d4e5-eec4-4c34-8cd9-bcc444c2c53b",
+						"exec": [
+							"pm.test(\"Status code is 201\", function () {",
+							"    pm.response.to.have.status(201);",
+							"});",
+							"",
+							"",
+							"pm.test(\"Resource Schedule Has Data\", function () {",
+							"    var jsonData = pm.response.json();",
+							"    pm.globals.set(\"firstResourceScheduleId\", jsonData.id);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"description": "Default ApiVersion",
+						"key": "api-version",
+						"value": "{{api-version}}"
+					},
+					{
+						"description": "Accept Headers",
+						"key": "Accept",
+						"value": "application/json, text/json, application/json-patch+json, application/bson"
+					},
+					{
+						"description": "Content Type- Json",
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \r\n   \"id\" :\"{{$guid}}\",\r\n   \"resourceId\": \"{{firstResourceId}}\",\r\n   \"reservationStartDateTime\": \"Test reservationStartDateTime 1\",\r\n   \"reservationEndDateTime\": \"Test reservationEndDateTime 1\",\r\n   \"reservationNotes\": \"Test Reservation Notes 1\",\r\n   \"reservedByUserId\": {{userId}},\r\n   \"reservedForUser\": \"Test Reserved For User\",\r\n   \"reservedOnDateTime\": \"2019-01-02T00:00:00.0\",\r\n   \"isDeleted\": false,\r\n   \"createdBy\": \"{{userName}}\",\r\n   \"createdDate\": \"2019-01-01T00:00:00.0\",\r\n   \"updatedBy\": \"{{userName}}\",\r\n   \"updatedDate\": \"2019-01-01T00:00:00.0\"\r\n}\r\n"
+				},
+				"url": {
+					"raw": "{{baseApiUrl}}/ResourceSchedules",
+					"host": [
+						"{{baseApiUrl}}"
+					],
+					"path": [
+						"ResourceSchedules"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Resource Schedules",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "7bacf9f3-4e53-4e12-b523-9d9ebba45121",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"",
+							"",
+							"",
+							"pm.test(\"At least one resource schedule exists\", function () {",
+							"    var jsonData = pm.response.json();",
+							"    pm.expect(jsonData.length).to.be.at.least(1);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"description": "Default ApiVersion",
+						"key": "api-version",
+						"value": "{{api-version}}"
+					},
+					{
+						"description": "Accept Headers",
+						"key": "Accept",
+						"value": "application/json, text/json, application/json-patch+json, application/bson"
+					},
+					{
+						"description": "Content Type- Json",
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{baseApiUrl}}/ResourceSchedules",
+					"host": [
+						"{{baseApiUrl}}"
+					],
+					"path": [
+						"ResourceSchedules"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete First Resource Schedule",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "eef785f0-256a-49dc-aab6-c35e3c08ba0b",
+						"exec": [
+							"pm.test(\"Status code is 204\", function () {",
+							"    pm.response.to.have.status(204);",
+							"});",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"description": "Default ApiVersion",
+						"key": "api-version",
+						"value": "{{api-version}}"
+					},
+					{
+						"description": "Accept Headers",
+						"key": "Accept",
+						"value": "application/json, text/json, application/json-patch+json, application/bson"
+					},
+					{
+						"description": "Content Type- Json",
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "{{baseApiUrl}}/ResourceSchedules/{{firstResourceScheduleId}}",
+					"host": [
+						"{{baseApiUrl}}"
+					],
+					"path": [
+						"ResourceSchedules",
+						"{{firstResourceScheduleId}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete First Resource",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "3cc32885-5333-496f-8e87-09b6524d0a1d",
+						"exec": [
+							"pm.test(\"Status code is 204\", function () {",
+							"    pm.response.to.have.status(204);",
+							"});",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "api-version",
+						"value": "{{api-version}}",
+						"description": "Default ApiVersion"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json, text/json, application/json-patch+json, application/bson",
+						"description": "Accept Headers"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": "Content Type- Json"
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "{{baseApiUrl}}/Resources/{{firstResourceId}}",
+					"host": [
+						"{{baseApiUrl}}"
+					],
+					"path": [
+						"Resources",
+						"{{firstResourceId}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Second Resource",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "3cc32885-5333-496f-8e87-09b6524d0a1d",
+						"exec": [
+							"pm.test(\"Status code is 204\", function () {",
+							"    pm.response.to.have.status(204);",
+							"});",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "api-version",
+						"value": "{{api-version}}",
+						"description": "Default ApiVersion"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json, text/json, application/json-patch+json, application/bson",
+						"description": "Accept Headers"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": "Content Type- Json"
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "{{baseApiUrl}}/Resources/{{secondResourceId}}",
+					"host": [
+						"{{baseApiUrl}}"
+					],
+					"path": [
+						"Resources",
+						"{{secondResourceId}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete User",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "c64e7446-4eb9-4b0f-be16-a1ed7000ae04",
+						"exec": [
+							"pm.test(\"Status code is 204\", function () {",
+							"    pm.response.to.have.status(204);",
+							"});",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "api-version",
+						"value": "{{api-version}}",
+						"description": "Default ApiVersion"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json, text/json, application/json-patch+json, application/bson",
+						"description": "Accept Headers"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": "Content Type- Json"
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "{{baseApiUrl}}/Users/{{userId}}",
+					"host": [
+						"{{baseApiUrl}}"
+					],
+					"path": [
+						"Users",
+						"{{userId}}"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

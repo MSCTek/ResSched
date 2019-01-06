@@ -10,7 +10,7 @@ namespace ResSched.Modules
         {
             Bind<IDatabase>().To<Database.Database>().InSingletonScope();
             Bind<IDataLoadService>().To<DataLoadSampleDataService>().InSingletonScope();
-            Bind<IDataService>().To<DataService>().InSingletonScope();
+            Bind<IDataRetrievalService>().To<DataRetrievalService>().InSingletonScope();
         }
     }
 }

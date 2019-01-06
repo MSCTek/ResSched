@@ -1,22 +1,26 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-
-using Foundation;
+﻿using Foundation;
 using Microsoft.Identity.Client;
+using ResSched.Helpers;
 using ResSched.iOS.Modules;
+using ResSched.iOS.Services;
+using System;
 using UIKit;
+using Xamarin.Forms;
 
 namespace ResSched.iOS
 {
-    // The UIApplicationDelegate for the application. This class is responsible for launching the 
-    // User Interface of the application, as well as listening (and optionally responding) to 
+    // The UIApplicationDelegate for the application. This class is responsible for launching the
+    // User Interface of the application, as well as listening (and optionally responding) to
     // application events from iOS.
     [Register("AppDelegate")]
     public partial class AppDelegate : global::Xamarin.Forms.Platform.iOS.FormsApplicationDelegate
     {
+        public static Action BackgroundSessionCompletionHandler;
+
+        private IOSRunQueuedUpdateService myiOSUploadDataService;
+
         //
-        // This method is invoked when the application has loaded and is ready to run. In this 
+        // This method is invoked when the application has loaded and is ready to run. In this
         // method you should instantiate the window, load the UI into it and then make the window
         // visible.
         //
@@ -30,6 +34,8 @@ namespace ResSched.iOS
             // Initialize Azure Mobile Apps
             Microsoft.WindowsAzure.MobileServices.CurrentPlatform.Init();
 
+            SubscribeToMessages();
+
             global::Xamarin.Forms.Forms.Init();
             LoadApplication(new App(new IOSPlatformModule()));
 
@@ -40,6 +46,20 @@ namespace ResSched.iOS
         {
             AuthenticationContinuationHelper.SetAuthenticationContinuationEventArgs(url);
             return true;
+        }
+
+        private void SubscribeToMessages()
+        {
+            MessagingCenter.Subscribe<StartUploadDataMessage>(this, "StartUploadDataMessage", async message =>
+            {
+                myiOSUploadDataService = new IOSRunQueuedUpdateService();
+                await myiOSUploadDataService.StartAsync();
+            });
+
+            MessagingCenter.Subscribe<StopUploadDataMessage>(this, "StopUploadDataMessage", message =>
+            {
+                myiOSUploadDataService.Stop();
+            });
         }
     }
 }

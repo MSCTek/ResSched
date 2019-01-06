@@ -1,11 +1,12 @@
 ﻿using ResSched.ObjModel;
 using System;
 using System.Collections.Generic;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace ResSched.Interfaces
 {
-    public partial interface IDataRetrievalService
+    public partial interface IDataService
     {
         Task<List<Resource>> GetAllResources();
 
@@ -20,5 +21,11 @@ namespace ResSched.Interfaces
         Task<bool> SoftDeleteReservation(Guid reservationId);
 
         Task<int> WriteResourceSchedule(ResourceSchedule resourceSchedule);
+
+        #region upload
+
+        Task RunQueuedUpdatesAsync(CancellationToken token);
+
+        #endregion upload
     }
 }

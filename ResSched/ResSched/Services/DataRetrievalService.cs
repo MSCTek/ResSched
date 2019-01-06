@@ -9,11 +9,11 @@ using System.Threading.Tasks;
 
 namespace ResSched.Services
 {
-    public class DataRetrievalService : IDataRetrievalService
+    public partial class DataService : IDataService
     {
         private IDatabase _db;
 
-        public DataRetrievalService(IDatabase database)
+        public DataService(IDatabase database)
         {
             _db = database;
         }

@@ -9,7 +9,7 @@ namespace ResSched.Helpers
 {
     public static class ScheduleHelpers
     {
-        public static async Task<ObservableCollection<HourlySchedule>> BuildHourlyScheduleAsync(this IDataRetrievalService _dataRetrievalService, DateTime selectedDate, Guid resourceId)
+        public static async Task<ObservableCollection<HourlySchedule>> BuildHourlyScheduleAsync(this IDataService _dataRetrievalService, DateTime selectedDate, Guid resourceId)
         {
             var hourlySchedule = new ObservableCollection<HourlySchedule>();
             var schedules = await _dataRetrievalService.GetResourceSchedules(resourceId, selectedDate);

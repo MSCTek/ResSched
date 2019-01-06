@@ -94,16 +94,19 @@ namespace ResSched
         protected override void OnResume()
         {
             // Handle when your app resumes
+            Debug.WriteLine("ResSched is Resuming...");
         }
 
         protected override void OnSleep()
         {
             // Handle when your app sleeps
+            Debug.WriteLine("ResSched is Sleeping...");
         }
 
         protected override void OnStart()
         {
             // Handle when your app starts
+            Debug.WriteLine("ResSched is Starting...");
             AppCenter.Start($"android={Config.AppCenterAndroid};uwp={Config.AppCenterUWP};ios={Config.AppCenteriOS}",
                   typeof(Analytics), typeof(Crashes));
         }

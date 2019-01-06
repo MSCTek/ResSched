@@ -97,6 +97,7 @@
     <Compile Include="Modules\DroidPlatformModule.cs" />
     <Compile Include="Resources\Resource.Designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Services\DroidRunQueuedUpdateService.cs" />
     <Compile Include="Services\DroidSQLite.cs" />
   </ItemGroup>
   <ItemGroup>

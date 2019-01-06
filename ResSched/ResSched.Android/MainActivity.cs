@@ -3,8 +3,11 @@ using Android.Content;
 using Android.Content.PM;
 using Android.OS;
 using Microsoft.Identity.Client;
+using PIMobile.Droid.Services;
 using Plugin.CurrentActivity;
 using ResSched.Droid.Modules;
+using ResSched.Helpers;
+using Xamarin.Forms;
 
 //using Microsoft.WindowsAzure.MobileServices;
 
@@ -42,6 +45,25 @@ namespace ResSched.Droid
 
             //for MSAL
             App.UiParent = new UIParent(Xamarin.Forms.Forms.Context as Activity);
+
+            //for safe backgrounding
+            SubscribeToMessages();
+        }
+
+        private void SubscribeToMessages()
+        {
+            //implement safe backgrounding
+            MessagingCenter.Subscribe<StartUploadDataMessage>(this, "StartUploadDataMessage", message =>
+            {
+                var intent = new Intent(this, typeof(DroidRunQueuedUpdateService));
+                StartService(intent);
+            });
+
+            MessagingCenter.Subscribe<StopUploadDataMessage>(this, "StopUploadDataMessage", message =>
+            {
+                var intent = new Intent(this, typeof(StopUploadDataMessage));
+                StopService(intent);
+            });
         }
     }
 }

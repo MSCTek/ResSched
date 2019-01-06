@@ -26,7 +26,7 @@ namespace ResSched.Database
                     Connection.CreateTable<ResourceSchedule>();
                     Connection.CreateTable<User>();
 
-                    //Connection.CreateTable<ModelData.DataSync.Queue>();
+                    Connection.CreateTable<Queue>();
                 }
             }
             catch (Exception ex)
@@ -45,7 +45,7 @@ namespace ResSched.Database
                     await AsyncConnection.DropTableAsync<ResourceSchedule>();
                     await AsyncConnection.DropTableAsync<User>();
 
-                    //await _asyncConn.DropTableAsync<ModelData.DataSync.Queue>();
+                    await AsyncConnection.DropTableAsync<Queue>();
                 }
             }
             catch (Exception ex)

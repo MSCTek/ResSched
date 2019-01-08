@@ -3,9 +3,11 @@ using GalaSoft.MvvmLight;
 
 namespace CodeGenHero.ResourceScheduler.Xam.ModelObj.RS
 {
-	public partial class ResourceSchedule : ObservableObject
+    
+    public partial class ResourceSchedule : ObservableObject
 	{
-		public ResourceSchedule()
+        
+        public ResourceSchedule()
 		{
 			InitializePartial();
 		}

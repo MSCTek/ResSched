@@ -1,4 +1,4 @@
-﻿using ResSched.DataModel;
+﻿using CodeGenHero.ResourceScheduler.Xam.ModelData.RS;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 

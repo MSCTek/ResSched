@@ -1,4 +1,5 @@
-﻿using ResSched.ObjModel;
+﻿using CodeGenHero.ResourceScheduler.Xam.ModelObj.RS;
+using ResSched.Helpers;
 using System;
 using System.Collections.Generic;
 using System.Threading;
@@ -14,13 +15,17 @@ namespace ResSched.Interfaces
 
         Task<List<ResourceSchedule>> GetResourceSchedules(Guid resourceId, DateTime selectedDate);
 
-        Task<List<ResourceSchedule>> GetResourceSchedulesForUser(string userEmail);
+        Task<List<ResourceSchedule>> GetResourceSchedulesForUser(Guid userId);
 
         Task<User> GetUserByEmail(string userEmail);
+
+        Task QueueAsync(Guid recordId, QueueableObjects obj);
 
         Task RunQueuedUpdatesAsync(CancellationToken token);
 
         Task<bool> SoftDeleteReservation(Guid reservationId);
+
+        void StartSafeQueuedUpdates();
 
         Task<int> WriteResourceSchedule(ResourceSchedule resourceSchedule);
     }

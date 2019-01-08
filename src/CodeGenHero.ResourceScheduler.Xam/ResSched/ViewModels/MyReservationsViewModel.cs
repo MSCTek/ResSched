@@ -1,5 +1,5 @@
-﻿using ResSched.Mappers;
-using ResSched.ObjModel;
+﻿using CodeGenHero.ResourceScheduler.Xam.ModelObj.RS;
+using ResSched.Mappers;
 using System;
 using System.Collections.ObjectModel;
 using System.Threading.Tasks;
@@ -33,7 +33,7 @@ namespace ResSched.ViewModels
         {
             if (base.Init())
             {
-                Reservations = (await base._dataService.GetResourceSchedulesForUser(App.AuthUserEmail)).ToObservableCollection();
+                Reservations = (await base._dataService.GetResourceSchedulesForUser(App.AuthUserId)).ToObservableCollection();
             }
         }
 

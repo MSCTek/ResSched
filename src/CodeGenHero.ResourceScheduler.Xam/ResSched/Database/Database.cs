@@ -1,5 +1,6 @@
-﻿using ResSched.DataModel;
+﻿using CodeGenHero.ResourceScheduler.Xam.ModelData.RS;
 using ResSched.Interfaces;
+using ResSched.ModelData;
 using SQLite;
 using System;
 using System.Threading.Tasks;

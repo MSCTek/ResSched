@@ -1,7 +1,7 @@
 ﻿using SQLite;
 using System;
 
-namespace ResSched.DataModel
+namespace ResSched.ModelData
 {
     [Table("Queue")]
     public class Queue

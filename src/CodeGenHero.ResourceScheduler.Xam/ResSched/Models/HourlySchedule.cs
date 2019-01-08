@@ -1,5 +1,5 @@
-﻿using GalaSoft.MvvmLight;
-using ResSched.ObjModel;
+﻿using CodeGenHero.ResourceScheduler.Xam.ModelObj.RS;
+using GalaSoft.MvvmLight;
 using System;
 
 namespace ResSched.Models
@@ -25,7 +25,7 @@ namespace ResSched.Models
             set { Set(nameof(IsInReservationProcess), ref _isInReservationProcess, value); }
         }
 
-        public bool IsMyReservation { get { return (ResourceSchedule != null && ResourceSchedule.ReservedByUserEmail.ToLower() == App.AuthUserEmail) ? true : false; } }
+        public bool IsMyReservation { get { return (ResourceSchedule != null && ResourceSchedule.ReservedByUserId == App.AuthUserId) ? true : false; } }
         public bool IsReserved { get { return ResourceSchedule == null ? false : true; } }
         public string ReservedMessage { get { return ResourceSchedule == null ? "Open" : ResourceSchedule.ReservedForUser; } }
 

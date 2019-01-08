@@ -1,4 +1,4 @@
-﻿using ResSched.ObjModel;
+﻿using CodeGenHero.ResourceScheduler.Xam.ModelObj.RS;
 using ResSched.ViewModels;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
@@ -31,7 +31,7 @@ namespace ResSched.Views
             var answer = await DisplayAlert("Please Confirm", "Are you sure you want to delete this reservation?", "Yes", "No");
             if (answer)
             {
-                var id = ((ResourceSchedule)(((Button)sender).BindingContext)).ResourceScheduleId;
+                var id = ((ResourceSchedule)(((Button)sender).BindingContext)).Id;
                 ((MyReservationsViewModel)this.BindingContext).OnCancelReservation(id);
             }
         }

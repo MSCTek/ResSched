@@ -7,8 +7,8 @@ using CodeGenHero.ResourceScheduler.DTO.RS;
 
 namespace CodeGenHero.ResourceScheduler.API.Client.Interface
 {
-	public partial interface IWebApiDataServiceRS : IWebApiDataServiceBase
-	{
-		//Task<IHttpCallResultCGHT<IPageDataT<List<Meeting>>>> GetMeetingsAndAttendeesByUserId(Guid userId, DateTime? minUpdatedDate, bool? isDeleted, string sort = null, int page = 1, int pageSize = 100);
+    public partial interface IWebApiDataServiceRS : IWebApiDataServiceBase
+    {
+        //Task<IHttpCallResultCGHT<IPageDataT<List<Meeting>>>> GetMeetingsAndAttendeesByUserId(Guid userId, DateTime? minUpdatedDate, bool? isDeleted, string sort = null, int page = 1, int pageSize = 100);
     }
 }

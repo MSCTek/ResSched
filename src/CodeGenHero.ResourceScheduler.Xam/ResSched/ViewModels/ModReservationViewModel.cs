@@ -1,8 +1,8 @@
-﻿using GalaSoft.MvvmLight.Command;
+﻿using CodeGenHero.ResourceScheduler.Xam.ModelObj.RS;
+using GalaSoft.MvvmLight.Command;
 using Microsoft.AppCenter.Analytics;
 using ResSched.Helpers;
 using ResSched.Models;
-using ResSched.ObjModel;
 using System;
 using System.Collections.ObjectModel;
 using System.Diagnostics;
@@ -44,7 +44,7 @@ namespace ResSched.ViewModels
             ResourceSchedule = new ResourceSchedule()
             {
                 Resource = resource,
-                ResourceId = resource.ResourceId
+                ResourceId = resource.Id
             };
             SelectedDate = selectedDate;
             BuildHourlyScheduleAsync();
@@ -92,18 +92,15 @@ namespace ResSched.ViewModels
                             ResourceSchedule.CreatedBy = App.AuthUserName;
                             ResourceSchedule.CreatedDate = DateTime.Now;
                         }
-                        ResourceSchedule.LastModifiedBy = App.AuthUserName;
-                        ResourceSchedule.LastModifiedDate = DateTime.Now;
+                        ResourceSchedule.UpdatedBy = App.AuthUserName;
+                        ResourceSchedule.UpdatedDate = DateTime.Now;
                         ResourceSchedule.ReservationDate = SelectedDate;
 
-                        if (ResourceSchedule.ResourceScheduleId == Guid.Empty || ResourceSchedule.ResourceScheduleId == null)
+                        bool isNew = false;
+                        if (ResourceSchedule.Id == Guid.Empty || ResourceSchedule.Id == null)
                         {
-                            ResourceSchedule.ResourceScheduleId = Guid.NewGuid();
-                        }
-
-                        if (string.IsNullOrEmpty(ResourceSchedule.ReservedByUserEmail))
-                        {
-                            ResourceSchedule.ReservedByUserEmail = App.AuthUserEmail;
+                            ResourceSchedule.Id = Guid.NewGuid();
+                            isNew = true;
                         }
 
                         if (ResourceSchedule.ReservedByUserId == Guid.Empty)
@@ -116,7 +113,17 @@ namespace ResSched.ViewModels
                         //update the SQLite db
                         if (1 == await _dataService.WriteResourceSchedule(ResourceSchedule))
                         {
-                            //TODO: queue the background process to upload
+                            //if SQLite updated successfully, update the queue
+                            if (isNew)
+                            {
+                                await _dataService.QueueAsync(ResourceSchedule.Id, QueueableObjects.ResourceScheduleCreate);
+                            }
+                            else
+                            {
+                                await _dataService.QueueAsync(ResourceSchedule.Id, QueueableObjects.ResourceScheduleUpdate);
+                            }
+                            _dataService.StartSafeQueuedUpdates();
+
                             //navigate back
                             await Application.Current.MainPage.Navigation.PopModalAsync();
                         }
@@ -283,7 +290,7 @@ namespace ResSched.ViewModels
                     if (ResourceSchedule.ReservationStartDateTime <= h.Hour && ResourceSchedule.ReservationEndDateTime >= h.Hour)
                     {
                         //check if we are currently editing this record.
-                        if (ResourceSchedule.ResourceScheduleId != h.ResourceSchedule.ResourceScheduleId)
+                        if (ResourceSchedule.Id != h.ResourceSchedule.Id)
                         {
                             allGood = false;
                             Application.Current.MainPage.DisplayAlert("Error", "Your reservation conflicts with an existing reservation.", "OK");

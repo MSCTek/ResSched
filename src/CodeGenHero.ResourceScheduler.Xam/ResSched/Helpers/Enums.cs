@@ -3,6 +3,7 @@
     public enum QueueableObjects
     {
         UserUpdate,
-        ResourceSchedule
+        ResourceScheduleCreate,
+        ResourceScheduleUpdate
     }
 }

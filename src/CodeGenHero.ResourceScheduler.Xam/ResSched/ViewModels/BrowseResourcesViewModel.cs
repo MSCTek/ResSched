@@ -1,5 +1,5 @@
-﻿using ResSched.Mappers;
-using ResSched.ObjModel;
+﻿using CodeGenHero.ResourceScheduler.Xam.ModelObj.RS;
+using ResSched.Mappers;
 using System.Collections.ObjectModel;
 using System.Threading.Tasks;
 

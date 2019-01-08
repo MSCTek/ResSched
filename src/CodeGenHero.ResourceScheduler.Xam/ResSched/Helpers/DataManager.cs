@@ -5,8 +5,7 @@
  *
  * For more information, see http://go.microsoft.com/fwlink/?LinkId=620342
  */
- #define OFFLINE_SYNC_ENABLED
-
+#define OFFLINE_SYNC_ENABLED
 
 using System;
 using System.Collections.Generic;
@@ -15,30 +14,32 @@ using System.Diagnostics;
 using System.Threading.Tasks;
 using Microsoft.WindowsAzure.MobileServices;
 using Microsoft.WindowsAzure.MobileServices.Sync;
-using ResSched.DataModel;
+using CodeGenHero.ResourceScheduler.Xam.ModelData.RS;
 
 #if OFFLINE_SYNC_ENABLED
+
 using Microsoft.WindowsAzure.MobileServices.SQLiteStore;
+
 #endif
 
 namespace ResSched.Helpers
 {
-        public class DataManager
-        {
-            private static DataManager defaultInstance = null;
-            private MobileServiceClient client;
+    public class DataManager
+    {
+        private static DataManager defaultInstance = null;
+        private MobileServiceClient client;
 
 #if OFFLINE_SYNC_ENABLED
-        IMobileServiceSyncTable<Resource> resourceTable;
+        private IMobileServiceSyncTable<Resource> resourceTable;
 
-        const string offlineDbPath = @"localstore.db";
+        private const string offlineDbPath = @"localstore.db";
 #else
             IMobileServiceTable<Resource> resourceTable;
 #endif
 
-            private DataManager()
-            {
-                client = new MobileServiceClient(Config.ApplicationURL);
+        private DataManager()
+        {
+            client = new MobileServiceClient(Config.ApplicationURL);
 
 #if OFFLINE_SYNC_ENABLED
             var store = new MobileServiceSQLiteStore(offlineDbPath);
@@ -55,34 +56,34 @@ namespace ResSched.Helpers
                 // Get a reference to the online table
                 todoTable = client.GetTable<TodoItem>();
 #endif
-            }
+        }
 
-            public static DataManager DefaultManager
+        public static DataManager DefaultManager
+        {
+            get
             {
-                get
+                if (defaultInstance == null)
                 {
-                    if (defaultInstance == null)
-                    {
-                        defaultInstance = new DataManager();
-                    }
-                    return defaultInstance;
+                    defaultInstance = new DataManager();
                 }
+                return defaultInstance;
             }
+        }
 
-            public MobileServiceClient CurrentClient
-            {
-                get { return client; }
-            }
+        public MobileServiceClient CurrentClient
+        {
+            get { return client; }
+        }
 
-            public bool IsOfflineEnabled
-            {
-                get { return resourceTable is IMobileServiceSyncTable<Resource>; }
-            }
+        public bool IsOfflineEnabled
+        {
+            get { return resourceTable is IMobileServiceSyncTable<Resource>; }
+        }
 
-            public async Task<ObservableCollection<Resource>> GetTodoItemsAsync(bool syncItems = false)
+        public async Task<ObservableCollection<Resource>> GetTodoItemsAsync(bool syncItems = false)
+        {
+            try
             {
-                try
-                {
 #if OFFLINE_SYNC_ENABLED
                 if (syncItems)
                 {
@@ -90,36 +91,37 @@ namespace ResSched.Helpers
                 }
 #endif
 
-                    IEnumerable<Resource> items = await resourceTable
-                        //.Where(item => !item.Done)
-                        .ToEnumerableAsync();
+                IEnumerable<Resource> items = await resourceTable
+                    //.Where(item => !item.Done)
+                    .ToEnumerableAsync();
 
-                    return new ObservableCollection<Resource>(items);
-                }
-                catch (MobileServiceInvalidOperationException msioe)
-                {
-                    Debug.WriteLine($"Invalid sync operation: {msioe.Message}");
-                }
-                catch (Exception ex)
-                {
-                    Debug.WriteLine($"Sync Error: {ex.Message}");
-                }
-                return null;
+                return new ObservableCollection<Resource>(items);
             }
-
-            public async Task SaveTaskAsync(Resource item)
+            catch (MobileServiceInvalidOperationException msioe)
             {
-                if (item.ResourceId == null)
-                {
-                    await resourceTable.InsertAsync(item);
-                }
-                else
-                {
-                    await resourceTable.UpdateAsync(item);
-                }
+                Debug.WriteLine($"Invalid sync operation: {msioe.Message}");
             }
+            catch (Exception ex)
+            {
+                Debug.WriteLine($"Sync Error: {ex.Message}");
+            }
+            return null;
+        }
+
+        public async Task SaveTaskAsync(Resource item)
+        {
+            if (item.Id == null)
+            {
+                await resourceTable.InsertAsync(item);
+            }
+            else
+            {
+                await resourceTable.UpdateAsync(item);
+            }
+        }
 
 #if OFFLINE_SYNC_ENABLED
+
         public async Task SyncAsync()
         {
             ReadOnlyCollection<MobileServiceTableOperationError> syncErrors = null;
@@ -159,7 +161,7 @@ namespace ResSched.Helpers
                 }
             }
         }
+
 #endif
-        }
-    
+    }
 }

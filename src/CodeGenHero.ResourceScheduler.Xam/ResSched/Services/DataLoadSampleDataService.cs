@@ -1,5 +1,5 @@
-﻿using Microsoft.AppCenter.Crashes;
-using ResSched.DataModel;
+﻿using CodeGenHero.ResourceScheduler.Xam.ModelData.RS;
+using Microsoft.AppCenter.Crashes;
 using ResSched.Interfaces;
 using System;
 using System.Collections.Generic;

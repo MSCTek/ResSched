@@ -144,7 +144,7 @@ namespace ResSched.ViewModels
             if (base.Init())
             {
                 var user = await _dataService.GetUserByEmail(userEmail);
-                userId = (user != null) ? user.UserId : Guid.Empty;
+                userId = (user != null) ? user.Id : Guid.Empty;
             }
             return userId;
         }

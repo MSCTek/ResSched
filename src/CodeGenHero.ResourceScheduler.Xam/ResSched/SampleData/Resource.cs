@@ -1,4 +1,4 @@
-﻿using ResSched.DataModel;
+﻿using CodeGenHero.ResourceScheduler.Xam.ModelData.RS;
 using System;
 
 namespace ResSched.SampleData
@@ -18,15 +18,15 @@ namespace ResSched.SampleData
                 {
                     Name = "#1 Red Fox Meeting Room",
                     Description = "10 people max, bow window",
-                    ResourceId = MeetingRoom1_ID,
+                    Id = MeetingRoom1_ID,
                     ImageLink = "https://github.com/robintschroeder/ResSched/blob/master/Assets/Red_Fox_500x500.png?raw=true",
                     ImageLinkThumb = "https://github.com/robintschroeder/ResSched/blob/master/Assets/Red_Fox_500x500.png?raw=true",
                     IsActive = true,
                     IsDeleted = false,
                     CreatedBy = "gwashington",
                     CreatedDate = DateTime.UtcNow.AddDays(-1),
-                    LastModifiedBy = "gwashington",
-                    LastModifiedDate = DateTime.UtcNow.AddDays(-1),
+                    UpdatedBy = "gwashington",
+                    UpdatedDate = DateTime.UtcNow.AddDays(-1),
                 };
             }
         }
@@ -40,14 +40,14 @@ namespace ResSched.SampleData
                     Name = "#2 Gray Fox Meeting Room",
                     Description = "5 people max",
                     IsActive = true,
-                    ResourceId = MeetingRoom2_ID,
+                    Id = MeetingRoom2_ID,
                     ImageLink = "https://github.com/robintschroeder/ResSched/blob/master/Assets/Gray_Fox_500x500.png?raw=true",
                     ImageLinkThumb = "https://github.com/robintschroeder/ResSched/blob/master/Assets/Gray_Fox_500x500.png?raw=true",
                     IsDeleted = false,
                     CreatedBy = "gwashington",
                     CreatedDate = DateTime.UtcNow.AddDays(-1),
-                    LastModifiedBy = "gwashington",
-                    LastModifiedDate = DateTime.UtcNow.AddDays(-1),
+                    UpdatedBy = "gwashington",
+                    UpdatedDate = DateTime.UtcNow.AddDays(-1),
                 };
             }
         }
@@ -61,14 +61,14 @@ namespace ResSched.SampleData
                     Name = "#3 Artic Fox Meeting Room",
                     Description = "5 people max",
                     IsActive = true,
-                    ResourceId = MeetingRoom3_ID,
+                    Id = MeetingRoom3_ID,
                     ImageLink = "https://github.com/robintschroeder/ResSched/blob/master/Assets/Arctic_Fox_500x500.png?raw=true",
                     ImageLinkThumb = "https://github.com/robintschroeder/ResSched/blob/master/Assets/Arctic_Fox_500x500.png?raw=true",
                     IsDeleted = false,
                     CreatedBy = "gwashington",
                     CreatedDate = DateTime.UtcNow.AddDays(-1),
-                    LastModifiedBy = "gwashington",
-                    LastModifiedDate = DateTime.UtcNow.AddDays(-1),
+                    UpdatedBy = "gwashington",
+                    UpdatedDate = DateTime.UtcNow.AddDays(-1),
                 };
             }
         }
@@ -79,17 +79,17 @@ namespace ResSched.SampleData
             {
                 return new Resource()
                 {
-                    Name = "X-Carve",
+                    Name = "FoX-Carve",
                     Description = "3D Carving Machine",
                     IsActive = true,
-                    ResourceId = XCarve_ID,
+                    Id = XCarve_ID,
                     ImageLink = "https://github.com/robintschroeder/ResSched/blob/master/Assets/XCarve.png?raw=true",
                     ImageLinkThumb = "https://github.com/robintschroeder/ResSched/blob/master/Assets/XCarve.png?raw=true",
                     IsDeleted = false,
                     CreatedBy = "gwashington",
                     CreatedDate = DateTime.UtcNow.AddDays(-1),
-                    LastModifiedBy = "gwashington",
-                    LastModifiedDate = DateTime.UtcNow.AddDays(-1),
+                    UpdatedBy = "gwashington",
+                    UpdatedDate = DateTime.UtcNow.AddDays(-1),
                 };
             }
         }

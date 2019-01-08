@@ -1,5 +1,5 @@
-﻿using ResSched.Models;
-using ResSched.ObjModel;
+﻿using CodeGenHero.ResourceScheduler.Xam.ModelObj.RS;
+using ResSched.Models;
 using ResSched.ViewModels;
 using System;
 using Xamarin.Forms;

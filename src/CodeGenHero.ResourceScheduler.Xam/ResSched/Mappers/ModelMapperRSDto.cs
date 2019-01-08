@@ -165,6 +165,7 @@ namespace CodeGenHero.ResourceScheduler.Xam
                 ResourceId = source.ResourceId,
                 UpdatedBy = source.UpdatedBy,
                 UpdatedDate = source.UpdatedDate,
+                ReservationDate = source.ReservationStartDateTime.Date
             };
         }
 
@@ -226,6 +227,7 @@ namespace CodeGenHero.ResourceScheduler.Xam
                 ResourceId = source.ResourceId,
                 UpdatedBy = source.UpdatedBy,
                 UpdatedDate = source.UpdatedDate,
+                ReservationDate = source.ReservationStartDateTime.Date
             };
         }
 

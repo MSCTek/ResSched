@@ -257,6 +257,11 @@ namespace ResSched.Services
             if (Connectivity.NetworkAccess == NetworkAccess.Internet) MessagingCenter.Send<StartUploadDataMessage>(new StartUploadDataMessage(), "StartUploadDataMessage");
         }
 
+        public async Task<int> UpdateUser(objModel.User user)
+        {
+            return await _db.GetAsyncConnection().UpdateAsync(user.ToModelData());
+        }
+
         public async Task<int> WriteResourceSchedule(objModel.ResourceSchedule resourceSchedule)
         {
             return await _db.GetAsyncConnection().InsertOrReplaceAsync(resourceSchedule.ToModelData());

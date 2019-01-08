@@ -1,4 +1,5 @@
-﻿using GalaSoft.MvvmLight.Command;
+﻿using CodeGenHero.ResourceScheduler.Xam.ModelObj.RS;
+using GalaSoft.MvvmLight.Command;
 using Microsoft.AppCenter.Analytics;
 using Microsoft.AppCenter.Crashes;
 using Microsoft.Identity.Client;
@@ -50,10 +51,10 @@ namespace ResSched.ViewModels
                             SurName = "Guest";
                             UserPrincipalName = "guest@guest.com";
 
-                            var userId = await CheckAuthorization(UserPrincipalName);
-                            if (userId != Guid.Empty)
+                            var user = await CheckAuthorization(UserPrincipalName);
+                            if (user != null)
                             {
-                                RecordSuccessfulLogin(DisplayName, UserPrincipalName, userId, "Guest Login");
+                                RecordSuccessfulLogin(DisplayName, UserPrincipalName, user, "Guest Login");
                             }
                             else
                             {
@@ -138,29 +139,40 @@ namespace ResSched.ViewModels
             }
         }
 
-        private async Task<Guid> CheckAuthorization(string userEmail)
+        private async Task<User> CheckAuthorization(string userEmail)
         {
             Guid userId = Guid.Empty;
             if (base.Init())
             {
                 var user = await _dataService.GetUserByEmail(userEmail);
-                userId = (user != null) ? user.Id : Guid.Empty;
+                return (user != null) ? user : null;
             }
-            return userId;
+            return null;
         }
 
-        private void RecordSuccessfulLogin(string userName, string userEmail, Guid userId, string loginSource)
+        private async void RecordSuccessfulLogin(string userName, string userEmail, User user, string loginSource)
         {
-            App.AuthUserId = userId;
+            App.AuthUserId = user.Id;
             App.AuthUserEmail = userEmail;
             App.AuthUserName = userName;
 
             Analytics.TrackEvent("Successful Login", new Dictionary<string, string>{
                             { "Source", loginSource },
                             { "UserName", userName },
-                            {"UserEmail", userEmail }
+                            { "UserEmail", userEmail },
+                            { "UserId", user.Id.ToString() }
                         });
             ErrorDescription = string.Empty;
+
+            user.LastLoginDate = DateTime.Now;
+            user.UpdatedBy = user.UserName;
+            user.UpdatedDate = DateTime.Now;
+
+            if (1 == await _dataService.UpdateUser(user))
+            {
+                await _dataService.QueueAsync(user.Id, QueueableObjects.UserUpdate);
+                _dataService.StartSafeQueuedUpdates();
+            }
         }
 
         private async Task RefreshUserDataAzureADAsync(string token)
@@ -181,10 +193,10 @@ namespace ResSched.ViewModels
                 SurName = user["surname"].ToString();
                 UserPrincipalName = user["userPrincipalName"].ToString();
 
-                var userId = await CheckAuthorization(UserPrincipalName);
-                if (userId != Guid.Empty)
+                var userObj = await CheckAuthorization(UserPrincipalName);
+                if (userObj != null)
                 {
-                    RecordSuccessfulLogin(DisplayName, UserPrincipalName, userId, "Microsoft");
+                    RecordSuccessfulLogin(DisplayName, UserPrincipalName, userObj, "Microsoft");
                 }
                 else
                 {

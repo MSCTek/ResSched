@@ -1,15 +1,13 @@
-﻿using CodeGenHero.ResourceScheduler.Xam.ModelData.RS;
-using System.Collections.Generic;
-using System.Threading.Tasks;
+﻿using System.Threading.Tasks;
 
 namespace ResSched.Interfaces
 {
     public partial interface IDataLoadService
     {
-        Task<int> LoadResources(List<Resource> resource = null);
+        Task<int> LoadResources();
 
-        Task<int> LoadResourceSchedules(List<ResourceSchedule> resourceSchedules = null);
+        Task<int> LoadResourceSchedules();
 
-        Task<int> LoadUsers(List<User> users = null);
+        Task<int> LoadUsers();
     }
 }

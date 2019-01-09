@@ -16,7 +16,7 @@ namespace ResSched.Services
             _db = database;
         }
 
-        public async Task<int> LoadResources(List<Resource> resources = null)
+        public async Task<int> LoadResources()
         {
             try
             {
@@ -29,16 +29,13 @@ namespace ResSched.Services
                     await Task.Delay(500);
                 }
 
-                if (resources == null)
-                {
-                    resources = new List<Resource>()
+                var resources = new List<Resource>()
                     {
                         SampleData.SampleResource.MeetingRoom1,
                         SampleData.SampleResource.MeetingRoom2,
                         SampleData.SampleResource.MeetingRoom3,
                         SampleData.SampleResource.XCarve
                     };
-                }
 
                 return await _db.GetAsyncConnection().InsertAllAsync(resources);
             }
@@ -49,7 +46,7 @@ namespace ResSched.Services
             }
         }
 
-        public async Task<int> LoadResourceSchedules(List<ResourceSchedule> resourceSchedules = null)
+        public async Task<int> LoadResourceSchedules()
         {
             try
             {
@@ -62,14 +59,11 @@ namespace ResSched.Services
                     await Task.Delay(500);
                 }
 
-                if (resourceSchedules == null)
-                {
-                    resourceSchedules = new List<ResourceSchedule>()
+                var resourceSchedules = new List<ResourceSchedule>()
                     {
                         SampleData.SampleResourceSchedule.SampleSchedule1,
                         SampleData.SampleResourceSchedule.SampleSchedule2,
                     };
-                }
 
                 return await _db.GetAsyncConnection().InsertAllAsync(resourceSchedules);
             }
@@ -80,7 +74,7 @@ namespace ResSched.Services
             }
         }
 
-        public async Task<int> LoadUsers(List<User> users = null)
+        public async Task<int> LoadUsers()
         {
             try
             {
@@ -93,9 +87,7 @@ namespace ResSched.Services
                     await Task.Delay(500);
                 }
 
-                if (users == null)
-                {
-                    users = new List<User>()
+                var users = new List<User>()
                     {
                         SampleData.SampleUser.SampleUserGeorge,
                         SampleData.SampleUser.SampleUserMicky,
@@ -103,7 +95,6 @@ namespace ResSched.Services
                         SampleData.SampleUser.SampleUserGuest,
                         SampleData.SampleUser.SampleUserRobin
                     };
-                }
 
                 return await _db.GetAsyncConnection().InsertAllAsync(users);
             }

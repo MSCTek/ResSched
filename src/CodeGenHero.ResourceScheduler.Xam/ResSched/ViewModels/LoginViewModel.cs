@@ -164,9 +164,9 @@ namespace ResSched.ViewModels
                         });
             ErrorDescription = string.Empty;
 
-            user.LastLoginDate = DateTime.Now;
+            user.LastLoginDate = DateTime.UtcNow;
             user.UpdatedBy = user.UserName;
-            user.UpdatedDate = DateTime.Now;
+            user.UpdatedDate = DateTime.UtcNow;
 
             if (1 == await _dataService.UpdateUser(user))
             {

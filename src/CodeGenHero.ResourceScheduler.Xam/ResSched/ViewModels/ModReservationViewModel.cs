@@ -90,10 +90,10 @@ namespace ResSched.ViewModels
                         if (string.IsNullOrEmpty(ResourceSchedule.CreatedBy))
                         {
                             ResourceSchedule.CreatedBy = App.AuthUserName;
-                            ResourceSchedule.CreatedDate = DateTime.Now;
+                            ResourceSchedule.CreatedDate = DateTime.UtcNow;
                         }
                         ResourceSchedule.UpdatedBy = App.AuthUserName;
-                        ResourceSchedule.UpdatedDate = DateTime.Now;
+                        ResourceSchedule.UpdatedDate = DateTime.UtcNow;
                         ResourceSchedule.ReservationDate = SelectedDate;
 
                         bool isNew = false;
@@ -103,7 +103,7 @@ namespace ResSched.ViewModels
                             isNew = true;
                         }
 
-                        if (ResourceSchedule.ReservedByUserId == Guid.Empty)
+                        if (ResourceSchedule.ReservedByUserId == Guid.Empty || ResourceSchedule.ReservedByUserId == null)
                         {
                             ResourceSchedule.ReservedByUserId = App.AuthUserId;
                         }

@@ -206,6 +206,7 @@
     <None Include="Properties\PublishProfiles\ResourceScheduler - FTP.pubxml" />
     <None Include="Properties\PublishProfiles\ResourceScheduler - Web Deploy.pubxml" />
     <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
+    <None Include="Properties\PublishProfiles\ResSched - Web Deploy.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
       <SubType>Designer</SubType>

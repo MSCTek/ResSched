@@ -15,7 +15,7 @@
                 </Image.Source>
             </Image>
             <Label Text="Welcome" HorizontalOptions="CenterAndExpand" />
-            <Label Text="{Binding DisplayMessage}" />
+            <Label Text="{Binding DisplayMessage}" Margin="20" />
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

@@ -39,6 +39,17 @@ namespace ResSched.Models.MeetupEvents
         public string descriptionDisplay { get { return description.Replace("<p>", string.Empty); } }
         public int duration { get; set; }
         public string event_url { get; set; }
+
+        public string eventBeginDisplay
+        {
+            get
+            {
+                DateTime start = new DateTime(1970, 1, 1, 0, 0, 0, DateTimeKind.Utc);
+                DateTime date = start.AddMilliseconds(time).ToLocalTime();
+                return $"{date.ToLongDateString()} {date.ToShortTimeString()}";
+            }
+        }
+
         public Group group { get; set; }
         public int headcount { get; set; }
         public string how_to_find_us { get; set; }
@@ -48,7 +59,6 @@ namespace ResSched.Models.MeetupEvents
         public string photo_url { get; set; }
         public string status { get; set; }
         public long time { get; set; }
-        public DateTime timeDisplay { get { return new DateTime(time); } }
         public object updated { get; set; }
         public int utc_offset { get; set; }
         public Venue venue { get; set; }

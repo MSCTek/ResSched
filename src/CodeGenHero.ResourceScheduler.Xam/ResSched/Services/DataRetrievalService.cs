@@ -230,7 +230,7 @@ namespace ResSched.Services
 
         public async Task<bool> SoftDeleteReservation(Guid resourceScheduleId)
         {
-            var toBeDeleted = await _db.GetAsyncConnection().Table<objModel.ResourceSchedule>().Where(x => x.Id == resourceScheduleId).FirstOrDefaultAsync();
+            var toBeDeleted = await _db.GetAsyncConnection().Table<dataModel.ResourceSchedule>().Where(x => x.Id == resourceScheduleId).FirstOrDefaultAsync();
             if (toBeDeleted != null)
             {
                 toBeDeleted.IsDeleted = true;

@@ -24,10 +24,10 @@
 
                 <StackLayout Grid.Column="0" Orientation="Vertical" Margin="20,10" Spacing="3">
                     <Label Text="Fox.Build" FontSize="Medium" />
-                    <Label Text="Events" FontSize="Default" />
+                    <Label Text="Events Feed from Meetup.com" FontSize="Default" />
                 </StackLayout>
 
-                <Image Grid.Column="1" Margin="0,5,15,0" HeightRequest="75" VerticalOptions="End">
+                <Image Grid.Column="1" Margin="0,5,15,0" HeightRequest="80" VerticalOptions="End">
                     <Image.Source>
                         <UriImageSource Uri="{StaticResource FoxImage}" CacheValidity="100" CachingEnabled="True" />
                     </Image.Source>
@@ -46,21 +46,24 @@
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell>
-                            <StackLayout Padding="10">
+                            <StackLayout Padding="20,5">
                                 <Grid HorizontalOptions="FillAndExpand">
                                     <Grid.ColumnDefinitions>
                                         <ColumnDefinition Width="*" />
                                         <ColumnDefinition Width="auto" />
                                     </Grid.ColumnDefinitions>
                                     <Label Grid.Column="0" Text="{Binding name}" LineBreakMode="WordWrap"  Style="{DynamicResource ListItemTextStyle}"  FontSize="Medium" />
+
                                     <Image Grid.Column="1" Margin="10,5,0,5" HeightRequest="50" VerticalOptions="Start" HorizontalOptions="End">
                                         <Image.Source>
                                             <UriImageSource Uri="{Binding photo_url}" CacheValidity="100" CachingEnabled="True" />
                                         </Image.Source>
                                     </Image>
                                 </Grid>
-                                <Label Text="{Binding descriptionDisplay}"  LineBreakMode="TailTruncation"  Style="{DynamicResource ListItemDetailTextStyle}" />
+                                <Label Text="{Binding eventBeginDisplay}" FontAttributes="Bold" />
+                                <Label Text="{Binding descriptionDisplay}" Style="{DynamicResource ListItemDetailTextStyle}" />
                                 <Button Text="Learn More"  Clicked="LearnMoreButton_Clicked" />
+                                <BoxView BackgroundColor="Gray" HeightRequest="1" WidthRequest="350" HorizontalOptions="CenterAndExpand" />
                             </StackLayout>
                         </ViewCell>
                     </DataTemplate>

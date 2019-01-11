@@ -25,16 +25,17 @@ namespace ResSched.ViewModels
             DisplayMessage = string.Empty;
 
             var numUsers = await _dataLoadService.LoadUsers();
+            DisplayMessage = $"Loaded: {numUsers} Users";
+            await Task.Delay(500);
             var numResources = await _dataLoadService.LoadResources();
+            DisplayMessage = $"Loaded: {numResources} Resources";
+            await Task.Delay(500);
             var numResourceSchedules = await _dataLoadService.LoadResourceSchedules();
-
-            DisplayMessage = $"Loaded: \n" +
-                $"{numUsers} Users \n" +
-                $"{numResources} Resources \n" +
-                $"{numResourceSchedules} ResourceSchedules \n";
+            DisplayMessage = $"Loaded: {numResourceSchedules} Resource Schedules";
+            await Task.Delay(500);
 
             //we just want to show them the welcome page briefly as we are loading data
-            await Task.Delay(3000);
+            await Task.Delay(1000);
 
             Xamarin.Forms.Application.Current.MainPage = new Views.MainPage();
         }

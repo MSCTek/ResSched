@@ -1,13 +1,12 @@
 ﻿using CodeGenHero.ResourceScheduler.Xam.ModelObj.RS;
 using GalaSoft.MvvmLight.Command;
+using Microsoft.AppCenter;
 using Microsoft.AppCenter.Analytics;
 using Microsoft.AppCenter.Crashes;
-using Microsoft.Identity.Client;
 using Newtonsoft.Json.Linq;
 using ResSched.Helpers;
 using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Net.Http;
 using System.Threading.Tasks;
 
@@ -25,13 +24,27 @@ namespace ResSched.ViewModels
         Sign_out_with_Microsoft,
     }
 
+    public enum UserText
+    {
+        Sign_in,
+        Sign_out,
+    }
+
     public class LoginViewModel : BaseViewModel
     {
+        private string _userEnteredEmail;
+
         public LoginViewModel()
         {
             GuestButtonText = GuestText.Sign_in_as_Guest.ToDescription();
+            UserButtonText = UserText.Sign_in.ToDescription();
             MicrosoftButtonText = MicrosoftText.Sign_in_with_Microsoft.ToDescription();
             ErrorDescription = string.Empty;
+        }
+
+        public bool CanUserLogin
+        {
+            get { return string.IsNullOrEmpty(UserEnteredEmail) ? false : true; }
         }
 
         public RelayCommand GuestSignInCommand
@@ -45,10 +58,6 @@ namespace ResSched.ViewModels
                         if (GuestButtonText == GuestText.Sign_in_as_Guest.ToDescription())
                         {
                             IsUserVisible = true;
-                            DisplayName = "Guest";
-                            GivenName = "Guest";
-                            Id = "Guest";
-                            SurName = "Guest";
                             UserPrincipalName = "guest@guest.com";
 
                             var user = await CheckAuthorization(UserPrincipalName);
@@ -62,7 +71,8 @@ namespace ResSched.ViewModels
                             }
 
                             GuestButtonText = GuestText.Sign_out_as_Guest.ToDescription();
-                            MicrosoftButtonText = MicrosoftText.Sign_in_with_Microsoft.ToDescription();
+                            //MicrosoftButtonText = MicrosoftText.Sign_in_with_Microsoft.ToDescription();
+                            UserButtonText = UserText.Sign_in.ToDescription();
                         }
                         else
                         {
@@ -71,7 +81,8 @@ namespace ResSched.ViewModels
                             IsUserVisible = false;
 
                             GuestButtonText = GuestText.Sign_in_as_Guest.ToDescription();
-                            MicrosoftButtonText = MicrosoftText.Sign_in_with_Microsoft.ToDescription();
+                            //MicrosoftButtonText = MicrosoftText.Sign_in_with_Microsoft.ToDescription();
+                            UserButtonText = UserText.Sign_in.ToDescription();
                         }
                     }
                     catch (Exception ex)
@@ -83,7 +94,7 @@ namespace ResSched.ViewModels
             }
         }
 
-        public RelayCommand MicrosoftSignInCommand
+        /*public RelayCommand MicrosoftSignInCommand
         {
             get
             {
@@ -137,6 +148,65 @@ namespace ResSched.ViewModels
                     }
                 });
             }
+        }*/
+
+        public string UserEnteredEmail
+        {
+            get { return _userEnteredEmail; }
+            set
+            {
+                if (Set(nameof(UserEnteredEmail), ref _userEnteredEmail, value))
+                {
+                    RaisePropertyChanged(nameof(CanUserLogin));
+                }
+            }
+        }
+
+        public RelayCommand UserSignInCommand
+        {
+            get
+            {
+                return new RelayCommand(async () =>
+                {
+                    try
+                    {
+                        if (UserButtonText == UserText.Sign_in.ToDescription())
+                        {
+                            IsUserVisible = true;
+                            UserPrincipalName = UserEnteredEmail;
+
+                            var user = await CheckAuthorization(UserPrincipalName);
+                            if (user != null)
+                            {
+                                RecordSuccessfulLogin(DisplayName, UserPrincipalName, user, "User Login");
+                            }
+                            else
+                            {
+                                Analytics.TrackEvent($"Unknown User: {UserPrincipalName} tried to login and does not have authorization.");
+                            }
+
+                            GuestButtonText = GuestText.Sign_in_as_Guest.ToDescription();
+                            //MicrosoftButtonText = MicrosoftText.Sign_in_with_Microsoft.ToDescription();
+                            UserButtonText = UserText.Sign_out.ToDescription();
+                        }
+                        else
+                        {
+                            App.AuthUserEmail = string.Empty;
+                            App.AuthUserName = string.Empty;
+                            IsUserVisible = false;
+
+                            GuestButtonText = GuestText.Sign_in_as_Guest.ToDescription();
+                            //MicrosoftButtonText = MicrosoftText.Sign_in_with_Microsoft.ToDescription();
+                            UserButtonText = UserText.Sign_in.ToDescription();
+                        }
+                    }
+                    catch (Exception ex)
+                    {
+                        ErrorDescription = ex.Message;
+                        Crashes.TrackError(ex);
+                    }
+                });
+            }
         }
 
         private async Task<User> CheckAuthorization(string userEmail)
@@ -167,6 +237,7 @@ namespace ResSched.ViewModels
             user.LastLoginDate = DateTime.UtcNow;
             user.UpdatedBy = user.UserName;
             user.UpdatedDate = DateTime.UtcNow;
+            user.InstallationId = (await AppCenter.GetInstallIdAsync()).ToString();
 
             if (1 == await _dataService.UpdateUser(user))
             {
@@ -216,6 +287,7 @@ namespace ResSched.ViewModels
         private string _guestButtonText;
         private bool _isUserVisible;
         private string _microsoftButtonText;
+        private string _userButtonText;
 
         public string GuestButtonText
         {
@@ -233,6 +305,12 @@ namespace ResSched.ViewModels
         {
             get { return _microsoftButtonText; }
             set { Set(nameof(MicrosoftButtonText), ref _microsoftButtonText, value); }
+        }
+
+        public string UserButtonText
+        {
+            get { return _userButtonText; }
+            set { Set(nameof(UserButtonText), ref _userButtonText, value); }
         }
 
         #endregion UI properties

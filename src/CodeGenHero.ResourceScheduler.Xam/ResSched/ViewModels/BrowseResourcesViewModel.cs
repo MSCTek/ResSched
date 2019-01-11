@@ -25,6 +25,7 @@ namespace ResSched.ViewModels
         {
             if (base.Init())
             {
+                //update the resources.
                 Items = (await _dataService.GetAllResources()).ToObservableCollection();
             }
         }

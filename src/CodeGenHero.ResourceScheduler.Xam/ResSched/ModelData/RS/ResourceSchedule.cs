@@ -12,7 +12,8 @@ namespace CodeGenHero.ResourceScheduler.Xam.ModelData.RS
 		[PrimaryKey]
 		public System.Guid Id { get; set; }
 
-		public bool IsDeleted { get; set; }
+        public System.DateTime ReservationDate { get; set; }
+        public bool IsDeleted { get; set; }
 		public System.DateTime ReservationEndDateTime { get; set; }
 		public string ReservationNotes { get; set; }
 		public System.DateTime ReservationStartDateTime { get; set; }

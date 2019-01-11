@@ -9,7 +9,7 @@
     </ContentPage.BindingContext>
 
     <ContentPage.Content>
-        <StackLayout HorizontalOptions="Center" Spacing="0">
+        <StackLayout HorizontalOptions="Center" Spacing="0" Margin="40">
 
             <Image Margin="0,40,0,0" HeightRequest="150">
                 <Image.Source>
@@ -17,32 +17,28 @@
                 </Image.Source>
             </Image>
 
-            <Button Text="{Binding MicrosoftButtonText}" Command="{Binding MicrosoftSignInCommand}" Style="{StaticResource ButtonStyle}" />
-            <!--<Button Text="Sign in with Google" Style="{StaticResource ButtonStyle}" />-->
+            <Label Text="Log In" HorizontalOptions="CenterAndExpand" FontAttributes="Bold" FontSize="Large" />
+            <Grid Margin="0,20,0,10">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="auto" />
+                </Grid.ColumnDefinitions>
+                <Entry Grid.Column="0" Text="{Binding UserEnteredEmail}" />
+                <Button Grid.Column="1" Text="{Binding UserButtonText}" Command="{Binding UserSignInCommand}"
+                        Style="{StaticResource ButtonStyle}" IsEnabled="{Binding CanUserLogin}" />
+            </Grid>
 
-            <Button Text="{Binding GuestButtonText}" Command="{Binding GuestSignInCommand}" Margin="0,20,0,10" Style="{StaticResource ButtonStyle}" />
+            <Label Text="OR" HorizontalOptions="CenterAndExpand"  FontAttributes="Bold" Margin="20" />
+
+            <Button Text="{Binding GuestButtonText}" Command="{Binding GuestSignInCommand}" Margin="0,20,0,10"
+                    Style="{StaticResource ButtonStyle}" />
 
             <StackLayout IsVisible="{Binding IsUserVisible}" Padding="5,10">
                 <StackLayout Orientation="Horizontal">
-                    <Label Text="DisplayName " FontAttributes="Bold" />
-                    <Label Text ="{Binding DisplayName}" />
-                </StackLayout>
-                <StackLayout Orientation="Horizontal">
-                    <Label Text="GivenName " FontAttributes="Bold" />
-                    <Label Text="{Binding GivenName}" />
-                </StackLayout>
-                <StackLayout Orientation="Horizontal">
-                    <Label Text="Surname " FontAttributes="Bold" />
-                    <Label Text="{Binding SurName}" />
-                </StackLayout>
-                <StackLayout Orientation="Horizontal">
-                    <Label Text="Id " FontAttributes="Bold" />
-                    <Label Text="{Binding Id}" />
-                </StackLayout>
-                <StackLayout Orientation="Horizontal">
-                    <Label Text="UserPrincipalName " FontAttributes="Bold" />
+                    <Label Text="You are currently logged in as: " FontAttributes="Bold" />
                     <Label Text="{Binding UserPrincipalName}" />
                 </StackLayout>
+
                 <Label Text="{Binding ErrorDescription} " FontAttributes="Bold" Margin="0,20" />
             </StackLayout>
         </StackLayout>

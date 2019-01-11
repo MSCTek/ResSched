@@ -47,7 +47,7 @@ namespace ResSched.ViewModels
 
         public DateTime MaxDate
         {
-            //they can book resources 14 days in the future
+            //they can book resources 45 days in the future
             get { return DateTime.Now.AddDays(45); }
         }
 
@@ -100,8 +100,8 @@ namespace ResSched.ViewModels
                 {
                     //if the new value is different
                     BuildHourlySchedule();
-                    RaisePropertyChanged(nameof(SelectedDateDisplay));
-                    RaisePropertyChanged(nameof(SelectedDateWeekdayDisplay));
+                    //RaisePropertyChanged(nameof(SelectedDateDisplay));
+                    //RaisePropertyChanged(nameof(SelectedDateWeekdayDisplay));
                     RaisePropertyChanged(nameof(CanNavigateForward));
                     RaisePropertyChanged(nameof(CanNavigateBackward));
                     RaisePropertyChanged(nameof(CanBook));

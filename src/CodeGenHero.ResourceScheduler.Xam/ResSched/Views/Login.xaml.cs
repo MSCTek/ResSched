@@ -1,12 +1,4 @@
-﻿using Microsoft.AppCenter.Analytics;
-using Microsoft.AppCenter.Crashes;
-using Microsoft.Identity.Client;
-using Newtonsoft.Json.Linq;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Net.Http;
-using System.Threading.Tasks;
+﻿using ResSched.ViewModels;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -15,10 +7,22 @@ namespace ResSched.Views
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class Login : ContentPage
     {
+        private LoginViewModel viewModel;
+
         public Login()
         {
             InitializeComponent();
+            BindingContext = viewModel = new LoginViewModel();
         }
-       
+
+        protected override async void OnAppearing()
+        {
+            base.OnAppearing();
+            if (BindingContext != null)
+            {
+                var vm = BindingContext as LoginViewModel;
+                await vm.InitVM();
+            }
+        }
     }
 }

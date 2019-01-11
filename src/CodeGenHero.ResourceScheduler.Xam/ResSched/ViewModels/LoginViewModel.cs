@@ -3,12 +3,11 @@ using GalaSoft.MvvmLight.Command;
 using Microsoft.AppCenter;
 using Microsoft.AppCenter.Analytics;
 using Microsoft.AppCenter.Crashes;
-using Newtonsoft.Json.Linq;
 using ResSched.Helpers;
 using System;
 using System.Collections.Generic;
-using System.Net.Http;
 using System.Threading.Tasks;
+using Xamarin.Essentials;
 
 namespace ResSched.ViewModels
 {
@@ -32,7 +31,14 @@ namespace ResSched.ViewModels
 
     public class LoginViewModel : BaseViewModel
     {
+        private string _errorDescription;
+        private string _guestButtonText;
+        private bool _isUserVisible;
+        private string _microsoftButtonText;
+        private string _userButtonText;
         private string _userEnteredEmail;
+
+        private string _userPrincipalName;
 
         public LoginViewModel()
         {
@@ -45,6 +51,18 @@ namespace ResSched.ViewModels
         public bool CanUserLogin
         {
             get { return string.IsNullOrEmpty(UserEnteredEmail) ? false : true; }
+        }
+
+        public string ErrorDescription
+        {
+            get { return _errorDescription; }
+            set { Set(nameof(ErrorDescription), ref _errorDescription, value); }
+        }
+
+        public string GuestButtonText
+        {
+            get { return _guestButtonText; }
+            set { Set(nameof(GuestButtonText), ref _guestButtonText, value); }
         }
 
         public RelayCommand GuestSignInCommand
@@ -63,7 +81,7 @@ namespace ResSched.ViewModels
                             var user = await CheckAuthorization(UserPrincipalName);
                             if (user != null)
                             {
-                                RecordSuccessfulLogin(DisplayName, UserPrincipalName, user, "Guest Login");
+                                RecordSuccessfulLogin(user, "Guest Login");
                             }
                             else
                             {
@@ -71,7 +89,6 @@ namespace ResSched.ViewModels
                             }
 
                             GuestButtonText = GuestText.Sign_out_as_Guest.ToDescription();
-                            //MicrosoftButtonText = MicrosoftText.Sign_in_with_Microsoft.ToDescription();
                             UserButtonText = UserText.Sign_in.ToDescription();
                         }
                         else
@@ -79,9 +96,9 @@ namespace ResSched.ViewModels
                             App.AuthUserEmail = string.Empty;
                             App.AuthUserName = string.Empty;
                             IsUserVisible = false;
+                            Preferences.Clear();
 
                             GuestButtonText = GuestText.Sign_in_as_Guest.ToDescription();
-                            //MicrosoftButtonText = MicrosoftText.Sign_in_with_Microsoft.ToDescription();
                             UserButtonText = UserText.Sign_in.ToDescription();
                         }
                     }
@@ -92,207 +109,6 @@ namespace ResSched.ViewModels
                     }
                 });
             }
-        }
-
-        /*public RelayCommand MicrosoftSignInCommand
-        {
-            get
-            {
-                return new RelayCommand(async () =>
-                {
-                    AuthenticationResult authResult = null;
-                    IEnumerable<IAccount> accounts = await App.PCA.GetAccountsAsync();
-                    try
-                    {
-                        if (MicrosoftButtonText == MicrosoftText.Sign_in_with_Microsoft.ToDescription())
-                        {
-                            // let's see if we have a user in our belly already
-                            try
-                            {
-                                IAccount firstAccount = accounts.FirstOrDefault();
-                                authResult = await App.PCA.AcquireTokenSilentAsync(App.AuthScopes, firstAccount);
-                                await RefreshUserDataAzureADAsync(authResult.AccessToken).ConfigureAwait(false);
-
-                                MicrosoftButtonText = MicrosoftText.Sign_out_with_Microsoft.ToDescription();
-                                GuestButtonText = GuestText.Sign_in_as_Guest.ToDescription();
-                            }
-                            catch (MsalUiRequiredException)
-                            {
-                                authResult = await App.PCA.AcquireTokenAsync(App.AuthScopes, App.UiParent);
-                                await RefreshUserDataAzureADAsync(authResult.AccessToken);
-
-                                MicrosoftButtonText = MicrosoftText.Sign_out_with_Microsoft.ToDescription();
-                                GuestButtonText = GuestText.Sign_in_as_Guest.ToDescription();
-                            }
-                        }
-                        else
-                        {
-                            while (accounts.Any())
-                            {
-                                await App.PCA.RemoveAsync(accounts.FirstOrDefault());
-                                accounts = await App.PCA.GetAccountsAsync();
-                                App.AuthUserEmail = string.Empty;
-                                App.AuthUserName = string.Empty;
-                            }
-
-                            IsUserVisible = false;
-
-                            MicrosoftButtonText = MicrosoftText.Sign_in_with_Microsoft.ToDescription();
-                            GuestButtonText = GuestText.Sign_in_as_Guest.ToDescription();
-                        }
-                    }
-                    catch (Exception ex)
-                    {
-                        ErrorDescription = ex.Message;
-                        Crashes.TrackError(ex);
-                    }
-                });
-            }
-        }*/
-
-        public string UserEnteredEmail
-        {
-            get { return _userEnteredEmail; }
-            set
-            {
-                if (Set(nameof(UserEnteredEmail), ref _userEnteredEmail, value))
-                {
-                    RaisePropertyChanged(nameof(CanUserLogin));
-                }
-            }
-        }
-
-        public RelayCommand UserSignInCommand
-        {
-            get
-            {
-                return new RelayCommand(async () =>
-                {
-                    try
-                    {
-                        if (UserButtonText == UserText.Sign_in.ToDescription())
-                        {
-                            IsUserVisible = true;
-                            UserPrincipalName = UserEnteredEmail;
-
-                            var user = await CheckAuthorization(UserPrincipalName);
-                            if (user != null)
-                            {
-                                RecordSuccessfulLogin(DisplayName, UserPrincipalName, user, "User Login");
-                            }
-                            else
-                            {
-                                Analytics.TrackEvent($"Unknown User: {UserPrincipalName} tried to login and does not have authorization.");
-                            }
-
-                            GuestButtonText = GuestText.Sign_in_as_Guest.ToDescription();
-                            //MicrosoftButtonText = MicrosoftText.Sign_in_with_Microsoft.ToDescription();
-                            UserButtonText = UserText.Sign_out.ToDescription();
-                        }
-                        else
-                        {
-                            App.AuthUserEmail = string.Empty;
-                            App.AuthUserName = string.Empty;
-                            IsUserVisible = false;
-
-                            GuestButtonText = GuestText.Sign_in_as_Guest.ToDescription();
-                            //MicrosoftButtonText = MicrosoftText.Sign_in_with_Microsoft.ToDescription();
-                            UserButtonText = UserText.Sign_in.ToDescription();
-                        }
-                    }
-                    catch (Exception ex)
-                    {
-                        ErrorDescription = ex.Message;
-                        Crashes.TrackError(ex);
-                    }
-                });
-            }
-        }
-
-        private async Task<User> CheckAuthorization(string userEmail)
-        {
-            Guid userId = Guid.Empty;
-            if (base.Init())
-            {
-                var user = await _dataService.GetUserByEmail(userEmail);
-                return (user != null) ? user : null;
-            }
-            return null;
-        }
-
-        private async void RecordSuccessfulLogin(string userName, string userEmail, User user, string loginSource)
-        {
-            App.AuthUserId = user.Id;
-            App.AuthUserEmail = userEmail;
-            App.AuthUserName = userName;
-
-            Analytics.TrackEvent("Successful Login", new Dictionary<string, string>{
-                            { "Source", loginSource },
-                            { "UserName", userName },
-                            { "UserEmail", userEmail },
-                            { "UserId", user.Id.ToString() }
-                        });
-            ErrorDescription = string.Empty;
-
-            user.LastLoginDate = DateTime.UtcNow;
-            user.UpdatedBy = user.UserName;
-            user.UpdatedDate = DateTime.UtcNow;
-            user.InstallationId = (await AppCenter.GetInstallIdAsync()).ToString();
-
-            if (1 == await _dataService.UpdateUser(user))
-            {
-                await _dataService.QueueAsync(user.Id, QueueableObjects.UserUpdate);
-                _dataService.StartSafeQueuedUpdates();
-            }
-        }
-
-        private async Task RefreshUserDataAzureADAsync(string token)
-        {
-            //get data from API
-            HttpClient client = new HttpClient();
-            HttpRequestMessage message = new HttpRequestMessage(HttpMethod.Get, "https://graph.microsoft.com/v1.0/me");
-            message.Headers.Authorization = new System.Net.Http.Headers.AuthenticationHeaderValue("bearer", token);
-            HttpResponseMessage response = await client.SendAsync(message);
-            string responseString = await response.Content.ReadAsStringAsync();
-            if (response.IsSuccessStatusCode)
-            {
-                JObject user = JObject.Parse(responseString);
-                IsUserVisible = true;
-                DisplayName = user["displayName"].ToString();
-                GivenName = user["givenName"].ToString();
-                Id = user["id"].ToString();
-                SurName = user["surname"].ToString();
-                UserPrincipalName = user["userPrincipalName"].ToString();
-
-                var userObj = await CheckAuthorization(UserPrincipalName);
-                if (userObj != null)
-                {
-                    RecordSuccessfulLogin(DisplayName, UserPrincipalName, userObj, "Microsoft");
-                }
-                else
-                {
-                    Analytics.TrackEvent($"Unknown User: {UserPrincipalName} tried to login and does not have authorization.");
-                    ErrorDescription = "Sorry, we couldn't log you in. \nPlease contact the folks at Fox.Build \nto add your email address to the list. \nThanks!";
-                }
-            }
-            else
-            {
-                ErrorDescription = responseString;
-                Analytics.TrackEvent($"API call error: {responseString}");
-            }
-        }
-
-        #region UI properties
-
-        private string _guestButtonText;
-        private bool _isUserVisible;
-        private string _microsoftButtonText;
-        private string _userButtonText;
-
-        public string GuestButtonText
-        {
-            get { return _guestButtonText; }
-            set { Set(nameof(GuestButtonText), ref _guestButtonText, value); }
         }
 
         public bool IsUserVisible
@@ -313,59 +129,16 @@ namespace ResSched.ViewModels
             set { Set(nameof(UserButtonText), ref _userButtonText, value); }
         }
 
-        #endregion UI properties
-
-        #region display properties
-
-        private string _displayName;
-        private string _errorDescription;
-        private string _givenName;
-        private string _id;
-        private string _providerName;
-        private string _surName;
-        private string _token;
-        private string _userPrincipalName;
-
-        public string DisplayName
+        public string UserEnteredEmail
         {
-            get { return _displayName; }
-            set { Set(nameof(DisplayName), ref _displayName, value); }
-        }
-
-        public string ErrorDescription
-        {
-            get { return _errorDescription; }
-            set { Set(nameof(ErrorDescription), ref _errorDescription, value); }
-        }
-
-        public string GivenName
-        {
-            get { return _givenName; }
-            set { Set(nameof(GivenName), ref _givenName, value); }
-        }
-
-        public string Id
-        {
-            get { return _id; }
-            set { Set(nameof(Id), ref _id, value); }
-        }
-
-        public string ProviderName
-        {
-            get { return _providerName; }
-            set { Set(nameof(ProviderName), ref _providerName, value); }
-        }
-
-        public string SurName
-        {
-            get { return _surName; }
-            set { Set(nameof(SurName), ref _surName, value); }
-        }
-
-        public string Token
-        {
-            get { return _token; }
-            set { Set(nameof(Token), ref _token, value); }
+            get { return _userEnteredEmail; }
+            set
+            {
+                if (Set(nameof(UserEnteredEmail), ref _userEnteredEmail, value))
+                {
+                    RaisePropertyChanged(nameof(CanUserLogin));
+                }
+            }
         }
 
         public string UserPrincipalName
@@ -375,6 +148,137 @@ namespace ResSched.ViewModels
             set { Set(nameof(UserPrincipalName), ref _userPrincipalName, value); }
         }
 
-        #endregion display properties
+        public RelayCommand UserSignInCommand
+        {
+            get
+            {
+                return new RelayCommand(async () =>
+                {
+                    try
+                    {
+                        if (UserButtonText == UserText.Sign_in.ToDescription())
+                        {
+                            IsUserVisible = true;
+                            UserPrincipalName = UserEnteredEmail;
+
+                            var user = await CheckAuthorization(UserPrincipalName);
+                            if (user != null)
+                            {
+                                RecordSuccessfulLogin(user, "User Login");
+                            }
+                            else
+                            {
+                                Analytics.TrackEvent($"Unknown User: {UserPrincipalName} tried to login and does not have authorization.");
+                            }
+
+                            GuestButtonText = GuestText.Sign_in_as_Guest.ToDescription();
+                            UserButtonText = UserText.Sign_out.ToDescription();
+                        }
+                        else
+                        {
+                            App.AuthUserEmail = string.Empty;
+                            App.AuthUserName = string.Empty;
+                            IsUserVisible = false;
+                            Preferences.Clear();
+
+                            GuestButtonText = GuestText.Sign_in_as_Guest.ToDescription();
+                            UserButtonText = UserText.Sign_in.ToDescription();
+                        }
+                    }
+                    catch (Exception ex)
+                    {
+                        ErrorDescription = ex.Message;
+                        Crashes.TrackError(ex);
+                    }
+                });
+            }
+        }
+
+        internal async Task InitVM()
+        {
+            string userInBelly = Preferences.Get("user_email", null);
+            if (!string.IsNullOrEmpty(userInBelly))
+            {
+                var user = await CheckAuthorization(userInBelly);
+                if (user != null)
+                {
+                    UserEnteredEmail = userInBelly;
+                    RecordSuccessfulPassiveLogin(user);
+                    GuestButtonText = GuestText.Sign_in_as_Guest.ToDescription();
+                    UserButtonText = UserText.Sign_out.ToDescription();
+                }
+                else
+                {
+                    Analytics.TrackEvent($"Unknown User: {userInBelly} is a past authorized user, attempted login and was rejected.");
+                }
+            }
+        }
+
+        private async Task<User> CheckAuthorization(string userEmail)
+        {
+            Guid userId = Guid.Empty;
+            if (base.Init())
+            {
+                var user = await _dataService.GetUserByEmail(userEmail);
+                return (user != null) ? user : null;
+            }
+            return null;
+        }
+
+        private async void RecordSuccessfulLogin(User user, string loginSource)
+        {
+            App.AuthUserId = user.Id;
+            App.AuthUserEmail = user.Email;
+            App.AuthUserName = user.Name;
+            if (user.Email.ToLower() != "guest.guest.com")
+            {
+                Preferences.Set("user_email", user.Email);
+            }
+
+            Analytics.TrackEvent("Successful Login", new Dictionary<string, string>{
+                            { "Source", loginSource },
+                            { "UserName", user.Name },
+                            { "UserEmail", user.Email },
+                            { "UserId", user.Id.ToString() }
+                        });
+            ErrorDescription = string.Empty;
+
+            user.LastLoginDate = DateTime.UtcNow;
+            user.UpdatedBy = user.UserName;
+            user.UpdatedDate = DateTime.UtcNow;
+            user.InstallationId = (await AppCenter.GetInstallIdAsync()).ToString();
+
+            if (1 == await _dataService.UpdateUser(user))
+            {
+                await _dataService.QueueAsync(user.Id, QueueableObjects.UserUpdate);
+                _dataService.StartSafeQueuedUpdates();
+            }
+        }
+
+        private async void RecordSuccessfulPassiveLogin(User user)
+        {
+            App.AuthUserId = user.Id;
+            App.AuthUserEmail = user.Email;
+            App.AuthUserName = user.Name;
+
+            Analytics.TrackEvent("Successful Login", new Dictionary<string, string>{
+                            { "Source", "PassiveLogin" },
+                            { "UserName", user.Name },
+                            { "UserEmail", user.Email },
+                            { "UserId", user.Id.ToString() }
+                        });
+            ErrorDescription = string.Empty;
+
+            user.LastLoginDate = DateTime.UtcNow;
+            user.UpdatedBy = user.UserName;
+            user.UpdatedDate = DateTime.UtcNow;
+            user.InstallationId = (await AppCenter.GetInstallIdAsync()).ToString();
+
+            if (1 == await _dataService.UpdateUser(user))
+            {
+                await _dataService.QueueAsync(user.Id, QueueableObjects.UserUpdate);
+                _dataService.StartSafeQueuedUpdates();
+            }
+        }
     }
 }

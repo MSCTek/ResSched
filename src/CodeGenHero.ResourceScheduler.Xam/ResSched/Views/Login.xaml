@@ -4,10 +4,6 @@
              xmlns:vm="clr-namespace:ResSched.ViewModels"
              x:Class="ResSched.Views.Login">
 
-    <ContentPage.BindingContext>
-        <vm:LoginViewModel />
-    </ContentPage.BindingContext>
-
     <ContentPage.Content>
         <StackLayout HorizontalOptions="Center" Spacing="0" Margin="40">
 

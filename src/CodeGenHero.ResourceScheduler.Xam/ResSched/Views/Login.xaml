@@ -24,19 +24,19 @@
                         Style="{StaticResource ButtonStyle}" IsEnabled="{Binding CanUserLogin}" />
             </Grid>
 
-            <Label Text="OR" HorizontalOptions="CenterAndExpand"  FontAttributes="Bold" Margin="20" />
+            <!--<Label Text="OR" HorizontalOptions="CenterAndExpand"  FontAttributes="Bold" Margin="20" />
 
             <Button Text="{Binding GuestButtonText}" Command="{Binding GuestSignInCommand}" Margin="0,20,0,10"
-                    Style="{StaticResource ButtonStyle}" />
+                    Style="{StaticResource ButtonStyle}" />-->
 
             <StackLayout IsVisible="{Binding IsUserVisible}" Padding="5,10">
                 <StackLayout Orientation="Horizontal">
                     <Label Text="You are currently logged in as: " FontAttributes="Bold" />
                     <Label Text="{Binding UserPrincipalName}" />
                 </StackLayout>
-
-                <Label Text="{Binding ErrorDescription} " FontAttributes="Bold" Margin="0,20" />
             </StackLayout>
+
+            <Label Text="{Binding ErrorDescription} " HorizontalOptions="CenterAndExpand" FontAttributes="Bold" Margin="0,20" />
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

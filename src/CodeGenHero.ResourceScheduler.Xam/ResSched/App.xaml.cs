@@ -80,7 +80,7 @@ namespace ResSched
 
             //MainPage = new MainPage()
             var welcome = new WelcomePage();
-            welcome.BindingContext = new WelcomeViewModel(Kernel.Get<IDataLoadService>());
+            welcome.BindingContext = new WelcomeViewModel();
             MainPage = welcome;
         }
 

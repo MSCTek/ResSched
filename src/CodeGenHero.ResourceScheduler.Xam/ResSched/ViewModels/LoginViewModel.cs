@@ -82,24 +82,19 @@ namespace ResSched.ViewModels
                             if (user != null)
                             {
                                 RecordSuccessfulLogin(user, "Guest Login");
+                                GuestButtonText = GuestText.Sign_out_as_Guest.ToDescription();
+                                UserButtonText = UserText.Sign_in.ToDescription();
                             }
                             else
                             {
+                                Logout();
+                                ErrorDescription = $"Can't log you in! Please contact someone at Fox.Build.";
                                 Analytics.TrackEvent($"Unknown User: {UserPrincipalName} tried to login and does not have authorization.");
                             }
-
-                            GuestButtonText = GuestText.Sign_out_as_Guest.ToDescription();
-                            UserButtonText = UserText.Sign_in.ToDescription();
                         }
                         else
                         {
-                            App.AuthUserEmail = string.Empty;
-                            App.AuthUserName = string.Empty;
-                            IsUserVisible = false;
-                            Preferences.Clear();
-
-                            GuestButtonText = GuestText.Sign_in_as_Guest.ToDescription();
-                            UserButtonText = UserText.Sign_in.ToDescription();
+                            Logout();
                         }
                     }
                     catch (Exception ex)
@@ -165,24 +160,19 @@ namespace ResSched.ViewModels
                             if (user != null)
                             {
                                 RecordSuccessfulLogin(user, "User Login");
+                                GuestButtonText = GuestText.Sign_in_as_Guest.ToDescription();
+                                UserButtonText = UserText.Sign_out.ToDescription();
                             }
                             else
                             {
+                                Logout();
+                                ErrorDescription = $"Can't log you in! Please contact someone at Fox.Build.";
                                 Analytics.TrackEvent($"Unknown User: {UserPrincipalName} tried to login and does not have authorization.");
                             }
-
-                            GuestButtonText = GuestText.Sign_in_as_Guest.ToDescription();
-                            UserButtonText = UserText.Sign_out.ToDescription();
                         }
                         else
                         {
-                            App.AuthUserEmail = string.Empty;
-                            App.AuthUserName = string.Empty;
-                            IsUserVisible = false;
-                            Preferences.Clear();
-
-                            GuestButtonText = GuestText.Sign_in_as_Guest.ToDescription();
-                            UserButtonText = UserText.Sign_in.ToDescription();
+                            Logout();
                         }
                     }
                     catch (Exception ex)
@@ -223,6 +213,17 @@ namespace ResSched.ViewModels
                 return (user != null) ? user : null;
             }
             return null;
+        }
+
+        private void Logout()
+        {
+            App.AuthUserEmail = string.Empty;
+            App.AuthUserName = string.Empty;
+            IsUserVisible = false;
+            Preferences.Clear();
+
+            GuestButtonText = GuestText.Sign_in_as_Guest.ToDescription();
+            UserButtonText = UserText.Sign_in.ToDescription();
         }
 
         private async void RecordSuccessfulLogin(User user, string loginSource)

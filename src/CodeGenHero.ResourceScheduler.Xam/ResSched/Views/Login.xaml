@@ -29,13 +29,11 @@
             <Button Text="{Binding GuestButtonText}" Command="{Binding GuestSignInCommand}" Margin="0,20,0,10"
                     Style="{StaticResource ButtonStyle}" />-->
 
-            <StackLayout IsVisible="{Binding IsUserVisible}" Padding="5,10">
-                <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
-                    <Label Text="You are currently logged in as: " FontAttributes="Bold" />
-                    <Label Text="{Binding UserPrincipalName}" />
-                </StackLayout>
+            <StackLayout IsVisible="{Binding IsUserVisible}" Padding="5,10" HorizontalOptions="Center">
+                <Label Text="You are currently logged in as: " FontAttributes="Bold" HorizontalOptions="Center" />
+                <Label Text="{Binding UserPrincipalName}" HorizontalOptions="Center" />
                 <Button Text="Let's Go!" Command="{Binding GoToResourcesCommand}"
-                        HorizontalOptions="CenterAndExpand" Style="{StaticResource ButtonStyle}" />
+                        HorizontalOptions="Center" Style="{StaticResource ButtonStyle}" />
             </StackLayout>
 
             <Label Text="{Binding ErrorDescription} " HorizontalOptions="CenterAndExpand" FontAttributes="Bold" Margin="0,20" />

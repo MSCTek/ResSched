@@ -46,10 +46,14 @@ namespace ResSched.Services
                 }
 
                 var resourcesDTO = await _webAPIDataService.GetAllPagesResourcesAsync(lastUpdatedDate);
-
+                int count = 0;
                 if (resourcesDTO.Any())
                 {
-                    return await _db.GetAsyncConnection().InsertAllAsync(resourcesDTO.Select(x => x.ToModelData()));
+                    foreach (var r in resourcesDTO)
+                    {
+                        count += await _db.GetAsyncConnection().InsertOrReplaceAsync(r.ToModelData());
+                    }
+                    return count;
                 }
                 else
                 {
@@ -76,10 +80,14 @@ namespace ResSched.Services
                 }
 
                 var resourceSchedulesDTO = await _webAPIDataService.GetAllPagesResourceSchedulesAsync(lastUpdatedDate);
-
+                int count = 0;
                 if (resourceSchedulesDTO.Any())
                 {
-                    return await _db.GetAsyncConnection().InsertAllAsync(resourceSchedulesDTO.Select(x => x.ToModelData()));
+                    foreach (var r in resourceSchedulesDTO)
+                    {
+                        count += await _db.GetAsyncConnection().InsertOrReplaceAsync(r.ToModelData());
+                    }
+                    return count;
                 }
                 else
                 {

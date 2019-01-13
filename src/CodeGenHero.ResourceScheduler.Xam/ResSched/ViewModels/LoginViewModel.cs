@@ -4,10 +4,12 @@ using Microsoft.AppCenter;
 using Microsoft.AppCenter.Analytics;
 using Microsoft.AppCenter.Crashes;
 using ResSched.Helpers;
+using ResSched.Views;
 using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using Xamarin.Essentials;
+using Xamarin.Forms;
 
 namespace ResSched.ViewModels
 {
@@ -59,6 +61,18 @@ namespace ResSched.ViewModels
             set { Set(nameof(ErrorDescription), ref _errorDescription, value); }
         }
 
+        public RelayCommand GoToResourcesCommand
+        {
+            get
+            {
+                return new RelayCommand(async () =>
+                {
+                    MainPage rootPage = Application.Current.MainPage as MainPage;
+                    await rootPage.NavigateFromMenu(0);
+                });
+            }
+        }
+
         public string GuestButtonText
         {
             get { return _guestButtonText; }
@@ -75,12 +89,12 @@ namespace ResSched.ViewModels
                     {
                         if (GuestButtonText == GuestText.Sign_in_as_Guest.ToDescription())
                         {
-                            IsUserVisible = true;
                             UserPrincipalName = "guest@guest.com";
 
                             var user = await CheckAuthorization(UserPrincipalName);
                             if (user != null)
                             {
+                                IsUserVisible = true;
                                 RecordSuccessfulLogin(user, "Guest Login");
                                 GuestButtonText = GuestText.Sign_out_as_Guest.ToDescription();
                                 UserButtonText = UserText.Sign_in.ToDescription();
@@ -153,12 +167,12 @@ namespace ResSched.ViewModels
                     {
                         if (UserButtonText == UserText.Sign_in.ToDescription())
                         {
-                            IsUserVisible = true;
                             UserPrincipalName = UserEnteredEmail;
 
                             var user = await CheckAuthorization(UserPrincipalName);
                             if (user != null)
                             {
+                                IsUserVisible = true;
                                 RecordSuccessfulLogin(user, "User Login");
                                 GuestButtonText = GuestText.Sign_in_as_Guest.ToDescription();
                                 UserButtonText = UserText.Sign_out.ToDescription();
@@ -192,6 +206,8 @@ namespace ResSched.ViewModels
                 var user = await CheckAuthorization(userInBelly);
                 if (user != null)
                 {
+                    IsUserVisible = true;
+                    UserPrincipalName = userInBelly;
                     UserEnteredEmail = userInBelly;
                     RecordSuccessfulPassiveLogin(user);
                     GuestButtonText = GuestText.Sign_in_as_Guest.ToDescription();

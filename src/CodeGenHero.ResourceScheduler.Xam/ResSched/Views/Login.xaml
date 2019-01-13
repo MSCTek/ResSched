@@ -30,10 +30,12 @@
                     Style="{StaticResource ButtonStyle}" />-->
 
             <StackLayout IsVisible="{Binding IsUserVisible}" Padding="5,10">
-                <StackLayout Orientation="Horizontal">
+                <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
                     <Label Text="You are currently logged in as: " FontAttributes="Bold" />
                     <Label Text="{Binding UserPrincipalName}" />
                 </StackLayout>
+                <Button Text="Let's Go!" Command="{Binding GoToResourcesCommand}"
+                        HorizontalOptions="CenterAndExpand" Style="{StaticResource ButtonStyle}" />
             </StackLayout>
 
             <Label Text="{Binding ErrorDescription} " HorizontalOptions="CenterAndExpand" FontAttributes="Bold" Margin="0,20" />

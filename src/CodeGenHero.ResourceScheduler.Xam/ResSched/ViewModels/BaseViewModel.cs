@@ -7,12 +7,14 @@ namespace ResSched.ViewModels
     public class BaseViewModel : ObservableObject
     {
         protected IDataRetrievalService _dataService;
+        protected IDataLoadService _dataLoadService;
 
         public bool Init()
         {
             //TODO: move this to the constructors...but hey, so convienient just like this...maybe leave it as is...
             var ker = ((ResSched.App)Xamarin.Forms.Application.Current).Kernel;
             _dataService = ker.Get<IDataRetrievalService>();
+            _dataLoadService = ker.Get<IDataLoadService>();
             return true;
         }
 

@@ -6,6 +6,7 @@ using ResSched.Models;
 using System;
 using System.Collections.ObjectModel;
 using System.Threading.Tasks;
+using Xamarin.Essentials;
 
 namespace ResSched.ViewModels
 {
@@ -114,9 +115,20 @@ namespace ResSched.ViewModels
 
         public async Task Refresh()
         {
-            base.Init();
-            ResourceSchedules = (await base._dataService.GetResourceSchedules(Resource.Id)).ToObservableCollection();
-            HourlySchedules = await _dataService.BuildHourlyScheduleAsync(SelectedDate, Resource.Id);
+            if (base.Init())
+            {
+                //update the resource schedules from the webAPI, if it has been more than an hour since it was done
+                var lastResourceScheduleUpdate = Preferences.Get(Config.Preference_LastResourceScheduleUpdate, null);
+                if (lastResourceScheduleUpdate != null)
+                {
+                    if ((DateTime.Parse(lastResourceScheduleUpdate)).AddHours(1) < DateTime.UtcNow)
+                    {
+                        await _dataLoadService.LoadResourceSchedules();
+                    }
+                }
+                ResourceSchedules = (await base._dataService.GetResourceSchedules(Resource.Id)).ToObservableCollection();
+                HourlySchedules = await _dataService.BuildHourlyScheduleAsync(SelectedDate, Resource.Id);
+            }
         }
 
         private async void BuildHourlySchedule()

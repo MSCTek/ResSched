@@ -196,7 +196,7 @@ namespace ResSched.ViewModels
 
         internal async Task InitVM()
         {
-            string userInBelly = Preferences.Get("user_email", null);
+            string userInBelly = Preferences.Get(Config.Preference_Email, null);
             if (!string.IsNullOrEmpty(userInBelly))
             {
                 var user = await CheckAuthorization(userInBelly);
@@ -230,9 +230,9 @@ namespace ResSched.ViewModels
             App.AuthUserId = user.Id;
             App.AuthUserEmail = user.Email;
             App.AuthUserName = user.Name;
-            if (user.Email.ToLower() != "guest.guest.com")
+            if (user.Email.ToLower() != "guest@guest.com")
             {
-                Preferences.Set("user_email", user.Email);
+                Preferences.Set(Config.Preference_Email, user.Email);
             }
 
             Analytics.TrackEvent("Successful Login", new Dictionary<string, string>{

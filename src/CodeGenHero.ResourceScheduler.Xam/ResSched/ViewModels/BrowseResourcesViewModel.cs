@@ -1,7 +1,9 @@
 ﻿using CodeGenHero.ResourceScheduler.Xam.ModelObj.RS;
 using ResSched.Mappers;
+using System;
 using System.Collections.ObjectModel;
 using System.Threading.Tasks;
+using Xamarin.Essentials;
 
 namespace ResSched.ViewModels
 {
@@ -25,7 +27,16 @@ namespace ResSched.ViewModels
         {
             if (base.Init())
             {
-                //update the resources.
+                //update the resources from the webAPI, if it has been more than an hour since it was done
+                var lastResourceUpdate = Preferences.Get(Config.Preference_LastResourceUpdate, null);
+                if (lastResourceUpdate != null)
+                {
+                    if ((DateTime.Parse(lastResourceUpdate)).AddHours(1) < DateTime.UtcNow)
+                    {
+                        await _dataLoadService.LoadResources();
+                    }
+                }
+
                 Items = (await _dataService.GetAllResources()).ToObservableCollection();
             }
         }

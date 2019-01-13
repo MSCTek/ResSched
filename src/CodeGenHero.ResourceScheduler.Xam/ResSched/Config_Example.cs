@@ -2,10 +2,15 @@
 
 namespace ResSched
 {
-    //public class Config_Example
-    public class Config
+    public class Config_Example
+    //public class Config
     {
         //These are shared by all environments
+
+        public const string Preference_Email = "user_email";
+        public const string Preference_LastResourceUpdate = "last_resource_update";
+        public const string Preference_LastResourceScheduleUpdate = "last_schedule_update";
+
         public const string BaseWebApiUrl = "";
 
         public static List<int> Hours = new List<int>() { 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20 };

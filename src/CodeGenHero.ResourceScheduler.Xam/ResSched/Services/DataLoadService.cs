@@ -106,10 +106,14 @@ namespace ResSched.Services
                 }
 
                 var usersDTO = await _webAPIDataService.GetAllPagesUsersAsync(lastUpdatedDate);
-
+                int count = 0;
                 if (usersDTO.Any())
                 {
-                    return await _db.GetAsyncConnection().InsertAllAsync(usersDTO.Select(x => x.ToModelData()));
+                    foreach (var u in usersDTO)
+                    {
+                        count += await _db.GetAsyncConnection().InsertOrReplaceAsync(u.ToModelData());
+                    }
+                    return count;
                 }
                 else
                 {

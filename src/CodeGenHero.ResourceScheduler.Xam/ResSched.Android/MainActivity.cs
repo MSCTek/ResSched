@@ -44,7 +44,7 @@ namespace ResSched.Droid
             LoadApplication(new App(new DroidPlatformModule()));
 
             //for MSAL
-            App.UiParent = new UIParent(Xamarin.Forms.Forms.Context as Activity);
+            //App.UiParent = new UIParent(Xamarin.Forms.Forms.Context as Activity);
 
             //for safe backgrounding
             SubscribeToMessages();

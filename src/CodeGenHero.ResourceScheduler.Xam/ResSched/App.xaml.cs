@@ -19,19 +19,6 @@ namespace ResSched
 {
     public partial class App : Application
     {
-        //TODO: Replace with *.azurewebsites.net url after deploying backend to Azure
-        public static string AzureBackendUrl = "http://localhost:5000";
-
-        public static bool UseMockDataStore = true;
-
-        #region MSAL
-
-        public static string AuthClientID = Config.MSALClientId;
-        public static string[] AuthScopes = Config.MSALAuthScopes;
-        public static PublicClientApplication PCA = null;
-        public static UIParent UiParent { get; set; }
-
-        #endregion MSAL
 
         #region AuthId
 
@@ -50,12 +37,6 @@ namespace ResSched
         public App(params INinjectModule[] platformModules)
         {
             InitializeComponent();
-
-            //MSAL
-            PCA = new PublicClientApplication(AuthClientID)
-            {
-                RedirectUri = Config.MSALRedirectUri,
-            };
 
             // Register core services
             Kernel = new StandardKernel(new CoreModule());

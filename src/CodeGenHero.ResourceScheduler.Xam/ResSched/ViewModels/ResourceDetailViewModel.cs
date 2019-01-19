@@ -1,5 +1,6 @@
 ﻿using CodeGenHero.ResourceScheduler.Xam.ModelObj.RS;
 using GalaSoft.MvvmLight.Command;
+using Microsoft.AppCenter.Crashes;
 using ResSched.Helpers;
 using ResSched.Mappers;
 using ResSched.Models;
@@ -117,13 +118,24 @@ namespace ResSched.ViewModels
         {
             if (base.Init())
             {
-                //update the resource schedules from the webAPI, if it has been more than an hour since it was done
-                var lastResourceScheduleUpdate = Preferences.Get(Config.Preference_LastResourceScheduleUpdate, null);
-                if (lastResourceScheduleUpdate != null)
+                if (Connectivity.NetworkAccess == NetworkAccess.Internet)
                 {
-                    if ((DateTime.Parse(lastResourceScheduleUpdate)).AddHours(1) < DateTime.UtcNow)
+                    try
                     {
-                        await _dataLoadService.LoadResourceSchedules();
+                        //update the resource schedules from the webAPI, if it has been more than an hour since it was done
+                        var lastResourceScheduleUpdate = Preferences.Get(Config.Preference_LastResourceScheduleUpdate, null);
+                        if (lastResourceScheduleUpdate != null)
+                        {
+                            if ((DateTime.Parse(lastResourceScheduleUpdate)).AddHours(1) < DateTime.UtcNow)
+                            {
+                                await _dataLoadService.LoadResourceSchedules();
+                                Preferences.Set(Config.Preference_LastResourceScheduleUpdate, DateTime.UtcNow.ToString());
+                            }
+                        }
+                    }
+                    catch (Exception ex)
+                    {
+                        Crashes.TrackError(ex);
                     }
                 }
                 ResourceSchedules = (await base._dataService.GetResourceSchedules(Resource.Id)).ToObservableCollection();

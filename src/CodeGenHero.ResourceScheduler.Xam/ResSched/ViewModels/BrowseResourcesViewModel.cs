@@ -1,4 +1,5 @@
 ﻿using CodeGenHero.ResourceScheduler.Xam.ModelObj.RS;
+using Microsoft.AppCenter.Crashes;
 using ResSched.Mappers;
 using System;
 using System.Collections.ObjectModel;
@@ -27,16 +28,26 @@ namespace ResSched.ViewModels
         {
             if (base.Init())
             {
-                //update the resources from the webAPI, if it has been more than an hour since it was done
-                var lastResourceUpdate = Preferences.Get(Config.Preference_LastResourceUpdate, null);
-                if (lastResourceUpdate != null)
+                if (Connectivity.NetworkAccess == NetworkAccess.Internet)
                 {
-                    if ((DateTime.Parse(lastResourceUpdate)).AddHours(1) < DateTime.UtcNow)
+                    try
                     {
-                        await _dataLoadService.LoadResources();
+                        //update the resources from the webAPI, if it has been more than an hour since it was done
+                        var lastResourceUpdate = Preferences.Get(Config.Preference_LastResourceUpdate, null);
+                        if (lastResourceUpdate != null)
+                        {
+                            if ((DateTime.Parse(lastResourceUpdate)).AddHours(1) < DateTime.UtcNow)
+                            {
+                                await _dataLoadService.LoadResources();
+                                Preferences.Set(Config.Preference_LastResourceUpdate, DateTime.UtcNow.ToString());
+                            }
+                        }
+                    }
+                    catch (Exception ex)
+                    {
+                        Crashes.TrackError(ex);
                     }
                 }
-
                 Items = (await _dataService.GetAllResources()).ToObservableCollection();
             }
         }

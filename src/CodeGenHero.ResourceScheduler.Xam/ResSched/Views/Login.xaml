@@ -5,38 +5,38 @@
              x:Class="ResSched.Views.Login">
 
     <ContentPage.Content>
-        <StackLayout HorizontalOptions="Center" Spacing="0" Margin="40">
-
-            <Image Margin="0,40,0,0" HeightRequest="150">
-                <Image.Source>
-                    <UriImageSource Uri="{StaticResource FoxImage}" CacheValidity="100" CachingEnabled="True" />
-                </Image.Source>
-            </Image>
-
-            <Label Text="Log In" HorizontalOptions="CenterAndExpand" FontAttributes="Bold" FontSize="Large" />
-            <Grid Margin="0,20,0,10">
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="*" />
-                    <ColumnDefinition Width="auto" />
-                </Grid.ColumnDefinitions>
-                <Entry Grid.Column="0" Text="{Binding UserEnteredEmail}" />
-                <Button Grid.Column="1" Text="{Binding UserButtonText}" Command="{Binding UserSignInCommand}"
+        <ScrollView HorizontalOptions="CenterAndExpand">
+            <StackLayout HorizontalOptions="CenterAndExpand" Spacing="0" Margin="40">
+                <Image Margin="0,40,0,0" HeightRequest="150">
+                    <Image.Source>
+                        <UriImageSource Uri="{StaticResource FoxImage}" CacheValidity="100" CachingEnabled="True" />
+                    </Image.Source>
+                </Image>
+                <Label Text="Log In" HorizontalOptions="CenterAndExpand" FontAttributes="Bold" FontSize="Large" />
+                <Grid Margin="20" HorizontalOptions="CenterAndExpand">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="auto" />
+                        <ColumnDefinition Width="auto" />
+                    </Grid.ColumnDefinitions>
+                    <Entry Grid.Column="0" Text="{Binding UserEnteredEmail}" HorizontalOptions="CenterAndExpand" WidthRequest="300"/>
+                    <Button Grid.Column="1" Text="{Binding UserButtonText}" Command="{Binding UserSignInCommand}" WidthRequest="75"
                         Style="{StaticResource ButtonStyle}" IsEnabled="{Binding CanUserLogin}" />
-            </Grid>
+                </Grid>
 
-            <!--<Label Text="OR" HorizontalOptions="CenterAndExpand"  FontAttributes="Bold" Margin="20" />
+                <!--<Label Text="OR" HorizontalOptions="CenterAndExpand"  FontAttributes="Bold" Margin="20" />
 
             <Button Text="{Binding GuestButtonText}" Command="{Binding GuestSignInCommand}" Margin="0,20,0,10"
                     Style="{StaticResource ButtonStyle}" />-->
 
-            <StackLayout IsVisible="{Binding IsUserVisible}" Padding="5,10" HorizontalOptions="Center">
-                <Label Text="You are currently logged in as: " FontAttributes="Bold" HorizontalOptions="Center" />
-                <Label Text="{Binding UserPrincipalName}" HorizontalOptions="Center" />
-                <Button Text="Let's Go!" Command="{Binding GoToResourcesCommand}"
+                <StackLayout IsVisible="{Binding IsUserVisible}" Padding="5,10" HorizontalOptions="CenterAndExpand">
+                    <Label Text="You are currently logged in as: " FontAttributes="Bold" HorizontalOptions="CenterAndExpand" />
+                    <Label Text="{Binding UserPrincipalName}" HorizontalOptions="CenterAndExpand" />
+                    <Button Text="Let's Go!" Command="{Binding GoToResourcesCommand}" WidthRequest="250"
                         HorizontalOptions="Center" Style="{StaticResource ButtonStyle}" />
-            </StackLayout>
+                </StackLayout>
 
-            <Label Text="{Binding ErrorDescription} " HorizontalOptions="CenterAndExpand" FontAttributes="Bold" Margin="0,20" />
-        </StackLayout>
+                <Label Text="{Binding ErrorDescription} " HorizontalOptions="CenterAndExpand" FontAttributes="Bold" Margin="0,20" />
+            </StackLayout>
+        </ScrollView>
     </ContentPage.Content>
 </ContentPage>

@@ -122,16 +122,8 @@ namespace ResSched.ViewModels
                 {
                     try
                     {
-                        //update the resource schedules from the webAPI, if it has been more than an hour since it was done
-                        var lastResourceScheduleUpdate = Preferences.Get(Config.Preference_LastResourceScheduleUpdate, null);
-                        if (lastResourceScheduleUpdate != null)
-                        {
-                            if ((DateTime.Parse(lastResourceScheduleUpdate)).AddHours(1) < DateTime.UtcNow)
-                            {
-                                await _dataLoadService.LoadResourceSchedules();
-                                Preferences.Set(Config.Preference_LastResourceScheduleUpdate, DateTime.UtcNow.ToString());
-                            }
-                        }
+                        await _dataLoadService.LoadResourceSchedules();
+                        Preferences.Set(Config.Preference_LastResourceScheduleUpdate, DateTime.UtcNow.ToString());
                     }
                     catch (Exception ex)
                     {

@@ -200,6 +200,10 @@ namespace ResSched.ViewModels
 
         internal async Task InitVM()
         {
+            GuestButtonText = GuestText.Sign_in_as_Guest.ToDescription();
+            UserButtonText = UserText.Sign_in.ToDescription();
+            ErrorDescription = string.Empty;
+
             string userInBelly = Preferences.Get(Config.Preference_Email, null);
             if (!string.IsNullOrEmpty(userInBelly))
             {

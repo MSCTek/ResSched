@@ -49,24 +49,35 @@ namespace ResSched.ViewModels
             {
                 if (Connectivity.NetworkAccess == NetworkAccess.Internet)
                 {
-                    var numUsers = await _dataLoadService.LoadUsers();
-                    DisplayMessage = $"Loading.";
-                    Preferences.Set(Config.Preference_LastUserUpdate, DateTime.UtcNow.ToString());
-                    await Task.Delay(500);
+                    //if (await _dataLoadService.HeartbeatCheck())
+                    if (true)
+                    {
+                        var numUsers = await _dataLoadService.LoadUsers();
+                        DisplayMessage = $"Loading.";
+                        Preferences.Set(Config.Preference_LastUserUpdate, DateTime.UtcNow.ToString());
+                        await Task.Delay(500);
 
-                    var numResources = await _dataLoadService.LoadResources();
-                    DisplayMessage = $"Loading..";
-                    Preferences.Set(Config.Preference_LastResourceUpdate, DateTime.UtcNow.ToString());
-                    await Task.Delay(500);
+                        var numResources = await _dataLoadService.LoadResources();
+                        DisplayMessage = $"Loading..";
+                        Preferences.Set(Config.Preference_LastResourceUpdate, DateTime.UtcNow.ToString());
+                        await Task.Delay(500);
 
-                    var numResourceSchedules = await _dataLoadService.LoadResourceSchedules();
-                    DisplayMessage = $"Loading...";
-                    Preferences.Set(Config.Preference_LastResourceScheduleUpdate, DateTime.UtcNow.ToString());
-                    await Task.Delay(500);
+                        var numResourceSchedules = await _dataLoadService.LoadResourceSchedules();
+                        DisplayMessage = $"Loading...";
+                        Preferences.Set(Config.Preference_LastResourceScheduleUpdate, DateTime.UtcNow.ToString());
+                        await Task.Delay(500);
 
-                    DisplayMessage = $"All Done";
-                    IsBusy = false;
-                    Xamarin.Forms.Application.Current.MainPage = new Views.MainPage();
+                        DisplayMessage = $"All Done";
+                        IsBusy = false;
+                        Xamarin.Forms.Application.Current.MainPage = new Views.MainPage();
+                    }
+                    else
+                    {
+                        //No API
+                        DisplayMessage = $"Our services are down. Please try again later.";
+                        IsBusy = false;
+                        ShowTryAgainButton = true;
+                    }
                 }
                 else
                 {

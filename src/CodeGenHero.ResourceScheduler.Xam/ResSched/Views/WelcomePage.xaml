@@ -13,7 +13,7 @@
                 </Image.Source>
             </Image>
             <Label Text="Welcome" HorizontalOptions="CenterAndExpand" FontAttributes="Bold" FontSize="Large" />
-            <ActivityIndicator IsRunning="True" WidthRequest="200" HeightRequest="50" IsVisible="{Binding IsBusy}" />
+            <ActivityIndicator IsRunning="True" WidthRequest="200" HeightRequest="50" IsVisible="{Binding IsBusy}" HorizontalOptions="CenterAndExpand" />
             <Label Text="{Binding DisplayMessage}" Margin="20" HorizontalOptions="CenterAndExpand" />
             <Button Text="Try Again" Command="{Binding TryAgainCommand}" IsVisible="{Binding ShowTryAgainButton}" />
         </StackLayout>

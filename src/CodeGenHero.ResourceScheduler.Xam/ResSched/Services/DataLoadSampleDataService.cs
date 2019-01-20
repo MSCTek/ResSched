@@ -16,6 +16,11 @@ namespace ResSched.Services
             _db = database;
         }
 
+        public async Task<bool> HeartbeatCheck()
+        {
+            return true;
+        }
+
         public async Task<int> LoadResources()
         {
             try

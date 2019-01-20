@@ -33,6 +33,19 @@ namespace ResSched.Services
             _webAPIDataService = new WebApiDataServiceRS(null, context);
         }
 
+        public async Task<bool> HeartbeatCheck()
+        {
+            try
+            {
+                return await _webAPIDataService.IsServiceOnlineAsync();
+            }
+            catch (Exception ex)
+            {
+                Crashes.TrackError(ex);
+                return false;
+            }
+        }
+
         public async Task<int> LoadResources()
         {
             try

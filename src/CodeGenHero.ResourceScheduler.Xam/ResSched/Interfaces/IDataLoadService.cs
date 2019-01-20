@@ -4,6 +4,8 @@ namespace ResSched.Interfaces
 {
     public partial interface IDataLoadService
     {
+        Task<bool> HeartbeatCheck();
+
         Task<int> LoadResources();
 
         Task<int> LoadResourceSchedules();

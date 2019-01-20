@@ -7,6 +7,7 @@ using Microsoft.AppCenter.Analytics;
 using Microsoft.AppCenter.Crashes;
 using ResSched.Helpers;
 using ResSched.Interfaces;
+using ResSched.Mappers;
 using ResSched.ModelData;
 using System;
 using System.Collections.Generic;
@@ -205,8 +206,21 @@ namespace ResSched.Services
                             await _db.GetAsyncConnection().UpdateAsync(q);
                         }
                     }
-
-                    if (q.QueueableObject == QueueableObjects.UserUpdate.ToString())
+                    else if (q.QueueableObject == QueueableObjects.ResourceScheduleUpdate.ToString())
+                    {
+                        if (await RunQueuedResourceScheduleUpdate(q))
+                        {
+                            q.NumAttempts += 1;
+                            q.Success = true;
+                            await _db.GetAsyncConnection().UpdateAsync(q);
+                        }
+                        else
+                        {
+                            q.NumAttempts += 1;
+                            await _db.GetAsyncConnection().UpdateAsync(q);
+                        }
+                    }
+                    else if (q.QueueableObject == QueueableObjects.UserUpdate.ToString())
                     {
                         if (await RunQueuedUserUpdate(q))
                         {
@@ -264,23 +278,42 @@ namespace ResSched.Services
 
         public async Task<int> WriteResourceSchedule(objModel.ResourceSchedule resourceSchedule)
         {
-            return await _db.GetAsyncConnection().InsertOrReplaceAsync(resourceSchedule.ToModelData());
+            //write this to the PendingResourceSchedule table
+            var pending = new dataModel.PendingResourceSchedule()
+            {
+                CreatedBy = resourceSchedule.CreatedBy,
+                CreatedDate = resourceSchedule.CreatedDate,
+                Id = resourceSchedule.Id,
+                IsDeleted = resourceSchedule.IsDeleted,
+                ReservationDate = resourceSchedule.ReservationDate,
+                ReservationEndDateTime = resourceSchedule.ReservationEndDateTime,
+                ReservationNotes = resourceSchedule.ReservationNotes,
+                ReservationStartDateTime = resourceSchedule.ReservationStartDateTime,
+                ReservedByUserId = resourceSchedule.ReservedByUserId,
+                ReservedForUser = resourceSchedule.ReservedForUser,
+                ReservedOnDateTime = resourceSchedule.ReservedOnDateTime,
+                ResourceId = resourceSchedule.ResourceId,
+                UpdatedBy = resourceSchedule.UpdatedBy,
+                UpdatedDate = resourceSchedule.UpdatedDate
+            };
+
+            return await _db.GetAsyncConnection().InsertOrReplaceAsync(pending);
         }
 
         private async Task<bool> RunQueuedResourceScheduleCreate(ModelData.Queue q)
         {
             if (_webAPIDataService == null) { return false; }
 
-            var record = await _db.GetAsyncConnection().Table<dataModel.ResourceSchedule>().Where(x => x.Id == q.RecordId).FirstOrDefaultAsync();
+            var record = await _db.GetAsyncConnection().Table<dataModel.PendingResourceSchedule>().Where(x => x.Id == q.RecordId).FirstOrDefaultAsync();
             if (record != null)
             {
                 var result = await _webAPIDataService.CreateResourceScheduleAsync(record.ToDto());
                 if (result.IsSuccessStatusCode)
                 {
-                    Debug.WriteLine($"Successfully Sent Queued ResourceSchedule Create Record");
+                    Debug.WriteLine($"Successfully Sent Queued PendingResourceSchedule Create Record");
                     return true;
                 }
-                Analytics.TrackEvent($"Error Sending Queued ResourceSchedule Create record {q.RecordId}");
+                Analytics.TrackEvent($"Error Sending Queued PendingResourceSchedule Create record {q.RecordId}");
                 return false;
             }
             return false;
@@ -290,16 +323,16 @@ namespace ResSched.Services
         {
             if (_webAPIDataService == null) { return false; }
 
-            var record = await _db.GetAsyncConnection().Table<dataModel.ResourceSchedule>().Where(x => x.Id == q.RecordId).FirstOrDefaultAsync();
+            var record = await _db.GetAsyncConnection().Table<dataModel.PendingResourceSchedule>().Where(x => x.Id == q.RecordId).FirstOrDefaultAsync();
             if (record != null)
             {
                 var result = await _webAPIDataService.UpdateResourceScheduleAsync(record.ToDto());
                 if (result.IsSuccessStatusCode)
                 {
-                    Debug.WriteLine($"Successfully Sent Queued ResourceSchedule Update Record");
+                    Debug.WriteLine($"Successfully Sent Queued PendingResourceSchedule Update Record");
                     return true;
                 }
-                Analytics.TrackEvent($"Error Sending Queued ResourceSchedule Update record {q.RecordId}");
+                Analytics.TrackEvent($"Error Sending Queued PendingResourceSchedule Update record {q.RecordId}");
                 return false;
             }
             return false;

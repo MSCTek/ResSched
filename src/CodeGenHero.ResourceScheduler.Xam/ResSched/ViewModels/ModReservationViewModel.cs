@@ -124,6 +124,10 @@ namespace ResSched.ViewModels
                             }
                             _dataService.StartSafeQueuedUpdates();
 
+                            //give a little message to tell the user that their changes/new reservation is pending.
+                            //this stalls a bit and allows the message to get up there and the update to come back
+                            await Application.Current.MainPage.DisplayAlert("", "Updating Schedule...", "OK");
+
                             //navigate back
                             await Application.Current.MainPage.Navigation.PopModalAsync();
                         }

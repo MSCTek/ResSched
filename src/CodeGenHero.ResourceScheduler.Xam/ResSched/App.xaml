@@ -21,7 +21,7 @@
                     <Setter.Value>
                         <OnPlatform x:TypeArguments="x:String"
                                     Android="fa-regular-400.ttf#Font Awesome 5 Free Regular"
-                                    iOS="Font Awesome 5 Free Regular"
+                                    iOS="Font Awesome 5 Free"
                                     WinPhone="Assets/fa-regular-400.ttf#Font Awesome 5 Free" />
                     </Setter.Value>
                 </Setter>
@@ -34,17 +34,6 @@
                                     Android="fa-brands-400.ttf#Font Awesome 5 Brands Regular"
                                     iOS="Font Awesome 5 Brands Regular"
                                     WinPhone="Assets/fa-brands-400.ttf#Font Awesome 5 Brands" />
-                    </Setter.Value>
-                </Setter>
-            </Style>
-
-            <Style x:Key="FA.Solid.LabelStyle"  TargetType="Label">
-                <Setter Property="FontFamily">
-                    <Setter.Value>
-                        <OnPlatform x:TypeArguments="x:String"
-                                    Android="fa-solid-900.ttf#Font Awesome 5 Free Solid"
-                                    iOS="Font Awesome 5 Free Solid"
-                                    WinPhone="Assets/fa-solid-900.ttf#Font Awesome 5 Free Solid" />
                     </Setter.Value>
                 </Setter>
             </Style>

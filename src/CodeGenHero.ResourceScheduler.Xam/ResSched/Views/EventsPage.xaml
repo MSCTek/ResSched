@@ -2,74 +2,81 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:cnvt="clr-namespace:ResSched.Converters"
-             x:Class="ResSched.Views.EventsPage">
+             x:Class="ResSched.Views.EventsPage"
+             Title="What's Going On?">
 
-  <ContentPage.Resources>
-    <cnvt:AntiBoolConverter x:Key="AntiBoolConverter" />
-  </ContentPage.Resources>
+    <ContentPage.Resources>
+        <cnvt:AntiBoolConverter x:Key="AntiBoolConverter" />
+    </ContentPage.Resources>
 
-  <ContentPage.Content>
-    <Grid RowSpacing="0">
-      <Grid.RowDefinitions>
-        <RowDefinition Height="80" />
-        <RowDefinition Height="2" />
-        <RowDefinition Height="*" />
-      </Grid.RowDefinitions>
+    <ContentPage.Content>
+        <Grid RowSpacing="0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="80" />
+                <RowDefinition Height="2" />
+                <RowDefinition Height="auto" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
 
-      <Grid Grid.Row="0" BackgroundColor="White">
-        <Grid.ColumnDefinitions>
-          <ColumnDefinition Width="*" />
-          <ColumnDefinition Width="auto" />
-        </Grid.ColumnDefinitions>
-
-        <StackLayout Grid.Column="0" Orientation="Vertical" Margin="20,10" Spacing="3">
-          <Label Text="Fox.Build" FontSize="Medium" />
-          <Button Text="{Binding EventsSortDirectionText}" Command="{Binding EventsSortCommand}" WidthRequest="75"
-              Style="{StaticResource ButtonStyle}" IsEnabled="{Binding CanEventsSort}" />
-        </StackLayout>
-
-        <Image Grid.Column="1" Margin="0,5,15,0" HeightRequest="80" VerticalOptions="End">
-          <Image.Source>
-            <UriImageSource Uri="{StaticResource FoxImage}" CacheValidity="100" CachingEnabled="True" />
-          </Image.Source>
-        </Image>
-      </Grid>
-
-      <BoxView Grid.Row="1" BackgroundColor="Gray" />
-
-      <Label Grid.Row="2" Text="Oh No! You need an internet connection to view upcoming events at Fox.Build!"
-             HorizontalOptions="Center" HorizontalTextAlignment="Center" Margin="40" IsVisible="{Binding ShowNeedInternetMessage}" />
-
-      <ListView x:Name="ItemsListView" Grid.Row="2"
-        ItemsSource="{Binding Events}" IsVisible="{Binding ShowNeedInternetMessage, Converter={StaticResource AntiBoolConverter}}"
-        VerticalOptions="FillAndExpand" HasUnevenRows="true"
-        CachingStrategy="RecycleElement">
-        <ListView.ItemTemplate>
-          <DataTemplate>
-            <ViewCell>
-              <StackLayout Padding="20,5">
-                <Grid HorizontalOptions="FillAndExpand">
-                  <Grid.ColumnDefinitions>
+            <Grid Grid.Row="0" BackgroundColor="White">
+                <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="*" />
                     <ColumnDefinition Width="auto" />
-                  </Grid.ColumnDefinitions>
-                  <Label Grid.Column="0" Text="{Binding name}" LineBreakMode="WordWrap"  Style="{DynamicResource ListItemTextStyle}"  FontSize="Medium" />
+                </Grid.ColumnDefinitions>
 
-                  <Image Grid.Column="1" Margin="10,5,0,5" HeightRequest="50" VerticalOptions="Start" HorizontalOptions="End">
-                    <Image.Source>
-                      <UriImageSource Uri="{Binding photo_url}" CacheValidity="100" CachingEnabled="True" />
-                    </Image.Source>
-                  </Image>
-                </Grid>
-                <Label Text="{Binding eventBeginDisplay}" FontAttributes="Bold" />
-                <Label Text="{Binding descriptionDisplay}" Style="{DynamicResource ListItemDetailTextStyle}" />
-                <Button Text="Learn More"  Clicked="LearnMoreButton_Clicked" />
-                <BoxView BackgroundColor="Gray" HeightRequest="1" WidthRequest="350" HorizontalOptions="CenterAndExpand" />
-              </StackLayout>
-            </ViewCell>
-          </DataTemplate>
-        </ListView.ItemTemplate>
-      </ListView>
-    </Grid>
-  </ContentPage.Content>
+                <StackLayout Grid.Column="0" Orientation="Vertical" Margin="20,10" Spacing="3">
+                    <Label Text="Fox.Build" FontSize="Medium" />
+                    <Label Text="Events Feed from Meetup.com" FontSize="Default" />
+                </StackLayout>
+
+                <StackLayout Grid.Column="1" Orientation="Horizontal" Margin="0,5,15,0" Spacing="3">
+
+                    <Image HeightRequest="80" VerticalOptions="End">
+                        <Image.Source>
+                            <UriImageSource Uri="{StaticResource FoxImage}" CacheValidity="100" CachingEnabled="True" />
+                        </Image.Source>
+                    </Image>
+                </StackLayout>
+            </Grid>
+
+            <BoxView Grid.Row="1" BackgroundColor="Gray" />
+
+            <!--<Button  Grid.Row="2" Text="{Binding EventsSortDirectionText}" Command="{Binding EventsSortCommand}"
+                     IsVisible="{Binding ShowNeedInternetMessage, Converter={StaticResource AntiBoolConverter}}" HeightRequest="35"
+                     WidthRequest="100" Style="{StaticResource ButtonStyle}" IsEnabled="{Binding CanEventsSort}" />-->
+
+            <Label Grid.Row="2" Text="Oh No! You need an internet connection to view upcoming events at Fox.Build!"
+                    HorizontalOptions="Center" HorizontalTextAlignment="Center" Margin="40" IsVisible="{Binding ShowNeedInternetMessage}" />
+
+            <ListView x:Name="ItemsListView" Grid.Row="3"
+                    ItemsSource="{Binding Events}" IsVisible="{Binding ShowNeedInternetMessage, Converter={StaticResource AntiBoolConverter}}"
+                    VerticalOptions="FillAndExpand" HasUnevenRows="true" CachingStrategy="RecycleElement">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout Padding="20,5">
+                                <Grid HorizontalOptions="FillAndExpand">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="*" />
+                                        <ColumnDefinition Width="auto" />
+                                    </Grid.ColumnDefinitions>
+                                    <Label Grid.Column="0" Text="{Binding name}" LineBreakMode="WordWrap"  Style="{DynamicResource ListItemTextStyle}"  FontSize="Medium" />
+
+                                    <Image Grid.Column="1" Margin="10,5,0,5" HeightRequest="50" VerticalOptions="Start" HorizontalOptions="End">
+                                        <Image.Source>
+                                            <UriImageSource Uri="{Binding photo_url}" CacheValidity="100" CachingEnabled="True" />
+                                        </Image.Source>
+                                    </Image>
+                                </Grid>
+                                <Label Text="{Binding eventBeginDisplay}" FontAttributes="Bold" />
+                                <Label Text="{Binding descriptionDisplay}" Style="{DynamicResource ListItemDetailTextStyle}" />
+                                <Button Text="Learn More"  Clicked="LearnMoreButton_Clicked" />
+                                <BoxView BackgroundColor="Gray" HeightRequest="1" WidthRequest="350" HorizontalOptions="CenterAndExpand" />
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </Grid>
+    </ContentPage.Content>
 </ContentPage>

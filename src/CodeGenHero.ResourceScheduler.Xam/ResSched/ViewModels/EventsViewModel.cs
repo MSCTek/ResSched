@@ -47,12 +47,12 @@ namespace ResSched.ViewModels
                 if (value == true)
                 {
                     Events = Events.SortByTime(ListSortDirection.Ascending);
-                    EventsSortDirectionText = $"Events Feed from Meetup.com - Sorted {Enum.GetName(typeof(ListSortDirection), ListSortDirection.Ascending)}"; // {char.ConvertFromUtf32(0x2191)}";
+                    EventsSortDirectionText = $"Sort {Enum.GetName(typeof(ListSortDirection), ListSortDirection.Ascending)}"; // {char.ConvertFromUtf32(0x2191)}";
                 }
                 else
                 {
                     Events = Events.SortByTime(ListSortDirection.Descending);
-                    EventsSortDirectionText = $"Events Feed from Meetup.com - Sorted {Enum.GetName(typeof(ListSortDirection), ListSortDirection.Descending)}"; // {char.ConvertFromUtf32(0x2193)}";
+                    EventsSortDirectionText = $"Sort {Enum.GetName(typeof(ListSortDirection), ListSortDirection.Descending)}"; // {char.ConvertFromUtf32(0x2193)}";
                 }
 
                 Set(nameof(EventsSortAscending), ref _eventsSortAscending, value);

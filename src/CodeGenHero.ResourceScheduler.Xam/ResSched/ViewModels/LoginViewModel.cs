@@ -33,7 +33,6 @@ namespace ResSched.ViewModels
 
     public class LoginViewModel : BaseViewModel
     {
-        private string _errorDescription;
         private string _guestButtonText;
         private bool _isUserVisible;
         private string _microsoftButtonText;
@@ -53,12 +52,6 @@ namespace ResSched.ViewModels
         public bool CanUserLogin
         {
             get { return string.IsNullOrEmpty(UserEnteredEmail) ? false : true; }
-        }
-
-        public string ErrorDescription
-        {
-            get { return _errorDescription; }
-            set { Set(nameof(ErrorDescription), ref _errorDescription, value); }
         }
 
         public RelayCommand GoToResourcesCommand

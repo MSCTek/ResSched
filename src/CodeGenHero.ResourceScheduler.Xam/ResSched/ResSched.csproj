@@ -2,8 +2,8 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
-    <Version>1.0.1</Version>
-    <Company>MSCTek</Company>
+    <Version>1.0.2</Version>
+    <Company>MSC Technology Consulting</Company>
     <Product>ResourceScheduler</Product>
   </PropertyGroup>
 

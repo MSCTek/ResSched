@@ -48,7 +48,6 @@ namespace ResSched.ViewModels
                 {
                     Events = Events.SortByTime(ListSortDirection.Ascending);
                     EventsSortDirectionText = $"Events Feed from Meetup.com - Sorted {Enum.GetName(typeof(ListSortDirection), ListSortDirection.Ascending)}"; // {char.ConvertFromUtf32(0x2191)}";
-                    ; //
                 }
                 else
                 {

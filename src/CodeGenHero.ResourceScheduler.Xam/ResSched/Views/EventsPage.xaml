@@ -2,7 +2,8 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:cnvt="clr-namespace:ResSched.Converters"
-             x:Class="ResSched.Views.EventsPage">
+             x:Class="ResSched.Views.EventsPage"
+             Title="What's Going On?">
 
     <ContentPage.Resources>
         <cnvt:AntiBoolConverter x:Key="AntiBoolConverter" />
@@ -13,6 +14,7 @@
             <Grid.RowDefinitions>
                 <RowDefinition Height="80" />
                 <RowDefinition Height="2" />
+                <RowDefinition Height="auto" />
                 <RowDefinition Height="*" />
             </Grid.RowDefinitions>
 
@@ -27,22 +29,28 @@
                     <Label Text="Events Feed from Meetup.com" FontSize="Default" />
                 </StackLayout>
 
-                <Image Grid.Column="1" Margin="0,5,15,0" HeightRequest="80" VerticalOptions="End">
-                    <Image.Source>
-                        <UriImageSource Uri="{StaticResource FoxImage}" CacheValidity="100" CachingEnabled="True" />
-                    </Image.Source>
-                </Image>
+                <StackLayout Grid.Column="1" Orientation="Horizontal" Margin="0,5,15,0" Spacing="3">
+
+                    <Image HeightRequest="80" VerticalOptions="End">
+                        <Image.Source>
+                            <UriImageSource Uri="{StaticResource FoxImage}" CacheValidity="100" CachingEnabled="True" />
+                        </Image.Source>
+                    </Image>
+                </StackLayout>
             </Grid>
 
             <BoxView Grid.Row="1" BackgroundColor="Gray" />
 
-            <Label Grid.Row="2" Text="Oh No! You need an internet connection to view upcoming events at Fox.Build!"
-                   HorizontalOptions="Center" HorizontalTextAlignment="Center" Margin="40" IsVisible="{Binding ShowNeedInternetMessage}" />
+            <!--<Button  Grid.Row="2" Text="{Binding EventsSortDirectionText}" Command="{Binding EventsSortCommand}"
+                     IsVisible="{Binding ShowNeedInternetMessage, Converter={StaticResource AntiBoolConverter}}" HeightRequest="35"
+                     WidthRequest="100" Style="{StaticResource ButtonStyle}" IsEnabled="{Binding CanEventsSort}" />-->
 
-            <ListView x:Name="ItemsListView" Grid.Row="2"
-              ItemsSource="{Binding Events}" IsVisible="{Binding ShowNeedInternetMessage, Converter={StaticResource AntiBoolConverter}}"
-              VerticalOptions="FillAndExpand" HasUnevenRows="true"
-              CachingStrategy="RecycleElement">
+            <Label Grid.Row="2" Text="Oh No! You need an internet connection to view upcoming events at Fox.Build!"
+                    HorizontalOptions="Center" HorizontalTextAlignment="Center" Margin="40" IsVisible="{Binding ShowNeedInternetMessage}" />
+
+            <ListView x:Name="ItemsListView" Grid.Row="3"
+                    ItemsSource="{Binding Events}" IsVisible="{Binding ShowNeedInternetMessage, Converter={StaticResource AntiBoolConverter}}"
+                    VerticalOptions="FillAndExpand" HasUnevenRows="true" CachingStrategy="RecycleElement">
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell>

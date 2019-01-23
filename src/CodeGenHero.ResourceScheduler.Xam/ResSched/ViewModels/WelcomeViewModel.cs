@@ -49,8 +49,7 @@ namespace ResSched.ViewModels
             {
                 if (Connectivity.NetworkAccess == NetworkAccess.Internet)
                 {
-                    //if (await _dataLoadService.HeartbeatCheck())
-                    if (true)
+                    if (await _dataLoadService.HeartbeatCheck())
                     {
                         var numUsers = await _dataLoadService.LoadUsers();
                         DisplayMessage = $"Loading.";

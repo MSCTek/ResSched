@@ -28,6 +28,14 @@ namespace ResSched.ViewModels
             set { Set(ref _isBusy, value); }
         }
 
+        private string _errorDescription;
+
+        public string ErrorDescription
+        {
+            get { return _errorDescription; }
+            set { Set(nameof(ErrorDescription), ref _errorDescription, value); }
+        }
+
         public bool IsDevEnv
         {
             get

@@ -3,7 +3,8 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:ctrl="clr-namespace:ResSched.Controls"
              x:Class="ResSched.Views.AboutPage"
-             xmlns:vm="clr-namespace:ResSched.ViewModels">
+             xmlns:vm="clr-namespace:ResSched.ViewModels"
+             Title="What is Fox.Build?">
 
     <ContentPage.Content>
         <Grid RowSpacing="0">

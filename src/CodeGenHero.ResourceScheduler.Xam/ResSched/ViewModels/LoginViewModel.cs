@@ -25,15 +25,10 @@ namespace ResSched.ViewModels
         Sign_out_with_Microsoft,
     }
 
-    public enum UserText
-    {
-        Sign_in,
-        Sign_out,
-    }
-
     public class LoginViewModel : BaseViewModel
     {
-        private string _errorDescription;
+        private const string _signIn = "Sign In";
+        private const string _signOut = "Sign Out";
         private string _guestButtonText;
         private bool _isUserVisible;
         private string _microsoftButtonText;
@@ -45,7 +40,7 @@ namespace ResSched.ViewModels
         public LoginViewModel()
         {
             GuestButtonText = GuestText.Sign_in_as_Guest.ToDescription();
-            UserButtonText = UserText.Sign_in.ToDescription();
+            UserButtonText = _signIn;
             MicrosoftButtonText = MicrosoftText.Sign_in_with_Microsoft.ToDescription();
             ErrorDescription = string.Empty;
         }
@@ -53,12 +48,6 @@ namespace ResSched.ViewModels
         public bool CanUserLogin
         {
             get { return string.IsNullOrEmpty(UserEnteredEmail) ? false : true; }
-        }
-
-        public string ErrorDescription
-        {
-            get { return _errorDescription; }
-            set { Set(nameof(ErrorDescription), ref _errorDescription, value); }
         }
 
         public RelayCommand GoToResourcesCommand
@@ -97,7 +86,7 @@ namespace ResSched.ViewModels
                                 IsUserVisible = true;
                                 RecordSuccessfulLogin(user, "Guest Login");
                                 GuestButtonText = GuestText.Sign_out_as_Guest.ToDescription();
-                                UserButtonText = UserText.Sign_in.ToDescription();
+                                UserButtonText = _signIn;
                             }
                             else
                             {
@@ -165,7 +154,7 @@ namespace ResSched.ViewModels
                 {
                     try
                     {
-                        if (UserButtonText == UserText.Sign_in.ToDescription())
+                        if (UserButtonText == _signIn)
                         {
                             UserPrincipalName = UserEnteredEmail;
 
@@ -175,7 +164,7 @@ namespace ResSched.ViewModels
                                 IsUserVisible = true;
                                 RecordSuccessfulLogin(user, "User Login");
                                 GuestButtonText = GuestText.Sign_in_as_Guest.ToDescription();
-                                UserButtonText = UserText.Sign_out.ToDescription();
+                                UserButtonText = _signOut;
                             }
                             else
                             {
@@ -201,7 +190,7 @@ namespace ResSched.ViewModels
         internal async Task InitVM()
         {
             GuestButtonText = GuestText.Sign_in_as_Guest.ToDescription();
-            UserButtonText = UserText.Sign_in.ToDescription();
+            UserButtonText = _signIn;
             ErrorDescription = string.Empty;
 
             string userInBelly = Preferences.Get(Config.Preference_Email, null);
@@ -215,7 +204,7 @@ namespace ResSched.ViewModels
                     UserEnteredEmail = userInBelly;
                     RecordSuccessfulPassiveLogin(user);
                     GuestButtonText = GuestText.Sign_in_as_Guest.ToDescription();
-                    UserButtonText = UserText.Sign_out.ToDescription();
+                    UserButtonText = _signOut;
                 }
                 else
                 {
@@ -243,7 +232,7 @@ namespace ResSched.ViewModels
             Preferences.Clear();
 
             GuestButtonText = GuestText.Sign_in_as_Guest.ToDescription();
-            UserButtonText = UserText.Sign_in.ToDescription();
+            UserButtonText = _signIn;
         }
 
         private async void RecordSuccessfulLogin(User user, string loginSource)

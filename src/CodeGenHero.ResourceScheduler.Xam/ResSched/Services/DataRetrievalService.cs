@@ -122,7 +122,7 @@ namespace ResSched.Services
 
             var dataResults = await _db.GetAsyncConnection()
                 .Table<dataModel.ResourceSchedule>()
-                .Where(x => x.ReservedByUserId == userId && x.IsDeleted == false)
+                .Where(x => x.ReservedByUserId == userId && x.IsDeleted == false && x.ReservationDate >= DateTime.Today)
                 .ToListAsync();
 
             if (dataResults.Any())

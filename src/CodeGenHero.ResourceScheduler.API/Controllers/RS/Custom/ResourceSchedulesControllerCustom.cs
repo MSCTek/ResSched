@@ -77,8 +77,10 @@ namespace CodeGenHero.ResourceScheduler.API.Controllers.RS
         {
             var hourlySchedules = new List<HourlySchedule>();
             var schedules = Repo.RSDataContext.ResourceSchedules.Where(
-                x => x.ReservationStartDateTime >= selectedDate 
-                && x.ReservationStartDateTime <= selectedDate.AddDays(1));
+                x => x.ResourceId == resourceId
+                && x.ReservationStartDateTime >= selectedDate 
+                && x.ReservationStartDateTime <= selectedDate.AddDays(1)
+                && x.IsDeleted == false);
             
             foreach (var h in Hours)
             {

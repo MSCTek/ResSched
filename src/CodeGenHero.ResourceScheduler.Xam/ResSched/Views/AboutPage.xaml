@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:ctrl="clr-namespace:ResSched.Controls"
@@ -47,7 +47,6 @@
                             <StackLayout.GestureRecognizers>
                                 <TapGestureRecognizer Command="{Binding PhoneCommand}" />
                             </StackLayout.GestureRecognizers>
-                            <Label Style="{StaticResource FA.Solid.LabelStyle}" Text="&#xf095;" HeightRequest="50" TextColor="Black" FontSize="20" />
                             <Label Text="P: (630) 344-9385" />
                         </StackLayout>
                     </StackLayout>

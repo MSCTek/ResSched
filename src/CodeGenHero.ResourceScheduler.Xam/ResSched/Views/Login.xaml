@@ -18,19 +18,19 @@
                         <ColumnDefinition Width="*" />
                         <ColumnDefinition Width="auto" />
                     </Grid.ColumnDefinitions>
-                    <Entry Grid.Column="0" Text="{Binding UserEnteredEmail}" HorizontalOptions="FillAndExpand" MinimumWidthRequest="150"/>
+                    <Entry Grid.Column="0" Text="{Binding UserEnteredEmail}" HorizontalOptions="FillAndExpand" MinimumWidthRequest="150" />
                     <Button Grid.Column="1" Text="{Binding UserButtonText}" Command="{Binding UserSignInCommand}" WidthRequest="75"
                         Style="{StaticResource ButtonStyle}" IsEnabled="{Binding CanUserLogin}" />
                 </Grid>
 
-                <!--<Label Text="OR" HorizontalOptions="CenterAndExpand"  FontAttributes="Bold" Margin="20" />
+                <Label Text="OR" HorizontalOptions="CenterAndExpand"  FontAttributes="Bold" Margin="20" />
 
-            <Button Text="{Binding GuestButtonText}" Command="{Binding GuestSignInCommand}" Margin="0,20,0,10"
-                    Style="{StaticResource ButtonStyle}" />-->
+                <Button Text="{Binding GuestButtonText}" Command="{Binding GuestSignInCommand}" Margin="5,10"
+                    HorizontalOptions="Center" Style="{StaticResource ButtonStyle}" WidthRequest="250" />
 
                 <StackLayout IsVisible="{Binding IsUserVisible}" Padding="5,10" HorizontalOptions="CenterAndExpand">
                     <Label Text="You are currently logged in as: " FontAttributes="Bold" HorizontalOptions="CenterAndExpand" />
-                    <Label Text="{Binding UserPrincipalName}" HorizontalOptions="CenterAndExpand" />
+                    <Label Text="{Binding UserDisplayName}" HorizontalOptions="CenterAndExpand" />
                     <Button Text="Let's Go!" Command="{Binding GoToResourcesCommand}" WidthRequest="250"
                         HorizontalOptions="Center" Style="{StaticResource ButtonStyle}" />
                 </StackLayout>

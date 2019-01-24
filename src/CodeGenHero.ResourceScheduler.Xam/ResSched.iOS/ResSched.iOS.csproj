@@ -86,7 +86,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <BundleResource Include="Resources\fa-regular-400.ttf" />
     <BundleResource Include="Resources\fa-brands-400.ttf" />
-    <BundleResource Include="Resources\fa-solid-900.ttf" />
     <Compile Include="Modules\IOSPlatformModule.cs" />
     <Compile Include="Services\IOSRunQueuedUpdateService.cs" />
     <Compile Include="Services\IOSSQLite.cs" />

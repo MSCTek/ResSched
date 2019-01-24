@@ -28,7 +28,7 @@ namespace ResSched.ViewModels
 
         public bool CanBook
         {
-            get { return SelectedDate >= DateTime.Now.Date; }
+            get { return (SelectedDate >= DateTime.Now.Date && App.AuthUserEmail != "guest@guest.com"); }
         }
 
         public bool CanNavigateBackward

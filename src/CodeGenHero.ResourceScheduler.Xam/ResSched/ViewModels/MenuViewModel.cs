@@ -24,7 +24,7 @@ namespace ResSched.ViewModels
 
             ObservableCollection<HomeMenuItem> items;
 
-            if (App.AuthUserName == string.Empty)
+            if (App.AuthUserName == string.Empty || App.AuthUserEmail == "guest@guest.com")
             {
                 items = new ObservableCollection<HomeMenuItem>
                 {

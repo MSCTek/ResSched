@@ -81,7 +81,7 @@ namespace ResSched.ViewModels
                 else
                 {
                     //no connectivity
-                    DisplayMessage = $"No internet connectivity. Please try again.";
+                    DisplayMessage = $"Limited or no internet connectivity. Please try again!";
                     IsBusy = false;
                     ShowTryAgainButton = true;
                 }

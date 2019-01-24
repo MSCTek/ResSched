@@ -313,6 +313,10 @@ namespace ResSched.Services
                     Debug.WriteLine($"Successfully Sent Queued PendingResourceSchedule Create Record");
                     return true;
                 }
+                else if (result.StatusCode == System.Net.HttpStatusCode.Conflict)
+                {
+                    //do something here with the conflict
+                }
                 Analytics.TrackEvent($"Error Sending Queued PendingResourceSchedule Create record {q.RecordId}");
                 return false;
             }
@@ -331,6 +335,10 @@ namespace ResSched.Services
                 {
                     Debug.WriteLine($"Successfully Sent Queued PendingResourceSchedule Update Record");
                     return true;
+                }
+                else if (result.StatusCode == System.Net.HttpStatusCode.Conflict)
+                {
+                    //do something here with the conflict
                 }
                 Analytics.TrackEvent($"Error Sending Queued PendingResourceSchedule Update record {q.RecordId}");
                 return false;

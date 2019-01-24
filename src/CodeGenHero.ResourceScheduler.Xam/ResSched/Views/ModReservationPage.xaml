@@ -22,33 +22,40 @@
                 <RowDefinition Height="80" />
                 <RowDefinition Height="2" />
                 <RowDefinition Height="auto" />
-                <RowDefinition Height="auto" />
                 <RowDefinition Height="*" />
-                <RowDefinition Height="auto" />
             </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="2*" />
+            </Grid.ColumnDefinitions>
 
-            <Grid Grid.Row="0" BackgroundColor="White">
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="*" />
-                    <ColumnDefinition Width="auto" />
-                </Grid.ColumnDefinitions>
+            <StackLayout Grid.Column="0" Orientation="Vertical" WidthRequest="400" Margin="20,10" Spacing="3">
+                <Label Text="Fox.Build" FontSize="Medium" />
+                <Label Text="{Binding PageHeaderText}" FontSize="Default" />
+            </StackLayout>
 
-                <StackLayout Grid.Column="0" Orientation="Vertical" Margin="20,10" Spacing="3">
-                    <Label Text="Fox.Build" FontSize="Medium" />
-                    <Label Text="{Binding PageHeaderText}" FontSize="Default" />
-                </StackLayout>
-
-                <Image Grid.Column="1" Margin="0,5,15,0" HeightRequest="75" VerticalOptions="End">
-                    <Image.Source>
-                        <UriImageSource Uri="{StaticResource FoxImage}" CacheValidity="100" CachingEnabled="True" />
-                    </Image.Source>
-                </Image>
-            </Grid>
+            <Image Grid.Column="1" Margin="60,5,15,0" HeightRequest="75" VerticalOptions="Center" HorizontalOptions="Start">
+                <Image.Source>
+                    <UriImageSource Uri="{StaticResource FoxImage}" CacheValidity="100" CachingEnabled="True" />
+                </Image.Source>
+            </Image>
 
             <BoxView Grid.Row="1" BackgroundColor="Gray" />
 
-            <StackLayout Grid.Row="2" Spacing="3" Margin="30,10">
-                <Label Text="{Binding SelectedDateDisplay}" HorizontalOptions="Center" HorizontalTextAlignment="Center" FontSize="Medium" />
+            <StackLayout Grid.Row="2" Spacing="3" Margin="5,20">
+                <StackLayout>
+                    <Image HeightRequest="60" VerticalOptions="Start">
+                        <Image.Source>
+                            <UriImageSource Uri="{Binding ResourceSchedule.Resource.ImageLink}" CacheValidity="100" CachingEnabled="True" />
+                        </Image.Source>
+                    </Image>
+                    <StackLayout Orientation="Vertical">
+                        <Label Text="{Binding ResourceSchedule.Resource.Name}" FontSize="Medium" HorizontalTextAlignment="Center" />
+                        <Label Text="{Binding ResourceSchedule.Resource.Description}" HorizontalTextAlignment="Center" />
+                    </StackLayout>
+                </StackLayout>
+
+                <Label Text="{Binding SelectedDateDisplay}" HorizontalOptions="Center" HorizontalTextAlignment="Center" FontSize="Medium" Margin="0,10" />
 
                 <Label Text="Reserved For (required):" />
                 <Entry Text="{Binding ResourceSchedule.ReservedForUser}" />
@@ -61,45 +68,41 @@
 
                 <Label Text="End Time:" />
                 <Picker ItemsSource="{Binding EndHourList}" SelectedItem="{Binding SelectedEndHour, Mode=TwoWay}" />
+
+                <StackLayout Spacing="3" Orientation="Horizontal" VerticalOptions="Center">
+                    <Button Text="{Binding SubmitButtonText}" Command="{Binding ReserveCommand}" Margin="15,15,10,0" HeightRequest="80" WidthRequest="120" />
+                    <Button Text="Cancel" Command="{Binding CancelCommand}" Margin="10,15,15,0" HeightRequest="80" WidthRequest="120" />
+                </StackLayout>
             </StackLayout>
 
-            <StackLayout Grid.Row="3" Spacing="3">
-                <Label Text="Existing Schedule:" HorizontalOptions="Center" HorizontalTextAlignment="Center" />
-            </StackLayout>
+            <StackLayout Grid.Row="2" Grid.Column="1" Spacing="3" Margin="30,10" Orientation="Vertical">
+                <Label Text="Existing Schedule:" HorizontalOptions="Start" HorizontalTextAlignment="Start" Margin="30,0" />
 
-            <ListView Grid.Row="4" Margin="15"
+                <ListView Margin="15"
                     ItemsSource="{Binding HourlySchedules}" HorizontalOptions="Center" HasUnevenRows="true" CachingStrategy="RecycleElement">
-                <ListView.ItemTemplate>
-                    <DataTemplate>
-                        <ViewCell>
-                            <!--<cntr:HourlyViewCell HourlySchedule="{Binding .}" />-->
-                            <!-- Converting this to a control -->
-                            <Grid Margin="40,0,0,0">
-                                <Grid.ColumnDefinitions>
-                                    <ColumnDefinition Width="auto" />
-                                    <ColumnDefinition Width="1*" />
-                                    <ColumnDefinition Width="2*" />
-                                    <ColumnDefinition Width="auto" />
-                                </Grid.ColumnDefinitions>
-                                <Label Grid.Column="0" Text="{Binding CalendarIcon}" VerticalOptions="Center" Margin="5" FontSize="Medium"
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+                                <!--<cntr:HourlyViewCell HourlySchedule="{Binding .}" />-->
+                                <!-- Converting this to a control -->
+                                <Grid Margin="20,0,0,0">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="auto" />
+                                        <ColumnDefinition Width="1*" />
+                                        <ColumnDefinition Width="2*" />
+                                        <ColumnDefinition Width="auto" />
+                                    </Grid.ColumnDefinitions>
+                                    <Label Grid.Column="0" Text="{Binding CalendarIcon}" VerticalOptions="Center" Margin="5" FontSize="Medium"
                                        TextColor="{Binding IsReserved, Converter={StaticResource BoolToCalendarIconColorConverter}}" Style="{DynamicResource FA.Regular.LabelStyle}" />
-                                <Label Grid.Column="1" Text="{Binding HourDisplay}" HorizontalOptions="Start" VerticalOptions="Center" />
-                                <Label Grid.Column="2" Text="{Binding ReservedMessage}" HorizontalOptions="Start" VerticalOptions="Center" Margin="5"
+                                    <Label Grid.Column="1" Text="{Binding HourDisplay}" HorizontalOptions="Start" VerticalOptions="Center" />
+                                    <Label Grid.Column="2" Text="{Binding ReservedMessage}" HorizontalOptions="Start" VerticalOptions="Center" Margin="5"
                                        TextColor="{Binding IsReserved, Converter={StaticResource BoolToReservationColorConverter}}" />
-                            </Grid>
-                        </ViewCell>
-                    </DataTemplate>
-                </ListView.ItemTemplate>
-            </ListView>
-
-            <Grid Grid.Row="5" Margin="15">
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="1*" />
-                    <ColumnDefinition Width="1*" />
-                </Grid.ColumnDefinitions>
-                <Button Grid.Column="0" Text="Cancel" Command="{Binding CancelCommand}" />
-                <Button Grid.Column="1" Text="{Binding SubmitButtonText}" Command="{Binding ReserveCommand}" />
-            </Grid>
+                                </Grid>
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+            </StackLayout>
         </Grid>
     </ContentPage.Content>
 </ContentPage>

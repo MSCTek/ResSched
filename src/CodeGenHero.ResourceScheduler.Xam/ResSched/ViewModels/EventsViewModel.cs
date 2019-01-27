@@ -98,19 +98,28 @@ namespace ResSched.ViewModels
 
         public async Task InitVM()
         {
-            if (base.Init())
+            try
             {
-                if (Connectivity.NetworkAccess == NetworkAccess.Internet)
+                if (base.Init())
                 {
-                    Root = await Helpers.HTTPClientService.RefreshDataAsync();
-                    Events = Root.results.ToObservableCollection();
-                    EventsSortAscending = true; //.SortByTime(ListSortDirection.Ascending);
-                    ShowNeedInternetMessage = false;
+                    if (Connectivity.NetworkAccess == NetworkAccess.Internet)
+                    {
+                        Root = await Helpers.HTTPClientService.RefreshDataAsync();
+                        Events = Root.results.ToObservableCollection();
+                        EventsSortAscending = true; //.SortByTime(ListSortDirection.Ascending);
+                        ShowNeedInternetMessage = false;
+                    }
+                    else
+                    {
+                        ShowNeedInternetMessage = true;
+                    }
                 }
-                else
-                {
-                    ShowNeedInternetMessage = true;
-                }
+            }
+            catch (Exception ex)
+            {
+                //this weird error - not sure why it fails
+                Crashes.TrackError(ex);
+                ShowNeedInternetMessage = true;
             }
         }
     }

@@ -11,7 +11,10 @@ namespace ResSched.Views
     public partial class ModReservationPage : ContentPage
     {
         private ModReservationViewModel viewModel;
+        public ModReservationPage()
+        {
 
+        }
         //constructor for creating new resource schedules
         public ModReservationPage(DateTime selectedDate, Resource resource)
         {

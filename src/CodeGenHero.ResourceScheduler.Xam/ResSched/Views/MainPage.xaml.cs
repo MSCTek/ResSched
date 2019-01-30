@@ -47,6 +47,14 @@ namespace ResSched.Views
                     case (int)MenuItemType.Events:
                         MenuPages.Add(id, new NavigationPage(new EventsPage()));
                         break;
+
+                    case (int)MenuItemType.EditResources:
+                        MenuPages.Add(id, new NavigationPage(new EditResourcesPage()));
+                        break;
+
+                    case (int)MenuItemType.EditUsers:
+                        MenuPages.Add(id, new NavigationPage(new EditUsersPage()));
+                        break;
                 }
             }
 

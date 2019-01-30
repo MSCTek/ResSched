@@ -6,7 +6,9 @@
         About = 1,
         Login = 2,
         MyReservations = 3,
-        Events = 4
+        Events = 4,
+        EditUsers = 5,
+        EditResources = 6
     }
 
     public class HomeMenuItem

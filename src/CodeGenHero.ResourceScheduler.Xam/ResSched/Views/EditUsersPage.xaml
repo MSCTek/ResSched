@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ResSched.Views.EditUsersPage"
+             x:Name="ParentPage"
+             Title="Edit Users">
+
+    <ContentPage.Content>
+        <Grid RowSpacing="0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="80" />
+                <RowDefinition Height="2" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+
+            <Grid Grid.Row="0" BackgroundColor="White">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="auto" />
+                </Grid.ColumnDefinitions>
+
+                <StackLayout Grid.Column="0" Orientation="Vertical" Margin="20,10" Spacing="3">
+                    <Label Text="Fox.Build" FontSize="Medium" />
+                    <Label Text="Edit Users" FontSize="Default" />
+                </StackLayout>
+
+                <Image Grid.Column="1" Margin="0,5,15,0" HeightRequest="75" VerticalOptions="End">
+                    <Image.Source>
+                        <UriImageSource Uri="{StaticResource FoxImage}" CacheValidity="100" CachingEnabled="True" />
+                    </Image.Source>
+                </Image>
+            </Grid>
+
+            <BoxView Grid.Row="1" BackgroundColor="Gray" />
+
+            <StackLayout Grid.Row="2">
+                <ListView x:Name="ItemsListView"
+              ItemsSource="{Binding Users}"
+              VerticalOptions="FillAndExpand"
+              HasUnevenRows="true"
+              IsPullToRefreshEnabled="false"
+              CachingStrategy="RecycleElement"
+              ItemSelected="OnItemSelected">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+                                <StackLayout Orientation="Horizontal" Padding="5" >
+                                    <Label Text="&#xf044;" VerticalOptions="Center" Margin="5" Style="{DynamicResource FA.Regular.LabelStyle}"/>
+                                    <Label Text="{Binding Name}" LineBreakMode="NoWrap"  Style="{DynamicResource ListItemTextStyle}" />
+                                    <Label Text="{Binding UserName}" LineBreakMode="NoWrap"  Style="{DynamicResource ListItemTextStyle}" />
+                                    <Label Text="{Binding Email}"  LineBreakMode="NoWrap"  Style="{DynamicResource ListItemDetailTextStyle}" />
+                                    <Label Text="{Binding LastLoginDate}" LineBreakMode="NoWrap"  Style="{DynamicResource ListItemTextStyle}" />
+                                </StackLayout>
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+            </StackLayout>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

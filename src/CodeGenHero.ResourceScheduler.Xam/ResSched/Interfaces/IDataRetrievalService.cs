@@ -11,6 +11,8 @@ namespace ResSched.Interfaces
     {
         Task<List<Resource>> GetAllResources();
 
+        Task<List<User>> GetAllUsers();
+
         Task<List<ResourceSchedule>> GetResourceSchedules(Guid resourceId);
 
         Task<List<ResourceSchedule>> GetResourceSchedules(Guid resourceId, DateTime selectedDate);

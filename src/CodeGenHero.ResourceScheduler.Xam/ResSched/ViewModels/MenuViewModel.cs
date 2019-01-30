@@ -1,5 +1,6 @@
 ﻿using ResSched.Models;
 using System.Collections.ObjectModel;
+using Xamarin.Forms;
 
 namespace ResSched.ViewModels
 {
@@ -22,7 +23,7 @@ namespace ResSched.ViewModels
         {
             MenuItems.Clear();
 
-            ObservableCollection<HomeMenuItem> items;
+            ObservableCollection<HomeMenuItem> items = new ObservableCollection<HomeMenuItem>();
 
             if (App.AuthUserName == string.Empty || App.AuthUserEmail == "guest@guest.com")
             {
@@ -37,13 +38,18 @@ namespace ResSched.ViewModels
             else
             {
                 items = new ObservableCollection<HomeMenuItem>
+                    {
+                        new HomeMenuItem {Id = MenuItemType.Browse, Title="Browse Resources" },
+                        new HomeMenuItem {Id = MenuItemType.MyReservations, Title="My Reservations" },
+                        new HomeMenuItem {Id = MenuItemType.About, Title="About" },
+                        new HomeMenuItem {Id = MenuItemType.Events, Title="Events"},
+                        new HomeMenuItem {Id = MenuItemType.Login, Title="Logout" }
+                    };
+                if (Device.RuntimePlatform == Device.UWP)
                 {
-                    new HomeMenuItem {Id = MenuItemType.Browse, Title="Browse Resources" },
-                    new HomeMenuItem {Id = MenuItemType.MyReservations, Title="My Reservations" },
-                    new HomeMenuItem {Id = MenuItemType.About, Title="About" },
-                    new HomeMenuItem {Id = MenuItemType.Events, Title="Events"},
-                    new HomeMenuItem {Id = MenuItemType.Login, Title="Logout" }
-                };
+                    items.Add(new HomeMenuItem { Id = MenuItemType.EditUsers, Title = "Edit Users" });
+                    items.Add(new HomeMenuItem { Id = MenuItemType.EditResources, Title = "Edit Resources" });
+                }
             }
 
             MenuItems = items;

@@ -61,6 +61,23 @@ namespace ResSched.Services
             return returnMe;
         }
 
+        public async Task<List<objModel.User>> GetAllUsers()
+        {
+            var returnMe = new List<objModel.User>();
+            var dataResults = await _db.GetAsyncConnection()
+                .Table<dataModel.User>()
+                .OrderBy(x => x.Name).ToListAsync();
+
+            if (dataResults.Any())
+            {
+                foreach (var d in dataResults)
+                {
+                    returnMe.Add(d.ToModelObj());
+                }
+            }
+            return returnMe;
+        }
+
         //How many are queued, failed > MaxNumAttempts times?
         public async Task<int> GetCountQueuedRecordsWAttemptsAsync()
         {

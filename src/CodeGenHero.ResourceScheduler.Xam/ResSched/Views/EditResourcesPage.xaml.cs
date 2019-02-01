@@ -1,4 +1,5 @@
-﻿using ResSched.ViewModels;
+﻿using CodeGenHero.ResourceScheduler.Xam.ModelObj.RS;
+using ResSched.ViewModels;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -25,8 +26,16 @@ namespace ResSched.Views
             }
         }
 
-        private void OnItemSelected(object sender, SelectedItemChangedEventArgs e)
+        private async void OnItemSelected(object sender, SelectedItemChangedEventArgs e)
         {
+            var item = e.SelectedItem as Resource;
+            if (item == null)
+                return;
+
+            await Navigation.PushModalAsync(new EditResourceDetailsPage(new EditResourceDetailsViewModel(item)));
+
+            // Manually deselect item.
+            ItemsListView.SelectedItem = null;
         }
     }
 }

@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ResSched.Views.EditUserDetailsPage">
+    <ContentPage.Content>
+        <Grid RowSpacing="0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="80" />
+                <RowDefinition Height="2" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="auto" />
+            </Grid.RowDefinitions>
+
+            <Grid Grid.Row="0" BackgroundColor="White">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="auto" />
+                </Grid.ColumnDefinitions>
+
+                <StackLayout Grid.Column="0" Orientation="Vertical" Margin="20,10" Spacing="3">
+                    <Label Text="Fox.Build" FontSize="Medium" />
+                    <Label Text="Edit User" FontSize="Default" />
+                </StackLayout>
+
+                <Image Grid.Column="1" Margin="0,5,15,0" HeightRequest="75" VerticalOptions="End">
+                    <Image.Source>
+                        <UriImageSource Uri="{StaticResource FoxImage}" CacheValidity="100" CachingEnabled="True" />
+                    </Image.Source>
+                </Image>
+            </Grid>
+
+            <BoxView Grid.Row="1" BackgroundColor="Gray" />
+
+            <Grid Grid.Row="3" Margin="15">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="1*" />
+                    <ColumnDefinition Width="1*" />
+                </Grid.ColumnDefinitions>
+                <Button Grid.Column="0" Text="Back To List" Clicked="Cancel_OnClicked"
+                    WidthRequest="250" HorizontalOptions="Center" />
+                <Button Grid.Column="1" Text="Save" IsEnabled="{Binding CanSave}" Clicked="Save_OnClicked"
+                    WidthRequest="250" HorizontalOptions="Center" />
+            </Grid>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

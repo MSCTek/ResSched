@@ -10,10 +10,10 @@ namespace ResSched.Views
     {
         private ResourceDetailViewModel viewModel;
 
-        public ResourceDetailPage(ResourceDetailViewModel viewModel)
+        public ResourceDetailPage(ResourceDetailViewModel _viewModel)
         {
             InitializeComponent();
-            BindingContext = this.viewModel = viewModel;
+            BindingContext = this.viewModel = _viewModel;
         }
 
         protected override async void OnAppearing()

@@ -32,9 +32,14 @@ namespace ResSched.Views
             var item = e.SelectedItem as User;
             if (item == null)
                 return;
-
-            await Navigation.PushModalAsync(new EditUserDetailsPage(new EditUserDetailsViewModel(item)));
-
+            if (item.Email.ToLower() == "guest@guest.com")
+            {
+                await DisplayAlert("Sorry", "You can't edit the guest user!", "OK");
+            }
+            else
+            {
+                await Navigation.PushModalAsync(new EditUserDetailsPage(new EditUserDetailsViewModel(item)));
+            }
             // Manually deselect item.
             ItemsListView.SelectedItem = null;
         }

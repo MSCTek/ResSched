@@ -16,15 +16,6 @@ namespace ResSched.Views
             BindingContext = this.viewModel = _viewModel;
         }
 
-        protected override async void OnAppearing()
-        {
-            base.OnAppearing();
-            if (viewModel != null)
-            {
-                await viewModel.Refresh();
-            }
-        }
-
         private void Cancel_OnClicked(object sender, System.EventArgs e)
         {
             Navigation.PopModalAsync();

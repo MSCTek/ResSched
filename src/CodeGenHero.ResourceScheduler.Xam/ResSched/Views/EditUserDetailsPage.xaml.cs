@@ -16,22 +16,27 @@ namespace ResSched.Views
             BindingContext = this.viewModel = _viewModel;
         }
 
-        protected override async void OnAppearing()
-        {
-            base.OnAppearing();
-            if (viewModel != null)
-            {
-                await viewModel.Refresh();
-            }
-        }
-
         private void Cancel_OnClicked(object sender, System.EventArgs e)
         {
             Navigation.PopModalAsync();
         }
 
-        private void Save_OnClicked(object sender, System.EventArgs e)
+        private async void Save_OnClicked(object sender, System.EventArgs e)
         {
+            if (viewModel != null)
+            {
+                var result = await viewModel.SaveAsync();
+                if (result)
+                {
+                    await DisplayAlert("Success", "User was updated", "OK");
+                }
+                else
+                {
+                    await DisplayAlert("Failure", "User was not updated! Please check the logs for error info.", "OK");
+                }
+
+                Navigation.PopModalAsync();
+            }
         }
     }
 }

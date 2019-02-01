@@ -44,6 +44,33 @@
                 </StackLayout>
 
                 <StackLayout Orientation="Horizontal">
+                    <Label Text="Name: " />
+                    <Entry Text="{Binding Resource.Name, Mode=TwoWay}" WidthRequest="400" />
+                </StackLayout>
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="Description: " />
+                    <Entry Text="{Binding Resource.Description, Mode=TwoWay}" WidthRequest="500" />
+                </StackLayout>
+
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="Image Link: " />
+                    <Entry Text="{Binding Resource.ImageLink, Mode=TwoWay}" WidthRequest="500" />
+                </StackLayout>
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="Image Link Thumbnail: " />
+                    <Entry Text="{Binding Resource.ImageLinkThumb, Mode=TwoWay}" WidthRequest="500" />
+                </StackLayout>
+
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="Is Active: " VerticalOptions="Center" />
+                    <Switch IsToggled="{Binding Resource.IsActive, Mode=TwoWay}"></Switch>
+                </StackLayout>
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="Is Deleted: " VerticalOptions="Center" />
+                    <Switch IsToggled="{Binding Resource.IsDeleted, Mode=TwoWay}"></Switch>
+                </StackLayout>
+
+                <StackLayout Orientation="Horizontal">
                     <Label Text="Last Updated By: " />
                     <Label Text="{Binding Resource.UpdatedBy}" />
                 </StackLayout>

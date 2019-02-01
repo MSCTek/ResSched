@@ -21,8 +21,22 @@ namespace ResSched.Views
             Navigation.PopModalAsync();
         }
 
-        private void Save_OnClicked(object sender, System.EventArgs e)
+        private async void Save_OnClicked(object sender, System.EventArgs e)
         {
+            if (viewModel != null)
+            {
+                var result = await viewModel.SaveAsync();
+                if (result)
+                {
+                    await DisplayAlert("Success", "Resource was updated", "OK");
+                }
+                else
+                {
+                    await DisplayAlert("Failure", "Resource was not updated! Please check the logs for error info.", "OK");
+                }
+
+                Navigation.PopModalAsync();
+            }
         }
     }
 }

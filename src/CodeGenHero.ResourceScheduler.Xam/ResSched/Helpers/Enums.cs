@@ -4,6 +4,7 @@
     {
         UserUpdate,
         ResourceScheduleCreate,
-        ResourceScheduleUpdate
+        ResourceScheduleUpdate,
+        ResourceUpdate
     }
 }

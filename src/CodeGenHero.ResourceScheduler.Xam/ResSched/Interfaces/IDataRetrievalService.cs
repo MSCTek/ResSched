@@ -29,6 +29,8 @@ namespace ResSched.Interfaces
 
         void StartSafeQueuedUpdates();
 
+        Task<int> UpdateResource(Resource resource);
+
         Task<int> UpdateUser(User user);
 
         Task<int> WriteResourceSchedule(ResourceSchedule resourceSchedule);

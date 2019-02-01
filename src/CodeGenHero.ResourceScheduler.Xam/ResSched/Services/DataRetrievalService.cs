@@ -251,6 +251,20 @@ namespace ResSched.Services
                             await _db.GetAsyncConnection().UpdateAsync(q);
                         }
                     }
+                    else if (q.QueueableObject == QueueableObjects.ResourceUpdate.ToString())
+                    {
+                        if (await RunQueuedResourceUpdate(q))
+                        {
+                            q.NumAttempts += 1;
+                            q.Success = true;
+                            await _db.GetAsyncConnection().UpdateAsync(q);
+                        }
+                        else
+                        {
+                            q.NumAttempts += 1;
+                            await _db.GetAsyncConnection().UpdateAsync(q);
+                        }
+                    }
                 }
             }
             catch (Exception ex)
@@ -286,6 +300,11 @@ namespace ResSched.Services
         public void StartSafeQueuedUpdates()
         {
             if (Connectivity.NetworkAccess == NetworkAccess.Internet) MessagingCenter.Send<StartUploadDataMessage>(new StartUploadDataMessage(), "StartUploadDataMessage");
+        }
+
+        public async Task<int> UpdateResource(objModel.Resource resource)
+        {
+            return await _db.GetAsyncConnection().UpdateAsync(resource.ToModelData());
         }
 
         public async Task<int> UpdateUser(objModel.User user)
@@ -358,6 +377,25 @@ namespace ResSched.Services
                     //do something here with the conflict
                 }
                 Analytics.TrackEvent($"Error Sending Queued PendingResourceSchedule Update record {q.RecordId}");
+                return false;
+            }
+            return false;
+        }
+
+        private async Task<bool> RunQueuedResourceUpdate(ModelData.Queue q)
+        {
+            if (_webAPIDataService == null) { return false; }
+
+            var record = await _db.GetAsyncConnection().Table<dataModel.Resource>().Where(x => x.Id == q.RecordId).FirstOrDefaultAsync();
+            if (record != null)
+            {
+                var result = await _webAPIDataService.UpdateResourceAsync(record.ToDto());
+                if (result.IsSuccessStatusCode)
+                {
+                    Debug.WriteLine($"Successfully Sent Queued ResourceUpdate Record");
+                    return true;
+                }
+                Analytics.TrackEvent($"Error Sending Queued ResourceUpdate record {q.RecordId}");
                 return false;
             }
             return false;
